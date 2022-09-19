@@ -1,0 +1,11 @@
+.tab-demo{width:100%; min-height:3.5rem; background:#ec2c23;}
+
+/* Special Box */
+.ss-box{display:block; width:100%; max-width:30rem; margin:0 auto;}
+
+/* Special Image */
+.ss-img.horizontal{padding:40% 0 0 0;}
+.ss-img.no-hover > .img-bg, .ss-card .ss-img.no-hover > .img-bg{transform:none!important;}
+
+/* Special Card 01 */
+.ss-card-01 .text-container{text-align:center;}
