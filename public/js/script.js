@@ -1,8 +1,57 @@
 
 $(function(){ 'use strict';
 
+    // Scope
+    var scopeDiv = $('html, body');
+
+
     // Topnav
-    var topnav = $('nav.topnav');
+    var topnav = $('nav.topnav'),
+        topnavMenu = topnav.find('.menu-container > .menu'),
+        topnavDropdown = topnav.find('.topnav-dropdown'),
+        topnavDropdownDivs = topnavDropdown.find('.dropdown-wrapper');
+    if(topnav.length){
+        topnavMenu.find('> *:first-child').click(function(e){
+            let parent = $(this).parent(),
+                dIndex = parent.data('dropdown');
+            if(dIndex){
+                e.preventDefault();
+                if(parent.hasClass('active')){
+                    parent.removeClass('active');
+                    topnavDropdown.removeClass('active');
+                    scopeDiv.removeClass('topnav-dropdown-opened');
+                }else{
+                    topnavMenu.removeClass('active');
+                    parent.addClass('active');
+                    topnavDropdown.addClass('active');
+                    scopeDiv.addClass('topnav-dropdown-opened');
+
+                    let prevActive = topnavDropdownDivs.filter('.active'),
+                        nextActive = topnavDropdownDivs.filter('[data-dropdown="'+dIndex+'"]');
+                    if(nextActive.length && !nextActive.hasClass('active')){
+                        if(prevActive.length){
+                            prevActive.addClass('fade-out');
+                            nextActive.addClass('fade-in');
+                            setTimeout(function(){
+                                prevActive.removeClass('fade-in fade-out active');
+                                nextActive.addClass('active');
+                                nextActive.removeClass('fade-in fade-out');
+                            }, 600);
+                        }else{
+                            nextActive.addClass('active');
+                            nextActive.removeClass('fade-in fade-out');
+                        }
+                    }
+                }
+            }
+        });
+        topnav.find('.dropdown-filter').click(function(e){
+            e.preventDefault();
+            topnavMenu.removeClass('active');
+            topnavDropdown.removeClass('active');
+            scopeDiv.removeClass('topnav-dropdown-opened');
+        });
+    }
 
 
     // Section Anchors
@@ -111,11 +160,6 @@ $(function(){ 'use strict';
                         target.addClass('active');
                     }, 600);
                     
-                    if(slideContainers.length){
-                        slideContainers.each(function(){
-                            $(this).find('.slides').slick('setPosition');
-                        });
-                    }
                     if(swiperContainers.length){
                         swiperContainers.each(function(){
                             $(this)[0].swiper.update();

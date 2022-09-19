@@ -23,10 +23,11 @@ input[type=text], input[type=email], input[type=password], input[type=date], inp
 input[type=number], input[type=phone], input[type=submit], nput[type=file], select, 
 textarea, button{font-family:'Noto Sans Thai', sans-serif;}
 
-html.topnav-dropdown-opened, body.topnav-dropdown-opened,
-html.global-search-opened, body.global-search-opened{overflow-y:hidden!important;}
-@media screen and (max-width:1199.98px){
+@media screen and (max-width:991.98px){
     html.sidenav-opened, body.sidenav-opened{overflow-y:hidden!important;}
+}
+@media screen and (min-width:992px){
+    html.topnav-dropdown-opened, body.topnav-dropdown-opened{overflow-y:hidden!important;}
 }
 
 
