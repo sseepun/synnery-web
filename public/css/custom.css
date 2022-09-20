@@ -108,6 +108,12 @@ p.lg, .p.lg{font-size:1.125rem;}
     .section-03 .block > .img-bg, .section-03 .subblock > .img-bg{left:-1rem;}
 }
 
+/* Tab Container */
+.tab-container .tab-contents.size-01{min-height:545px;}
+.tab-container .tab-contents .data-container{
+    display:flex; flex-direction:column; justify-content:center; align-items:center;
+    min-height:485px;
+}
 
 /* Tab Container - Tabs 01 */
 .tab-container .tabs.tabs-01{
@@ -116,11 +122,13 @@ p.lg, .p.lg{font-size:1.125rem;}
 .tab-container .tabs.tabs-01 > .tab{position:relative; min-width:7.5rem; text-align:center;}
 .tab-container .tabs.tabs-01 > .tab > .title{transition:all .3s;}
 .tab-container .tabs.tabs-01 > .tab.active > .title{font-weight:600;}
-.tab-container .tabs.tabs-01 > .tab::after {
+.tab-container .tabs.tabs-01 > .tab::after{
     content: ''; position: absolute; top:.4rem; bottom:.125rem; right:0;
     width:1px; height: 60%; background:#ffffff;
 }
-.tab-container .tabs.tabs-01 > .tab:last-child::after {display:none;}
+.tab-container .tabs.tabs-01 > .tab:last-child::after{display:none;}
+
+
 
 
 /* ============================================= 
