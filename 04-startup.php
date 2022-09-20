@@ -85,7 +85,7 @@
     </div>  
   </section>
 
-  <section class="section-02 section-padding" style="background:#000000">
+  <section  data-section="4" class="section-02 section-padding" style="background:#000000">
     <h4 class="text-center color-01 fw-600">งานบริการอื่นๆ 
       <span class="fw-100 color-white">ของเรา</span>
     </h4> 

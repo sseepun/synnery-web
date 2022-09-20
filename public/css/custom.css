@@ -110,23 +110,28 @@ p.lg, .p.lg{font-size:1.125rem;}
 
 /* Tab Container */
 .tab-container .tab-contents.size-01{min-height:545px;}
+.tab-container .tab-contents.size-02, .tab-container .tab-contents .data-container.size-02{min-height:800px!important;}
+
 .tab-container .tab-contents .data-container{
     display:flex; flex-direction:column; justify-content:center; align-items:center;
     min-height:485px;
 }
 
+
 /* Tab Container - Tabs 01 */
 .tab-container .tabs.tabs-01{
     width:100%; min-height:3.5rem; display:flex; justify-content:center; align-items:center; background:#ec2c23;
 }
-.tab-container .tabs.tabs-01 > .tab{position:relative; min-width:7.5rem; text-align:center;}
+.tab-container .tabs.tabs-01 > .tab{position:relative; min-width:9rem; text-align:center;}
+.tab-container .tabs.tabs-01 > .tab.md{min-width:17rem!important;}
 .tab-container .tabs.tabs-01 > .tab > .title{transition:all .3s;}
 .tab-container .tabs.tabs-01 > .tab.active > .title{font-weight:600;}
 .tab-container .tabs.tabs-01 > .tab::after{
-    content: ''; position: absolute; top:.4rem; bottom:.125rem; right:0;
-    width:1px; height: 60%; background:#ffffff;
+    content: ''; position: absolute; top:.4rem; bottom:.125rem; right:0rem;
+    width:1px; height:60%; background:#ffffff;
 }
 .tab-container .tabs.tabs-01 > .tab:last-child::after{display:none;}
+.tab-container .tabs.tabs-01 > .tab.style-02::after{right:1.5rem;}
 
 
 

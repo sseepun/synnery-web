@@ -76,33 +76,59 @@
   </div>
  </section>
 
- <!-- come back to edit later -->
- <div class="tab-demo" style="background:#ec2c23; min-height:120px;"></div>
+ 
+ <?php
+    $categories = [
+      [
+        'title' => 'Jigsaw Office' 
+      ], [
+        'title' => 'Jigsaw ERP for Government'
+      ]
+    ]
+  ?>
 
- <section data-section="4" class="section-01 size-03 section-padding">
-  <div class="img-bg" style="background-image:url('public/img/bg/05.jpg');"></div> 
-  <div class="container">
-    <h3 class="text-center text-uppercase color-01 fw-600">jigsaw ERP for Government</h3>     
-    <p class="text-center color-white md-no-br">
-      ระบบ E-Office สำหรับภาครัฐ ด้วยแนวคิดการออกแบบระบบให้เป็น Single Database เชื่อมต่อกับระบบต่างๆ ผ่าน API <br>
-      (Applicaiton Program Interface) เพื่อลดปัญหาความซ้ำซ้อนของข้อมูล และแก้ปัญหาที่ระบบต่างๆ ไม่สามารถทำงานร่วมกันได้ <br>
-      พร้อมด้วยการออกแบบและพัฒนาในรูปแบบของ Microservices และ DevSecOps เพื่อรองรับการพัฒนาต่อเนื่องและ <br>
-      การขยายระบบในอนาคต (อยู่ระหว่างการพัฒนา)
-    </p> 
-    <div class="ss-card-container">
-      <?php for($i=0; $i<17; $i++){?>
-      <div class="ss-card ss-card-04">
-        <div class="icon">
-          <em class="fa-solid fa-heart"></em>
-        </div>
-        <div class="text-container">
-          <p class="title xs">Jigsaw E-Procurement</p>
-        </div>
-      </div>
+ <div class="tab-container">
+    <div class="tabs tabs-01">
+      <?php foreach($categories as $j=>$k){?>
+        <a class="tab md style-02 <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
+          <p class="lg title color-white"><?= $k['title'] ?></p>
+        </a>
       <?php }?>
-    </div> 
-  </div>    
- </section>
+    </div>
+    <div class="tab-contents size-02" data-section="4">
+      <div class="img-bg" style="background-image:url('public/img/bg/05.jpg');"></div> 
+      <?php foreach($categories as $j=>$k){?>
+        <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
+          <div class="container">
+            <div class="data-container size-02 section-padding">
+              <div class="text-center">
+                <h1 class="h1 color-01 lh-sm fw-600"><?= $k['title'] ?></h1> 
+                <p class="color-white md-no-br">
+                  ระบบ E-Office สำหรับภาครัฐ ด้วยแนวคิดการออกแบบระบบให้เป็น Single Database เชื่อมต่อกับระบบต่างๆ ผ่าน API <br>
+                  (Applicaiton Program Interface) เพื่อลดปัญหาความซ้ำซ้อนของข้อมูล และแก้ปัญหาที่ระบบต่างๆ ไม่สามารถทำงานร่วมกันได้ <br>
+                  พร้อมด้วยการออกแบบและพัฒนาในรูปแบบของ Microservices และ DevSecOps เพื่อรองรับการพัฒนาต่อเนื่องและ <br>
+                  การขยายระบบในอนาคต (อยู่ระหว่างการพัฒนา)
+                </p>
+              </div>
+              <div class="ss-card-container">
+                <?php for($i=0; $i<17; $i++){?>
+                  <div class="ss-card ss-card-04">
+                    <div class="icon">
+                      <em class="fa-solid fa-heart"></em>
+                    </div>
+                    <div class="text-container">
+                      <p class="title xs">Jigsaw E-Procurement</p>
+                    </div>
+                  </div>
+                <?php }?>
+              </div>
+            </div>
+          </div>
+        </div>
+      <?php }?>
+    </div>
+  </div>
+
 
  <section data-section="5" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/06.jpg');"></div>
@@ -157,7 +183,7 @@
     </div>  
   </section>
 
-  <section class="section-02 section-padding" style="background:#000000">
+  <section data-section="6" class="section-02 section-padding" style="background:#000000">
     <h4 class="text-center color-01 fw-600">งานบริการอื่นๆ 
       <span class="fw-100 color-white">ของเรา</span>
     </h4> 
