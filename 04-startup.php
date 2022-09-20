@@ -57,26 +57,23 @@
       <div class="block">
         <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
         <div class="text-wrapper ss-text-wrapper xxs">
-          <p class="h6 color-01 fw-600">
-            เป้าหมายของเราคือการออกแบบและสร้างระบบที่ใช้ร่วมกันได้ ให้กับองค์กรเพื่อพัฒนา
-            ขีดความสามารถและก้าวข้ามไปสู่โลกที่เปลี่ยนแปลงอย่างรวดเร็วได้
-          </p>
-          <p class="fw-400 mt-2">
-            เพื่อที่จะขยายขีดความสามารถนี้ เรากำลังมองหานักลงทุนที่มีความเชี่ยวชาญ ในด้านต่างๆ ที่มีเป้าหมาย และ
-            ทิศทางของธุรกิจไปในทางเดียวกัน เพื่อช่วยส่งเสริมซึ่งกันและกัน และบรรลุผลลัพธ์สิ่งที่เป็น ไปสู่สิ่งที่สามารถเป็นได้
+          <p class="lg fw-400 sm-no-br mt-2">
+            โดยเราจะมีทีมงาน และผู้เชี่ยวชาญ <br>
+            ที่จะคอยให้ <span class="h5 color-01 sm-no-br fw-600">คำแนะนำคำปรึกษา <br> และดำเนินการต่างๆ ร่วมกัน</span><br>
+            ถ้าใครคิดว่ามี<span class="h5 color-01 fw-600">ไอเดียดีๆ</span> <br> หากต้องการเพิ่มโอกาส และเล็งเห็นสิ่งที่ <br> บริษัทฯ 
+            ให้การสนับสนุน <br> สามารถ<span class="h5 color-01 fw-600">ติดต่อเราได้เลย</span>
           </p>
         </div>
       </div> 
       <div class="subblocks">
         <div class="subblock">
-          <div class="img-bg" style="background-image:url('public/img/content/08.jpg');"></div>
+          <div class="img-bg" style="background-image:url('public/img/content/09.jpg');"></div>
         </div>
       </div> 
     </div>    
   </div>
  </section>
 
- 
   <section class="section-01 size-01">
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
     <div class="container">

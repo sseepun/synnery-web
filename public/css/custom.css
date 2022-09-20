@@ -61,6 +61,7 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 .section-01.size-01{min-height:306px;}
 .section-01.size-02{min-height:600px;}
+.section-01.size-03{min-height:800px;}
 .section-01 > .img-bg{
     position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
     background-position:center; background-repeat:no-repeat;
@@ -142,6 +143,36 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 .ss-card-03:hover .icon{background:#ec2c23; color:#ffffff;}
 
+/* Special Card 04 */
+.ss-card-container{display:flex; flex-wrap:wrap; margin-top:2rem;}
+.ss-card-04{
+    width:16.66%; display:flex;  justify-content:center; flex-direction:column; 
+    align-items:center; margin-top:2rem; 
+}
+.ss-card-04 .icon{
+    background:#ffffff; width:4.5rem; height:4.5rem; border-radius:50%; font-size:2rem; cursor:pointer;
+    display:flex; justify-content:center; align-items:center; color:#ec2c23; transition:all .3s;
+}
+.ss-card-04 .icon:hover{
+    background:#ec2c23; color:#ffffff;
+}
+.ss-card-04 .text-container{
+    padding:0 1rem; margin-top:1rem;
+}
+.ss-card-04 .text-container > .title{color:#ffffff; font-weight:500; text-align:center;}
+@media screen and (max-width:767.98px){
+    .ss-card-04{width:25%;}
+}
+@media screen and (max-width:575.98px){
+    .ss-card-04{width:33.33%;}
+}
+@media screen and (max-width:391.98px){
+    .ss-card-04{width:50%;}
+}
+@media screen and (max-width:279.98px){
+    .ss-card-04{width:100%;}
+}
+
 
 /* ============================================= 
                    Button
@@ -182,10 +213,13 @@ p.lg, .p.lg{font-size:1.125rem;}
 .ss-list-01 li{position:relative; padding:.0625rem 1.5rem 1.1875rem;}
 .ss-list-01 li:before{
     content:""; position:absolute; top:0.5rem; left:0; width:.875rem; height:.875rem; 
-    border-radius:50%; background:#ec2c23;}
+    border-radius:50%; background:#ec2c23;
+}
+.ss-list-01.style-02 li:before{background:#ffffff;}
 
 /* Special Box */
 .ss-box{display:block; width:100%; max-width:35rem; margin:0 auto;}
+.ss-box.xl{max-width:55rem;}
 
 /* Special Image */
 .ss-img.horizontal{padding:40% 0 0 0;}
