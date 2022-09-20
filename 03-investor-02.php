@@ -29,7 +29,7 @@
     <div class="tabs tabs-01">
       <?php foreach($categories as $j=>$k){?>
         <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
-          <p class="lg color-white"><?= $k['title'] ?></p>
+          <p class="lg title color-white"><?= $k['title'] ?></p>
         </a>
       <?php }?>
     </div>
