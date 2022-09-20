@@ -77,9 +77,6 @@
  </section>
 
  
-
-  
-
   <section class="section-01 size-01">
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
     <div class="container">
