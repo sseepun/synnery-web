@@ -13,21 +13,43 @@
     <img class="img" src="public/img/img-02.jpg" alt="Banner" />
   </section>
 
-  <!-- come back to edit later -->
-  <div class="tab-demo"></div>
+  <?php
+    $categories = [
+      [
+        'title' => 'About Us' 
+      ], [
+        'title' => 'For Investor'
+      ], [
+        'title' => 'For Startup'
+      ]
+    ]
+  ?>
 
-  <section data-section="2" class="section-01 section-padding" style="background-color:#f2f2f2">
-    <div class="container">
-      <div class="text-center">
-        <h1 class="h1 color-01 fw-600">About Us</h1> 
-        <p class="h6 color-01 fw-600">บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>  
-        <p class="h5 sm fw-400">เราเป็นบริษัทที่ปรึกษา</p>
-        <p class="h2 color-01 fw-600">“กลยุทธ์ด้านดิจิตัล สำหรับภาครัฐแบบครบวงจร”</p>
-        <p class="fw-400">เรานำเสนอโซลูชั่นผ่านการให้คำปรึกษาด้านกลยุทธ์ทางดิจิทัลและเทคโนโลยี</p>
-        <p class="fw-400">ที่ช่วยให้หน่วยงานหรือองค์กรได้ผลลัพธ์ที่ดีขึ้น เพื่อรับกับแนวทางการเปลี่ยนแปลงที่เกิดขึ้น</p>
-      </div>
+  <div class="tab-container" style="min-height:541px;">
+    <div class="tabs tabs-01">
+      <?php foreach($categories as $j=>$k){?>
+        <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
+          <p class="lg color-white"><?= $k['title'] ?></p>
+        </a>
+      <?php }?>
     </div>
-  </section>
+    <div class="tab-contents" data-section="2" class="section-01" style="background-color:#f2f2f2">
+      <?php foreach($categories as $j=>$k){?>
+        <div class="tab-content style-02 <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
+          <div class="container">
+            <div class="section-01 flex-column jc-center text-center">
+              <h1 class="h1 color-01 lh-sm fw-600"><?= $k['title'] ?></h1> 
+              <p class="h6 color-01 fw-600">บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>  
+              <p class="h5 sm fw-400">เราเป็นบริษัทที่ปรึกษา</p>
+              <p class="h2 color-01 fw-600">“กลยุทธ์ด้านดิจิตัล สำหรับภาครัฐแบบครบวงจร”</p>
+              <p class="fw-400">เรานำเสนอโซลูชั่นผ่านการให้คำปรึกษาด้านกลยุทธ์ทางดิจิทัลและเทคโนโลยี</p>
+              <p class="fw-400">ที่ช่วยให้หน่วยงานหรือองค์กรได้ผลลัพธ์ที่ดีขึ้น เพื่อรับกับแนวทางการเปลี่ยนแปลงที่เกิดขึ้น</p>
+            </div>
+          </div>
+        </div>
+      <?php }?>
+    </div>
+  </div>
 
   <section data-section="3" class="section-01 size-02 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/03.jpg');"></div>
@@ -189,14 +211,15 @@
     </div>  
   </section>
 
-  <section data-section="8" style="background:#000000">
+  <section data-section="8" class="section-02 section-padding" style="background:#000000">
     <h4 class="text-center color-01 fw-600">งานบริการอื่นๆ 
       <span class="fw-100 color-white">ของเรา</span>
-    </h4>  
-    <div class="grids no-gap">
-      <?php for($i=0; $i<6; $i++){?>
-        <div class="grid xl-16">
-          <a class="ss-card ss-card-03 filter-01" href="#">
+    </h4> 
+      <div class="swiper-container mt-4">
+        <div class="swiper-wrapper">
+          <?php for($i=0; $i<12; $i++){?>
+            <div class="swiper-slide">
+            <a class="ss-card ss-card-03 filter-01" href="#">
             <div class="ss-img square">
               <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
             </div>
@@ -208,12 +231,13 @@
               </div>
             </div>
             <div class="icon">
-              <i class="fa-solid fa-plus"></i>
+              <em class="fa-solid fa-plus"></em>
             </div>
-          </a>  
-        </div>   
-      <?php }?>   
-    </div>    
+          </a> 
+            </div>
+          <?php }?>
+        </div>
+      </div>        
   </section>
   
   <?php include_once('include/footer.php'); ?>
