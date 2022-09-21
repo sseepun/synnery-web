@@ -159,7 +159,7 @@
       <h4 class="text-center color-01 text-uppercase mb-4 fw-600">Why Us</h4>  
       <div class="grids">
         <div class="grid xl-50 lg-50 md-50 sm-50 xs-100">
-          <ul class="ss-list-01">
+          <ul class="ss-list-01 style-02">
           <li>	
             มากกว่าการ “รับจ้าง” คือเรา “ทำงาน” เราช่วยลูกค้าคิด วางแผน วิเคราะห์   
             เสมือนงานและเงินนั้นเป็นของทีมงานเราเอง 
@@ -178,7 +178,7 @@
           </ul> 
         </div>   
         <div class="grid xl-50 lg-50 md-50 sm-50 xs-100">
-          <ul class="ss-list-01">
+          <ul class="ss-list-01 style-02">
             <li>	
               เรามีเครื่องมือ และระบบโปรแกรม สำหรับใช้ในการบริหารจัดการ ระบบการ
               ทำงานทุกจุด เพื่อคุณภาพและมาตรฐานระดับสากล

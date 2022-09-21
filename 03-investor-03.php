@@ -143,7 +143,7 @@
       <div class="ss-box xl mt-4">
         <div class="grids">
           <div class="grid lg-1-3 md-50 sm-50 xs-100">
-            <ul class="ss-list-01 style-02">
+            <ul class="ss-list-01">
               <li>ด้านการศึกษา</li>
               <li>ด้านสุขภาพ</li>
               <li>ด้านการเกษตร</li>
@@ -151,7 +151,7 @@
             </ul> 
           </div>   
           <div class="grid lg-1-3 md-50 sm-50 xs-100">
-            <ul class="ss-list-01 style-02">
+            <ul class="ss-list-01">
               <li>ด้านอาหารและเครื่องดื่ม</li>
               <li>ด้านแฟชั่น  </li>
               <li>ด้านประกันชีวิต ประกันภาย</li>
@@ -159,7 +159,7 @@
             </ul> 
           </div>
           <div class="grid lg-1-3 md-50 sm-50 xs-100">
-            <ul class="ss-list-01 style-02">
+            <ul class="ss-list-01">
               <li>ด้านธุรกิจยานยนต์</li>
               <li>ด้านอสังหาริมทรัพย์</li>
               <li>ด้านการแพทย์</li>
