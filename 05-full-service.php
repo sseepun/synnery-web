@@ -245,7 +245,7 @@
         </div>
       </div>
 
-      <div class="grid lg-60 mt-0">
+      <div class="grid lg-60 mt-0 bg-black">
         <div class="grids no-gap height-full">
           <?php for($i=0; $i<3; $i++){?>
             <div class="grid lg-1-3 sm-100 style-02 mt-0">
@@ -262,7 +262,7 @@
         </div>
       </div>
 
-      <div class="grid lg-40 md-100 sm-100 mt-0">
+      <div class="grid lg-40 md-100 sm-100 mt-0 bg-black">
         <div class="grids no-gap">
           <div class="grid lg-100 sm-100 style-02 mt-0">
             <a class="ss-card ss-card-03" href="#">
@@ -290,7 +290,7 @@
       </div>
 
       <?php for($i=0; $i<2; $i++){?>
-        <div class="grid lg-50 mt-0">
+        <div class="grid lg-50 mt-0 bg-black">
           <div class="grids no-gap">
             <div class="grid lg-70 md-50 style-02 mt-0">
               <a class="ss-card ss-card-03 height-full" href="#">
@@ -307,13 +307,6 @@
               <div class="ss-img square height-full">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-06.jpg')"></div>
               </div>
-              <div class="text-container">
-                <div class="title color-white" href="#">
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                </div>
-              </div>
               <div class="icon">
                 <em class="fa-solid fa-plus"></em>
               </div>
@@ -324,7 +317,7 @@
       <?php }?>
 
       <?php for($i=0; $i<3; $i++){?>
-        <div class="grid lg-1-3 style-02 mt-0">
+        <div class="grid lg-1-3 style-02 mt-0 bg-black">
           <a class="ss-card ss-card-03" href="#">
           <div class="ss-img horizontal-2">
             <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
@@ -336,7 +329,7 @@
         </div>
       <?php }?>
 
-      <div class="grid lg-20 style-02 mt-0">
+      <div class="grid lg-20 style-02 mt-0 bg-black">
         <a class="ss-card ss-card-03 height-full" href="#">
           <div class="ss-img horizontal-2 height-full">
             <div class="img-bg" style="background-image:url('public/img/content/unsplash-01.jpg')"></div>
@@ -347,7 +340,7 @@
         </a>
       </div>
 
-      <div class="grid lg-50 style-02 mt-0">
+      <div class="grid lg-50 style-02 mt-0 bg-black">
         <a class="ss-card ss-card-03 height-full" href="#">
           <div class="ss-img height-full">
             <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
@@ -358,7 +351,7 @@
         </a>
       </div>
 
-      <div class="grid lg-30 mt-0">
+      <div class="grid lg-30 mt-0 bg-black">
         <div class="grids no-gap">
           <div class="grid lg-100 md-100 sm-100 style-02 mt-0">
             <a class="ss-card ss-card-03 filter-01" href="#">
