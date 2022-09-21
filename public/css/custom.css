@@ -230,7 +230,7 @@ p.lg, .p.lg{font-size:1.125rem;}
 
 /* Special Card 08 */
 .ss-card-08{
-    width:16.66%; min-height:17rem; padding:.1875rem .1875rem;
+    width:16.66%; min-height:17rem; padding:.1875rem .1875rem; cursor:pointer;
 }
 .ss-card-08:hover .icon{
     background:#ffffff; border:1px solid #ffffff;

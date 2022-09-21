@@ -72,7 +72,7 @@
     </div> 
   </section>
 
-  <section data-section="3" class="section-01 section-padding size-03">
+  <section data-section="3" class="section-01 section-padding size-01">
     <div class="img-bg" style="background-image:url('public/img/bg/09.jpg');"></div>     
     <div class="container">
       <div class="text-center color-white" data-aos="fade-up" data-aos-delay="0">
@@ -159,7 +159,7 @@
  <section data-section="6" class="section-01 section-padding size-03">
     <div class="img-bg" style="background-image:url('public/img/bg/11.jpg'); background-position:top;"></div>  
     <div class="container">
-      <h4 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
+      <h4 class="text-center color-white mt-6 pt-3 fw-600" data-aos="fade-up" data-aos-delay="0">
         Content Marketing <span class="color-01">Strategy</span>
       </h4> 
       <div class="ss-card-container jc-center">
