@@ -115,6 +115,12 @@ p.lg, .p.lg{font-size:1.125rem;}
     .section-03 .block > .img-bg, .section-03 .subblock > .img-bg{left:-1rem;}
 }
 
+/* Section 04 */
+@media screen and (max-width:575.98px){
+   .section-04 .ss-img.square, .section-04 .ss-img.horizontal-2{padding:60% 0 0 0!important; height:unset!important;}
+}
+
+
 /* Tab Container */
 .tab-container .tab-contents.size-01{min-height:545px;}
 .tab-container .tab-contents.size-02, .tab-container .tab-contents .data-container.size-02{min-height:800px!important;}

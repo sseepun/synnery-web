@@ -179,7 +179,7 @@
     </div>  
   </section>
 
-  <section>
+  <section class="section-04">
     <div class="grids no-gap">
       <?php for($i=0; $i<6; $i++){?>
         <div class="grid lg-1-3 style-02 mt-0">
