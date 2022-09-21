@@ -72,7 +72,7 @@
             <div class="ss-card-01">
               <div class="text-container">
                 <p class="text-uppercase color-black fw-500">More Than</p>
-                <p class="h1 lg lh-2xs color-white fw-600">300</p>
+                <p class="h1 lg lh-2xs color-white count-number fw-600">300</p>
                 <p class="h5 text-uppercase color-black fw-600">Clients</p>
               </div>
             </div>
@@ -81,7 +81,7 @@
             <div class="ss-card-01">
               <div class="text-container">
                 <p class="text-uppercase color-black fw-500">More Than</p>
-                <p class="h1 lg lh-2xs color-white fw-600">500</p>
+                <p class="h1 lg lh-2xs color-white count-number fw-600">500</p>
                 <p class="h5 text-uppercase color-black fw-600">Clients</p>
               </div>
             </div>
@@ -90,7 +90,7 @@
             <div class="ss-card-01">
               <div class="text-container">
                 <p class="text-uppercase color-black fw-500">More Than</p>
-                <p class="h1 lg lh-2xs color-white fw-600">300</p>
+                <p class="h1 lg lh-2xs color-white count-number fw-600">300</p>
                 <p class="h5 text-uppercase color-black fw-600">Clients</p>
               </div>
             </div>
@@ -242,5 +242,19 @@
   
   <?php include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>         
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+  <script>
+    $(document).ready(function($) {
+      $('.count-number').counterUp({
+          delay: 10,
+          time: 2000
+      });
+    });
+  </script>
+  
 </body>
 </html>
