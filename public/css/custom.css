@@ -121,6 +121,12 @@ p.lg, .p.lg{font-size:1.125rem;}
    .section-04 .ss-img.square, .section-04 .ss-img.horizontal-2{padding:60% 0 0 0!important; height:unset!important;}
 }
 
+/* Section 05 */
+.section-05{  
+    position:relative; background-attachment: fixed; background-position: center; background-repeat: no-repeat;
+    background-size: cover; height:100%; min-height:485px; display:flex; align-items:center;
+}
+.section-05.size-02{min-height:600px;}
 
 /* Tab Container */
 .tab-container .tab-contents.size-01{min-height:545px;}

@@ -51,8 +51,7 @@
     </div>
   </div>
 
-  <section data-section="3" class="section-01 size-02 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/03.jpg');"></div>
+  <section data-section="3" class="section-05 size-02 section-padding" style="background-image:url('public/img/bg/03.jpg');">
     <div class="container">
       <div class="text-center color-white">
         <p class="lg">
@@ -153,8 +152,7 @@
     </div>
   </section>
 
-  <section data-section="6" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/01.jpg');"></div>
+  <section data-section="6" class="section-05 section-padding" style="background-image:url('public/img/bg/01.jpg');">
     <div class="container">
       <h4 class="text-center color-01 text-uppercase mb-4 fw-600">Why Us</h4>  
       <div class="grids">
@@ -255,6 +253,6 @@
       });
     });
   </script>
-  
+
 </body>
 </html>
