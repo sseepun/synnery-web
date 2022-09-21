@@ -117,7 +117,6 @@ p.lg, .p.lg{font-size:1.125rem;}
     min-height:485px;
 }
 
-
 /* Tab Container - Tabs 01 */
 .tab-container .tabs.tabs-01{
     width:100%; min-height:3.5rem; display:flex; justify-content:center; align-items:center; background:#ec2c23;
@@ -132,8 +131,6 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 .tab-container .tabs.tabs-01 > .tab:last-child::after{display:none;}
 .tab-container .tabs.tabs-01 > .tab.style-02::after{right:1.5rem;}
-
-
 
 
 /* ============================================= 
@@ -190,6 +187,22 @@ p.lg, .p.lg{font-size:1.125rem;}
     .ss-card-04{width:100%;}
 }
 
+/* Special Card 05 */
+.ss-card-05{position:relative; border:5px solid transparent; transition:all .3s;}
+.ss-card-05:hover{border:5px solid #ec2c23;}
+.ss-card-05:hover .ss-img:after{background:rgba(3,3,3,.6);}
+.ss-card-05 .text-container{position:absolute; bottom:0; padding:1rem;}
+.ss-card-05 .text-container .title{-webkit-line-clamp:2;}
+.ss-card-05 .text-container .desc{-webkit-line-clamp:3;}
+.ss-card-05.filter-01 .ss-img::after{
+    content:''; position:absolute; top:0; bottom:0; left:0; right:0;  
+    background-image:linear-gradient(to top,rgba(30,31,31,1),rgba(30,31,31,.9),
+    rgba(30,31,31,.4),rgba(30,31,31,0),rgba(30,31,31,0),rgba(30,31,31,0),rgba(30,31,31,0));
+}
+
+/* Special Card 06 */
+.ss-card-06 img{width:13rem; margin:0 auto;}
+
 
 /* ============================================= 
                    Button
@@ -217,15 +230,16 @@ p.lg, .p.lg{font-size:1.125rem;}
 .ss-text-wrapper.xs{max-width:34rem;}
 .ss-text-wrapper.xxs{max-width:24rem;}
 
-
-/* ============================================= 
-                   Others
-   ============================================= */
-
 /* Text transform */
 .text-uppercase{text-transform:uppercase!important;}
 
-/* Special List */
+
+
+/* ============================================= 
+                Special List
+   ============================================= */
+
+/* Special List 01 */
 .ss-list-01{list-style:none; padding:0; margin:0; color:#ffffff;}
 .ss-list-01 li{position:relative; padding:.0625rem 1.5rem 1.1875rem;}
 .ss-list-01 li:before{
@@ -234,11 +248,17 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 .ss-list-01.style-02 li:before{background:#ffffff;}
 
+
+/* ============================================= 
+                   Others
+   ============================================= */
+
 /* Special Box */
 .ss-box{display:block; width:100%; max-width:35rem; margin:0 auto;}
 .ss-box.xl{max-width:55rem;}
 
 /* Special Image */
+.ss-img.vertical{padding:140% 0 0 0;}
 .ss-img.horizontal{padding:40% 0 0 0;}
 .ss-img.no-hover > .img-bg, .ss-card .ss-img.no-hover > .img-bg{transform:none!important;}
 
