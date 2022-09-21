@@ -184,7 +184,7 @@
       <?php for($i=0; $i<6; $i++){?>
         <div class="grid lg-1-3 style-02 mt-0">
           <a class="ss-card ss-card-09" href="#">
-            <div class="ss-img no-hover">
+            <div class="ss-img horizontal-2 no-hover">
                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
                <div class="hover-container op-100">
                   <div class="icon">
@@ -201,7 +201,7 @@
           <?php for($i=0; $i<2; $i++){?>
             <div class="grid lg-50 style-02 mt-0">
               <a class="ss-card ss-card-03 height-full filter-01" href="#">
-              <div class="ss-img height-full">
+              <div class="ss-img square height-full">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
               </div>
               <div class="text-container">
@@ -223,7 +223,7 @@
       <?php for($i=0; $i<7; $i++){?>
         <div class="grid lg-1-3 style-02 mt-0">
           <a class="ss-card ss-card-09" href="#">
-            <div class="ss-img no-hover">
+            <div class="ss-img horizontal-2 no-hover">
                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
                <div class="hover-container op-100">
                   <div class="icon">
@@ -264,7 +264,7 @@
           <?php for($i=0; $i<3; $i++){?>
             <div class="grid lg-1-3 sm-100 style-02 mt-0">
               <a class="ss-card ss-card-03 height-full filter-01" href="#">
-              <div class="ss-img height-full">
+              <div class="ss-img  height-full">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
               </div>
               <div class="text-container">
@@ -387,7 +387,7 @@
 
       <div class="grid lg-20 style-02 mt-0">
         <a class="ss-card ss-card-03 height-full filter-01" href="#">
-          <div class="ss-img height-full">
+          <div class="ss-img horizontal-2 height-full">
             <div class="img-bg" style="background-image:url('public/img/content/unsplash-01.jpg')"></div>
           </div>
           <div class="text-container">
@@ -404,8 +404,8 @@
       </div>
 
       <div class="grid lg-50 style-02 mt-0">
-        <a class="ss-card ss-card-03 filter-01" href="#">
-          <div class="ss-img  horizontal-2">
+        <a class="ss-card ss-card-03 height-full filter-01" href="#">
+          <div class="ss-img height-full">
             <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
           </div>
           <div class="text-container">
@@ -421,9 +421,9 @@
         </a>
       </div>
 
-      <div class="grid lg-30 style-02 mt-0">
-        <div class="grids">
-          <div class="grid lg-100 style-02 mt-0">
+      <div class="grid lg-30 mt-0">
+        <div class="grids no-gap">
+          <div class="grid lg-100 md-100 sm-100 style-02 mt-0">
             <a class="ss-card ss-card-03 filter-01" href="#">
               <div class="ss-img horizontal-2">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
@@ -441,33 +441,45 @@
             </a>
           </div>
 
-          <div class="grids no-gap">
-          <?php for($i=0; $i<2; $i++){?>
-            <div class="grid lg-50 style-02 mt-0">
-              <a class="ss-card ss-card-03  height-fullfilter-01" href="#">
-                <div class="ss-img horizontal-2 height-full">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+          <div class="grid lg-50 style-02 mt-0">
+            <a class="ss-card ss-card-03 height-full filter-01" href="#">
+              <div class="ss-img horizontal-2 height-full">
+                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+              </div>
+              <div class="text-container">
+                <div class="title color-white" href="#">
+                  Unlimited Microsite for Government
+                  Unlimited Microsite for Government
+                  Unlimited Microsite for Government
                 </div>
-                <div class="text-container">
-                  <div class="title color-white" href="#">
-                    Unlimited Microsite for Government
-                    Unlimited Microsite for Government
-                    Unlimited Microsite for Government
-                  </div>
+              </div>
+              <div class="icon">
+                <em class="fa-solid fa-plus"></em>
+              </div>
+            </a>
+          </div>
+
+          <div class="grid lg-50 style-02 mt-0">
+            <a class="ss-card ss-card-03 filter-01" href="#">
+              <div class="ss-img square">
+                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+              </div>
+              <div class="text-container">
+                <div class="title color-white" href="#">
+                  Unlimited Microsite for Government
+                  Unlimited Microsite for Government
+                  Unlimited Microsite for Government
                 </div>
-                <div class="icon">
-                  <em class="fa-solid fa-plus"></em>
-                </div>
-              </a>
-            </div>
-          <?php }?>
+              </div>
+              <div class="icon">
+                <em class="fa-solid fa-plus"></em>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-
     </div>
   </section>
-
 
   <section class="section-01 size-01">
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
