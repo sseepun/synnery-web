@@ -416,7 +416,7 @@
             <div class="grid lg-20 md-1-3 sm-50 xs-50">
               <div class="ss-card ss-card-10 mt-2">
                 <div class="icon">
-                  <!-- Hover เป็นรูปภาพ จะกลับมาแก้ไขให้ในภายหลังครับ -->
+                  <!-- ไอคอนต้องเปลี่ยนเป็นรูปภาพ จะกลับมาแก้ไขให้ในภายหลังครับ -->
                   <em class="fa-solid fa-heart"></em>
                 </div>
                 <div class="text-container">
@@ -474,29 +474,29 @@
     <h4 class="text-center color-01 fw-600">งานบริการอื่นๆ 
       <span class="fw-100 color-white">ของเรา</span>
     </h4> 
-      <div class="swiper-container mt-4">
-        <div class="swiper-wrapper">
-          <?php for($i=0; $i<12; $i++){?>
-            <div class="swiper-slide">
-              <a class="ss-card ss-card-03 filter-01" href="#">
-                <div class="ss-img square">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+    <div class="swiper-container mt-4">
+      <div class="swiper-wrapper">
+        <?php for($i=0; $i<12; $i++){?>
+          <div class="swiper-slide">
+            <a class="ss-card ss-card-03 filter-01" href="#">
+              <div class="ss-img square">
+                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+              </div>
+              <div class="text-container">
+                <div class="title color-white" href="#">
+                  Unlimited Microsite for Government
+                  Unlimited Microsite for Government
+                  Unlimited Microsite for Government
                 </div>
-                <div class="text-container">
-                  <div class="title color-white" href="#">
-                    Unlimited Microsite for Government
-                    Unlimited Microsite for Government
-                    Unlimited Microsite for Government
-                  </div>
-                </div>
-                <div class="icon">
-                  <em class="fa-solid fa-plus"></em>
-                </div>
-              </a> 
-            </div>
-          <?php }?>
-        </div>
-      </div>        
+              </div>
+              <div class="icon">
+                <em class="fa-solid fa-plus"></em>
+              </div>
+            </a> 
+          </div>
+        <?php }?>
+      </div>
+    </div>        
   </section>
   
   <?php include_once('include/footer.php'); ?>
