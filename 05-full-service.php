@@ -39,6 +39,7 @@
           </div>
         <?php }?>
       </div>
+      <!-- come back to edit later -->
       <div class="grids">
         <div class="grid xl-20">
           <div class="ss-card ss-card-06">
@@ -48,6 +49,7 @@
           </div>
         </div>  
       </div>
+      <!---------------------------->
     </div>
   </section>
 
