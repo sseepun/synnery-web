@@ -416,7 +416,6 @@
             <div class="grid lg-20 md-1-3 sm-50 xs-50">
               <div class="ss-card ss-card-10 mt-2">
                 <div class="icon">
-                  <!-- ไอคอนต้องเปลี่ยนเป็นรูปภาพ จะกลับมาแก้ไขให้ในภายหลังครับ -->
                   <img class="inactive" src="public/img/icon/media-01.png" alt="Icon Inactive" />
                   <img class="active" src="public/img/icon/media-01-active.png" alt="Icon Active" />
                 </div>
