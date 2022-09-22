@@ -392,6 +392,73 @@
     </div>
   </section>
 
+  <section data-section="8" class="section-01 size-02 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/12.jpg');"></div> 
+    <div class="container">
+      <div class="text-center">
+        <h4 class="color-01 text-center lh-sm fw-500" data-aos="fade-up" data-aos-delay="0">
+          Channel & Media Planning
+        </h4> 
+        <p class="color-white fw-200" data-aos="fade-up" data-aos-delay="150">
+          เพราะสื่อทุกสื่อมี Brand Character และกลุ่มเป้าหมายของตัวเอง ดังนั้นการวางแผนใช้สื่อ 
+          ว่าจะใช้ช่องทางไหน ใช้แบบไหน ใช้ เลือกยังไง จึงต้องอาศัย
+        </p>
+        <p class="h2 color-01 lh-3xs fw-500 mt-3" data-aos="fade-up" data-aos-delay="300">
+          Professional
+        </p>
+        <p class="lg color-white fw-300" data-aos="fade-up" data-aos-delay="350">
+          ที่จะคอยคิด วางแผน และช่วยดูแล
+        </p>
+      </div>
+      <div class="ss-box xl mt-4" data-aos="fade-up" data-aos-delay="400">
+        <div class="grids jc-center">
+          <?php for($i=0; $i<10; $i++){?>
+            <div class="grid lg-20 md-1-3 sm-50 xs-50">
+              <div class="ss-card ss-card-10 mt-2">
+                <div class="icon">
+                  <!-- Hover เป็นรูปภาพ จะกลับมาแก้ไขให้ในภายหลังครับ -->
+                  <em class="fa-solid fa-heart"></em>
+                </div>
+                <div class="text-container">
+                  <p class="xs title color-white mt-2">Google AdWords</p>
+                </div>
+              </div>
+            </div>
+          <?php }?>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <section data-section="5" class="section-03">
+    <div class="container">
+      <div class="blocks">
+        <div class="block style-02">
+          <div class="img-bg" style="background-image:url('public/img/content/15.jpg');"></div>
+        </div> 
+        <div class="subblocks">
+          <div class="subblock">
+            <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+            <div class="text-wrapper ss-text-wrapper md">
+              <?php for($number=1; $number<=6; $number++){?>
+                <div class="ss-card ss-card-07" data-aos="fade-up" data-aos-delay="0">
+                  <div class="number-container">
+                    <p class="h4"><?php echo $number ?></p>
+                  </div>
+                  <div class="text-container">
+                    <p class="title">
+                      วางแผนกลยุทธ์และแนวทางการดำเนินการสื่อสารประชาสัมพันธ์ ทั้ง ออนไลน์​และออฟไลน์ ผ่านสื่อต่างๆ 
+                    </p>
+                  </div>
+                </div>
+              <?php }?>
+          </div>
+          </div>
+        </div> 
+      </div>    
+    </div>
+ </section>
+
   <section class="section-01 size-01">
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
     <div class="container">
@@ -411,21 +478,21 @@
         <div class="swiper-wrapper">
           <?php for($i=0; $i<12; $i++){?>
             <div class="swiper-slide">
-            <a class="ss-card ss-card-03 filter-01" href="#">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
-            </div>
-            <div class="text-container">
-              <div class="title color-white" href="#">
-                Unlimited Microsite for Government
-                Unlimited Microsite for Government
-                Unlimited Microsite for Government
-              </div>
-            </div>
-            <div class="icon">
-              <em class="fa-solid fa-plus"></em>
-            </div>
-          </a> 
+              <a class="ss-card ss-card-03 filter-01" href="#">
+                <div class="ss-img square">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+                </div>
+                <div class="text-container">
+                  <div class="title color-white" href="#">
+                    Unlimited Microsite for Government
+                    Unlimited Microsite for Government
+                    Unlimited Microsite for Government
+                  </div>
+                </div>
+                <div class="icon">
+                  <em class="fa-solid fa-plus"></em>
+                </div>
+              </a> 
             </div>
           <?php }?>
         </div>
