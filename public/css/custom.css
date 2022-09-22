@@ -1,18 +1,25 @@
 /* Color */
 .color-white{color:#ffffff!important;}
 .color-black{color:#000000!important;}
-.bg-black{background:#000000!important;}
-
 .color-01{color:#ec2c23!important;}
-.bg-01{color:#ec2c23!important;}
-.bc-color-01{color:#ec2c23!important;}
+.color-02{color:#999999!important;}
+
+.bg-white{background:#ffffff!important;}
+.bg-black{background:#000000!important;}
+.bg-01{background:#ec2c23!important;}
+.bg-02{color:#999999!important;}
+
+.bc-color-white{border-color:#ffffff!important;}
+.bg-color-black{border-color:#000000!important;}
+.bc-color-01{border-color:#ec2c23!important;}
+.bc-color-02{border-color:#999999!important;}
 
 
 /* Typography */
 h1, .h1{font-size:4.5rem;} h1.lg, .h1.lg{font-size:5.5rem;}
 h2, .h2{font-size:3rem;} h2.lg, .h2.lg{font-size:3.25rem;}
 h3, .h3{font-size:2.5rem;}
-h4, .h4{font-size:1.75rem;}
+h4, .h4{font-size:1.75rem;} h4.lg, .h4.lg{font-size:2rem;}
 h5, .h5{font-size:1.625rem;} h5.sm, .h5.sm{font-size:1.5rem;}
 h6, .h6{font-size:1.3125rem;} h6.sm, .h6.sm{font-size:1.25rem;}
 
@@ -22,20 +29,20 @@ p.lg, .p.lg{font-size:1.125rem;}
     h1, .h1{font-size:4.125rem;} 
     h2, .h2{font-size:2.875rem;} h2.lg, .h2.lg{font-size:3.0625rem;}
     h3, .h3{font-size:2.375rem;}
-    h4, .h4{font-size:1.6875rem;} h4.xl, .h4.xl{font-size:2rem;}
+    h4, .h4{font-size:1.6875rem;} h4.lg, .h4.lg{font-size:1.875rem;}
 }
 @media screen and (max-width:991.98px){
     h1, .h1{font-size:3.75rem;} h1.lg, .h1.lg{font-size:5rem;}
     h2, .h2{font-size:2.75rem;} h2.lg, .h2.lg{font-size:3rem;}
     h3, .h3{font-size:2.25rem;}
-    h4, .h4{font-size:1.625rem;} 
+    h4, .h4{font-size:1.625rem;} h4.lg, .h4.lg{font-size:1.8125rem;}
     h5, .h5{font-size:1.5625rem;} h5.sm, .h5.sm{font-size:1.4375rem;}
 }
 @media screen and (max-width:767.98px){
     h1, .h1{font-size:3.25rem;} 
     h2, .h2{font-size:2.5rem;} h2.lg, .h2.lg{font-size:2.75rem;}
     h3, .h3{font-size:2rem;}
-    h4, .h4{font-size:1.5625rem;} 
+    h4, .h4{font-size:1.5625rem;} h4.lg, .h4.lg{font-size:1.625rem;}
     h5, .h5{font-size:1.5rem;} h5.sm, .h5.sm{font-size:1.375rem;}
     h6, .h6{font-size:1.25rem;} h6.sm, .h6.sm{font-size:1.125rem;}
 }
@@ -43,8 +50,7 @@ p.lg, .p.lg{font-size:1.125rem;}
     h1, .h1{font-size:2.875rem;} h1.lg, .h1.lg{font-size:4.375rem;}
     h2, .h2{font-size:2.25rem;} h2.lg, .h2.lg{font-size:2.4375rem;}
     h3, .h3{font-size:1.75rem;}
-    h4, .h4{font-size:1.4375rem;} 
-    h4.lg, .h4.lg{font-size:1.5rem;}
+    h4, .h4{font-size:1.4375rem;} h4.lg, .h4.lg{font-size:1.5rem;}
     h5, .h5{font-size:1.375rem;} h5.sm, .h5.sm{font-size:1.25rem;}
     h6, .h6{font-size:1.125rem;} h6.sm, .h6.sm{font-size:1.0625rem;}
     p.lg, .p.lg{font-size:1.0625rem;} 
@@ -123,8 +129,8 @@ p.lg, .p.lg{font-size:1.125rem;}
 
 /* Section 05 */
 .section-05{  
-    position:relative; background-attachment: fixed; background-position: center; background-repeat: no-repeat;
-    background-size: cover; height:100%; min-height:485px; display:flex; align-items:center;
+    position:relative; background-attachment:fixed; background-position:center;  background-repeat:no-repeat;
+    background-size:cover; height:100%; min-height:485px; display:flex; align-items:center;
 }
 .section-05.size-02{min-height:600px;}
 
@@ -276,12 +282,34 @@ p.lg, .p.lg{font-size:1.125rem;}
 /* Special Card 10 */
 .ss-card-10{position:relative; display:flex; flex-direction:column; align-items:center;}
 .ss-card-10 .icon{
-    background:#ffffff; width: 4.5rem; height: 4.5rem; border-radius: 50%; font-size: 2rem;
-    cursor: pointer; display: flex; justify-content: center; align-items: center; color: #ec2c23;
-    transition: all .3s; border: 1px solid #405785;
+    background:#ffffff; width:4.5rem; height:4.5rem; border-radius:50%; font-size:2rem;
+    cursor:pointer; display:flex; justify-content:center; align-items:center; color:#ec2c23;
+    transition:all .3s; border:1px solid #405785;
 }
 .ss-card-10 .text-container > .title{text-align:center;}
 
+/* Special Card 11 */
+.ss-card-11{position:relative; cursor:pointer;}
+.ss-card-11 .text-container{border-left:3px solid #cccccc; padding:0 .5rem; transition:border .3s, color .3s;}
+.ss-card-11 .text-container > .title{-webkit-line-clamp:1;}
+.ss-card-11 .text-container > .desc{-webkit-line-clamp:2;}
+
+.ss-card-11:hover .text-container{border-left:5px solid #ec2c23;}
+.ss-card-11:hover .text-container > .title{color:#ec2c23;}
+.ss-card-11:hover .text-container > .desc{color:#000000;}
+
+/* Special Card 12 */
+.ss-card-12{position:relative;}
+.ss-card-12:hover .ss-img:after{background:rgba(3,3,3,.6);}
+.ss-card-12.filter-01 .ss-img::after{
+    content:''; position:absolute; top:0; bottom:0; left:0; right:0;  
+    background-image:linear-gradient(to top,rgba(4,4,3,1),rgba(4,4,3,.9),
+    rgba(4,4,3,.4),rgba(4,4,3,0),rgba(4,4,3,0),rgba(4,4,3,0),rgba(4,4,3,0));
+}
+.ss-card-12 .icon{
+    width:1.5rem; height:1.5rem; position:absolute; top:0; right:-.1rem; font-size:.875rem;
+    display:flex; justify-content:center; align-items:center; background:#ec2c23; color:#ffffff; 
+}
 
 /* ============================================= 
                    Button
@@ -305,6 +333,7 @@ p.lg, .p.lg{font-size:1.125rem;}
 .ss-text-wrapper{display:block; width:100%; max-width:52rem;}
 .ss-text-wrapper.lg{max-width:62rem;}
 .ss-text-wrapper.md{max-width:26rem;}
+.ss-text-wrapper.md.style-02{max-width:31rem;}
 .ss-text-wrapper.sm{max-width:38rem;}
 .ss-text-wrapper.sm.m-auto{max-width:38rem; margin:0 auto;}
 .ss-text-wrapper.xs{max-width:34rem;}
@@ -345,7 +374,9 @@ p.lg, .p.lg{font-size:1.125rem;}
 .ss-box.xl{max-width:55rem;}
 
 
-
+/* ============================================= 
+                   Special Header
+   ============================================= */
 
 
 

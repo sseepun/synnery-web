@@ -196,7 +196,7 @@ $(function(){ 'use strict';
 
 });
 
- // Intro 01
+ // Section 02
  var section02= $('.section-02');
  if(section02.length){
     section02.find('.swiper-container').each(function(){
@@ -207,10 +207,27 @@ $(function(){ 'use strict';
              slidesPerView: 6,
              spaceBetween: 20,
              grabCursor: true,
-             navigation: {
-                 nextEl: self.find('.btn-icon-next'),
-                 prevEl: self.find('.btn-icon-prev'),
+             breakpoints: {
+                 1199.98: { slidesPerView: 3, spaceBetween: 20 },
+                 991.98: { slidesPerView: 2, spaceBetween: 20 },
+                 575.98: { slidesPerView: 1.4, spaceBetween: 20 },
              },
+         });
+     });
+ }
+
+ 
+ // Section 06
+ var section06= $('.section-06');
+ if(section06.length){
+    section06.find('.swiper-container').each(function(){
+         var self = $(this);
+         new Swiper(self, {
+             loop: true,
+             speed: 800,
+             slidesPerView: 3,
+             spaceBetween: 20,
+             grabCursor: true,
              breakpoints: {
                  1199.98: { slidesPerView: 3, spaceBetween: 20 },
                  991.98: { slidesPerView: 2, spaceBetween: 20 },

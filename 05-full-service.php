@@ -158,8 +158,8 @@
     </div>
  </section>
 
- <section data-section="6" class="section-01 section-padding size-03">
-    <div class="img-bg" style="background-image:url('public/img/bg/11.jpg'); background-position:top;"></div>  
+ <section data-section="6" class="section-01 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/11.jpg');"></div>  
     <div class="container">
       <h4 class="text-center color-white mt-6 pt-3 fw-600" data-aos="fade-up" data-aos-delay="0">
         Content Marketing <span class="color-01">Strategy</span>
@@ -433,36 +433,174 @@
   <section data-section="5" class="section-03">
     <div class="container">
       <div class="blocks">
-        <div class="block style-02">
-          <div class="img-bg" style="background-image:url('public/img/content/15.jpg');"></div>
+        <div class="block">
+          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+          <div class="text-wrapper ss-text-wrapper md style-02">
+            <h3 class="color-01 lh-2xs fw-500" data-aos="fade-up" data-aos-delay="0">
+              Maintenance <br> Management
+            </h3>
+            <div class="ss-card ss-card-11 mt-4" data-aos="fade-up" data-aos-delay="150">
+              <div class="text-container color-02">
+                <a class="title text-uppercase fw-600" href="#">Monitoring</a>
+                <p class="desc fw-400">
+                  ด้วยเครื่องมือด้าน Digital Business / Digital Marketing
+                </p>
+              </div>
+            </div>
+            <div class="ss-card ss-card-11 mt-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="text-container color-02">
+                <a class="title text-uppercase fw-600" href="#">Optimization</a>
+                <p class="desc fw-400">
+                  ทั้งการปรับแต่งโดยผู้เชี่ยวชาญ ที่มีประสบการณ์ และเทคโนโลยี AI
+                  (Artificial Intelligence) ที่จะทำให้การปรับแต่ง มีประสิทธิภาพ ประสิทธิผล
+                </p>
+              </div>
+            </div>
+            <div class="ss-card ss-card-11 mt-4" data-aos="fade-up" data-aos-delay="450">
+              <div class="text-container color-02">
+                <a class="title text-uppercase fw-600" href="#">Suggestion</a>
+                <p class="desc fw-400">
+                  คำแนะนำ จากผู้เชี่ยวชาญ นักการตลาด นักกลยุทธ์ ที่จะคอยให้ความช่วย
+                  เหลือตลอดโครงการ
+                </p>
+              </div>
+            </div>
+            <div class="ss-card ss-card-11 mt-4" data-aos="fade-up" data-aos-delay="600">
+              <div class="text-container color-02">
+                <a class="title text-uppercase fw-600" href="#">Reporting</a>
+                <p class="desc fw-400">
+                  รายงานทั้งแบบ PDF, Graph และการเข้ามาดูระบบ Monitoring ด้วยตัวคุณเอง ไร้การปรับแต่ง Report ใดๆ
+                </p>
+              </div>
+            </div>
+          </div>
         </div> 
         <div class="subblocks">
           <div class="subblock">
-            <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-            <div class="text-wrapper ss-text-wrapper md">
-              <?php for($number=1; $number<=6; $number++){?>
-                <div class="ss-card ss-card-07" data-aos="fade-up" data-aos-delay="0">
-                  <div class="number-container">
-                    <p class="h4"><?php echo $number ?></p>
-                  </div>
-                  <div class="text-container">
-                    <p class="title">
-                      วางแผนกลยุทธ์และแนวทางการดำเนินการสื่อสารประชาสัมพันธ์ ทั้ง ออนไลน์​และออฟไลน์ ผ่านสื่อต่างๆ 
-                    </p>
-                  </div>
-                </div>
-              <?php }?>
-          </div>
+            <div class="img-bg" style="background-image:url('public/img/bg/13.jpg');"></div>
           </div>
         </div> 
       </div>    
     </div>
  </section>
 
+ <section data-section="6" class="section-05 section-padding size-02" style="background-image:url('public/img/bg/14.jpg');">
+  <div class="container">
+    <div class="text-center">
+      <h3 class="color-01 text-uppercase fw-600" data-aos="fade-up" data-aos-delay="0">KPI</h3>    
+      <p class="h4 color-01 fw-400" data-aos="fade-up" data-aos-delay="150">
+        (Key Performance Indicator)
+      </p>  
+      <p class="color-white xs-no-br fw-100" data-aos="fade-up" data-aos-delay="300">
+        หลากหลายตัวเลือกในการวัดผล ความคุ้มค่าของการลงทุนด้าน <br>
+        Digital Business / Digital Marketing ที่ไม่เน้นแค่จำนวนคนดู (View), หรือจำนวน Like
+      </p>
+      <p class="h6 color-01 fw-400 mt-2" data-aos="fade-up" data-aos-delay="350">
+        แต่เรามุ่งเน้นไปที่ Value ที่แท้จริงของทุกโครงการ
+      </p>
+    </div> 
+    <div class="grids" data-aos="fade-up" data-aos-delay="500">
+      <div class="grid xl-50 lg-50 md-50 sm-50 xs-100">
+        <ul class="ss-list-01 style-02">
+          <li class="fw-200">	
+            Impression จำนวนการแสดงผล ที่ปรากฏใน Feed หรือ Time line ของ
+            ผู้ใช้วัดผลตามช่วง สัปดาห์ เดือน ไตรมาส หรือเปรียบเทียบก่อนหน้า
+          </li>
+          <li class="fw-200">	
+            Audience Growth Rate หรืออัตราการเติบโตของ
+            กลุ่มเป้าหมายตามช่วงเวลาที่วางไว้
+          </li>
+          <li class="fw-200">	
+            Post Reach จำนวนคนที่เห็น Post ของเราตั้งแต่เริ่มเผยแพร่ออกไป
+          </li>
+          <li class="fw-200">	
+            Applause Rate การเปรียบเทียบ คนที่กดไลค์ เทียบกับผู้ติดตามทั้งหมด
+            ว่า มีสัดส่วนเป็นเท่าไหร่ เติบโตยังไง ตามช่วงเวลา
+          </li>
+          <li class="fw-200">	
+            Conversion Rate เป็น % สำหรับใช้วัดจำนวนคนที่ลงมือทำบางสิ่งบาง
+            อย่างตามที่เราวางไว้ (Take Action)
+          </li>
+          <li class="fw-200">	
+            Cost Per Click (CPP) ตัวเลขสัดส่วนที่จะบอกว่าเราใช้เงินไปเท่าไหร่ต่อการ
+            คลิ๊กหนึ่งครั้ง จากโฆษณาของเรา
+          </li>
+          <li class="fw-200">	
+            Cost Per Thousand Impressions (CPM) คือจำนวนเงินที่เราจ่ายไป
+            สำหรับการที่จะทำให้คน 1000 คนเห็น Ads. ของเรา ยอดรวมของใบเสนอ
+            ราคา จาก Campaign หรือ ช่วงระยะเวลา
+          </li>
+          <li class="fw-200">	
+            กำไร (Profit) ที่ได้จากสื่อต่างๆ หรือจาก Campaign
+          </li>
+        </ul> 
+      </div>   
+      <div class="grid xl-50 lg-50 md-50 sm-50 xs-100">
+        <ul class="ss-list-01 style-02">
+          <li class="fw-200">	
+            การแสดงผล (Impression)Amplification Rate เป็น % เปรียบเทียบเนื้อหา
+            ว่าเรื่องไหนมีการแชร์ กันมากที่สุด
+          </li>
+          <li class="fw-200">	
+            Virality Rate เป็น % การเปรียบเทียบจำนวนคนที่แชร์โพสต์ เทียบกับ
+            จำนวนการแสดงผล (Impression)
+          </li>
+          <li class="fw-200">	
+            Social Media Conversion Rate คือตัวเลขสัดส่วนที่จะบอกว่า %ลฃ
+            Conversion Rate ทั้งหมดจาก Social Media ของเราเป็นเท่าไหร่
+          </li>
+          <li class="fw-200">	
+            จำนวนสมาชิก (Member Profile) ที่เพิ่มขึ้นจาก Campaign หรือตาม
+            ช่วงเวลา
+          </li>
+          <li class="fw-200">	
+            Bounce Rate หรือ สัดส่วนของคนที่เข้ามาที่เว็บไซต์หรือ Landing Page
+            แล้วไม่ได้ทำอะไรต่อ
+          </li>
+          <li class="fw-200">	
+            จำนวนผู้เช้าชม เว็บไซต์ หรือ Campaign ทั้งจาก Online ต่างๆ 
+            และ Social Media
+          </li>
+          <li class="fw-200">	
+            จำนวนการติดต่อ หรือขอใบเสนอราคา
+          </li>
+          <li class="fw-200">	
+            Bounce Rate หรือ สัดส่วนของคนที่เข้ามาที่เว็บไซต์หรือ Landing Page
+            แล้วไม่ได้ทำอะไรต่อ
+          </li>
+        </ul>
+      </div> 
+    </div>
+  </div>
+  </section>
+
+  <section data-section="7" class="section-06 section-padding bg-01">
+      <h4 class="lg color-white text-center fw-100" data-aos="fade-up" data-aos-delay="0">
+      ตัวอย่าง<span class="fw-400">ผลงาน</span>บางส่วนของเรา
+      </h4>     
+      <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="swiper-wrapper">
+        <?php for($i=0; $i<12; $i++){?>
+          <div class="swiper-slide">
+            <a class="ss-card ss-card-12 filter-01" href="#">
+              <div class="ss-img">
+                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+7) ?>.jpg');"></div>
+              </div>
+              <div class="icon">
+                <em class="fa-solid fa-plus"></em>
+              </div>
+            </a> 
+          </div>
+        <?php }?>
+      </div>
+    </div>   
+           
+  </section>
+
   <section class="section-01 size-01">
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
     <div class="container">
-      <div class="btns d-flex jc-center">
+      <div class="btns d-flex jc-center" data-aos="fade-up" data-aos-delay="0">
         <a class="btn btn-action style-01 btn-color-01" href="#">
           สอบถามรายละเอียดเพิ่มเติม
         </a>
@@ -471,10 +609,10 @@
   </section>
 
   <section data-section="4" class="section-02 section-padding" style="background:#000000">
-    <h4 class="text-center color-01 fw-600">งานบริการอื่นๆ 
-      <span class="fw-100 color-white">ของเรา</span>
+    <h4 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+      งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
     </h4> 
-    <div class="swiper-container mt-4">
+    <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="150">
       <div class="swiper-wrapper">
         <?php for($i=0; $i<12; $i++){?>
           <div class="swiper-slide">
