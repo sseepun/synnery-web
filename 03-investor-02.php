@@ -187,7 +187,6 @@
     </div>
   </section>
 
- 
   <section data-section="6" class="section-01 size-01">
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
     <div class="container">
