@@ -342,7 +342,8 @@ p.lg, .p.lg{font-size:1.125rem;}
 /* Text transform */
 .text-uppercase{text-transform:uppercase!important;}
 
-
+/* Text Shadow */
+.text-shadow{text-shadow:1.5px 1.5px #c3c3c3;}
 /* ============================================= 
                 Special List
    ============================================= */
