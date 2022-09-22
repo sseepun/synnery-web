@@ -181,7 +181,7 @@
     </div>  
   </section>
 
-  <section class="section-04">
+  <section data-section="7" class="section-04">
     <div class="grids no-gap">
       <?php for($i=0; $i<6; $i++){?>
         <div class="grid lg-1-3 style-02 mt-0" data-aos="fade-up" data-aos-delay="0">
@@ -403,7 +403,7 @@
     </div>  
   </section>
 
-  <section  data-section="4" class="section-02 section-padding" style="background:#000000">
+  <section data-section="4" class="section-02 section-padding" style="background:#000000">
     <h4 class="text-center color-01 fw-600">งานบริการอื่นๆ 
       <span class="fw-100 color-white">ของเรา</span>
     </h4> 
