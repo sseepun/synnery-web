@@ -25,31 +25,44 @@
     ]
   ?>
 
-  <div class="tab-container" data-section="2">
-    <div class="tabs tabs-01">
-      <?php foreach($categories as $j=>$k){?>
-        <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
-          <p class="lg title color-white"><?= $k['title'] ?></p>
-        </a>
-      <?php }?>
-    </div>
-    <div class="tab-contents size-01"  style="background-color:#f2f2f2">
-      <?php foreach($categories as $j=>$k){?>
-        <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
-          <div class="container">
-            <div class="data-container">
-              <h1 class="h1 color-01 lh-sm fw-600" data-aos="fade-up" data-aos-delay="0"><?= $k['title'] ?></h1> 
-              <p class="h6 color-01 fw-600" data-aos="fade-up" data-aos-delay="150">บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>  
-              <p class="h5 sm fw-400" data-aos="fade-up" data-aos-delay="150">เราเป็นบริษัทที่ปรึกษา</p>
-              <p class="h2 color-01 fw-600" data-aos="fade-up" data-aos-delay="300">“กลยุทธ์ด้านดิจิตัล สำหรับภาครัฐแบบครบวงจร”</p>
-              <p class="fw-400" data-aos="fade-up" data-aos-delay="300">เรานำเสนอโซลูชั่นผ่านการให้คำปรึกษาด้านกลยุทธ์ทางดิจิทัลและเทคโนโลยี</p>
-              <p class="fw-400" data-aos="fade-up" data-aos-delay="300">ที่ช่วยให้หน่วยงานหรือองค์กรได้ผลลัพธ์ที่ดีขึ้น เพื่อรับกับแนวทางการเปลี่ยนแปลงที่เกิดขึ้น</p>
+  <section data-section="2">
+    <div class="tab-container">
+      <div class="tabs tabs-01">
+        <?php foreach($categories as $j=>$k){?>
+          <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
+            <p class="lg title color-white"><?= $k['title'] ?></p>
+          </a>
+        <?php }?>
+      </div>
+      <div class="tab-contents size-01"  style="background-color:#f2f2f2">
+        <?php foreach($categories as $j=>$k){?>
+          <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
+            <div class="container">
+              <div class="data-container">
+                <h1 class="h1 color-01 lh-sm fw-600" data-aos="fade-up" data-aos-delay="0"><?= $k['title'] ?></h1> 
+                <p class="h6 color-01 fw-600" data-aos="fade-up" data-aos-delay="150">
+                  บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด
+                </p>  
+                <p class="h5 sm fw-400" data-aos="fade-up" data-aos-delay="150">
+                  เราเป็นบริษัทที่ปรึกษา
+                </p>
+                <p class="h2 color-01 fw-600" data-aos="fade-up" data-aos-delay="300">
+                  “กลยุทธ์ด้านดิจิตัล สำหรับภาครัฐแบบครบวงจร”
+                </p>
+                <p class="fw-400" data-aos="fade-up" data-aos-delay="300">
+                  เรานำเสนอโซลูชั่นผ่านการให้คำปรึกษาด้านกลยุทธ์ทางดิจิทัลและเทคโนโลยี
+                </p>
+                <p class="fw-400" data-aos="fade-up" data-aos-delay="300">
+                  ที่ช่วยให้หน่วยงานหรือองค์กรได้ผลลัพธ์ที่ดีขึ้น เพื่อรับกับแนวทางการเปลี่ยนแปลงที่เกิดขึ้น
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      <?php }?>
+        <?php }?>
+      </div>
     </div>
-  </div>
+  </section>
+  
 
   <section data-section="3" class="section-05 size-02 section-padding" style="background-image:url('public/img/bg/03.jpg');">
     <div class="container">
@@ -217,32 +230,32 @@
   </section>
 
   <section data-section="8" class="section-02 section-padding" style="background:#000000">
-    <h4 class="text-center color-01 fw-600">งานบริการอื่นๆ 
-      <span class="fw-100 color-white">ของเรา</span>
+    <h4 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+      งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
     </h4> 
-      <div class="swiper-container mt-4">
-        <div class="swiper-wrapper">
-          <?php for($i=0; $i<12; $i++){?>
-            <div class="swiper-slide">
-            <a class="ss-card ss-card-03 filter-01" href="#">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+    <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="swiper-wrapper">
+        <?php for($i=0; $i<12; $i++){?>
+          <div class="swiper-slide">
+          <a class="ss-card ss-card-03 filter-01" href="#">
+          <div class="ss-img square">
+            <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+          </div>
+          <div class="text-container">
+            <div class="title color-white" href="#">
+              Unlimited Microsite for Government
+              Unlimited Microsite for Government
+              Unlimited Microsite for Government
             </div>
-            <div class="text-container">
-              <div class="title color-white" href="#">
-                Unlimited Microsite for Government
-                Unlimited Microsite for Government
-                Unlimited Microsite for Government
-              </div>
-            </div>
-            <div class="icon">
-              <em class="fa-solid fa-plus"></em>
-            </div>
-          </a> 
-            </div>
-          <?php }?>
-        </div>
-      </div>        
+          </div>
+          <div class="icon">
+            <em class="fa-solid fa-plus"></em>
+          </div>
+        </a> 
+          </div>
+        <?php }?>
+      </div>
+    </div>        
   </section>
   
   <?php include_once('include/footer.php'); ?>
