@@ -146,7 +146,7 @@
       </div>
     </div>  
   </section>
-  
+
   <section data-section="5" class="section-05 section-padding" style="background-image:url('public/img/bg/06.jpg');">
     <div class="container">
       <h3 class="text-center color-white text-uppercase mb-4 fw-600" data-aos="fade-up" data-aos-delay="0">
