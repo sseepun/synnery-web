@@ -40,15 +40,24 @@
         <?php }?>
       </div>
       <!-- come back to edit later -->
-      <div class="grids">
-        <div class="grid xl-20">
-          <div class="ss-card ss-card-06">
-            <div class="icon">
-
-            </div>
-          </div>
-        </div>  
-      </div>
+      <!-- <ul class="ss-card ss-card-13">
+        <li class="icon">
+          <a href="#" class="active"><img class="inactive" src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
+          <a href="#"><img class="active" src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
+        </li>
+        <li class="icon">
+          <a href="#"><img src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
+        </li>
+        <li class="icon">
+          <a href="#"><img src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
+        </li>
+        <li class="icon">
+          <a href="#"><img src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
+        </li>
+        <li class="icon">
+          <a href="#"><img src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
+        </li>
+      </ul> -->
       <!---------------------------->
     </div>
   </section>

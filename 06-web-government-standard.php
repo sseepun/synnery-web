@@ -28,7 +28,7 @@
           <span class="h4 color-black fw-600">กว่า</span> <span class="h1 lg color-01 lh-2xs fw-600">25 ปี</span> 
         </p>
       </div>
-      <div class="grids mt-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="grids jc-center mt-4" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<3; $i++){?>
           <div class="grid lg-1-3 md-50 sm-50 xs-100">
             <a class="ss-card ss-card-05 filter-01">
@@ -50,6 +50,92 @@
       </div>
     </div>
   </section>
+
+  <section data-section="3">
+    <div class="ss-header-title">
+      <h4 class="color-white fw-100">
+        ตัวอย่าง<span class="fw-500">ผลงาน</span>
+      </h4>   
+    </div>
+    <!-- ยังเป็นรูปภาพอยู่นะครับ จะกลับมาแก้ไขให้ครับ -->
+    <img class="img" src="public/img/bg/banner-01.jpg" alt="Banner" />
+  </section>
+
+  <section data-section="4" class="section-03">
+    <div class="container">
+      <div class="blocks">
+        <div class="block style-02">
+          <div class="img-bg" style="background-image:url('public/img/content/16.jpg');"></div>
+        </div> 
+        <div class="subblocks">
+          <div class="subblock padding">
+            <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+            <div class="text-wrapper ss-text-wrapper md style-02">
+              <h3 class="color-01 lh-2xs" data-aos="fade-up" data-aos-delay="0">
+                <span class="fw-600">Tech & Tools</span> <span class="h4 lg color-black fw-400">ที่เราเลือกใช้</span>
+              </h3>
+              <div class="grids" data-aos="fade-up" data-aos-delay="150">
+                <?php for($i=0; $i<20; $i++){?>
+                  <div class="grid lg-20 md-20 sm-20 xs-1-3">
+                    <div class="ss-card ss-card-14">
+                      <div class="icon">
+                        <img class="inactive" src="public/img/icon/tech-01.png" alt="Icon Inactive" />
+                        <img class="active" src="public/img/icon/tech-01-active.png" alt="Icon Active" />
+                      </div>
+                      <div class="text-container">
+                        <p class="xs title text-center color-black fw-600">MySQL</p>
+                      </div>
+                    </div>
+                  </div>
+                <?php }?>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>    
+    </div>
+ </section>
+
+ <section data-section="5" class="section-05 section-padding" style="background-image:url('public/img/bg/06.jpg');">
+    <div class="container">
+      <h3 class="text-center color-white text-uppercase mb-4 fw-600" data-aos="fade-up" data-aos-delay="0">
+        แผนการลงทุน ร่วมทุน กับ ธุรกิจด้านอื่นๆ
+      </h3>  
+      <p class="text-center color-white md-no-br" data-aos="fade-up" data-aos-delay="150">
+        ด้วยพื้นฐานด้านการเป็นนักพัฒนาระบบโปรแกรมต่างๆ และการบริหารจัดการด้านการตลาด การเป็นที่ปรึกษาของเรามากกว่า 25 ปี <br>
+        เราเปิดกว้างเพื่อมองหา คู่ค้า ในธุรกิจด้านต่างๆ ที่สนใจนำเทคโนโลยี และองค์ความรู้ประสบการณ์ต่างๆ ของเรา 
+      </p>
+      <div class="ss-box xl mt-4">
+        <div class="grids" data-aos="fade-up" data-aos-delay="300">
+          <div class="grid lg-1-3 md-50 sm-50 xs-100">
+            <ul class="ss-list-01">
+              <li>ด้านการศึกษา</li>
+              <li>ด้านสุขภาพ</li>
+              <li>ด้านการเกษตร</li>
+              <li>ด้านการขนส่ง</li>
+            </ul> 
+          </div>   
+          <div class="grid lg-1-3 md-50 sm-50 xs-100">
+            <ul class="ss-list-01">
+              <li>ด้านอาหารและเครื่องดื่ม</li>
+              <li>ด้านแฟชั่น  </li>
+              <li>ด้านประกันชีวิต ประกันภาย</li>
+              <li>ด้านการท่องเที่ยว</li>
+            </ul> 
+          </div>
+          <div class="grid lg-1-3 md-50 sm-50 xs-100">
+            <ul class="ss-list-01">
+              <li>ด้านธุรกิจยานยนต์</li>
+              <li>ด้านอสังหาริมทรัพย์</li>
+              <li>ด้านการแพทย์</li>
+              <li>ด้านตลาดกลาง (Market Place)</li>
+            </ul> 
+          </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <section class="section-01 size-01">
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  

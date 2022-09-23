@@ -101,6 +101,7 @@ p.lg, .p.lg{font-size:1.125rem;}
     position:absolute; top:0; bottom:0; left:0; width:50vw;
     background-size:cover; background-position:center;
 }
+.section-03 .subblock.padding{padding:4rem 0;}
 @media screen and (max-width:1199.98px){
     .section-03 .block{padding:3rem 2rem 3rem 0;}
     .section-03 .subblock{padding:3rem 0 3rem 2rem;}
@@ -306,6 +307,7 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 .ss-card-10 .text-container > .title{text-align:center;}
 
+
 /* Special Card 11 */
 .ss-card-11{position:relative; cursor:pointer;}
 .ss-card-11 .text-container{border-left:3px solid #cccccc; padding:0 .5rem; transition:border .3s, color .3s;}
@@ -328,6 +330,48 @@ p.lg, .p.lg{font-size:1.125rem;}
     width:1.5rem; height:1.5rem; position:absolute; top:0; right:-.1rem; font-size:.875rem;
     display:flex; justify-content:center; align-items:center; background:#ec2c23; color:#ffffff; 
 }
+
+/* Special Card 13 */
+/* .ss-card-13{position:relative; display:flex;}
+.ss-card-13 .icon{
+    position:relative; width:5rem; height:5rem;
+    background:#f2f2f2; margin:.625rem;
+} 
+.ss-card-13 .icon a.active{
+   background-color: yellow; width:5rem; height:5rem; display:flex; justify-content:center; align-items:center;
+} 
+.ss-card-13 .icon img{display:block; width:auto; height:3rem; transition:transform .3s;}
+.ss-card-13 .icon:hover img.inactive{transform:translateY(-100%)!important;}
+.ss-card-13 .icon:hover img.active{transform:translateY(0)!important;}
+.ss-card-13 .icon img.inactive{transform:translate(0);}
+.ss-card-13 .icon img.active{transform:translateY(100%);} */
+
+/* Special Card 14 */
+.ss-card-14{position:relative; display:flex; flex-direction:column; align-items:center; cursor:pointer;}
+.ss-card-14 .icon{
+    position: relative; display:flex; justify-content:center; align-items:center; width:5rem; height: 5rem; z-index:2;
+    text-align: center; border: 2px solid #ffffff; background:#ffffff; border-radius: 50%; transition:all .3s ease;
+}
+.ss-card-14:hover .icon{border-color:#ec2c23; background:transparent;}
+.ss-card-14 .icon > img {
+   display:block; width:auto; height:35px; transition:opacity .3s;
+}
+.ss-card-14 .icon > img.active {
+    position:absolute; transform:translate(50%,-50%); top:50%; 
+    left:auto; right:50%; opacity:0;
+}
+.ss-card-14:hover .icon > img.inactive{opacity:0;}
+.ss-card-14:hover .icon > img.active{opacity:1;}
+
+.ss-card-14 .icon::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;  margin: auto; background: #ec2c23; 
+    border-radius:50%; z-index:-1; width: calc(100% - 1.25rem); height: calc(100% - 1.25rem); visibility: hidden; 
+    opacity:0; transform:scale(.8); transition:all .3s ease;
+}
+.ss-card-14:hover .icon::after {
+    visibility: visible; opacity:1; transform:scale(1);
+}
+.ss-card-14 .text-container > .title{text-align:center;}
 
 /* ============================================= 
                    Button
@@ -396,7 +440,10 @@ p.lg, .p.lg{font-size:1.125rem;}
 /* ============================================= 
                    Special Header
    ============================================= */
-
+.ss-header-title{
+    display:flex; align-items:center; justify-content:center; background:#ec2c23; 
+    height:100%; min-height:8.5rem;
+}
 
 
 
