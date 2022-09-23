@@ -7,6 +7,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css">
 
+<link rel="stylesheet" href="public/lib/fancybox-3.5.7/dist/jquery.fancybox.min.css" />
 <link rel="stylesheet" href="public/lib/simplebar/simplebar.css" />
 <link rel="stylesheet" href="public/lib/aos-2.3.1/aos.min.css" />
 
