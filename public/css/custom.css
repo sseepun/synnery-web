@@ -422,6 +422,24 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 .ss-card-16 .text-container > .title{text-align:center;}
 
+/* Special Card 17 */
+.ss-card-17{display:flex; flex-direction:column; justify-content:center; align-items:center;}
+.ss-card-17 .text-heading{
+   position: relative; display:flex; justify-content:center; align-items:center; width:7rem; height:7rem; z-index:2;
+    background:#ffffff; border-radius:50%; border:2px solid #ec2c23; transition:all .3s ease; cursor:pointer;
+}
+.ss-card-17:hover .text-heading{border-color:#ec2c23; background:#ec2c23;}
+.ss-card-17:hover .text-heading > .title{color:#ffffff!important;}
+.ss-card-17 .text-heading::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;  margin: auto; background: #ec2c23; 
+    border-radius:50%; z-index:-1; width: calc(100% - .0625rem); height: calc(100% - .0625rem); visibility: hidden; 
+    opacity:0; transform:scale(.8); transition:all .3s ease;
+}
+.ss-card-17:hover .text-heading::after {
+    visibility: visible; opacity:1; transform:scale(1);
+}
+.ss-card-17 .text-container > .title{text-align:center;}
+
 /* ============================================= 
                    Button
    ============================================= */

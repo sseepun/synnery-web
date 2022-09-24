@@ -61,7 +61,37 @@
     <img class="img" src="public/img/bg/banner-01.jpg" alt="Banner" />
   </section>
 
-  <section data-section="4" class="section-03">
+  <section data-section="4" class="section-01 size-03 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/20.jpg');"></div> 
+    <div class="container">
+      <h4 class="lg text-center color-black fw-200" data-aos="fade-up" data-aos-delay="0" >
+        พร้อมรองรับ<span class="color-01 fw-500">มาตรฐานต่างๆ</span>
+      </h4>  
+      <div class="ss-box xl" data-aos="fade-up" data-aos-delay="150">
+        <div class="grids jc-center mt-4">
+          <?php for($i=0; $i<7; $i++){?>
+            <div class="grid lg-25">
+              <a class="ss-card ss-card-17" href="#">
+                <div class="text-heading">
+                  <p class="h6 title color-01 fw-600">W3C</p>
+                </div>
+                <div class="text-container mt-3">
+                  <p class="text-center color-01 lh-sm fw-600">
+                    World Wide Web <br> Consortium
+                  </p>
+                  <p class="xs text-center color-black fw-600 mt-1">
+                    มาตรฐานเว็บไซต์ของหน่วยงานภาครัฐ <br> ให้เป็นไปในทิศทางเดียวกัน
+                  </p>
+                </div>
+              </a>
+            </div>
+          <?php }?>
+        </div>  
+      </div> 
+    </div>
+  </section>
+
+  <section data-section="5" class="section-03">
     <div class="container">
       <div class="blocks">
         <div class="block style-02">
@@ -96,7 +126,7 @@
     </div>
  </section>
 
- <section data-section="5" class="section-05 section-padding" style="background-image:url('public/img/bg/15.jpg');">
+ <section data-section="6" class="section-05 section-padding" style="background-image:url('public/img/bg/15.jpg');">
     <div class="container">
       <h3 class="text-center color-white text-uppercase lh-sm fw-500" data-aos="fade-up" data-aos-delay="0">
         มาตรฐานเว็บไซต์ภาครัฐ เวอร์ชัน 2.0
@@ -141,7 +171,7 @@
     </div>
   </section>
 
-  <section data-section="6" class="section-03">
+  <section data-section="7" class="section-03">
     <div class="container">
       <div class="blocks">
         <div class="block">
@@ -170,7 +200,7 @@
     </div>
   </section>
 
-  <section data-section="7" class="section-06">
+  <section data-section="8" class="section-06">
     <div class="grids no-gap">
       <div class="grid lg-50 mt-0">
         <div class="grids no-gap height-full">
@@ -205,7 +235,7 @@
     </div>                          
   </section>
 
-  <section data-section="8" class="section-01 section-padding">
+  <section data-section="9" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/16.jpg');"></div> 
     <div class="container">
       <h4 class="lg text-center color-white fw-100"data-aos="fade-up" data-aos-delay="0" >
@@ -228,7 +258,7 @@
     </div>
   </section>
 
- <section data-section="9" class="section-03">
+ <section data-section="10" class="section-03">
   <div class="container">
     <div class="blocks">
       <div class="block">
@@ -255,7 +285,7 @@
   </div>
  </section>
 
- <section data-section="10" class="section-06">
+ <section data-section="11" class="section-06">
     <div class="grids no-gap">
       <div class="grid lg-50 mt-0">
         <div class="grids no-gap height-full">
@@ -289,7 +319,7 @@
     </div>                          
   </section>
 
-  <section data-section="11" class="section-06">
+  <section data-section="12" class="section-06">
     <div class="grids no-gap">
       <div class="grid lg-50 mt-0">
         <div class="block">
@@ -324,7 +354,7 @@
     </div>                          
   </section>
 
-  <section data-section="12" class="section-01 size-02 section-padding">
+  <section data-section="13" class="section-01 size-02 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/17.jpg');"></div> 
     <div class="container">
       <div class="text-center">
@@ -357,7 +387,7 @@
     </div>    
   </section>
 
-  <section data-section="13" class="section-03">
+  <section data-section="14" class="section-03">
     <div class="container">
       <div class="blocks">
         <div class="block">
@@ -392,7 +422,7 @@
   </h4>   
   </section>
 
- <section data-section="14" class="section-01 size-01">
+ <section data-section="15" class="section-01 size-01">
     <div class="img-bg" style="background-image:url('public/img/bg/19.jpg');"></div> 
     <div class="container">
       <div class="video-button" data-aos="fade-up" data-aos-delay="150">
@@ -406,7 +436,7 @@
     </div>        
   </section>
 
-  <section class="section-01 size-01" >
+  <section data-section="16" class="section-01 size-01" >
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
     <div class="container">
       <div class="btns d-flex jc-center" data-aos="fade-up" data-aos-delay="0">
@@ -417,7 +447,7 @@
     </div>  
   </section>
 
-  <section class="section-02 section-padding" style="background:#000000">
+  <section data-section="17" class="section-02 section-padding" style="background:#000000">
     <h4 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
       งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
     </h4> 
