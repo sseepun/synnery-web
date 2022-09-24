@@ -368,7 +368,7 @@ p.lg, .p.lg{font-size:1.125rem;}
 .ss-card-14{position:relative; display:flex; flex-direction:column; align-items:center; cursor:pointer;}
 .ss-card-14 .icon{
     position: relative; display:flex; justify-content:center; align-items:center; width:5rem; height: 5rem; z-index:2;
-    text-align: center; border: 2px solid #ffffff; background:#ffffff; border-radius: 50%; transition:all .3s ease;
+    text-align:center; border:2px solid #ffffff; background:#ffffff; border-radius: 50%; transition:all .3s ease;
 }
 .ss-card-14:hover .icon{border-color:#ec2c23; background:transparent;}
 .ss-card-14 .icon > img {
@@ -413,12 +413,12 @@ p.lg, .p.lg{font-size:1.125rem;}
 .ss-card-16:hover .icon > img.active{opacity:1;}
 
 .ss-card-16 .icon::after {
-    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;  margin: auto; background: #ffffff; 
+    content: ''; position: absolute; top:0; left:0; right:0; bottom:0;  margin:auto; background:#ffffff; 
     border-radius:50%; z-index:-1; width: calc(100% - 1.25rem); height: calc(100% - 1.25rem); visibility: hidden; 
     opacity:0; transform:scale(.8); transition:all .3s ease;
 }
 .ss-card-16:hover .icon::after {
-    visibility: visible; opacity:1; transform:scale(1);
+    visibility:visible; opacity:1; transform:scale(1);
 }
 .ss-card-16 .text-container > .title{text-align:center;}
 
@@ -499,9 +499,9 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 
 
-/* ============================================================== 
-      Video Button Play
-=================================================================== */
+/* ============================================
+                 Video Button Play
+=============================================== */
   .video-play-button {
     position: relative; border-radius: 50%; box-sizing: content-box; 
     color:#ffffff; display:flex; justify-content:center;
@@ -509,10 +509,10 @@ p.lg, .p.lg{font-size:1.125rem;}
   .video-play-button:before {
     content: ""; position: absolute; left:50%; top:50%; display:block;
     width:4.5rem; height:4.5rem; background: #ec2c23; border-radius: 50%;
-    animation: pulse-border 1500ms ease-out infinite; 
+    animation:pulse-border 1500ms ease-out infinite; 
   }
   .video-play-button:after {
-    content: ""; position: absolute; left:50%; top:50%; transform: translateX(-50%) translateY(-50%);
+    content: ""; position: absolute; left:50%; top:50%; transform:translateX(-50%) translateY(-50%);
     display: block; width:4.5rem; height:4.5rem; background:#ec2c23; border-radius:50%; transition:all 200ms;
   }
   .video-play-button em{
@@ -531,3 +531,49 @@ p.lg, .p.lg{font-size:1.125rem;}
       opacity: 0;
     }
   }
+
+  /* Banner 01 */
+.banner-01{position:relative; width:100%; display:flex; align-items:center;}
+.banner-01 .swiper-container .swiper-slide{position:relative; height:500px;}
+.banner-01 .swiper-slide > .wrapper{
+    position:relative; width:100%; height:100%; display:flex; align-items:center;
+}
+.banner-01 .swiper-slide .img-bg{
+    position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+    background-position:center;
+}
+.banner-01 .swiper-slide > .wrapper .text-wrapper{
+    position:relative; width:100%; height:100%;
+}
+.banner-01 .text-wrapper .pattern{margin-top:-3rem;}
+.banner-01 .text-wrapper .pattern img{display:block; width:6.6875rem; height:6.6875rem; margin:0 auto;}
+.banner-01 .dots{
+    position:absolute; bottom:1.5rem; left:0; right:0; z-index:2;
+    display:flex; justify-content:center; align-items:center;
+}
+.banner-01 .swiper-pagination-bullet{
+    width:.6875rem; height:.6875rem; margin:0 .375rem!important; opacity:1;
+}
+.banner-01.style-02 .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width:1rem; height:1rem; background:transparent; border:3px solid transparent;
+}
+.banner-01.style-02 .arrow-container{
+    position:absolute; top:0; bottom:0; left:2.5rem; right:2.5rem; pointer-events:none;
+    display:flex; align-items:center; justify-content:space-between; z-index:2;
+}
+.banner-01.style-03 .swiper-container .swiper-slide{position:relative; height:600px;}
+.banner-01 .arrow{display:block; pointer-events:auto; cursor:pointer; transition:opacity .25s;}
+.banner-01 .arrow:hover{opacity:.75;}
+.banner-01 .arrow > .icon{width:3rem; height:3rem; display:flex; justify-content:center; align-items:center;}
+.banner-01 .arrow img{display:block; height:3rem; width:auto;} 
+@media screen and (max-width:1199.98px){
+    .banner-01 .dots{bottom:1rem;}
+    .banner-01 .swiper-pagination-bullet{width:.625rem; height:.625rem; margin:0 .3125rem}
+}
+@media screen and (max-width:767.98px){
+    .banner-01.style-02 .arrow-container{display:none;}
+}
+@media screen and (max-width:991.98px){
+    .banner-01 .dots{bottom:.75rem;}
+    .banner-01 .swiper-pagination-bullet{width:.562rem; height:.562rem; margin:0 .25rem}
+}
