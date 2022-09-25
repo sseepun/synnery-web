@@ -440,6 +440,27 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 .ss-card-17 .text-container > .title{text-align:center;}
 
+/* Special Card 18 */
+.ss-card-18{position:relative; overflow:hidden; cursor:pointer;}
+.ss-card-18:before{width:.125rem; height:1.875rem; left:1.25rem; top:1.25rem;}
+.ss-card-18:after{width:1.875rem; height:.125rem; left:1.25rem; top:1.25rem;}
+.ss-card-18 .ss-card-inner::before{width:.125rem; height:1.875rem; right:1.25rem; bottom:1.25rem;}
+.ss-card-18 .ss-card-inner::after{width:1.875rem; height:.125rem; right:1.25rem; bottom:1.25rem;}
+.ss-card-18:before, .ss-card-18::after,
+.ss-card-18 .ss-card-inner::before, .ss-card-18 .ss-card-inner::after{
+    content:""; position:absolute; background-color:#ffffff;
+    transition:all .5s; overflow:hidden; z-index:1;
+}
+.ss-card-18:hover::before, .ss-card-18:hover .ss-card-inner::before{height:100%;}
+.ss-card-18:hover::after, .ss-card-18:hover .ss-card-inner::after{width:100%;}
+
+.ss-card-18 .icon-container{
+    position:absolute; top:0; bottom:0; left:0; right:0;
+    display:flex; justify-content:center; align-items:center; 
+}
+.ss-card-18 .icon-container .icon{display:block; width:4.5rem;}
+.ss-card-18 .icon-container .icon > img{display:block; width:100%; height:auto;}
+
 /* ============================================= 
                    Button
    ============================================= */
