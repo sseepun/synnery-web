@@ -27,12 +27,14 @@
 
   <section data-section="2">
     <div class="tab-container">
-      <div class="tabs tabs-01">
-        <?php foreach($categories as $j=>$k){?>
-          <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
-            <p class="lg title color-white"><?= $k['title'] ?></p>
-          </a>
-        <?php }?>
+    <div class="bg-01">
+        <div class="tabs tabs-01">
+          <?php foreach($categories as $j=>$k){?>
+            <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
+              <p class="lg title color-white"><?= $k['title'] ?></p>
+            </a>
+          <?php }?>
+        </div>
       </div>
       <div class="tab-contents size-01"  style="background-color:#f2f2f2">
         <?php foreach($categories as $j=>$k){?>

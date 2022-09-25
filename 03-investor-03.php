@@ -27,12 +27,14 @@
 
   <section data-section="2">
     <div class="tab-container">
-      <div class="tabs tabs-01">
-        <?php foreach($categories as $j=>$k){?>
-          <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
-            <p class="lg title color-white"><?= $k['title'] ?></p>
-          </a>
-        <?php }?>
+      <div class="bg-01">
+        <div class="tabs tabs-01">
+          <?php foreach($categories as $j=>$k){?>
+            <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
+              <p class="lg title color-white"><?= $k['title'] ?></p>
+            </a>
+          <?php }?>
+        </div>
       </div>
       <div class="tab-contents size-01" style="background-color:#f2f2f2">
         <?php foreach($categories as $j=>$k){?>
@@ -102,14 +104,14 @@
 
  <section data-section="4">
   <div class="tab-container">
-    <div class="tabs tabs-01">
-      <?php foreach($categories as $j=>$k){?>
-        <a class="tab md style-02 <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
-          <p class="lg title color-white">
-            <?= $k['title'] ?>
-          </p>
-        </a>
-      <?php }?>
+    <div class="bg-01">
+      <div class="tabs tabs-01 style-02">
+        <?php foreach($categories as $j=>$k){?>
+          <a class="tab width-50 <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
+            <p class="lg title color-white"><?= $k['title'] ?></p>
+          </a>
+        <?php }?>
+      </div>
     </div>
     <div class="tab-contents size-02" data-section="4">
       <div class="img-bg" style="background-image:url('public/img/bg/05.jpg');"></div> 

@@ -51,7 +51,7 @@
               <p class="lg title color-white"><?= $k['title'] ?></p>
             </a>
           <?php }?>
-      </div>
+        </div>
       </div>
       <div class="tab-contents section-padding" data-section="2">
         <?php foreach($categories as $j=>$k){?>
