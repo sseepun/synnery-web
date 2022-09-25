@@ -165,9 +165,10 @@ p.lg, .p.lg{font-size:1.125rem;}
 
 /* Tab Container - Tabs 01 */
 .tab-container .tabs.tabs-01{
-    width:100%; min-height:3.5rem; display:flex; justify-content:center; align-items:center; background:#ec2c23;
+    width:100%; min-height:3.5rem; display:flex; justify-content:center; align-items:center;
+    max-width:400px; margin:0 auto; flex-wrap:wrap;
 }
-.tab-container .tabs.tabs-01 > .tab{position:relative; min-width:9rem; text-align:center;}
+.tab-container .tabs.tabs-01 > .tab{position:relative; width:33.33%; text-align:center;}
 .tab-container .tabs.tabs-01 > .tab.md{min-width:17rem!important;}
 .tab-container .tabs.tabs-01 > .tab > .title{transition:all .3s;}
 .tab-container .tabs.tabs-01 > .tab.active > .title{font-weight:600;}
@@ -178,6 +179,11 @@ p.lg, .p.lg{font-size:1.125rem;}
 .tab-container .tabs.tabs-01 > .tab:last-child::after{display:none;}
 .tab-container .tabs.tabs-01 > .tab.style-02::after{right:1.5rem;}
 
+@media screen and (max-width:320.98px){
+ .tab-container .tabs.tabs-01{padding:1rem 0;}
+ .tab-container .tabs.tabs-01 > .tab{width:50%;}
+ .tab-container .tabs.tabs-01 > .tab:nth-child(2)::after{display:none;}
+}
 
 /* ============================================= 
                    Special Card
