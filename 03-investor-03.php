@@ -27,7 +27,7 @@
 
   <section data-section="2">
     <div class="tab-container">
-      <div class="bg-01">
+    <div class="bg-01">
         <div class="tabs tabs-01">
           <?php foreach($categories as $j=>$k){?>
             <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
@@ -36,27 +36,24 @@
           <?php }?>
         </div>
       </div>
-      <div class="tab-contents size-01" style="background-color:#f2f2f2">
+      <div class="tab-contents section-padding" class="section-01">
+        <div class="img-bg" style="background-image:url('public/img/bg/24.jpg');"></div> 
         <?php foreach($categories as $j=>$k){?>
           <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
             <div class="container">
               <div class="data-container">
-                <h1 class="h1 color-01 lh-sm fw-600" data-aos="fade-up" data-aos-delay="0">
-                  <?= $k['title'] ?>
-                </h1> 
-                <p class="h6 color-01 fw-600" data-aos="fade-up" data-aos-delay="150">
+                <h1 class="h1 color-01 lh-sm fw-600 text-shadow" data-aos="fade-up" data-aos-delay="0"><?= $k['title'] ?></h1> 
+                <p class="h6 text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="150">
                   บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด
                 </p>  
                 <p class="h5 sm fw-400" data-aos="fade-up" data-aos-delay="150">
                   เราเป็นบริษัทที่ปรึกษา
                 </p>
-                <p class="h2 color-01 fw-600" data-aos="fade-up" data-aos-delay="300">
+                <p class="h2 text-center lh-sm color-01 fw-600" data-aos="fade-up" data-aos-delay="300">
                   “กลยุทธ์ด้านดิจิตัล สำหรับภาครัฐแบบครบวงจร”
                 </p>
-                <p class="fw-400" data-aos="fade-up" data-aos-delay="300">
-                  เรานำเสนอโซลูชั่นผ่านการให้คำปรึกษาด้านกลยุทธ์ทางดิจิทัลและเทคโนโลยี
-                </p>
-                <p class="fw-400" data-aos="fade-up" data-aos-delay="300">
+                <p class="text-center xs-no-br fw-400" data-aos="fade-up" data-aos-delay="300">
+                  เรานำเสนอโซลูชั่นผ่านการให้คำปรึกษาด้านกลยุทธ์ทางดิจิทัลและเทคโนโลยี <br>
                   ที่ช่วยให้หน่วยงานหรือองค์กรได้ผลลัพธ์ที่ดีขึ้น เพื่อรับกับแนวทางการเปลี่ยนแปลงที่เกิดขึ้น
                 </p>
               </div>
