@@ -248,6 +248,14 @@ $(function(){ 'use strict';
              slidesPerView: 2,
              spaceBetween: 20,
              grabCursor: true,
+             navigation: {
+                nextEl: self.find('.btn-icon-next'),
+                prevEl: self.find('.btn-icon-prev'),
+            },
+            pagination: {
+                el: self.find('.dots'),
+                clickable: true,
+            },
              breakpoints: {
                  1199.98: { slidesPerView: 3, spaceBetween: 20 },
                  991.98: { slidesPerView: 2, spaceBetween: 20 },

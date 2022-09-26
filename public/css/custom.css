@@ -166,6 +166,51 @@ p.lg, .p.lg{font-size:1.125rem;}
     .section-06 .block > .text-wrapper{padding-left:3rem;}
 }
 
+
+/* Section 07 */
+.section-07 .swiper-container{padding:4rem 0;}
+.section-07 .swiper-container .swiper-slide{position:relative;}
+.section-07 .swiper-slide > .wrapper{
+    position:relative; width:100%; height:100%; display:flex; align-items:center;
+}
+
+.section-07 .swiper-slide > .wrapper .text-wrapper{
+    position:relative; width:100%; height:100%;
+}
+.section-07 .dots{
+    position:absolute; bottom:1.5rem; left:0; right:0; z-index:2;
+    display:flex; justify-content:center; align-items:center;
+}
+.section-07 .swiper-pagination-bullet{width:.4375rem; height:.4375rem; background:#ec2c23!important; opacity:1;}
+.section-07 .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width:.9375rem; height:.9375rem; border:1px solid #ec2c23;  position:relative; background:transparent!important;
+}
+.section-07 .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    content: ''; position:absolute; top:0; left:0; right:0; bottom: 0; margin:auto; background:#ec2c23; 
+    border-radius:50%; width: calc(100% - .109375rem); height: calc(100% - .109375rem); transform:scale(.6); 
+}
+.section-07 .arrow-container{
+    position:absolute; top:0; bottom:0; left:2.5rem; right:2.5rem; pointer-events:none;
+    display:flex; align-items:center; justify-content:space-between; z-index:2;
+}
+
+.section-07 .arrow{display:block; pointer-events:auto; cursor:pointer; transition:opacity.25s;}
+.section-07 .arrow:hover{opacity:.75;}
+.section-07 .arrow > .icon{width:3rem; height:3rem; display:flex; justify-content:center; align-items:center;}
+.section-07 .arrow img{display:block; height:3rem; width:auto;} 
+@media screen and (max-width:1199.98px){
+    .section-07 .dots{bottom:1rem;}
+    .section-07 .swiper-pagination-bullet{width:.625rem; height:.625rem; margin:0 .3125rem}
+}
+@media screen and (max-width:767.98px){
+    .section-07 .arrow-container{display:none;}
+}
+@media screen and (max-width:991.98px){
+    .section-07 .dots{bottom:.75rem;}
+    .section-07 .swiper-pagination-bullet{width:.562rem; height:.562rem; margin:0 .25rem}
+}
+
+
 /* Tab Container - Tabs 01 */
 .tab-container .tabs.tabs-01{
     width:100%; min-height:3.5rem; display:flex; justify-content:center; align-items:center;

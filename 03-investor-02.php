@@ -102,7 +102,8 @@
 
   <section data-section="4">
     <div class="tab-container">
-      <div class="bg-01">
+      <div class="bg-01 pt-5 pb-5">
+        <!-- <h4 class="text-center color-white fw-600">แผนการพัฒนาสินค้าและบริการ</h4> -->
         <div class="tabs tabs-01 style-02">
           <?php foreach($categories as $j=>$k){?>
             <a class="tab width-50 <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
