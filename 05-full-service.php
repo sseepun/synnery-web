@@ -194,16 +194,17 @@
     <div class="grids no-gap">
       <?php for($i=0; $i<6; $i++){?>
         <div class="grid lg-1-3 style-02 mt-0" data-aos="fade-up" data-aos-delay="0">
-          <a class="ss-card ss-card-09" href="#">
-            <div class="ss-img horizontal-2 no-hover">
-               <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
-               <div class="hover-container op-100">
-                  <div class="icon">
-                    <img src="public/img/icon/play.png" alt="Hover Icon" />
-                  </div>
-                </div>
+          <a class="ss-card ss-card-18">
+            <div class="ss-img horizontal-2">
+              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
             </div>
-          </a>
+            <div div class="ss-card-inner"></div>
+            <div class="icon-container">
+              <div class="icon">
+                <img class="img" src="public/img/icon/play.png" alt="Banner" />
+              </div>
+            </div>
+          </a> 
         </div>
       <?php }?> 
 
@@ -226,16 +227,17 @@
 
       <?php for($i=0; $i<7; $i++){?>
         <div class="grid lg-1-3 style-02 mt-0" data-aos="fade-up" data-aos-delay="150">
-          <a class="ss-card ss-card-09" href="#">
-            <div class="ss-img horizontal-2 no-hover">
-               <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
-               <div class="hover-container op-100">
-                  <div class="icon">
-                    <img src="public/img/icon/play.png" alt="Hover Icon" />
-                  </div>
-                </div>
+          <a class="ss-card ss-card-18">
+            <div class="ss-img horizontal-2">
+              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
             </div>
-          </a>
+            <div div class="ss-card-inner"></div>
+            <div class="icon-container">
+              <div class="icon">
+                <img class="img" src="public/img/icon/play.png" alt="Banner" />
+              </div>
+            </div>
+          </a> 
         </div>
       <?php }?>
 
