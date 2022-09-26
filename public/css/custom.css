@@ -87,6 +87,7 @@ p.lg, .p.lg{font-size:1.125rem;}
 /* Section 03 */
 .section-03{overflow:hidden;}
 .section-03 .blocks{width:100%; display:flex; flex-wrap:wrap; min-height:500px;}
+.section-03 .blocks.size-01{min-height:325px;}
 .section-03 .block{
     position:relative; width:50%; padding:3.5rem 2rem 3.5rem 0;
     display:flex; align-items:center; justify-content:center;

@@ -42,7 +42,7 @@
     ]
   ?>
 
-  <section data-section="2" class="section-07">
+  <section data-section="3" class="section-07">
     <div class="tab-container">
       <div class="bg-01">
         <div class="tabs tabs-01">
@@ -95,7 +95,26 @@
     </div>   
   </section>
 
-  <section data-section="16" class="section-01 size-01" >
+  <section data-section="4" class="section-03">
+    <div class="container">
+      <div class="blocks">
+        <div class="block style-02">
+          <div class="img-bg" style="background-image:url('public/img/content/20.jpg');"></div>
+        </div> 
+        <div class="subblocks">
+          <div class="subblock">
+            <div class="img-bg" style="background-image:url('public/img/bg/22.jpg');"></div>
+            <div class="text-wrapper ss-text-wrapper md">
+              <h3 class="color-01 lh-2xs fw-600">สนใจสมัครงานกับเรา</h3>
+              <p class="lg color-black fw-500">ดูตำแหน่งที่เปิดรับได้เลย</p>      
+            </div>
+          </div>
+        </div> 
+      </div>    
+    </div>
+ </section>
+
+  <section data-section="5" class="section-01 size-01" >
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
     <div class="container">
       <div class="btns d-flex jc-center" data-aos="fade-up" data-aos-delay="0">
@@ -106,7 +125,7 @@
     </div>  
   </section>
 
-  <section data-section="17" class="section-02 section-padding" style="background:#000000">
+  <section data-section="6" class="section-02 section-padding" style="background:#000000">
     <h4 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
       งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
     </h4> 
