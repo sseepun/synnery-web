@@ -264,3 +264,50 @@ $(function(){ 'use strict';
          });
      });
  }
+
+ // Section 08
+ var section08= $('.section-08');
+ if(section08.length){
+    section08.find('.swiper-container').each(function(){
+         var self = $(this);
+         new Swiper(self, {
+             loop: true,
+             speed: 800,
+             slidesPerView: 1,
+             spaceBetween: 20,
+             grabCursor: true,
+             navigation: {
+                nextEl: self.find('.btn-icon-next'),
+                prevEl: self.find('.btn-icon-prev'),
+            },
+            pagination: {
+                el: self.find('.dots'),
+                type: "fraction",
+            },
+             breakpoints: {
+                 1199.98: { slidesPerView: 3, spaceBetween: 20 },
+                 991.98: { slidesPerView: 2, spaceBetween: 20 },
+                 575.98: { slidesPerView: 1.4, spaceBetween: 20 },
+             },
+         });
+     });
+ }
+
+ // Section 08 (pagination style 02)
+ var section08= $('.section-08');
+ if(section08.length){
+    section08.find('.swiper-container').each(function(){
+         var self = $(this);
+         new Swiper(self, {
+             loop: true,
+             speed: 800,
+             slidesPerView: 1,
+             spaceBetween: 20,
+             grabCursor: true,
+             pagination: {
+                el: self.find('.dots-style-02'),
+                clickable: true,
+            },
+         });
+     });
+ }

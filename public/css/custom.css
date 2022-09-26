@@ -4,18 +4,24 @@
 .color-01{color:#ec2c23!important;}
 .color-02{color:#999999!important;}
 .color-03{color:#666666!important;}
+.color-04{color:#f0f0f0!important}
+.color-05{color:#f2f2f2!important}
 
 .bg-white{background:#ffffff!important;}
 .bg-black{background:#000000!important;}
 .bg-01{background:#ec2c23!important;}
 .bg-02{background:#999999!important;}
 .bg-03{background:#666666!important;}
+.bg-04{background:#f0f0f0!important;}
+.bg-05{background:#f2f2f2!important;}
 
 .bcolor-white{border-color:#ffffff!important;}
 .bcolor-black{border-color:#000000!important;}
 .bcolor-01{border-color:#ec2c23!important;}
 .bcolor-02{border-color:#999999!important;}
 .bcolor-03{border-color:#666666!important;}
+.bcolor-04{border-color:#f0f0f0!important;}
+.bcolor-05{border-color:#f2f2f2!important;}
 
 /* Typography */
 h1, .h1{font-size:4.5rem;} h1.lg, .h1.lg{font-size:5.5rem;}
@@ -167,7 +173,6 @@ p.lg, .p.lg{font-size:1.125rem;}
     .section-06 .block > .text-wrapper{padding-left:3rem;}
 }
 
-
 /* Section 07 */
 .section-07 .swiper-container{padding:4rem 0;}
 .section-07 .swiper-container .swiper-slide{position:relative;}
@@ -211,6 +216,53 @@ p.lg, .p.lg{font-size:1.125rem;}
     .section-07 .swiper-pagination-bullet{width:.562rem; height:.562rem; margin:0 .25rem}
 }
 
+/* Section 08 */
+.section-08{
+    position:relative; height:100%; min-height:485px; background-size:cover; 
+    background-repeat:no-repeat; background-position:center; display:flex; align-items:center;
+}
+.section-08 > .img-bg{
+    position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+    background-position:center; background-repeat:no-repeat;
+}
+.section-08 .swiper-slide{padding:0 10rem 2rem 10rem;}
+
+.section-08 .dots-container{
+    display:flex; max-width:600px; margin:0 auto; justify-content:center; align-items:center;
+}
+.section-08 .dots.swiper-pagination-fraction{width:auto;}
+.section-08 .dots-container .line{width:20px; height:2px; background:#ec2c23; margin:0 1rem;}
+
+.section-08 .dots{color:#999999; font-size:.875rem; font-weight:400;}
+
+.section-08 .dots-style-02{
+    display:flex; justify-content:center; align-items:center;
+}
+
+.section-08 .swiper-pagination-bullet{
+    width:.4375rem; height:.4375rem; background:#ec2c23!important; opacity:1; margin:0 .5rem 0 0;
+}
+.section-08 .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width:.9375rem; height:.9375rem; border:1px solid #ec2c23;  position:relative; background:transparent!important;
+}
+.section-08 .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    content: ''; position:absolute; top:0; left:0; right:0; bottom: 0; margin:auto; background:#ec2c23; 
+    border-radius:50%; width: calc(100% - .109375rem); height: calc(100% - .109375rem); transform:scale(.6); 
+}
+
+.section-08 .arrow-container{
+    position:absolute; top:0; bottom:0; left:2.5rem; right:2.5rem; pointer-events:none;
+    display:flex; align-items:center; justify-content:space-between; z-index:2;
+}
+@media screen and (max-width:575.98px){
+    .section-08{min-height:0;}
+}
+@media screen and (max-width:767.98px){
+    .section-08 .arrow-container{display:none;}
+}
+@media screen and (max-width:991.98px){
+    .section-08 .swiper-slide{padding:0 0 3rem 0;}
+}
 
 /* Tab Container - Tabs 01 */
 .tab-container .tabs.tabs-01{
@@ -372,6 +424,7 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 .ss-card-10:hover .icon > img.inactive{opacity:0;}
 .ss-card-10:hover .icon > img.active{opacity:1;}
+.ss-card-10:hover .text-container.h-color-01 > .title{color:#ec2c23!important;}
 
 .ss-card-10 .icon::after {
     content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;  margin: auto; background: #ec2c23; 
@@ -518,6 +571,9 @@ p.lg, .p.lg{font-size:1.125rem;}
 .ss-card-18 .icon-container .icon{display:block; width:4.5rem;}
 .ss-card-18 .icon-container .icon > img{display:block; width:100%; height:auto;}
 
+/* Special Card 19 */
+.ss-card-19 img{display:block; width:43.75rem; height:auto; margin:0 auto;}
+
 /* ============================================= 
                    Button
    ============================================= */
@@ -599,7 +655,7 @@ p.lg, .p.lg{font-size:1.125rem;}
    ============================================= */
 .ss-header-title{
     display:flex; align-items:center; justify-content:center; background:#ec2c23; 
-    height:100%; min-height:8.5rem;
+    height:100%; min-height:8.5rem; padding:3rem 0;
 }
 
 
