@@ -140,9 +140,19 @@ p.lg, .p.lg{font-size:1.125rem;}
 /* Section 05 */
 .section-05{  
     position:relative; background-attachment:fixed; background-position:center; background-repeat:no-repeat;
-    background-size:cover; height:100%; min-height:485px; display:flex; align-items:center;
+    background-size:cover; height:100%; min-height:485px; display:flex; align-items:center; 
 }
 .section-05.size-02{min-height:600px;}
+.section-05 .btn-container{border-top:2px solid #000000; padding-top:.5rem; margin-top:1rem;}
+.section-05 .btn-customs{
+    width:100%; display:flex; align-items:center; justify-content:space-between;
+    flex-wrap:wrap;
+}
+.section-05 .btn-customs .btn-custom{
+    display:flex; align-items:center; width:50%; margin:.75rem 0 0 0;
+    border-radius:.1875rem; font-size:.875rem; font-weight:300; transition:background .25s;
+}
+
 
 /* Tab Container */
 .tab-container .tab-contents.size-01{min-height:545px;}
@@ -262,6 +272,20 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 @media screen and (max-width:991.98px){
     .section-08 .swiper-slide{padding:0 0 3rem 0;}
+}
+
+/* Special Card 09 */
+.section-09 .dots{
+    position:absolute; bottom:1.5rem; left:0; right:0; z-index:2;
+    display:flex; justify-content:center; align-items:center;
+}
+.section-09 .swiper-pagination-bullet{width:.4375rem; height:.4375rem; background:#ec2c23!important; opacity:1;}
+.section-09 .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width:.9375rem; height:.9375rem; border:1px solid #ec2c23;  position:relative; background:transparent!important;
+}
+.section-09 .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    content: ''; position:absolute; top:0; left:0; right:0; bottom: 0; margin:auto; background:#ec2c23; 
+    border-radius:50%; width: calc(100% - .109375rem); height: calc(100% - .109375rem); transform:scale(.6); 
 }
 
 /* Tab Container - Tabs 01 */
@@ -574,6 +598,19 @@ p.lg, .p.lg{font-size:1.125rem;}
 /* Special Card 19 */
 .ss-card-19 img{display:block; width:43.75rem; height:auto; margin:0 auto;}
 
+/* Special Card 20 */
+.ss-card-20{width:21.25%; padding:.3125rem;}
+
+/* Special Card 21 */
+.ss-card-21{width:29%; padding:.3125rem;}
+
+/* Special Card 22 */
+.ss-card-22{width:12%; padding:.3125rem;}
+
+/* Special Card 23 */
+.ss-card-23{width:15%; padding:.3125rem;}
+
+
 /* ============================================= 
                    Button
    ============================================= */
@@ -583,9 +620,14 @@ p.lg, .p.lg{font-size:1.125rem;}
     font-size:1rem; font-weight:300; outline:none; box-shadow:none; text-decoration:none;
     padding:.875rem 2rem; border:0; white-space:nowrap; border-radius:1000em; 
 }
+
 .btn.btn-color-01, .btn.btn-color-01:focus{color:#ffffff; background:#ec2c23;}
 .btn.btn-color-01:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
 .btn.btn-color-01:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
+
+.btn.btn-color-02, .btn.btn-color-01:focus{color:#ffffff; background:#999999;}
+.btn.btn-color-02:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
+.btn.btn-color-02:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 
 
 /* ============================================= 
@@ -646,6 +688,7 @@ p.lg, .p.lg{font-size:1.125rem;}
                    Special Box
    ============================================= */
 .ss-box{display:block; width:100%; max-width:35rem; margin:0 auto;}
+.ss-box.xs{display:block; width:100%; max-width:19rem; margin:0 auto;}
 .ss-box.xl{max-width:55rem;}
 .ss-box.xxl{max-width:65rem;}
 

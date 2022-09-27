@@ -311,3 +311,31 @@ $(function(){ 'use strict';
          });
      });
  }
+
+ // Section 09
+ var section09= $('.section-09');
+ if(section09.length){
+    section09.find('.swiper-container').each(function(){
+         var self = $(this);
+         new Swiper(self, {
+             loop: true,
+             speed: 800,
+             slidesPerView: 1,
+             spaceBetween: 20,
+             grabCursor: true,
+             navigation: {
+                nextEl: self.find('.btn-icon-next'),
+                prevEl: self.find('.btn-icon-prev'),
+            },
+            pagination: {
+                el: self.find('.dots'),
+                clickable: true,
+            },
+             breakpoints: {
+                 1199.98: { slidesPerView: 1, spaceBetween: 20 },
+                 991.98: { slidesPerView: 1, spaceBetween: 20 },
+                 575.98: { slidesPerView: 1, spaceBetween: 20 },
+             },
+         });
+     });
+ }
