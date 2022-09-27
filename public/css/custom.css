@@ -701,12 +701,18 @@ p.lg, .p.lg{font-size:1.125rem;}
 }
 
 .btn.btn-color-01, .btn.btn-color-01:focus{color:#ffffff; background:#ec2c23;}
-.btn.btn-color-01:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
+.btn.btn-color-01:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);} */
 .btn.btn-color-01:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
+
+.btn.btn-color-01.style-02{position:relative; transition:all 0.5s;}
+.btn.btn-color-01.style-02:hover{background:rgba(236,44,35,0.8); border-radius:1.5625rem;}
 
 .btn.btn-color-02, .btn.btn-color-01:focus{color:#ffffff; background:#999999;}
 .btn.btn-color-02:hover{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.05);}
 .btn.btn-color-02:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
+
+.btn.btn-color-02.style-02{position:relative; transition:all 0.5s;}
+.btn.btn-color-02.style-02:hover{background:rgba(153,153,153,0.8); border-radius:1.5625rem;}
 
 
 /* ============================================= 

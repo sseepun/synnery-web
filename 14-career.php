@@ -203,12 +203,12 @@
           <div class="ss-box xs">
             <div class="btn-customs" data-aos="fade-up" data-aos-delay="600">
               <div class="btn-custom">
-                <button type="submit" class="btn btn-action btn-color-01 fw-300">
+                <button type="submit" class="btn btn-action btn-color-01 style-02 fw-300">
                   <p class="sm">สมัคร</p>
                 </button>
               </div>
               <div class="btn-custom">
-                <button type="submit" class="btn btn-action btn-color-02 fw-300">
+                <button type="submit" class="btn btn-action btn-color-02 style-02 fw-300">
                   <p class="sm">ดูตำแหน่งอื่นๆ</p>
                 </button>
               </div>
@@ -303,12 +303,12 @@
           <div class="ss-box xs">
             <div class="btn-customs" data-aos="fade-up" data-aos-delay="600">
               <div class="btn-custom">
-                <button type="submit" class="btn btn-action btn-color-01 fw-300">
+                <button type="submit" class="btn btn-action btn-color-01 style-02 fw-300">
                   <p class="sm">สมัคร</p>
                 </button>
               </div>
               <div class="btn-custom">
-                <button type="submit" class="btn btn-action btn-color-02 fw-300">
+                <button type="submit" class="btn btn-action btn-color-02 style-02 fw-300">
                   <p class="sm">ดูตำแหน่งอื่นๆ</p>
                 </button>
               </div>
