@@ -57,9 +57,12 @@ $(function(){ 'use strict';
     // Section Anchors
     var sectionAnchors = [];
     function calculateSectionAnchors(){
+        let offset = 0;
         sectionAnchors = [];
-        $('section[data-section]').each(function(){
-            sectionAnchors.push(Math.ceil($(this).offset().top));
+        $('section[data-section]').each(function(d, i){
+            let top = Math.ceil($(this).offset().top);
+            if(i == 0) offset = top;
+            sectionAnchors.push(top - offset);
         });
     }
     calculateSectionAnchors();
