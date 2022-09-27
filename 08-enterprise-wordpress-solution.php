@@ -9,6 +9,9 @@
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
+
+  <!-- หน้านี้ผมยังเก็บไม่เสร็จนะครับ -->
+
   <section data-section="1">
     <img class="img" src="public/img/bg/25.jpg" alt="Banner" />
   </section>

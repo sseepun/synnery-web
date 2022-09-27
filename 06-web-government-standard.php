@@ -417,9 +417,9 @@
  </section>
 
  <section class="ss-header-title" data-aos="fade-up" data-aos-delay="0">
-  <h4 class="color-white fw-100">
-    พร้อมดูแลการ<span class="fw-500">ฝึกอบรมแบบครบวงจร</span>
-  </h4>   
+    <h4 class="color-white fw-100">
+      พร้อมดูแลการ<span class="fw-500">ฝึกอบรมแบบครบวงจร</span>
+    </h4>   
   </section>
 
  <section data-section="15" class="section-01 size-01">
