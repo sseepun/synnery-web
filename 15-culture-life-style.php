@@ -61,7 +61,7 @@
                 <div class="swiper-wrapper">
                   <?php for($i=0; $i<12; $i++){?>
                     <div class="swiper-slide">
-                      <div class="ss-card ss-card-18">
+                      <a class="ss-card ss-card-18" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
                         <div class="ss-img horizontal-2">
                           <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
                         </div>
@@ -71,7 +71,7 @@
                             <img class="img" src="public/img/icon/play.png" alt="Banner" />
                           </div>
                         </div>
-                      </div> 
+                      </a> 
                       <div class="mt-2">
                         <p class="lg text-center color-black fw-400">VIDEO อบรม กระทรวงศึกษาธิการ</p>
                       </div> 

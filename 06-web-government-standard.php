@@ -426,8 +426,8 @@
     <div class="img-bg" style="background-image:url('public/img/bg/19.jpg');"></div> 
     <div class="container">
       <div class="video-button" data-aos="fade-up" data-aos-delay="150">
-        <a id="video-container" href="https://www.youtube.com/watch?v=RzVvThhjAKw" 
-          class="bla-1 video-play-button " data-fancybox>
+        <a id="video-container" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
+          class="video-play-button" data-fancybox>
           <em class="fas fa-play"></em>
         </a>
         <p class="sm color-white text-center fw-300 mt-6 pt-2">Watch Video</p>  
