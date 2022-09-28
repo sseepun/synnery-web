@@ -66,7 +66,7 @@
 
  <section data-section="3" class="section-03">
   <div class="container">
-    <div class="blocks">
+    <div class="blocks reverse">
       <div class="block">
         <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
         <div class="text-wrapper ss-text-wrapper xxs">

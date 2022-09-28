@@ -43,8 +43,8 @@
             <div class="grid lg-25">
               <div class="ss-card ss-card-10 mt-2">
                 <div class="icon">
-                  <img class="inactive" src="public/img/icon/01.png" alt="Icon Inactive" />
-                  <img class="active" src="public/img/icon/01-active.png" alt="Icon Active" />
+                  <img class="inactive" src="public/img/icon/0<?= ($i%4+1) ?>.png" alt="Icon Inactive" />
+                  <img class="active" src="public/img/icon/icon-active-0<?= ($i%4+1) ?>.png" alt="Icon Active" />
                 </div>
                 <div class="text-container h-color-01">
                   <p class="xs title color-black fw-400 mt-2">ง่าย และรวดเร็ว ในการพัฒนาเว็บไซต์เพื่อใช้งาน </p>
