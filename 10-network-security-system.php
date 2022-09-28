@@ -245,56 +245,56 @@
                   <?php for($i=0; $i<12; $i++){?>
                     <div class="swiper-slide">
                       <div class="ss-card-container ss-card-padding">
-                        <div class="ss-card ss-card-20">
+                        <a class="ss-card ss-card-20" href="#">
                           <div class="ss-img ">
                             <div class="img-bg" style="background-image:url('public/img/content/unsplash-01.jpg');"></div>
                           </div>
-                        </div>
-                        <div class="ss-card ss-card-23">
+                        </a>
+                        <a class="ss-card ss-card-23" href="#">
                           <div class="ss-img height-full">
                             <div class="img-bg" style="background-image:url('public/img/content/unsplash-02.jpg');"></div>
                           </div>
-                        </div>
-                        <div class="ss-card ss-card-20">
+                        </a>
+                        <a class="ss-card ss-card-20" href="#">
                           <div class="ss-img">
                             <div class="img-bg" style="background-image:url('public/img/content/unsplash-03.jpg');"></div>
                           </div>
-                        </div>
-                        <div class="ss-card ss-card-20">
+                        </a>
+                        <a class="ss-card ss-card-20" href="#">
                           <div class="ss-img">
                             <div class="img-bg" style="background-image:url('public/img/content/unsplash-04.jpg');"></div>
                           </div>
-                        </div>
-                        <div class="ss-card ss-card-20">
+                        </a>
+                        <a class="ss-card ss-card-20" href="#">
                           <div class="ss-img">
                             <div class="img-bg" style="background-image:url('public/img/content/unsplash-04.jpg');"></div>
                           </div>
-                        </div>
-                        <div class="ss-card ss-card-23">
+                        </a>
+                        <a class="ss-card ss-card-23" href="#">
                           <div class="ss-img height-full">
                             <div class="img-bg" style="background-image:url('public/img/content/unsplash-05.jpg');"></div>
                           </div>
-                        </div>
-                        <div class="ss-card ss-card-23">
+                        </a>
+                        <a class="ss-card ss-card-23" href="#">
                           <div class="ss-img height-full">
                             <div class="img-bg" style="background-image:url('public/img/content/unsplash-06.jpg');"></div>
                           </div>
-                        </div>
-                        <div class="ss-card ss-card-21">
+                        </a>
+                        <a class="ss-card ss-card-21" href="#">
                           <div class="ss-img">
                             <div class="img-bg" style="background-image:url('public/img/content/unsplash-07.jpg');"></div>
                           </div>
-                        </div>
-                        <div class="ss-card ss-card-22">
+                        </a>
+                        <a class="ss-card ss-card-22" href="#">
                           <div class="ss-img height-full">
                             <div class="img-bg" style="background-image:url('public/img/content/unsplash-08.jpg');"></div>
                           </div>
-                        </div>
-                        <div class="ss-card ss-card-21">
+                        </a>
+                        <a class="ss-card ss-card-21" href="#">
                           <div class="ss-img">
                             <div class="img-bg" style="background-image:url('public/img/content/unsplash-09.jpg');"></div>
                           </div>
-                        </div>
+                        </a>
                       </div>
                     </div>
                   <?php }?>

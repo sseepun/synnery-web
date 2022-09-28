@@ -194,7 +194,7 @@
     <div class="grids no-gap">
       <?php for($i=0; $i<6; $i++){?>
         <div class="grid lg-1-3 style-02 mt-0" data-aos="fade-up" data-aos-delay="0">
-          <a class="ss-card ss-card-18">
+          <a class="ss-card ss-card-18" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
             <div class="ss-img horizontal-2">
               <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
             </div>
@@ -212,7 +212,7 @@
         <div class="grids no-gap height-full" data-aos="fade-up" data-aos-delay="0">
           <?php for($i=0; $i<2; $i++){?>
             <div class="grid lg-50 style-02 mt-0">
-              <a class="ss-card ss-card-03 height-full" href="#">
+              <a class="ss-card ss-card-03 height-full" href="public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg" data-fancybox="gallery">
               <div class="ss-img square height-full">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
               </div>
@@ -227,7 +227,7 @@
 
       <?php for($i=0; $i<7; $i++){?>
         <div class="grid lg-1-3 style-02 mt-0" data-aos="fade-up" data-aos-delay="150">
-          <a class="ss-card ss-card-18">
+          <a class="ss-card ss-card-18" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
             <div class="ss-img horizontal-2">
               <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
             </div>
@@ -245,7 +245,7 @@
         <div class="grids no-gap height-full">
           <?php for($i=0; $i<2; $i++){?>
             <div class="grid lg-50 sm-100 style-02 mt-0">
-              <a class="ss-card ss-card-03 height-full" href="#">
+              <a class="ss-card ss-card-03 height-full" href="public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg" data-fancybox="gallery">
               <div class="ss-img height-full">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
               </div>
@@ -262,7 +262,7 @@
         <div class="grids no-gap height-full">
           <?php for($i=0; $i<3; $i++){?>
             <div class="grid lg-1-3 sm-100 style-02 mt-0">
-              <a class="ss-card ss-card-03 height-full" href="#">
+              <a class="ss-card ss-card-03 height-full" href="public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg" data-fancybox="gallery">
               <div class="ss-img height-full">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
               </div>
@@ -278,7 +278,7 @@
       <div class="grid lg-40 md-100 sm-100 mt-0 bg-black" data-aos="fade-up" data-aos-delay="300">
         <div class="grids no-gap">
           <div class="grid lg-100 sm-100 style-02 mt-0">
-            <a class="ss-card ss-card-03" href="#">
+            <a class="ss-card ss-card-03" href="public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg" data-fancybox="gallery">
               <div class="ss-img horizontal-2">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
               </div>
@@ -289,7 +289,7 @@
           </div>
           <?php for($i=0; $i<2; $i++){?>
             <div class="grid lg-50 style-02 mt-0" data-aos="fade-up" data-aos-delay="300">
-              <a class="ss-card ss-card-03 height-full" href="#">
+              <a class="ss-card ss-card-03 height-full" href="public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg" data-fancybox="gallery">
               <div class="ss-img square height-full">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
               </div>
@@ -306,7 +306,7 @@
         <div class="grid lg-50 mt-0 bg-black" data-aos="fade-up" data-aos-delay="300">
           <div class="grids no-gap">
             <div class="grid lg-70 md-50 style-02 mt-0">
-              <a class="ss-card ss-card-03 height-full" href="#">
+              <a class="ss-card ss-card-03 height-full" href="public/img/content/unsplash-03.jpg" data-fancybox="gallery">
               <div class="ss-img horizontal-2 height-full">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-03.jpg')"></div>
               </div>
@@ -316,7 +316,7 @@
               </a>
             </div>
             <div class="grid lg-30 md-50 style-02 mt-0" data-aos="fade-up" data-aos-delay="300">
-              <a class="ss-card ss-card-03 height-full" href="#">
+              <a class="ss-card ss-card-03 height-full" href="public/img/content/unsplash-06.jpg" data-fancybox="gallery">
               <div class="ss-img square height-full">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-06.jpg')"></div>
               </div>
@@ -331,7 +331,7 @@
 
       <?php for($i=0; $i<3; $i++){?>
         <div class="grid lg-1-3 style-02 mt-0 bg-black" data-aos="fade-up" data-aos-delay="300">
-          <a class="ss-card ss-card-03" href="#">
+          <a class="ss-card ss-card-03" href="public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg" data-fancybox="gallery">
           <div class="ss-img horizontal-2">
             <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
           </div>
@@ -343,7 +343,7 @@
       <?php }?>
 
       <div class="grid lg-20 style-02 mt-0 bg-black" data-aos="fade-up" data-aos-delay="300">
-        <a class="ss-card ss-card-03 height-full" href="#">
+        <a class="ss-card ss-card-03 height-full" href="public/img/content/unsplash-01.jpg" data-fancybox="gallery">
           <div class="ss-img horizontal-2 height-full">
             <div class="img-bg" style="background-image:url('public/img/content/unsplash-01.jpg')"></div>
           </div>
@@ -354,7 +354,7 @@
       </div>
 
       <div class="grid lg-50 style-02 mt-0 bg-black" data-aos="fade-up" data-aos-delay="300">
-        <a class="ss-card ss-card-03 height-full" href="#">
+        <a class="ss-card ss-card-03 height-full" href="public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg" data-fancybox="gallery">
           <div class="ss-img height-full">
             <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
           </div>
@@ -367,7 +367,7 @@
       <div class="grid lg-30 mt-0 bg-black" data-aos="fade-up" data-aos-delay="300">
         <div class="grids no-gap">
           <div class="grid lg-100 md-100 sm-100 style-02 mt-0">
-            <a class="ss-card ss-card-03 filter-01" href="#">
+            <a class="ss-card ss-card-03 filter-01" href="public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg" data-fancybox="gallery">
               <div class="ss-img horizontal-2">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
               </div>
@@ -378,7 +378,7 @@
           </div>
 
           <div class="grid lg-50 style-02 mt-0" data-aos="fade-up" data-aos-delay="300">
-            <a class="ss-card ss-card-03 height-full filter-01" href="#">
+            <a class="ss-card ss-card-03 height-full filter-01" href="public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg" data-fancybox="gallery">
               <div class="ss-img horizontal-2 height-full">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
               </div>
@@ -389,7 +389,7 @@
           </div>
 
           <div class="grid lg-50 style-02 mt-0" data-aos="fade-up" data-aos-delay="300">
-            <a class="ss-card ss-card-03 filter-01" href="#">
+            <a class="ss-card ss-card-03 filter-01" href="public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg" data-fancybox="gallery">
               <div class="ss-img square">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
               </div>
