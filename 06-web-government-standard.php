@@ -432,7 +432,6 @@
         </a>
         <p class="sm color-white text-center fw-300 mt-6 pt-2">Watch Video</p>  
       </div> 
-       
     </div>        
   </section>
 
