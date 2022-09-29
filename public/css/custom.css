@@ -991,6 +991,8 @@ p.lg, .p.lg{font-size:1.125rem;}
     background-image:url('../img/icon/correct-04.png'); background-size:cover;
     background-repeat:no-repeat; background-position:center;
 }
+.ss-list-02.size-02 li:before{left:-.5rem; width:1.5rem!important; height:1.5rem!important;}
+
 
 /* ============================================= 
                 Special Image
