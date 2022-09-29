@@ -217,11 +217,11 @@
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-wrapper">
               <h4 class="lg lh-2xs color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-                Website <br> <span class="color-black fw-300">for</span> <span class="color-black fw-600">Government</span>
+                Website<br><span class="color-black fw-300">for</span> <span class="color-black fw-600">Government</span>
               </h4>
               <p class="sm color-02 fw-400 mt-1" data-aos="fade-up" data-aos-delay="150">
-                เปลี่ยนเว็บไซต์ภาครัฐให้มีมาตรฐานเดียวกัน การันตีด้วยผลงาน <br>
-                มากกว่า 500 โปรเจค “ที่เดียว ทันใด ทั่วไทย ทุกเวลา ทั่วถึง <br>
+                เปลี่ยนเว็บไซต์ภาครัฐให้มีมาตรฐานเดียวกัน การันตีด้วยผลงาน<br>
+                มากกว่า 500 โปรเจค “ที่เดียว ทันใด ทั่วไทย ทุกเวลา ทั่วถึง<br>
                 เท่าเทียม และธรรมาภิบาล”
               </p>
               <div class="btns mt-3" data-aos="fade-up" data-aos-delay="300">
@@ -263,7 +263,13 @@
               </div>
             </div>
             <div class="text-wrapper">
-              <h5 class="color-white lh-2xs fw-600">3D Virtual Tour / <br> Metaverse</h5>
+              <h5 class="color-white lh-2xs fw-600">
+                3D Virtual Tour /<br>Metaverse
+              </h5>
+              <p class="sm desc color-white ss-text-wrapper xxxs">
+                ออกแบบและพัฒนาระบบ Virtual แบบ 360 องศา พร้อมระบบ Walk Throught รวมถึงการเชื่อมต่อวีดีโอ 
+                เพื่อนำเสนอสถานที่ สินค้า หรือบริการต่าง ๆ  ในรูปแบบของภาพนิ่งแบบ 360 องศา
+              </p>
               <div class="card-more p xs mt-2">
                 Read more
                 <div class="arrow-icon">
