@@ -10,53 +10,38 @@
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1">
-    <img class="img" src="public/img/img-01.jpg" alt="Banner" />
+    <img class="img" src="public/img/content/39.jpg" alt="Banner" />
   </section>
 
   <section data-section="2" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/36.jpg');"></div> 
     <div class="container">
       <div class="text-center">
-        <p class="h3 color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-          Full Services
+        <p class="h3 color-black fw-600" data-aos="fade-up" data-aos-delay="0">
+          Full Services <span class="fw-300">with</span>
         </p>
         <h1 class="color-01 lh-2xs text-shadow fw-600" data-aos="fade-up" data-aos-delay="150">
-          Digital Solutions
+          Virtual World, AR-VR,<br>Animation,<br>Multimedia, Graphics
         </h1>
-        <P class="h3" data-aos="fade-up" data-aos-delay="300">
-          for <span class="color-black fw-600">Government</span>
-        </P>
-        <p class="color-03 md-no-br fw-400" data-aos="fade-up" data-aos-delay="450">
-          บริการงานด้านการตลาดแบบครบวงจร ตั้งแต่ รับโจทย์ วาง Concept สร้าง Content วางกลยุทธ์ กำหนดกลุ่มเป้าหมาย <br>
-          วาง KPI และแผนประชาสัมพันธ์ผ่านช่องทางต่างๆ แบบ 360 องศา ตามโจทย์ หรือ KPI 
+        <p class="sm color-black md-no-br fw-500 mt-3" data-aos="fade-up" data-aos-delay="450">
+          บริการและบริหารโครงการด้านการสร้าง และออกแบบงาน Virtual Online ต่างๆ แบบครบวงจร ตั้งแต่เริ่มต้นคิด วางรูปแบบงาน 
+          แนวทาง<br>การประชาสัมพันธ์ไปยังกลุ่มเป้าหมาย การจัดกิจกรรมประกอบต่างๆ เพื่อบรรลุวัตถุประสงค์และเป้าหมายของโครงการ  
         </p>
       </div>
-      <div class="ss-box xl">
-        <div class="grids">
+      <div class="ss-box xl" data-aos="fade-up" data-aos-delay="150">
+        <div class="ss-card-container">
           <?php for($i=0; $i<7; $i++){?>
-            <div class="grid lg-25 md-50 sm-50 xs-100">
-              <a class="ss-card ss-card-27" href="#">
-                <div class="wrapper">
-                  <div class="icon">
-                    <img class="inactive" src="public/img/icon/0<?= ($i%1+5) ?>.png" alt="Icon Inactive" />
-                    <img class="active" src="public/img/icon/icon-active-0<?= ($i%1+5) ?>.png" alt="Icon Active" />
-                  </div>
-                  <div class="text-container">
-                    <p class="title lh-sm">
-                      Digital Marketingfor <br> Government
-                    </p>
-                  </div>
-                  <div class="card-more p xs mt-2">
-                    Read more
-                    <div class="arrow-icon">
-                      <em class="fa-solid fa-arrow-right"></em>
-                    </div>
-                  </div>
+            <div class="ss-card ss-card-32">
+              <div class="wrapper">
+                <div class="icon">
+                  
                 </div>
-              </a>
+                <div class="text-container">
+
+                </div>
+              </div>
             </div>
-          <?php } ?>
-        </div>
+          <?php }?>
       </div>
     </div>
   </section>
@@ -398,15 +383,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>         
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-
-  <script>
-    $(document).ready(function($) {
-      $('.count-number').counterUp({
-          delay: 10,
-          time: 2000
-      });
-    });
-  </script>
 
 </body>
 </html>
