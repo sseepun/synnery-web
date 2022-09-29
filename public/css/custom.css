@@ -845,6 +845,34 @@ p.lg, .p.lg{font-size:1.125rem;}
     .ss-card-31 .desc.ss-text-wrapper.xxxs{max-width:24rem;}
 }
 
+/* Special Card 32 */
+.ss-card-32{width:14.28%; position:relative;}
+.ss-card-32 .wrapper{display:flex; flex-direction:column; align-items:center;}
+.ss-card-32 .icon{
+    position: relative; display:flex; justify-content:center; align-items:center; width:5rem; height: 5rem; z-index:2;
+    text-align: center; border:2px solid #ec2c23; background:#ffffff; border-radius: 50%; transition:all .3s ease;
+}
+.ss-card-32:hover .icon{border-color:#ec2c23; background:transparent;}
+.ss-card-32 .icon > img {
+   display:block; width:auto; height:35px; transition:opacity .3s;
+}
+.ss-card-32 .icon > img.active {
+    position:absolute; transform:translate(50%,-50%); top:50%; 
+    left:auto; right:50%; opacity:0;
+}
+.ss-card-32:hover .icon > img.inactive{opacity:0;}
+.ss-card-32:hover .icon > img.active{opacity:1;}
+.ss-card-32:hover .text-container.h-color-01 > .title{color:#ec2c23!important;}
+
+.ss-card-32 .icon::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;  margin: auto; background: #ec2c23; 
+    border-radius:50%; z-index:-1; width: calc(100% - 1.25rem); height: calc(100% - 1.25rem); visibility: hidden; 
+    opacity:0; transform:scale(.8); transition:all .3s ease;
+}
+.ss-card-32:hover .icon::after {
+    visibility: visible; opacity:1; transform:scale(1);
+}
+.ss-card-32 .text-container > .title{text-align:center; font-weight:400;}
 /* ============================================= 
                    Button
    ============================================= */
