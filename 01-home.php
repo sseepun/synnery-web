@@ -263,12 +263,12 @@
               </div>
             </div>
             <div class="text-wrapper">
-              <h5 class="color-white lh-2xs fw-600">
+              <h5 class="title color-white lh-2xs fw-600">
                 3D Virtual Tour /<br>Metaverse
               </h5>
               <p class="sm desc color-white ss-text-wrapper xxxs">
                 ออกแบบและพัฒนาระบบ Virtual แบบ 360 องศา พร้อมระบบ Walk Throught รวมถึงการเชื่อมต่อวีดีโอ 
-                เพื่อนำเสนอสถานที่ สินค้า หรือบริการต่าง ๆ  ในรูปแบบของภาพนิ่งแบบ 360 องศา
+                เพื่อนำเสนอสถานที่ สินค้า หรือบริการต่าง ๆ ในรูปแบบของภาพนิ่งแบบ 360 องศา ๆ
               </p>
               <div class="card-more p xs mt-2">
                 Read more
