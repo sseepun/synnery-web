@@ -249,19 +249,17 @@
     <div class="grids jc-center" data-aos="fade-up" data-aos-delay="150">
       <?php for($i=0; $i<3; $i++){?>
         <div class="grid lg-1-3">
-          <div class="ss-card ss-card-18 box-shadow">
+          <div class="ss-card ss-card-31 filter-01 box-shadow">
             <div class="ss-img vertical">
               <div class="img-bg" style="background-image:url('public/img/content/v-service-0<?= ($i%1+1) ?>.jpg');"></div>
             </div>
             <div div class="ss-card-inner"></div>
             <div class="icon-container">
-              <div class="icon">
-                <div class="video-button mt-6" data-aos="fade-up" data-aos-delay="150">
-                  <a id="video-container" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
-                    class="video-play-button" data-fancybox>
-                    <em class="fas fa-play"></em>
-                  </a>
-               </div>
+              <div class="video-button mt-6" data-aos="fade-up" data-aos-delay="150">
+                <a id="video-container" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
+                  class="video-play-button" data-fancybox>
+                  <em class="fas fa-play"></em>
+                </a>
               </div>
             </div>
             <div class="text-wrapper">
