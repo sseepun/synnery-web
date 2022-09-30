@@ -928,6 +928,12 @@ p.lg, .p.lg{font-size:1.125rem;}
     display:flex; justify-content:center; align-items:center; background:#ec2c23; color:#ffffff; 
 }
 
+/* Special Card 35 */
+.ss-card-35{border:3px solid #ffffff;}
+
+/* Special Card 36 */
+/* .ss-card3 */
+
 /* ============================================= 
                    Button
    ============================================= */
@@ -1014,6 +1020,7 @@ p.lg, .p.lg{font-size:1.125rem;}
                    Special Box
    ============================================= */
 .ss-box{display:block; width:100%; max-width:35rem; margin:0 auto;}
+.ss-box.sm{max-width:30rem;}
 .ss-box.xs{display:block; width:100%; max-width:19rem; margin:0 auto;}
 .ss-box.xl{max-width:55rem;}
 .ss-box.xxl{max-width:65rem;}
@@ -1032,16 +1039,16 @@ p.lg, .p.lg{font-size:1.125rem;}
                  Video Button Play
 =============================================== */
   .video-play-button {
-    position: relative; border-radius: 50%; box-sizing: content-box; 
+    position: relative; border-radius: 50%; box-sizing:content-box; 
     color:#ffffff; display:flex; justify-content:center;
   }
   .video-play-button:before {
-    content: ""; position: absolute; left:50%; top:50%; display:block;
-    width:4.5rem; height:4.5rem; background: #ec2c23; border-radius: 50%;
+    content: ""; position:absolute; left:50%; top:50%; display:block;
+    width:4.5rem; height:4.5rem; background:#ec2c23; border-radius:50%;
     animation:pulse-border 1500ms ease-out infinite; 
   }
   .video-play-button:after {
-    content: ""; position: absolute; left:50%; top:50%; transform:translateX(-50%) translateY(-50%);
+    content: ""; position:absolute; left:50%; top:50%; transform:translateX(-50%) translateY(-50%);
     display: block; width:4.5rem; height:4.5rem; background:#ec2c23; border-radius:50%; transition:all 200ms;
   }
   .video-play-button em{

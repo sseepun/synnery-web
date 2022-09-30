@@ -151,6 +151,71 @@
       </div>
     </div>
   </section>
+
+  <section data-section="7" class="section-01 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/52.jpg');"></div>
+    <div class="container">
+      <p class="h4 text-center color-01 fw-500" data-aos="fade-up" data-aos-delay="0">
+        เราให้ความสำคัญกับการออกแบบ
+      </p> 
+      <h1 class="lg text-center lh-2xs color-01 fw-600" data-aos="fade-up" data-aos-delay="150">
+        UX / UI
+      </h1>   
+      <p class="lg text-center color-white fw-100" data-aos="fade-up" data-aos-delay="300">
+        เพราะเราคำนึงถึงผู้ใช้ และความง่ายในการใช้งาน<br>
+        พร้อมประสิทธิภาพ ของระบบโปรแกรมต่างๆ
+      </p>
+      <p class="sm text-center color-white fw-100 mt-1" data-aos="fade-up" data-aos-delay="450">
+        ที่เราออกแบบ เพราะระบบโปรแกรมที่ดี ไม่ได้มีแค่ความสวยงาม 
+        แต่ต้องตอบสนองและเข้าใจพฤติกรรมของผู้ใช้งาน
+      </p>
+      <div class="ss-box sm">
+        <div class="mt-6" data-aos="fade-up" data-aos-delay="450" data-aos="fade-up" data-aos-delay="600">
+          <img class="img" src="public/img/content/06.png" alt="Image" />
+        </div>  
+      </div>
+    </div>      
+  </section>
+
+  <section data-section="8" class="section-01 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/53.jpg');"></div>  
+    <div class="container">
+      <p class="lg text-center color-black fw-400" data-aos="fade-up" data-aos-delay="0">
+        ตัวอย่างกระบวนการทำงานในการออกแบบ
+      </p>    
+      <h4 class="text-center text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="150">
+        Web Base Application
+      </h4>
+      <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="300">
+        <div class="ss-img horizontal-2 no-hover">
+          <div class="img-bg" style="background-image:url('public/img/content/unsplash-10.jpg');"></div>
+        </div>   
+      </div>
+    </div> 
+  </section>
+
+  <section data-section="9" class="section-01 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/54.jpg');"></div> 
+    <div class="container">
+      <h4 class="text-center color-white fw-100">ระบบโปรแกรมสำหรับใช้ใน</h4>
+      <p class="h4 text-center lh-2xs color-white fw-600">การติดตามประเมินความคืบหน้าโครงการ</p>
+      <div class="grids">
+        <div class="grid xl-50 lg-50 md-50 sm-100">
+          <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="ss-img horizontal-2 no-hover">
+              <div class="img-bg" style="background-image:url('public/img/content/45.jpg');"></div>
+            </div>   
+          </div>
+        </div>
+        <div class="grid xl-50 lg-50 md-50 sm-100">
+          <!-- <div class="ss-card-36">
+
+          </div> -->
+         
+        </div>
+      </div>
+    </div>      
+  </section>
   
 
   <section data-section="10" class="section-01 size-01">
