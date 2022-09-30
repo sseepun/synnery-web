@@ -186,10 +186,12 @@
       <h4 class="text-center text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="150">
         Web Base Application
       </h4>
-      <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="300">
-        <div class="ss-img horizontal-2 no-hover">
-          <div class="img-bg" style="background-image:url('public/img/content/unsplash-10.jpg');"></div>
-        </div>   
+      <div class="ss-box xxl">
+        <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="ss-img horizontal-2 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/unsplash-10.jpg');"></div>
+          </div>   
+        </div>
       </div>
     </div> 
   </section>
@@ -197,26 +199,184 @@
   <section data-section="9" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/54.jpg');"></div> 
     <div class="container">
-      <h4 class="text-center color-white fw-100">ระบบโปรแกรมสำหรับใช้ใน</h4>
-      <p class="h4 text-center lh-2xs color-white fw-600">การติดตามประเมินความคืบหน้าโครงการ</p>
-      <div class="grids">
-        <div class="grid xl-50 lg-50 md-50 sm-100">
-          <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="300">
+      <h4 class="text-center color-white fw-100" data-aos="fade-up" data-aos-delay="0">
+        ระบบโปรแกรมสำหรับใช้ใน
+      </h4>
+      <p class="h4 text-center lh-2xs color-white fw-600" data-aos="fade-up" data-aos-delay="150">
+        การติดตามประเมินความคืบหน้าโครงการ
+      </p>
+      <div class="grids mt-5">
+        <div class="grid lg-50 md-50 sm-100">
+          <div class="ss-card ss-card-35 box-shadow" data-aos="fade-up" data-aos-delay="300">
             <div class="ss-img horizontal-2 no-hover">
               <div class="img-bg" style="background-image:url('public/img/content/45.jpg');"></div>
             </div>   
           </div>
         </div>
-        <div class="grid xl-50 lg-50 md-50 sm-100">
-          <!-- <div class="ss-card-36">
-
-          </div> -->
-         
+        <div class="grid lg-50 md-50 sm-100">
+          <div class="ss-card ss-card-35 box-shadow" data-aos="fade-up" data-aos-delay="300">
+            <div class="ss-img horizontal-2 no-hover">
+              <div class="img-bg" style="background-image:url('public/img/content/45.jpg');"></div>
+            </div>   
+          </div>
         </div>
       </div>
     </div>      
   </section>
+
+  <section data-section="10" class="section-09 style-02 section-padding">
+    <div class="container">
+      <p class="h4 text-center color-black fw-300" data-aos="fade-up" data-aos-delay="0">
+        ตัวอย่างงานด้าน
+      </p>
+      <h5 class="text-center lh-sm" data-aos="fade-up" data-aos-delay="150">
+        <span class="color-01 fw-600">การวางโครงสร้าง การออกแบบระบบ</span>โปรแกรมต่างๆ
+      </h5>
+      <div class="ss-box">
+        <div class="swiper-container style-02 mt-5" data-aos="fade-up" data-aos-delay="300">
+          <div class="swiper-wrapper">
+            <?php for($i=0; $i<4; $i++){?>
+              <div class="swiper-slide ss-card-padding">
+                <a class="ss-card ss-card-34 " href="#">
+                  <div class="ss-img box-shadow">
+                    <div class="img-bg" style="background-image:url('public/img/content/unsplash-10.jpg');"></div>
+                  </div>
+                  <div class="icon">
+                    <em class="fa-solid fa-plus"></em>
+                  </div>
+                  <p class="sm text-center color-01 text-uppercase fw-600 mt-2">
+                    Use Case diagram
+                  </p>
+                </a>
+              </div>
+            <?php }?>
+          </div>
+          <div class="dots" data-aos="fade-up" data-aos-delay="450"></div>
+          <div class="arrow-container style-02">
+            <div class="arrow btn-icon-next">
+              <img src="public/img/icon/arrow-01.png" alt="Arrow" />
+            </div>
+            <div class="arrow btn-icon-next">
+              <img src="public/img/icon/arrow-02.png" alt="Arrow" />
+            </div>
+          </div>
+        </div>
+      </div>   
+    </div>     
+  </section>
+
+  <section data-section="11" class="section-01 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/55.jpg');"></div>  
+    <div class="container">
+      <h4 class="lg color-01 text-center" data-aos="fade-up" data-aos-delay="0">
+        <span class="color-white fw-300">ตัวอย่าง</span>ระบบรายงานในรูปแบบของกราฟข้อมูล<span class="color-white fw-300">ต่างๆ</span>
+      </h4>  
+      <div class="ss-box xxl">
+        <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="150">
+          <div class="ss-img horizontal-2 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/unsplash-10.jpg');"></div>
+          </div>   
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-section="12" class="section-01 section-padding">
+    <div class="container">
+      <p class="h4 color-01 text-center text-uppercase fw-600" data-aos="fade-up" data-aos-delay="0">
+        การวางโครงสร้าง Server
+      </p>
+      <h4 class="lg lh-2xs text-center text-uppercase fw-200" data-aos="fade-up" data-aos-delay="150">
+        สำหรับพัฒนาในรูปแบบของ <span class="color-01 fw-600">DevOps</span>
+      </h4>
+      <div class="ss-box xxl" data-aos="fade-up" data-aos-delay="300">
+        <div class="ss-card mt-5" data-aos="fade-up">
+          <div class="ss-img horizontal-2 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/47.jpg');"></div>
+          </div>   
+        </div>
+      </div>
+    </div>          
+  </section>
+
+  <section data-section="12" class="section-01 section-padding bg-05">
+    <div class="container">
+      <h4 class="color-01 text-center fw-600" data-aos="fade-up" data-aos-delay="0">
+        Mobile Application Development
+      </h4>
+      <div class="ss-box xxl">
+        <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="150">
+          <div class="ss-img horizontal-2 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/unsplash-11.jpg');"></div>
+          </div>   
+        </div>
+      </div>
+      <div class="grids jc-center">
+        <?php for($i=0; $i<5; $i++) {?>
+          <div class="grid lg-20 md-50">
+            <div class="ss-card mt-5" data-aos="fade-up" data-aos-delay="150">
+              <img class="img box-shadow" src="public/img/content/mobile-01.png" alt="Banner" />   
+            </div>
+          </div>
+        <?php }?>
+      </div>
+    </div>          
+  </section>
+
+  <section data-section="13" class="section-08 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/29.jpg');"></div> 
+    <div class="container">
+      <h4 class="lg text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+        <span class="color-white fw-200">ตัวอย่าง</span>หน้าจอระบบต่างๆ
+      </h4>
+      <div class="swiper-container mt-5" data-aos="fade-up" data-aos-delay="150">
+        <div class="swiper-wrapper">
+          <?php for($i=0; $i<5; $i++){?>
+            <div class="swiper-slide ">
+              <div class="grids">
+                <div class="grid lg-50">
+                  <div class="d-flex flex-column jc-center height-full">
+                    <p class="h5 text-uppercase color-01 fw-600">Event Calendar</p>  
+                    <p class="sm color-04 md-no-br">
+                      ภาพหน้าจอ ที่จะให้กดเลื่อน ซ้าย ขวา ไปเรื่อยๆ 
+                      โดยจะมีภาพและเชื่อระบบ<br>พร้อมคุณสมบัติพื้นฐานสัก 5-6 หัวข้อ 
+                    </p>
+                  </div>
+                </div>
+                <div class="grid lg-50">
+                  <div class="ss-card ss-card-35">
+                    <div class="ss-img no-hover">
+                      <div class="img-bg" style="background-image:url('public/img/content/48.jpg');"></div>
+                    </div>
+                    <div class="icon box-shadow">
+                      <em class="fa-solid fa-magnifying-glass"></em>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <?php }?>
+        </div>
+        <div class="dots-container">
+          <div class="dots"></div>
+          <div class="line"></div>
+          <div class="dots-style-02"></div>
+        </div>
+        <!-- <div class="arrow-container">
+          <div class="arrow btn-icon-next">
+            <img src="public/img/icon/arrow-01.png" alt="Arrow" />
+          </div>
+          <div class="arrow btn-icon-next">
+            <img src="public/img/icon/arrow-02.png" alt="Arrow" />
+          </div>
+        </div> -->
+        </div>  
+        </div>  
+      </div>             
+    </div>      
+  </section>
   
+
 
   <section data-section="10" class="section-01 size-01">
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
