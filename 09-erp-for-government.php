@@ -93,13 +93,13 @@
       <h4 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
         Jigsaw ERP <span class="h5 fw-200">for Government &</span><br>Microservices Architechture
       </h4>
-      <p class="sm text-center color-white fw-200" data-aos="fade-up" data-aos-delay="150">
+      <p class="sm text-center md-no-br color-white fw-200" data-aos="fade-up" data-aos-delay="150">
         ด้วยประสบการณ์ในการทำงานและแลกเปลี่ยนพูดคุย ถึงปัญหาเกี่ยวกับระบบเทคโนโลยีและสารสนเทศภาครัฐมานาน 
         ทำให้เราเข้าใจและมองเห็นปัญหาที่ถูกสะสม<br>มายาวนาน ทำให้เราเข้าใจและสามารถออกแบบระบบใหม่ 
         เพื่อแก้ไขปัญหาเก่าๆ และนำเทคโนโลยีใหม่ๆ เข้ามาใช้งาน 
       </p>
       <div class="ss-box xl mt-6" data-aos="fade-up" data-aos-delay="300">
-        <img class="img" src="public/img/content/05.png" alt="Banner" />
+        <img class="img" src="public/img/content/05.png" alt="Image" />
       </div>
     </div>
   </section>
@@ -107,29 +107,48 @@
   <section data-section="5" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/49.jpg');"></div>  
     <div class="container">
-      <div>
         <p class="h4 color-white text-center fw-100" data-aos="fade-up" data-aos-delay="0">
           แล้วทำไมถึง
         </p>
         <p class="h4 text-center color-white fw-600" data-aos="fade-up" data-aos-delay="150">
           ต้องปรับ ต้องเปลี่ยน
         </p>
-      </div>
-      <div class="mt-5">
-        <p class="h4 color-white text-center fw-100" data-aos="fade-up" data-aos-delay="300">
+        <p class="h4 color-white text-center fw-100 mt-5" data-aos="fade-up" data-aos-delay="300">
           เพราะ
         </p>
         <p class="h4 text-center color-white fw-600" data-aos="fade-up" data-aos-delay="450">
           โลกของเทคโนโลยี ที่ไม่เคยหยุดนิ่ง
         </p>
-      </div>
     </div>
   </section>
 
   <section data-section="6" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/50.jpg');"></div>  
+    <div class="img-bg" style="background-image:url('public/img/bg/51.jpg');"></div>  
     <div class="container">
-      <h4 class="text-center">THE TREND OF <span class="color-01 fw-600">DEVELOPMENT</span></h4>
+      <h4 class="text-center" data-aos="fade-up" data-aos-delay="0">
+        THE TREND OF <span class="color-01 fw-600">DEVELOPMENT</span>
+      </h4>
+      <div class="grids jc-center mt-2" data-aos="fade-up" data-aos-delay="150">
+        <?php for($i=0; $i<3; $i++) {?>
+          <div class="grid lg-1-3">
+            <a class="ss-card ss-card-34 box-shadow" href="#">
+              <div class="ss-img">
+                <div class="img-bg" style="background-image:url('public/img/content/4<?= ($i%2+2) ?>.jpg');"></div>
+              </div>
+              <div class="icon">
+                <em class="fa-solid fa-plus"></em>
+              </div>
+            </a>
+          </div>
+        <?php }?>
+      </div>
+
+      <h4 class="text-center mt-6 pt-3" data-aos="fade-up" data-aos-delay="300">
+        โครงสร้าง<span class="color-01 fw-600">กระบวนการพัฒนาซอฟแวร์</span>
+      </h4>
+      <div class="mt-6" data-aos="fade-up" data-aos-delay="450">
+        <img class="img" src="public/img/content/44.jpg" alt="Image" />
+      </div>
     </div>
   </section>
   
