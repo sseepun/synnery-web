@@ -127,49 +127,54 @@
     </div>
  </section>
 
- <section data-section="5" class="section-08 section-padding">
+ <section data-section="13" class="section-08 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/29.jpg');"></div> 
     <div class="container">
-      <h4 class="lg text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0" >
+      <h4 class="lg text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         Word Press Plug-In <span class="color-white fw-200">ที่บริษัทฯ พัฒนาขึ้นมาใหม่</span>
       </h4>
-      <div class="grids mt-2">
-        <div class="grid lg-50">
-          <div class="d-flex flex-column jc-center height-full">
-            <p class="h5 text-uppercase color-01 fw-600">Event Calendar</p>  
-            <p class="sm color-04">
-              ภาพหน้าจอ ที่จะให้กดเลื่อน ซ้าย ขวา ไปเรื่อยๆ 
-              โดยจะมีภาพและเชื่อระบบ พร้อม <br> คุณสมบัติพื้นฐานสัก 5-6 หัวข้อ 
-            </p>
-          </div>
-        </div>    
-        <div class="grid lg-50">
-          <div class="swiper-container" data-aos="fade-up" data-aos-delay="150">
-            <div class="swiper-wrapper">
-              <?php for($i=0; $i<5; $i++){?>
-                <div class="swiper-slide p-0">
-                  <div class="ss-card">
-                    <div class="ss-img horizontal-2 no-hover">
-                      <div class="img-bg" style="background-image:url('public/img/content/0<?= ($i%1+3) ?>.png');"></div>
-                    </div>
-                  </div>  
+      <div class="swiper-container mt-5" data-aos="fade-up" data-aos-delay="150">
+        <div class="swiper-wrapper">
+          <?php for($i=0; $i<5; $i++){?>
+            <div class="swiper-slide ">
+              <div class="grids">
+                <div class="grid lg-50">
+                  <div class="d-flex flex-column jc-center height-full">
+                    <p class="h5 text-uppercase color-01 fw-600">Event Calendar</p>  
+                    <p class="sm color-04 md-no-br">
+                      ภาพหน้าจอ ที่จะให้กดเลื่อน ซ้าย ขวา ไปเรื่อยๆ 
+                      โดยจะมีภาพและเชื่อระบบ<br>พร้อมคุณสมบัติพื้นฐานสัก 5-6 หัวข้อ 
+                    </p>
+                  </div>
                 </div>
-              <?php }?>
-            </div>
-            <div class="dots-container">
-              <div class="dots"></div>
-              <div class="line"></div>
-              <div class="dots-style-02"></div>
-            </div>
-            <!-- <div class="arrow-container">
-              <div class="arrow btn-icon-next">
-                <img src="public/img/icon/arrow-01.png" alt="Arrow" />
+                <div class="grid lg-50">
+                  <div class="ss-card ss-card-35">
+                    <div class="ss-img no-hover">
+                      <div class="img-bg" style="background-image:url('public/img/content/48.jpg');"></div>
+                    </div>
+                    <div class="icon box-shadow">
+                      <em class="fa-solid fa-magnifying-glass"></em>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="arrow btn-icon-next">
-                <img src="public/img/icon/arrow-02.png" alt="Arrow" />
-              </div>
-            </div> -->
-          </div>  
+            </div>
+          <?php }?>
+        </div>
+        <div class="dots-container">
+          <div class="dots"></div>
+          <div class="line"></div>
+          <div class="dots-style-02"></div>
+        </div>
+        <!-- <div class="arrow-container">
+          <div class="arrow btn-icon-next">
+            <img src="public/img/icon/arrow-01.png" alt="Arrow" />
+          </div>
+          <div class="arrow btn-icon-next">
+            <img src="public/img/icon/arrow-02.png" alt="Arrow" />
+          </div>
+        </div> -->
+        </div>  
         </div>  
       </div>             
     </div>      
