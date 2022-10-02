@@ -249,6 +249,26 @@ $(function(){ 'use strict';
             });
         });
     }
+    
+    // Section 06
+    var section06= $('.section-06');
+    if(section06.length){
+        section06.find('.swiper-container').each(function(){
+            var self = $(this);
+            new Swiper(self, {
+                loop: true,
+                speed: 800,
+                slidesPerView: 3,
+                spaceBetween: 12,
+                grabCursor: true,
+                breakpoints: {
+                    1199.98: { slidesPerView: 3 },
+                    991.98: { slidesPerView: 2 },
+                    575.98: { slidesPerView: 1.5 },
+                },
+            });
+        });
+    }
 
 
     // Page Loader
@@ -280,26 +300,6 @@ $(function(){ 'use strict';
 
 });
 
- 
- // Section 06
- var section06= $('.section-06');
- if(section06.length){
-    section06.find('.swiper-container').each(function(){
-         var self = $(this);
-         new Swiper(self, {
-             loop: true,
-             speed: 800,
-             slidesPerView: 3,
-             spaceBetween: 20,
-             grabCursor: true,
-             breakpoints: {
-                 1199.98: { slidesPerView: 3, spaceBetween: 20 },
-                 991.98: { slidesPerView: 2, spaceBetween: 20 },
-                 575.98: { slidesPerView: 1.4, spaceBetween: 20 },
-             },
-         });
-     });
- }
 
  // Section 07
  var section07= $('.section-07');
@@ -321,9 +321,9 @@ $(function(){ 'use strict';
                 clickable: true,
             },
              breakpoints: {
-                 1199.98: { slidesPerView: 3, spaceBetween: 20 },
-                 991.98: { slidesPerView: 2, spaceBetween: 20 },
-                 575.98: { slidesPerView: 1.4, spaceBetween: 20 },
+                 1199.98: { slidesPerView: 3 },
+                 991.98: { slidesPerView: 2 },
+                 575.98: { slidesPerView: 1.4 },
              },
          });
      });
@@ -349,9 +349,9 @@ $(function(){ 'use strict';
                 type: "fraction",
             },
              breakpoints: {
-                 1199.98: { slidesPerView: 3, spaceBetween: 20 },
-                 991.98: { slidesPerView: 2, spaceBetween: 20 },
-                 575.98: { slidesPerView: 1.4, spaceBetween: 20 },
+                 1199.98: { slidesPerView: 3 },
+                 991.98: { slidesPerView: 2 },
+                 575.98: { slidesPerView: 1.4 },
              },
          });
      });
@@ -396,9 +396,9 @@ $(function(){ 'use strict';
                 clickable: true,
             },
              breakpoints: {
-                 1199.98: { slidesPerView: 1, spaceBetween: 20 },
-                 991.98: { slidesPerView: 1, spaceBetween: 20 },
-                 575.98: { slidesPerView: 1, spaceBetween: 20 },
+                 1199.98: { slidesPerView: 1 },
+                 991.98: { slidesPerView: 1 },
+                 575.98: { slidesPerView: 1 },
              },
          });
      });
@@ -424,9 +424,9 @@ $(function(){ 'use strict';
                 clickable: true,
             },
              breakpoints: {
-                 1199.98: { slidesPerView: 3, spaceBetween: 20 },
-                 991.98: { slidesPerView: 2, spaceBetween: 20 },
-                 575.98: { slidesPerView: 1.4, spaceBetween: 20 },
+                 1199.98: { slidesPerView: 3 },
+                 991.98: { slidesPerView: 2 },
+                 575.98: { slidesPerView: 1.4 },
              },
          });
      });

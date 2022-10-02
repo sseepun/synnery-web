@@ -95,73 +95,26 @@
     </div>   
   </section>
 
-  <section data-section="4" class="section-03">
+  <section data-section="2" class="section-12">
     <div class="container">
       <div class="blocks">
-        <div class="block style-02">
-          <div class="img-bg" style="background-image:url('public/img/content/20.jpg');"></div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
-            <div class="img-bg" style="background-image:url('public/img/bg/22.jpg');"></div>
-            <div class="text-wrapper ss-text-wrapper md">
-              <h3 class="color-01 lh-2xs fw-600">สนใจสมัครงานกับเรา</h3>
-              <p class="lg color-black fw-500">ดูตำแหน่งที่เปิดรับได้เลย</p>      
-            </div>
+        <div class="block-float left">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/20.jpg');"></div>
           </div>
-        </div> 
-      </div>    
-    </div>
- </section>
-
-  <section data-section="5" class="section-01 size-01" >
-    <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
-    <div class="container">
-      <div class="btns d-flex jc-center" data-aos="fade-up" data-aos-delay="0">
-        <a class="btn btn-action style-01 btn-color-01" href="#">
-          สอบถามรายละเอียดเพิ่มเติม
-        </a>
-      </div>    
-    </div>  
-  </section>
-
-  <section data-section="6" class="section-02 section-padding" style="background:#000000">
-    <h4 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-      งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
-    </h4> 
-    <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="150">
-      <div class="swiper-wrapper">
-        <?php for($i=0; $i<12; $i++){?>
-          <div class="swiper-slide">
-            <a class="ss-card ss-card-03 filter-01" href="#">
-              <div class="ss-img square">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
-              </div>
-              <div class="text-container">
-                <div class="title color-white" href="#">
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                </div>
-              </div>
-              <div class="icon">
-                <em class="fa-solid fa-plus"></em>
-              </div>
-            </a> 
+        </div>
+        <div class="block">
+          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+          <div class="text-container md">
+            <h3 class="color-01 lh-2xs fw-600">สนใจสมัครงานกับเรา</h3>
+            <p class="lg color-black fw-500">ดูตำแหน่งที่เปิดรับได้เลย</p>  
           </div>
-        <?php }?>
+        </div>
       </div>
-    </div>        
-  </section>
-
-  <section>
-    <div class="grids">
-      <div class="grid lg-1-3">
-          
     </div>
   </section>
-  
-  <?php include_once('include/footer.php'); ?>
+
+  <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
 </body>
 </html>
