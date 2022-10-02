@@ -195,31 +195,26 @@
         <div class="subblocks">
           <div class="subblock">
             <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-            <div class="text-wrapper ss-text-wrapper xs">
-              <h4 class="lg lh-2xs md-no-br fw-300" data-aos="fade-up" data-aos-delay="0">
-                พร้อม<span class="h3 color-01 fw-600">ข้อเสนอเพิ่มเติม</span>ต่างๆ<br>อีกมายมากอาทิเช่น 
+            <div class="text-wrapper ss-text-wrapper md style-02">
+              <h4 class="lg color-01 fw-600 lh-2xs md-no-br fw-300" data-aos="fade-up" data-aos-delay="0">
+                การป้องกันความมั่นคง<br>ความปลอดภัย<span class="color-black fw-200">ของระบบเว็บไซต์</span>
               </h4>
               <div class="grids">
                 <div class="grid lg-50">
                   <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-                    <li class="color-black pb-2 fw-500">Free Hero Banner Design 1 Year</li>
-                    <li class="color-black pb-2 fw-500">SEO Maintenance</li>
-                    <li class="color-black pb-2 fw-500">Security Monthly Testing</li>
-                    <li class="color-black pb-2 fw-500">Web Performance Tunning</li>
-                    <li class="color-black pb-2 fw-500">AI Search by Elastic Search </li>
-                    <li class="color-black pb-2 fw-500">Jmeter load Test</li>
-                    <li class="color-black pb-2 fw-500">Chat Bot</li>
+                    <li class="color-black pb-2 fw-500">Injection</li>
+                    <li class="color-black pb-2 fw-500">Broken Authentication</li>
+                    <li class="color-black pb-2 fw-500">Sensitive Data Exposure</li>
+                    <li class="color-black pb-2 fw-500">XML External Entities (XXE)</li>
+                    <li class="color-black pb-2 fw-500">Broken Access Control</li>
                   </ul>
                 </div>  
                 <div class="grid lg-50">
                   <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-                    <li class="color-black pb-2 fw-500">Free Hero Banner Design 1 Year</li>
-                    <li class="color-black pb-2 fw-500">SEO Maintenance</li>
-                    <li class="color-black pb-2 fw-500">Security Monthly Testing</li>
-                    <li class="color-black pb-2 fw-500">Web Performance Tunning</li>
-                    <li class="color-black pb-2 fw-500">AI Search by Elastic Search </li>
-                    <li class="color-black pb-2 fw-500">Jmeter load Test</li>
-                    <li class="color-black pb-2 fw-500">Chat Bot</li>
+                    <li class="color-black pb-2 fw-500">Cross-Site Scripting XSS</li>
+                    <li class="color-black pb-2 fw-500">Insecure Deserialization</li>
+                    <li class="color-black pb-2 fw-500">Using Components with Known Vulnerabilities</li>
+                    <li class="color-black pb-2 fw-500">Insufficient Logging & Monitoring</li>
                   </ul>
                 </div> 
               </div> 
@@ -236,18 +231,28 @@
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-wrapper ss-text-wrapper xs">
-            <h4 class="lg lh-2xs md-no-br fw-300" data-aos="fade-up" data-aos-delay="0">
-              พร้อม<span class="h3 color-01 fw-600">ข้อเสนอเพิ่มเติม</span>ต่างๆ<br>อีกมายมากอาทิเช่น 
+            <h4 class="lg color-black fw-200 lh-2xs md-no-br mt-6" data-aos="fade-up" data-aos-delay="0">
+              ระบบป้องกันภัยคุกคาม<br>จากภายนอก <span class="color-01 text-uppercase fw-600">Cloudflare</span>
             </h4>
-            <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-              <li class="color-black pb-2 fw-500">Free Hero Banner Design 1 Year</li>
-              <li class="color-black pb-2 fw-500">SEO Maintenance</li>
-              <li class="color-black pb-2 fw-500">Security Monthly Testing</li>
-              <li class="color-black pb-2 fw-500">Web Performance Tunning</li>
-              <li class="color-black pb-2 fw-500">AI Search by Elastic Search </li>
-              <li class="color-black pb-2 fw-500">Jmeter load Test</li>
-              <li class="color-black pb-2 fw-500">Chat Bot</li>
-            </ul> 
+            <p class="color-black mt-6 fw-400" data-aos="fade-up" data-aos-delay="150">
+              เพิ่มประสิทธิภาพ และ <span class="color-01 fw-500">ป้องกันภัยคุกคามจากภายนอก</span> 
+              ด้วย Cloudflare ดังนี้
+            </p>
+            <ol class="pl-4 mt-1" data-aos="fade-up" data-aos-delay="150">
+              <li class="color-black pb-2 fw-400">ป้องกันและบรรเทาการโจมดีแบบ DDoS และมีการแจ้งเตือนหากมีการโจมตี</li>
+              <li class="color-black pb-2 fw-400"> 
+                มีระบบ Web Application Firewall (WAF) ป้องกันการโจมตีเว็บไซต์ เช่น
+                SQL injection, XSS javascript
+              </li>
+              <li class="color-black pb-2 fw-400">
+                มีระบบ Global Content Delivery Network (CDN) ที่จัดเก็บเนื้อหาเว็บไซต์ที่  
+                กระจายอยู่ทั่วโลก ทำให้เข้าถึงเนื้อหาได้อย่างรวดเร็ว
+              </li>
+              <li class="color-black pb-2 fw-400">
+                เพิ่มความปลอดภัยในการรับส่งข้อมูลระหว่างผู้ใช้งานกับเครื่องแม่ข่ายด้วย 
+                SSL certificate
+              </li>
+            </ol> 
           </div>
         </div> 
         <div class="subblocks">
@@ -299,6 +304,86 @@
       </div>
    </div>             
  </div>
+
+ <section data-section="7" class="section-09 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/56.jpg');"></div>
+    <div class="container">
+      <h4 class="lg text-center color-white xs-no-br lh-xs fw-600" data-aos="fade-up" data-aos-delay="0">
+        รวมภาพบรรยากาศงานอบรม
+      </h4>
+      <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="swiper-wrapper">
+        <?php for($i=0; $i<12; $i++){?>
+          <div class="swiper-slide">
+          
+            <div class="ss-card-container ss-card-padding">
+              <div class="ss-card ss-card-20">
+                <div class="ss-img ">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-01.jpg');"></div>
+                </div>
+              </div>
+              <div class="ss-card ss-card-23">
+                <div class="ss-img height-full">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-02.jpg');"></div>
+                </div>
+              </div>
+              <div class="ss-card ss-card-20">
+                <div class="ss-img">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-03.jpg');"></div>
+                </div>
+              </div>
+              <div class="ss-card ss-card-20">
+                <div class="ss-img">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-04.jpg');"></div>
+                </div>
+              </div>
+              <div class="ss-card ss-card-20">
+                <div class="ss-img">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-04.jpg');"></div>
+                </div>
+              </div>
+              <div class="ss-card ss-card-23">
+                <div class="ss-img height-full">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-05.jpg');"></div>
+                </div>
+              </div>
+              <div class="ss-card ss-card-23">
+                <div class="ss-img height-full">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-06.jpg');"></div>
+                </div>
+              </div>
+              <div class="ss-card ss-card-21">
+                <div class="ss-img">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-07.jpg');"></div>
+                </div>
+              </div>
+              <div class="ss-card ss-card-22">
+                <div class="ss-img height-full">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-08.jpg');"></div>
+                </div>
+              </div>
+              <div class="ss-card ss-card-21">
+                <div class="ss-img">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-09.jpg');"></div>
+                </div>
+              </div>
+            </div>
+         
+          </div>
+          <?php }?>
+        </div>
+        <div class="dots" data-aos="fade-up" data-aos-delay="450"></div>
+        <div class="arrow-container">
+          <div class="arrow btn-icon-next">
+            <img src="public/img/icon/arrow-white-01.png" alt="Arrow" />
+          </div>
+          <div class="arrow btn-icon-next">
+            <img src="public/img/icon/arrow-white-02.png" alt="Arrow" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section data-section="16" class="section-01 size-01" >
     <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  

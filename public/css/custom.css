@@ -131,11 +131,9 @@ p.lg, .p.lg{font-size:1.125rem;}
     .section-03.style-02 .subblocks{width:100%;}
     .section-03.style-02 .subblock{width:100%;}
  
-  
     .section-03.style-02 .block.style-02{min-height:400px;}
-    .section-03.style-02 .subblock > .text-wrapper.ss-text-wrapper.xs{max-width:100%;}
+    .section-03.style-02 .subblock > .text-wrapper.ss-text-wrapper.md.style-02{max-width:100%;}
     .section-03.style-02 .block > .img-bg, .section-03.style-02 .subblock > .img-bg{width:110vw; right:auto;}
-   
 }
 @media screen and (max-width:767.98px){
     .section-03 .blocks.reverse{flex-direction:column-reverse;}
