@@ -126,6 +126,16 @@ p.lg, .p.lg{font-size:1.125rem;}
 @media screen and (max-width:991.98px){
     .section-03 .block{padding:2.5rem 2.5rem 2.5rem 0;}
     .section-03 .subblock{padding:2.5rem 0 2.5rem 2rem;}
+
+    .section-03.style-02 .block{width:100%;}
+    .section-03.style-02 .subblocks{width:100%;}
+    .section-03.style-02 .subblock{width:100%;}
+ 
+  
+    .section-03.style-02 .block.style-02{min-height:400px;}
+    .section-03.style-02 .subblock > .text-wrapper.ss-text-wrapper.xs{max-width:100%;}
+    .section-03.style-02 .block > .img-bg, .section-03.style-02 .subblock > .img-bg{width:110vw; right:auto;}
+   
 }
 @media screen and (max-width:767.98px){
     .section-03 .blocks.reverse{flex-direction:column-reverse;}
@@ -137,11 +147,16 @@ p.lg, .p.lg{font-size:1.125rem;}
     .section-03 .block .ss-text-wrapper.xxs{max-width:unset;}
     .section-03 .block.style-02{min-height:300px;}
     .section-03 .subblock{padding:2.5rem 0 2.5rem 0; min-height:300px; justify-content:flex-start;}
+
+    .section-03.style-02 .subblocks{width:100%;}
+    .section-03.style-02 .block{width:100%;}
+    .section-03.style-02 .subblock{width:100%;}
+    .section-03.style-02 .block > .img-bg, .section-03.style-02 .subblock > .img-bg{width:100vw;}
 }
 @media screen and (max-width:575.98px){
     .section-03 .block > .img-bg, .section-03 .subblock > .img-bg{left:-1rem;}
+    .section-03.style-02 .block > .img-bg, .section-03.style-02 .subblock > .img-bg{left:-1rem;}
 }
-
 /* Section 04 */
 @media screen and (max-width:575.98px){
    .section-04 .ss-img.square, .section-04 .ss-img.horizontal-2{padding:60% 0 0 0!important; height:unset!important;}

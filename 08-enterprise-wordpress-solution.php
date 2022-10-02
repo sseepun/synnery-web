@@ -186,10 +186,10 @@
     </h4>   
   </section>
 
-  <section data-section="6" class="section-03">
+  <section data-section="6" class="section-03 style-02">
     <div class="container">
       <div class="blocks">
-        <div class="block">
+        <div class="block style-02">
           <div class="img-bg" style="background-image:url('public/img/content/22.jpg');"></div>
         </div> 
         <div class="subblocks">
@@ -232,7 +232,7 @@
 
  <section data-section="7" class="section-03">
     <div class="container">
-      <div class="blocks">
+      <div class="blocks reverse">
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-wrapper ss-text-wrapper xs">
