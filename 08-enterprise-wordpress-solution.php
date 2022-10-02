@@ -260,7 +260,7 @@
  </section>
 
  <div data-section="8" class="section-01 section-padding">
-  <div class="img-bg" style="background-image:url('public/img/bg/09.jpg');"></div>
+  <div class="img-bg" style="background-image:url('public/img/content/55.jpg');"></div>
    <div class="container">
       <h5 class="text-uppercase text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         Network Architechture
@@ -268,32 +268,34 @@
       <p class="text-center color-black fw-400" data-aos="fade-up" data-aos-delay="150">
         สำหรับรองรับการทำงานของทุกเว็บไซต์ทั่วประเทศ
       </p>
-      <div class="ss-card ss-card-19" data-aos="fade-up" data-aos-delay="300">
-        <img class="img" src="public/img/content/24.jpg" alt="Banner" />     
+      <div class="ss-box xxl mt-5">
+        <div class="ss-card ss-card-19" data-aos="fade-up" data-aos-delay="300">
+          <img class="img" src="public/img/content/24.jpg" alt="Banner" />     
+        </div>    
       </div>
    </div>             
  </div>
 
  <div data-section="9" class="section-01 section-padding bg-05">
    <div class="container">
-      <h5 class="text-uppercase text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-        Network Architechture
-      </h5>          
-      <p class="text-center color-black fw-400" data-aos="fade-up" data-aos-delay="150">
-        สำหรับรองรับการทำงานของทุกเว็บไซต์ทั่วประเทศ
-      </p>
-      <div class="ss-box xl">
-      <div class="ss-card ss-card-18">
-        <div class="ss-img horizontal-2">
-          <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
-        </div>
-        <div div class="ss-card-inner"></div>
-        <div class="icon-container">
-          <div class="icon">
-            <img class="img" src="public/img/icon/play.png" alt="Banner" />
+      <p class="lg text-uppercase text-center color-black fw-400" data-aos="fade-up" data-aos-delay="0">
+        ตัวอย่างภาพการฝึกอบรมให้กับเจ้าหน้าที่ของกระทรวงศึกษาธิการจากทั่วประเทศ
+      </p>          
+      <h6 class="color-01 text-center text-uppercase color-black fw-600" data-aos="fade-up" data-aos-delay="150">
+        Video งานอบรมของ MOE
+      </h6>
+      <div class="ss-box xxl mt-5" data-aos="fade-up" data-aos-delay="300">
+        <div class="ss-card ss-card-18">
+          <div class="ss-img horizontal-2">
+            <div class="img-bg" style="background-image:url('public/img/content/5<?= ($i%1+4) ?>.jpg');"></div>
           </div>
-        </div>
-      </div>         
+          <div div class="ss-card-inner"></div>
+          <div class="icon-container">
+            <div class="icon">
+              <img class="img" src="public/img/icon/play.png" alt="Banner" />
+            </div>
+          </div>
+        </div>         
       </div>
    </div>             
  </div>
