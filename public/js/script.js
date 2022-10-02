@@ -176,6 +176,81 @@ $(function(){ 'use strict';
     }
 
 
+    // Hex Container
+    var hexContainer = $('.hex-container');
+    if(hexContainer.length){
+        let pageX = 0,
+            pageY = 0;
+        window.addEventListener('mousemove', function(e){
+            pageX = e.pageX;
+            pageY = e.pageY;
+        });
+        hexContainer.find('.hex-flip').on('mouseenter', function(){
+            let self = $(this);
+            self.removeClass('from-top from-bottom from-left from-right');
+            let o = self.offset(),
+                w = self.width(),
+                h = self.height();
+            if(pageX-5 <= o.left) self.addClass('from-left');
+            else if(pageX+5 >= o.left + w) self.addClass('from-right');
+            else if(pageY-50 <= o.top) self.addClass('from-top');
+            else if(pageY+50 >= o.top + h) self.addClass('from-bottom');
+        });
+        hexContainer.find('.hex-flip').on('mouseleave', function(){
+            let self = $(this);
+            self.removeClass('from-top from-bottom from-left from-right');
+            let o = self.offset(),
+                w = self.width(),
+                h = self.height();
+            if(pageX-5 <= o.left) self.addClass('from-left');
+            else if(pageX+5 >= o.left + w) self.addClass('from-right');
+            else if(pageY-50 <= o.top) self.addClass('from-top');
+            else if(pageY+50 >= o.top + h) self.addClass('from-bottom');
+        });
+    }
+
+
+    // Counter
+    const counterUp = window.counterUp['default'];
+    $('.counter').each(function(){
+      let self = this;
+      new Waypoint({
+        element: self,
+        handler: function(){ 
+          counterUp(self, {
+            duration: 2000,
+            delay: 10,
+          });
+          this.destroy();
+        },
+        offset: 'bottom-in-view',
+      });
+    });
+
+    
+    // Section 02
+    var section02= $('.section-02');
+    if(section02.length){
+        section02.find('.swiper-container').each(function(){
+            var self = $(this);
+            new Swiper(self, {
+                loop: true,
+                speed: 800,
+                slidesPerView: 6,
+                spaceBetween: 2,
+                grabCursor: true,
+                breakpoints: {
+                    1299.98: { slidesPerView: 5 },
+                    1199.98: { slidesPerView: 4 },
+                    991.98: { slidesPerView: 3 },
+                    767.98: { slidesPerView: 2 },
+                    575.98: { slidesPerView: 1.5 },
+                },
+            });
+        });
+    }
+
+
     // Page Loader
     let pageLoader = $('.page-loader');
     if(pageLoader.length){
@@ -188,36 +263,22 @@ $(function(){ 'use strict';
                 setTimeout(function(){
                     pageLoader.remove();
                     $('body').removeClass('loading');
-                    AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 10 });
+                    AOS.init({
+                        easing: 'ease-in-out-cubic', duration: 750, offset: 10,
+                        once: false, mirror: true
+                    });
                 }, 1700);
             }, 1100);
         }
     }else{
         $('body').removeClass('loading');
-        AOS.init({ easing: 'ease-in-out-cubic', duration: 750, once: true, offset: 10 });
+        AOS.init({
+            easing: 'ease-in-out-cubic', duration: 750, offset: 10,
+            once: false, mirror: true
+        });
     }
 
 });
-
- // Section 02
- var section02= $('.section-02');
- if(section02.length){
-    section02.find('.swiper-container').each(function(){
-         var self = $(this);
-         new Swiper(self, {
-             loop: true,
-             speed: 800,
-             slidesPerView: 6,
-             spaceBetween: 20,
-             grabCursor: true,
-             breakpoints: {
-                 1199.98: { slidesPerView: 3, spaceBetween: 20 },
-                 991.98: { slidesPerView: 2, spaceBetween: 20 },
-                 575.98: { slidesPerView: 1.4, spaceBetween: 20 },
-             },
-         });
-     });
- }
 
  
  // Section 06

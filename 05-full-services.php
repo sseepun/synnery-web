@@ -9,32 +9,36 @@
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1">
+  <section data-section="1" data-aos="fade-in" data-aos-delay="0">
     <img class="img" src="public/img/bg/07.jpg" alt="Banner" />
   </section>
 
   <section data-section="2" class="section-01 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/24.jpg');"></div>
     <div class="container">
       <div class="text-center color-01" data-aos="fade-up" data-aos-delay="0">
-        <p class="h2 lh-3xs fw-600">Full Services</p>
-        <h1 class="fw-600">Digital Marketing</h1>
+        <p class="h2 lh-2xs fw-600">Full Services</p>
+        <h1 class="fw-600 lh-xs text-shadow">Digital Marketing</h1>
       </div>
-      <div class="grids" data-aos="fade-up" data-aos-delay="150">
+      <div class="grids pt-6" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<4; $i++){?>
           <div class="grid xl-25 lg-25 md-50 sm-50 xs-100">
-            <a class="ss-card ss-card-05 filter-01">
-              <div class="ss-img vertical">
+            <a class="ss-card ss-card-05">
+              <div class="ss-img vertical-01">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
               </div>
+              <div class="filter-02"></div>
+              <div class="hover-filter-01"></div>
               <div class="text-container">
-              <div class="title h5 color-01 lh-xs fw-500">
-                ช่องทางการสื่อสาร
+                <div class="title h5 color-01 lh-xs fw-500">
+                  ช่องทางการสื่อสาร
+                </div>
+                <div class="desc p sm color-white fw-400">
+                  นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
+                  นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
+                </div>
               </div>
-              <div class="desc color-white fw-400">
-                นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
-                นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
-              </div>
-            </div>
+              <div class="line-1"></div><div class="line-2"></div>
             </a>
           </div>
         <?php }?>
