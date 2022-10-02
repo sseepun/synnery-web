@@ -116,6 +116,68 @@
     <div data-aos="fade-up" data-aos-delay="150">
       <img class="img" src="public/img/bg/banner-01.jpg" alt="Banner" />
     </div>
+  <style>
+
+      .swiper {
+        background-color: yellow;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-wrapper{
+        max-height: 700px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+  <section data-section="3">
+    <!-- ยังเก็บไม่เสร็จนะครับ -->
+     <!-- Swiper -->
+     <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="img" src="public/img/bg/banner-01.jpg" alt="Banner" />
+        </div>
+        <div class="swiper-slide">
+          <img class="img" src="public/img/content/unsplash-01.jpg" alt="Banner" />
+        </div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- <img class="img" src="public/img/bg/banner-01.jpg" alt="Banner" /> -->
   </section>
 
   <section data-section="6" class="section-01 section-padding">

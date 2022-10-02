@@ -3,6 +3,7 @@
 
 <script src="public/lib/fancybox-3.5.7/dist/jquery.fancybox.min.js"></script>
 <script src="public/lib/aos-2.3.1/aos.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
