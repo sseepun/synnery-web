@@ -111,46 +111,7 @@
       ตัวอย่าง<span class="fw-500">ผลงาน</span>
     </h4>   
   </section>
-  <style>
 
-      .swiper {
-        background-color: yellow;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-wrapper{
-        max-height: 700px;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
   <section data-section="3">
     <!-- ยังเก็บไม่เสร็จนะครับ -->
      <!-- Swiper -->
