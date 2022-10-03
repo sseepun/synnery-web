@@ -437,6 +437,9 @@ $(function(){ 'use strict';
    direction: "vertical",
    pagination: {
      el: ".swiper-pagination",
-     clickable: true
+     clickable: true,
+     renderBullet: function (index, className) {    // ถ้า Index (0) มีค่าน้อยกว่า 10 ให้แสดง 'Hello' ถ้าไม่ใช่ 'Good Bye :)'
+        return '<span class="' + className + '">' + (index < 10 ? '0' + index.toString() : index.toString()) + "</span>";
+      },
    }
  });

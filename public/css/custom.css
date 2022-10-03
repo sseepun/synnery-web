@@ -160,6 +160,33 @@
     .section-11{min-height:0;}
 }
 
+/* Section 13 */
+.section-13{position: relative;}
+.section-13 .text-wrapper{
+    position:absolute; top:0; left:0; right:0; bottom:0; display:flex; align-items:center;
+    justify-content:center; flex-wrap:wrap;
+}
+.section-13 .text-wrapper > .image-container{width:65%; display:flex; justify-content:flex-end;}
+.section-13 .text-wrapper > .text-container{width:35%;}
+.section-13 .text-wrapper > .image-container img{display:block; width:50rem; height:auto;}
+.section-13 .text-wrapper > .text-container img{display:block; width:7rem; height:auto;}
+
+@media screen and (max-width:1199.98px){
+   
+    .section-13 .swiper-wrapper{min-height:1100px;}
+    .section-13 .text-wrapper > .image-container{
+        width:100%; display:flex; justify-content:center; 
+    }
+    .section-13 .text-wrapper > .text-container{
+        display:flex; flex-direction:column; align-items:center; justify-content:flex-start!important;
+    }
+}
+@media screen and (max-width:767.98px){
+    .section-13 .swiper-wrapper{min-height:700px;}
+    .section-13 .text-wrapper > .image-container{margin-top:0;}
+    .section-13 .text-wrapper > .image-container img{display:block; width:30rem; height:auto;}
+   
+}
 
 /* ============================================= 
                    Special Card
