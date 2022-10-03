@@ -396,8 +396,10 @@ fieldset{padding:0; margin:0; border:0;}
     content:''; position:absolute; background-color:#ffffff;
     transition:all .5s; overflow:hidden; z-index:1;
 }
-.ss-card:hover .card-line-1::before, .ss-card:hover .card-line-2::before{height:100%;}
-.ss-card:hover .card-line-1::after, .ss-card:hover .card-line-2::after{width:100%;}
+.ss-card:hover .card-line-1::before,
+.ss-card:hover .card-line-2::before{height:calc(100% - 1rem);}
+.ss-card:hover .card-line-1::after,
+.ss-card:hover .card-line-2::after{width:calc(100% - 1rem);}
 
 .ss-card .filter-01{
     position:absolute; top:0; bottom:0; left:0; right:0;   

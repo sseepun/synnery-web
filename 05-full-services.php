@@ -643,10 +643,11 @@
       <div class="swiper-wrapper">
         <?php for($i=0; $i<12; $i++){?>
           <div class="swiper-slide">
-            <a class="ss-card ss-card-12 filter-01" href="#">
+            <a class="ss-card ss-card-03" href="#">
               <div class="ss-img">
                 <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+7) ?>.jpg');"></div>
               </div>
+              <div class="hover-filter-01"></div>
               <div class="icon">
                 <em class="fa-solid fa-plus"></em>
               </div>

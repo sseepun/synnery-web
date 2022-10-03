@@ -104,6 +104,60 @@
 }
 
 
+/* Section 08 */
+.section-08{position:relative; background-size:cover; }
+.section-08 > .img-bg{
+  position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+  background-position:center; background-repeat:no-repeat;
+}
+.section-08 > .container{position:relative;}
+.section-08 .content-container{
+  position:relative; display:block; width:100%; max-width:64rem; margin:0 auto; padding:0 4rem;
+}
+.section-08 .swiper-container{position:relative; width:calc(100% + 2rem); margin:0 -1rem;}
+.section-08 .swiper-slide > .wrapper{padding:0 1rem;}
+.section-08 .navigator{
+  display:flex; align-items:center; justify-content:center; width:100%; margin:2.5rem 0 0 0;
+}
+.section-08 .navigator .line{
+  display:block; width:2rem; height:.1875rem; background:#ec2c23; margin:0 1rem 0 1.5rem;
+}
+.section-08 .dots{display:flex; align-items:center;}
+.section-08 .swiper-pagination-bullet{
+  position:relative; display:block; width:.5rem; height:.5rem;
+  background:#ec2c23; opacity:1; margin:0 .3125rem;
+}
+.section-08 .swiper-pagination-bullet::after{
+  content:''; pointer-events:none;
+  position:absolute; top:-.3125rem; bottom:-.3125rem; left:-.3125rem; right:-.3125rem;
+  border-radius:50%; border:1.5px solid transparent; transition:border-color .3s; 
+}
+.section-08 .swiper-pagination-bullet.swiper-pagination-bullet-active::after{
+  border-color:#ec2c23;
+}
+.section-08 .arrows{
+  position:absolute; top:0; bottom:0; left:0; right:0; pointer-events:none;
+  display:flex; align-items:center; justify-content:space-between; pointer-events:none;
+}
+.section-08 .arrow{cursor:pointer; pointer-events:auto; transition:opacity .3s;}
+.section-08 .arrow:hover{opacity:.7;}
+.section-08 .arrow > img{display:block; width:1.25rem; height:auto;}
+
+.section-08 .navigator.white .line{background:#ffffff;}
+.section-08 .navigator.white .swiper-pagination-bullet{background:#ffffff;}
+.section-08 .navigator.white .swiper-pagination-bullet.swiper-pagination-bullet-active::after{
+  border-color:#ffffff;
+}
+
+@media screen and (max-width:991.98px){
+  .section-08 .content-container{padding:0 3rem;}
+}
+@media screen and (max-width:767.98px){
+  .section-08 .content-container{padding:0;}
+  .section-08 .arrows{display:none;}
+}
+
+
 /* Section 10 */
 .section-10{position:relative;}
 .section-10 > .img-bg{

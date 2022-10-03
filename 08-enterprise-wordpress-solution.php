@@ -71,24 +71,26 @@
   <section data-section="4" class="section-08 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/27.jpg');"></div> 
     <div class="container">
-      <div class="swiper-container" data-aos="fade-up" data-aos-delay="150">
-        <div class="swiper-wrapper">
-          <?php for($i=0; $i<5; $i++){?>
-            <div class="swiper-slide">
-              <div class="ss-card">
-                <div class="ss-img horizontal-2">
-                  <div class="img-bg" style="background-image:url('public/img/content/2<?= ($i%1+1) ?>.jpg');"></div>
+      <div class="content-container" data-aos="fade-up" data-aos-delay="0">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <?php for($i=0; $i<5; $i++){?>
+              <div class="swiper-slide">
+                <div class="wrapper">
+                  <a class="ss-img horizontal-01" href="#">
+                    <div class="img-bg" style="background-image:url('public/img/content/2<?= ($i%1+1) ?>.jpg');"></div>
+                  </a>
                 </div>
-              </div>  
-            </div>
-          <?php }?>
+              </div>
+            <?php }?>
+          </div>
+          <div class="navigator">
+            <div class="progress p color-white"></div>
+            <div class="line"></div>
+            <div class="dots"></div>
+          </div>
         </div>
-        <div class="dots-container">
-          <div class="dots"></div>
-          <div class="line"></div>
-          <div class="dots-style-02"></div>
-        </div>
-        <div class="arrow-container">
+        <div class="arrows">
           <div class="arrow btn-icon-next">
             <img src="public/img/icon/arrow-01.png" alt="Arrow" />
           </div>
@@ -96,7 +98,7 @@
             <img src="public/img/icon/arrow-02.png" alt="Arrow" />
           </div>
         </div>
-      </div>         
+      </div>       
     </div>      
   </section>
 
@@ -130,53 +132,55 @@
   <section data-section="6" class="section-08 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/29.jpg');"></div> 
     <div class="container">
-      <h4 class="lg text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+      <h3 class="text-center color-01 fw-600 lh-sm" data-aos="fade-up" data-aos-delay="0">
         Word Press Plug-In <span class="color-white fw-200">ที่บริษัทฯ พัฒนาขึ้นมาใหม่</span>
-      </h4>
-      <div class="swiper-container mt-5" data-aos="fade-up" data-aos-delay="150">
-        <div class="swiper-wrapper">
-          <?php for($i=0; $i<5; $i++){?>
-            <div class="swiper-slide ">
-              <div class="grids">
-                <div class="grid lg-50">
-                  <div class="d-flex flex-column jc-center height-full">
-                    <p class="h5 text-uppercase color-01 fw-600">Event Calendar</p>  
-                    <p class="sm color-04 md-no-br">
-                      ภาพหน้าจอ ที่จะให้กดเลื่อน ซ้าย ขวา ไปเรื่อยๆ 
-                      โดยจะมีภาพและเชื่อระบบ<br>พร้อมคุณสมบัติพื้นฐานสัก 5-6 หัวข้อ 
-                    </p>
-                  </div>
-                </div>
-                <div class="grid lg-50">
-                  <div class="ss-card ss-card-35">
-                    <div class="ss-img no-hover">
-                      <div class="img-bg" style="background-image:url('public/img/content/48.jpg');"></div>
+      </h3>
+      <div class="content-container mt-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <?php for($i=0; $i<5; $i++){?>
+              <div class="swiper-slide">
+                <div class="wrapper">
+                  <div class="grids">
+                    <div class="grid">
+                      <div class="d-flex flex-column jc-center height-full">
+                        <p class="h5 color-01 fw-600">EVENT CALENDAR</p>  
+                        <p class="sm color-04 md-no-br">
+                          ภาพหน้าจอ ที่จะให้กดเลื่อน ซ้าย ขวา ไปเรื่อยๆ 
+                          โดยจะมีภาพและเชื่อระบบ<br>พร้อมคุณสมบัติพื้นฐานสัก 5-6 หัวข้อ 
+                        </p>
+                      </div>
                     </div>
-                    <div class="icon box-shadow">
-                      <em class="fa-solid fa-magnifying-glass"></em>
+                    <div class="grid">
+                      <div class="ss-card ss-card-35">
+                        <div class="ss-img no-hover">
+                          <div class="img-bg" style="background-image:url('public/img/content/48.jpg');"></div>
+                        </div>
+                        <div class="icon box-shadow">
+                          <em class="fa-solid fa-magnifying-glass"></em>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          <?php }?>
+            <?php }?>
+          </div>
+          <div class="navigator">
+            <div class="progress p color-white"></div>
+            <div class="line"></div>
+            <div class="dots"></div>
+          </div>
         </div>
-        <div class="dots-container">
-          <div class="dots"></div>
-          <div class="line"></div>
-          <div class="dots-style-02"></div>
-        </div>
-        <!-- <div class="arrow-container">
+        <div class="arrows">
           <div class="arrow btn-icon-next">
             <img src="public/img/icon/arrow-01.png" alt="Arrow" />
           </div>
           <div class="arrow btn-icon-next">
             <img src="public/img/icon/arrow-02.png" alt="Arrow" />
           </div>
-        </div> -->
-        </div>  
-        </div>  
-      </div>             
+        </div>
+      </div>
     </div>      
   </section>
 
@@ -308,75 +312,81 @@
    </div>             
   </div>
 
-  <section data-section="7" class="section-09 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/56.jpg');"></div>
+  <section data-section="10" class="section-08 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/bg/56.jpg');"></div> 
     <div class="container">
-      <h4 class="lg text-center color-white xs-no-br lh-xs fw-600" data-aos="fade-up" data-aos-delay="0">
+      <h3 class="text-center color-white fw-600 lh-sm" data-aos="fade-up" data-aos-delay="0">
         รวมภาพบรรยากาศงานอบรม
-      </h4>
-      <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="swiper-wrapper">
-        <?php for($i=0; $i<12; $i++){?>
-          <div class="swiper-slide">
-          
-            <div class="ss-card-container ss-card-padding">
-              <div class="ss-card ss-card-20">
-                <div class="ss-img ">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-01.jpg');"></div>
+      </h3>
+      <div class="content-container mt-6 pt-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <?php for($j=0; $j<12; $j++){?>
+              <div class="swiper-slide">
+                <div class="wrapper">
+                  <div class="grids no-gap">
+                    <?php for($i=0; $i<2; $i++){?>
+                      <div class="grid lg-1-3 xs-50 mt-0">
+                        <div class="p-1">
+                          <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+                            <div class="ss-img horizontal-03">
+                              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+2) ?>.jpg');"></div>
+                            </div>
+                            <div class="hover-filter-01"></div>
+                            <div class="card-line-1"></div><div class="card-line-2"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="grid lg-1-6 xs-50 mt-0">
+                        <div class="p-1 h-full">
+                          <a class="ss-card ss-card-03 style-02" href="public/img/content/unsplash-0<?= ($i%6+3) ?>.jpg" data-fancybox="gallery">
+                            <div class="ss-img">
+                              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+                            </div>
+                            <div class="hover-filter-01"></div>
+                            <div class="line-1"></div><div class="line-2"></div>
+                          </a>
+                        </div>
+                      </div>
+                    <?php }?>
+                    <?php for($i=0; $i<2; $i++){?>
+                      <div class="grid lg-1-6 xs-50 mt-0">
+                        <div class="p-1 h-full">
+                          <a class="ss-card ss-card-03 style-02" href="public/img/content/unsplash-0<?= ($i%6+3) ?>.jpg" data-fancybox="gallery">
+                            <div class="ss-img">
+                              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+                            </div>
+                            <div class="hover-filter-01"></div>
+                            <div class="line-1"></div><div class="line-2"></div>
+                          </a>
+                        </div>
+                      </div>
+                    <?php }?>
+                    <?php for($i=0; $i<2; $i++){?>
+                      <div class="grid lg-1-3 xs-50 mt-0">
+                        <div class="p-1">
+                          <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+                            <div class="ss-img horizontal-03">
+                              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+2) ?>.jpg');"></div>
+                            </div>
+                            <div class="hover-filter-01"></div>
+                            <div class="card-line-1"></div><div class="card-line-2"></div>
+                          </a>
+                        </div>
+                      </div>
+                    <?php }?>
+                  </div>
                 </div>
               </div>
-              <div class="ss-card ss-card-23">
-                <div class="ss-img height-full">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-02.jpg');"></div>
-                </div>
-              </div>
-              <div class="ss-card ss-card-20">
-                <div class="ss-img">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-03.jpg');"></div>
-                </div>
-              </div>
-              <div class="ss-card ss-card-20">
-                <div class="ss-img">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-04.jpg');"></div>
-                </div>
-              </div>
-              <div class="ss-card ss-card-20">
-                <div class="ss-img">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-04.jpg');"></div>
-                </div>
-              </div>
-              <div class="ss-card ss-card-23">
-                <div class="ss-img height-full">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-05.jpg');"></div>
-                </div>
-              </div>
-              <div class="ss-card ss-card-23">
-                <div class="ss-img height-full">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-06.jpg');"></div>
-                </div>
-              </div>
-              <div class="ss-card ss-card-21">
-                <div class="ss-img">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-07.jpg');"></div>
-                </div>
-              </div>
-              <div class="ss-card ss-card-22">
-                <div class="ss-img height-full">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-08.jpg');"></div>
-                </div>
-              </div>
-              <div class="ss-card ss-card-21">
-                <div class="ss-img">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-09.jpg');"></div>
-                </div>
-              </div>
-            </div>
-         
+            <?php }?>
           </div>
-          <?php }?>
+          <div class="navigator white">
+            <div class="progress p color-white"></div>
+            <div class="line"></div>
+            <div class="dots"></div>
+          </div>
         </div>
-        <div class="dots" data-aos="fade-up" data-aos-delay="450"></div>
-        <div class="arrow-container">
+        <div class="arrows">
           <div class="arrow btn-icon-next">
             <img src="public/img/icon/arrow-white-01.png" alt="Arrow" />
           </div>
@@ -385,7 +395,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>      
   </section>
   
   <?php $withFooterInfo=true; include_once('include/footer.php'); ?>

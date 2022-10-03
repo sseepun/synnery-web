@@ -209,24 +209,6 @@ $(function(){ 'use strict';
         });
     }
 
-
-    // Counter
-    const counterUp = window.counterUp['default'];
-    $('.counter').each(function(){
-      let self = this;
-      new Waypoint({
-        element: self,
-        handler: function(){ 
-          counterUp(self, {
-            duration: 2000,
-            delay: 10,
-          });
-          this.destroy();
-        },
-        offset: 'bottom-in-view',
-      });
-    });
-
     
     // Section 02
     var section02= $('.section-02');
@@ -270,6 +252,34 @@ $(function(){ 'use strict';
         });
     }
 
+    // Section 08
+    var section08 = $('.section-08');
+    if(section08.length){
+        section08.find('.content-container').each(function(){
+            var self = $(this);
+            let slideNum = self.find('.swiper-slide').length;
+            let swiper08 = new Swiper(self.find('.swiper-container'), {
+                loop: true,
+                speed: 800,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                grabCursor: true,
+                navigation: {
+                    nextEl: self.find('.btn-icon-next'),
+                    prevEl: self.find('.btn-icon-prev'),
+                },
+                pagination: {
+                    el: self.find('.dots'),
+                    clickable: true,
+                },
+            });
+            self.find('.progress').html('1 / '+slideNum);
+            swiper08.on('slideChange', function(){
+                self.find('.progress').html(swiper08.activeIndex+' / '+slideNum);
+            });
+        });
+    }
+
 
     // Page Loader
     let pageLoader = $('.page-loader');
@@ -282,19 +292,36 @@ $(function(){ 'use strict';
                 pageLoader.addClass('fade-out');
                 setTimeout(function(){
                     pageLoader.remove();
-                    $('body').removeClass('loading');
-                    AOS.init({
-                        easing: 'ease-in-out-cubic', duration: 750, offset: 10,
-                        once: false, mirror: true
-                    });
+                    processInit();
                 }, 1700);
             }, 1100);
         }
     }else{
+        processInit();
+    }
+
+    function processInit(){
         $('body').removeClass('loading');
         AOS.init({
             easing: 'ease-in-out-cubic', duration: 750, offset: 10,
             once: false, mirror: true
+        });
+        
+        // Counter
+        let counterUp = window.counterUp['default'];
+        $('.counter').each(function(){
+            let self = this;
+            new Waypoint({
+                element: self,
+                handler: function(){ 
+                counterUp(self, {
+                    duration: 2000,
+                    delay: 10,
+                });
+                this.destroy();
+                },
+                offset: 'bottom-in-view',
+            });
         });
     }
 
@@ -324,81 +351,6 @@ $(function(){ 'use strict';
                  1199.98: { slidesPerView: 3 },
                  991.98: { slidesPerView: 2 },
                  575.98: { slidesPerView: 1.4 },
-             },
-         });
-     });
- }
-
- // Section 08
- var section08= $('.section-08');
- if(section08.length){
-    section08.find('.swiper-container').each(function(){
-         var self = $(this);
-         new Swiper(self, {
-             loop: true,
-             speed: 800,
-             slidesPerView: 1,
-             spaceBetween: 20,
-             grabCursor: true,
-             navigation: {
-                nextEl: self.find('.btn-icon-next'),
-                prevEl: self.find('.btn-icon-prev'),
-            },
-            pagination: {
-                el: self.find('.dots'),
-                type: "fraction",
-            },
-             breakpoints: {
-                 1199.98: { slidesPerView: 3 },
-                 991.98: { slidesPerView: 2 },
-                 575.98: { slidesPerView: 1.4 },
-             },
-         });
-     });
- }
-
- // Section 08 (pagination style 02)
- var section08= $('.section-08');
- if(section08.length){
-    section08.find('.swiper-container').each(function(){
-         var self = $(this);
-         new Swiper(self, {
-             loop: true,
-             speed: 800,
-             slidesPerView: 1,
-             spaceBetween: 20,
-             grabCursor: true,
-             pagination: {
-                el: self.find('.dots-style-02'),
-                clickable: true,
-            },
-         });
-     });
- }
-
- // Section 09
- var section09= $('.section-09');
- if(section09.length){
-    section09.find('.swiper-container').each(function(){
-         var self = $(this);
-         new Swiper(self, {
-             loop: true,
-             speed: 800,
-             slidesPerView: 1,
-             spaceBetween: 20,
-             grabCursor: true,
-             navigation: {
-                nextEl: self.find('.btn-icon-next'),
-                prevEl: self.find('.btn-icon-prev'),
-            },
-            pagination: {
-                el: self.find('.dots'),
-                clickable: true,
-            },
-             breakpoints: {
-                 1199.98: { slidesPerView: 1 },
-                 991.98: { slidesPerView: 1 },
-                 575.98: { slidesPerView: 1 },
              },
          });
      });
