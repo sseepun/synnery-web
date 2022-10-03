@@ -6,6 +6,8 @@
   position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
   background-position:center; background-repeat:no-repeat;
 }
+.section-01 .title-intro{display:flex; align-items:center; justify-content:center;}
+.section-01 .title-intro > img{display:block; width:10rem; height:auto;}
 .section-01 > .container{position:relative;}
 
 .section-01.size-01{padding-bottom:17rem;}
@@ -102,7 +104,9 @@
   display:flex; align-items:center; width:50%; margin:.75rem 0 0 0;
   border-radius:.1875rem; font-size:.875rem; font-weight:300; transition:background .3s;
 }
-
+.section-05 .form-group input{transition:border-color .3s;}
+.section-05 .form-group textarea:focus,
+.section-05 .form-group input:focus{border:2px solid red;}
 
 /* Section 08 */
 .section-08{position:relative; background-size:cover; }
@@ -200,6 +204,7 @@
 @media screen and (max-width:767.98px){
   .section-12 .text-container{max-width:100%;}
   .section-12 .blocks{flex-wrap:wrap; min-height:0;}
+  .section-12 .blocks.flex-column-reverse{flex-direction:column-reverse;}
   .section-12 .blocks > .block-float.left,
   .section-12 .blocks > .block-float.right{width:100vw; margin:0 calc(50% - 50vw);}
   .section-12 .blocks > .block,

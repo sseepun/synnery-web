@@ -227,7 +227,11 @@
     width:3rem; height:2rem; position:absolute; top:0; right:0; font-size:.875rem; transition:all .3s;
     display:flex; justify-content:center; align-items:center; background:#35353a; color:#ec2c23; 
 }
-
+.ss-card-35 .title-header{
+    width:16rem; height:6rem; position:absolute; top:0; left:0; font-size:.875rem; transition:all .3s;
+    background:#35353a; color:#ec2c23; display:flex; justify-content:center; flex-direction:column;
+    padding-left:2rem;
+}
 
 /* ============================================= 
                    Button

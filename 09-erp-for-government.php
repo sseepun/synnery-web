@@ -27,7 +27,7 @@
       <div class="ss-box xl mt-4" data-aos="fade-up" data-aos-delay="450">
         <div class="grids">
           <div class="grid xl-50 lg-50 md-50 sm-50 xs-100">
-            <ul class="ss-list-02 size-02">
+            <ul class="ss-list-01 style-04 size-02">
               <li class="pb-2">
                 <p class="color-black fw-600 mt-1">ระบบไม่รองรับเทคโนโลยีใหม่ๆ</p>
                 <p class="sm color-black fw-400">
@@ -55,7 +55,7 @@
             </ul> 
           </div>   
           <div class="grid xl-50 lg-50 md-50 sm-50 xs-100">
-            <ul class="ss-list-02 size-02">
+            <ul class="ss-list-01 style-04">
               <li class="pb-2">
                 <p class="color-black fw-600 mt-1">ระบบไม่รองรับเทคโนโลยีใหม่ๆ</p>
                 <p class="sm color-black fw-400">
@@ -130,15 +130,21 @@
       </h4>
       <div class="grids jc-center mt-2" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<3; $i++) {?>
-          <div class="grid lg-1-3">
-            <a class="ss-card ss-card-34 box-shadow" href="#">
+          <div class="grid lg-1-3 md-50 sm-50 xs-100 pt-6">
+            <a class="ss-card ss-card-03" href="#">
               <div class="ss-img">
                 <div class="img-bg" style="background-image:url('public/img/content/4<?= ($i%2+2) ?>.jpg');"></div>
               </div>
               <div class="icon">
                 <em class="fa-solid fa-plus"></em>
               </div>
+              <div class="line-1"></div><div class="line-2"></div>
             </a>
+            <div class="text-center mt-3">
+              <a class="p lg color-white h-color-p fw-600" href="#">
+                BENCHMARKING
+              </a>
+            </div>
           </div>
         <?php }?>
       </div>
@@ -224,7 +230,7 @@
     </div>      
   </section>
 
-  <section data-section="10" class="section-09 style-02 section-padding">
+  <section data-section="10" class="section-08 section-padding">
     <div class="container">
       <p class="h4 text-center color-black fw-300" data-aos="fade-up" data-aos-delay="0">
         ตัวอย่างงานด้าน
@@ -232,34 +238,35 @@
       <h5 class="text-center lh-sm" data-aos="fade-up" data-aos-delay="150">
         <span class="color-01 fw-600">การวางโครงสร้าง การออกแบบระบบ</span>โปรแกรมต่างๆ
       </h5>
-      <div class="ss-box">
+      <div class="">
+        <div class="content-container">
         <div class="swiper-container style-02 mt-5" data-aos="fade-up" data-aos-delay="300">
           <div class="swiper-wrapper">
             <?php for($i=0; $i<4; $i++){?>
               <div class="swiper-slide ss-card-padding">
                 <a class="ss-card ss-card-34 " href="#">
-                  <div class="ss-img box-shadow">
+                  <div class="ss-img">
                     <div class="img-bg" style="background-image:url('public/img/content/unsplash-10.jpg');"></div>
                   </div>
                   <div class="icon">
                     <em class="fa-solid fa-plus"></em>
                   </div>
-                  <p class="sm text-center color-01 text-uppercase fw-600 mt-2">
+                </a>
+                <p class="sm text-center color-01 text-uppercase fw-600 mt-2">
                     Use Case diagram
                   </p>
-                </a>
               </div>
             <?php }?>
           </div>
-          <div class="dots" data-aos="fade-up" data-aos-delay="450"></div>
-          <div class="arrow-container style-02">
-            <div class="arrow btn-icon-next">
-              <img src="public/img/icon/arrow-01.png" alt="Arrow" />
-            </div>
-            <div class="arrow btn-icon-next">
-              <img src="public/img/icon/arrow-02.png" alt="Arrow" />
-            </div>
+          <div class="arrows">
+          <div class="arrow btn-icon-next">
+            <img src="public/img/icon/arrow-01.png" alt="Arrow" />
           </div>
+          <div class="arrow btn-icon-next">
+            <img src="public/img/icon/arrow-02.png" alt="Arrow" />
+          </div>
+        </div>
+        </div>
         </div>
       </div>   
     </div>     
@@ -329,48 +336,52 @@
       <h4 class="lg text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         <span class="color-white fw-200">ตัวอย่าง</span>หน้าจอระบบต่างๆ
       </h4>
-      <div class="swiper-container mt-5" data-aos="fade-up" data-aos-delay="150">
-        <div class="swiper-wrapper">
-          <?php for($i=0; $i<5; $i++){?>
-            <div class="swiper-slide ">
-              <div class="grids">
-                <div class="grid lg-50">
-                  <div class="d-flex flex-column jc-center height-full">
-                    <p class="h5 text-uppercase color-01 fw-600">Event Calendar</p>  
-                    <p class="sm color-04 md-no-br">
-                      ภาพหน้าจอ ที่จะให้กดเลื่อน ซ้าย ขวา ไปเรื่อยๆ 
-                      โดยจะมีภาพและเชื่อระบบ<br>พร้อมคุณสมบัติพื้นฐานสัก 5-6 หัวข้อ 
-                    </p>
-                  </div>
-                </div>
-                <div class="grid lg-50">
-                  <div class="ss-card ss-card-35">
-                    <div class="ss-img no-hover">
-                      <div class="img-bg" style="background-image:url('public/img/content/48.jpg');"></div>
+      <div class="content-container mt-6" data-aos="fade-up" data-aos-delay="150">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <?php for($i=0; $i<5; $i++){?>
+              <div class="swiper-slide">
+                <div class="wrapper">
+                  <div class="grids">
+                    <div class="grid">
+                      <div class="d-flex flex-column jc-center height-full">
+                        <p class="h5 color-01 fw-600">EVENT CALENDAR</p>  
+                        <p class="sm color-04 md-no-br">
+                          ภาพหน้าจอ ที่จะให้กดเลื่อน ซ้าย ขวา ไปเรื่อยๆ 
+                          โดยจะมีภาพและเชื่อระบบ<br>พร้อมคุณสมบัติพื้นฐานสัก 5-6 หัวข้อ 
+                        </p>
+                      </div>
                     </div>
-                    <div class="icon box-shadow">
-                      <em class="fa-solid fa-magnifying-glass"></em>
+                    <div class="grid">
+                      <div class="ss-card ss-card-35">
+                        <div class="ss-img no-hover">
+                          <div class="img-bg" style="background-image:url('public/img/content/48.jpg');"></div>
+                        </div>
+                        <div class="icon box-shadow">
+                          <em class="fa-solid fa-magnifying-glass"></em>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          <?php }?>
+            <?php }?>
+          </div>
+          <div class="navigator">
+            <div class="progress p color-white"></div>
+            <div class="line"></div>
+            <div class="dots"></div>
+          </div>
         </div>
-        <div class="dots-container">
-          <div class="dots"></div>
-          <div class="line"></div>
-          <div class="dots-style-02"></div>
-        </div>
-        <!-- <div class="arrow-container">
+        <div class="arrows">
           <div class="arrow btn-icon-next">
             <img src="public/img/icon/arrow-01.png" alt="Arrow" />
           </div>
           <div class="arrow btn-icon-next">
             <img src="public/img/icon/arrow-02.png" alt="Arrow" />
           </div>
-        </div> -->
-        </div>  
+        </div>
+      </div>  
         </div>  
       </div>             
     </div>      

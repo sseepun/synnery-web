@@ -24,43 +24,43 @@
               <div class="grids">
                 <div class="grid sm-50 mt-3">
                   <div class="form-group">
-                    <label class="p sm">ชื่อ-นามสกุล <span class="text-danger">*</span></label>
+                    <label class="p sm fw-500">ชื่อ-นามสกุล <span class="text-danger">*</span></label>
                     <input type="text" name="name" required title="General Text Input" />
                   </div>
                 </div>
                 <div class="grid sm-50 mt-3">
                   <div class="form-group">
-                    <label class="p sm">บริษัท/องค์กร</label>
+                    <label class="p sm fw-500">บริษัท/องค์กร</label>
                     <input type="text" name="name" required title="General Text Input" />
                   </div>
                 </div>
                 <div class="grid sm-50 mt-3">
                   <div class="form-group">
-                    <label class="p sm">อีเมล <span class="text-danger">*</span></label>
+                    <label class="p sm fw-500">อีเมล <span class="text-danger">*</span></label>
                     <input type="email" name="email" required title="General Text Input" />
                   </div>
                 </div>
                 <div class="grid sm-50 mt-3">
                   <div class="form-group">
-                    <label class="p sm">หมายเลขโทรศัพท์ <span class="text-danger">*</span></label>
+                    <label class="p sm fw-500">หมายเลขโทรศัพท์ <span class="text-danger">*</span></label>
                     <input type="text" name="phone" required title="General Text Input" />
                   </div>
                 </div>
                 <div class="grid sm-50 mt-3">
                   <div class="form-group">
-                    <label class="p sm">ต้องการติดต่อเรื่อง <span class="text-danger">*</span></label>
+                    <label class="p sm fw-500">ต้องการติดต่อเรื่อง <span class="text-danger">*</span></label>
                     <input type="text" name="subject" required title="General Text Input" />
                   </div>
                 </div>
                 <div class="grid sm-50 mt-3">
                   <div class="form-group">
-                    <label class="p sm">โทรศัพท์องค์กร/ที่ทำงาน <span class="text-danger">*</span></label>
+                    <label class="p sm fw-500">โทรศัพท์องค์กร/ที่ทำงาน <span class="text-danger">*</span></label>
                     <input type="text" name="phone" required title="General Text Input" />
                   </div>
                 </div>
                 <div class="grid sm-100">
                   <div class="form-group">
-                    <label class="p sm ">งบประมาณ (บาท) <span class="text-danger">*</span></label>
+                    <label class="p sm fw-500">งบประมาณ (บาท) <span class="text-danger">*</span></label>
                     <fieldset>
                       <div class="gallery-grids">
                         <?php
@@ -73,7 +73,7 @@
                         <div class="grid md-1-3 sm-1-3 xs-50">
                           <div class="checkbox-set">
                             <input type="radio" name="radio" id="radio_<?= $i ?>" <?php if($i==0)echo 'checked'; ?> />
-                            <label for="radio_<?= $i ?>" class="p sm">
+                            <label for="radio_<?= $i ?>" class="p sm fw-500">
                               <span><?= $d ?></span>
                             </label>
                           </div>
@@ -85,13 +85,13 @@
                 </div>
                 <div class="grid sm-100 mt-3">
                   <div class="form-group">
-                    <label class="p sm color-gray">ข้อความ <span class="text-danger">*</span></label>
+                    <label class="p sm fw-500">ต้องการติดต่อเรื่อง <span class="text-danger">*</span></label>
                     <textarea name="message" rows="5" required title="General Textarea"></textarea>
                   </div>
                 </div>
                 <div class="grid sm-100">
                   <div class="form-group">
-                    <label class="p sm ">คุณรู้จักเราได้อย่างไร <span class="text-danger">*</span></label>
+                    <label class="p sm fw-500">คุณรู้จักเราได้อย่างไร <span class="text-danger">*</span></label>
                     <fieldset>
                       <div class="gallery-grids">
                         <?php
@@ -103,7 +103,7 @@
                         <div class="grid md-1-3 sm-1-3 xs-50">
                           <div class="checkbox-set">
                             <input type="radio" name="radio" id="radio_<?= $i ?>" <?php if($i==0)echo 'checked'; ?> />
-                            <label for="radio_<?= $i ?>" class="p sm">
+                            <label for="radio_<?= $i ?>" class="p sm fw-500">
                               <span><?= $d ?></span>
                             </label>
                           </div>

@@ -21,7 +21,7 @@
           <h1 class="lh-2xs text-center text-shadow fw-600" data-aos="fade-up" data-aos-delay="0">
             Network & Security
           </h1>
-          <p class="h3 color-black fw-600">
+          <p class="h3 color-black fw-600" data-aos="fade-up" data-aos-delay="0">
            Services
           </p>
           <p class="color-03 fw-300 md-no-br" data-aos="fade-up" data-aos-delay="150">
@@ -40,9 +40,9 @@
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-container md">
-            <h4 class="lg text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Data Center
-            </h4>
+            </h3>
             <ul class="ss-list-01 style-03" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">Server</li>
               <li class="color-black fw-500 mt-2">Storage</li>
@@ -64,7 +64,7 @@
 
   <section data-section="4" class="section-12">
     <div class="container">
-      <div class="blocks">
+      <div class="blocks flex-column-reverse">
         <div class="block-float left">
           <div class="ss-img horizontal-01 no-hover">
             <div class="img-bg" style="background-image:url('public/img/content/28.jpg');"></div>
@@ -73,9 +73,9 @@
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-container md">
-            <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Network Security <br> System
-            </h4>
+            </h3>
             <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">Firewall</li>
               <li class="color-black fw-500 mt-2">IPS</li>
@@ -96,9 +96,9 @@
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-container md">
-            <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Network <br> Infrastructure
-            </h4>
+            </h3>
             <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">Data Switching</li>
               <li class="color-black fw-500 mt-2">Wiress LAN</li>
@@ -118,7 +118,7 @@
 
   <section data-section="6" class="section-12">
     <div class="container">
-      <div class="blocks">
+      <div class="blocks flex-column-reverse">
         <div class="block-float left">
           <div class="ss-img horizontal-01 no-hover">
             <div class="img-bg" style="background-image:url('public/img/content/29.jpg');"></div>
@@ -127,9 +127,9 @@
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-container md">
-            <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Management <br> Solutions
-            </h4>
+            </h3>
             <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">Network Monitoring</li>
               <li class="color-black fw-500 mt-2">Bandwidth Management</li>
@@ -146,9 +146,9 @@
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-container md">
-            <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Cloud Services
-            </h4>
+            </h3>
             <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">INet</li>
               <li class="color-black fw-500 mt-2">SIS</li>
@@ -167,7 +167,7 @@
 
   <section data-section="8" class="section-12">
     <div class="container">
-      <div class="blocks">
+      <div class="blocks flex-column-reverse">
         <div class="block-float left">
           <div class="ss-img horizontal-01 no-hover">
             <div class="img-bg" style="background-image:url('public/img/content/30.jpg');"></div>
@@ -176,9 +176,9 @@
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-container md">
-            <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Other Solutions <br> & Services
-            </h4>
+            </h3>
             <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">Big Data</li>
               <li class="color-black fw-500 mt-2">AI : Artificial Intelligence</li>
@@ -202,7 +202,7 @@
   </section>
 
   <section class="section-padding">
-    <div class="ss-card-container" data-aos="fade-up" data-aos-delay="150">
+    <div class="d-flex fw-wrap" data-aos="fade-up" data-aos-delay="150">
       <?php for($i=0; $i<74; $i++){?>
         <div class="ss-card ss-card-25">
           <div class="wrapper">
@@ -215,110 +215,7 @@
     </div>
   </section>
 
-  <?php
-    $categories = [
-      [
-        'title' => 'Mini party' 
-      ], [
-        'title' => 'Activity'
-      ], [
-        'title' => 'Life Style'
-      ]
-    ]
-  ?>
-
-  <section data-section="10" class="section-09 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/33.jpg');"></div>
-    <div class="container">
-      <h4 class="lg text-center color-white xs-no-br lh-xs fw-600" data-aos="fade-up" data-aos-delay="0">
-        มาสมัครและทำงานร่วมกันกับทีมเรา <br> ทีมเล็กๆ ที่ทำงานใหญ่ๆ 
-      </h4>
-      <div class="tab-container">
-        <div class="tabs tabs-01" data-aos="fade-up" data-aos-delay="150">
-          <?php foreach($categories as $j=>$k){?>
-            <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
-              <p class="h6 title color-white"><?= $k['title'] ?></p>
-            </a>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $j=>$k){?>
-            <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
-              <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="swiper-wrapper">
-                  <?php for($i=0; $i<12; $i++){?>
-                    <div class="swiper-slide">
-                      <div class="ss-card-container ss-card-padding">
-                        <a class="ss-card ss-card-20" href="#">
-                          <div class="ss-img ">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-01.jpg');"></div>
-                          </div>
-                        </a>
-                        <a class="ss-card ss-card-23" href="#">
-                          <div class="ss-img height-full">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-02.jpg');"></div>
-                          </div>
-                        </a>
-                        <a class="ss-card ss-card-20" href="#">
-                          <div class="ss-img">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-03.jpg');"></div>
-                          </div>
-                        </a>
-                        <a class="ss-card ss-card-20" href="#">
-                          <div class="ss-img">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-04.jpg');"></div>
-                          </div>
-                        </a>
-                        <a class="ss-card ss-card-20" href="#">
-                          <div class="ss-img">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-04.jpg');"></div>
-                          </div>
-                        </a>
-                        <a class="ss-card ss-card-23" href="#">
-                          <div class="ss-img height-full">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-05.jpg');"></div>
-                          </div>
-                        </a>
-                        <a class="ss-card ss-card-23" href="#">
-                          <div class="ss-img height-full">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-06.jpg');"></div>
-                          </div>
-                        </a>
-                        <a class="ss-card ss-card-21" href="#">
-                          <div class="ss-img">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-07.jpg');"></div>
-                          </div>
-                        </a>
-                        <a class="ss-card ss-card-22" href="#">
-                          <div class="ss-img height-full">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-08.jpg');"></div>
-                          </div>
-                        </a>
-                        <a class="ss-card ss-card-21" href="#">
-                          <div class="ss-img">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-09.jpg');"></div>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  <?php }?>
-                </div>
-                <div class="dots" data-aos="fade-up" data-aos-delay="450"></div>
-                <div class="arrow-container">
-                  <div class="arrow btn-icon-next">
-                    <img src="public/img/icon/arrow-white-01.png" alt="Arrow" />
-                  </div>
-                  <div class="arrow btn-icon-next">
-                    <img src="public/img/icon/arrow-white-02.png" alt="Arrow" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          <?php }?>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   
   <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>

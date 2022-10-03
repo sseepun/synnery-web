@@ -9,7 +9,6 @@
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <!-- หน้านี้ผมยังเก็บไม่เสร็จนะครับ -->
   <section data-section="1" data-aos="fade-in" data-aos-delay="0">
     <img class="img" src="public/img/bg/25.jpg" alt="Banner" />
   </section>
@@ -17,7 +16,9 @@
   <section data-section="2" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/26.jpg');"></div>
     <div class="container">
-      <div class="text-center color-01">
+      <div class="title-intro" data-aos="fade-up" data-aos-delay="0">
+        <img class="img" src="public/img/icon/wordpress-logo.jpg" alt="LOGO" />
+        <div class="color-01">
         <p class="h3 color-black fw-600" data-aos="fade-up" data-aos-delay="0">
           Enterprise
         </p>
@@ -27,12 +28,14 @@
         <p class="h3 color-black fw-600" data-aos="fade-up" data-aos-delay="300">
           Solutions
         </p>
-        <p class="color-black color-06 md-no-br fw-300"  data-aos="fade-up" data-aos-delay="450">
+        </div>
+        </div>
+        <p class="color-03 text-center md-no-br fw-300"  data-aos="fade-up" data-aos-delay="450">
           นอกจากการพัฒนาเว็บไซต์ โดยใช้ Tech และ Tools ใหม่ๆ แล้ว เรายังมีอีกหนึ่งบริการคือ พัฒนาเว็บไซต์ด้วย Word Press <br>
           ซึ่งเหมาะสำหรับกลุ่มลูกค้าที่ต้องการเว็บไซต์ เพื่อใช้ในการประชาสัมพันธ์ ข้อมูล ข่าวสารต่างๆ และเว็บไซต์ ไม่มีระบบใดๆ ที่ซับซ้อน <br>
           เพื่อช่วยให้เวลาในการพัฒนาไวมากยิ่งขึ้น และประหยัดงบประมาณในการพัฒนา 
         </p>
-        <p class="h6 color-black fw-600 mt-2" data-aos="fade-up" data-aos-delay="600">
+        <p class="h6 text-center color-black fw-600 mt-5" data-aos="fade-up" data-aos-delay="600">
           ข้อดีของ <span class="color-01">Word press</span>
         </p>
         <div class="ss-box xl" data-aos="fade-up" data-aos-delay="750">
@@ -52,7 +55,6 @@
             <?php }?>
           </div>
         </div>
-      </div>
     </div>
   </section>
 
@@ -77,9 +79,18 @@
             <?php for($i=0; $i<5; $i++){?>
               <div class="swiper-slide">
                 <div class="wrapper">
-                  <a class="ss-img horizontal-01" href="#">
-                    <div class="img-bg" style="background-image:url('public/img/content/2<?= ($i%1+1) ?>.jpg');"></div>
-                  </a>
+                  <div class="ss-card ss-card-35">
+                    <div class="ss-img no-hover">
+                      <div class="img-bg" style="background-image:url('public/img/content/21.jpg');"></div>
+                    </div>
+                    <div class="title-header">
+                      <p class="xs color-02">THEME <span class="progress"></span></p>
+                      <p class="xs color-04">มาตรฐานการศึกษาระดับโลก</p>
+                    </div>
+                    <div class="icon box-shadow">
+                      <em class="fa-solid fa-magnifying-glass"></em>
+                    </div>
+                  </div>
                 </div>
               </div>
             <?php }?>
@@ -274,31 +285,31 @@
   <div data-section="8" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/content/55.jpg');"></div>
     <div class="container">
-        <h5 class="text-uppercase text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-          Network Architechture
-        </h5>          
-        <p class="text-center color-black fw-400" data-aos="fade-up" data-aos-delay="150">
-          สำหรับรองรับการทำงานของทุกเว็บไซต์ทั่วประเทศ
-        </p>
-        <div class="ss-box xxl mt-5">
-          <div class="ss-card ss-card-19" data-aos="fade-up" data-aos-delay="300">
-            <img class="img" src="public/img/content/24.jpg" alt="Banner" />     
-          </div>    
-        </div>
+      <h3 class="text-uppercase text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+        Network Architechture
+      </h3>          
+      <h6 class="text-center lh-2xs color-black fw-400" data-aos="fade-up" data-aos-delay="150">
+        สำหรับรองรับการทำงานของทุกเว็บไซต์ทั่วประเทศ
+      </h6>
+      <div class="ss-box xxl mt-5">
+        <div class="ss-card ss-card-19" data-aos="fade-up" data-aos-delay="300">
+          <img class="img" src="public/img/content/24.jpg" alt="Banner" />     
+        </div>    
+      </div>
     </div>             
   </div>
 
   <div data-section="9" class="section-01 section-padding bg-05">
    <div class="container">
-      <p class="lg text-uppercase text-center color-black fw-400" data-aos="fade-up" data-aos-delay="0">
+      <p class="h6 text-uppercase text-center color-black fw-400" data-aos="fade-up" data-aos-delay="0">
         ตัวอย่างภาพการฝึกอบรมให้กับเจ้าหน้าที่ของกระทรวงศึกษาธิการจากทั่วประเทศ
       </p>          
-      <h6 class="color-01 text-center text-uppercase color-black fw-600" data-aos="fade-up" data-aos-delay="150">
+      <h3 class="color-01 text-center text-uppercase color-black fw-600" data-aos="fade-up" data-aos-delay="150">
         Video งานอบรมของ MOE
-      </h6>
+      </h3>
       <div class="ss-box xxl mt-5" data-aos="fade-up" data-aos-delay="300">
-        <div class="ss-card ss-card-18">
-          <div class="ss-img horizontal-2">
+        <a class="ss-card ss-card-33 box-shadow" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+          <div class="ss-img">
             <div class="img-bg" style="background-image:url('public/img/content/5<?= ($i%1+4) ?>.jpg');"></div>
           </div>
           <div div class="ss-card-inner"></div>
@@ -307,7 +318,7 @@
               <img class="img" src="public/img/icon/play.png" alt="Banner" />
             </div>
           </div>
-        </div>         
+        </a>        
       </div>
    </div>             
   </div>
