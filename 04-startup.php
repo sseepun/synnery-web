@@ -86,51 +86,8 @@
       </div>    
     </div>
   </section>
-
-  <section data-section="4" class="section-01 size-03">
-    <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
-    <div class="container">
-      <div class="btns jc-center" data-aos="fade-up" data-aos-delay="0">
-        <a class="btn btn-action style-01 btn-color-01" href="#">
-          สอบถามรายละเอียดเพิ่มเติม
-        </a>
-      </div>    
-    </div>  
-  </section>
-
-  <section data-section="5" class="section-02 section-padding bg-black pb-0">
-    <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-      งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
-    </h3> 
-    <div class="swiper-container mt-6" data-aos="fade-up" data-aos-delay="150">
-      <div class="swiper-wrapper">
-        <?php for($i=0; $i<12; $i++){?>
-          <div class="swiper-slide">
-            <a class="ss-card ss-card-03" href="#">
-              <div class="ss-img square">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
-              </div>
-              <div class="filter-02"></div>
-              <div class="hover-filter-02"></div>
-              <div class="text-container">
-                <div class="title p sm fw-400 color-white" href="#">
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                </div>
-              </div>
-              <div class="icon">
-                <em class="fa-solid fa-plus"></em>
-              </div>
-              <div class="line-1"></div><div class="line-2"></div>
-            </a> 
-          </div>
-        <?php }?>
-      </div>
-    </div>        
-  </section>
   
-  <?php include_once('include/footer.php'); ?>
+  <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
 </body>
 </html>

@@ -128,9 +128,9 @@
 .section-12 .blocks > .block{
   position:relative; width:50%; display:flex; align-items:center; padding:5rem 2rem 5rem 0;
 }
-.section-12 .blocks > .block > .img-bg{right:unset; width:50vw;}
+.section-12 .blocks > .block > .img-bg{left:unset; width:50vw;}
 .section-12 .blocks > .block-float.left + .block{padding-left:2rem; padding-right:0;}
-.section-12 .blocks > .block-float.left + .block > .img-bg{left:unset; width:50vw;}
+.section-12 .blocks > .block-float.left + .block > .img-bg{left:0; width:50vw;}
 .section-12 .blocks > .block > .text-container{
   position:relative; width:100%; max-width:24rem; margin:0 auto;
 }

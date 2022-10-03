@@ -9,10 +9,8 @@
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-
   <!-- หน้านี้ผมยังเก็บไม่เสร็จนะครับ -->
-
-  <section data-section="1">
+  <section data-section="1" data-aos="fade-in" data-aos-delay="0">
     <img class="img" src="public/img/bg/25.jpg" alt="Banner" />
   </section>
 
@@ -58,17 +56,19 @@
     </div>
   </section>
 
-  <section class="ss-header-title" data-aos="fade-up" data-aos-delay="150">
-    <div class="container">
-      <h4 class="color-white text-center lh-sm fw-100">
-        <span class="fw-600">ตัวอย่าง 12 Theme</span> ที่เราออกแบบและพัฒนาให้กับ <br> เว็บไซต์ของ
-        <span class="fw-600">กระทรวงศึกษาธิการ</span> เพื่อรองรับการใช้งานกับ เว็บไซต์หลัก <br> และเว็บไซต์ย่อยๆ รวมกว่า 
-        <span class="fw-600">120 เว็บไซต์ </span>ทั่วประเทศ 
-      </h4>         
-    </div>  
+  <section data-section="3">
+    <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
+      <div class="container pt-4 pb-4">
+        <h4 class="color-white text-center lh-sm fw-200">
+          <span class="fw-600">ตัวอย่าง 12 Theme</span> ที่เราออกแบบและพัฒนาให้กับ <br> เว็บไซต์ของ
+          <span class="fw-600">กระทรวงศึกษาธิการ</span> เพื่อรองรับการใช้งานกับ เว็บไซต์หลัก <br> และเว็บไซต์ย่อยๆ รวมกว่า 
+          <span class="fw-600">120 เว็บไซต์ </span>ทั่วประเทศ 
+        </h4>
+      </div>
+    </div>
   </section>
 
-  <section data-section="3" class="section-08 section-padding">
+  <section data-section="4" class="section-08 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/27.jpg');"></div> 
     <div class="container">
       <div class="swiper-container" data-aos="fade-up" data-aos-delay="150">
@@ -100,34 +100,34 @@
     </div>      
   </section>
 
-  <section data-section="4" class="section-03">
+  <section data-section="5" class="section-12">
     <div class="container">
       <div class="blocks">
-        <div class="block style-02">
-          <div class="img-bg" style="background-image:url('public/img/bg/28.jpg');"></div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
-            <div class="img-bg" style="background-image:url('public/img/bg/22.jpg');"></div>
-            <div class="text-wrapper ss-text-wrapper md style-02">
-              <h3 class="color-01 lh-2xs fw-600">
-                ทำไมไม่ใช้ <span class="text-uppercase color-black fw-300">
-                Plug-in ของ WorD Press</span> <span>ที่มีอยู่แล้ว</span>
-              </h3>
-              <p class="sm color-black fw-400 mt-3">
-                Plug-in ของ Wordpress บางระบบจะมีอยู่แล้ว แต่จะมี function บางอย่างไม่รองรับการทำงาน 
-                หรือยังไม่เข้ามาตรฐานของงานเว็บไซต์ภาครัฐ และอาจจะต้องติดตั้งมากกว่า 1 Plugin 
-                เพื่อให้ทำงานได้ให้อีก Plugin ทำงานได้ครบตาม function เลยจะทำให้ระบบทำงานได้ช้า 
-                โหลดนาน รวมถึงเรื่องของระบบรักษาความปลอดภัย เราจึงทำการออกแบบและพัฒนา Plug-in ของ Wordpress ใหม่ทั้งหมด เพื่อแก้ปัญหาดังกล่าว 
-              </p>      
-            </div>
+        <div class="block-float left">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/bg/28.jpg');"></div>
           </div>
-        </div> 
-      </div>    
+        </div>
+        <div class="block">
+          <div class="img-bg" style="background-image:url('public/img/bg/22.jpg');"></div>
+          <div class="text-container md">
+            <h3 class="color-01 lh-2xs fw-600">
+              ทำไมไม่ใช้ <span class="text-uppercase color-black fw-300">
+              Plug-in ของ WorD Press</span> <span>ที่มีอยู่แล้ว</span>
+            </h3>
+            <p class="sm color-black fw-400 mt-3">
+              Plug-in ของ Wordpress บางระบบจะมีอยู่แล้ว แต่จะมี function บางอย่างไม่รองรับการทำงาน 
+              หรือยังไม่เข้ามาตรฐานของงานเว็บไซต์ภาครัฐ และอาจจะต้องติดตั้งมากกว่า 1 Plugin 
+              เพื่อให้ทำงานได้ให้อีก Plugin ทำงานได้ครบตาม function เลยจะทำให้ระบบทำงานได้ช้า 
+              โหลดนาน รวมถึงเรื่องของระบบรักษาความปลอดภัย เราจึงทำการออกแบบและพัฒนา Plug-in ของ Wordpress ใหม่ทั้งหมด เพื่อแก้ปัญหาดังกล่าว 
+            </p> 
+          </div>
+        </div>
+      </div>
     </div>
- </section>
+  </section>
 
- <section data-section="13" class="section-08 section-padding">
+  <section data-section="6" class="section-08 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/29.jpg');"></div> 
     <div class="container">
       <h4 class="lg text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
@@ -180,57 +180,60 @@
     </div>      
   </section>
 
-  <section class="ss-header-title" data-aos="fade-up" data-aos-delay="0">
-    <h4 class="color-white fw-100">
-     <span class="fw-500">เสริมความปลอดภัย</span>เพิ่มเติม
-    </h4>   
+  <section data-section="7">
+    <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
+      <div class="container">
+        <h3 class="text-center fw-200 color-white pt-6 pb-6">
+          <span class="fw-600">เสริมความปลอดภัย</span>เพิ่มเติม
+        </h3>
+      </div>
+    </div>
   </section>
 
-  <section data-section="6" class="section-03 style-02">
+  <section data-section="8" class="section-12">
     <div class="container">
       <div class="blocks">
-        <div class="block style-02">
-          <div class="img-bg" style="background-image:url('public/img/content/22.jpg');"></div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
-            <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-            <div class="text-wrapper ss-text-wrapper md style-02">
-              <h4 class="lg color-01 fw-600 lh-2xs md-no-br fw-300" data-aos="fade-up" data-aos-delay="0">
-                การป้องกันความมั่นคง<br>ความปลอดภัย<span class="color-black fw-200">ของระบบเว็บไซต์</span>
-              </h4>
-              <div class="grids">
-                <div class="grid lg-50">
-                  <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-                    <li class="color-black pb-2 fw-500">Injection</li>
-                    <li class="color-black pb-2 fw-500">Broken Authentication</li>
-                    <li class="color-black pb-2 fw-500">Sensitive Data Exposure</li>
-                    <li class="color-black pb-2 fw-500">XML External Entities (XXE)</li>
-                    <li class="color-black pb-2 fw-500">Broken Access Control</li>
-                  </ul>
-                </div>  
-                <div class="grid lg-50">
-                  <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-                    <li class="color-black pb-2 fw-500">Cross-Site Scripting XSS</li>
-                    <li class="color-black pb-2 fw-500">Insecure Deserialization</li>
-                    <li class="color-black pb-2 fw-500">Using Components with Known Vulnerabilities</li>
-                    <li class="color-black pb-2 fw-500">Insufficient Logging & Monitoring</li>
-                  </ul>
-                </div> 
+        <div class="block-float left">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/22.jpg');"></div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+          <div class="text-container md">
+            <h4 class="lg color-01 fw-600 lh-2xs md-no-br fw-300" data-aos="fade-up" data-aos-delay="0">
+              การป้องกันความมั่นคง<br>ความปลอดภัย<span class="color-black fw-200">ของระบบเว็บไซต์</span>
+            </h4>
+            <div class="grids pt-4">
+              <div class="grid lg-50 mt-0">
+                <ul class="ss-list-01 style-03" data-aos="fade-up" data-aos-delay="150">
+                  <li class="color-black fw-500 mt-3">Injection</li>
+                  <li class="color-black fw-500 mt-3">Broken Authentication</li>
+                  <li class="color-black fw-500 mt-3">Sensitive Data Exposure</li>
+                  <li class="color-black fw-500 mt-3">XML External Entities (XXE)</li>
+                  <li class="color-black fw-500 mt-3">Broken Access Control</li>
+                </ul>
+              </div>  
+              <div class="grid lg-50 mt-0">
+                <ul class="ss-list-01 style-03" data-aos="fade-up" data-aos-delay="150">
+                  <li class="color-black fw-500 mt-3">Cross-Site Scripting XSS</li>
+                  <li class="color-black fw-500 mt-3">Insecure Deserialization</li>
+                  <li class="color-black fw-500 mt-3">Using Components with Known Vulnerabilities</li>
+                  <li class="color-black fw-500 mt-3">Insufficient Logging & Monitoring</li>
+                </ul>
               </div> 
             </div>
           </div>
-        </div> 
-      </div>    
+        </div>
+      </div>
     </div>
- </section>
-
- <section data-section="7" class="section-03">
+  </section>
+  <section data-section="9" class="section-12">
     <div class="container">
-      <div class="blocks reverse">
+      <div class="blocks">
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-          <div class="text-wrapper ss-text-wrapper xs">
+          <div class="text-container md">
             <h4 class="lg color-black fw-200 lh-2xs md-no-br mt-6" data-aos="fade-up" data-aos-delay="0">
               ระบบป้องกันภัยคุกคาม<br>จากภายนอก <span class="color-01 text-uppercase fw-600">Cloudflare</span>
             </h4>
@@ -254,34 +257,34 @@
               </li>
             </ol> 
           </div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
+        </div>
+        <div class="block-float right">
+          <div class="ss-img horizontal-01 no-hover">
             <div class="img-bg" style="background-image:url('public/img/content/23.jpg');"></div>
           </div>
-        </div> 
-      </div>    
-    </div>
- </section>
-
- <div data-section="8" class="section-01 section-padding">
-  <div class="img-bg" style="background-image:url('public/img/content/55.jpg');"></div>
-   <div class="container">
-      <h5 class="text-uppercase text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-        Network Architechture
-      </h5>          
-      <p class="text-center color-black fw-400" data-aos="fade-up" data-aos-delay="150">
-        สำหรับรองรับการทำงานของทุกเว็บไซต์ทั่วประเทศ
-      </p>
-      <div class="ss-box xxl mt-5">
-        <div class="ss-card ss-card-19" data-aos="fade-up" data-aos-delay="300">
-          <img class="img" src="public/img/content/24.jpg" alt="Banner" />     
-        </div>    
+        </div>
       </div>
-   </div>             
- </div>
+    </div>
+  </section>
 
- <div data-section="9" class="section-01 section-padding bg-05">
+  <div data-section="8" class="section-01 section-padding">
+    <div class="img-bg" style="background-image:url('public/img/content/55.jpg');"></div>
+    <div class="container">
+        <h5 class="text-uppercase text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+          Network Architechture
+        </h5>          
+        <p class="text-center color-black fw-400" data-aos="fade-up" data-aos-delay="150">
+          สำหรับรองรับการทำงานของทุกเว็บไซต์ทั่วประเทศ
+        </p>
+        <div class="ss-box xxl mt-5">
+          <div class="ss-card ss-card-19" data-aos="fade-up" data-aos-delay="300">
+            <img class="img" src="public/img/content/24.jpg" alt="Banner" />     
+          </div>    
+        </div>
+    </div>             
+  </div>
+
+  <div data-section="9" class="section-01 section-padding bg-05">
    <div class="container">
       <p class="lg text-uppercase text-center color-black fw-400" data-aos="fade-up" data-aos-delay="0">
         ตัวอย่างภาพการฝึกอบรมให้กับเจ้าหน้าที่ของกระทรวงศึกษาธิการจากทั่วประเทศ
@@ -303,9 +306,9 @@
         </div>         
       </div>
    </div>             
- </div>
+  </div>
 
- <section data-section="7" class="section-09 section-padding">
+  <section data-section="7" class="section-09 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/56.jpg');"></div>
     <div class="container">
       <h4 class="lg text-center color-white xs-no-br lh-xs fw-600" data-aos="fade-up" data-aos-delay="0">
@@ -384,48 +387,8 @@
       </div>
     </div>
   </section>
-
-  <section data-section="16" class="section-01 size-01" >
-    <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
-    <div class="container">
-      <div class="btns d-flex jc-center" data-aos="fade-up" data-aos-delay="0">
-        <a class="btn btn-action style-01 btn-color-01" href="#">
-          สอบถามรายละเอียดเพิ่มเติม
-        </a>
-      </div>    
-    </div>  
-  </section>
-
-  <section data-section="17" class="section-02 section-padding" style="background:#000000">
-    <h4 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-      งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
-    </h4> 
-    <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="150">
-      <div class="swiper-wrapper">
-        <?php for($i=0; $i<12; $i++){?>
-          <div class="swiper-slide">
-            <a class="ss-card ss-card-03 filter-01" href="#">
-              <div class="ss-img square">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
-              </div>
-              <div class="text-container">
-                <div class="title color-white" href="#">
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                </div>
-              </div>
-              <div class="icon">
-                <em class="fa-solid fa-plus"></em>
-              </div>
-            </a> 
-          </div>
-        <?php }?>
-      </div>
-    </div>        
-  </section>
   
-  <?php include_once('include/footer.php'); ?>
+  <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
 </body>
 </html>

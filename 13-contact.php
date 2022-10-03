@@ -140,40 +140,40 @@
     </div>
   </section>
 
-  <section data-section="2" class="section-03">
+  <section data-section="2" class="section-12">
     <div class="container">
       <div class="blocks">
-        <div class="block style-02">
-          <div class="img-bg" style="background-image:url('public/img/content/53.jpg');"></div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
-          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-            <div class="text-wrapper">
-              <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-                ติดต่อเรา
-              </h3>
-              <p class="h6 color-black fw-600 mt-3" data-aos="fade-up" data-aos-delay="150">
-                บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด
-              </p> 
-              <p class="lg fw-400" data-aos="fade-up" data-aos-delay="300">
-                1/1 ซอยรามคำแหง 12 แยก 2 แขวงหัวหมาก<br>
-                เขตบางกะปิ กทม. 10240
-              </p>
-              <p class="lg fw-600" data-aos="fade-up" data-aos-delay="450">
-                +662-318-4939, +668-6340-6895
-              </p>
-              <a class="p lg color-01 border-bottom-2 bcolor-01 fw-600" href="#" data-aos="fade-up" data-aos-delay="950">
-                sales@jigsawoffice.com
-              </a>
-            </div>
+        <div class="block-float left">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/53.jpg');"></div>
           </div>
-        </div> 
-      </div>    
+        </div>
+        <div class="block">
+          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+          <div class="text-container md">
+            <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+              ติดต่อเรา
+            </h3>
+            <p class="h6 color-black fw-600 mt-3" data-aos="fade-up" data-aos-delay="150">
+              บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด
+            </p> 
+            <p class="lg fw-400" data-aos="fade-up" data-aos-delay="300">
+              1/1 ซอยรามคำแหง 12 แยก 2 แขวงหัวหมาก<br>
+              เขตบางกะปิ กทม. 10240
+            </p>
+            <p class="lg fw-600" data-aos="fade-up" data-aos-delay="450">
+              +662-318-4939, +668-6340-6895
+            </p>
+            <a class="p lg color-01 border-bottom-2 bcolor-01 fw-600" href="#" data-aos="fade-up" data-aos-delay="950">
+              sales@jigsawoffice.com
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
- </section>
+  </section>
 
- <section data-section="3" class="pos-relative">
+  <section data-section="3" class="pos-relative">
     <iframe 
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.484526096977!2d100.60988371477923!3d13.749628990348898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f43cb5dd4c7%3A0x2be342a445fba318!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4i-C4tOC4meC5gOC4meC4reC4o-C5jOC4o-C4teC5iCDguITguK3guKPguYzguJvguK3guYDguKPguIrguLHguYjguJkgKOC4m-C4o-C4sOC5gOC4l-C4qOC5hOC4l-C4oikg4LiI4Liz4LiB4Lix4LiU!5e0!3m2!1sth!2sth!4v1664535415650!5m2!1sth!2sth" 
     width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -181,50 +181,9 @@
     <div class="mt-3 pos-absolute d-flex jc-center ai-center" style="top:0; left:0; right:0; bottom:0;">
       <img class="img" style="width:15rem; height:auto;" src="public/img/content/07.png" alt="LOGO" />
     </div>                   
- </section>
+  </section>
  
-  <section data-section="7" class="section-01 size-01">
-    <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
-    <div class="container">
-      <div class="btns d-flex jc-center" data-aos="fade-up" data-aos-delay="0">
-        <a class="btn btn-action style-01 btn-color-01" href="#">
-          สอบถามรายละเอียดเพิ่มเติม
-        </a>
-      </div>    
-    </div>  
-  </section>
-
-  <section data-section="8" class="section-02 section-padding" style="background:#000000">
-    <h4 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-      งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
-    </h4> 
-    <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="150">
-      <div class="swiper-wrapper">
-        <?php for($i=0; $i<12; $i++){?>
-          <div class="swiper-slide">
-          <a class="ss-card ss-card-03 filter-01" href="#">
-          <div class="ss-img square">
-            <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
-          </div>
-          <div class="text-container">
-            <div class="title color-white" href="#">
-              Unlimited Microsite for Government
-              Unlimited Microsite for Government
-              Unlimited Microsite for Government
-            </div>
-          </div>
-          <div class="icon">
-            <em class="fa-solid fa-plus"></em>
-          </div>
-        </a> 
-          </div>
-        <?php }?>
-      </div>
-    </div>        
-  </section>
-  
-  <?php include_once('include/footer.php'); ?>
+  <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
-
 </body>
 </html>

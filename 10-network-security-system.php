@@ -34,167 +34,171 @@
     </div>
   </section>
 
-  <section data-section="3" class="section-03">
+  <section data-section="3" class="section-12">
     <div class="container">
       <div class="blocks">
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-          <div class="text-wrapper ss-text-wrapper xs">
+          <div class="text-container md">
             <h4 class="lg text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Data Center
             </h4>
-            <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-              <li class="color-black pb-2 fw-500">Server</li>
-              <li class="color-black pb-2 fw-500">Storage</li>
-              <li class="color-black pb-2 fw-500">Visualization</li>
-              <li class="color-black pb-2 fw-500">Back up</li>
-              <li class="color-black pb-2 fw-500">DR Site</li>
-              <li class="color-black pb-2 fw-500">UPS & Generator</li>
+            <ul class="ss-list-01 style-03" data-aos="fade-up" data-aos-delay="150">
+              <li class="color-black fw-500 mt-2">Server</li>
+              <li class="color-black fw-500 mt-2">Storage</li>
+              <li class="color-black fw-500 mt-2">Visualization</li>
+              <li class="color-black fw-500 mt-2">Back up</li>
+              <li class="color-black fw-500 mt-2">DR Site</li>
+              <li class="color-black fw-500 mt-2">UPS & Generator</li>
             </ul> 
           </div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
+        </div>
+        <div class="block-float right">
+          <div class="ss-img horizontal-01 no-hover">
             <div class="img-bg" style="background-image:url('public/img/content/25.jpg');"></div>
           </div>
-        </div> 
-      </div>    
+        </div>
+      </div>
     </div>
- </section>
+  </section>
 
- <section data-section="4" class="section-03">
-    <div class="container">
-      <div class="blocks reverse">
-        <div class="block style-02">
-          <div class="img-bg" style="background-image:url('public/img/content/28.jpg');"></div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
-          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-            <div class="text-wrapper">
-              <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-                Network Security <br> System
-              </h4>
-              <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-                <li class="color-black pb-2 fw-500">Firewall</li>
-                <li class="color-black pb-2 fw-500">IPS</li>
-                <li class="color-black pb-2 fw-500">SSL VPN</li>
-                <li class="color-black pb-2 fw-500">NAC</li>
-                <li class="color-black pb-2 fw-500">Antivirus</li>
-                <li class="color-black pb-2 fw-500">Log Management</li>
-              </ul> 
-            </div>
-          </div>
-        </div> 
-      </div>    
-    </div>
- </section>
-
- <section data-section="5" class="section-03">
+  <section data-section="4" class="section-12">
     <div class="container">
       <div class="blocks">
+        <div class="block-float left">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/28.jpg');"></div>
+          </div>
+        </div>
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-          <div class="text-wrapper ss-text-wrapper xs">
+          <div class="text-container md">
             <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-            Network <br> Infrastructure
+              Network Security <br> System
             </h4>
             <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-              <li class="color-black pb-2 fw-500">Data Switching</li>
-              <li class="color-black pb-2 fw-500">Wiress LAN</li>
-              <li class="color-black pb-2 fw-500">Cabling System</li>
-              <li class="color-black pb-2 fw-500">IPV6</li>
+              <li class="color-black fw-500 mt-2">Firewall</li>
+              <li class="color-black fw-500 mt-2">IPS</li>
+              <li class="color-black fw-500 mt-2">SSL VPN</li>
+              <li class="color-black fw-500 mt-2">NAC</li>
+              <li class="color-black fw-500 mt-2">Antivirus</li>
+              <li class="color-black fw-500 mt-2">Log Management</li>
             </ul> 
           </div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
-            <div class="img-bg" style="background-image:url('public/img/content/26.jpg');"></div>
-          </div>
-        </div> 
-      </div>    
+        </div>
+      </div>
     </div>
- </section>
+  </section>
 
- <section data-section="6" class="section-03">
-    <div class="container">
-      <div class="blocks reverse">
-        <div class="block style-02">
-          <div class="img-bg" style="background-image:url('public/img/content/29.jpg');"></div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
-          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-            <div class="text-wrapper">
-              <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-                Management <br> Solutions
-              </h4>
-              <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-                <li class="color-black pb-2 fw-500">Network Monitoring</li>
-                <li class="color-black pb-2 fw-500">Bandwidth Management</li>
-              </ul> 
-            </div>
-          </div>
-        </div> 
-      </div>    
-    </div>
- </section>
-
- <section data-section="7" class="section-03">
+  <section data-section="5" class="section-12">
     <div class="container">
       <div class="blocks">
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-          <div class="text-wrapper ss-text-wrapper xs">
+          <div class="text-container md">
+            <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+              Network <br> Infrastructure
+            </h4>
+            <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
+              <li class="color-black fw-500 mt-2">Data Switching</li>
+              <li class="color-black fw-500 mt-2">Wiress LAN</li>
+              <li class="color-black fw-500 mt-2">Cabling System</li>
+              <li class="color-black fw-500 mt-2">IPV6</li>
+            </ul>
+          </div>
+        </div>
+        <div class="block-float right">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/26.jpg');"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-section="6" class="section-12">
+    <div class="container">
+      <div class="blocks">
+        <div class="block-float left">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/29.jpg');"></div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+          <div class="text-container md">
+            <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+              Management <br> Solutions
+            </h4>
+            <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
+              <li class="color-black fw-500 mt-2">Network Monitoring</li>
+              <li class="color-black fw-500 mt-2">Bandwidth Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-section="7" class="section-12">
+    <div class="container">
+      <div class="blocks">
+        <div class="block">
+          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+          <div class="text-container md">
             <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Cloud Services
             </h4>
             <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-              <li class="color-black pb-2 fw-500">INet</li>
-              <li class="color-black pb-2 fw-500">SIS</li>
-              <li class="color-black pb-2 fw-500">Other</li>
-            </ul> 
+              <li class="color-black fw-500 mt-2">INet</li>
+              <li class="color-black fw-500 mt-2">SIS</li>
+              <li class="color-black fw-500 mt-2">Other</li>
+            </ul>
           </div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
+        </div>
+        <div class="block-float right">
+          <div class="ss-img horizontal-01 no-hover">
             <div class="img-bg" style="background-image:url('public/img/content/27.jpg');"></div>
           </div>
-        </div> 
-      </div>    
+        </div>
+      </div>
     </div>
- </section>
+  </section>
 
- <section data-section="8" class="section-03">
+  <section data-section="8" class="section-12">
     <div class="container">
-      <div class="blocks reverse">
-        <div class="block style-02">
-          <div class="img-bg" style="background-image:url('public/img/content/30.jpg');"></div>
-        </div> 
-        <div class="subblocks">
-          <div class="subblock">
-          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-            <div class="text-wrapper">
-              <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-                Other Solutions <br> & Services
-              </h4>
-              <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
-                <li class="color-black pb-2 fw-500">Big Data</li>
-                <li class="color-black pb-2 fw-500">AI : Artificial Intelligence</li>
-                <li class="color-black pb-2 fw-500">Internet of Things (IoT) </li>
-                <li class="color-black pb-2 fw-500">Block Chain</li>
-              </ul> 
-            </div>
+      <div class="blocks">
+        <div class="block-float left">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/30.jpg');"></div>
           </div>
-        </div> 
-      </div>    
+        </div>
+        <div class="block">
+          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+          <div class="text-container md">
+            <h4 class="lg lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+              Other Solutions <br> & Services
+            </h4>
+            <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
+              <li class="color-black fw-500 mt-2">Big Data</li>
+              <li class="color-black fw-500 mt-2">AI : Artificial Intelligence</li>
+              <li class="color-black fw-500 mt-2">Internet of Things (IoT) </li>
+              <li class="color-black fw-500 mt-2">Block Chain</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
- </section>
+  </section>
 
- <section data-section="9" class="ss-header-title" data-aos="fade-up" data-aos-delay="0">
-    <h4 class="color-white fw-100">
-      สินค้าที่เราสามารถให้บริการ<span class="fw-500">แยกตามแบรนด์ต่างๆ</span>
-    </h4>   
+  <section data-section="9">
+    <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
+      <div class="container">
+        <h3 class="text-center fw-200 color-white pt-6 pb-6">
+          สินค้าที่เราสามารถให้บริการ<span class="fw-600">แยกตามแบรนด์ต่างๆ</span>
+        </h3>
+      </div>
+    </div>
   </section>
 
   <section class="section-padding">
@@ -315,48 +319,8 @@
       </div>
     </div>
   </section>
-
-  <section data-section="11" class="section-01 size-01" >
-    <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
-    <div class="container">
-      <div class="btns d-flex jc-center" data-aos="fade-up" data-aos-delay="0">
-        <a class="btn btn-action style-01 btn-color-01" href="#">
-          สอบถามรายละเอียดเพิ่มเติม
-        </a>
-      </div>    
-    </div>  
-  </section>
-
-  <section data-section="12" class="section-02 section-padding" style="background:#000000">
-    <h4 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-      งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
-    </h4> 
-    <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="150">
-      <div class="swiper-wrapper">
-        <?php for($i=0; $i<12; $i++){?>
-          <div class="swiper-slide">
-            <a class="ss-card ss-card-03 filter-01" href="#">
-              <div class="ss-img square">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
-              </div>
-              <div class="text-container">
-                <div class="title color-white" href="#">
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                </div>
-              </div>
-              <div class="icon">
-                <em class="fa-solid fa-plus"></em>
-              </div>
-            </a> 
-          </div>
-        <?php }?>
-      </div>
-    </div>        
-  </section>
   
-  <?php include_once('include/footer.php'); ?>
+  <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
 </body>
 </html>
