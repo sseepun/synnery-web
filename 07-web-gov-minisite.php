@@ -105,59 +105,6 @@
     </div>
   </section>
 
-  <!--- สวนนี้เก็บยังไม่เสร็จนะครับ --->
-  <style>
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .swiper-wrapper{
-        max-height:700px;
-      }
-      .swiper-pagination-bullet{
-        opacity:1; 
-        background:transparent;
-        color:#ffffff;
-      }
-      .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
-        margin: 15px 0;
-        display: block;
-      }
-    .swiper-container-vertical>.swiper-pagination-bullets {
-      right: 30px;
-      top: 50%;
-      -webkit-transform: translate3d(0,-50%,0);
-      transform: translate3d(0,-50%,0);
-    }
-
-    </style>
   <section data-section="5" class="section-13">
     <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
       <div class="container">
@@ -166,33 +113,41 @@
         </h3>
       </div>
     </div>
-    <div class="swiper mySwiper">
+    <div class="swiper-container">
       <div class="swiper-wrapper">
-        <?php for($i=0; $i<15; $i++) {?>
-          <div class="swiper-slide"> 
-            <img class="img" src="public/img/bg/57.jpg" alt="Banner" />
-            <div class="text-wrapper">
-              <div class="image-container">
-                <img class="img" src="public/img/content/screen.png" alt="Device" />
-              </div>
-              <div class="text-container">
-                <img class="img" src="public/img/content/logo-06.png" alt="LOGO" />
-                <h2 class="color-white text-uppercase lh-2xs fw-200 mt-6">
-                  Ministry of<br><span class="fw-600">Education</span>
-                </h2>
-                <p class="h5 color-white fw-600">
-                  กระทรวงศีกษาธิการ
-                </p>
+        <?php for($i=0; $i<9; $i++) {?>
+          <div class="swiper-slide">
+            <div class="wrapper">
+              <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
+              <div class="content">
+                <div class="text-wrapper">
+                  <div class="image-container">
+                    <img class="img" src="public/img/content/screen.png" alt="Device" />
+                  </div>
+                  <div class="text-container">
+                    <img class="img" src="public/img/content/logo-06.png" alt="LOGO" />
+                    <h2 class="color-white text-uppercase lh-2xs fw-200 mt-6">
+                      Ministry of<br><span class="fw-600">Education</span>
+                    </h2>
+                    <p class="h5 color-white fw-600">
+                      กระทรวงศีกษาธิการ
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         <?php }?>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="navigator">
+        <div class="dots">
+          <div class="wrapper"></div>
+        </div>
+        <div class="arrows">
+          <div class="wrapper"></div>
+        </div>
+      </div>
     </div>
-    <!-- <div data-aos="fade-up" data-aos-delay="150">
-      <img class="img" src="public/img/bg/banner-01.jpg" alt="Banner" />
-    </div> -->
  </section>
 
   <section data-section="6" class="section-01 section-padding">

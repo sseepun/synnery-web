@@ -280,6 +280,29 @@ $(function(){ 'use strict';
         });
     }
 
+    // Section 13
+    var section13 = $('.section-13');
+    if(section13.length){
+        section13.find('.swiper-container').each(function(){
+            var self = $(this);
+            new Swiper(self, {
+                direction: 'vertical',
+                loop: true,
+                speed: 800,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                grabCursor: true,
+                pagination: {
+                    el: self.find('.dots > .wrapper'),
+                    clickable: true,
+                },
+            });
+            self.find('.swiper-pagination-bullet').each(function(d){
+                $(this).html(String(d+1).padStart(2, '0'));
+            });
+        });
+    }
+
 
     // Page Loader
     let pageLoader = $('.page-loader');
@@ -328,18 +351,18 @@ $(function(){ 'use strict';
 });
 
 
- // Section 07
- var section07= $('.section-07');
- if(section07.length){
+// Section 07
+var section07= $('.section-07');
+if(section07.length){
     section07.find('.swiper-container').each(function(){
-         var self = $(this);
-         new Swiper(self, {
-             loop: true,
-             speed: 800,
-             slidesPerView: 2,
-             spaceBetween: 20,
-             grabCursor: true,
-             navigation: {
+        var self = $(this);
+        new Swiper(self, {
+            loop: true,
+            speed: 800,
+            slidesPerView: 2,
+            spaceBetween: 20,
+            grabCursor: true,
+            navigation: {
                 nextEl: self.find('.btn-icon-next'),
                 prevEl: self.find('.btn-icon-prev'),
             },
@@ -347,27 +370,27 @@ $(function(){ 'use strict';
                 el: self.find('.dots'),
                 clickable: true,
             },
-             breakpoints: {
-                 1199.98: { slidesPerView: 3 },
-                 991.98: { slidesPerView: 2 },
-                 575.98: { slidesPerView: 1.4 },
-             },
-         });
-     });
- }
+            breakpoints: {
+                1199.98: { slidesPerView: 3 },
+                991.98: { slidesPerView: 2 },
+                575.98: { slidesPerView: 1.4 },
+            },
+        });
+    });
+}
 
- // Section 10
- var section10= $('.section-10');
- if(section10.length){
+// Section 10
+var section10= $('.section-10');
+if(section10.length){
     section10.find('.swiper-container').each(function(){
-         var self = $(this);
-         new Swiper(self, {
-             loop: true,
-             speed: 800,
-             slidesPerView: 5,
-             spaceBetween: 20,
-             grabCursor: true,
-             navigation: {
+        var self = $(this);
+        new Swiper(self, {
+            loop: true,
+            speed: 800,
+            slidesPerView: 5,
+            spaceBetween: 20,
+            grabCursor: true,
+            navigation: {
                 nextEl: self.find('.btn-icon-next'),
                 prevEl: self.find('.btn-icon-prev'),
             },
@@ -375,23 +398,11 @@ $(function(){ 'use strict';
                 el: self.find('.dots'),
                 clickable: true,
             },
-             breakpoints: {
-                 1199.98: { slidesPerView: 3 },
-                 991.98: { slidesPerView: 2 },
-                 575.98: { slidesPerView: 1.4 },
-             },
-         });
-     });
- }
-
-
- var swiper = new Swiper(".mySwiper", {
-   direction: "vertical",
-   pagination: {
-     el: ".swiper-pagination",
-     clickable: true,
-     renderBullet: function (index, className) {    // ถ้า Index (0) มีค่าน้อยกว่า 10 ให้แสดง 'Hello' ถ้าไม่ใช่ 'Good Bye :)'
-        return '<span class="' + className + '">' + (index < 10 ? '0' + index.toString() : index.toString()) + "</span>";
-      },
-   }
- });
+            breakpoints: {
+                1199.98: { slidesPerView: 3 },
+                991.98: { slidesPerView: 2 },
+                575.98: { slidesPerView: 1.4 },
+            },
+        });
+    });
+}
