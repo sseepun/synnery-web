@@ -89,6 +89,22 @@
                         <p class="h4 color-white fw-600">
                           กระทรวงศีกษาธิการ
                         </p>
+                        <div class="btns pt-4">
+                          <a class="btn btn-action btn-color-03" href="#">
+                            <div class="icon-container">
+                              <span class="p fw-300">เว็บไซต์กระทรวง</span>
+                              <em class="ml-2 fa-solid fa-play"></em>
+                            </div>
+                          </a>
+                       </div>
+                       <div class="btns pt-4">
+                          <a class="btn btn-action btn-color-03 style-02" href="#">
+                            <div class="icon-container">
+                              <span class="p fw-300">เว็บไซต์สำนักงานปลัด</span>
+                              <em class="ml-2 fa-solid fa-play"></em>
+                            </div>
+                          </a>
+                       </div>
                       </div>
                     </div>
                   </div>
