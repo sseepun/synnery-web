@@ -392,7 +392,15 @@ if(section10.length){
             loop: true,
             speed: 800,
             slidesPerView: 5,
-            spaceBetween: 20,
+            spaceBetween: -150,
+            effect: 'coverflow', 
+            coverflowEffect: {
+                rotate: 40,
+                stretch: 0,
+                // depth: 0,
+                modifier: 1,
+                slideShadows : true
+            },
             grabCursor: true,
             navigation: {
                 nextEl: self.find('.btn-icon-next'),
@@ -404,8 +412,8 @@ if(section10.length){
             },
             breakpoints: {
                 1199.98: { slidesPerView: 3 },
-                991.98: { slidesPerView: 2 },
-                575.98: { slidesPerView: 1.4 },
+                991.98: { slidesPerView: 3 },
+                575.98: { slidesPerView: 3 },
             },
         });
     });

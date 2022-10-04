@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -14,7 +14,7 @@
   </section>
 
   <section data-section="2" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/24.jpg');"></div>
+    <div class="img-bg" style="background-image:url('public/img/bg/59.jpg');"></div>
     <div class="container">
       <div class="text-center color-01" data-aos="fade-up" data-aos-delay="0">
         <p class="h2 lh-2xs fw-600">Full Services</p>
@@ -43,26 +43,20 @@
           </div>
         <?php }?>
       </div>
-      <!-- come back to edit later -->
-      <!-- <ul class="ss-card ss-card-13">
-        <li class="icon">
-          <a href="#" class="active"><img class="inactive" src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
-          <a href="#"><img class="active" src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
-        </li>
-        <li class="icon">
-          <a href="#"><img src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
-        </li>
-        <li class="icon">
-          <a href="#"><img src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
-        </li>
-        <li class="icon">
-          <a href="#"><img src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
-        </li>
-        <li class="icon">
-          <a href="#"><img src="public/img/icon/social-01.png" alt="Hover Icon" /></a>
-        </li>
-      </ul> -->
-      <!---------------------------->
+      <div class="ss-box">
+        <div class="grids jc-center" data-aos="fade-up" data-aos-delay="300">
+          <?php for($i=0; $i<5; $i++){?>
+            <div class="grid xl-20 lg-20 pt-3">
+              <div class="ss-card ss-card-36">
+                <div class="icon">
+                  <img class="inactive" src="public/img/icon/social-0<?= ($i%5+1) ?>.png" alt="Icon Inactive" />
+                  <img class="active" src="public/img/icon/active-social-0<?= ($i%5+1) ?>.png" alt="Icon Active" />
+                </div>
+              </div>
+            </div>
+          <?php }?>
+        </div>  
+      </div>   
     </div>
   </section>
 

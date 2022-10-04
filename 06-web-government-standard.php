@@ -58,6 +58,7 @@
     </div>
   </section>
 
+  <!-- Section 13 ใช้ 2 ที่ (หน้า 06 และ 07) ผมแก้ยังไม่เสร็จนะครับ class น่าจะทับกัน -->
   <section data-section="3" class="section-13">
     <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
       <div class="container">
@@ -72,39 +73,37 @@
           <div class="swiper-slide">
             <div class="wrapper">
               <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
-              <div class="content">
-                <div class="text-wrapper">
-                  <div class="grids">
-                    <div class="grid lg-60 md-100 sm-100">
-                      <div class="image-container">
-                        <img class="img device-screen-01" src="public/img/content/screen.png" alt="Device" />
-                      </div>
+              <div class="content-style-02">
+                <div class="grids">
+                  <div class="grid lg-60 md-100 sm-100">
+                    <div class="image-container">
+                      <img class="img device-screen-01" src="public/img/content/screen.png" alt="Device" />
                     </div>
-                    <div class="grid lg-40 md-100 sm-100">
-                      <div class="text-container style-02">
-                        <img class="img logo" src="public/img/content/logo-06.png" alt="LOGO" />
-                        <h2 class="color-white text-uppercase lh-2xs fw-200 mt-6">
-                          Ministry of<br><span class="fw-600">Education</span>
-                        </h2>
-                        <p class="h4 color-white fw-600">
-                          กระทรวงศีกษาธิการ
-                        </p>
-                        <div class="btns pt-4">
-                          <a class="btn btn-action btn-color-03" href="#">
-                            <div class="icon-container">
-                              <span class="p fw-300">เว็บไซต์กระทรวง</span>
-                              <em class="ml-2 fa-solid fa-play"></em>
-                            </div>
-                          </a>
-                       </div>
-                       <div class="btns pt-4">
-                          <a class="btn btn-action btn-color-03 style-02" href="#">
-                            <div class="icon-container">
-                              <span class="p fw-300">เว็บไซต์สำนักงานปลัด</span>
-                              <em class="ml-2 fa-solid fa-play"></em>
-                            </div>
-                          </a>
-                       </div>
+                  </div>
+                  <div class="grid lg-40 md-100 sm-100">
+                    <div class="text-container style-02">
+                      <img class="img logo" src="public/img/content/logo-06.png" alt="LOGO" />
+                      <h2 class="color-white text-uppercase lh-2xs fw-200 mt-6">
+                        Ministry of<br><span class="fw-600">Education</span>
+                      </h2>
+                      <p class="h4 color-white fw-600">
+                        กระทรวงศีกษาธิการ
+                      </p>
+                      <div class="btns pt-4">
+                        <a class="btn btn-action btn-color-03" href="#">
+                          <div class="icon-container">
+                            <span class="p fw-300">เว็บไซต์กระทรวง</span>
+                            <em class="ml-2 fa-solid fa-play"></em>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="btns pt-4">
+                        <a class="btn btn-action btn-color-03 style-02" href="#">
+                          <div class="icon-container">
+                            <span class="p fw-300">เว็บไซต์สำนักงานปลัด</span>
+                            <em class="ml-2 fa-solid fa-play"></em>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>

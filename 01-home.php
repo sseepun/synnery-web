@@ -186,9 +186,8 @@
     </div>
   </section>
 
-  <!-- TO DO -->
   <section data-section="7" class="section-10 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/38.jpg'); background-position:top center;"></div>
+    <div class="img-bg" style="background-image:url('public/img/bg/58.jpg'); background-position:top center;"></div>
     <div class="container">
       <div class="text-center">
         <h3 class="lh-2xs color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
@@ -199,19 +198,27 @@
           ต้องการให้เว็บของเว็บไซต์หลัก เว็บไซต์ย่อยมีรูปแบบไปในแนวทาง Design เดียวกัน
         </p>
       </div>
-      <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="swiper-container mt-6 pt-2" data-aos="fade-up" data-aos-delay="150">
         <div class="swiper-wrapper">
           <?php for($i=0; $i<5; $i++){?>
             <div class="swiper-slide">
-              <div class="ss-card ss-card-29">
-                <div class="ss-img horizontal-2">
-                  <div class="img-bg" style="background-image:url('public/img/content/screen-0<?= ($i%1+3) ?>.png');"></div>
+              <div class="ss-card ss-card-29 box-shadow">
+                <div class="ss-img vertical-01">
+                  <div class="img-bg" style="background-image:url('public/img/content/web-showcase-0<?= ($i%7+1) ?>.jpg');"></div>
                 </div>
               </div> 
             </div>
           <?php }?>
         </div>
-        <div class="dots"></div>
+        <div class="navigator">
+          <div class="arrow-left btn-icon-next">
+            <img src="public/img/icon/arrow-01.png" alt="Arrow" />
+          </div>
+          <div class="dots"></div>
+          <div class="arrow-right btn-icon-next">
+            <img src="public/img/icon/arrow-02.png" alt="Arrow" />
+          </div>
+        </div>
       </div>
     </div>
   </section>
