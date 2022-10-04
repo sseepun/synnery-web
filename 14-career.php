@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php // include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -49,7 +49,7 @@
                   </div>
                 </div>
               </a>
-              <a class="p sm text-center d-block mt-3 fw-500" href="#">
+              <a class="p lg text-center d-block mt-4 fw-500" href="#">
                 ถ้ามาเป็น Dev ที่นี่จะเจออะไร 
               </a>
             </div>
@@ -66,22 +66,22 @@
       </h3>  
       <div class="ss-box xxl">
         <div class="grids" data-aos="fade-up" data-aos-delay="150">
-          <div class="grid xl-50 lg-50 md-50 sm-50 xs-100">
+          <div class="grid mt-0">
             <ul class="ss-list-01 style-02">
-              <li>	
+              <li class="mt-4">	
                 ปรับเงินเดือนหลังผ่าน Probation และพิจารณาปรับตามผลงาน <br>
                 ผลประกอบการทุกๆ 6 เดือน 
               </li>
-              <li>ทำงาน จ.-ศ. 9:00-18:00</li>
-              <li>มี OT สำหรับการทำงานนอกเวลา</li>
-              <li>มีค่าเดินทาง ค่าเสื่อมคอมพิวเตอร์</li>
+              <li class="mt-4">ทำงาน จ.-ศ. 9:00-18:00</li>
+              <li class="mt-4">มี OT สำหรับการทำงานนอกเวลา</li>
+              <li class="mt-4">มีค่าเดินทาง ค่าเสื่อมคอมพิวเตอร์</li>
             </ul> 
           </div>   
-          <div class="grid xl-50 lg-50 md-50 sm-50 xs-100">
+          <div class="grid mt-0">
             <ul class="ss-list-01 style-02">
-              <li>นำผลกำไรมาแบ่งเป็น Bonus ให้พนักงานรายไตรมาส</li>
-              <li>MAC Book Pro สำหรับพนักงานที่ไม่มี Computer</li>
-              <li>Party ทุกศุกร์สุดท้ายของสิ้นเดือน ตั้งแต่บ่าย 3 โมงเย็น</li>
+              <li class="mt-4">นำผลกำไรมาแบ่งเป็น Bonus ให้พนักงานรายไตรมาส</li>
+              <li class="mt-4">MAC Book Pro สำหรับพนักงานที่ไม่มี Computer</li>
+              <li class="mt-4">Party ทุกศุกร์สุดท้ายของสิ้นเดือน ตั้งแต่บ่าย 3 โมงเย็น</li>
             </ul>
           </div> 
         </div>
@@ -104,25 +104,24 @@
       ]
     ]
   ?>
-
   <section data-section="4" class="section-01 section-padding bg-01">
     <div class="container">
       <h3 class="color-white text-center fw-600" data-aos="fade-up" data-aos-delay="0">
         ตำแหน่งที่เปิดรับสมัคร
       </h3>
       <div class="tab-container">
-        <div class="tabs tabs-01" data-aos="fade-up" data-aos-delay="150">
+        <div class="tabs tabs-01 style-02" data-aos="fade-up" data-aos-delay="150">
           <?php foreach($categories as $j=>$k){?>
-            <a class="tab width-20 <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
+            <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
               <p class="h6 title color-white"><?= $k['title'] ?></p>
             </a>
           <?php }?>
         </div>
-        <div class="tab-contents">
+        <div class="tab-contents" data-aos="fade-up" data-aos-delay="300">
           <?php foreach($categories as $j=>$k){?>
             <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
               <div class="scroll-x-wrapper" data-simplebar>
-                <div class="ss-box xxl" data-aos="fade-up" data-aos-delay="300">
+                <div class="ss-box xxl">
                   <?php for($i=0; $i<8; $i++){?>
                     <div class="ss-card ss-card-24 mt-2">
                       <div class="wrapper">
@@ -161,35 +160,35 @@
       <p class="h5 text-center color-black fw-400" data-aos="fade-up" data-aos-delay="150">
         <em class="fa-regular fa-circle-user color-01 mr-1"></em> 2 ตำแหน่ง
       </p>
-      <div class="ss-box xxl mt-4">
-        <div class="grids" data-aos="fade-up" data-aos-delay="300">
-          <div class="grid lg-50 md-50 sm-50 xs-100">
+      <div class="ss-box xxl mt-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="grids">
+          <div class="grid pt-2">
             <p class="text-uppercase fw-600">Job Description</p>
             <ul class="ss-list-01 style-03 mt-2">
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 วางแผนและกลยุทธ์การขาย ร่วมกับทีมงาน พร้อมนำเสนอแผน ติดตาม ตรวจสอบเป้า
                 งานขายแต่ละไตรมาส รับผิดชอบยอดขายให้เป็นไปตาม Target และหาแนวทางปรับปรุง
                 ยอดขาย และดูแลยอดขาย ให้เป็นไปตามเป้าหมาย
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ดูแล รักษา สร้างสัมพันธ์ ลูกค้ารายใหญ่ เข้านำเสนอข้อมูลเกี่ยวกับสินค้าและงานบริการ 
                 ของบริษัท กับผู้บริหาร และผู้ที่เกี่ยวข้อง เดือนละไม่น้อยกว่า 10 ราย
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ติดต่อหาลูกค้าใหม่ นัดประชุม ติดตามงาน นำเสนองานบริการและสินค้าของบริษัท
                 ลูกค้าเป้าหมายส่วนใหญ่ เป็นหน่วยงานราชการ บริษัทชั้นนำในกลุ่มตลาดหลักทรัพย์ และ   
                 Top Brand ชั้นนำขนาดใหญ่ และลูกค้าส่วนใหญ่เป็น IT Manager, HR Manager, PR 
                 Manager, Marketing Manager, CEO, CTO, MD
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 จัดทำใบเสนอราคา และเอกสารต่างๆ ที่เกี่ยวข้องกับการเสนอโครงการต่างๆ ได้ เช่น
                 Proposal, Presentation ได้ด้วยตัวเอง (บริษัทฯ มีตัวอย่าง และ Template ให้)
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ช่วยเหลือทีมงาน ประสานงาน ทำงานกันเป็นทีม เน้นส่งมอบ value และผลงานที่เหนือ
                 ความคาดหมายให้กับลูกค้า ติดต่อประสานงานกับ Partner / Outsource / PM และอื่นๆ
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ร่วมประชุมกับ PM และทีมงาน ระหว่างการพัฒนาระบบงานเพื่อส่งมอบ
               </li>
               <li class="sm color-black fw-400">
@@ -197,50 +196,46 @@
               </li>
             </ul> 
           </div>   
-          <div class="grid lg-50 md-50 sm-50 xs-100">
+          <div class="grid pt-2">
             <p class="text-uppercase fw-600">Job Specification</p>
             <ul class="ss-list-01 style-03 mt-2">
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ปริญญาตรี ไม่จำกัดเพศ อายุ 25 - 35 ปี
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ประสบการณ์ในการทำงานด้าน AE, Sales, หรือที่เกี่ยวข้อง ไม่น้อยกว่า 2 ปี ขึ้นไป
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 สามารถ Present งานได้ทั้งภาษาไทย และอังกฤษ
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 มีรถยนต์เพื่อใช้ในการเดินทาง และคอมพิวเตอร์โน้ตบุ๊คสำหรับทำงานของตัวเอง
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ถ้ามีประสบการณ์ในการทำงานด้านไอที หรือ Software Application ให้กับภาครัฐจะพิจารณาเป็นพิเศษ
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 มีค่าเดินทาง ค่าโทรศัพท์ ค่า Notebook ค่า Commission และ Project Incentive และ
                 มีระบบโครงสร้างเงินเดือน ที่ปรับตามผลงานก่อนหน้า เป็นแบบขั้นบันได
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 สามารถทำงานเป็นทีม ร่วมกับตำแหน่งอื่นๆ ได้ดี
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 มีความตรงต่อเวลา รับผิดชอบในงานที่ได้รับมอบหมายเป็นอย่างดี
               </li>
             </ul> 
           </div>
         </div>
-        <div class="btn-container" data-aos="fade-up" data-aos-delay="450">
-          <div class="ss-box xs">
-            <div class="btn-customs" data-aos="fade-up" data-aos-delay="600">
-              <div class="btn-custom">
-                <button type="submit" class="btn btn-action btn-color-01 style-02 fw-300">
-                  <p class="sm">สมัคร</p>
-                </button>
-              </div>
-              <div class="btn-custom">
-                <button type="submit" class="btn btn-action btn-color-02 style-02 fw-300">
-                  <p class="sm">ดูตำแหน่งอื่นๆ</p>
-                </button>
-              </div>
+        <div class="pt-5" data-aos="fade-up" data-aos-delay="0">
+          <div class="btn-container">
+            <div class="btn-customs jc-center pt-3">
+              <button type="submit" class="btn btn-action btn-color-01 ml-1 mr-1">
+                <p class="fw-400">สมัคร</p>
+              </button>
+              <button type="submit" class="btn btn-action btn-color-02 ml-1 mr-1">
+                <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
+              </button>
             </div>
           </div>
         </div>
@@ -256,31 +251,31 @@
       <p class="h5 text-center color-black fw-400" data-aos="fade-up" data-aos-delay="150">
         <em class="fa-regular fa-circle-user color-01 mr-1"></em> 1 ตำแหน่ง
       </p>
-      <div class="ss-box xxl mt-4">
-        <div class="grids" data-aos="fade-up" data-aos-delay="300">
-          <div class="grid lg-50 md-50 sm-50 xs-100">
+      <div class="ss-box xxl mt-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="grids">
+          <div class="grid pt-2">
             <p class="text-uppercase fw-600">Job Description</p>
             <ul class="ss-list-01 style-03 mt-2">
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 บริหารจัดการโครงการงาน Digital Business/Marketing/Applications มูลค่า
                 โครงการส่วนใหญ่เริ่มต้นที่ 1 ล้านบาท
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 บริหารจัดการ ประสานงาน ทั้งกับลูกค้า คู่ค้า และ พนักงาน ทีมงานทั้งภายใน ภายนอก
                 ในการส่งมอบโครงการต่างๆ
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 วางแผน ติดตาม บริหาร ควบคุม ตรวจสอบ ประสานงาน แก้ไขปัญหา ให้งานสำเร็จตาม
                 แผนและเป้าหมายที่วางไว้
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ควบคุมคุณภาพของงานให้เป็นไปตามความ Requirement และข้อกำหนดของงาน (TOR)
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 นำเสนอและอัพเดท แผนโครงการและรายละเอียด ทุกขั้นตอนการทำงาน ให้กับลูกค้าและ
                 ทีมงาน เพื่อปิดงานตามเป้าหมาย
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 รับ Requirement และแจกแจงรายละเอียดของความต้องการจากลูกค้ามา สรุปให้ทีม
                 งาน Production
               </li>
@@ -293,54 +288,50 @@
               </li>
             </ul> 
           </div>   
-          <div class="grid lg-50 md-50 sm-50 xs-100">
+          <div class="grid pt-2">
             <p class="text-uppercase fw-600">Job Specification</p>
             <ul class="ss-list-01 style-03 mt-2">
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ปริญญาตรี ไม่จำกัดเพศ อายุ 25 - 35 ปี
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ประสบการณ์ในการทำงานด้านนี้ หรือที่เกี่ยวข้อง ไม่น้อยกว่า 2 ปี ขึ้นไป หรือมีผลงาน
                 ในการบริหารไม่ต่ำกว่า 3 โครงการ
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 สามารถ Present งานได้ทั้งภาษาไทย และอังกฤษ
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 มีรถยนต์เพื่อใช้ในการเดินทาง และคอมพิวเตอร์โน้ตบุ๊คสำหรับทำงานของตัวเอง
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 ถ้ามีประสบการณ์ในการทำงานด้านไอที หรือ Software Application ให้กับภาครัฐจะพิจารณาเป็นพิเศษ
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 มีค่าเดินทาง ค่าโทรศัพท์ ค่า Notebook ค่า Commission และ Project Incentive และ
                 มีระบบโครงสร้างเงินเดือน ที่ปรับตามผลงานก่อนหน้า เป็นแบบขั้นบันได
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 สามารถทำงานเป็นทีม ร่วมกับตำแหน่งอื่นๆ ได้ดี
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 มีความตรงต่อเวลา รับผิดชอบในงานที่ได้รับมอบหมายเป็นอย่างดี
               </li>
-              <li class="sm color-black pb-2 fw-400">
+              <li class="color-black fw-400 mt-4">
                 มีความยืดหยุ่นในการทำงาน สามารถปรับเปลี่ยนงานให้เข้ากับสถานการณ์ได้
               </li>
             </ul> 
           </div>
         </div>
-        <div class="btn-container" data-aos="fade-up" data-aos-delay="450">
-          <div class="ss-box xs">
-            <div class="btn-customs" data-aos="fade-up" data-aos-delay="600">
-              <div class="btn-custom">
-                <button type="submit" class="btn btn-action btn-color-01 style-02 fw-300">
-                  <p class="sm">สมัคร</p>
-                </button>
-              </div>
-              <div class="btn-custom">
-                <button type="submit" class="btn btn-action btn-color-02 style-02 fw-300">
-                  <p class="sm">ดูตำแหน่งอื่นๆ</p>
-                </button>
-              </div>
+        <div class="pt-5" data-aos="fade-up" data-aos-delay="0">
+          <div class="btn-container">
+            <div class="btn-customs jc-center pt-3">
+              <button type="submit" class="btn btn-action btn-color-01 ml-1 mr-1">
+                <p class="fw-400">สมัคร</p>
+              </button>
+              <button type="submit" class="btn btn-action btn-color-02 ml-1 mr-1">
+                <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
+              </button>
             </div>
           </div>
         </div>
@@ -359,14 +350,13 @@
       ]
     ]
   ?>
-
   <section data-section="7" class="section-08 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/33.jpg');"></div>
     <div class="container">
       <h3 class="text-center color-white xs-no-br lh-xs fw-600" data-aos="fade-up" data-aos-delay="0">
         มาสมัครและทำงานร่วมกันกับทีมเรา <br> ทีมเล็กๆ ที่ทำงานใหญ่ๆ 
       </h3>
-      <div class="tab-container">
+      <div class="tab-container mt-2">
         <div class="tabs tabs-01" data-aos="fade-up" data-aos-delay="150">
           <?php foreach($categories as $j=>$k){?>
             <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
@@ -374,10 +364,10 @@
             </a>
           <?php }?>
         </div>
-        <div class="tab-contents">
+        <div class="tab-contents mt-4" data-aos="fade-up" data-aos-delay="150">
           <?php foreach($categories as $j=>$k){?>
             <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
-              <div class="content-container mt-6 pt-4" data-aos="fade-up" data-aos-delay="150">
+              <div class="content-container">
                 <div class="swiper-container">
                   <div class="swiper-wrapper">
                     <?php for($j=0; $j<12; $j++){?>

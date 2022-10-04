@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php // include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -17,9 +17,9 @@
     <div class="img-bg" style="background-image:url('public/img/bg/41.jpg');"></div>
     <div class="container">
       <div class="text-center">
-        <p class="h3 color-black fw-600" data-aos="fade-up" data-aos-delay="0">
+        <h3 class="color-black fw-600" data-aos="fade-up" data-aos-delay="0">
           Full Services <span class="fw-300">with</span>
-        </p>
+        </h3>
         <h1 class="color-01 lh-2xs text-shadow fw-600" data-aos="fade-up" data-aos-delay="150">
           Virtual World, AR-VR,<br>Animation,<br>Multimedia, Graphics
         </h1>
@@ -28,7 +28,7 @@
           แนวทาง<br>การประชาสัมพันธ์ไปยังกลุ่มเป้าหมาย การจัดกิจกรรมประกอบต่างๆ เพื่อบรรลุวัตถุประสงค์และเป้าหมายของโครงการ  
         </p>
       </div>
-      <div class="ss-box xl mt-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="ss-box xl mt-6" data-aos="fade-up" data-aos-delay="450">
         <div class="grids jc-center">
           <?php for($i=0; $i<20; $i++){?>
             <div class="grid lg-20 md-25 sm-1-3 xs-50">
@@ -54,10 +54,10 @@
     <div class="img-bg" style="background-image:url('public/img/bg/42.jpg');"></div> 
     <div class="container">
       <div class="text-center">
-        <h3 class="color-01 lh-2xs fw-600"  data-aos="fade-up" data-aos-delay="0">
+        <h3 class="color-01 lh-3xs fw-600"  data-aos="fade-up" data-aos-delay="0">
           Virtual Exhibition /<br> <span class="h4 lg color-black fw-600">Virtual Live Event</span>
         </h3> 
-        <p class="color-03 fw-500"  data-aos="fade-up" data-aos-delay="150">
+        <p class="lg color-03 fw-500"  data-aos="fade-up" data-aos-delay="150">
           รวมภาพเบื้องหลังการทำงานของทีมงาน
         </p>   
       </div>
@@ -124,7 +124,7 @@
             <?php }?>
           </div>
           <div class="navigator">
-            <div class="progress p color-01"></div>
+            <div class="progress p color-01 fw-400"></div>
             <div class="line"></div>
             <div class="dots"></div>
           </div>
@@ -139,7 +139,7 @@
         </div>
       </div>
    
-      <div class="grids jc-center mt-5" data-aos="fade-up" data-aos-delay="450">
+      <div class="grids jc-center mt-6 pt-2" data-aos="fade-up" data-aos-delay="0">
         <?php for($i=0; $i<3; $i++){?>
           <div class="grid lg-1-3 md-50 sm-50 xs-100">
             <a class="ss-card ss-card-33 box-shadow" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
@@ -153,7 +153,7 @@
                 </div>
               </div>
             </a>
-            <a class="p sm text-center d-block mt-3 fw-500" href="#">
+            <a class="p text-center d-block mt-4 fw-500" href="#">
               เบิ้องหลังการถ่ายทำ Video Present ของพิธีกร
             </a>
           </div>
@@ -168,7 +168,7 @@
       <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         วิดีโอแนะนำ <span class="color-black fw-300">เพื่อใช้ในการประชาสัมพันธ์</span>
       </h3> 
-      <div class="grids" data-aos="fade-up" data-aos-delay="150">
+      <div class="grids pt-2" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<2; $i++) {?>
           <div class="grid lg-50 md-50 sm-50 xs-100">
             <a class="ss-card ss-card-33 box-shadow" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
@@ -194,26 +194,26 @@
       <h3 class="text-center lh-sm color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         วีดีโอภาพรวมงานตัวเต็ม
       </h3>   
-      <p class="h4 text-center color-black fw-400" data-aos="fade-up" data-aos-delay="150">
+      <p class="h4 text-center lh-sm color-black fw-400" data-aos="fade-up" data-aos-delay="150">
         ความยาวของกิจกรรมทั้งหมด 2 ชั่วโมง 
       </p>
-      <a class="ss-card ss-card-33 box-shadow mt-4" 
-        href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
-        data-fancybox data-aos="fade-up" data-aos-delay="300">
-        <div class="ss-img horizontal-2">
-          <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
-        </div>
-        <div div class="ss-card-inner"></div>
-        <div class="icon-container">
-          <div class="icon">
-            <img class="img" src="public/img/icon/play.png" alt="Banner" />
+      <div class="box-shadow mt-6" data-fancybox data-aos="fade-up" data-aos-delay="300">
+        <a class="ss-card ss-card-33" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2">
+          <div class="ss-img horizontal-2">
+            <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
           </div>
-        </div>
-      </a>
+          <div div class="ss-card-inner"></div>
+          <div class="icon-container">
+            <div class="icon">
+              <img class="img" src="public/img/icon/play.png" alt="Banner" />
+            </div>
+          </div>
+        </a>
+      </div>
     </div>      
   </section>
 
-  <section data-section="7">
+  <section data-section="6">
     <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
       <div class="container">
         <h3 class="text-center fw-200 color-white pt-6 pb-6">
@@ -224,7 +224,7 @@
     </div>
   </section>
 
-  <section>
+  <section data-section="7" class="p-1">
     <div class="grids no-gap">
       <?php for($i=0; $i<6; $i++) {?>
         <div class="grid lg-1-3 style-02 mt-0">
@@ -246,20 +246,22 @@
     </div>
   </section>
 
-  <section data-section="7" class="section-01 section-padding">
+  <section data-section="8" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/45.jpg');"></div>
     <div class="container">
       <h3 class="text-center color-01 lh-2xs fw-600" data-aos="fade-up" data-aos-delay="0">
         Virtual Tour, Virtual Showroom,<br>Virtual Product 360
       </h3>
-      <h6 class="text-center color-black mt-5 fw-500" data-aos="fade-up" data-aos-delay="150">
+      <h5 class="text-center color-black mt-4 fw-500" data-aos="fade-up" data-aos-delay="150">
         Virtual of ASEN Cultural Center
-      </h6>
-      <a class="ss-card box-shadow mt-5" data-aos="fade-up" data-aos-delay="300">
-        <div class="ss-img horizontal no-hover">
-          <div class="img-bg" style="background-image:url('public/img/content/40.jpg');"></div>
-        </div>
-      </a>
+      </h5>
+      <div class="mt-6" data-aos="fade-up" data-aos-delay="300">
+        <a class="ss-card box-shadow bg-white p-2" href="#">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/40.jpg');"></div>
+          </div>
+        </a>
+      </div>
     </div>   
   </section>
 

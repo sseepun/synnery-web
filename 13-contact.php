@@ -5,10 +5,9 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php // include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
-  
 
   <section data-section="1" class="section-05 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/21.jpg');"></div>  
@@ -16,8 +15,8 @@
       <h3 class="color-01 text-center text-shadow fw-600" data-aos="fade-up" data-aos-delay="0">Contact Us</h3> 
       <div class="grids jc-center">
         <div class="grid xl-60 lg-2-3 sm-100 mt-0">
-          <p class="xs mt-3" data-aos="fade-up" data-aos-delay="150">
-              <span class="text-danger">*</span>จำเป็นต้องกรอก
+          <p class="xs fw-400 mt-3" data-aos="fade-up" data-aos-delay="150">
+            <span class="text-danger">*</span>จำเป็นต้องกรอก
           </p>
           <div class="mt-3" data-aos="fade-up" data-aos-delay="300">
             <form action="/" method="POST">
@@ -73,7 +72,7 @@
                         <div class="grid md-1-3 sm-1-3 xs-50">
                           <div class="checkbox-set">
                             <input type="radio" name="radio" id="radio_<?= $i ?>" <?php if($i==0)echo 'checked'; ?> />
-                            <label for="radio_<?= $i ?>" class="p sm fw-500">
+                            <label for="radio_<?= $i ?>" class="p sm fw-400">
                               <span><?= $d ?></span>
                             </label>
                           </div>
@@ -103,7 +102,7 @@
                         <div class="grid md-1-3 sm-1-3 xs-50">
                           <div class="checkbox-set">
                             <input type="radio" name="radio" id="radio_<?= $i ?>" <?php if($i==0)echo 'checked'; ?> />
-                            <label for="radio_<?= $i ?>" class="p sm fw-500">
+                            <label for="radio_<?= $i ?>" class="p sm fw-400">
                               <span><?= $d ?></span>
                             </label>
                           </div>
@@ -113,7 +112,7 @@
                     </fieldset>
                   </div>
                 </div>
-                <div class="captcha-container mt-3">
+                <div class="captcha-container mt-6">
                   <img class="img" src="public/img/misc/captcha.jpg" alt="CAPTCHA" />
                 </div>
               </div>
@@ -121,13 +120,13 @@
                 <div class="ss-box xs">
                   <div class="btn-customs" data-aos="fade-up" data-aos-delay="600">
                     <div class="btn-custom">
-                      <button type="submit" class="btn btn-action btn-color-01 style-02 fw-300">
-                        <p class="sm">สมัคร</p>
+                      <button type="submit" class="btn btn-action btn-color-01">
+                        <p class="fw-400">สมัคร</p>
                       </button>
                     </div>
                     <div class="btn-custom">
-                      <button type="submit" class="btn btn-action btn-color-02 style-02 fw-300">
-                        <p class="sm">ดูตำแหน่งอื่นๆ</p>
+                      <button type="submit" class="btn btn-action btn-color-02">
+                        <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
                       </button>
                     </div>
                   </div>

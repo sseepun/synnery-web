@@ -162,6 +162,17 @@ textarea[data-copy]{pointer-events:none!important;}
     textarea[data-copy].adaptive{height:8.25rem;}
 }
 
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel],
+input[type=number], input[type=phone], input[type=submit], input[type=file], select, textarea{
+    color:#000000; background:#ffffff; border-color:transparent;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, 
+input[type=tel]:focus, input[type=number]:focus, input[type=phone]:focus, input[type=submit]:focus, 
+input[type=file]:focus, select:focus, textarea:focus{
+    border-color:#ec2c23!important;
+}
+input::placeholder{color:#777777;}
+
 /* Radio & Checkbox Container */
 fieldset{padding:0; margin:0; border:0;}
 .rc-container{position:relative; width:100%;}
@@ -599,6 +610,34 @@ fieldset{padding:0; margin:0; border:0;}
 }
 .ss-card-17:hover .icon-text::before{visibility:visible; opacity:1; transform:scale(1);}
 
+/* Special Card 25 */
+.ss-card-25{width:7.69%; cursor:pointer; transition:all .3s;}
+.ss-card-25 .wrapper > .image-container{display:flex; justify-content:center;}
+.ss-card-25 .wrapper > .image-container img{width:7rem; height:auto;}
+.ss-card-25 .wrapper > .image-container img.grayscale{filter:grayscale(100%);}
+.ss-card-25:hover .wrapper > .image-container img.grayscale{filter:unset;}
+@media screen and (max-width:1991.98px){
+    .ss-card-25{width:10%;}
+}
+@media screen and (max-width:1199.98px){
+    .ss-card-25{width:14.28%;}
+}
+@media screen and (max-width:991.98px){
+    .ss-card-25{width:16.66%;}
+}
+@media screen and (max-width:767.98px){
+    .ss-card-25{width:20%;}
+}
+@media screen and (max-width:575.98px){
+    .ss-card-25{width:25%;}
+}
+@media screen and (max-width:469.98px){
+    .ss-card-25{width:33.33%;}
+}
+@media screen and (max-width:359.98px){
+    .ss-card-25{width:50%;}
+}
+
 /* Special Card 26 */
 .ss-card-26{
     position:relative; width:100%; background:#ec2c23; color:#ffffff;
@@ -670,6 +709,22 @@ fieldset{padding:0; margin:0; border:0;}
     .ss-card-31:hover .icon-container{top:calc(15% + 2rem);}
     .ss-card-31:hover .text-container .desc{height:5.625rem;}
 }
+
+/* Special Card 36 */
+.ss-card-36{position:relative; cursor:pointer;}
+.ss-card-36 .icon{
+    position:relative; display:flex; justify-content:center; align-items:center; 
+    width:5.5rem; height:5.5rem; margin:0 auto; background:#f2f2f2; color:#ec2c23;
+    border-radius:50%; transition:background .3s, color .3s;
+}
+.ss-card-36:hover .icon{background:#ec2c23; color:#ffffff;}
+.ss-card-36 .icon > img{
+   display:block; width:auto; max-width:50%; height:auto; max-height:50%;
+   transition:opacity .3s;
+}
+.ss-card-36 .icon > img.active{position:absolute; opacity:0;}
+.ss-card-36:hover .icon > img.inactive{opacity:0;}
+.ss-card-36:hover .icon > img.active{opacity:1;}
 
 
 /* Special Image */

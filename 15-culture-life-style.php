@@ -9,7 +9,7 @@
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1">
+  <section data-section="1" data-aos="fade-in" data-aos-delay="0">
     <img class="img" src="public/img/bg/23.jpg" alt="Banner" />
   </section>
 
@@ -21,7 +21,7 @@
           <h1 class="lh-2xs text-center text-shadow fw-600" data-aos="fade-up" data-aos-delay="0">
             Our Culture & Life Style
           </h1>
-          <p class="h5 color-black fw-400 xs-no-br mt-3" data-aos="fade-up" data-aos-delay="150">
+          <p class="h5 color-black lh-sm fw-400 xs-no-br mt-3" data-aos="fade-up" data-aos-delay="150">
             เพราะเราไม่ได้มองแค่ชีวิตการทำงาน แต่เราเสริมสร้างและเน้นพัฒนาคน <br>
             เพื่อพัฒนาคุณภาพองค์กร และคุณภาพการใช้ชีวิตของทีมงาน
           </p>
@@ -41,23 +41,22 @@
       ]
     ]
   ?>
-
   <section data-section="3" class="section-07">
     <div class="tab-container">
-      <div class="bg-01">
+      <div class="bg-01" data-aos="fade-in" data-aos-delay="150">
         <div class="tabs tabs-01">
           <?php foreach($categories as $j=>$k){?>
             <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
-              <p class="lg title color-white"><?= $k['title'] ?></p>
+              <h6 class="title color-white"><?= $k['title'] ?></h6>
             </a>
           <?php }?>
         </div>
       </div>
-      <div class="tab-contents section-padding" data-section="2">
+      <div class="tab-contents section-padding" data-aos="fade-up" data-aos-delay="300">
         <?php foreach($categories as $j=>$k){?>
           <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
             <div class="container">
-              <div class="swiper-container" data-aos="fade-up" data-aos-delay="150">
+              <div class="swiper-container">
                 <div class="swiper-wrapper">
                   <?php for($i=0; $i<12; $i++){?>
                     <div class="swiper-slide">
@@ -106,8 +105,12 @@
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-container md">
-            <h3 class="color-01 lh-2xs fw-600">สนใจสมัครงานกับเรา</h3>
-            <p class="lg color-black fw-500">ดูตำแหน่งที่เปิดรับได้เลย</p>  
+            <h3 class="color-01 lh-2xs fw-600" data-aos="fade-up" data-aos-delay="0">
+              สนใจสมัครงานกับเรา
+            </h3>
+            <p class="lg color-black fw-500 mt-1" data-aos="fade-up" data-aos-delay="150">
+              ดูตำแหน่งที่เปิดรับได้เลย
+            </p>  
           </div>
         </div>
       </div>

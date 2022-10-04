@@ -5,11 +5,11 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php // include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1">
+  <section data-section="1" data-aos="fade-in" data-aos-delay="0">
     <img class="img" src="public/img/bg/34.jpg" alt="Banner" />
   </section>
 
@@ -40,10 +40,10 @@
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-container md">
-            <h3 class="text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+            <h3 class="text-uppercase color-01 fw-600 lh-2xs" data-aos="fade-up" data-aos-delay="0">
               Data Center
             </h3>
-            <ul class="ss-list-01 style-03" data-aos="fade-up" data-aos-delay="150">
+            <ul class="ss-list-01 style-03 mt-3" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">Server</li>
               <li class="color-black fw-500 mt-2">Storage</li>
               <li class="color-black fw-500 mt-2">Visualization</li>
@@ -76,7 +76,7 @@
             <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Network Security <br> System
             </h3>
-            <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
+            <ul class="ss-list-01 style-03 mt-3" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">Firewall</li>
               <li class="color-black fw-500 mt-2">IPS</li>
               <li class="color-black fw-500 mt-2">SSL VPN</li>
@@ -99,7 +99,7 @@
             <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Network <br> Infrastructure
             </h3>
-            <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
+            <ul class="ss-list-01 style-03 mt-3" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">Data Switching</li>
               <li class="color-black fw-500 mt-2">Wiress LAN</li>
               <li class="color-black fw-500 mt-2">Cabling System</li>
@@ -130,7 +130,7 @@
             <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Management <br> Solutions
             </h3>
-            <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
+            <ul class="ss-list-01 style-03 mt-3" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">Network Monitoring</li>
               <li class="color-black fw-500 mt-2">Bandwidth Management</li>
             </ul>
@@ -149,7 +149,7 @@
             <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Cloud Services
             </h3>
-            <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
+            <ul class="ss-list-01 style-03 mt-3" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">INet</li>
               <li class="color-black fw-500 mt-2">SIS</li>
               <li class="color-black fw-500 mt-2">Other</li>
@@ -179,7 +179,7 @@
             <h3 class="lh-2xs text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
               Other Solutions <br> & Services
             </h3>
-            <ul class="ss-list-01 style-03 mt-2" data-aos="fade-up" data-aos-delay="150">
+            <ul class="ss-list-01 style-03 mt-3" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-500 mt-2">Big Data</li>
               <li class="color-black fw-500 mt-2">AI : Artificial Intelligence</li>
               <li class="color-black fw-500 mt-2">Internet of Things (IoT) </li>
@@ -214,8 +214,6 @@
       <?php }?>
     </div>
   </section>
-
-  
   
   <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>

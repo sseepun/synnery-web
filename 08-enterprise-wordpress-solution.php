@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php // include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -18,43 +18,43 @@
     <div class="container">
       <div class="title-intro" data-aos="fade-up" data-aos-delay="0">
         <img class="img" src="public/img/icon/wordpress-logo.jpg" alt="LOGO" />
-        <div class="color-01">
-        <p class="h3 color-black fw-600" data-aos="fade-up" data-aos-delay="0">
-          Enterprise
-        </p>
-        <h1 class="h1 lh-3xs text-shadow fw-600" data-aos="fade-up" data-aos-delay="150">
-          Word Press
-        </h1>
-        <p class="h3 color-black fw-600" data-aos="fade-up" data-aos-delay="300">
-          Solutions
-        </p>
+        <div class="text-wrapper color-01">
+          <p class="h3 color-black fw-600 lh-sm">
+            Enterprise
+          </p>
+          <h1 class="h1 lh-3xs text-shadow fw-600">
+            Word Press
+          </h1>
+          <p class="h3 color-black fw-600 lh-sm">
+            Solutions
+          </p>
         </div>
-        </div>
-        <p class="color-03 text-center md-no-br fw-300"  data-aos="fade-up" data-aos-delay="450">
-          นอกจากการพัฒนาเว็บไซต์ โดยใช้ Tech และ Tools ใหม่ๆ แล้ว เรายังมีอีกหนึ่งบริการคือ พัฒนาเว็บไซต์ด้วย Word Press <br>
-          ซึ่งเหมาะสำหรับกลุ่มลูกค้าที่ต้องการเว็บไซต์ เพื่อใช้ในการประชาสัมพันธ์ ข้อมูล ข่าวสารต่างๆ และเว็บไซต์ ไม่มีระบบใดๆ ที่ซับซ้อน <br>
-          เพื่อช่วยให้เวลาในการพัฒนาไวมากยิ่งขึ้น และประหยัดงบประมาณในการพัฒนา 
-        </p>
-        <p class="h6 text-center color-black fw-600 mt-5" data-aos="fade-up" data-aos-delay="600">
-          ข้อดีของ <span class="color-01">Word press</span>
-        </p>
-        <div class="ss-box xl" data-aos="fade-up" data-aos-delay="750">
-          <div class="grids jc-center">
-            <?php for($i=0; $i<4; $i++){?>
-            <div class="grid lg-25">
-              <div class="ss-card ss-card-10 mt-2">
-                <div class="icon">
-                  <img class="inactive" src="public/img/icon/0<?= ($i%4+1) ?>.png" alt="Icon Inactive" />
-                  <img class="active" src="public/img/icon/icon-active-0<?= ($i%4+1) ?>.png" alt="Icon Active" />
-                </div>
-                <div class="text-container h-color-01">
-                  <p class="xs title color-black fw-400 mt-2">ง่าย และรวดเร็ว ในการพัฒนาเว็บไซต์เพื่อใช้งาน </p>
-                </div>
+      </div>
+      <p class="color-03 text-center md-no-br fw-300 mt-3"  data-aos="fade-up" data-aos-delay="150">
+        นอกจากการพัฒนาเว็บไซต์ โดยใช้ Tech และ Tools ใหม่ๆ แล้ว เรายังมีอีกหนึ่งบริการคือ พัฒนาเว็บไซต์ด้วย Word Press <br>
+        ซึ่งเหมาะสำหรับกลุ่มลูกค้าที่ต้องการเว็บไซต์ เพื่อใช้ในการประชาสัมพันธ์ ข้อมูล ข่าวสารต่างๆ และเว็บไซต์ ไม่มีระบบใดๆ ที่ซับซ้อน <br>
+        เพื่อช่วยให้เวลาในการพัฒนาไวมากยิ่งขึ้น และประหยัดงบประมาณในการพัฒนา 
+      </p>
+      <p class="h6 text-center color-black fw-600 mt-6" data-aos="fade-up" data-aos-delay="300">
+        ข้อดีของ <span class="color-01">Word press</span>
+      </p>
+      <div class="ss-box xl" data-aos="fade-up" data-aos-delay="450">
+        <div class="grids jc-center">
+          <?php for($i=0; $i<4; $i++){?>
+          <div class="grid lg-25">
+            <div class="ss-card ss-card-10 mt-2">
+              <div class="icon">
+                <img class="inactive" src="public/img/icon/0<?= ($i%4+1) ?>.png" alt="Icon Inactive" />
+                <img class="active" src="public/img/icon/icon-active-0<?= ($i%4+1) ?>.png" alt="Icon Active" />
+              </div>
+              <div class="text-container h-color-01">
+                <p class="xs title color-black fw-400 mt-2">ง่าย และรวดเร็ว ในการพัฒนาเว็บไซต์เพื่อใช้งาน </p>
               </div>
             </div>
-            <?php }?>
           </div>
+          <?php }?>
         </div>
+      </div>
     </div>
   </section>
 

@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -43,20 +43,18 @@
           </div>
         <?php }?>
       </div>
-      <div class="ss-box">
-        <div class="grids jc-center" data-aos="fade-up" data-aos-delay="300">
-          <?php for($i=0; $i<5; $i++){?>
-            <div class="grid xl-20 lg-20 pt-3">
-              <div class="ss-card ss-card-36">
-                <div class="icon">
-                  <img class="inactive" src="public/img/icon/social-0<?= ($i%5+1) ?>.png" alt="Icon Inactive" />
-                  <img class="active" src="public/img/icon/active-social-0<?= ($i%5+1) ?>.png" alt="Icon Active" />
-                </div>
+      <div class="social-blocks" data-aos="fade-up" data-aos-delay="0">
+        <?php for($i=0; $i<5; $i++){?>
+          <div class="social-block">
+            <div class="ss-card ss-card-36">
+              <div class="icon">
+                <img class="inactive" src="public/img/icon/social-0<?= ($i%5+1) ?>.png" alt="Icon Inactive" />
+                <img class="active" src="public/img/icon/active-social-0<?= ($i%5+1) ?>.png" alt="Icon Active" />
               </div>
             </div>
-          <?php }?>
-        </div>  
-      </div>   
+          </div>
+        <?php }?>
+      </div>
     </div>
   </section>
 

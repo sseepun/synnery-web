@@ -5,11 +5,11 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php // include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1">
+  <section data-section="1" data-aos="fade-in" data-aos-delay="0">
     <img class="img" src="public/img/bg/47.jpg" alt="Banner" />
   </section>
 
@@ -90,15 +90,16 @@
   <section data-section="4" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/48.jpg');"></div>  
     <div class="container">
-      <h4 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
-        Jigsaw ERP <span class="h5 fw-200">for Government &</span><br>Microservices Architechture
-      </h4>
-      <p class="sm text-center md-no-br color-white fw-200" data-aos="fade-up" data-aos-delay="150">
+      <h3 class="text-center color-white fw-600 lh-sm" data-aos="fade-up" data-aos-delay="0">
+        Jigsaw ERP <span class="h5 fw-200">for Government &</span> <br />
+        Microservices Architechture
+      </h3>
+      <p class="text-center md-no-br color-white fw-200 mt-2" data-aos="fade-up" data-aos-delay="150">
         ด้วยประสบการณ์ในการทำงานและแลกเปลี่ยนพูดคุย ถึงปัญหาเกี่ยวกับระบบเทคโนโลยีและสารสนเทศภาครัฐมานาน 
         ทำให้เราเข้าใจและมองเห็นปัญหาที่ถูกสะสม<br>มายาวนาน ทำให้เราเข้าใจและสามารถออกแบบระบบใหม่ 
         เพื่อแก้ไขปัญหาเก่าๆ และนำเทคโนโลยีใหม่ๆ เข้ามาใช้งาน 
       </p>
-      <div class="ss-box xl mt-6" data-aos="fade-up" data-aos-delay="300">
+      <div class="ss-box xl mt-6 pt-2" data-aos="fade-up" data-aos-delay="300">
         <img class="img" src="public/img/content/05.png" alt="Image" />
       </div>
     </div>
@@ -107,28 +108,28 @@
   <section data-section="5" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/49.jpg');"></div>  
     <div class="container">
-        <p class="h4 color-white text-center fw-100" data-aos="fade-up" data-aos-delay="0">
-          แล้วทำไมถึง
-        </p>
-        <p class="h4 text-center color-white fw-600" data-aos="fade-up" data-aos-delay="150">
-          ต้องปรับ ต้องเปลี่ยน
-        </p>
-        <p class="h4 color-white text-center fw-100 mt-5" data-aos="fade-up" data-aos-delay="300">
-          เพราะ
-        </p>
-        <p class="h4 text-center color-white fw-600" data-aos="fade-up" data-aos-delay="450">
-          โลกของเทคโนโลยี ที่ไม่เคยหยุดนิ่ง
-        </p>
+      <h4 class="lg color-white text-center fw-100 lh-sm" data-aos="fade-up" data-aos-delay="0">
+        แล้วทำไมถึง
+      </h4>
+      <h4 class="lg text-center color-white fw-600 lh-sm" data-aos="fade-up" data-aos-delay="150">
+        ต้องปรับ ต้องเปลี่ยน
+      </h4>
+      <h4 class="lg color-white text-center fw-100 lh-sm mt-5" data-aos="fade-up" data-aos-delay="300">
+        เพราะ
+      </h4>
+      <h4 class="lg text-center color-white fw-600 lh-sm" data-aos="fade-up" data-aos-delay="450">
+        โลกของเทคโนโลยี ที่ไม่เคยหยุดนิ่ง
+      </h4>
     </div>
   </section>
 
   <section data-section="6" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/51.jpg');"></div>  
     <div class="container">
-      <h4 class="text-center" data-aos="fade-up" data-aos-delay="0">
+      <h3 class="text-center" data-aos="fade-up" data-aos-delay="0">
         THE TREND OF <span class="color-01 fw-600">DEVELOPMENT</span>
-      </h4>
-      <div class="grids jc-center mt-2" data-aos="fade-up" data-aos-delay="150">
+      </h3>
+      <div class="grids jc-center" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<3; $i++) {?>
           <div class="grid lg-1-3 md-50 sm-50 xs-100 pt-6">
             <a class="ss-card ss-card-03" href="#">
@@ -149,9 +150,9 @@
         <?php }?>
       </div>
 
-      <h4 class="text-center mt-6 pt-3" data-aos="fade-up" data-aos-delay="300">
+      <h3 class="text-center mt-6 pt-4" data-aos="fade-up" data-aos-delay="300">
         โครงสร้าง<span class="color-01 fw-600">กระบวนการพัฒนาซอฟแวร์</span>
-      </h4>
+      </h3>
       <div class="mt-6" data-aos="fade-up" data-aos-delay="450">
         <img class="img" src="public/img/content/44.jpg" alt="Image" />
       </div>
@@ -161,9 +162,9 @@
   <section data-section="7" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/52.jpg');"></div>
     <div class="container">
-      <p class="h4 text-center color-01 fw-500" data-aos="fade-up" data-aos-delay="0">
+      <h4 class="text-center color-01 fw-500" data-aos="fade-up" data-aos-delay="0">
         เราให้ความสำคัญกับการออกแบบ
-      </p> 
+      </h4> 
       <h1 class="lg text-center lh-2xs color-01 fw-600" data-aos="fade-up" data-aos-delay="150">
         UX / UI
       </h1>   
@@ -171,7 +172,7 @@
         เพราะเราคำนึงถึงผู้ใช้ และความง่ายในการใช้งาน<br>
         พร้อมประสิทธิภาพ ของระบบโปรแกรมต่างๆ
       </p>
-      <p class="sm text-center color-white fw-100 mt-1" data-aos="fade-up" data-aos-delay="450">
+      <p class="text-center color-white fw-100 mt-1" data-aos="fade-up" data-aos-delay="450">
         ที่เราออกแบบ เพราะระบบโปรแกรมที่ดี ไม่ได้มีแค่ความสวยงาม 
         แต่ต้องตอบสนองและเข้าใจพฤติกรรมของผู้ใช้งาน
       </p>
@@ -186,12 +187,12 @@
   <section data-section="8" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/53.jpg');"></div>  
     <div class="container">
-      <p class="lg text-center color-black fw-400" data-aos="fade-up" data-aos-delay="0">
+      <h6 class="text-center color-black fw-400" data-aos="fade-up" data-aos-delay="0">
         ตัวอย่างกระบวนการทำงานในการออกแบบ
-      </p>    
-      <h4 class="text-center text-uppercase color-01 fw-600" data-aos="fade-up" data-aos-delay="150">
+      </h6>    
+      <h3 class="text-center text-uppercase color-01 fw-600 lh-sm" data-aos="fade-up" data-aos-delay="150">
         Web Base Application
-      </h4>
+      </h3>
       <div class="ss-box xxl">
         <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="300">
           <div class="ss-img horizontal-2 no-hover">
@@ -205,12 +206,12 @@
   <section data-section="9" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/54.jpg');"></div> 
     <div class="container">
-      <h4 class="text-center color-white fw-100" data-aos="fade-up" data-aos-delay="0">
+      <h4 class="lg text-center color-white fw-100" data-aos="fade-up" data-aos-delay="0">
         ระบบโปรแกรมสำหรับใช้ใน
       </h4>
-      <p class="h4 text-center lh-2xs color-white fw-600" data-aos="fade-up" data-aos-delay="150">
+      <h3 class="text-center lh-2xs color-white fw-600" data-aos="fade-up" data-aos-delay="150">
         การติดตามประเมินความคืบหน้าโครงการ
-      </p>
+      </h3>
       <div class="grids mt-5">
         <div class="grid lg-50 md-50 sm-100">
           <div class="ss-card ss-card-35 box-shadow" data-aos="fade-up" data-aos-delay="300">
@@ -232,15 +233,14 @@
 
   <section data-section="10" class="section-08 section-padding">
     <div class="container">
-      <p class="h4 text-center color-black fw-300" data-aos="fade-up" data-aos-delay="0">
+      <h4 class="lg text-center color-black fw-300" data-aos="fade-up" data-aos-delay="0">
         ตัวอย่างงานด้าน
-      </p>
-      <h5 class="text-center lh-sm" data-aos="fade-up" data-aos-delay="150">
+      </h4>
+      <h4 class="lg text-center lh-xs" data-aos="fade-up" data-aos-delay="150">
         <span class="color-01 fw-600">การวางโครงสร้าง การออกแบบระบบ</span>โปรแกรมต่างๆ
-      </h5>
-      <div class="">
-        <div class="content-container">
-        <div class="swiper-container style-02 mt-5" data-aos="fade-up" data-aos-delay="300">
+      </h4>
+      <div class="content-container mt-6">
+        <div class="swiper-container style-02" data-aos="fade-up" data-aos-delay="300">
           <div class="swiper-wrapper">
             <?php for($i=0; $i<4; $i++){?>
               <div class="swiper-slide ss-card-padding">
@@ -266,9 +266,7 @@
             <img src="public/img/icon/arrow-02.png" alt="Arrow" />
           </div>
         </div>
-        </div>
-        </div>
-      </div>   
+      </div>
     </div>     
   </section>
 
@@ -290,14 +288,14 @@
 
   <section data-section="12" class="section-01 section-padding">
     <div class="container">
-      <p class="h4 color-01 text-center text-uppercase fw-600" data-aos="fade-up" data-aos-delay="0">
+      <h4 class="color-01 text-center text-uppercase fw-600" data-aos="fade-up" data-aos-delay="0">
         การวางโครงสร้าง Server
-      </p>
-      <h4 class="lg lh-2xs text-center text-uppercase fw-200" data-aos="fade-up" data-aos-delay="150">
+      </h4>
+      <h4 class="lg lh-xs text-center text-uppercase fw-300" data-aos="fade-up" data-aos-delay="150">
         สำหรับพัฒนาในรูปแบบของ <span class="color-01 fw-600">DevOps</span>
       </h4>
-      <div class="ss-box xxl" data-aos="fade-up" data-aos-delay="300">
-        <div class="ss-card mt-5" data-aos="fade-up">
+      <div class="ss-box xxl mt-6 pt-1" data-aos="fade-up" data-aos-delay="300">
+        <div class="ss-card" data-aos="fade-up">
           <div class="ss-img horizontal-2 no-hover">
             <div class="img-bg" style="background-image:url('public/img/content/47.jpg');"></div>
           </div>   
@@ -308,7 +306,7 @@
 
   <section data-section="12" class="section-01 section-padding bg-05">
     <div class="container">
-      <h4 class="color-01 text-center fw-600" data-aos="fade-up" data-aos-delay="0">
+      <h4 class="lg color-01 text-center fw-600" data-aos="fade-up" data-aos-delay="0">
         Mobile Application Development
       </h4>
       <div class="ss-box xxl">
@@ -322,7 +320,7 @@
         <?php for($i=0; $i<5; $i++) {?>
           <div class="grid lg-20 md-50">
             <div class="ss-card mt-5" data-aos="fade-up" data-aos-delay="150">
-              <img class="img box-shadow" src="public/img/content/mobile-01.png" alt="Banner" />   
+              <img class="img" src="public/img/content/mobile-01.png" alt="Banner" />   
             </div>
           </div>
         <?php }?>
