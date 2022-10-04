@@ -89,9 +89,6 @@
                         <p class="h4 color-white fw-600">
                           กระทรวงศีกษาธิการ
                         </p>
-                        <p class="h4 color-white fw-600">
-                          กระทรวงศีกษาธิการ
-                        </p>
                       </div>
                     </div>
                   </div>
@@ -106,7 +103,17 @@
           <div class="wrapper"></div>
         </div>
         <div class="arrows">
-          <div class="wrapper"></div>
+          <div class="wrapper">
+            <div class="icon btn-icon-next">
+              <img class="img" src="public/img/icon/arrow-03.png" alt="Arrow" />
+            </div>
+            <div class="icon">
+              <img class="img" src="public/img/icon/line.png" alt="Arrow" />
+            </div>
+            <div class="icon btn-icon-next">
+              <img class="img" src="public/img/icon/arrow-04.png" alt="Arrow" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

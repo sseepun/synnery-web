@@ -292,6 +292,10 @@ $(function(){ 'use strict';
                 slidesPerView: 1,
                 spaceBetween: 0,
                 grabCursor: true,
+                navigation: {
+                    nextEl: self.find('.btn-icon-next'),
+                    prevEl: self.find('.btn-icon-prev'),
+                },
                 pagination: {
                     el: self.find('.dots > .wrapper'),
                     clickable: true,

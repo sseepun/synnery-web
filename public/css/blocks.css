@@ -255,7 +255,7 @@
 .section-13 .swiper-pagination-bullet{
   display:flex; align-items:center; justify-content:center; width:100%; height:2.625rem;
   background:transparent; opacity:1; margin:0; padding:0; font-size:.6875rem; font-weight:400;
-  cursor:pointer;; color:#ffffff; transition:font-size .3s;
+  cursor:pointer; color:#ffffff; transition:font-size .3s;
 }
 .section-13 .swiper-pagination-bullet.swiper-pagination-bullet-active{font-size:1.5rem;}
 .section-13 .dots > .wrapper::before, .section-13 .dots > .wrapper::after{
@@ -264,8 +264,13 @@
 }
 .section-13 .dots > .wrapper::before{bottom:100%;}
 .section-13 .dots > .wrapper::after{top:100%;}
-.section-13 .arrows{display:block; width:100%; height:7.5rem; background:red; overflow:hidden;}
+.section-13 .arrows{display:block; width:100%; height:7.5rem;  overflow:hidden;}
+.section-13 .arrows::after{ 
+  content:''; position:absolute; left:calc(50% - .4px);
+  width:.8px; height:100%; background:#ffffff;
+}
 
+.section-13 .arrows > .wrapper .icon{padding:.1875rem;}
 @media screen and (max-width:1199.98px){
   .section-13 .swiper-container{height:36rem;}
 }
@@ -273,9 +278,17 @@
   .section-13 .swiper-container{height:50rem;}
   .section-13 .swiper-slide > .wrapper{align-items:flex-start;}
   .section-13 .swiper-slide .screen-01{display:block; width:24.68rem; height:auto;}
+  .section-13 .swiper-container.style-02 .text-container.style-02{
+    padding-left:0!important; display:flex; flex-direction:column; align-items:center;
+  }
+  .section-13 .image-container > .device-screen-01{width:38rem;}
   .section-13 .navigator{right:3.5rem;}
   .section-13 .dots{display:none;}
   .section-13 .arrows{height:100%;}
+ 
+  .section-13 .arrows .wrapper{ 
+    content:''; position:absolute; top:50%;
+  }
 }
 @media screen and (max-width:767.98px){
   .section-13 .swiper-container{height:100rem;}
@@ -283,10 +296,12 @@
   .section-13 .swiper-container.style-02 .text-container.style-02{
     padding-left:0!important; display:flex; flex-direction:column; align-items:center;
   }
+  .section-13 .image-container > .device-screen-01{width:30rem;}
   .section-13 .navigator{right:2rem;}
 }
 @media screen and (max-width:575.98px){
   .section-13 .swiper-container{height:28rem;}
+  .section-13 .image-container > .device-screen-01{width:22rem;}
   .section-13 .navigator{right:1rem;}
 }
 
