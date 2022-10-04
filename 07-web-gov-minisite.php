@@ -121,17 +121,48 @@
               <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
               <div class="content">
                 <div class="text-wrapper">
-                  <div class="image-container">
-                    <img class="img" src="public/img/content/screen.png" alt="Device" />
-                  </div>
-                  <div class="text-container">
-                    <img class="img" src="public/img/content/logo-06.png" alt="LOGO" />
-                    <h2 class="color-white text-uppercase lh-2xs fw-200 mt-6">
-                      Ministry of<br><span class="fw-600">Education</span>
-                    </h2>
-                    <p class="h5 color-white fw-600">
-                      กระทรวงศีกษาธิการ
-                    </p>
+                  <div class="grids">
+                    <div class="grid lg-50 md-100 sm-100">
+                      <div class="image-container">
+                        <img class="img device-screen" src="public/img/content/screen-04.png" alt="Device" />
+                      </div>
+                      <div class="grids">
+                        <div class="grid sm-50 md-50">
+                          <div class="image-container">
+                            <img class="img screen-01" src="public/img/content/screen-06.png" alt="Device" />
+                          </div>
+                        </div>
+                        <div class="grid sm-50 md-50">
+                          <div class="image-container">
+                            <img class="img screen-01" src="public/img/content/screen-05.png" alt="Device" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="grid lg-50 md-100 sm-100">
+                      <div class="text-container">
+                        <img class="img logo" src="public/img/content/logo-06.png" alt="LOGO" />
+                        <h2 class="color-white text-uppercase lh-2xs fw-200 mt-6">
+                          Ministry of<br><span class="fw-600">Education</span>
+                        </h2>
+                        <p class="h4 color-white fw-600">
+                          กระทรวงศีกษาธิการ
+                        </p>
+                        <p class="h4 color-white">
+                          จำนวนเว็บไซต์ย่อย <span class="h2 lh-2xs fw-600">120</span> เว็บไซต์
+                        </p>
+                        <div class="grids no-gap">
+                          <div class="grid lg-50">
+                            <img class="img screen-02" src="public/img/content/screen-07.png" alt="Device" />
+                          </div>
+                          <div class="grid lg-50">
+                            <div class="image-container">
+                              <img class="img screen-02" src="public/img/content/screen-08.png" alt="Device" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

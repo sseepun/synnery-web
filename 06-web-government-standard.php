@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -58,7 +58,7 @@
     </div>
   </section>
 
-  <section data-section="3">
+  <section data-section="3" class="section-13">
     <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
       <div class="container">
         <h3 class="text-center fw-200 color-white pt-6 pb-6">
@@ -66,8 +66,49 @@
         </h3>
       </div>
     </div>
-    <div data-aos="fade-up" data-aos-delay="150">
-      <img class="img" src="public/img/bg/banner-01.jpg" alt="Banner" />
+    <div class="swiper-container style-02">
+      <div class="swiper-wrapper">
+        <?php for($i=0; $i<9; $i++) {?>
+          <div class="swiper-slide">
+            <div class="wrapper">
+              <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
+              <div class="content">
+                <div class="text-wrapper">
+                  <div class="grids">
+                    <div class="grid lg-60 md-100 sm-100">
+                      <div class="image-container">
+                        <img class="img device-screen-01" src="public/img/content/screen.png" alt="Device" />
+                      </div>
+                    </div>
+                    <div class="grid lg-40 md-100 sm-100">
+                      <div class="text-container style-02">
+                        <img class="img logo" src="public/img/content/logo-06.png" alt="LOGO" />
+                        <h2 class="color-white text-uppercase lh-2xs fw-200 mt-6">
+                          Ministry of<br><span class="fw-600">Education</span>
+                        </h2>
+                        <p class="h4 color-white fw-600">
+                          กระทรวงศีกษาธิการ
+                        </p>
+                        <p class="h4 color-white fw-600">
+                          กระทรวงศีกษาธิการ
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php }?>
+      </div>
+      <div class="navigator">
+        <div class="dots">
+          <div class="wrapper"></div>
+        </div>
+        <div class="arrows">
+          <div class="wrapper"></div>
+        </div>
+      </div>
     </div>
   </section>
 
