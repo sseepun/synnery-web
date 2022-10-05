@@ -113,63 +113,66 @@
         </h3>
       </div>
     </div>
-    <div class="swiper-container">
+    <div class="swiper-container style-02">
       <div class="swiper-wrapper">
         <?php for($i=0; $i<9; $i++) {?>
           <div class="swiper-slide">
-            <div class="wrapper style-02">
+            <div class="wrapper">
               <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
               <div class="content">
                 <div class="grids">
                   <div class="grid lg-50 md-100 sm-100">
-                    <div class="image-container">
+                    <div class="image-container-03">
                       <img class="img" src="public/img/content/screen-04.png" alt="Device" />
                     </div>
+                    <div class="ss-box xs size-02">
                     <div class="grids">
-                      <div class="grid md-50">
-                      <div class="image-container-02">
-                        <img class="img" src="public/img/content/screen-06.png" alt="Device" />
+                      <div class="grid sm-50">
+                        <div class="image-container-04">
+                          <img  class="img" src="public/img/content/screen-06.png" alt="Device" />
+                        </div>
                       </div>
-                      </div>
-                      <div class="grid md-50">
-                        <div class="image-container-02">
+                      <div class="grid sm-50">
+                        <div class="image-container-04">
                           <img class="img" src="public/img/content/screen-05.png" alt="Device" />
                         </div>
                       </div>
                     </div>
+                    </div>
                   </div>
-                  <div class="grid lg-50 md-100 sm-100" >
+                  <div class="grid lg-50 md-100 sm-100">
                     <div class="h-full d-flex flex-column jc-space-between">
-                      <div class="text-container style-01">
-                        <img class="img logo" src="public/img/content/logo-06.png" alt="LOGO" />
-                        <h2 class="color-white text-uppercase lh-2xs fw-200 mt-6">
+                      <div class="text-container-02">
+                        <div class="image-container-05">
+                         <img src="public/img/content/logo-06.png" alt="LOGO" />
+                        </div>
+                        <h3 class="color-white text-uppercase lh-2xs fw-200 mt-6">
                           Ministry of<br><span class="fw-600">Education</span>
-                        </h2>
+                        </h3>
                         <p class="h4 color-white fw-600">
                           กระทรวงศีกษาธิการ
                         </p>
-                        <p class="h5 color-white">
+                        <p class="h6 color-white fw-200">
                           จำนวนเว็บไซต์ย่อย <span class="h2 lh-2xs fw-600">120</span> เว็บไซต์
                         </p>
                       </div>
                       <div>
-                      <div class="grids">
-                        <div class="grid sm-50">
-                          <div class="image-container-03">
-                            <img class="img" src="public/img/content/screen-07.png" alt="Device" />
+                      <div class="ss-box xs size-02">
+                        <div class="grids">
+                          <div class="grid sm-50">
+                            <div class="image-container-06">
+                              <img src="public/img/content/screen-07.png" alt="Device" />
+                            </div>
                           </div>
-                        </div>
-                        <div class="grid sm-50">
-                          <div class="image-container-03">
-                            <img class="img" src="public/img/content/screen-08.png" alt="Device" />
+                          <div class="grid sm-50">
+                            <div class="image-container-06">
+                              <img  src="public/img/content/screen-08.png" alt="Device" />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-
                     </div>
-                  
-                  
                   </div>
                 </div>
               </div>

@@ -67,25 +67,27 @@
         </h3>
       </div>
     </div>
-    <div class="swiper-container style-02">
+    <div class="swiper-container">
       <div class="swiper-wrapper">
         <?php for($i=0; $i<9; $i++) {?>
           <div class="swiper-slide">
             <div class="wrapper">
               <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
-              <div class="content-style-02">
+              <div class="content">
                 <div class="grids">
-                  <div class="grid lg-60 md-100 sm-100">
-                    <div class="image-container">
-                      <img class="img device-screen-01" src="public/img/content/screen.png" alt="Device" />
+                  <div class="grid lg-50 md-100 sm-100">
+                    <div class="image-container-01">
+                      <img class="img" src="public/img/content/screen.png" alt="Device" />
                     </div>
                   </div>
-                  <div class="grid lg-40 md-100 sm-100">
-                    <div class="text-container style-02">
-                      <img class="img logo" src="public/img/content/logo-06.png" alt="LOGO" />
-                      <h2 class="color-white text-uppercase lh-2xs fw-200 mt-6">
+                  <div class="grid lg-50 md-100 sm-100">
+                    <div class="text-container">
+                      <div class="image-container-02">
+                        <img src="public/img/content/logo-06.png" alt="LOGO" />
+                      </div>
+                      <h3 class="color-white text-uppercase lh-2xs fw-200 mt-6">
                         Ministry of<br><span class="fw-600">Education</span>
-                      </h2>
+                      </h3>
                       <p class="h4 color-white fw-600">
                         กระทรวงศีกษาธิการ
                       </p>
