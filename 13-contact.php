@@ -120,12 +120,12 @@
                 <div class="ss-box xs">
                   <div class="btn-customs" data-aos="fade-up" data-aos-delay="600">
                     <div class="btn-custom">
-                      <button type="submit" class="btn btn-action btn-color-01">
+                      <button type="submit" class="btn btn-action btn-color-01 style-02">
                         <p class="fw-400">สมัคร</p>
                       </button>
                     </div>
                     <div class="btn-custom">
-                      <button type="submit" class="btn btn-action btn-color-02">
+                      <button type="submit" class="btn btn-action btn-color-02 style-02">
                         <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
                       </button>
                     </div>

@@ -35,26 +35,28 @@
             ที่ช่วยให้หน่วยงานหรือองค์กรได้ผลลัพธ์ที่ดีขึ้น เพื่อรับกับแนวทางการเปลี่ยนแปลงที่เกิดขึ้น
           </p>
         </div>
-        <div class="grids jc-center mt-5" data-aos="fade-up" data-aos-delay="450">
+        <div class="grids jc-center mt-6 pt-2" data-aos="fade-up" data-aos-delay="0">
           <?php for($i=0; $i<2; $i++){?>
             <div class="grid lg-50 md-50 sm-50 xs-100">
-              <a class="ss-card ss-card-33 box-shadow" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
-                <div class="ss-img">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-1<?= ($i%2+2) ?>.jpg');"></div>
-                </div>
-                <div div class="ss-card-inner"></div>
-                <div class="icon-container">
-                  <div class="icon">
-                    <img class="img" src="public/img/icon/play.png" alt="Banner" />
+              <div class="p-1 bg-white box-shadow">
+                <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+                  <div class="ss-img">
+                    <div class="img-bg" style="background-image:url('public/img/content/unsplash-1<?= ($i%2+2) ?>.jpg');"></div>
                   </div>
-                </div>
-              </a>
-              <a class="p lg text-center d-block mt-4 fw-500" href="#">
-                ถ้ามาเป็น Dev ที่นี่จะเจออะไร 
+                  <div class="card-icon">
+                    <div class="icon">
+                      <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                    </div>
+                  </div>
+                  <div class="card-line-1"></div><div class="card-line-2"></div>
+                </a>
+              </div>
+              <a class="p text-center d-block mt-4 fw-500" href="#">
+                ถ้ามาเป็น Dev ที่นี่จะเจออะไร
               </a>
             </div>
           <?php }?>
-        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -230,10 +232,10 @@
         <div class="pt-5" data-aos="fade-up" data-aos-delay="0">
           <div class="btn-container">
             <div class="btn-customs jc-center pt-3">
-              <button type="submit" class="btn btn-action btn-color-01 ml-1 mr-1">
+              <button type="submit" class="btn btn-action btn-color-01 style-02 ml-1 mr-1">
                 <p class="fw-400">สมัคร</p>
               </button>
-              <button type="submit" class="btn btn-action btn-color-02 ml-1 mr-1">
+              <button type="submit" class="btn btn-action btn-color-02 style-02 ml-1 mr-1">
                 <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
               </button>
             </div>
@@ -326,10 +328,10 @@
         <div class="pt-5" data-aos="fade-up" data-aos-delay="0">
           <div class="btn-container">
             <div class="btn-customs jc-center pt-3">
-              <button type="submit" class="btn btn-action btn-color-01 ml-1 mr-1">
+              <button type="submit" class="btn btn-action btn-color-01 style-02 ml-1 mr-1">
                 <p class="fw-400">สมัคร</p>
               </button>
-              <button type="submit" class="btn btn-action btn-color-02 ml-1 mr-1">
+              <button type="submit" class="btn btn-action btn-color-02 style-02 ml-1 mr-1">
                 <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
               </button>
             </div>
