@@ -306,11 +306,12 @@
 .section-13 .dots > .wrapper::before{bottom:100%;}
 .section-13 .dots > .wrapper::after{top:100%;}
 .section-13 .arrows{display:block; width:100%; height:7.5rem;  overflow:hidden;}
-.section-13 .arrows::after{ 
-  content:''; position:absolute; left:calc(50% - .4px);
-  width:.8px; height:12rem; background:#ffffff;
-}
+
 .section-13 .arrows > .wrapper{position:relative; padding:.5rem 0;}
+.section-13 .arrows > .wrapper::after{ 
+  content:''; position:absolute; left:calc(50% - .4px);
+  width:.8px; height:10rem; background:#ffffff; top:4.5rem;
+}
 .section-13 .arrows > .wrapper .icon{padding:.1875rem;}
 
 @media screen and (max-width:1199.98px){
@@ -330,16 +331,10 @@
   .section-13 .navigator{right:3.5rem;}
   .section-13 .dots{display:none;}
   .section-13 .arrows{height:100%;}
-  .section-13 .arrows .wrapper{content:''; position:absolute; top:80%;}
-  .section-13 .arrows::after{height:calc(86% - 3.655rem);}
-  .section-13 .arrows::before{ 
+  .section-13 .arrows .wrapper{content:''; position:absolute; top:80%; height:auto;}
+  .section-13 .arrows > .wrapper::before{ 
     content:''; position:absolute; left:calc(50% - .4px);
-    width:.8px; height:12%; background:#ffffff; bottom:0;
-  }
-  .section-13 .arrows.style-02::after{height:calc(84% - 3.655rem);}
-  .section-13 .arrows.style-02::before{ 
-    content:''; position:absolute; left:calc(50% - .4px);
-    width:.8px; height:14%; background:#ffffff; bottom:0;
+    width:.8px; height:40rem; background:#ffffff; bottom:4.5rem;
   }
 }
 @media screen and (max-width:767.98px){
