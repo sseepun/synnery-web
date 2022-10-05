@@ -743,7 +743,7 @@ fieldset{padding:0; margin:0; border:0;}
     background-size:cover; background-position:center;
     transition:transform .3s, filter .3s;
 }
-.ss-card:not(.no-hover):hover .ss-img > .img-bg,
+.ss-card:hover .ss-img:not(.no-hover) > .img-bg,
 .ss-img:not(.no-hover):hover > .img-bg{transform:scale(1.1);}
 .ss-img > .img-bg > img{
     display:block; width:auto; max-width:85%; height:auto; max-height:85%;

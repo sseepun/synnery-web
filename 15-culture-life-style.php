@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php // include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -62,21 +62,21 @@
                     <?php for($i=0; $i<5; $i++){?>
                       <div class="swiper-slide">
                         <div class="wrapper">
-                        <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
-                          <div class="ss-img horizontal-03">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-1<?= ($i%2+4) ?>.jpg');"></div>
-                          </div>
-                          <div class="hover-filter-01"></div>
-                          <div class="card-icon">
-                            <div class="icon">
-                              <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                          <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+                            <div class="ss-img horizontal-03">
+                              <div class="img-bg" style="background-image:url('public/img/content/unsplash-1<?= ($i%2+4) ?>.jpg');"></div>
                             </div>
-                          </div>
-                          <div class="card-line-1"></div><div class="card-line-2"></div>
-                        </a>
-                        <a class="text-center d-block fw-400 mt-2">
-                          video อบรม กระทรวงศึกษาธิการ
-                        </a>
+                            <div class="hover-filter-01"></div>
+                            <div class="card-icon">
+                              <div class="icon">
+                                <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                              </div>
+                            </div>
+                            <div class="card-line-1"></div><div class="card-line-2"></div>
+                          </a>
+                          <a class="text-center d-block fw-400 mt-2">
+                            video อบรม กระทรวงศึกษาธิการ
+                          </a>
                         </div>
                       </div>
                     <?php }?>

@@ -124,7 +124,7 @@
             <?php }?>
           </div>
           <div class="navigator">
-            <div class="progress p color-01 fw-400"></div>
+            <div class="progress p color-01 fw-500"></div>
             <div class="line"></div>
             <div class="dots"></div>
           </div>
@@ -142,17 +142,19 @@
       <div class="grids jc-center mt-6 pt-2" data-aos="fade-up" data-aos-delay="0">
         <?php for($i=0; $i<3; $i++){?>
           <div class="grid lg-1-3 md-50 sm-50 xs-100">
-            <a class="ss-card ss-card-33 box-shadow" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
-              <div class="ss-img square">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
-              </div>
-              <div div class="ss-card-inner"></div>
-              <div class="icon-container">
-                <div class="icon">
-                  <img class="img" src="public/img/icon/play.png" alt="Banner" />
+            <div class="p-1 bg-white box-shadow">
+              <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+                <div class="ss-img square">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
                 </div>
-              </div>
-            </a>
+                <div class="card-icon">
+                  <div class="icon">
+                    <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                  </div>
+                </div>
+                <div class="card-line-1"></div><div class="card-line-2"></div>
+              </a>
+            </div>
             <a class="p text-center d-block mt-4 fw-500" href="#">
               เบิ้องหลังการถ่ายทำ Video Present ของพิธีกร
             </a>
@@ -171,17 +173,19 @@
       <div class="grids pt-2" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<2; $i++) {?>
           <div class="grid lg-50 md-50 sm-50 xs-100">
-            <a class="ss-card ss-card-33 box-shadow" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
-              <div class="ss-img">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
-              </div>
-              <div div class="ss-card-inner"></div>
-              <div class="icon-container">
-                <div class="icon">
-                  <img class="img" src="public/img/icon/play.png" alt="Banner" />
+            <div class="p-1 bg-white box-shadow">
+              <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+                <div class="ss-img">
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
                 </div>
-              </div>
-            </a>
+                <div class="card-icon">
+                  <div class="icon">
+                    <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                  </div>
+                </div>
+                <div class="card-line-1"></div><div class="card-line-2"></div>
+              </a>
+            </div>
           </div>
         <?php }?>
       </div>   
@@ -197,17 +201,20 @@
       <p class="h4 text-center lh-sm color-black fw-400" data-aos="fade-up" data-aos-delay="150">
         ความยาวของกิจกรรมทั้งหมด 2 ชั่วโมง 
       </p>
-      <div class="box-shadow mt-6" data-fancybox data-aos="fade-up" data-aos-delay="300">
-        <a class="ss-card ss-card-33" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2">
-          <div class="ss-img horizontal-2">
+      <div class="p-1 bg-white box-shadow mt-6" data-fancybox data-aos="fade-up" data-aos-delay="300">
+        <a 
+          class="ss-card" data-fancybox 
+          href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
+        >
+          <div class="ss-img horizontal-02">
             <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
           </div>
-          <div div class="ss-card-inner"></div>
-          <div class="icon-container">
+          <div class="card-icon">
             <div class="icon">
               <img class="img" src="public/img/icon/play.png" alt="Banner" />
             </div>
           </div>
+          <div class="card-line-1"></div><div class="card-line-2"></div>
         </a>
       </div>
     </div>      
@@ -225,23 +232,26 @@
   </section>
 
   <section data-section="7" class="p-1">
-    <div class="grids no-gap">
+    <div class="grids no-gap" data-aos="fade-up" data-aos-delay="300">
       <?php for($i=0; $i<6; $i++) {?>
         <div class="grid lg-1-3 style-02 mt-0">
-          <a class="ss-card ss-card-33" 
-            href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
-            data-fancybox data-aos="fade-up" data-aos-delay="300">
-            <div class="ss-img horizontal-2">
-              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
-            </div>
-            <div div class="ss-card-inner"></div>
-            <div class="icon-container">
-              <div class="icon">
-                <img class="img" src="public/img/icon/play.png" alt="Banner" />
+          <div class="p-1">
+            <a 
+              class="ss-card" data-fancybox
+              href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
+            >
+              <div class="ss-img horizontal-2">
+                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
               </div>
-            </div>
-          </a>
-      </div>
+              <div class="card-icon">
+                <div class="icon">
+                  <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                </div>
+              </div>
+              <div class="card-line-1"></div><div class="card-line-2"></div>
+            </a>
+          </div>
+        </div>
       <?php }?>
     </div>
   </section>
@@ -256,11 +266,13 @@
         Virtual of ASEN Cultural Center
       </h5>
       <div class="mt-6" data-aos="fade-up" data-aos-delay="300">
-        <a class="ss-card box-shadow bg-white p-2" href="#">
-          <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/40.jpg');"></div>
-          </div>
-        </a>
+        <div class="p-1 bg-white box-shadow">
+          <a class="ss-card" href="#">
+            <div class="ss-img horizontal-02 no-hover">
+              <div class="img-bg" style="background-image:url('public/img/content/40.jpg');"></div>
+            </div>
+          </a>
+        </div>
       </div>
     </div>   
   </section>
@@ -273,14 +285,16 @@
     <div class="grids no-gap mt-4" data-aos="fade-up" data-aos-delay="150">
       <?php for($i=0; $i<4; $i++) {?>
         <div class="grid lg-25 style-03 mt-0">
-          <div class="ss-card">
-            <div class="ss-img">
-              <div class="img-bg" style="background-image:url('public/img/content/41.jpg');"></div>
+          <div class="p-1 bg-white">
+            <div class="ss-card">
+              <div class="ss-img no-hover">
+                <div class="img-bg" style="background-image:url('public/img/content/41.jpg');"></div>
+              </div>
             </div>
-            <p class="xs color-white pos-relative text-center text-uppercase fw-500 mt-3">
-              chatuchak2shop
-            </p>
           </div>
+          <p class="xs color-white pos-relative text-center text-uppercase fw-500 mt-3">
+            chatuchak2shop
+          </p>
         </div>
       <?php }?>
     </div>  
