@@ -252,6 +252,35 @@ $(function(){ 'use strict';
         });
     }
 
+    // Section 07
+    var section07= $('.section-07');
+    if(section07.length){
+        section07.find('.content-container').each(function(){
+            var self = $(this);
+            let slideNum = self.find('.swiper-slide').length;
+            let swiper08 = new Swiper(self.find('.swiper-container'), {
+                loop: true,
+                speed: 800,
+                slidesPerView: 2,
+                spaceBetween: 0,
+                grabCursor: true,
+                navigation: {
+                    nextEl: self.find('.btn-icon-next'),
+                    prevEl: self.find('.btn-icon-prev'),
+                },
+                pagination: {
+                    el: self.find('.dots'),
+                    clickable: true,
+                },
+                breakpoints: {
+                    1199.98: { slidesPerView: 2 },
+                    991.98: { slidesPerView: 2 },
+                    575.98: { slidesPerView: 1 },
+                },
+            });
+        });
+    }
+
     // Section 08
     var section08 = $('.section-08');
     if(section08.length){
@@ -355,33 +384,6 @@ $(function(){ 'use strict';
 });
 
 
-// Section 07
-var section07= $('.section-07');
-if(section07.length){
-    section07.find('.swiper-container').each(function(){
-        var self = $(this);
-        new Swiper(self, {
-            loop: true,
-            speed: 800,
-            slidesPerView: 2,
-            spaceBetween: 20,
-            grabCursor: true,
-            navigation: {
-                nextEl: self.find('.btn-icon-next'),
-                prevEl: self.find('.btn-icon-prev'),
-            },
-            pagination: {
-                el: self.find('.dots'),
-                clickable: true,
-            },
-            breakpoints: {
-                1199.98: { slidesPerView: 3 },
-                991.98: { slidesPerView: 2 },
-                575.98: { slidesPerView: 1.4 },
-            },
-        });
-    });
-}
 
 // Section 10
 var section10= $('.section-10');

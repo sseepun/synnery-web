@@ -110,7 +110,6 @@
   border-radius:.1875rem; font-size:.875rem; font-weight:300; transition:background .3s;
 }
 
-
 /* Section 08 */
 .section-08{position:relative; background-size:cover; }
 .section-08 > .img-bg{
@@ -163,7 +162,6 @@
   .section-08 .content-container{padding:0;}
   .section-08 .arrows{display:none;}
 }
-
 
 /* Section 10 */
 .section-10{position:relative;}

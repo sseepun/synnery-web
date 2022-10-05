@@ -56,37 +56,42 @@
         <?php foreach($categories as $j=>$k){?>
           <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
             <div class="container">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <?php for($i=0; $i<12; $i++){?>
-                    <div class="swiper-slide">
-                      <a class="ss-card ss-card-18" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
-                        <div class="ss-img horizontal-2">
-                          <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
-                        </div>
-                        <div div class="ss-card-inner"></div>
-                        <div class="icon-container">
-                          <div class="icon">
-                            <img class="img" src="public/img/icon/play.png" alt="Banner" />
+              <div class="content-container" data-aos="fade-up" data-aos-delay="0">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <?php for($i=0; $i<5; $i++){?>
+                      <div class="swiper-slide">
+                        <div class="wrapper">
+                        <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+                          <div class="ss-img horizontal-03">
+                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+2) ?>.jpg');"></div>
                           </div>
+                          <div class="hover-filter-01"></div>
+                          <div class="card-icon">
+                            <div class="icon">
+                              <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                            </div>
+                          </div>
+                          <div class="card-line-1"></div><div class="card-line-2"></div>
+                        </a>
+                        <a class="text-center d-block fw-400 mt-2">
+                          video อบรม กระทรวงศึกษาธิการ
+                        </a>
                         </div>
-                      </a> 
-                      <div class="mt-2">
-                        <p class="lg text-center color-black fw-400">VIDEO อบรม กระทรวงศึกษาธิการ</p>
-                      </div> 
-                    </div>
-                  <?php }?>
-                </div>
-                <div class="dots"></div>
-                  <div class="arrow-container">
-                    <div class="arrow btn-icon-next">
-                      <img src="public/img/icon/arrow-01.png" alt="Arrow" />
-                    </div>
-                    <div class="arrow btn-icon-next">
-                      <img src="public/img/icon/arrow-02.png" alt="Arrow" />
-                    </div>
+                      </div>
+                    <?php }?>
                   </div>
-              </div>
+                  <div class="dots"></div>
+                </div>
+                <div class="arrows">
+                  <div class="arrow btn-icon-next">
+                    <img src="public/img/icon/arrow-01.png" alt="Arrow" />
+                  </div>
+                  <div class="arrow btn-icon-next">
+                    <img src="public/img/icon/arrow-02.png" alt="Arrow" />
+                  </div>
+                </div>
+               </div> 
             </div>
           </div>
         <?php }?>
@@ -103,7 +108,7 @@
           </div>
         </div>
         <div class="block">
-          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+          <div class="img-bg" style="background-image:url('public/img/bg/60.jpg');"></div>
           <div class="text-container md">
             <h3 class="color-01 lh-2xs fw-600" data-aos="fade-up" data-aos-delay="0">
               สนใจสมัครงานกับเรา
