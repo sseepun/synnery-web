@@ -123,16 +123,16 @@
                 <div class="grids">
                   <div class="grid lg-50 md-100 sm-100">
                     <div class="image-container-03">
-                      <img class="img" src="public/img/content/screen-04.png" alt="Device" />
+                      <img  src="public/img/content/screen-04.png" alt="Device" />
                     </div>
                     <div class="ss-box xs size-02">
                     <div class="grids">
-                      <div class="grid sm-50">
+                      <div class="grid sm-50 xs-50">
                         <div class="image-container-04">
                           <img  class="img" src="public/img/content/screen-06.png" alt="Device" />
                         </div>
                       </div>
-                      <div class="grid sm-50">
+                      <div class="grid sm-50 xs-50">
                         <div class="image-container-04">
                           <img class="img" src="public/img/content/screen-05.png" alt="Device" />
                         </div>
@@ -159,12 +159,12 @@
                       <div>
                       <div class="ss-box xs size-02">
                         <div class="grids">
-                          <div class="grid sm-50">
+                          <div class="grid sm-50 xs-100">
                             <div class="image-container-06">
                               <img src="public/img/content/screen-07.png" alt="Device" />
                             </div>
                           </div>
-                          <div class="grid sm-50">
+                          <div class="grid sm-50 xs-100">
                             <div class="image-container-06">
                               <img  src="public/img/content/screen-08.png" alt="Device" />
                             </div>
