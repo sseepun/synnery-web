@@ -297,10 +297,13 @@
 .section-13 .arrows{display:block; width:100%; height:7.5rem;  overflow:hidden;}
 .section-13 .arrows::after{ 
   content:''; position:absolute; left:calc(50% - .4px);
-  width:.8px; height:100%; background:#ffffff;
+  width:.8px; height:12rem; background:#ffffff;
 }
 .section-13 .arrows > .wrapper .icon{padding:.1875rem;}
 
+@media screen and (max-width:1089.98px){
+  .section-13 .navigator.style-02{right:1.5rem;}
+}
 @media screen and (max-width:991.98px){
   .section-13 .swiper-container{position:relative; width:100%; height:61rem;}
   .section-13 .swiper-container.style-02{position:relative; width:100%; height:73rem;}
@@ -320,19 +323,29 @@
   .section-13 .navigator{right:3.5rem;}
   .section-13 .dots{display:none;}
   .section-13 .arrows{height:100%;}
-  .section-13 .arrows .wrapper{content:''; position:absolute; top:50%;}
+  .section-13 .arrows .wrapper{content:''; position:absolute; top:80%;}
+  .section-13 .arrows::after{height:calc(86% - 3.655rem);}
+  .section-13 .arrows::before{ 
+    content:''; position:absolute; left:calc(50% - .4px);
+    width:.8px; height:12%; background:#ffffff; bottom:0;
+  }
+  .section-13 .arrows.style-02::after{height:calc(84% - 3.655rem);}
+  .section-13 .arrows.style-02::before{ 
+    content:''; position:absolute; left:calc(50% - .4px);
+    width:.8px; height:14%; background:#ffffff; bottom:0;
+  }
 }
 @media screen and (max-width:767.98px){
   .section-13 .swiper-container{position:relative; width:100%; height:52rem;}
   .section-13 .swiper-container.style-02{position:relative; width:100%; height:63rem;}
-  .section-13 .navigator{right:2rem;}
+  .section-13 .navigator{right:.5rem;}
 }
 @media screen and (max-width:575.98px){
   .section-13 .swiper-container{height:50rem;}
   .section-13 .swiper-container.style-02{height:72rem;}
   .section-13 .swiper-slide .image-container-04 > img{max-width:100%;}
   .section-13 .swiper-slide .image-container-06 > img{max-width:100%; margin:0 auto;}
-  .section-13 .navigator{right:1rem;}
+  .section-13 .navigator{right:.375rem;}
 }
 
 /* Tab Container */

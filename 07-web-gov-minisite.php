@@ -180,11 +180,11 @@
           </div>
         <?php }?>
       </div>
-      <div class="navigator">
+      <div class="navigator style-02">
         <div class="dots">
           <div class="wrapper"></div>
         </div>
-        <div class="arrows">
+        <div class="arrows style-02">
           <div class="wrapper">
             <div class="icon btn-icon-next">
               <img class="img" src="public/img/icon/arrow-03.png" alt="Arrow" />

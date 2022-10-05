@@ -58,7 +58,6 @@
     </div>
   </section>
 
-  <!-- Section 13 ใช้ 2 ที่ (หน้า 06 และ 07) ผมแก้ยังไม่เสร็จนะครับ class น่าจะทับกัน -->
   <section data-section="3" class="section-13">
     <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
       <div class="container">
@@ -93,16 +92,16 @@
                       </p>
                       <div class="btns pt-4">
                         <a class="btn btn-action btn-color-03" href="#">
-                          <div class="icon-container">
-                            <span class="p fw-300">เว็บไซต์กระทรวง</span>
+                          <div class="icon-container color-01">
+                            <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
                             <em class="ml-2 fa-solid fa-play"></em>
                           </div>
                         </a>
                       </div>
                       <div class="btns pt-4">
                         <a class="btn btn-action btn-color-03 style-02" href="#">
-                          <div class="icon-container">
-                            <span class="p fw-300">เว็บไซต์สำนักงานปลัด</span>
+                          <div class="icon-container color-01">
+                            <span class="p color-white fw-300">เว็บไซต์สำนักงานปลัด</span>
                             <em class="ml-2 fa-solid fa-play"></em>
                           </div>
                         </a>
@@ -139,7 +138,7 @@
   <section data-section="5" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/20.jpg');"></div> 
     <div class="container">
-      <h3 class="text-center color-black fw-200" data-aos="fade-up" data-aos-delay="0" >
+      <h3 class="text-center color-black fw-200" data-aos="fade-up" data-aos-delay="0">
         พร้อมรองรับ<span class="color-01 fw-600">มาตรฐานต่างๆ</span>
       </h3>  
       <div class="ss-box xxl" data-aos="fade-up" data-aos-delay="150">
