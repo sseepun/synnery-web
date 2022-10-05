@@ -25,7 +25,7 @@
           <div class="grid xl-25 lg-25 md-50 sm-50 xs-100">
             <a class="ss-card ss-card-05">
               <div class="ss-img vertical-01">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('public/img/content/unsplash-1<?= ($i%4+6) ?>.jpg');"></div>
               </div>
               <div class="filter-02"></div>
               <div class="hover-filter-01"></div>

@@ -736,6 +736,7 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-img.horizontal-02{padding:40% 0 0 0;}
 .ss-img.horizontal-03{padding:50% 0 0 0;}
 .ss-img.horizontal-04{padding:70% 0 0 0;}
+.ss-img.horizontal-05{padding:15% 0 0 0;}
 .ss-img > .img-bg{
     position:absolute; top:0; bottom:0; left:0; right:0;
     display:flex; align-items:center; justify-content:center;

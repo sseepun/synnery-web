@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -35,21 +35,22 @@
                 </p>
               </li>
               <li class="pb-2">
-                <p class="color-black fw-600 mt-1">ระบบไม่รองรับเทคโนโลยีใหม่ๆ</p>
+                <p class="color-black fw-600 mt-1">Tech Tools ที่ใช้หยุดหรือเลิกการพัฒนา</p>
                 <p class="sm color-black fw-400">
-                  ไม่ว่าจะเป็นเรื่องของ Web Browser รุ่นใหม่ และหลากหลาย รวมถึงการทำงานบน Mobile/Tablet
+                  ด้วยการเปลี่ยนแปลงของ Tech Tools ใหม่ๆ ต่างๆ หลายระบบโปรแกรม หลายภาษาที่ไม่ได้ถูกพัฒนาต่อ 
+                  และยังถูกทดแทนด้วย Tech Tools ที่ดีกว่า ใหม่กว่า และปลอดภัยกว่า
                 </p>
               </li>
               <li class="pb-2">
-                <p class="color-black fw-600 mt-1">ระบบไม่รองรับเทคโนโลยีใหม่ๆ</p>
+                <p class="color-black fw-600 mt-1">UX/UI ใช้งานยาก ไม่ตอบโจทย์ผู้ใช้</p>
                 <p class="sm color-black fw-400">
-                  ไม่ว่าจะเป็นเรื่องของ Web Browser รุ่นใหม่ และหลากหลาย รวมถึงการทำงานบน Mobile/Tablet
+                  เพราะผู้ใช้ไม่ต้องการคิดเยอะ และส่วนใหญ่มีประสบการณ์จากการใช้สื่อ Social Media ต่างๆ และไม่ชอบการอ่านคู่มือ
                 </p>
               </li>
               <li class="pb-2">
-                <p class="color-black fw-600 mt-1">ระบบไม่รองรับเทคโนโลยีใหม่ๆ</p>
+                <p class="color-black fw-600 mt-1">ยากต่อการขยายหรือปรับเปลี่ยนระบบ</p>
                 <p class="sm color-black fw-400">
-                  ไม่ว่าจะเป็นเรื่องของ Web Browser รุ่นใหม่ และหลากหลาย รวมถึงการทำงานบน Mobile/Tablet
+                  ทั้งการขยายด้าน Hardware และการปรับเปลี่ยน Software ที่ไม่ยืดหยุ่น ทำให้ระบบโปรแกรมไม่ตอบโจทย์ต่อผู้ใช้งาน และสร้างปัญหา
                 </p>
               </li>
             </ul> 
@@ -57,27 +58,29 @@
           <div class="grid xl-50 lg-50 md-50 sm-50 xs-100">
             <ul class="ss-list-01 style-04">
               <li class="pb-2">
-                <p class="color-black fw-600 mt-1">ระบบไม่รองรับเทคโนโลยีใหม่ๆ</p>
+                <p class="color-black fw-600 mt-1">การปรับแต่ง Fied Form, Workflow ทำได้ยาก</p>
                 <p class="sm color-black fw-400">
-                  ไม่ว่าจะเป็นเรื่องของ Web Browser รุ่นใหม่ และหลากหลาย รวมถึงการทำงานบน Mobile/Tablet
+                  จะสร้าง Field ใส่ Form ก็ยาก จะปรับเปลี่ยน Flow การทำงานให้เข้ากับหน้างานที่ต้องใช้จริงก็ยาก หรือทำไม่ได้ 
                 </p>
               </li>
               <li class="pb-2">
-                <p class="color-black fw-600 mt-1">ระบบไม่รองรับเทคโนโลยีใหม่ๆ</p>
+                <p class="color-black fw-600 mt-1">ทำงานร่วมกับระบบอื่นไม่ได้</p>
                 <p class="sm color-black fw-400">
-                  ไม่ว่าจะเป็นเรื่องของ Web Browser รุ่นใหม่ และหลากหลาย รวมถึงการทำงานบน Mobile/Tablet
+                  ไม่มี API (Application Protocol Interface) เพราะเป็นการพัฒนาแบบเก่า 
+                  ทำให้กลายเป็นระบบปิด เชื่อมต่อกับระบบอื่นไม่ได้
                 </p>
               </li>
               <li class="pb-2">
-                <p class="color-black fw-600 mt-1">ระบบไม่รองรับเทคโนโลยีใหม่ๆ</p>
+                <p class="color-black fw-600 mt-1">ข้อมูลซ้ำซ้อน และเกิดข้อมูลขยะที่ไม่ได้ใช้เยอะมาก</p>
                 <p class="sm color-black fw-400">
-                  ไม่ว่าจะเป็นเรื่องของ Web Browser รุ่นใหม่ และหลากหลาย รวมถึงการทำงานบน Mobile/Tablet
+                  เพราะไม่มีการวางแผน หรือจัดระบบ ระเบียบของโครงสร้างฐานข้อมูล ต่างระบบต่างก็มีฐานข้อมูลของตัวเอง 
+                  และเชื่อมต่อหรือทำงานร่วมกัน
                 </p>
               </li>
               <li class="pb-2">
-                <p class="color-black fw-600 mt-1">ระบบไม่รองรับเทคโนโลยีใหม่ๆ</p>
+                <p class="color-black fw-600 mt-1">ระบบรายงานไม่มีความยืดหยุ่นในการดึงข้อมูล</p>
                 <p class="sm color-black fw-400">
-                  ไม่ว่าจะเป็นเรื่องของ Web Browser รุ่นใหม่ และหลากหลาย รวมถึงการทำงานบน Mobile/Tablet
+                  ความยืดหยุ่นในการดึงระบบรายงานต่างๆ ทำได้อย่างจำกัด
                 </p>
               </li>
             </ul>
@@ -215,17 +218,39 @@
       <div class="grids mt-5">
         <div class="grid lg-50 md-50 sm-100">
           <div class="ss-card ss-card-35 box-shadow" data-aos="fade-up" data-aos-delay="300">
-            <div class="ss-img horizontal-2 no-hover">
+            <div class="ss-img horizontal-03 no-hover">
               <div class="img-bg" style="background-image:url('public/img/content/45.jpg');"></div>
             </div>   
           </div>
         </div>
         <div class="grid lg-50 md-50 sm-100">
-          <div class="ss-card ss-card-35 box-shadow" data-aos="fade-up" data-aos-delay="300">
-            <div class="ss-img horizontal-2 no-hover">
-              <div class="img-bg" style="background-image:url('public/img/content/45.jpg');"></div>
-            </div>   
+          <div class="grids">
+            <div class="grid md-40 mt-0">
+              <div class="ss-card ss-card-35  height-full box-shadow" data-aos="fade-up" data-aos-delay="300">
+                <div class="ss-img horizontal-02 no-hover height-full">
+                  <div class="img-bg" style="background-image:url('public/img/content/56.jpg');"></div>
+                </div>   
+              </div>
+            </div>
+            <div class="grid md-60 mt-0">
+              <div class="ss-card ss-card-35 box-shadow" data-aos="fade-up" data-aos-delay="300">
+                <div class="ss-img horizontal-02 no-hover">
+                  <div class="img-bg" style="background-image:url('public/img/content/57.jpg');"></div>
+                </div>   
+              </div>
+            </div>
+            <div class="grid md-100 sm-100">
+              <div class="ss-card ss-card-35 height-full box-shadow" data-aos="fade-up" data-aos-delay="300">
+                <div class="ss-img horizontal-05 no-hover height-full">
+                  <div class="img-bg" style="background-image:url('public/img/content/46.jpg');"></div>
+                </div>   
+              </div>
+              <a class="text-center d-block color-white fw-500 mt-2" href="#" data-aos="fade-up" data-aos-delay="300">
+                Project Tracking by Asana
+              </a>
+            </div>
           </div>
+        
         </div>
       </div>
     </div>      
@@ -320,7 +345,7 @@
         <?php for($i=0; $i<5; $i++) {?>
           <div class="grid lg-20 md-50">
             <div class="ss-card mt-5" data-aos="fade-up" data-aos-delay="150">
-              <img class="img" src="public/img/content/mobile-01.png" alt="Banner" />   
+              <img class="img" src="public/img/content/mobile-0<?= ($i%5+1) ?>.png" alt="Banner" />   
             </div>
           </div>
         <?php }?>

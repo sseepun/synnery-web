@@ -33,27 +33,66 @@
         </p>
       </div>
       <div class="grids jc-center pt-4" data-aos="fade-up" data-aos-delay="450">
-        <?php for($i=0; $i<3; $i++){?>
-          <div class="grid xl-25 lg-25 md-50 sm-50 xs-100">
-            <a class="ss-card ss-card-05">
-              <div class="ss-img vertical-01">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+        <div class="grid xl-25 lg-1-3 md-50 sm-50 xs-100">
+          <a class="ss-card ss-card-05">
+            <div class="ss-img vertical-01">
+              <div class="img-bg" style="background-image:url('public/img/content/unsplash-08.jpg');"></div>
+            </div>
+            <div class="filter-02"></div>
+            <div class="hover-filter-01"></div>
+            <div class="text-container">
+              <div class="title h5 color-01 lh-xs fw-500">
+                วิเคราะห์
               </div>
-              <div class="filter-02"></div>
-              <div class="hover-filter-01"></div>
-              <div class="text-container">
-                <div class="title h5 color-01 lh-xs fw-500">
-                  ช่องทางการสื่อสาร
-                </div>
-                <div class="desc p sm color-white fw-400">
-                  นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
-                  นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
-                </div>
+              <div class="desc p sm color-white fw-400">
+                นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
+                นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
               </div>
-              <div class="line-1"></div><div class="line-2"></div>
-            </a>
-          </div>
-        <?php }?>
+            </div>
+            <div class="line-1"></div><div class="line-2"></div>
+          </a>
+        </div>
+
+        <div class="grid xl-25 lg-1-3 md-50 sm-50 xs-100">
+          <a class="ss-card ss-card-05">
+            <div class="ss-img vertical-01">
+              <div class="img-bg" style="background-image:url('public/img/content/unsplash-18.jpg');"></div>
+            </div>
+            <div class="filter-02"></div>
+            <div class="hover-filter-01"></div>
+            <div class="text-container">
+              <div class="title p  color-white lh-xs fw-200">
+                กำหนดภาพลักษณ์ของ <span class="h5 color-01 fw-600">"BRAND"</span>
+              </div>
+              <ul class="ss-list-01 style-02">
+                <li class="mt-1">Brand Personality</li>
+                <li class="mt-1">Brand Personality</li>
+                <li class="mt-1">Brand Personality</li>
+                <li class="mt-1">Brand Personality</li>
+              </ul>
+            </div>
+            <div class="line-1"></div><div class="line-2"></div>
+          </a>
+        </div>
+        <div class="grid xl-25 lg-1-3 md-50 sm-50 xs-100">
+          <a class="ss-card ss-card-05">
+            <div class="ss-img vertical-01">
+              <div class="img-bg" style="background-image:url('public/img/content/unsplash-19.jpg');"></div>
+            </div>
+            <div class="filter-02"></div>
+            <div class="hover-filter-01"></div>
+            <div class="text-container">
+              <ul class="ss-list-01 style-02">
+                <li class="mt-1">SEO Structure</li>
+                <li class="mt-1">Search by AI</li>
+                <li class="mt-1">Speed Page Test</li>
+                <li class="mt-1">All Browser Support</li>
+                <li class="mt-1">High Security (OWASP)</li>
+              </ul>
+            </div>
+            <div class="line-1"></div><div class="line-2"></div>
+          </a>
+        </div>
       </div>
     </div>
   </section>

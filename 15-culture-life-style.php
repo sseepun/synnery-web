@@ -64,7 +64,7 @@
                         <div class="wrapper">
                         <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
                           <div class="ss-img horizontal-03">
-                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+2) ?>.jpg');"></div>
+                            <div class="img-bg" style="background-image:url('public/img/content/unsplash-1<?= ($i%2+4) ?>.jpg');"></div>
                           </div>
                           <div class="hover-filter-01"></div>
                           <div class="card-icon">

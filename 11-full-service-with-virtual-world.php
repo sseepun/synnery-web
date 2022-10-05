@@ -34,8 +34,8 @@
             <div class="grid lg-20 md-25 sm-1-3 xs-50">
               <div class="ss-card ss-card-16 style-02 mt-2">
                 <div class="icon">
-                  <img class="active" src="public/img/icon/game-active.png" alt="Icon Active" />
-                  <img class="inactive" src="public/img/icon/game-active.png" alt="Icon Inactive" />
+                  <img class="Inactive" src="public/img/icon/game.png" alt="Icon Active" />
+                  <img class="active" src="public/img/icon/game-active.png" alt="Icon Inactive" />
                 </div>
                 <div class="text-container">
                   <p class="xs title fw-500 mt-2">

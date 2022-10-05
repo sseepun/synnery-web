@@ -120,12 +120,12 @@
                 <div class="ss-box xs">
                   <div class="btn-customs" data-aos="fade-up" data-aos-delay="600">
                     <div class="btn-custom">
-                      <button type="submit" class="btn btn-action btn-color-01 style-02">
+                      <button type="submit" class="btn btn-action btn-color-01">
                         <p class="fw-400">สมัคร</p>
                       </button>
                     </div>
                     <div class="btn-custom">
-                      <button type="submit" class="btn btn-action btn-color-02 style-02">
+                      <button type="submit" class="btn btn-action btn-color-02">
                         <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
                       </button>
                     </div>
@@ -174,10 +174,10 @@
 
   <section data-section="3" class="pos-relative">
     <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.484526096977!2d100.60988371477923!3d13.749628990348898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f43cb5dd4c7%3A0x2be342a445fba318!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4i-C4tOC4meC5gOC4meC4reC4o-C5jOC4o-C4teC5iCDguITguK3guKPguYzguJvguK3guYDguKPguIrguLHguYjguJkgKOC4m-C4o-C4sOC5gOC4l-C4qOC5hOC4l-C4oikg4LiI4Liz4LiB4Lix4LiU!5e0!3m2!1sth!2sth!4v1664535415650!5m2!1sth!2sth" 
-    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.484526096977!2d100.60988371477923!3d13.749628990348898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f43cb5dd4c7%3A0x2be342a445fba318!2z4Lia4Lij4Li04Lip4Lix4LiXIOC4i-C4tOC4meC5gOC4meC4reC4o-C5jOC4o-C4teC5iCDguITguK3guKPguYzguJvguK3guYDguKPguIrguLHguYjguJkgKOC4m-C4o-C4sOC5gOC4l-C4qOC5hOC4l-C4oikg4LiI4Liz4LiB4Lix4LiU!5e0!3m2!1sth!2sth!4v1664535415650!5m2!1sth!2sth" 
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>      
-    <div class="mt-3 pos-absolute d-flex jc-center ai-center" style="top:0; left:0; right:0; bottom:0;">
+    <div class="mt-3 pos-absolute" style="transform:translate(50%,-50%); top:50%; right:50%;">
       <img class="img" style="width:15rem; height:auto;" src="public/img/content/07.png" alt="LOGO" />
     </div>                   
   </section>

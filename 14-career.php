@@ -40,7 +40,7 @@
             <div class="grid lg-50 md-50 sm-50 xs-100">
               <a class="ss-card ss-card-33 box-shadow" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
                 <div class="ss-img">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
+                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-1<?= ($i%2+2) ?>.jpg');"></div>
                 </div>
                 <div div class="ss-card-inner"></div>
                 <div class="icon-container">
