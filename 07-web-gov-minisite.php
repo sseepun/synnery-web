@@ -113,19 +113,16 @@
         </h3>
       </div>
     </div>
-    <div class="swiper-container">
+    <div class="swiper-container style-02">
       <div class="swiper-wrapper">
         <?php for($i=0; $i<9; $i++) {?>
           <div class="swiper-slide">
             <div class="wrapper">
               <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
-              <div class="content style-01">
+              <div class="content style-02">
                 <div class="img-container">
                   <img class="img" src="public/img/content/screen-09.png" alt="Device" />
-                </div>
-                <div class="text-container">
-                  <div class="wrapper">
-                    <div class="title-wrapper">
+                  <div class="title-wrapper">
                       <div class="logo">
                         <img src="public/img/content/logo-06.png" alt="LOGO" />
                       </div>
@@ -139,9 +136,17 @@
                         <p class="lg color-white fw-200">จำนวนเว็บไซต์ย่อยจำนวน <span class="h3 lh-2xs fw-600">120</span> เว็บไซต์</p>
                       </div>
                     </div>
-                   
-
-
+                </div>
+                <div class="showcase-container">
+                  <div class="wrapper">
+                    <div class="showcase-01">
+                      <img class="img" src="public/img/content/screen-06.png" alt="Device" />
+                      <img class="img" src="public/img/content/screen-05.png" alt="Device" />
+                    </div>
+                    <div class="showcase-02">
+                      <img class="img" src="public/img/content/screen-07.png" alt="Device" />
+                      <img class="img" src="public/img/content/screen-08.png" alt="Device" />
+                    </div>
                   </div>
                 </div>
               </div>

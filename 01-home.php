@@ -117,8 +117,8 @@
               <span class="color-black fw-600">Government</span>
             </h3>
             <p class="color-03 fw-400 mt-2" data-aos="fade-up" data-aos-delay="150">
-              เปลี่ยนเว็บไซต์ภาครัฐให้มีมาตรฐานเดียวกัน การันตีด้วยผลงานมากกว่า 500 โปรเจค 
-              “ที่เดียว ทันใด ทั่วไทย ทุกเวลา ทั่วถึง เท่าเทียม และธรรมาภิบาล”
+              บริการออกแบบและพัฒนาเว็บไซต์ภาครัฐ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA 
+              พร้อมระบบรักษาความปลอดภัย และโครงสร้าง และเครื่องมือที่ทันสมัย ใช้งานง่าย
             </p>
             <div class="btns pt-4" data-aos="fade-up" data-aos-delay="300">
               <a class="btn btn-action round btn-color-01" href="#">
@@ -151,8 +151,28 @@
     </div>
   </section>
 
+  
+  <?php
+    $titles = [
+      'JIGSAW<br>Intranet', 'JIGSAW<br>E-Saraban', 'JIGSAW<br>E-Document', 'JIGSAW<br>Project', 
+      'JIGSAW<br>E-Learning', 'JIGSAW<br>Procurement','JIGSAW<br>Accounting', 'JIGSAW<br>Listening', 
+      'JIGSAW<br>Vehicle', 'JIGSAW<br>Meeting Room'
+
+    ];
+  ?>
+
   <section data-section="6" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/39.jpg'); background-position:bottom center;"></div>
+    <div class="pattern style-01">
+      <div class="wrapper">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-02">
+      <div class="wrapper">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/61.jpg'); background-position:bottom center;"></div>
     <div class="container">
       <h3 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
         E-Office / ERP <span class="fw-300">for</span> Government
@@ -162,13 +182,13 @@
         ด้วยแนวคิดการออกแบบและวางระบบแบบ Microservices และรองรับการทำงาน <br>
         ร่วมกับระบบอื่นๆ ได้อย่างง่ายผ่าน API และทำงานบนโครงสร้างของระบบเครือข่ายแบบ DevSecOps
       </p>
-      <div class="hex-container" data-aos="fade-up" data-aos-delay="300">
+      <div class="hex-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="300">
         <?php for($i=0; $i<10; $i++){?>
           <div class="hex-flip">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1">Jigsaw <br /> E-Learning</p>
+                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -176,26 +196,62 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/1<?= ($i%10+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2">Jigsaw <br /> E-Learning</p>
+                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
                 </div>
               </div>
             </div>
           </div>
         <?php }?>
-        <?php for($i=0; $i<12; $i++){?>
+
+        <?php
+          $titles = [
+            'JIGSAW<br>Help Desk', 'JIGSAW<br>Chat Bot', 'JIGSAW<br>Portal', 'JIGSAW<br>Financial', 
+            'JIGSAW<br>Asset', 'JIGSAW<br>Sales Force','JIGSAW<br>CRM', 'JIGSAW<br>HRM', 
+            'JIGSAW<br>HRD', 'JIGSAW<br>Budgeting'
+
+          ];
+        ?>
+
+        <?php for($i=0; $i<10; $i++){?>
           <div class="hex-flip">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1">Jigsaw <br /> E-Learning</p>
+                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
                 </div>
               </div>
               <div class="hex lg inner">
                 <div class="wrapper text-center color-white">
                   <div class="icon">
-                    <img class="img" src="public/img/icon/1<?= ($i%10+0) ?>.png" alt="Banner" />
+                    <img class="img" src="public/img/icon/2<?= ($i%12+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2">Jigsaw <br /> E-Learning</p>
+                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php }?>
+
+        <?php
+          $titles = [
+            'JIGSAW<br>E-Form', 'JIGSAW<br>BI'
+          ];
+        ?>
+
+        <?php for($i=0; $i<2; $i++){?>
+          <div class="hex-flip">
+            <div class="hex lg">
+              <div class="hex lg bg">
+                <div class="wrapper text-center color-white">
+                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                </div>
+              </div>
+              <div class="hex lg inner">
+                <div class="wrapper text-center color-white">
+                  <div class="icon">
+                    <img class="img" src="public/img/icon/3<?= ($i%2+0) ?>.png" alt="Banner" />
+                  </div>
+                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
                 </div>
               </div>
             </div>
@@ -253,7 +309,7 @@
           <div class="grid lg-1-3">
             <div class="ss-card ss-card-31 box-shadow">
               <div class="ss-img vertical-01">
-                <div class="img-bg" style="background-image:url('public/img/content/v-service-0<?= ($i%1+1) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('public/img/content/v-service-0<?= ($i%2+1) ?>.jpg');"></div>
               </div>
               <div class="filter-01"></div>
               <div class="hover-filter-01"></div>
@@ -327,8 +383,8 @@
                 <div class="grid xl-20 lg-25 md-1-3 sm-20 xs-1-3 pt-3">
                   <div class="ss-card ss-card-14">
                     <div class="icon">
-                      <img class="inactive" src="public/img/icon/tech-01.png" alt="Icon Inactive" />
-                      <img class="active" src="public/img/icon/tech-01-active.png" alt="Icon Active" />
+                      <img class="inactive" src="public/img/icon/tech-1<?= ($i%10+0) ?>.png" alt="Icon Inactive" />
+                      <img class="active" src="public/img/icon/active-tech-1<?= ($i%10+0) ?>.png" alt="Icon Active" />
                     </div>
                     <div class="text-container mt-1">
                       <p class="xs title text-center color-black fw-600">MySQL</p>
@@ -396,5 +452,15 @@
 
   <?php include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
+
+  <script>
+    TweenMax.set('.pattern.style-01', {y:-7});
+    var tlanimation = new TimelineMax({repeat:-1, yoyo:true});
+    tlanimation.to('.pattern.style-01', 3, {y:7});
+
+    TweenMax.set('.pattern.style-02', {y:7});
+    var tlanimation = new TimelineMax({repeat:-1, yoyo:true});
+    tlanimation.to('.pattern.style-02', 3, {y:-7});
+  </script>
 </body>
 </html>
