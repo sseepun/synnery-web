@@ -163,7 +163,7 @@
         ร่วมกับระบบอื่นๆ ได้อย่างง่ายผ่าน API และทำงานบนโครงสร้างของระบบเครือข่ายแบบ DevSecOps
       </p>
       <div class="hex-container" data-aos="fade-up" data-aos-delay="300">
-        <?php for($i=0; $i<22; $i++){?>
+        <?php for($i=0; $i<10; $i++){?>
           <div class="hex-flip">
             <div class="hex lg">
               <div class="hex lg bg">
@@ -174,7 +174,26 @@
               <div class="hex lg inner">
                 <div class="wrapper text-center color-white">
                   <div class="icon">
-                    <em class="fa-solid fa-book"></em>
+                    <img class="img" src="public/img/icon/1<?= ($i%10+0) ?>.png" alt="Banner" />
+                  </div>
+                  <p class="xs fw-400 lh-sm mt-2">Jigsaw <br /> E-Learning</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php }?>
+        <?php for($i=0; $i<12; $i++){?>
+          <div class="hex-flip">
+            <div class="hex lg">
+              <div class="hex lg bg">
+                <div class="wrapper text-center color-white">
+                  <p class="xs fw-400 lh-sm mt-1">Jigsaw <br /> E-Learning</p>
+                </div>
+              </div>
+              <div class="hex lg inner">
+                <div class="wrapper text-center color-white">
+                  <div class="icon">
+                    <img class="img" src="public/img/icon/1<?= ($i%10+0) ?>.png" alt="Banner" />
                   </div>
                   <p class="xs fw-400 lh-sm mt-2">Jigsaw <br /> E-Learning</p>
                 </div>
@@ -217,36 +236,6 @@
           <div class="dots"></div>
           <div class="arrow-right btn-icon-next">
             <img src="public/img/icon/arrow-02.png" alt="Arrow" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section data-section="8" class="section-12">
-    <div class="container">
-      <div class="blocks">
-        <div class="block">
-          <div class="text-container">
-            <h3 class="lh-2xs color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-              Website <br> 
-              <span class="color-black fw-300">for</span> 
-              <span class="color-black fw-600">Government</span>
-            </h3>
-            <p class="color-03 fw-400 mt-2" data-aos="fade-up" data-aos-delay="150">
-              เปลี่ยนเว็บไซต์ภาครัฐให้มีมาตรฐานเดียวกัน การันตีด้วยผลงานมากกว่า 500 โปรเจค 
-              “ที่เดียว ทันใด ทั่วไทย ทุกเวลา ทั่วถึง เท่าเทียม และธรรมาภิบาล”
-            </p>
-            <div class="btns pt-4" data-aos="fade-up" data-aos-delay="300">
-              <a class="btn btn-action round btn-color-01" href="#">
-                <span class="p xs fw-500">Explore More</span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="block-float right">
-          <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/31.jpg');"></div>
           </div>
         </div>
       </div>

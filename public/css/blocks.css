@@ -30,7 +30,9 @@
 .section-01 .hex-flip:nth-child(16){margin-left:.1875rem;}
 .section-01 .hex{color:#ffffff;}
 .section-01 .hex > .hex.inner{color:#eb2c22;}
-.section-01 .hex .icon{font-size:2rem; line-height:1;}
+/* .section-01 .hex .icon{font-size:2rem; line-height:1;} */
+.section-01 .hex .icon{display:flex; justify-content:center; align-items:center;}
+.section-01 .hex .icon > img{display:block; width:2.5rem; height:auto;}
 
 @media screen and (max-width:1199.98px){
   .section-01.size-01{padding-bottom:13rem;}
