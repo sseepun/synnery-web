@@ -36,6 +36,7 @@
           <?php for($i=0; $i<7; $i++){?>
             <div class="grid lg-25 md-50 sm-50 xs-100">
               <a class="ss-card ss-card-27" href="#">
+                <div class="overlay"></div>
                 <div class="wrapper">
                   <div class="icon mt-1">
                     <img class="inactive" src="public/img/icon/0<?= ($i%1+5) ?>.png" alt="Icon Inactive" />

@@ -655,8 +655,13 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-26 .text-container .title{text-align:center; color:#ffffff;}
 
 /* Special Card 27 */
-.ss-card-27{border:1px solid #ec2c23; background:#ffffff; transition:all .3s;}
-.ss-card-27:hover{background:#ec2c23;}
+.ss-card-27{border:1px solid #ec2c23; background:#ffffff; transition:all .3s; overflow: hidden;}
+.ss-card-27:hover .overlay{transform:scale(4); opacity:1;}
+.ss-card-27 .overlay {
+    position: absolute; width:9.375rem; height:9.375rem; border-radius:50%;
+    background:#ec2c23; top:50%; left:50%; transform: translate(-50%, -50%);
+    transition: transform 1s ease-out; opacity:0;
+}
 .ss-card-27 > .wrapper{padding:1rem;}
 .ss-card-27 .icon{
     position:relative; width:4rem; height:4rem;
@@ -666,6 +671,7 @@ fieldset{padding:0; margin:0; border:0;}
     display:block; width:auto; max-width:4rem; height:auto; max-height:4rem;
     transition:opacity .3s;
 }
+.ss-card-27 .text-container{position: relative;}
 .ss-card-27 .icon > img.active{position:absolute; opacity:0;}
 .ss-card-27:hover .icon > img.inactive{opacity:0;}
 .ss-card-27:hover .icon > img.active{opacity:1;}
