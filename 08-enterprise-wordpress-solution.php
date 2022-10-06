@@ -308,17 +308,19 @@
         Video งานอบรมของ MOE
       </h3>
       <div class="ss-box xxl mt-5" data-aos="fade-up" data-aos-delay="300">
-        <a class="ss-card ss-card-33 box-shadow" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
-          <div class="ss-img">
-            <div class="img-bg" style="background-image:url('public/img/content/5<?= ($i%1+4) ?>.jpg');"></div>
-          </div>
-          <div div class="ss-card-inner"></div>
-          <div class="icon-container">
-            <div class="icon">
-              <img class="img" src="public/img/icon/play.png" alt="Banner" />
+        <div class="p-1 bg-white box-shadow">
+          <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+            <div class="ss-img">
+              <div class="img-bg" style="background-image:url('public/img/content/5<?= ($i%1+4) ?>.jpg');"></div>
             </div>
-          </div>
-        </a>        
+            <div class="card-icon">
+              <div class="icon">
+                <img class="img" src="public/img/icon/play.png" alt="Banner" />
+              </div>
+            </div>
+            <div class="card-line-1"></div><div class="card-line-2"></div>
+          </a>
+        </div>        
       </div>
    </div>             
   </div>
