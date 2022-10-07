@@ -273,7 +273,25 @@ nav.sidenav ~ .sidenav-filter{
 
 
 /* Footer */
-nav.footer{position:relative; width:100%; color:#ffffff;}
+nav.footer{position:relative; width:100%; color:#ffffff; overflow:hidden;}
+nav.footer .pattern.style-01{
+  position:absolute; bottom:4rem; left:4rem; right:auto; height:1rem; z-index:1;
+}
+.section-01 > .pattern.style-01 > .wrapper img{display:block; width:.5rem; height:auto;}
+
+nav.footer .pattern.style-02{
+  position:absolute; top:1rem; left:auto; right:2rem;  z-index:1;
+}
+.nav.footer .pattern.style-02 .wrapper img{display:block; width:auto; height:auto;}
+
+nav.footer .pattern.style-03{
+  position:absolute; top:-27rem; left:-22rem; right:auto; z-index:1;
+}
+
+nav.footer .pattern.style-04{
+  position:absolute; top:-8rem; left:auto; right:-8rem; z-index:1;
+}
+
 nav.footer > .container{position:relative;}
 nav.footer .top-wrapper{
   width:100%; padding:3rem 0; display:flex; border-bottom:1px solid rgba(255,255,255,.3);

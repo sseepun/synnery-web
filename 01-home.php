@@ -384,6 +384,8 @@
     </div>
   </section>
 
+  <?php include_once('include/tech-stack.php'); ?>
+
   <section data-section="11" class="section-12 bg-06">
     <div class="container">
       <div class="blocks">
@@ -403,11 +405,10 @@
                 <div class="grid xl-20 lg-25 md-1-3 sm-20 xs-1-3 pt-3">
                   <div class="ss-card ss-card-14">
                     <div class="icon">
-                      <img class="inactive" src="public/img/icon/tech-1<?= ($i%10+0) ?>.png" alt="Icon Inactive" />
-                      <img class="active" src="public/img/icon/active-tech-1<?= ($i%10+0) ?>.png" alt="Icon Active" />
+                     <?php echo $svgs[$i] ?>
                     </div>
                     <div class="text-container mt-1">
-                      <p class="xs title text-center color-black fw-600">MySQL</p>
+                      <p class="xs title text-center color-black fw-600"><?php echo $titles[$i] ?></p>
                     </div>
                   </div>
                 </div>
@@ -485,6 +486,5 @@
     }
   </script>
 
-  
 </body>
 </html>

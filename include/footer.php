@@ -46,10 +46,30 @@
 
 <!-- Footer -->
 <nav class="footer">
-  <div class="img-bg" style="background-image:url('public/img/bg/footer-01.jpg');"></div>
+  <div class="pattern style-01">
+    <div class="wrapper" value=".5">
+      <img src="public/img/content/pattern-09.png" alt="Hero" />
+    </div>
+  </div>
+  <div class="pattern style-02">
+    <div class="wrapper" value=".5">
+      <img src="public/img/content/pattern-10.png" alt="Hero" />
+    </div>
+  </div>
+  <div class="pattern style-03">
+    <div class="wrapper" value="-.5">
+      <img src="public/img/content/pattern-07.png" alt="Hero" />
+    </div>
+  </div>
+  <div class="pattern style-04">
+    <div class="wrapper" value="-.5">
+      <img src="public/img/content/pattern-08.png" alt="Hero" />
+    </div>
+  </div>
+  <div class="img-bg" style="background-image:url('public/img/bg/footer-02.jpg');"></div>
   <div class="container">
     <div class="top-wrapper">
-      <a class="logo" href="#">
+      <a class="logo pos-relative" style="z-index:2;" href="#">
         <img src="public/img/logo-white.png" alt="Logo" />
       </a>
       <div class="address">
@@ -60,7 +80,7 @@
           <a class="p xs a-line color-p fw-400" href="#">sales@jigsawoffice.com</a>
         </div>
       </div>
-      <div class="footer-socials">
+      <div class="footer-socials pos-relative" style="z-index:2;">
         <div class="hex-icon">
           <a class="hex hex-fb ml-0" href="#">
             <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>

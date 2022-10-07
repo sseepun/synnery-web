@@ -558,13 +558,9 @@ fieldset{padding:0; margin:0; border:0;}
     border-radius:50%; transition:background .3s, color .3s;
 }
 .ss-card-14:hover .icon{background:#ec2c23; color:#ffffff;}
-.ss-card-14 .icon > img{
-   display:block; width:auto; max-width:50%; height:auto; max-height:50%;
-   transition:opacity .3s;
-}
-.ss-card-14 .icon > img.active{position:absolute; opacity:0;}
-.ss-card-14:hover .icon > img.inactive{opacity:0;}
-.ss-card-14:hover .icon > img.active{opacity:1;}
+.ss-card-14 .icon > .tech-stack{fill:#ec2c23; display:block; width:3rem; height:3rem; transition:fill .3s;}
+.ss-card-14:hover .icon > .tech-stack{fill:#ffffff;}
+.ss-card-14:hover .icon > .tech-stack.h-red{fill:#ec2c23;} /* For Bootstrap Icon */
 
 /* Special Card 16 */
 .ss-card-16{text-align:center;}
@@ -642,7 +638,7 @@ fieldset{padding:0; margin:0; border:0;}
 /* Special Card 26 */
 .ss-card-26{
     position:relative; width:100%; background:#ec2c23; color:#ffffff;
-    padding:1rem; transition:background .25s, color .25s;
+    padding:1rem; transition:background .25s, color .25s; 
 }
 .ss-card-26:hover{background:#88009b;}
 .ss-card-26 .image-container{
