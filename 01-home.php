@@ -158,22 +158,41 @@
       'JIGSAW<br>Intranet', 'JIGSAW<br>E-Saraban', 'JIGSAW<br>E-Document', 'JIGSAW<br>Project', 
       'JIGSAW<br>E-Learning', 'JIGSAW<br>Procurement','JIGSAW<br>Accounting', 'JIGSAW<br>Listening', 
       'JIGSAW<br>Vehicle', 'JIGSAW<br>Meeting Room'
-
     ];
   ?>
 
   <section data-section="6" class="section-01 section-padding">
     <div class="pattern style-01">
-      <div class="wrapper">
+      <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-02.png" alt="Hero" />
       </div>
     </div>
     <div class="pattern style-02">
-      <div class="wrapper">
+      <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-02.png" alt="Hero" />
       </div>
     </div>
-    <div class="img-bg" style="background-image:url('public/img/bg/61.jpg'); background-position:bottom center;"></div>
+    <div class="pattern style-03">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-03.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-04.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-05.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-06.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/62.jpg'); background-position:bottom center;"></div>
     <div class="container">
       <h3 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
         E-Office / ERP <span class="fw-300">for</span> Government
@@ -455,13 +474,17 @@
   <?php include_once('include/script.php'); ?>
 
   <script>
-    TweenMax.set('.pattern.style-01', {y:-7});
-    var tlanimation = new TimelineMax({repeat:-1, yoyo:true});
-    tlanimation.to('.pattern.style-01', 3, {y:7});
-
-    TweenMax.set('.pattern.style-02', {y:7});
-    var tlanimation = new TimelineMax({repeat:-1, yoyo:true});
-    tlanimation.to('.pattern.style-02', 3, {y:-7});
+    document.addEventListener("mousemove", parallax);
+    function parallax(event) {
+      this.querySelectorAll(".pattern .wrapper").forEach((shift) => {
+        const position = shift.getAttribute("value");
+        const x = (window.innerWidth - event.pageX * position) / 90;
+        const y = (window.innerHeight - event.pageY * position) / 90;
+        shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+      });
+    }
   </script>
+
+  
 </body>
 </html>

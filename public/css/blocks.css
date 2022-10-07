@@ -1,16 +1,32 @@
 
 
 /* Section 01 */
-.section-01{position:relative; display:flex; align-items:center;}
+.section-01{position:relative; display:flex; align-items:center; overflow:hidden;}
 .section-01 > .pattern.style-01{
   position:absolute; top:30%; left:2rem; right:0; height:1rem; z-index:1;
 }
 .section-01 > .pattern.style-01 > .wrapper img{display:block; width:5rem; height:auto;}
 
 .section-01 > .pattern.style-02{
-  position:absolute; top:30%; left:auto; right:2rem; height:1rem; z-index:1;
+  position:absolute; top:45%; left:auto; right:8rem; height:1rem; z-index:1;
 }
 .section-01 > .pattern.style-02 > .wrapper img{display:block; width:5rem; height:auto;}
+
+.section-01 > .pattern.style-03{
+  position:absolute; bottom:35%; left:auto; right:-6rem; height:1rem; z-index:1;
+}
+.section-01 > .pattern.style-03 > .wrapper img{display:block; width:12rem; height:auto;}
+
+.section-01 > .pattern.style-04{
+  position:absolute; top:-29%; left:auto; right:-21rem; height:1rem; z-index:1;
+}
+
+.section-01 > .pattern.style-05{
+  position:absolute; top:-55%; left:-13%; right:auto; height:1rem; z-index:1;
+}
+.section-01 > .pattern.style-06{
+  position:absolute; bottom:50%; left:-24%; right:auto; height:1rem; z-index:1;
+}
 
 .section-01 > .img-bg{
   position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
@@ -49,7 +65,7 @@
   .section-01.size-01 > .img-bg{background-position:center;}
   .section-01.size-02{min-height:30rem;}
   .section-01 .hex-container{max-width:57.75rem;}
-  .section-01 > .pattern.style-01, .section-01 > .pattern.style-02{display:none;}
+  /* .section-01 > .pattern.style-01, .section-01 > .pattern.style-02{display:none;} */
 }
 @media screen and (max-width:991.98px){
   .section-01.size-01{padding-bottom:12rem;}
