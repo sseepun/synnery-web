@@ -13,7 +13,15 @@
     <img class="img" src="public/img/img-01.jpg" alt="Banner" />
   </section>
 
-  <section data-section="2" class="section-01 size-01 section-padding">
+  <?php
+    $titles = [
+      'Digital Marketing<br>for Government', 'Website<br>for Government', 'Mini Site<br>for Government',
+      'Enterprise WordPress<br>for Government', 'Virtual World<br>Services', 
+      'e-Office / ERP<br>for Government', 'Enterprise<br>DevSecOps Solutions'
+    ]
+  ?>
+
+  <section data-section="2" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/36.jpg');"></div> 
     <div class="container">
       <div class="text-center" data-aos="fade-up" data-aos-delay="0">
@@ -39,12 +47,12 @@
                 <div class="overlay"></div>
                 <div class="wrapper">
                   <div class="icon mt-1">
-                    <img class="inactive" src="public/img/icon/0<?= ($i%1+5) ?>.png" alt="Icon Inactive" />
-                    <img class="active" src="public/img/icon/icon-active-0<?= ($i%1+5) ?>.png" alt="Icon Active" />
+                    <img class="inactive" src="public/img/icon/service-0<?= ($i%7+1) ?>.png" alt="Icon Inactive" />
+                    <img class="active" src="public/img/icon/service-active-0<?= ($i%7+1) ?>.png" alt="Icon Active" />
                   </div>
                   <div class="text-container mt-5">
-                    <p class="title lh-sm">
-                      Digital Marketing for <br> Government
+                    <p class="title lh-sm md-no-br">
+                      <?php echo $titles[$i]; ?>
                     </p>
                     <div class="card-more p xs mt-2">
                       Read more
@@ -63,7 +71,10 @@
   </section>
 
   <section data-section="3" class="section-01 size-02">
-    <div class="img-bg" style="background-image:url('public/img/bg/19.jpg');"></div> 
+    <!-- <div class="img-bg" style="background-image:url('public/img/bg/19.jpg');"></div>  -->
+    <video autoplay muted loop class="video-preview">
+      <source src="public/video/02.mp4" type="video/mp4">
+    </video>
     <div class="container">
       <div class="video-button mt-6" data-aos="fade-up" data-aos-delay="150">
         <a id="video-container" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 

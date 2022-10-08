@@ -32,6 +32,10 @@
   position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
   background-position:center; background-repeat:no-repeat; 
 }
+.section-01 .video-preview {
+  position: absolute; right: 0; bottom: 0; min-width: 100%; min-height: 100%; 
+}
+
 .section-01 > .container{position:relative;}
 .section-01 .social-blocks{
   width:100%; display:flex; justify-content:center; flex-wrap:wrap; margin:1.5rem 0 0 0;
@@ -65,7 +69,6 @@
   .section-01.size-01 > .img-bg{background-position:center;}
   .section-01.size-02{min-height:30rem;}
   .section-01 .hex-container{max-width:57.75rem;}
-  /* .section-01 > .pattern.style-01, .section-01 > .pattern.style-02{display:none;} */
 }
 @media screen and (max-width:991.98px){
   .section-01.size-01{padding-bottom:12rem;}
