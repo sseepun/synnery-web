@@ -71,7 +71,6 @@
   </section>
 
   <section data-section="3" class="section-01 size-02">
-    <!-- <div class="img-bg" style="background-image:url('public/img/bg/19.jpg');"></div>  -->
     <video autoplay muted loop class="video-preview">
       <source src="public/video/02.mp4" type="video/mp4">
     </video>
@@ -84,37 +83,6 @@
         <p class="sm color-white text-center fw-300 mt-6 pt-4">Watch Video</p>  
       </div> 
     </div>        
-  </section>
-
-  <section data-section="4" class="section-12">
-    <div class="container">
-      <div class="blocks">
-        <div class="block-float left">
-          <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/32.jpg');"></div>
-          </div>
-        </div> 
-        <div class="block">
-          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
-          <div class="text-container">
-            <h3 class="lh-2xs color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-              Digital Marketing <br> 
-              <span class="color-black fw-300">for</span> 
-              <span class="color-black fw-600">Government</span>
-            </h3>
-            <p class="color-03 fw-400 mt-2" data-aos="fade-up" data-aos-delay="150">
-              บริการครบวงจรด้าน Digital Marketing ตั้งแต่ รับเป้าหมาย
-              คิด Concept, Campaign จนถึงตัวชี้วัดโครงการ
-            </p>
-            <div class="btns pt-4" data-aos="fade-up" data-aos-delay="300">
-              <a class="btn btn-action round btn-color-01" href="#">
-                <span class="p xs fw-500">Explore More</span>
-              </a>
-            </div>
-          </div>
-        </div> 
-      </div>    
-    </div>
   </section>
 
   <section data-section="5" class="section-12">
@@ -239,7 +207,6 @@
             'JIGSAW<br>Help Desk', 'JIGSAW<br>Chat Bot', 'JIGSAW<br>Portal', 'JIGSAW<br>Financial', 
             'JIGSAW<br>Asset', 'JIGSAW<br>Sales Force','JIGSAW<br>CRM', 'JIGSAW<br>HRM', 
             'JIGSAW<br>HRD', 'JIGSAW<br>Budgeting'
-
           ];
         ?>
 
@@ -330,17 +297,37 @@
   </section>
 
   <section data-section="9" class="section-01 section-padding">
+    <div class="pattern style-07">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-01.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-08">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-11.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-09">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-12.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-10">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-13.png" alt="Hero" />
+      </div>
+    </div>
     <div class="img-bg" style="background-image:url('public/img/bg/37.jpg'); background-position:bottom center;"></div>
     <div class="container pt-6 pb-6">
       <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         Virtual World <span class="color-white">Services</sapn>
       </h3>
-      <div class="grids jc-center mt-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="grids jc-center pos-relative mt-4" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<3; $i++){?>
           <div class="grid lg-1-3">
             <div class="ss-card ss-card-31 box-shadow">
               <div class="ss-img vertical-01">
-                <div class="img-bg" style="background-image:url('public/img/content/v-service-0<?= ($i%2+1) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('public/img/content/v-service-0<?= ($i%3+1) ?>.jpg');"></div>
               </div>
               <div class="filter-01"></div>
               <div class="hover-filter-01"></div>
@@ -414,7 +401,7 @@
             <div class="gallery-grids jc-center" data-aos="fade-up" data-aos-delay="150">
               <?php for($i=0; $i<20; $i++){?>
                 <div class="grid xl-20 lg-25 md-1-3 sm-20 xs-1-3 pt-3">
-                  <div class="ss-card ss-card-14">
+                  <div class="ss-card ss-card-10 style-02">
                     <div class="icon">
                      <?php echo $svgs[$i] ?>
                     </div>

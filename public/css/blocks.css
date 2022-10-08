@@ -27,6 +27,25 @@
 .section-01 > .pattern.style-06{
   position:absolute; bottom:50%; left:-24%; right:auto; height:1rem; z-index:1;
 }
+.section-01 > .pattern.style-07{
+  position:absolute; bottom:5rem; left:3.5rem; right:auto; z-index:1;
+}
+.section-01 > .pattern.style-07 > .wrapper img{display:block; width:16rem; height:auto;}
+
+.section-01 > .pattern.style-08{
+  position:absolute; bottom:4.5rem; left:auto; right:11rem; z-index:1;
+}
+.section-01 > .pattern.style-08 > .wrapper img{display:block; width:11rem; height:auto;}
+
+.section-01 > .pattern.style-09{
+  position:absolute; top:-12rem; left:auto; right:-9rem; z-index:1;
+}
+.section-01 > .pattern.style-09 > .wrapper img{display:block; width:40rem; height:auto;}
+
+.section-01 > .pattern.style-10{
+  position:absolute; top:-11rem; left:-5rem; right:auto; z-index:1;
+}
+.section-01 > .pattern.style-10 > .wrapper img{display:block; width:19rem; height:auto;}
 
 .section-01 > .img-bg{
   position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
