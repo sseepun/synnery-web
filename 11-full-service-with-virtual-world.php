@@ -13,6 +13,13 @@
     <img class="img" src="public/img/content/39.jpg" alt="Banner" />
   </section>
 
+  <?php 
+    $titles = [
+      'Virtual Exhibition', 'Virtual Live Event', 'Virtual Tour', 'Virtual Showroom', 'Virtual Product 360',
+      'Virtual Product 360', 'Metaverse', 'VR (Virtual Reality)', 'Mixed Reality'
+    ]
+  ?>
+
   <section data-section="2" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/41.jpg');"></div>
     <div class="container">
@@ -30,16 +37,39 @@
       </div>
       <div class="ss-box xl mt-6" data-aos="fade-up" data-aos-delay="450">
         <div class="grids jc-center">
-          <?php for($i=0; $i<20; $i++){?>
+          <?php for($i=0; $i<9; $i++){?>
             <div class="grid lg-20 md-25 sm-1-3 xs-50">
               <div class="ss-card ss-card-16 style-02 mt-2">
                 <div class="icon">
-                  <img class="Inactive" src="public/img/icon/game.png" alt="Icon Active" />
-                  <img class="active" src="public/img/icon/game-active.png" alt="Icon Inactive" />
+                  <img class="Inactive" src="public/img/icon/full-service-0<?= ($i%9+1) ?>.png" alt="Icon Active" />
+                  <img class="active" src="public/img/icon/full-service-active-0<?= ($i%9+1) ?>.png" alt="Icon Inactive" />
                 </div>
                 <div class="text-container">
-                  <p class="xs title fw-500 mt-2">
-                    Virtual Exhibition 
+                  <p class="xs title color-black fw-500 mt-2">
+                    <?php echo $titles[$i] ?>
+                  </p>
+                </div>
+              </div>
+            </div>
+          <?php }?>
+
+          <?php 
+            $titles = [
+              '3D Animation', 'Interactive Media', '360’ Video', 'Touchscreen','Simulator', 
+              'Infographics', 'Info-Video', 'Cartoon', 'Animation', 'Games'
+            ]
+          ?>
+
+          <?php for($i=0; $i<10; $i++){?>
+            <div class="grid lg-20 md-25 sm-1-3 xs-50">
+              <div class="ss-card ss-card-16 style-02 mt-2">
+                <div class="icon">
+                  <img class="Inactive" src="public/img/icon/full-service-1<?= ($i%10+0) ?>.png" alt="Icon Active" />
+                  <img class="active" src="public/img/icon/full-service-active-1<?= ($i%10+0) ?>.png" alt="Icon Inactive" />
+                </div>
+                <div class="text-container">
+                  <p class="xs title color-black fw-500 mt-2">
+                    <?php echo $titles[$i] ?> 
                   </p>
                 </div>
               </div>

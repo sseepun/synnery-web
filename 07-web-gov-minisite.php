@@ -70,7 +70,10 @@
       </div>    
     </div>
   </section>
-  <section data-section="4" class="section-12 bg-06">
+
+  <?php include_once('include/tech-stack.php'); ?>
+
+  <section data-section="11" class="section-12 bg-06">
     <div class="container">
       <div class="blocks">
         <div class="block-float left">
@@ -87,13 +90,12 @@
             <div class="gallery-grids jc-center" data-aos="fade-up" data-aos-delay="150">
               <?php for($i=0; $i<20; $i++){?>
                 <div class="grid xl-20 lg-25 md-1-3 sm-20 xs-1-3 pt-3">
-                  <div class="ss-card ss-card-14">
+                  <div class="ss-card ss-card-10 style-02">
                     <div class="icon">
-                      <img class="inactive" src="public/img/icon/tech-01.png" alt="Icon Inactive" />
-                      <img class="active" src="public/img/icon/tech-01-active.png" alt="Icon Active" />
+                    <?php echo $svgs[$i] ?>
                     </div>
                     <div class="text-container mt-1">
-                      <p class="xs title text-center color-black fw-600">MySQL</p>
+                      <p class="xs title text-center color-black fw-600"><?php echo $titles[$i] ?></p>
                     </div>
                   </div>
                 </div>
