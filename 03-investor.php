@@ -130,21 +130,51 @@
                   </p>
                 </div>
                 <div class="gallery-grids pt-2">
-                  <?php for($i=0; $i<17; $i++){?>
+                  <?php
+                    $titles = [
+                        'Jigsaw Intranet', 'Jigsaw Budgeting', 'Jigsaw E-Saraban', 'Jigsaw E-Document', 'Jigsaw Project ',
+                        'Jigsaw E-Learning', 'Jigsaw Vehicle', 'Jigsaw Meeting Room', 'Jigsaw Help Desk', 'Jigsaw Chat Bot'
+                      ]
+                  ?>
+                  <?php for($i=0; $i<9; $i++){?>
                     <div class="grid lg-1-6 md-20 sm-1-3 xs-50 pt-6">
                       <div class="ss-card ss-card-04 mt-2">
                         <div class="icon">
-                          <em class="fa-solid fa-heart"></em>
+                          <img class="inactive" src="public/img/icon/investor-0<?= ($i%9+1) ?>.png" alt="Icon Inactive" />
+                          <img class="active" src="public/img/icon/investor-active-0<?= ($i%9+1) ?>.png" alt="Icon Active" />
                         </div>
                         <div class="text-container">
-                          <p class="title xs">Jigsaw E-Procurement</p>
+                          <p class="xs title color-white fw-400 mt-2">
+                            <?php echo $titles[$i] ?>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  <?php }?>
+                  <?php
+                    $titles = [
+                      'Jigsaw Chat Bot', 'Jigsaw E-Procurement', 'Jigsaw Accounting', 'Jigsaw Financial', 
+                      'Jigsaw Asset', 'Jigsaw E-Form', 'เชื่อมต่อระบบ Big Data', 'เชื่อมต่อกับระบบบ AI'
+                      ]
+                  ?>
+                  <?php for($i=0; $i<8; $i++){?>
+                    <div class="grid lg-1-6 md-20 sm-1-3 xs-50 pt-6">
+                      <div class="ss-card ss-card-04 mt-2">
+                        <div class="icon">
+                          <img class="inactive" src="public/img/icon/investor-1<?= ($i%8+0) ?>.png" alt="Icon Inactive" />
+                          <img class="active" src="public/img/icon/investor-active-1<?= ($i%8+0) ?>.png" alt="Icon Active" />
+                        </div>
+                        <div class="text-container">
+                          <p class="xs title color-white fw-400 mt-2">
+                            <?php echo $titles[$i] ?>
+                          </p>
                         </div>
                       </div>
                     </div>
                   <?php }?>
                 </div>
               </div>
-            <?php }?>
+            <?php }?> -->
           </div>
         </div>
       </div>

@@ -432,6 +432,15 @@
     </div>
   </section>
 
+  <?php 
+    $titles = [
+      'ระบบริหารจัดการรายการเนื้อหา เว็บไซต์ (Content Management System)', 'ระบบจัดการผู้ดูแลระบบ (Administrator WEB Master Policy) ',
+      'ระบบบริหารจัดการเมนู<br>(Sub Menu level 2-3 management)', 'ระบบดึงและกระจายข่าว<br>(RSS Feed)พร้อมระบบจัดการข้อมูล',
+      'ระบบถาม-ตอบ (FAQ)<br>ระบบ Vote', 'ระบบเว็บบอร์ด (Web board)', 'Social Media Management', 'E-Newsletter<br>(Mailing List)',
+      ' ระบบจัดการแบนเนอร์ (Banner Management)'
+    ]
+  ?>
+
   <section data-section="13" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/17.jpg');"></div> 
     <div class="container">
@@ -445,21 +454,61 @@
       </div>
       <div class="ss-box xl mt-6" data-aos="fade-up" data-aos-delay="400">
         <div class="grids jc-center">
-          <?php for($i=0; $i<20; $i++){?>
+          <?php for($i=0; $i<9; $i++){?>
             <div class="grid lg-20 md-25 sm-1-3 xs-50">
               <div class="ss-card ss-card-16 mt-2">
                 <div class="icon">
-                  <img class="inactive" src="public/img/icon/bell.png" alt="Icon Inactive" />
-                  <img class="active" src="public/img/icon/bell-active.png" alt="Icon Active" />
+                  <img class="inactive" src="public/img/icon/back-office-0<?= ($i%9+1) ?>.png" alt="Icon Inactive" />
+                  <img class="active" src="public/img/icon/back-office-active-0<?= ($i%9+1) ?>.png" alt="Icon Active" />
                 </div>
                 <div class="text-container">
-                  <p class="xs title color-white mt-2">
-                    ระบบจัดการหน้าพิเศษ <br> (Intro page for Festival) 
+                  <p class="xs title text-center color-white mt-2">
+                    <?php echo $titles[$i] ?>
                   </p>
                 </div>
               </div>
             </div>
           <?php }?>
+      
+          <?php 
+            $titles = [
+              'ระบบจัดการข้อมูล Download', 'ระบบจัดการภาพกราฟิกด้านบน (Special Top Graphic & Banner Management)',
+              'ระบบบริหารจัดการสมาชิก (Member Management System)', 'ระบบค้นหาข้อมูล<br>(Basic Search + Advanced Search',
+              'ระบบปฏิทินกิจกรรม (Calendar Activities)', 'ระบบจดหมายข่าว<br>(E-Newsletter)','ระบบจัดการหน้าพิเศษ<br>
+               (Intro page for Festival)', 'ระบบจัดการข้อมูลเว็บลิงก์ (Web Link)','ระบบ Auto Dynamic<br>Site Map',
+               'ระบบติดต่อสอบถาม<br>(Contact Us)'
+            ]
+          ?>
+
+          <?php for($i=0; $i<10; $i++){?>
+            <div class="grid lg-20 md-25 sm-1-3 xs-50">
+              <div class="ss-card ss-card-16 mt-2">
+                <div class="icon">
+                  <img class="inactive" src="public/img/icon/back-office-1<?= ($i%10+0) ?>.png" alt="Icon Inactive" />
+                  <img class="active" src="public/img/icon/back-office-active-1<?= ($i%10+0) ?>.png" alt="Icon Active" />
+                </div>
+                <div class="text-container">
+                  <p class="xs title color-white mt-2">
+                    <?php echo $titles[$i] ?>
+                  </p>
+                </div>
+              </div>
+            </div>
+          <?php }?>
+
+          <div class="grid lg-20 md-25 sm-1-3 xs-50">
+              <div class="ss-card ss-card-16 mt-2">
+                <div class="icon">
+                  <img class="inactive" src="public/img/icon/back-office-20.png" alt="Icon Inactive" />
+                  <img class="active" src="public/img/icon/back-office-active-20.png" alt="Icon Active" />
+                </div>
+                <div class="text-container">
+                  <p class="xs title color-white mt-2">
+                    ระบบคลังภาพ <br> (Photo Gallery)  
+                  </p>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>    
