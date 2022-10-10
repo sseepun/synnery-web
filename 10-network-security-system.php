@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -203,15 +203,76 @@
 
   <section class="section-padding">
     <div class="d-flex fw-wrap" data-aos="fade-up" data-aos-delay="150">
-      <?php for($i=0; $i<74; $i++){?>
+      <?php for($i=0; $i<9; $i++){?>
         <div class="ss-card ss-card-25">
           <div class="wrapper">
             <div class="image-container">
-              <img class="grayscale" src="public/img/content/logo-0<?= ($i%5+1) ?>.png" alt="Logo" />
+              <img class="grayscale" src="public/img/content/logo-0<?= ($i%9+1) ?>.png" alt="Logo" />
             </div>
           </div>
         </div>  
       <?php }?>
+      <?php for($i=0; $i<10; $i++){?>
+        <div class="ss-card ss-card-25">
+          <div class="wrapper">
+            <div class="image-container">
+              <img class="grayscale" src="public/img/content/logo-1<?= ($i%10+0) ?>.png" alt="Logo" />
+            </div>
+          </div>
+        </div>  
+      <?php }?>
+      <?php for($i=0; $i<10; $i++){?>
+        <div class="ss-card ss-card-25">
+          <div class="wrapper">
+            <div class="image-container">
+              <img class="grayscale" src="public/img/content/logo-2<?= ($i%10+0) ?>.png" alt="Logo" />
+            </div>
+          </div>
+        </div>  
+      <?php }?>
+      <?php for($i=0; $i<10; $i++){?>
+        <div class="ss-card ss-card-25">
+          <div class="wrapper">
+            <div class="image-container">
+              <img class="grayscale" src="public/img/content/logo-3<?= ($i%10+0) ?>.png" alt="Logo" />
+            </div>
+          </div>
+        </div>  
+      <?php }?>
+      <?php for($i=0; $i<10; $i++){?>
+        <div class="ss-card ss-card-25">
+          <div class="wrapper">
+            <div class="image-container">
+              <img class="grayscale" src="public/img/content/logo-4<?= ($i%10+0) ?>.png" alt="Logo" />
+            </div>
+          </div>
+        </div>  
+      <?php }?>
+      <?php for($i=0; $i<10; $i++){?>
+        <div class="ss-card ss-card-25">
+          <div class="wrapper">
+            <div class="image-container">
+              <img class="grayscale" src="public/img/content/logo-5<?= ($i%10+0) ?>.png" alt="Logo" />
+            </div>
+          </div>
+        </div>  
+      <?php }?>
+      <?php for($i=0; $i<10; $i++){?>
+        <div class="ss-card ss-card-25">
+          <div class="wrapper">
+            <div class="image-container">
+              <img class="grayscale" src="public/img/content/logo-6<?= ($i%10+0) ?>.png" alt="Logo" />
+            </div>
+          </div>
+        </div>  
+      <?php }?>
+      <div class="ss-card ss-card-25">
+          <div class="wrapper">
+            <div class="image-container">
+              <img class="grayscale" src="public/img/content/logo-70.png" alt="Logo" />
+            </div>
+          </div>
+        </div> 
     </div>
   </section>
   

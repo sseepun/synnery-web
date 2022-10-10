@@ -366,17 +366,34 @@
   </section>
 
   <section data-section="10" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/40.jpg'); background-position:top center;"></div>  
+    <div class="pattern style-11">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-14.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-12">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-15.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-13">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-16.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/63.jpg'); background-position:top center;"></div>  
     <div class="container">
-      <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-        Enterprise DevSecOps <span class="color-black">Solutions</span>
-      </h3>
-      <p class="text-center md-no-br" data-aos="fade-up" data-aos-delay="150">
-        บริการออกแบบ ติดตั้งระบบ เครื่อข่ายคอมพิวเตอร์ขนาดใหญ่ พร้อมทีมงานผู้เชี่ยวชายด้านการ 
-        ติดตั้งและบริหารจัดการงานด้าน DevSecOps <br>
-        เพื่อสร้างระบบเครือข่ายที่มีความเสถียรและสามารถ Auto Scale ได้ง่ายง่าย
-      </p>
-      <div class="ss-box xl mt-6 pt-4" data-aos="fade-up" data-aos-delay="300">
+      <div class="pos-relative" style="z-index:2;">
+        <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+          Enterprise DevSecOps <span class="color-black">Solutions</span>
+        </h3>
+        <p class="text-center md-no-br" data-aos="fade-up" data-aos-delay="150">
+          บริการออกแบบ ติดตั้งระบบ เครื่อข่ายคอมพิวเตอร์ขนาดใหญ่ พร้อมทีมงานผู้เชี่ยวชายด้านการ 
+          ติดตั้งและบริหารจัดการงานด้าน DevSecOps <br>
+          เพื่อสร้างระบบเครือข่ายที่มีความเสถียรและสามารถ Auto Scale ได้ง่ายง่าย
+        </p>  
+      </div>
+      <div class="ss-box xl mt-6 pt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="300">
         <img class="img" src="public/img/content/04.png" alt="Banner" />
       </div>
     </div>

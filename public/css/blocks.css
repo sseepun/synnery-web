@@ -47,6 +47,21 @@
 }
 .section-01 > .pattern.style-10 > .wrapper img{display:block; width:19rem; height:auto;}
 
+.section-01 > .pattern.style-11{
+  position:absolute; top:-19rem; left:-6rem; right:auto; z-index:1;
+}
+.section-01 > .pattern.style-11 > .wrapper img{display:block; width:30rem; height:auto;}
+
+.section-01 > .pattern.style-12{
+  position:absolute; bottom:8rem; left:auto; right:-1.5rem; z-index:1;
+}
+.section-01 > .pattern.style-12 > .wrapper img{display:block; width:14rem; height:auto;}
+
+.section-01 > .pattern.style-13{
+  position:absolute; bottom:-10rem; left:auto; right:2rem; z-index:1;
+}
+.section-01 > .pattern.style-13 > .wrapper img{display:block; width:25rem; height:auto;}
+
 .section-01 > .img-bg{
   position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
   background-position:center; background-repeat:no-repeat; 
