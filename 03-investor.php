@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -113,6 +113,36 @@
         </div>
       </div>
       <div class="section-01 section-padding" data-aos="fade-in" data-aos-delay="300">
+        <div class="pattern style-14">
+          <div class="wrapper" value=".5">
+            <img src="public/img/content/pattern-02.png" alt="Hero" />
+          </div>
+        </div>
+        <div class="pattern style-15">
+          <div class="wrapper" value=".5">
+            <img src="public/img/content/pattern-02.png" alt="Hero" />
+          </div>
+        </div>
+        <div class="pattern style-16">
+          <div class="wrapper" value="-.5">
+            <img src="public/img/content/pattern-03.png" alt="Hero" />
+          </div>
+        </div>
+        <div class="pattern style-17">
+          <div class="wrapper" value="-.5">
+            <img src="public/img/content/pattern-05.png" alt="Hero" />
+          </div>
+        </div>
+        <div class="pattern style-18">
+          <div class="wrapper" value="-.5">
+            <img src="public/img/content/pattern-04.png" alt="Hero" />
+          </div>
+        </div>
+        <div class="pattern style-19">
+          <div class="wrapper" value="-.5">
+            <img src="public/img/content/pattern-06.png" alt="Hero" />
+          </div>
+        </div>
         <div class="img-bg" style="background-image:url('public/img/bg/05.jpg'); background-position:top center;"></div> 
         <div class="container">
           <div class="tab-contents">
@@ -129,7 +159,7 @@
                     การขยายระบบในอนาคต (อยู่ระหว่างการพัฒนา)
                   </p>
                 </div>
-                <div class="gallery-grids pt-2">
+                <div class="gallery-grids pt-2 pos-relative" style="z-index:2;">
                   <?php
                     $titles = [
                         'Jigsaw Intranet', 'Jigsaw Budgeting', 'Jigsaw E-Saraban', 'Jigsaw E-Document', 'Jigsaw Project ',

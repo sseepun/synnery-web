@@ -62,6 +62,66 @@
 }
 .section-01 > .pattern.style-13 > .wrapper img{display:block; width:25rem; height:auto;}
 
+.section-01 > .pattern.style-14{
+  position:absolute; top:25rem; left:1rem; right:0; z-index:1;
+}
+.section-01 > .pattern.style-14 > .wrapper img{display:block; width:5rem; height:auto;}
+
+.section-01 > .pattern.style-15{
+  position:absolute; top:20rem; left:auto; right:5rem; z-index:1;
+}
+.section-01 > .pattern.style-15 > .wrapper img{display:block; width:5rem; height:auto;}
+
+.section-01 > .pattern.style-16{
+  position:absolute; bottom:8rem; left:auto; right:-5rem; z-index:1;
+}
+.section-01 > .pattern.style-16 > .wrapper img{display:block; width:12rem; height:auto;}
+
+.section-01 > .pattern.style-17{
+  position:absolute; top:-20rem; left:-13%; right:auto; z-index:1;
+}
+.section-01 > .pattern.style-17 > .wrapper img{display:block; width:28rem; height:auto;}
+
+.section-01 > .pattern.style-18{
+  position:absolute; top:-8rem; left:auto; right:-18rem; z-index:1;
+}
+.section-01 > .pattern.style-18 > .wrapper img{display:block; width:48rem; height:auto;}
+
+.section-01 > .pattern.style-19{
+  position:absolute; bottom:50%; left:-35%; right:auto; height:1rem; z-index:1;
+}
+.section-01 > .pattern.style-19 > .wrapper img{display:block; width:48rem; height:auto;}
+
+.section-01 > .pattern.style-20{
+  position:absolute; bottom:9rem; left:auto; right:9rem; z-index:1;
+}
+.section-01 > .pattern.style-20 > .wrapper img{display:block; width:5rem; height:auto;}
+
+.section-01 > .pattern.style-21{
+  position:absolute; bottom:4rem; left:auto; right:-3rem; z-index:1;
+}
+.section-01 > .pattern.style-21 > .wrapper img{display:block; width:12rem; height:auto;}
+
+.section-01 > .pattern.style-22{
+  position:absolute; top:13rem; left:1rem; right:0; z-index:1;
+}
+.section-01 > .pattern.style-22 > .wrapper img{display:block; width:5rem; height:auto;}
+
+.section-01 > .pattern.style-23{
+  position:absolute; top:-9rem; left:auto; right:-4rem; z-index:1;
+}
+.section-01 > .pattern.style-23 > .wrapper img{display:block; width:35rem; height:auto;}
+
+.section-01 > .pattern.style-24{
+  position:absolute; bottom:0; left:-17rem; right:auto;  z-index:1;
+}
+.section-01 > .pattern.style-24 > .wrapper img{display:block; width:30rem; height:auto;}
+
+.section-01 > .pattern.style-25{
+  position:absolute; top:-21rem; left:-13%; right:auto; z-index:1;
+}
+.section-01 > .pattern.style-25 > .wrapper img{display:block; width:25rem; height:auto;}
+
 .section-01 > .img-bg{
   position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
   background-position:center; background-repeat:no-repeat; 
