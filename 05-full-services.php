@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -14,13 +14,17 @@
   </section>
 
   <section data-section="2" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/59.jpg');"></div>
+    <div class="pattern style-32">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero" />
+      </div>
+    </div>
     <div class="container">
-      <div class="text-center color-01" data-aos="fade-up" data-aos-delay="0">
+      <div class="text-center color-01 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
         <p class="h2 lh-2xs fw-600">Full Services</p>
         <h1 class="fw-600 lh-xs text-shadow">Digital Marketing</h1>
       </div>
-      <div class="grids pt-6" data-aos="fade-up" data-aos-delay="150">
+      <div class="grids pt-6 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<4; $i++){?>
           <div class="grid xl-25 lg-25 md-50 sm-50 xs-100">
             <a class="ss-card ss-card-05">
@@ -82,9 +86,24 @@
   </section>
 
   <section data-section="4" class="section-01 section-padding">
+    <div class="pattern style-33">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-19.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-34">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-20.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-35">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-21.png" alt="Hero" />
+      </div>
+    </div>
     <div class="img-bg" style="background-image:url('public/img/bg/09.jpg');"></div>     
     <div class="container">
-      <div class="text-center color-white" data-aos="fade-up" data-aos-delay="0">
+      <div class="text-center color-white pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
         <h5 class="color-black fw-300 lh-xs">
           วาง <span class="h3 color-01 fw-600 lh-xs">Action Plan</span> และ 
           <span class="h3 color-01 fw-600 lh-xs">งบประมาณ</span>
@@ -94,7 +113,7 @@
           <span class="h3 color-01 fw-600 lh-xs">Scenario Case</span> ต่างๆ
         </h5>
       </div>
-      <div class="grids jc-center pt-3" data-aos="fade-up" data-aos-delay="150">
+      <div class="grids jc-center pt-3 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <div class="grid xl-80 sm-100">
           <img class="img" src="public/img/content/01.png" alt="Image" />
         </div>
@@ -103,7 +122,37 @@
   </section>
 
   <section data-section="5" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/10.jpg');"></div>
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-02">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-03.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-04.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-05.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-06.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/62.jpg');"></div>
     <div class="container">
       <h3 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
         Digital Business Analysis Services
@@ -140,6 +189,17 @@
     </div>
   </section>
 
+  <?php 
+    $titles = [
+      'วางแผนกลยุทธ์และแนวทางการดำเนินการสื่อสารประชาสัมพันธ์ ทั้ง ออนไลน์​และออฟไลน์ ผ่านสื่อต่างๆ',
+      'สร้างเนื้อหาในรูปแบบต่างๆ เพื่อให้เหมาะกับช่องทางการสื่อสารที่เลือก',
+      'กำหนดกลุ่มเป้าหมาย และสื่อเป้าหมาย พร้อมตัวชี้วัดโครงการ',
+      'วางแผนการใช้สื่อและเครื่องมือด้านการตลาดทั้งออนไลน์ ออฟไลน์ ของทั้งโครงการ',
+      'สร้าง Community ระหว่างกลุ่มเป้าหมาย เพื่อให้เกิดสังคมออนไลน์เฉพาะกลุ่ม (Social Private Network)',
+      'พัฒนาเครื่องมือด้านการตลาดต่างๆ ระบบ Web Application, Mobile Application ต่างๆ'
+    ]
+  ?>
+
   <section data-section="6" class="section-12">
     <div class="container">
       <div class="blocks">
@@ -151,14 +211,14 @@
         <div class="block">
           <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
           <div class="text-container md" data-aos="fade-up" data-aos-delay="0">
-            <?php for($i=1; $i<=6; $i++){?>
+            <?php for($i=0; $i<=5; $i++){?>
               <div class="ss-card ss-card-07">
                 <div class="number-container">
-                  <p class="h4"><?php echo $i ?></p>
+                  <p class="h4"><?php echo $i+1  ?></p>
                 </div>
                 <div class="text-container">
                   <p class="title">
-                    วางแผนกลยุทธ์และแนวทางการดำเนินการสื่อสารประชาสัมพันธ์ ทั้ง ออนไลน์​และออฟไลน์ ผ่านสื่อต่างๆ 
+                    <?php echo $titles[$i] ?> 
                   </p>
                 </div>
               </div>
@@ -170,13 +230,38 @@
   </section>
 
   <section data-section="7" class="section-01 section-padding">
+    <div class="pattern style-36">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-28.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-37">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-23.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-38">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-25.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-39">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-24.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-40">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-26.png" alt="Hero" />
+      </div>
+    </div>
     <div class="img-bg" style="background-image:url('public/img/bg/11.jpg');"></div>  
     <div class="container">
       <h3 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
         Content Marketing <span class="color-01">Strategy</span>
       </h3>
       <div class="ss-box xxl pt-6" data-aos="fade-up" data-aos-delay="150">
-        <div class="gallery-grids jc-center">
+        <div class="gallery-grids jc-center pos-relative" style="z-index:2;">
           <?php for($i=0; $i<22; $i++){?>
             <div class="grid lg-1-6 md-20 sm-1-3 xs-50">
               <div class="ss-card ss-card-08">
@@ -231,7 +316,6 @@
 
     <div class="p-1 bg-black">
       <div class="grids no-gap">
-
         <div class="grid lg-2-3 sm-100 mt-0">
           <div class="grids no-gap">
             <?php for($i=0; $i<3; $i++){?>
@@ -439,6 +523,36 @@
   </section>
 
   <section data-section="9" class="section-01 section-padding">
+    <div class="pattern style-26">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-27">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-28">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-03.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-29">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-04.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-30">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-05.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-31">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-06.png" alt="Hero" />
+      </div>
+    </div>
     <div class="img-bg" style="background-image:url('public/img/bg/12.jpg');"></div> 
     <div class="container">
       <div class="text-center" data-aos="fade-up" data-aos-delay="0">

@@ -126,7 +126,7 @@
                   <img class="img" src="public/img/content/screen-09.png" alt="Device" />
                   <div class="title-wrapper">
                       <div class="logo">
-                        <img src="public/img/content/logo-06.png" alt="LOGO" />
+                        <img src="public/img/content/logo.png" alt="LOGO" />
                       </div>
                       <div class="text">
                         <h3 class="color-white text-uppercase lh-2xs fw-200">
@@ -518,6 +518,36 @@
   ?>
 
   <section data-section="13" class="section-01 section-padding">
+    <div class="pattern style-20">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-21">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-03.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-22">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-23">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-04.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-24">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-06.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-25">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-05.png" alt="Hero" />
+      </div>
+    </div>
     <div class="img-bg" style="background-image:url('public/img/bg/17.jpg');"></div> 
     <div class="container">
       <div class="text-center">
@@ -528,7 +558,7 @@
           สำหรับใช้ในการบริหารจัดการทั้งข้อมูลและโครงสร้างของเว็บไซต์ที่ผ่านมาตรฐาน
         </p>
       </div>
-      <div class="ss-box xl mt-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="ss-box xl pos-relative mt-6" style="z-index:2;" data-aos="fade-up" data-aos-delay="400">
         <div class="grids jc-center">
           <?php for($i=0; $i<9; $i++){?>
             <div class="grid lg-20 md-25 sm-1-3 xs-50">
@@ -629,8 +659,10 @@
     </div>
   </section>
 
-  <section data-section="18" class="section-01 size-02">
-    <div class="img-bg" style="background-image:url('public/img/bg/19.jpg');"></div> 
+  <section data-section="3" class="section-01 size-02">
+    <video autoplay muted loop class="video-preview">
+      <source src="public/video/02.mp4" type="video/mp4">
+    </video>
     <div class="container">
       <div class="video-button mt-6" data-aos="fade-up" data-aos-delay="150">
         <a id="video-container" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 

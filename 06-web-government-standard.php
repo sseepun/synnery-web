@@ -482,7 +482,7 @@
           สำหรับใช้ในการบริหารจัดการทั้งข้อมูลและโครงสร้างของเว็บไซต์ที่ผ่านมาตรฐาน
         </p>
       </div>
-      <div class="ss-box xl mt-6" data-aos="fade-up" data-aos-delay="400">
+      <div class="ss-box xl pos-relative mt-6" style="z-index:2;" data-aos="fade-up" data-aos-delay="400">
         <div class="grids jc-center">
           <?php for($i=0; $i<9; $i++){?>
             <div class="grid lg-20 md-25 sm-1-3 xs-50">
