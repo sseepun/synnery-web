@@ -70,7 +70,22 @@
         <div class="container">
 
           <div class="dropdown-wrapper" data-dropdown="1">
-            <h1 class="color-white">Hello</h1>
+            <div class="d-grids">
+              <?php for($i=0; $i<12; $i++){?>
+                <div class="d-grid">
+                  <a href="#" class="ss-card">
+                    <div class="ss-img no-hover">
+                      <div class="img-bg" style="background-image:url('public/img/content/topnav-01.jpg');"></div>
+                    </div>
+                    <div class="text-container">
+                      <p class="sm fw-400 mt-3">
+                        Web Design / Development
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              <?php }?>
+            </div>
           </div>
           
           <div class="dropdown-wrapper" data-dropdown="2">
