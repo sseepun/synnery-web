@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -13,8 +13,12 @@
     <img class="img" src="public/img/img-01.jpg" alt="Banner" />
   </section>
 
-  <section data-section="2" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/24.jpg');"></div>
+  <section data-section="2" class="section-01 section-padding bg-05">
+    <div class="pattern style-32">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero" />
+      </div>
+    </div>
     <div class="container">
       <div class="text-center color-01">
         <h3 class="color-black fw-600" data-aos="fade-up" data-aos-delay="0">
@@ -173,7 +177,22 @@
   </section>
 
   <section data-section="5" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/20.jpg');"></div> 
+    <div class="pattern style-33">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-19.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-34">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-20.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-35">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-21.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/09.jpg');"></div> 
     <div class="container">
       <h3 class="text-center color-black fw-200" data-aos="fade-up" data-aos-delay="0">
         พร้อมรองรับ<span class="color-01 fw-600">มาตรฐานต่างๆ</span>
@@ -305,12 +324,37 @@
   </section>
 
   <section data-section="9" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/16.jpg');"></div> 
+    <div class="pattern style-41">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-28.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-42">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-23.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-43">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-25.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-44">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-24.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-45">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-26.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/11.jpg');"></div> 
     <div class="container">
       <h3 class="lg text-center color-white fw-100" data-aos="fade-up" data-aos-delay="0" >
         เครื่องมือในการ<span class="color-01 fw-500">ทดสอบตรวจสอบคุณภาพ</span>ของเว็บไซต์
       </h3>      
-      <div class="grids" data-aos="fade-up" data-aos-delay="150">
+      <div class="grids pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<6; $i++){?>
           <div class="grid lg-1-3 md-50 sm-50 xs-100 pt-6">
             <a class="ss-card ss-card-03" href="#">

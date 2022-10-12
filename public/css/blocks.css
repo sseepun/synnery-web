@@ -158,6 +158,24 @@
 .section-01 > .pattern.style-40{position:absolute; top:-15rem; left:45rem; right:auto; z-index:1;}
 .section-01 > .pattern.style-40 > .wrapper img{display:block; width:20rem; height:auto;}
 
+.section-01 > .pattern.style-41{position:absolute; bottom:14rem; left:3rem; right:auto; z-index:1;}
+.section-01 > .pattern.style-41 > .wrapper img{display:block; width:15rem; height:auto;}
+
+.section-01 > .pattern.style-42{position:absolute; bottom:5rem; left:auto; right:8rem; z-index:1;}
+.section-01 > .pattern.style-42 > .wrapper img{display:block; width:11rem; height:auto;}
+
+.section-01 > .pattern.style-43{position:absolute; top:-13rem; left:auto; right:-9rem; z-index:1;}
+.section-01 > .pattern.style-43 > .wrapper img{display:block; width:40rem; height:auto;}
+
+.section-01 > .pattern.style-44{position:absolute; top:-17rem; left:-5rem; right:auto; z-index:1;}
+.section-01 > .pattern.style-44 > .wrapper img{display:block; width:20rem; height:auto;}
+
+.section-01 > .pattern.style-45{position:absolute; top:-15rem; left:43rem; right:auto; z-index:1;}
+.section-01 > .pattern.style-45 > .wrapper img{display:block; width:20rem; height:auto;}
+
+.section-01 > .pattern.style-46{position:absolute; bottom:-33rem; left:auto; right:-7rem; z-index:1;}
+.section-01 > .pattern.style-46 > .wrapper img{display:block; width:46rem; height:auto;}
+
 @media screen and (max-width:1199.98px){
   .section-01.size-01{padding-bottom:13rem;}
   .section-01.size-01 > .img-bg{background-position:center;}
@@ -238,7 +256,7 @@
 }
 
 /* Section 08 */
-.section-08{position:relative; background-size:cover; }
+.section-08{position:relative; background-size:cover; overflow:hidden;}
 .section-08 > .img-bg{
   position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
   background-position:center; background-repeat:no-repeat;
@@ -282,8 +300,33 @@
   border-color:#ffffff;
 }
 
+.section-08 > .pattern.style-01{position:absolute; top:12rem; left:2rem; right:0; z-index:1;}
+.section-08 > .pattern.style-01 > .wrapper img{display:block; width:5rem; height:auto;}
+
+.section-08 > .pattern.style-03{position:absolute; bottom:-2rem; left:auto; right:-4rem; z-index:1;}
+.section-08 > .pattern.style-03 > .wrapper img{display:block; width:12rem; height:auto;}
+
+.section-08 > .pattern.style-05{position:absolute; top:-20rem; left:-9rem; right:auto; z-index:1;}
+.section-08 > .pattern.style-05 > .wrapper img{display:block; width:26rem; height:auto;}
+
+.section-08 > .pattern.style-06{position:absolute; bottom:-4rem; left:-19rem; right:auto; z-index:1;}
+.section-08 > .pattern.style-06 > .wrapper img{display:block; width:26rem; height:auto;}
+
+.section-08 > .pattern.style-42{position:absolute; bottom:-3rem; left:auto; right:10rem; z-index:1;}
+.section-08 > .pattern.style-42 > .wrapper img{display:block; width:11rem; height:auto;}
+
+.section-08 > .pattern.style-43{position:absolute; top:-13rem; left:auto; right:-9rem; z-index:1;}
+.section-08 > .pattern.style-43 > .wrapper img{display:block; width:40rem; height:auto;}
+
+.section-08 > .pattern.style-44{position:absolute; top:-17rem; left:-5rem; right:auto; z-index:1;}
+.section-08 > .pattern.style-44 > .wrapper img{display:block; width:20rem; height:auto;}
+
+.section-08 > .pattern.style-45{position:absolute; top:-15rem; left:43rem; right:auto; z-index:1;}
+.section-08 > .pattern.style-45 > .wrapper img{display:block; width:20rem; height:auto;}
+
 @media screen and (max-width:991.98px){
   .section-08 .content-container{padding:0 3rem;}
+  .section-08 > .pattern{display:none;}
 }
 @media screen and (max-width:767.98px){
   .section-08 .content-container{padding:0;}

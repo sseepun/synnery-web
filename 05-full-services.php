@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -230,27 +230,27 @@
   </section>
 
   <section data-section="7" class="section-01 section-padding">
-    <div class="pattern style-36">
+    <div class="pattern style-41">
       <div class="wrapper" value="-.5">
         <img src="public/img/content/pattern-28.png" alt="Hero" />
       </div>
     </div>
-    <div class="pattern style-37">
+    <div class="pattern style-42">
       <div class="wrapper" value="-.5">
         <img src="public/img/content/pattern-23.png" alt="Hero" />
       </div>
     </div>
-    <div class="pattern style-38">
+    <div class="pattern style-43">
       <div class="wrapper" value="-.5">
         <img src="public/img/content/pattern-25.png" alt="Hero" />
       </div>
     </div>
-    <div class="pattern style-39">
+    <div class="pattern style-44">
       <div class="wrapper" value="-.5">
         <img src="public/img/content/pattern-24.png" alt="Hero" />
       </div>
     </div>
-    <div class="pattern style-40">
+    <div class="pattern style-45">
       <div class="wrapper" value="-.5">
         <img src="public/img/content/pattern-26.png" alt="Hero" />
       </div>
@@ -260,8 +260,8 @@
       <h3 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
         Content Marketing <span class="color-01">Strategy</span>
       </h3>
-      <div class="ss-box xxl pt-6" data-aos="fade-up" data-aos-delay="150">
-        <div class="gallery-grids jc-center pos-relative" style="z-index:2;">
+      <div class="ss-box xxl pt-6 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
+        <div class="gallery-grids jc-center" >
           <?php for($i=0; $i<22; $i++){?>
             <div class="grid lg-1-6 md-20 sm-1-3 xs-50">
               <div class="ss-card ss-card-08">
