@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -334,14 +334,15 @@
     </div>
     <div class="pattern style-34">
       <div class="wrapper" value="-.5">
-        <img src="public/img/content/pattern-20.png" alt="Hero" />
+        <img src="public/img/content/pattern-31.png" alt="Hero" />
       </div>
     </div>
     <div class="pattern style-35">
       <div class="wrapper" value=".5">
-        <img src="public/img/content/pattern-21.png" alt="Hero" />
+        <img src="public/img/content/pattern-30.png" alt="Hero" />
       </div>
     </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/66.jpg');"></div>
     <div class="container">
       <h3 class="text-uppercase text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         Network Architechture
@@ -383,13 +384,17 @@
    </div>             
   </div>
 
-  <section data-section="10" class="section-08 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/56.jpg');"></div> 
+  <section data-section="10" class="section-08 section-padding bg-p">
+    <div class="pattern style-02">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-32.png" alt="Hero" />
+      </div>
+    </div>
     <div class="container">
-      <h3 class="text-center color-white fw-600 lh-sm" data-aos="fade-up" data-aos-delay="0">
+      <h3 class="text-center color-white fw-600 lh-sm pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
         รวมภาพบรรยากาศงานอบรม
       </h3>
-      <div class="content-container mt-6 pt-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="content-container mt-6 pt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <?php for($j=0; $j<12; $j++){?>

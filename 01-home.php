@@ -22,8 +22,13 @@
   ?>
 
   <section data-section="2" class="section-01 section-padding">
+    <div class="pattern style-32">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero">
+      </div>
+    </div>
     <div class="img-bg" style="background-image:url('public/img/bg/36.jpg');"></div> 
-    <div class="container">
+    <div class="container" style="z-index:2;">
       <div class="text-center" data-aos="fade-up" data-aos-delay="0">
         <h3 class="color-01 fw-600">
           Full Services
@@ -260,8 +265,23 @@
   </section>
 
   <section data-section="7" class="section-10 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/58.jpg'); background-position:top center;"></div>
-    <div class="container">
+    <div class="pattern style-01">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-31.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-02">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-30.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value=".5" style="transform: translateX(18.7px) translateY(-18.5px);">
+        <img src="public/img/content/pattern-19.png" alt="Hero">
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/70.jpg'); background-position:top center;"></div>
+    <div class="container" style="z-index:2;">
       <div class="text-center">
         <h3 class="lh-2xs color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
           Mini Site for <span class="color-black">Government</span>
