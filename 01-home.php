@@ -9,18 +9,62 @@
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1">
-    <img class="img" src="public/img/img-01.jpg" alt="Banner" />
+  <section data-section="1" class="banner-02">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <?php for($i=0; $i<5; $i++){?>
+          <div class="swiper-slide">
+            <div class="wrapper">
+              <div class="img-bg" style="background-image:url('public/img/bg/banner-02.jpg');"></div>
+              <div class="hero">
+                <div class="animate-02" style="--delay:.45s;">
+                  <img src="public/img/hero/banner-01.png" alt="Hero" />
+                </div>
+              </div>
+              <div class="container">
+                <div class="text-container">
+                  <h1 class="lg fw-500 color-white lh-3xs animate-01" style="--delay:.45s;">
+                    Website
+                  </h1>
+                  <h1 class="fw-500 color-white lh-2xs animate-01" style="--delay:.6s;">
+                    <span class="fw-200">for</span> Government
+                  </h1>
+                  <h6 class="color-white animate-01" style="--delay:.75s;">
+                    ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA
+                  </h6>
+                  <div class="btns pt-6 animate-01" style="--delay:.9s;">
+                    <a class="btn btn-action round btn-color-01" href="#">
+                      <span class="p xs fw-500">Explore More</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php }?>
+      </div>
+      <div class="arrows">
+        <div class="arrow arrow-prev">
+          <img src="public/img/icon/arrow-left.png" alt="Arrow" />
+        </div>
+        <div class="arrow-sep">
+          <img src="public/img/icon/arrow-sep.png" alt="Arrow Sep" />
+        </div>
+        <div class="arrow arrow-next">
+          <img src="public/img/icon/arrow-right.png" alt="Arrow" />
+        </div>
+      </div>
+    </div>
   </section>
 
   <?php
     $titles = [
-      'Digital Marketing<br>for Government', 'Website<br>for Government', 'Mini Site<br>for Government',
-      'Enterprise WordPress<br>for Government', 'Virtual World<br>Services', 
-      'e-Office / ERP<br>for Government', 'Enterprise<br>DevSecOps Solutions'
+      'Digital Marketing<br>for Government', 'Website<br>for Government',
+      'Mini Site<br>for Government', 'Enterprise WordPress<br>for Government',
+      'Virtual World<br>Services', 'e-Office / ERP<br>for Government',
+      'Enterprise<br>DevSecOps Solutions'
     ]
   ?>
-
   <section data-section="2" class="section-01 section-padding">
     <div class="img-bg" style="background-image:url('public/img/bg/36.jpg');"></div> 
     <div class="container">
@@ -131,7 +175,6 @@
     </div>
   </section>
 
-  
   <?php
     $titles = [
       'JIGSAW<br>Intranet', 'JIGSAW<br>E-Saraban', 'JIGSAW<br>E-Document', 'JIGSAW<br>Project', 
@@ -139,7 +182,6 @@
       'JIGSAW<br>Vehicle', 'JIGSAW<br>Meeting Room'
     ];
   ?>
-
   <section data-section="6" class="section-01 section-padding">
     <div class="pattern style-01">
       <div class="wrapper" value=".5">
@@ -266,12 +308,12 @@
         <h3 class="lh-2xs color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
           Mini Site for <span class="color-black">Government</span>
         </h3>
-        <p class="color-03 fw-400 mt-2 md-no-br" data-aos="fade-up" data-aos-delay="150">
+        <p class="color-03 fw-400 mt-2 lg-no-br" data-aos="fade-up" data-aos-delay="150">
           สร้างเว็บไซต์ย่อยๆ ได้อย่างไม่จำกัด เหมาะสำหรับหน่วยงานหลัก ที่มีหน่วยงานย่อยๆ ภายใต้การกำกับดูแล <br>
           ต้องการให้เว็บของเว็บไซต์หลัก เว็บไซต์ย่อยมีรูปแบบไปในแนวทาง Design เดียวกัน
         </p>
       </div>
-      <div class="swiper-container mt-6 pt-2" data-aos="fade-up" data-aos-delay="150">
+      <div class="swiper-container" data-aos="fade-up" data-aos-delay="150">
         <div class="swiper-wrapper">
           <?php for($i=0; $i<5; $i++){?>
             <div class="swiper-slide">
@@ -500,6 +542,5 @@
       });
     }
   </script>
-
 </body>
 </html>

@@ -245,17 +245,8 @@
     .banner-01 .swiper-pagination-bullet{width:.562rem; height:.562rem; margin:0 .25rem}
 }
 
+
 /* Scroll Wrapper */
 .scroll-wrapper{width:100%; overflow:hidden;}
 .scroll-x-wrapper{width:100%; overflow-x:auto; overflow-y:hidden; padding:0 0 .875rem 0;}
 .scroll-y-wrapper{width:100%; overflow-x:hidden; overflow-y:auto; padding:0 .875rem 0 0;}
-
-
-
-
-
-
-
-
-
-
