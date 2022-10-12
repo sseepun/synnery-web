@@ -9,9 +9,13 @@
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1" class="section-05 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/21.jpg');"></div>  
-    <div class="container">
+  <section data-section="1" class="section-05 section-padding bg-05"> 
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero">
+      </div>
+    </div>
+    <div class="container" style="z-index:2;">
       <h3 class="color-01 text-center text-shadow fw-600" data-aos="fade-up" data-aos-delay="0">Contact Us</h3> 
       <div class="grids jc-center">
         <div class="grid xl-60 lg-2-3 sm-100 mt-0">

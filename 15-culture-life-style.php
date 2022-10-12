@@ -13,9 +13,13 @@
     <img class="img" src="public/img/bg/23.jpg" alt="Banner" />
   </section>
 
-  <section data-section="2" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/24.jpg');"></div> 
-    <div class="container">
+  <section data-section="2" class="section-01 section-padding bg-05">
+    <div class="pattern style-32">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero">
+      </div>
+    </div>
+    <div class="container" style="z-index:2;">
       <div class="ss-box xl">
         <div class="text-center color-01">
           <h1 class="lh-2xs text-center text-shadow fw-600" data-aos="fade-up" data-aos-delay="0">

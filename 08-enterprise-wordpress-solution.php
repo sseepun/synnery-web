@@ -13,8 +13,12 @@
     <img class="img" src="public/img/bg/25.jpg" alt="Banner" />
   </section>
 
-  <section data-section="2" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/26.jpg');"></div>
+  <section data-section="2" class="section-01 section-padding bg-05">
+    <div class="pattern style-32">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero" />
+      </div>
+    </div>
     <div class="container">
       <div class="title-intro" data-aos="fade-up" data-aos-delay="0">
         <img class="img" src="public/img/icon/wordpress-logo.jpg" alt="LOGO" />
@@ -71,9 +75,29 @@
   </section>
 
   <section data-section="4" class="section-08 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/27.jpg');"></div> 
+    <div class="pattern style-42">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-23.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-43">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-25.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-44">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-24.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-45">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-26.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/64.jpg');"></div> 
     <div class="container">
-      <div class="content-container" data-aos="fade-up" data-aos-delay="0">
+      <div class="content-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <?php for($i=0; $i<5; $i++){?>
@@ -141,12 +165,32 @@
   </section>
 
   <section data-section="6" class="section-08 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/29.jpg');"></div> 
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-03.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-05.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-06.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/65.jpg');"></div> 
     <div class="container">
-      <h3 class="text-center color-01 fw-600 lh-sm" data-aos="fade-up" data-aos-delay="0">
+      <h3 class="text-center color-01 fw-600 lh-sm pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
         Word Press Plug-In <span class="color-white fw-200">ที่บริษัทฯ พัฒนาขึ้นมาใหม่</span>
       </h3>
-      <div class="content-container mt-6" data-aos="fade-up" data-aos-delay="150">
+      <div class="content-container mt-6 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <?php for($i=0; $i<5; $i++){?>
@@ -283,7 +327,22 @@
   </section>
 
   <div data-section="8" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/content/55.jpg');"></div>
+    <div class="pattern style-33">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-19.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-34">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-31.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-35">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-30.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/66.jpg');"></div>
     <div class="container">
       <h3 class="text-uppercase text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         Network Architechture
@@ -325,13 +384,17 @@
    </div>             
   </div>
 
-  <section data-section="10" class="section-08 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/56.jpg');"></div> 
+  <section data-section="10" class="section-08 section-padding bg-p">
+    <div class="pattern style-02">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-32.png" alt="Hero" />
+      </div>
+    </div>
     <div class="container">
-      <h3 class="text-center color-white fw-600 lh-sm" data-aos="fade-up" data-aos-delay="0">
+      <h3 class="text-center color-white fw-600 lh-sm pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
         รวมภาพบรรยากาศงานอบรม
       </h3>
-      <div class="content-container mt-6 pt-4" data-aos="fade-up" data-aos-delay="150">
+      <div class="content-container mt-6 pt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <?php for($j=0; $j<12; $j++){?>

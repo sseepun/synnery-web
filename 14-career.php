@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -14,7 +14,11 @@
   </section>
 
   <section data-section="2" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/24.jpg');"></div> 
+    <div class="pattern style-32">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero">
+      </div>
+    </div>
     <div class="container">
       <div class="ss-box xl">
         <div class="text-center color-01">
@@ -353,8 +357,23 @@
     ]
   ?>
   <section data-section="7" class="section-08 section-padding">
+    <div class="pattern style-07">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-38.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-08">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-37.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-09">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-39.png" alt="Hero" />
+      </div>
+    </div>
     <div class="img-bg" style="background-image:url('public/img/bg/33.jpg');"></div>
-    <div class="container">
+    <div class="container" style="z-index:2">
       <h3 class="text-center color-white xs-no-br lh-xs fw-600" data-aos="fade-up" data-aos-delay="0">
         มาสมัครและทำงานร่วมกันกับทีมเรา <br> ทีมเล็กๆ ที่ทำงานใหญ่ๆ 
       </h3>

@@ -35,8 +35,12 @@
           <?php }?>
         </div>
       </div>
-      <div class="section-01 section-padding" data-aos="fade-in" data-aos-delay="300">
-        <div class="img-bg" style="background-image:url('public/img/bg/24.jpg');"></div> 
+      <div class="section-01 section-padding bg-05" data-aos="fade-in" data-aos-delay="300">
+        <div class="pattern style-32">
+          <div class="wrapper" value=".5">
+            <img src="public/img/content/pattern-18.png" alt="Hero">
+          </div>
+        </div>
         <div class="container">
           <div class="tab-contents">
             <?php foreach($categories as $j=>$k){?>

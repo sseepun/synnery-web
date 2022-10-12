@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -20,9 +20,13 @@
     ]
   ?>
 
-  <section data-section="2" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/41.jpg');"></div>
-    <div class="container">
+  <section data-section="2" class="section-01 section-padding bg-05">
+    <div class="pattern style-32">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero">
+      </div>
+    </div>
+    <div class="container" style="z-index:2;">
       <div class="text-center">
         <h3 class="color-black fw-600" data-aos="fade-up" data-aos-delay="0">
           Full Services <span class="fw-300">with</span>
@@ -81,8 +85,12 @@
   </section>
 
   <section data-section="3" class="section-08 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/42.jpg');"></div> 
-    <div class="container">
+    <div class="pattern style-04">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-29.png" alt="Hero">
+      </div>
+    </div>
+    <div class="container" style="z-index:2;">
       <div class="text-center">
         <h3 class="color-01 lh-3xs fw-600"  data-aos="fade-up" data-aos-delay="0">
           Virtual Exhibition /<br> <span class="h4 lg color-black fw-600">Virtual Live Event</span>
@@ -194,9 +202,14 @@
     </div>        
   </section>
 
-  <section data-section="4" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/43.jpg');"></div> 
-    <div class="container">
+  <section data-section="4" class="section-01 section-padding bg-05">
+    <div class="pattern style-33">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-19.png" alt="Hero">
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/68.jpg');"></div>
+    <div class="container" style="z-index:2;">
       <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         วิดีโอแนะนำ <span class="color-black fw-300">เพื่อใช้ในการประชาสัมพันธ์</span>
       </h3> 
@@ -223,8 +236,17 @@
   </section>
 
   <section data-section="5" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/44.jpg');"></div>
-    <div class="container">
+    <div class="pattern style-34">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-31.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-35">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-30.png" alt="Hero">
+      </div>
+    </div>
+    <div class="container" style="z-index:2;">
       <h3 class="text-center lh-sm color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         วีดีโอภาพรวมงานตัวเต็ม
       </h3>   
@@ -286,9 +308,29 @@
     </div>
   </section>
 
-  <section data-section="8" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/45.jpg');"></div>
-    <div class="container">
+  <section data-section="8" class="section-01 section-padding bg-05">
+    <div class="pattern style-07">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-35.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-08">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-36.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-09">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-33.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-10">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-34.png" alt="Hero">
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/69.jpg');"></div>
+    <div class="container" style="z-index:2;">
       <h3 class="text-center color-01 lh-2xs fw-600" data-aos="fade-up" data-aos-delay="0">
         Virtual Tour, Virtual Showroom,<br>Virtual Product 360
       </h3>
@@ -308,11 +350,31 @@
   </section>
 
   <section data-section="8" class="section-11 section-padding">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-02">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-03.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-05.png" alt="Hero" />
+      </div>
+    </div>
     <div class="img-bg" style="background-image:url('public/img/bg/46.jpg');"></div>
     <h3 class="text-center color-white fw-500 pos-relative" data-aos="fade-up" data-aos-delay="0">
       Virtual Walk Throught (Chatuchak)
     </h3> 
-    <div class="grids no-gap mt-4" data-aos="fade-up" data-aos-delay="150">
+    <div class="grids no-gap mt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
       <?php for($i=0; $i<4; $i++) {?>
         <div class="grid lg-25 style-03 mt-0">
           <div class="p-1 bg-white">

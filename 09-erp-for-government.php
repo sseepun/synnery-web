@@ -90,8 +90,154 @@
     </div>
   </section>
 
+  
+  <?php
+    $titles = [
+      'JIGSAW<br>Intranet', 'JIGSAW<br>E-Saraban', 'JIGSAW<br>E-Document', 'JIGSAW<br>Project', 
+      'JIGSAW<br>E-Learning', 'JIGSAW<br>Procurement','JIGSAW<br>Accounting', 'JIGSAW<br>Listening', 
+      'JIGSAW<br>Vehicle', 'JIGSAW<br>Meeting Room'
+    ];
+  ?>
+
+  <section data-section="6" class="section-01 section-padding">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-02">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-03.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-04.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-05.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-06.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/62.jpg'); background-position:bottom center;"></div>
+    <div class="container">
+      <h3 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
+        <span class="h4 fw-100">FULL SERVICES</span> E-OFFICE AUTOMATION <span class="h4 fw-100">DEVELOPMENT</span>
+      </h3>
+      <p class="text-center color-white fw-300" data-aos="fade-up" data-aos-delay="150">
+        Focus on Value, Small Feature, No Manual, UX/UI Look like Social Networking, API
+      </p>
+      <div class="hex-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="300">
+        <?php for($i=0; $i<10; $i++){?>
+          <div class="hex-flip">
+            <div class="hex lg">
+              <div class="hex lg bg">
+                <div class="wrapper text-center color-white">
+                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                </div>
+              </div>
+              <div class="hex lg inner">
+                <div class="wrapper text-center color-white">
+                  <div class="icon">
+                    <img class="img" src="public/img/icon/1<?= ($i%10+0) ?>.png" alt="Banner" />
+                  </div>
+                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php }?>
+
+        <?php
+          $titles = [
+            'JIGSAW<br>Help Desk', 'JIGSAW<br>Chat Bot', 'JIGSAW<br>Portal', 'JIGSAW<br>Financial', 
+            'JIGSAW<br>Asset', 'JIGSAW<br>Sales Force','JIGSAW<br>CRM', 'JIGSAW<br>HRM', 
+            'JIGSAW<br>HRD', 'JIGSAW<br>Budgeting'
+          ];
+        ?>
+
+        <?php for($i=0; $i<10; $i++){?>
+          <div class="hex-flip">
+            <div class="hex lg">
+              <div class="hex lg bg">
+                <div class="wrapper text-center color-white">
+                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                </div>
+              </div>
+              <div class="hex lg inner">
+                <div class="wrapper text-center color-white">
+                  <div class="icon">
+                    <img class="img" src="public/img/icon/2<?= ($i%12+0) ?>.png" alt="Banner" />
+                  </div>
+                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php }?>
+
+        <?php
+          $titles = [
+            'JIGSAW<br>E-Form', 'JIGSAW<br>BI'
+          ];
+        ?>
+
+        <?php for($i=0; $i<2; $i++){?>
+          <div class="hex-flip">
+            <div class="hex lg">
+              <div class="hex lg bg">
+                <div class="wrapper text-center color-white">
+                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                </div>
+              </div>
+              <div class="hex lg inner">
+                <div class="wrapper text-center color-white">
+                  <div class="icon">
+                    <img class="img" src="public/img/icon/3<?= ($i%2+0) ?>.png" alt="Banner" />
+                  </div>
+                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <?php }?>
+      </div>   
+    </div>
+  </section>
+
   <section data-section="4" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/48.jpg');"></div>  
+    <div class="pattern style-42">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-23.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-43">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-25.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-44">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-24.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-45">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-26.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/11.jpg');"></div>  
     <div class="container">
       <h3 class="text-center color-white fw-600 lh-sm" data-aos="fade-up" data-aos-delay="0">
         Jigsaw ERP <span class="h5 fw-200">for Government &</span> <br />
@@ -127,8 +273,23 @@
   </section>
 
   <section data-section="6" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/51.jpg');"></div>  
-    <div class="container">
+    <div class="pattern style-33">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-19.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-34">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-20.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-35">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-21.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/66.jpg');"></div>  
+    <div class="container" style="z-index:2;">
       <h3 class="text-center" data-aos="fade-up" data-aos-delay="0">
         THE TREND OF <span class="color-01 fw-600">DEVELOPMENT</span>
       </h3>
@@ -187,9 +348,13 @@
     </div>      
   </section>
 
-  <section data-section="8" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/53.jpg');"></div>  
-    <div class="container">
+  <section data-section="8" class="section-01 section-padding bg-05">
+    <div class="pattern style-46">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-29.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="container" style="z-index:2;">
       <h6 class="text-center color-black fw-400" data-aos="fade-up" data-aos-delay="0">
         ตัวอย่างกระบวนการทำงานในการออกแบบ
       </h6>    
@@ -207,8 +372,38 @@
   </section>
 
   <section data-section="9" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/54.jpg');"></div> 
-    <div class="container">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-02">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-03.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-04.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-05.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-06.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/62.jpg');"></div> 
+    <div class="container" style="z-index:2;">
       <h4 class="lg text-center color-white fw-100" data-aos="fade-up" data-aos-delay="0">
         ระบบโปรแกรมสำหรับใช้ใน
       </h4>
@@ -296,8 +491,28 @@
   </section>
 
   <section data-section="11" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/55.jpg');"></div>  
-    <div class="container">
+    <div class="pattern style-42">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-23.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-43">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-25.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-44">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-24.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-45">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-26.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/11.jpg');"></div>  
+    <div class="container" style="z-index:2;">
       <h4 class="lg color-01 text-center" data-aos="fade-up" data-aos-delay="0">
         <span class="color-white fw-300">ตัวอย่าง</span>ระบบรายงานในรูปแบบของกราฟข้อมูล<span class="color-white fw-300">ต่างๆ</span>
       </h4>  
@@ -354,7 +569,27 @@
   </section>
 
   <section data-section="13" class="section-08 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/29.jpg');"></div> 
+    <div class="pattern style-01 size-02">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-02.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-03.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-05.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-06.png" alt="Hero" />
+      </div>
+    </div>
+    <div class="img-bg" style="background-image:url('public/img/bg/65.jpg');"></div> 
     <div class="container">
       <h4 class="lg text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         <span class="color-white fw-200">ตัวอย่าง</span>หน้าจอระบบต่างๆ

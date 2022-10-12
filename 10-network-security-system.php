@@ -13,8 +13,12 @@
     <img class="img" src="public/img/bg/34.jpg" alt="Banner" />
   </section>
 
-  <section data-section="2" class="section-01 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/24.jpg');"></div> 
+  <section data-section="2" class="section-01 section-padding bg-05">
+    <div class="pattern style-32">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero">
+      </div>
+    </div>
     <div class="container">
       <div class="ss-box xl">
         <div class="text-center color-01">
