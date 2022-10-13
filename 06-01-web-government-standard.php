@@ -38,7 +38,7 @@
       </div>
       <div class="grids jc-center pt-4" data-aos="fade-up" data-aos-delay="450">
         <div class="grid xl-25 lg-1-3 md-50 sm-50 xs-100">
-          <a class="ss-card ss-card-05">
+          <a class="ss-card ss-card-05 bradius-round-02">
             <div class="ss-img vertical-01">
               <div class="img-bg" style="background-image:url('public/img/content/unsplash-08.jpg');"></div>
             </div>
@@ -49,8 +49,7 @@
                 วิเคราะห์
               </div>
               <div class="desc p sm color-white fw-400">
-                นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
-                นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
+                วิสัยทัศน์, พันธกิจ, หน้าที่, ปัญหา และ ความต้องการของกลุ่มเป้า
               </div>
             </div>
             <div class="line-1"></div><div class="line-2"></div>
@@ -58,7 +57,7 @@
         </div>
 
         <div class="grid xl-25 lg-1-3 md-50 sm-50 xs-100">
-          <a class="ss-card ss-card-05">
+          <a class="ss-card ss-card-05 bradius-round-02">
             <div class="ss-img vertical-01">
               <div class="img-bg" style="background-image:url('public/img/content/unsplash-18.jpg');"></div>
             </div>
@@ -66,27 +65,27 @@
             <div class="hover-filter-01"></div>
             <div class="text-container">
               <div class="title p  color-white lh-xs fw-400">
-                กำหนดภาพลักษณ์ของ <span class="h5 color-white fw-600">"BRAND"</span>
+                กำหนดภาพลักษณ์ของ <span class="h5 color-white fw-600">"Brand"</span>
               </div>
-              <ul class="ss-list-01 style-02">
+              <ul class="ss-list-01 style-05">
                 <li class="mt-1">Brand Personality</li>
-                <li class="mt-1">Brand Personality</li>
-                <li class="mt-1">Brand Personality</li>
-                <li class="mt-1">Brand Personality</li>
+                <li class="mt-1">Brand Perception</li>
+                <li class="mt-1">Brand Image</li>
+                <li class="mt-1">Brand Value</li>
               </ul>
             </div>
             <div class="line-1"></div><div class="line-2"></div>
           </a>
         </div>
         <div class="grid xl-25 lg-1-3 md-50 sm-50 xs-100">
-          <a class="ss-card ss-card-05">
+          <a class="ss-card ss-card-05 bradius-round-02">
             <div class="ss-img vertical-01">
               <div class="img-bg" style="background-image:url('public/img/content/unsplash-19.jpg');"></div>
             </div>
             <div class="filter-03"></div>
             <div class="hover-filter-01"></div>
             <div class="text-container">
-              <ul class="ss-list-01 style-02">
+              <ul class="ss-list-01 style-05">
                 <li class="mt-1">SEO Structure</li>
                 <li class="mt-1">Search by AI</li>
                 <li class="mt-1">Speed Page Test</li>
@@ -147,18 +146,30 @@
     </div>
   </section>
 
+  <section data-section="1" data-aos="fade-in" data-aos-delay="0">
+   <?php for($i=0; $i<9; $i++){?>
+      <img class="img" src="public/img/bg/web-showcase-0<?= ($i%9+1) ?>.jpg" alt="Banner" />
+    <?php }?>  
+  </section>
+
+  <section data-section="1" data-aos="fade-in" data-aos-delay="0">
+   <?php for($i=0; $i<10; $i++){?>
+      <img class="img" src="public/img/bg/web-showcase-1<?= ($i%10+0) ?>.jpg" alt="Banner" />
+    <?php }?>  
+  </section>
+
   <section data-section="5" class="section-01 section-padding">
     <div class="pattern style-33">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-19.png" alt="Hero" />
       </div>
     </div>
-    <div class="pattern style-34">
+    <div class="pattern style-34 size-02">
       <div class="wrapper" value="-.5">
         <img src="public/img/content/pattern-20.png" alt="Hero" />
       </div>
     </div>
-    <div class="pattern style-35">
+    <div class="pattern style-35 size-02">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-21.png" alt="Hero" />
       </div>
@@ -170,7 +181,7 @@
       </h3>  
       <div class="ss-box xxl" data-aos="fade-up" data-aos-delay="150">
         <div class="grids jc-center">
-          <?php for($i=0; $i<7; $i++){?>
+          <?php for($i=0; $i<4; $i++){?>
             <div class="grid lg-25 md-1-3 pt-3">
               <a class="ss-card ss-card-17" href="#">
                 <div class="icon-text">
@@ -203,7 +214,7 @@
       <div class="ss-box xxl mt-6 pt-2" data-aos="fade-up" data-aos-delay="300">
         <div class="grids">
           <div class="grid lg-1-3 mt-0">
-            <ul class="ss-list-01">
+            <ul class="ss-list-01 style-06">
               <li class="fw-200 mt-3">Enterprise ECommerce Solutions</li>
               <li class="fw-200 mt-3">SEO Structure</li>
               <li class="fw-200 mt-3">Site Audit</li>
@@ -213,7 +224,7 @@
             </ul> 
           </div>   
           <div class="grid lg-1-3 mt-0">
-            <ul class="ss-list-01">
+            <ul class="ss-list-01 style-06">
               <li class="fw-200 mt-3">All Web Browser Support</li>
               <li class="fw-200 mt-3">All Device Support (Responsive)</li>
               <li class="fw-200 mt-3">Html5 / W3C / UX / UI</li>
@@ -223,7 +234,7 @@
             </ul> 
           </div>
           <div class="grid lg-1-3 mt-0">
-            <ul class="ss-list-01">
+            <ul class="ss-list-01 style-06">
               <li class="fw-200 mt-3">SQL Injection</li>
               <li class="fw-200 mt-3">XSS (Cross Site Scripting)</li>
               <li class="fw-200 mt-3">File Disclosure</li>
@@ -265,6 +276,7 @@
       </div>    
     </div>
   </section>
+
   <section data-section="8" class="section-12">
     <div class="container">
       <div class="blocks mh-0">
@@ -280,6 +292,11 @@
           </div>
         </div>
         <div class="block">
+         <div class="pattern style-07">
+            <div class="wrapper">
+              <img src="public/img/content/pattern-46.png" alt="Hero" />
+            </div>
+          </div>
           <div class="text-container md">
             <h3 class="lg color-01 lh-xs fw-600 md-no-br" data-aos="fade-up" data-aos-delay="0">
               แนวทางรักษา<br>ความปลอดภัย<span class="color-black fw-300">ของระบบ</span>
@@ -315,29 +332,21 @@
         <img src="public/img/content/pattern-24.png" alt="Hero" />
       </div>
     </div>
-    <div class="pattern style-45">
-      <div class="wrapper" value="-.5">
-        <img src="public/img/content/pattern-26.png" alt="Hero" />
-      </div>
-    </div>
-    <div class="img-bg" style="background-image:url('public/img/bg/11.jpg');"></div> 
+    <div class="img-bg" style="background-image:url('public/img/bg/37.jpg');"></div> 
     <div class="container">
       <h3 class="lg text-center color-white fw-100" data-aos="fade-up" data-aos-delay="0" >
-        เครื่องมือในการ<span class="color-01 fw-500">ทดสอบตรวจสอบคุณภาพ</span>ของเว็บไซต์
+        เครื่องมือในการ<span class="color-white fw-500">ทดสอบตรวจสอบคุณภาพ</span>ของเว็บไซต์
       </h3>      
       <div class="grids pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<6; $i++){?>
           <div class="grid lg-1-3 md-50 sm-50 xs-100 pt-6">
-            <a class="ss-card ss-card-03" href="#">
+            <a class="ss-card ss-card-03 bradius-round-02" href="#">
               <div class="ss-img">
                 <div class="img-bg" style="background-image:url('public/img/content/chart-0<?= ($i%3+1) ?>.jpg');"></div>
               </div>
-              <div class="icon">
-                <em class="fa-solid fa-plus"></em>
-              </div>
               <div class="line-1"></div><div class="line-2"></div>
             </a>
-            <div class="text-center mt-3">
+            <div class="mt-3">
               <a class="p lg color-white h-color-p fw-600" href="#">
                 BENCHMARKING
               </a>
@@ -467,7 +476,7 @@
         <img src="public/img/content/pattern-03.png" alt="Hero" />
       </div>
     </div>
-    <div class="pattern style-22">
+    <div class="pattern style-22 size-02">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-02.png" alt="Hero" />
       </div>
@@ -503,7 +512,7 @@
             <div class="grid lg-20 md-25 sm-1-3 xs-50">
               <div class="ss-card ss-card-16 mt-2">
                 <div class="icon">
-                  <img class="inactive" src="public/img/icon/back-office-0<?= ($i%9+1) ?>.png" alt="Icon Inactive" />
+                  <img class="inactive" src="public/img/icon/back-office-dark-0<?= ($i%9+1) ?>.png" alt="Icon Inactive" />
                   <img class="active" src="public/img/icon/back-office-active-0<?= ($i%9+1) ?>.png" alt="Icon Active" />
                 </div>
                 <div class="text-container">
@@ -529,7 +538,7 @@
             <div class="grid lg-20 md-25 sm-1-3 xs-50">
               <div class="ss-card ss-card-16 mt-2">
                 <div class="icon">
-                  <img class="inactive" src="public/img/icon/back-office-1<?= ($i%10+0) ?>.png" alt="Icon Inactive" />
+                  <img class="inactive" src="public/img/icon/back-office-dark-1<?= ($i%10+0) ?>.png" alt="Icon Inactive" />
                   <img class="active" src="public/img/icon/back-office-active-1<?= ($i%10+0) ?>.png" alt="Icon Active" />
                 </div>
                 <div class="text-container">
@@ -544,7 +553,7 @@
           <div class="grid lg-20 md-25 sm-1-3 xs-50">
               <div class="ss-card ss-card-16 mt-2">
                 <div class="icon">
-                  <img class="inactive" src="public/img/icon/back-office-20.png" alt="Icon Inactive" />
+                  <img class="inactive" src="public/img/icon/back-office-dark-20.png" alt="Icon Inactive" />
                   <img class="active" src="public/img/icon/back-office-active-20.png" alt="Icon Active" />
                 </div>
                 <div class="text-container">
@@ -563,12 +572,91 @@
     <div class="container">
       <div class="blocks">
         <div class="block">
-          <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
+          <div class="pattern style-01">
+            <div class="wrapper">
+              <img src="public/img/content/pattern-40.png" alt="Hero" />
+            </div>
+          </div>
+          <div class="pattern style-02">
+            <div class="wrapper">
+              <img src="public/img/content/pattern-41.png" alt="Hero">
+            </div>
+          </div>
+          <div class="img-bg" style="background-image:url('public/img/bg/71.jpg');"></div>
+          <div class="text-container md pos-relative" style="z-index:2;">
+            <h4 class="lg lh-xs md-no-br fw-300" data-aos="fade-up" data-aos-delay="0">
+              รองรับการทำงานผ่าน<br><span class="color-01 fw-600">MOBILE/TABLET</span><br>
+              <span class="color-01">(Responsive)</span>
+            </h4>
+            <ul class="ss-list-01 style-05 mt-5" data-aos="fade-up" data-aos-delay="150">
+              <li class="color-black fw-400 mt-2">Mobile Applications Development</li>
+              <li class="color-black fw-400 mt-2">Mobile Games Development</li>
+              <li class="color-black fw-400 mt-2">AR, QR, VR Technology Development</li>
+              <li class="color-black fw-400 mt-2">Augmented reality delivers real-world results</li>
+              <li class="color-black fw-400 mt-2">FULLY TURNKEY VR & AR SOLUTIONS</li>
+              <li class="color-black fw-400 mt-2">Virtual 360 องศา ทั้งแบบ Panorama และ Google Street View</li>
+            </ul>
+          </div>
+        </div>
+        <div class="block-float right">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/content/unsplash-21.jpg');"></div>
+          </div>
+        </div> 
+      </div>    
+    </div>
+  </section>
+
+  <section data-section="4" class="section-12">
+    <div class="container">
+      <div class="blocks flex-column-reverse">
+        <div class="block-float left">
+          <div class="ss-img horizontal-01 no-hover">
+            <div class="img-bg" style="background-image:url('public/img/bg/72.jpg');"></div>
+          </div>
+        </div>
+        <div class="block">
+          <div class="pattern style-03">
+            <div class="wrapper">
+              <img src="public/img/content/pattern-42.png" alt="Hero" />
+            </div>
+          </div>
+          <div class="pattern style-04">
+            <div class="wrapper">
+              <img src="public/img/content/pattern-43.png" alt="Hero" />
+            </div>
+          </div>
+          <div class="img-bg" style="background-image:url('public/img/bg/73.jpg');"></div>
           <div class="text-container md">
             <h4 class="lg lh-xs md-no-br fw-300" data-aos="fade-up" data-aos-delay="0">
-              พร้อม<span class="h3 color-01 fw-600 lh-xs">ข้อเสนอเพิ่มเติม</span>ต่างๆ<br>อีกมายมากอาทิเช่น 
+              เชื่อมหรือแจ้งเตือนเข้า<br><span class="color-01 fw-600">LINE NOTIFICATION</span><br>ได้ตามต้องการ
+            </h4> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-section="14" class="section-12">
+    <div class="container">
+      <div class="blocks">
+        <div class="block">
+          <div class="pattern style-05">
+            <div class="wrapper">
+              <img src="public/img/content/pattern-45.png" alt="Hero" />
+            </div>
+          </div>
+          <div class="pattern style-06">
+            <div class="wrapper">
+              <img src="public/img/content/pattern-44.png" alt="Hero" />
+            </div>
+          </div>
+          <div class="img-bg" style="background-image:url('public/img/bg/74.jpg');"></div>
+          <div class="text-container md">
+            <h4 class="lg lh-xs md-no-br fw-300" data-aos="fade-up" data-aos-delay="0">
+              พร้อม<span class="h3 color-01 fw-600 lh-xs">ข้อเสนอเพิ่มเติม</span><br>ต่างๆอีกมายมากอาทิเช่น 
             </h4>
-            <ul class="ss-list-01 style-03 mt-5" data-aos="fade-up" data-aos-delay="150">
+            <ul class="ss-list-01 style-05 mt-5" data-aos="fade-up" data-aos-delay="150">
               <li class="color-black fw-400 mt-2">Free Hero Banner Design 1 Year</li>
               <li class="color-black fw-400 mt-2">SEO Maintenance</li>
               <li class="color-black fw-400 mt-2">Security Monthly Testing</li>

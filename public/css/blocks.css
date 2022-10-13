@@ -162,6 +162,7 @@
 .section-01 > .pattern.style-21 > .wrapper img{display:block; width:12rem; height:auto;}
 
 .section-01 > .pattern.style-22{position:absolute; top:13rem; left:1rem; right:0; z-index:1;}
+.section-01 > .pattern.style-22.size-02{top:30rem;}
 .section-01 > .pattern.style-22 > .wrapper img{display:block; width:5rem; height:auto;}
 
 .section-01 > .pattern.style-23{position:absolute; top:-9rem; left:auto; right:-4rem; z-index:1;}
@@ -198,10 +199,13 @@
 .section-01 > .pattern.style-33 > .wrapper img{display:block; width:50rem; height:auto;}
 
 .section-01 > .pattern.style-34{position:absolute; bottom:1rem; left:auto; right:-30rem; z-index:1;}
+.section-01 > .pattern.style-34.size-02{bottom:5rem;}
 .section-01 > .pattern.style-34 > .wrapper img{display:block; width:50rem; height:auto;}
 
 .section-01 > .pattern.style-35{position:absolute; bottom:0; left:auto; right:.5rem; z-index:1;}
+.section-01 > .pattern.style-35.size-02{bottom:-4rem; right:1.5rem;}
 .section-01 > .pattern.style-35 > .wrapper img{display:block; width:10rem; height:auto;}
+.section-01 > .pattern.style-35.size-02 > .wrapper img{width:7rem;}
 
 .section-01 > .pattern.style-36{position:absolute; bottom:-1rem; left:7rem; right:auto; z-index:1;}
 .section-01 > .pattern.style-36 > .wrapper img{display:block; width:15rem; height:auto;}
@@ -515,6 +519,27 @@
   position:relative; width:100%; max-width:24rem; margin:0 auto;
 }
 .section-12 .blocks > .block > .text-container.md{max-width:30rem;}
+
+.section-12 .blocks > .block > .pattern.style-01{position:absolute; top:-2rem; left:-13rem; right:auto; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-01 > .wrapper img{display:block; width:15rem; height:auto;}
+
+.section-12 .blocks > .block > .pattern.style-02{position:absolute; top:-16rem; left:-12.5rem; right:auto; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-02 > .wrapper img{display:block; width:15rem; height:auto;}
+
+.section-12 .blocks > .block > .pattern.style-03{position:absolute; top:5rem; left:auto; right:1rem; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-03 > .wrapper img{display:block; width:5rem; height:auto;}
+
+.section-12 .blocks > .block > .pattern.style-04{position:absolute; bottom:0; left:auto; right:-10rem; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-04 > .wrapper img{display:block; width:14rem; height:auto;}
+
+.section-12 .blocks > .block > .pattern.style-05{position:absolute; bottom:1.5rem; left:auto; right:2rem; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-05 > .wrapper img{display:block; width:8rem; height:auto;}
+
+.section-12 .blocks > .block > .pattern.style-06{position:absolute; bottom:-2rem; left:auto; right:1.5rem; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-06 > .wrapper img{display:block; width:20rem; height:auto;}
+
+.section-12 .blocks > .block > .pattern.style-07{position:absolute; bottom:-4rem; left:auto; right:-16rem; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-07 > .wrapper img{display:block; width:50rem; height:auto;}
 @media screen and (max-width:1199.98px){
   .section-12 .blocks{min-height:29rem;}
   .section-12 .blocks > .block{padding-top:4.5rem; padding-bottom:4.5rem;}
@@ -522,6 +547,7 @@
 @media screen and (max-width:991.98px){
   .section-12 .blocks{min-height:26rem;}
   .section-12 .blocks > .block{padding-top:4rem; padding-bottom:4rem;}
+  .section-12 .blocks > .block > .pattern{display:none;}
 }
 @media screen and (max-width:767.98px){
   .section-12 .text-container{max-width:100%;}

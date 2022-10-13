@@ -449,7 +449,7 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card:hover .hover-filter-02{opacity:1;}
 
 /* Special Card 03 */
-.ss-card-03{position:relative;}
+.ss-card-03{position:relative; overflow:hidden;}
 .ss-card-03:hover .ss-img > .img-bg{filter:grayscale(100%);}
 .ss-card-03 .text-container{position:absolute; bottom:0; padding:1rem;}
 .ss-card-03 .text-container .title{-webkit-line-clamp:2;}
@@ -496,7 +496,7 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-04 .text-container .title{color:#ffffff;}
 
 /* Special Card 05 */
-.ss-card-05{display:block; position:relative;}
+.ss-card-05{display:block; position:relative; overflow:hidden;}
 .ss-card-05:hover .ss-img > .img-bg{filter:grayscale(100%);}
 .ss-card-05 .text-container{position:absolute; bottom:0; padding:1rem;}
 .ss-card-05 .text-container .title{-webkit-line-clamp:2;}
@@ -872,6 +872,8 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-list-01.style-03 li:before{background-image:url('../img/icon/correct-03.png');}
 .ss-list-01.style-04 li:before{border-radius:0;}
 .ss-list-01.style-04 li:before{background-image:url('../img/icon/correct-04.png');}
+.ss-list-01.style-05 li:before{background-image:url('../img/icon/correct-05.png');}
+.ss-list-01.style-06 li:before{background-image:url('../img/icon/correct-06.png');}
 
 
 /* Special Tags */
@@ -1053,6 +1055,7 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .border-right-4{border-right:4px solid transparent!important;}
 
 .bradius-round{border-radius:.375rem!important;}
+.bradius-round-02{border-radius:.75rem!important;}
 
 .no-bradius{border-radius:0!important;}
 .no-padding{padding:0!important;}

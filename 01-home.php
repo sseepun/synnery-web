@@ -497,8 +497,12 @@
     </div>
   </section>
 
-  <section data-section="13" class="section-03 section-padding">
-    <div class="img-bg" style="background-image:url('public/img/bg/35.jpg');"></div>  
+  <section data-section="13" class="section-03 section-padding bg-05">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero">
+      </div>
+    </div>
     <div class="container">
       <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         Our Clients
