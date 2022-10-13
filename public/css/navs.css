@@ -145,12 +145,12 @@ nav.topnav .topnav-dropdown{
   position:absolute; left:0; width:100%; height:0; opacity:1; z-index:96;
   overflow:hidden; background:#000000; color:#ffffff; pointer-events:none;
   clip-path:polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0 100%);
-  transition:opacity .3s, height .3s, clip-path 1s;
+  transition:opacity ease-in-out .45s, height ease-in-out .45s, clip-path 1s;
 }
 nav.topnav .topnav-dropdown.active{
   opacity:1; pointer-events:auto; height:72vh;
   clip-path:polygon(0 0, 100% 0, 100% 59vh, 50% 100%, 0 59vh);
-  transition:opacity .3s, height .3s, clip-path 3s;
+  transition:opacity ease-in-out .45s, height ease-in-out .45s, clip-path 3s;
 }
 nav.topnav .topnav-dropdown > .scroll-wrapper{
   position:relative; width:100%; height:100%; max-height:100%; overflow-x:hidden; overflow-y:auto;
@@ -392,3 +392,38 @@ nav.accessibility .btn-a.btn-a-toggle .hint{background:#a8a8a8;}
   nav.accessibility .btn-a.btn-up{position:absolute; bottom:100%; right:0;}
   nav.accessibility .btn-a.btn-down{position:absolute; top:100%; right:0;}
 }
+
+
+/* Global Search Container */
+.global-search-container{
+  display:block; position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:98;
+  opacity:1; pointer-events:none; background:#000000; overflow:hidden;
+  clip-path:polygon(0 0,0 -20rem,100% 0,100% 0); transition:clip-path ease-in-out .6s;
+}
+.global-search-container.active{
+  opacity:1; pointer-events:all;
+  clip-path:polygon(0 0,0 calc(100vh - 15rem),100% calc(100vh - 11rem),100% 0);
+}
+.global-search-container > .wrapper{
+  position:relative; width:100%; height:100%; padding:5rem 1rem 1rem 1rem;;
+}
+.global-search-container .hamburger{position:absolute; top:2rem; right:2rem;}
+.global-search-container .hamburger > *{background:#ffffff;}
+.global-search-container form{width:100%; max-width:600px; margin:0 auto; position:relative;}
+.global-search-container .input-container{position:relative;}
+.global-search-container input[type=text]{
+  background:transparent; border:0!important; border-bottom:2px solid #aaaaaa!important;
+  border-radius:0!important; width:100%; font-size:2rem; padding:.25rem 0; color:#ffffff;
+  margin:0; box-shadow:none; transition:border-color .3s;
+}
+.global-search-container button{
+  position:absolute; top:0; bottom:0; right:0; width:3.5rem; background:transparent;
+  box-shadow:none; outline:none; border:0; font-size:1.75rem; padding:0; text-align:center;
+  cursor:pointer; transition:color .3s;
+}
+
+.global-search-container + .global-search-filter{
+  display:block; position:fixed; top:0; left:0; width:100%; height:100vh; z-index:97;
+  background:#000000; opacity:0; pointer-events:none; cursor:pointer; transition:opacity .5s;
+}
+.global-search-container.active + .global-search-filter{opacity:.7; pointer-events:all;}

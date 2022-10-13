@@ -54,6 +54,43 @@ $(function(){ 'use strict';
     }
 
 
+    // Global Search Container
+    var globalSearchContainer = $('.global-search-container'),
+        globalSearchToggles = $('.global-search-toggle');
+    if(globalSearchContainer.length && globalSearchToggles.length){
+        if(globalSearchContainer.hasClass('use-gsap')){
+            var globalSearchTl =  new TimelineMax({paused: true})
+                .from('.global-search-container .input-container', .45, {
+                    opacity: 0, y: 30, ease: Power3.easeInOut
+                }, '+=.6')
+                .from('.global-search-container .hamburger', .45, {
+                    opacity: 0, y: 30, ease: Power3.easeInOut
+                }, '-=.3')
+                .reverse();
+            $('.global-search-toggle').click(function(e){
+                e.preventDefault();
+                globalSearchTl.reversed( !globalSearchTl.reversed() );
+                globalSearchContainer.toggleClass('active');
+                if(globalSearchContainer.hasClass('active')){
+                    globalSearchContainer.find('input[type=text]').focus();
+                }
+            });
+        }else{
+            globalSearchToggles.click(function(e){
+                e.preventDefault();
+                globalSearchToggles.toggleClass('active');
+                globalSearchContainer.toggleClass('active');
+                if(globalSearchContainer.hasClass('active')){
+                    globalSearchContainer.find('input[type=text]').focus();
+                    $('html, body').addClass('global-search-opened');
+                }else{
+                    $('html, body').removeClass('global-search-opened');
+                }
+            });
+        }
+    }
+
+
     // Section Anchors
     var sectionAnchors = [];
     function calculateSectionAnchors(){
@@ -209,6 +246,26 @@ $(function(){ 'use strict';
         });
     }
 
+
+    // Banner 02
+    var banner02 = $('.banner-02');
+    if(banner02.length){
+        banner02.find('.swiper-container').each(function(){
+            var self = $(this);
+            new Swiper(self, {
+                loop: true,
+                speed: 900,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                grabCursor: true,
+                navigation: {
+                    nextEl: self.find('.arrow.arrow-next'),
+                    prevEl: self.find('.arrow.arrow-prev'),
+                },
+            });
+        });
+    }
+
     
     // Section 02
     var section02= $('.section-02');
@@ -217,7 +274,7 @@ $(function(){ 'use strict';
             var self = $(this);
             new Swiper(self, {
                 loop: true,
-                speed: 800,
+                speed: 900,
                 slidesPerView: 6,
                 spaceBetween: 2,
                 grabCursor: true,
@@ -239,7 +296,7 @@ $(function(){ 'use strict';
             var self = $(this);
             new Swiper(self, {
                 loop: true,
-                speed: 800,
+                speed: 900,
                 slidesPerView: 3,
                 spaceBetween: 12,
                 grabCursor: true,
@@ -257,10 +314,9 @@ $(function(){ 'use strict';
     if(section07.length){
         section07.find('.content-container').each(function(){
             var self = $(this);
-            let slideNum = self.find('.swiper-slide').length;
-            let swiper08 = new Swiper(self.find('.swiper-container'), {
+            new Swiper(self.find('.swiper-container'), {
                 loop: true,
-                speed: 800,
+                speed: 900,
                 slidesPerView: 2,
                 spaceBetween: 0,
                 grabCursor: true,
@@ -289,7 +345,7 @@ $(function(){ 'use strict';
             let slideNum = self.find('.swiper-slide').length;
             let swiper08 = new Swiper(self.find('.swiper-container'), {
                 loop: true,
-                speed: 800,
+                speed: 900,
                 slidesPerView: 1,
                 spaceBetween: 0,
                 grabCursor: true,
@@ -317,7 +373,7 @@ $(function(){ 'use strict';
             new Swiper(self, {
                 direction: 'vertical',
                 loop: true,
-                speed: 800,
+                speed: 900,
                 slidesPerView: 1,
                 spaceBetween: 0,
                 grabCursor: true,
@@ -392,7 +448,7 @@ if(section10.length){
         var self = $(this);
         new Swiper(self, {
             loop: true,
-            speed: 800,
+            speed: 900,
             slidesPerView: 5,
             spaceBetween: -150,
             effect: 'coverflow', 

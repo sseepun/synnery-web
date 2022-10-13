@@ -50,9 +50,9 @@
             </div>
           </div>
           <div class="option-menu">
-            <a href="#">
+            <div class="global-search-toggle">
               <img src="public/img/icon/search.png" alt="Icon" />
-            </a>
+            </div>
           </div>
           <div class="option-menu show-tablet">
             <div class="sidenav-toggle">
@@ -114,3 +114,32 @@
   </div>
 </nav>
 <div class="topnav-spacer"></div>
+
+
+<!-- Sidenav -->
+<nav class="sidenav">
+  <div class="wrapper">
+    
+  </div>
+</nav>
+
+
+<!-- Global Search Container -->
+<div class="global-search-container use-gsap">
+  <div class="wrapper">
+    <div class="hamburger active global-search-toggle">
+      <div></div><div></div><div></div>
+    </div>
+    <div class="container">
+      <form action="./" method="GET">
+        <div class="input-container">
+          <input type="text" name="keywords" placeholder="ค้นหา..." required>
+          <button type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="global-search-filter global-search-toggle"></div>
