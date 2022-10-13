@@ -16,7 +16,9 @@
       </div>
     </div>
     <div class="container" style="z-index:2;">
-      <h3 class="color-01 text-center text-shadow fw-600" data-aos="fade-up" data-aos-delay="0">Contact Us</h3> 
+      <h3 class="color-01 text-center text-shadow fw-600" data-aos="fade-up" data-aos-delay="0">
+        Contact Us
+      </h3> 
       <div class="grids jc-center">
         <div class="grid xl-60 lg-2-3 sm-100 mt-0">
           <p class="xs fw-400 mt-3" data-aos="fade-up" data-aos-delay="150">
@@ -120,9 +122,9 @@
                   <img class="img" src="public/img/misc/captcha.jpg" alt="CAPTCHA" />
                 </div>
               </div>
-               <div class="btn-container" data-aos="fade-up" data-aos-delay="450">
+               <div class="btn-container">
                 <div class="ss-box xs">
-                  <div class="btn-customs" data-aos="fade-up" data-aos-delay="600">
+                  <div class="btn-customs">
                     <div class="btn-custom">
                       <button type="submit" class="btn btn-action btn-color-01 style-02">
                         <p class="fw-400">สมัคร</p>
@@ -139,7 +141,7 @@
             </form>
           </div>
         </div>
-        </div>
+      </div>
     </div>
   </section>
 
@@ -186,7 +188,7 @@
     </div>                   
   </section>
  
-  <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
+  <?php $withFooterInfo=true; $withFooterContact=false; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
 </body>
 </html>

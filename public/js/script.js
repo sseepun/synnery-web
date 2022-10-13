@@ -213,6 +213,17 @@ $(function(){ 'use strict';
     }
 
 
+    // Toggle Contact
+    $('.toggle-contact').click(function(e){
+        e.preventDefault();
+        $('.toggle-contact-section[data-contact="'+$(this).data('contact')+'"]')
+            .slideToggle(600);
+        setTimeout(function(){
+            calculateSectionAnchors();
+        }, 700);
+    });
+
+
     // Hex Container
     var hexContainer = $('.hex-container');
     if(hexContainer.length){
