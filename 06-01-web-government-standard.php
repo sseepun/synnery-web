@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -165,10 +165,12 @@
                 <div class="grid xl-20 lg-25 md-1-3 sm-20 xs-1-3 pt-3">
                   <div class="ss-card ss-card-10 style-02">
                     <div class="icon">
-                    <?php echo $svgs[$i] ?>
+                      <?php echo $svgs[$i] ?>
                     </div>
                     <div class="text-container mt-1">
-                      <p class="xs title text-center color-black fw-600"><?php echo $titles[$i] ?></p>
+                      <p class="xs title text-center color-black fw-600">
+                        <?php echo $titles[$i] ?>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -188,19 +190,125 @@
         </h3>
       </div>
     </div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
+            <div class="content style-01">
+              <div class="img-container">
+                <img class="img" src="public/img/content/screen.png" alt="Device" />
+              </div>
+              <div class="text-container">
+                <div class="wrapper">
+                  <div class="title-wrapper">
+                    <div class="logo">
+                      <img src="public/img/content/logo.png" alt="LOGO" />
+                    </div>
+                    <div class="text">
+                      <h3 class="color-white text-uppercase lh-2xs fw-200">
+                        Ministry of<br><span class="fw-600">Education</span>
+                      </h3>
+                      <p class="h4 color-white fw-500 lh-xs mt-2">
+                        กระทรวงศีกษาธิการ
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <a class="btn btn-action btn-color-03" href="#">
+                      <div class="icon-container color-01">
+                        <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
+                        <em class="ml-2 fa-solid fa-play"></em>
+                      </div>
+                    </a>
+                    <a class="btn btn-action btn-color-03 style-02" href="#">
+                      <div class="icon-container color-01">
+                        <span class="p color-white fw-300">เว็บไซต์สำนักงานปลัด</span>
+                        <em class="ml-2 fa-solid fa-play"></em>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ENERGY -->
+        <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="img-bg" style="background-image:url('public/img/bg/75.jpg');"></div>
+            <div class="content style-01 mt-17">
+             <div class="text-container">
+                <div class="wrapper">
+                  <div class="title-wrapper style-01">
+                    <div class="logo">
+                      <img src="public/img/logo/logo-01.png" alt="LOGO" />
+                    </div>
+                    <div class="text">
+                      <h3 class="color-white text-uppercase lh-2xs fw-200">
+                        Ministry of <span class="fw-600">ENERGY</span>
+                      </h3>
+                      <p class="h4 color-white fw-500 lh-xs mt-2">
+                        กระทรวงพลังงาน
+                      </p>
+                      <div class="btns">
+                        <a class="btn btn-action btn-color-03" href="#">
+                          <div class="icon-container color-01">
+                            <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
+                            <em class="ml-2 fa-solid fa-play"></em>
+                          </div>
+                        </a>
+                        <a class="btn btn-action btn-color-03 style-02" href="#">
+                          <div class="icon-container color-01">
+                            <span class="p color-white fw-300">เว็บไซต์สำนักงานปลัด</span>
+                            <em class="ml-2 fa-solid fa-play"></em>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="img-container style-01">
+                <img class="img" src="public/img/content/screen-10.png" alt="Device" />
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigator">
+        <div class="dots">
+          <div class="wrapper"></div>
+        </div>
+        <div class="arrows">
+          <div class="wrapper">
+            <div class="icon btn-icon-next">
+              <img class="img" src="public/img/icon/arrow-03.png" alt="Arrow" />
+            </div>
+            <div class="icon">
+              <img class="img" src="public/img/icon/line.png" alt="Arrow" />
+            </div>
+            <div class="icon btn-icon-next">
+              <img class="img" src="public/img/icon/arrow-04.png" alt="Arrow" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section data-section="1" data-aos="fade-in" data-aos-delay="0">
+  <!-- <section data-section="1" data-aos="fade-in" data-aos-delay="0">
    <?php for($i=0; $i<9; $i++){?>
       <img class="img" src="public/img/bg/web-showcase-0<?= ($i%9+1) ?>.jpg" alt="Banner" />
     <?php }?>  
-  </section>
+  </section> -->
 
-  <section data-section="1" data-aos="fade-in" data-aos-delay="0">
+  <!-- <section data-section="1" data-aos="fade-in" data-aos-delay="0">
    <?php for($i=0; $i<10; $i++){?>
       <img class="img" src="public/img/bg/web-showcase-1<?= ($i%10+0) ?>.jpg" alt="Banner" />
     <?php }?>  
-  </section>
+  </section> -->
 
   <section data-section="5" class="section-01 section-padding">
     <div class="pattern style-33">
