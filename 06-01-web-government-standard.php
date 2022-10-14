@@ -192,29 +192,30 @@
     </div>
     <div class="swiper-container">
       <div class="swiper-wrapper">
+
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
             <div class="content style-01">
-              <div class="img-container">
+              <div class="img-container animate-02" style="--delay:.45s;">
                 <img class="img" src="public/img/content/screen.png" alt="Device" />
               </div>
               <div class="text-container">
                 <div class="wrapper">
                   <div class="title-wrapper">
-                    <div class="logo">
+                    <div class="logo animate-01" style="--delay:.45s;">
                       <img src="public/img/content/logo.png" alt="LOGO" />
                     </div>
-                    <div class="text">
-                      <h3 class="color-white text-uppercase lh-2xs fw-200">
+                    <div class="text animate-01" style="--delay:.6s;">
+                      <h3 class="color-white text-uppercase lh-xs fw-200">
                         Ministry of<br><span class="fw-600">Education</span>
                       </h3>
-                      <p class="h4 color-white fw-500 lh-xs mt-2">
+                      <p class="h4 color-white fw-500 lh-2xs mt-2">
                         กระทรวงศีกษาธิการ
                       </p>
                     </div>
                   </div>
-                  <div class="btns">
+                  <div class="btns animate-01" style="--delay:.75s;">
                     <a class="btn btn-action btn-color-03" href="#">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
@@ -233,22 +234,23 @@
             </div>
           </div>
         </div>
+
         <!-- ENERGY -->
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/75.jpg');"></div>
-            <div class="content style-01 mt-17">
+            <div class="content style-03">
              <div class="text-container">
                 <div class="wrapper">
-                  <div class="title-wrapper style-01">
-                    <div class="logo">
+                  <div class="title-wrapper">
+                    <div class="logo animate-03" style="--delay:.45s;">
                       <img src="public/img/logo/logo-01.png" alt="LOGO" />
                     </div>
-                    <div class="text">
-                      <h3 class="color-white text-uppercase lh-2xs fw-200">
+                    <div class="text animate-03" style="--delay:.6s;">
+                      <h3 class="color-white text-uppercase lh-3xs fw-200">
                         Ministry of <span class="fw-600">ENERGY</span>
                       </h3>
-                      <p class="h4 color-white fw-500 lh-xs mt-2">
+                      <p class="h4 color-white fw-500 lh-2xs mt-2">
                         กระทรวงพลังงาน
                       </p>
                       <div class="btns">
@@ -269,13 +271,13 @@
                   </div>
                 </div>
               </div>
-              <div class="img-container style-01">
+              <div class="img-container animate-02" style="--delay:.45s;">
                 <img class="img" src="public/img/content/screen-10.png" alt="Device" />
               </div>
-             
             </div>
           </div>
         </div>
+
       </div>
       <div class="navigator">
         <div class="dots">
