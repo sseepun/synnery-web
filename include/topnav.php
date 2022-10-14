@@ -119,7 +119,39 @@
 <!-- Sidenav -->
 <nav class="sidenav">
   <div class="wrapper">
-    
+    <div class="inner-wrapper">
+      <div class="container pos-relative h-full">
+        <?php if(false){?>
+          <div class="btn-close sidenav-toggle">
+            <div class="hamburger">
+              <div></div><div></div><div></div>
+            </div>
+          </div>
+        <?php }?>
+        <div class="scroll-wrapper">
+          <div class="menu-container">
+            <div class="menu">
+              <a href="#">Home</a>
+            </div>
+            <div class="menu" data-dropdown="1">
+              <a href="#">About us</a>
+            </div>
+            <div class="menu" data-dropdown="2">
+              <a href="#">Our Services</a>
+            </div>
+            <div class="menu">
+              <a href="#">Our Works</a>
+            </div>
+            <div class="menu">
+              <a href="#">Our Clients</a>
+            </div>
+            <div class="menu">
+              <a href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
 
@@ -127,10 +159,12 @@
 <!-- Global Search Container -->
 <div class="global-search-container use-gsap">
   <div class="wrapper">
-    <div class="hamburger active global-search-toggle">
-      <div></div><div></div><div></div>
-    </div>
-    <div class="container">
+    <div class="container pos-relative">
+      <div class="btn-close">
+        <div class="hamburger active global-search-toggle">
+          <div></div><div></div><div></div>
+        </div>
+      </div>
       <form action="./" method="GET">
         <div class="input-container">
           <input type="text" name="keywords" placeholder="ค้นหา..." required>
