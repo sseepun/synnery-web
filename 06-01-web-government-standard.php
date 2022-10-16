@@ -512,7 +512,7 @@
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/82.jpg');"></div>
             <div class="content style-06">
-              <div class="img-container animate-02" style="--delay:.45s;">
+              <div class="img-container size-03 animate-02" style="--delay:.45s;">
                 <img class="img" src="public/img/content/screen-18.png" alt="Device" />
               </div>
               <div class="text-container">
@@ -654,7 +654,7 @@
                   </div>
                 </div>
               </div>
-              <div class="img-container animate-02" style="--delay:.45s;">
+              <div class="img-container size-04 animate-02" style="--delay:.45s;">
                 <img class="img" src="public/img/content/screen-21.png" alt="Device" />
               </div>
             </div>
