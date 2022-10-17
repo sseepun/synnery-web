@@ -167,7 +167,7 @@
                   <div class="wrapper">
                     <div class="title-wrapper">
                       <div class="logo">
-                        <img src="public/img/content/logo.png" alt="LOGO" />
+                        <img src="public/img/logo/logo-17.png" alt="LOGO" />
                       </div>
                       <div class="text">
                         <h3 class="color-white text-uppercase lh-2xs fw-200">
