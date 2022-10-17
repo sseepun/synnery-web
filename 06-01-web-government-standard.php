@@ -192,49 +192,6 @@
     </div>
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        
-        <!-- EDUCATION -->
-        <div class="swiper-slide">
-          <div class="wrapper">
-            <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
-            <div class="content style-01">
-              <div class="img-container animate-02" style="--delay:.45s;">
-                <img class="img" src="public/img/content/screen.png" alt="Device" />
-              </div>
-              <div class="text-container">
-                <div class="wrapper">
-                  <div class="title-wrapper">
-                    <div class="logo animate-01" style="--delay:.45s;">
-                      <img src="public/img/content/logo.png" alt="LOGO" />
-                    </div>
-                    <div class="text animate-01" style="--delay:.6s;">
-                      <h3 class="color-white text-uppercase lh-xs fw-200">
-                        Ministry of<br><span class="fw-600">Education</span>
-                      </h3>
-                      <p class="h4 color-white fw-500 lh-2xs mt-2">
-                        กระทรวงศีกษาธิการ
-                      </p>
-                    </div>
-                  </div>
-                  <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
-                      <div class="icon-container color-01">
-                        <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
-                        <em class="ml-2 fa-solid fa-play"></em>
-                      </div>
-                    </a>
-                    <a class="btn btn-action btn-color-03 style-02" href="#">
-                      <div class="icon-container color-01">
-                        <span class="p color-white fw-300">เว็บไซต์สำนักงานปลัด</span>
-                        <em class="ml-2 fa-solid fa-play"></em>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <!-- ENERGY -->
         <div class="swiper-slide">
@@ -278,6 +235,51 @@
             </div>
           </div>
         </div>
+     
+        <!-- EDUCATION -->
+        <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
+            <div class="content style-01">
+              <div class="img-container animate-02" style="--delay:.45s;">
+                <img class="img" src="public/img/content/screen.png" alt="Device" />
+              </div>
+              <div class="text-container">
+                <div class="wrapper">
+                  <div class="title-wrapper">
+                    <div class="logo animate-01" style="--delay:.45s;">
+                      <img src="public/img/logo/logo-17.png" alt="LOGO" />
+                    </div>
+                    <div class="text animate-01" style="--delay:.6s;">
+                      <h3 class="color-white text-uppercase lh-xs fw-200">
+                        Ministry of<br><span class="fw-600">Education</span>
+                      </h3>
+                      <p class="h4 color-white fw-500 lh-2xs mt-2">
+                        กระทรวงศีกษาธิการ
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btns animate-01" style="--delay:.75s;">
+                    <a class="btn btn-action btn-color-03" href="#">
+                      <div class="icon-container color-01">
+                        <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
+                        <em class="ml-2 fa-solid fa-play"></em>
+                      </div>
+                    </a>
+                    <a class="btn btn-action btn-color-03 style-02" href="#">
+                      <div class="icon-container color-01">
+                        <span class="p color-white fw-300">เว็บไซต์สำนักงานปลัด</span>
+                        <em class="ml-2 fa-solid fa-play"></em>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+   
 
         <!-- INDUSTRY -->
         <div class="swiper-slide">
@@ -396,8 +398,8 @@
           </div>
         </div>
 
-          <!-- HEALTH -->
-          <div class="swiper-slide">
+        <!-- HEALTH -->
+        <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/78.jpg');"></div>
             <div class="content style-05">
@@ -661,7 +663,7 @@
           </div>
         </div>
 
-         <!-- Public Works and Town & Country -->
+         <!-- Thai Health Promotion Foundation -->
          <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/85.jpg');"></div>
@@ -678,7 +680,7 @@
                     <div class="text animate-01" style="--delay:.6s;">
                       <h3 class="color-white text-uppercase lh-2xs fw-200">
                         Office of<span class="fw-600">
-                        thAI<br>Health Promotion<br>Foundation
+                        Thai<br>Health Promotion<br>Foundation
                         </span>
                       </h3>
                       <p class="h4 color-white fw-500 lh-2xs mt-2">
@@ -700,6 +702,234 @@
           </div>
         </div>
 
+        <!-- AUTHORITY OF THAILAND -->
+        <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="img-bg" style="background-image:url('public/img/bg/86.jpg');"></div>
+            <div class="content style-03">
+             <div class="text-container">
+                <div class="wrapper">
+                  <div class="title-wrapper">
+                    <div class="logo animate-03" style="--delay:.45s;">
+                      <img src="public/img/logo/logo-11.png" alt="LOGO" />
+                    </div>
+                    <div class="text animate-03" style="--delay:.6s;">
+                      <h3 class="color-white text-uppercase lh-3xs fw-200">
+                        Office of <span class="fw-600">Insurance Commission</span>
+                      </h3>
+                      <p class="h4 color-white fw-500 lh-2xs mt-2">
+                        สำนักงานคณะกรรมการกำกับและส่งเสริม<br>การประกอบธุรกิจประกันภัย (คปภ.)
+                      </p>
+                      <div class="btns">
+                        <a class="btn btn-action btn-color-03" href="#">
+                          <div class="icon-container color-01">
+                            <span class="p color-white fw-300">เว็บไซต์สำนักงาน</span>
+                            <em class="ml-2 fa-solid fa-play"></em>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="img-container size-02 animate-02" style="--delay:.45s;">
+                <img class="img" src="public/img/content/screen-23.png" alt="Device" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- INDUSTRY -->
+          <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="img-bg" style="background-image:url('public/img/bg/87.jpg');"></div>
+            <div class="content style-04">
+              <div class="img-container animate-02" style="--delay:.45s;">
+                <img class="img" src="public/img/content/screen-24.png" alt="Device" />
+              </div>
+              <div class="text-container">
+                <div class="wrapper">
+                  <div class="title-wrapper">
+                    <div class="logo animate-01" style="--delay:.45s;">
+                      <img src="public/img/logo/logo-12.png" alt="LOGO" />
+                    </div>
+                    <div class="text style-02 animate-01" style="--delay:.6s;">
+                      <h3 class="color-white text-uppercase lh-xs fw-200">
+                        INDUSTRIAL ESTATE<br><span class="fw-600">AUTHORITY OF THAILAND</span>
+                      </h3>
+                      <p class="h4 color-white fw-500 lh-2xs mt-2">
+                        การนิคมอุตสาหกรรมแห่งประเทศไทย
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btns animate-01" style="--delay:.75s;">
+                    <a class="btn btn-action btn-color-03" href="#">
+                      <div class="icon-container color-01">
+                        <span class="p color-white fw-300">เว็บไซต์องค์กร</span>
+                        <em class="ml-2 fa-solid fa-play"></em>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- APEC -->
+        <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="img-bg" style="background-image:url('public/img/bg/88.jpg');"></div>
+            <div class="content style-05">
+              <div class="text-container style-02 d-flex ai-center">
+                <div class="wrapper">
+                  <div class="title-wrapper">
+                    <div class="logo animate-03" style="--delay:.45s;">
+                      <img src="public/img/logo/logo-13.png" alt="LOGO" />
+                    </div>
+                    <div class="text animate-03" style="--delay:.6s;">
+                      <h3 class="color-white text-uppercase lh-xs fw-200">
+                        <span class="fw-600">APEC</span> 2020
+                      </h3>
+                      <p class="h4 color-white fw-500 lh-2xs mt-2">
+                        ความร่วมมือทางเศรษฐกิจ<br>ในเอเชียแปซิฟิก (เอเปค)
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btns animate-03" style="--delay:.75s;">
+                    <a class="btn btn-action btn-color-03" href="#">
+                      <div class="icon-container color-01">
+                        <span class="p color-white fw-300">เว็บไซต์หลัก</span>
+                        <em class="ml-2 fa-solid fa-play"></em>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="img-container size-04 animate-02" style="--delay:.45s;">
+                <img class="img" src="public/img/content/screen-25.png" alt="Device" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <!-- Eastern Economic Corridor -->
+        <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="img-bg" style="background-image:url('public/img/bg/89.jpg');"></div>
+            <div class="content style-06">
+              <div class="img-container size-04 animate-02" style="--delay:.45s;">
+                <img class="img" src="public/img/content/screen-demo.png" alt="Device" />
+              </div>
+              <div class="text-container style-03">
+                <div class="wrapper">
+                  <div class="title-wrapper">
+                    <div class="logo animate-01" style="--delay:.45s;">
+                      <img src="public/img/logo/logo-14.png" alt="LOGO" />
+                    </div>
+                    <div class="text animate-01" style="--delay:.6s;">
+                      <h3 class="color-white text-uppercase lh-2xs fw-200">
+                        Eastern<br>Economic<br>Corridor
+                      </h3>
+                      <p class="h4 color-white fw-500 lh-xs mt-2">
+                        สำนักงานคณะกรรมการ<br>นโยบายเขตพัฒนาพิเศษ<br>ภาคตะวันออก <span class="fw-200">(สกพอ.)</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btns animate-01" style="--delay:.75s;">
+                    <a class="btn btn-action btn-color-03" href="#">
+                      <div class="icon-container color-01">
+                        <span class="p color-white fw-300">เว็บไซต์สำนักงาน</span>
+                        <em class="ml-2 fa-solid fa-play"></em>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMEs Promotion -->
+        <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="img-bg" style="background-image:url('public/img/bg/90.jpg');"></div>
+            <div class="content style-05">
+              <div class="text-container style-02 d-flex ai-center">
+                <div class="wrapper">
+                  <div class="title-wrapper">
+                    <div class="logo animate-03" style="--delay:.45s;">
+                      <img src="public/img/logo/logo-15.png" alt="LOGO" />
+                    </div>
+                    <div class="text animate-03" style="--delay:.6s;">
+                      <h3 class="color-white text-uppercase lh-xs fw-200">
+                        The Office of
+                      </h3>
+                      <p class="h3 color-white fw-500 lh-2xs mt-2">
+                        SMES PROMOTION
+                      </p>
+                      <p class="h4 color-white">
+                        สำนักงานส่งเสริมวิสาหกิจ ขนาดกลางและขนาดย่อม
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btns animate-03" style="--delay:.75s;">
+                    <a class="btn btn-action btn-color-03" href="#">
+                      <div class="icon-container color-01">
+                        <span class="p color-white fw-300">เว็บไซต์หลัก</span>
+                        <em class="ml-2 fa-solid fa-play"></em>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="img-container size-04 animate-02" style="--delay:.45s;">
+                <img class="img" src="public/img/content/screen-27.png" alt="Device" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMEs Promotion -->
+        <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="img-bg" style="background-image:url('public/img/bg/91.jpg');"></div>
+            <div class="content style-05">
+              <div class="text-container style-02 d-flex ai-center">
+                <div class="wrapper">
+                  <div class="title-wrapper">
+                    <div class="logo animate-03" style="--delay:.45s;">
+                      <img src="public/img/logo/logo-16.png" alt="LOGO" />
+                    </div>
+                    <div class="text animate-03" style="--delay:.6s;">
+                      <h3 class="color-white text-uppercase lh-xs fw-200">
+                        The Metropolitan
+                      </h3>
+                      <p class="h3 color-white fw-500 lh-2xs mt-2">
+                        Electricity
+                      </p>
+                      <p class="h4 color-white">
+                        การไฟฟ้านครหลวง
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btns animate-03" style="--delay:.75s;">
+                    <a class="btn btn-action btn-color-03" href="#">
+                      <div class="icon-container color-01">
+                        <span class="p color-white fw-300">เว็บไซต์หลัก</span>
+                        <em class="ml-2 fa-solid fa-play"></em>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="img-container size-04 animate-02" style="--delay:.45s;">
+                <img class="img" src="public/img/content/screen-28.png" alt="Device" />
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
       <div class="navigator">
         <div class="dots">
