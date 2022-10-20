@@ -14,7 +14,12 @@
   </section>
 
   <?php 
-    $titles = ["วิเคราะห์", "ช่องทางการสือสาร", "สร้าง Content", "เพิ่มประสิทธิภาพ"]
+    $titles = ["วิเคราะห์", "ช่องทางการสือสาร", "สร้าง Content", "เพิ่มประสิทธิภาพ"];
+    $desc = [
+            "วิเคราะห์ เป้าหมาย, ปัญหา, กลุ่มเป้าหมาย เพื่อ<br>วางแผนกลยุทธ์", 
+            "กำหนดสื่อ และ ช่องทางที่<br>จะใช้ในการสื่อสาร", "สร้าง Content ให้โดดเด่น<br>น่าสนใจ และ สื่อสาร",
+            "นำข้อมูลมาวิเคราะห์ ปรับแต่ง  เพื่อเพิ่มประสิทธิภาพ ให้ได้ตามเป้าหมาย"
+            ];
   ?>
 
   <section data-section="2" class="section-01 section-padding">
@@ -42,8 +47,7 @@
                   <?php echo $titles[$i] ?>
                 </div>
                 <div class="desc p sm color-white fw-400">
-                  นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
-                  นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
+                  <?php echo $desc[$i] ?>
                 </div>
               </div>
               <div class="line-1"></div><div class="line-2"></div>
@@ -302,7 +306,7 @@
             <div class="p-1">
               <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
                 <div class="ss-img horizontal-03">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+                  <div class="img-bg" style="background-image:url('public/img/content/content-0<?= ($i%9+1) ?>.jpg');"></div>
                 </div>
                 <div class="hover-filter-01"></div>
                 <div class="card-icon">
@@ -325,9 +329,9 @@
             <?php for($i=0; $i<3; $i++){?>
               <div class="grid sm-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
                 <div class="p-1">
-                  <a class="ss-card ss-card-03 style-03" href="public/img/content/unsplash-0<?= ($i%6+3) ?>.jpg" data-fancybox="gallery">
+                  <a class="ss-card ss-card-03 style-03" href="public/img/content/content-1<?= ($i%3+3) ?>.jpg" data-fancybox="gallery">
                     <div class="ss-img">
-                      <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+                      <div class="img-bg" style="background-image:url('public/img/content/content-1<?= ($i%3+3) ?>.jpg')"></div>
                     </div>
                     <div class="hover-filter-01"></div>
                     <div class="icon">
@@ -755,7 +759,7 @@
           <div class="swiper-slide">
             <a class="ss-card ss-card-03" href="#">
               <div class="ss-img">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+7) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('public/img/content/6<?= ($i%3+6) ?>.jpg');"></div>
               </div>
               <div class="hover-filter-01"></div>
               <div class="icon">

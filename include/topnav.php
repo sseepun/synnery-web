@@ -75,7 +75,7 @@
                 <div class="d-grid">
                   <a href="#" class="ss-card">
                     <div class="ss-img no-hover">
-                      <div class="img-bg" style="background-image:url('public/img/content/topnav-01.jpg');"></div>
+                      <div class="img-bg" style="background-image:url('public/img/content/menu-service-0<?= ($i%8+1) ?>.jpg');"></div>
                     </div>
                     <div class="text-container">
                       <p class="sm fw-400 mt-3">
