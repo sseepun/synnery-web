@@ -160,8 +160,11 @@
           <div class="grids no-gap">
             <?php for($i=0; $i<6; $i++){?>
               <div class="grid lg-1-3 md-50 sm-1-3 xs-50 mt-0">
-                <div class="ss-img square">
-                  <div class="img-bg" style="background-image:url('public/img/content/3<?= ($i%6+3) ?>.jpg');"></div>
+                <div class="ss-card ss-card-37">
+                  <div class="ss-img square">
+                    <div class="img-bg inactive" style="background-image:url('public/img/content/3<?= ($i%6+3) ?>.jpg');"></div>
+                    <div class="img-bg active" style="background-image:url('public/img/content/08.png');"></div>
+                  </div>
                 </div>
               </div>
             <?php }?>     
@@ -173,7 +176,7 @@
       <?php for($i=0; $i<6; $i++){?>
         <div class="grid lg-1-6 md-25 sm-1-3 xs-50 mt-0">
           <div class="ss-img square">
-            <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+            <div class="img-bg" style="background-image:url('public/img/content/6<?= ($i%6+0) ?>.jpg');"></div>
           </div>
         </div>
       <?php }?>

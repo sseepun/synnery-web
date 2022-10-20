@@ -782,6 +782,13 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-36:hover .icon > img.inactive{opacity:0;}
 .ss-card-36:hover .icon > img.active{opacity:1;}
 
+/* Special Card 37 */
+.ss-card-37 .img-bg.inactive{opacity:1;}
+.ss-card-37 .img-bg.active{opacity:0;}
+
+.ss-card-37:hover .img-bg.inactive{opacity:0;}
+.ss-card-37:hover .img-bg.active{opacity:1;}
+
 
 /* Special Image */
 .ss-img{display:block; position:relative; width:100%; padding:60% 0 0 0; overflow:hidden;}

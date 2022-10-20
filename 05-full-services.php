@@ -13,6 +13,10 @@
     <img class="img" src="public/img/bg/07.jpg" alt="Banner" />
   </section>
 
+  <?php 
+    $titles = ["วิเคราะห์", "ช่องทางการสือสาร", "สร้าง Content", "เพิ่มประสิทธิภาพ"]
+  ?>
+
   <section data-section="2" class="section-01 section-padding">
     <div class="pattern style-32">
       <div class="wrapper" value=".5">
@@ -35,7 +39,7 @@
               <div class="hover-filter-01"></div>
               <div class="text-container">
                 <div class="title h5 color-01 lh-xs fw-500">
-                  ช่องทางการสื่อสาร
+                  <?php echo $titles[$i] ?>
                 </div>
                 <div class="desc p sm color-white fw-400">
                   นำข้อมูลมาวิเคราะห์ ปรับแต่ง เพื่อเพิ่มประสิทธิภาพให้ได้ตามเป้าหมาย
