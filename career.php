@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -22,24 +22,28 @@
     <div class="container">
       <div class="ss-box xl">
         <div class="text-center color-01">
-          <h1 class="lh-2xs text-center text-shadow fw-600" data-aos="fade-up" data-aos-delay="0">
-            Career
-          </h1>
-          <p class="h6 text-center color-01 fw-600 mt-1" data-aos="fade-up" data-aos-delay="150">
-            บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด
-          </p>
-          <p class="h5 color-black fw-400" data-aos="fade-up" data-aos-delay="300">
-            เราเป็นบริษัทที่ปรึกษา
-          </p>
-          <p class="h3 fw-600" data-aos="fade-up" data-aos-delay="450">
-            “กลยุทธ์ด้านดิจิตัล สำหรับภาครัฐแบบครบวงจร”
-          </p>
-          <p class="color-black fw-400" data-aos="fade-up" data-aos-delay="600">
+          <div data-aos="fade-up" data-aos-delay="0">
+            <h1 class="lh-2xs text-center text-shadow fw-600">
+              Career
+            </h1>
+            <p class="h6 text-center color-01 fw-600 mt-1">
+              บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด
+            </p>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="150">
+            <p class="h5 color-black fw-400">
+              เราเป็นบริษัทที่ปรึกษา
+            </p>
+            <p class="h3 fw-600">
+              “กลยุทธ์ด้านดิจิตัล สำหรับภาครัฐแบบครบวงจร”
+            </p>
+          </div>
+          <p class="color-black fw-400" data-aos="fade-up" data-aos-delay="300">
             เรานำเสนอโซลูชั่นผ่านการให้คำปรึกษาด้านกลยุทธ์ทางดิจิทัลและเทคโนโลยี<br>
             ที่ช่วยให้หน่วยงานหรือองค์กรได้ผลลัพธ์ที่ดีขึ้น เพื่อรับกับแนวทางการเปลี่ยนแปลงที่เกิดขึ้น
           </p>
         </div>
-        <div class="grids jc-center mt-6 pt-2" data-aos="fade-up" data-aos-delay="0">
+        <div class="grids jc-center mt-6 pt-2" data-aos="fade-up" data-aos-delay="450">
           <?php for($i=0; $i<2; $i++){?>
             <div class="grid lg-50 md-50 sm-50 xs-100">
               <div class="p-1 bg-white box-shadow">

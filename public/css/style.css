@@ -652,7 +652,9 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-25{width:7.69%; cursor:pointer; transition:all .3s;}
 .ss-card-25 .wrapper > .image-container{display:flex; justify-content:center;}
 .ss-card-25 .wrapper > .image-container img{width:7rem; height:auto;}
-.ss-card-25 .wrapper > .image-container img.grayscale{filter:grayscale(100%);}
+.ss-card-25 .wrapper > .image-container img.grayscale{
+    filter:grayscale(100%); transition:filter .3s;
+}
 .ss-card-25:hover .wrapper > .image-container img.grayscale{filter:unset;}
 @media screen and (max-width:1991.98px){
     .ss-card-25{width:10%;}

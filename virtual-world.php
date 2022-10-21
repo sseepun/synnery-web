@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -19,7 +19,6 @@
       'Virtual Product 360', 'Metaverse', 'VR (Virtual Reality)', 'Mixed Reality'
     ]
   ?>
-
   <section data-section="2" class="section-01 section-padding bg-05">
     <div class="pattern style-32">
       <div class="wrapper" value=".5">

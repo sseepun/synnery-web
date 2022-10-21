@@ -207,7 +207,7 @@
   <div class="img-bg" style="background-image:url('public/img/bg/footer-02.jpg');"></div>
   <div class="container">
     <div class="top-wrapper">
-      <a class="logo pos-relative" style="z-index:2;" href="#">
+      <a class="logo pos-relative" style="z-index:2;" href="index.php">
         <img src="public/img/logo-white.png" alt="Logo" />
       </a>
       <div class="address">

@@ -206,7 +206,6 @@ $(function(){ 'use strict';
             tabs.click(function(e){
                 var target = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]'),
                     oldTargets = tabContents.filter('.active'),
-                    slideContainers = target.find('.slide-container'),
                     swiperContainers = target.find('.swiper-container');
                 if(target.length){
                     e.preventDefault();
@@ -219,6 +218,8 @@ $(function(){ 'use strict';
                     setTimeout(function(){
                         tabContents.removeClass('fade-in fade-out active');
                         target.addClass('active');
+                        AOS.refresh();
+                        calculateSectionAnchors();
                     }, 600);
                     
                     if(swiperContainers.length){
@@ -226,8 +227,6 @@ $(function(){ 'use strict';
                             $(this)[0].swiper.update();
                         });
                     }
-    
-                    AOS.refresh();
                 }
             });
         });

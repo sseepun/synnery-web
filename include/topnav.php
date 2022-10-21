@@ -3,7 +3,7 @@
   <div class="wrapper">
     <div class="container">
       <div class="logo-wrapper">
-        <a class="logo" href="/">
+        <a class="logo" href="index.php">
           <img src="public/img/logo.png" alt="Logo" />
         </a>
       </div>
@@ -31,22 +31,22 @@
         <div class="bottom-panel">
           <div class="menu-container hide-tablet">
             <div class="menu">
-              <a href="#">Home</a>
+              <a href="index.php">Home</a>
             </div>
-            <div class="menu" data-dropdown="1">
-              <a href="#">About us</a>
+            <div class="menu">
+              <a href="about.php">About us</a>
             </div>
             <div class="menu" data-dropdown="2">
-              <a href="#">Our Services</a>
+              <a href="services.php">Our Services</a>
             </div>
             <div class="menu">
-              <a href="#">Our Works</a>
+              <a href="career.php">Our Works</a>
             </div>
             <div class="menu">
-              <a href="#">Our Clients</a>
+              <a href="clients.php">Our Clients</a>
             </div>
             <div class="menu">
-              <a href="#">Contact</a>
+              <a href="contact.php">Contact</a>
             </div>
           </div>
           <div class="option-menu">
@@ -131,22 +131,22 @@
         <div class="scroll-wrapper">
           <div class="menu-container">
             <div class="menu">
-              <a href="#">Home</a>
+              <a href="index.php">Home</a>
             </div>
             <div class="menu" data-dropdown="1">
-              <a href="#">About us</a>
+              <a href="about.php">About us</a>
             </div>
             <div class="menu" data-dropdown="2">
-              <a href="#">Our Services</a>
+              <a href="services.php">Our Services</a>
             </div>
             <div class="menu">
-              <a href="#">Our Works</a>
+              <a href="career.php">Our Works</a>
             </div>
             <div class="menu">
-              <a href="#">Our Clients</a>
+              <a href="clients.php">Our Clients</a>
             </div>
             <div class="menu">
-              <a href="#">Contact</a>
+              <a href="contact.php">Contact</a>
             </div>
           </div>
         </div>
