@@ -305,6 +305,9 @@
 @media screen and (max-width:575.98px){
   .section-03 .clients > .client{width:calc(100% / 3);}
 }
+@media screen and (max-width:449.98px){
+  .section-03 .clients > .client{width:calc(100% / 2);}
+}
 
 
 /* Section 05 */
