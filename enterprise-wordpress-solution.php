@@ -406,7 +406,7 @@
                         <div class="p-1">
                           <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
                             <div class="ss-img horizontal-03">
-                              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+2) ?>.jpg');"></div>
+                              <div class="img-bg" style="background-image:url('public/img/content/content-2<?= ($i%6+0) ?>.jpg');"></div>
                             </div>
                             <div class="hover-filter-01"></div>
                             <div class="card-line-1"></div><div class="card-line-2"></div>
@@ -415,9 +415,9 @@
                       </div>
                       <div class="grid lg-1-6 xs-50 mt-0">
                         <div class="p-1 h-full">
-                          <a class="ss-card ss-card-03 style-02" href="public/img/content/unsplash-0<?= ($i%6+3) ?>.jpg" data-fancybox="gallery">
+                          <a class="ss-card ss-card-03 style-02" href="public/img/content/content-2<?= ($i%6+2) ?>.jpg" data-fancybox="gallery">
                             <div class="ss-img">
-                              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+                              <div class="img-bg" style="background-image:url('public/img/content/content-2<?= ($i%6+2) ?>.jpg')"></div>
                             </div>
                             <div class="hover-filter-01"></div>
                             <div class="line-1"></div><div class="line-2"></div>
@@ -428,9 +428,9 @@
                     <?php for($i=0; $i<2; $i++){?>
                       <div class="grid lg-1-6 xs-50 mt-0">
                         <div class="p-1 h-full">
-                          <a class="ss-card ss-card-03 style-02" href="public/img/content/unsplash-0<?= ($i%6+3) ?>.jpg" data-fancybox="gallery">
+                          <a class="ss-card ss-card-03 style-02" href="public/img/content/content-2<?= ($i%6+4) ?>.jpg" data-fancybox="gallery">
                             <div class="ss-img">
-                              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+                              <div class="img-bg" style="background-image:url('public/img/content/content-2<?= ($i%6+4) ?>.jpg')"></div>
                             </div>
                             <div class="hover-filter-01"></div>
                             <div class="line-1"></div><div class="line-2"></div>
@@ -443,7 +443,7 @@
                         <div class="p-1">
                           <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
                             <div class="ss-img horizontal-03">
-                              <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+2) ?>.jpg');"></div>
+                              <div class="img-bg" style="background-image:url('public/img/content/content-2<?= ($i%6+6) ?>.jpg');"></div>
                             </div>
                             <div class="hover-filter-01"></div>
                             <div class="card-line-1"></div><div class="card-line-2"></div>
