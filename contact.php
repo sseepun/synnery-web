@@ -127,12 +127,12 @@
                   <div class="btn-customs">
                     <div class="btn-custom">
                       <button type="submit" class="btn btn-action btn-color-01 style-02">
-                        <p class="fw-400">สมัคร</p>
+                        <p class="fw-400">ตกลง</p>
                       </button>
                     </div>
                     <div class="btn-custom">
                       <button type="submit" class="btn btn-action btn-color-02 style-02">
-                        <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
+                        <p class="fw-400">ยกเลิก</p>
                       </button>
                     </div>
                   </div>

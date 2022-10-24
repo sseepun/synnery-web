@@ -4,7 +4,10 @@
     <div class="container">
       <div class="logo-wrapper">
         <a class="logo" href="index.php">
-          <img src="public/img/logo.png" alt="Logo" />
+          <img src="public/img/logo-part.png" alt="Logo" />
+          <img class="part part-01" src="public/img/logo-part-01.png" alt="Logo Part" />
+          <img class="part part-02" src="public/img/logo-part-02.png" alt="Logo Part" />
+          <img class="part part-03" src="public/img/logo-part-02.png" alt="Logo Part" />
         </a>
       </div>
       <div class="inner-wrapper">

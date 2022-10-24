@@ -129,12 +129,12 @@
                     <div class="btn-customs">
                       <div class="btn-custom">
                         <button type="submit" class="btn btn-action btn-color-01 style-02">
-                          <p class="fw-400">สมัคร</p>
+                          <p class="fw-400">ตกลง</p>
                         </button>
                       </div>
                       <div class="btn-custom">
                         <button type="submit" class="btn btn-action btn-color-02 style-02">
-                          <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
+                          <p class="fw-400">ยกเลิก</p>
                         </button>
                       </div>
                     </div>
@@ -207,9 +207,14 @@
   <div class="img-bg" style="background-image:url('public/img/bg/footer-02.jpg');"></div>
   <div class="container">
     <div class="top-wrapper">
-      <a class="logo pos-relative" style="z-index:2;" href="index.php">
-        <img src="public/img/logo-white.png" alt="Logo" />
-      </a>
+      <div class="logo-wrapper">
+        <a class="logo" href="index.php">
+          <img src="public/img/logo-white-part.png" alt="Logo" />
+          <img class="part part-01" src="public/img/logo-white-part-01.png" alt="Logo Part" />
+          <img class="part part-02" src="public/img/logo-part-02.png" alt="Logo Part" />
+          <img class="part part-03" src="public/img/logo-part-02.png" alt="Logo Part" />
+        </a>
+      </div>
       <div class="address">
         <p class="sm fw-500">บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>
         <p class="xs mt-1">1/1 ซอยรามคำแหง 12 แยก 2 แขวงหัวหมาก เขตบางกะปิ กทม. 10240</p>

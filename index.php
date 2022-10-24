@@ -122,20 +122,22 @@
     </div>
   </section>
 
-  <section data-section="3" class="section-01 size-02">
-    <video autoplay muted loop class="video-preview">
-      <source src="public/video/02.mp4" type="video/mp4">
-    </video>
-    <div class="container">
-      <div class="video-button mt-6" data-aos="fade-up" data-aos-delay="150">
-        <a id="video-container" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
-          class="video-play-button" data-fancybox>
-          <em class="fas fa-play"></em>
-        </a>
-        <p class="sm color-white text-center fw-300 mt-6 pt-4">Watch Video</p>  
-      </div> 
-    </div>        
-  </section>
+  <?php if(false){?>
+    <section data-section="3" class="section-01 size-02">
+      <video autoplay muted loop class="video-preview">
+        <source src="public/video/02.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <div class="video-button mt-6" data-aos="fade-up" data-aos-delay="150">
+          <a id="video-container" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
+            class="video-play-button" data-fancybox>
+            <em class="fas fa-play"></em>
+          </a>
+          <p class="sm color-white text-center fw-300 mt-6 pt-4">Watch Video</p>  
+        </div> 
+      </div>        
+    </section>
+  <?php }?>
 
   <section data-section="5" class="section-12">
     <div class="container">
@@ -403,8 +405,14 @@
               <div div class="card-line-2"></div>
               <div class="icon-container">
                 <div class="video-button">
-                  <a id="video-container" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
-                    class="video-play-button" data-fancybox>
+                  <a 
+                    class="video-play-button" data-fancybox 
+                    href="<?php
+                      if($i==0) echo 'https://www.youtube.com/watch?v=hzH1coqP4f8';
+                      else if($i==1) echo 'https://www.youtube.com/watch?v=-kaiHqu5Al4';
+                      else echo 'https://www.youtube.com/watch?v=LmJMRQNd1Xo';
+                    ?>" 
+                  >
                     <em class="fas fa-play"></em>
                   </a>
                 </div>
@@ -462,7 +470,9 @@
         </p>  
       </div>
       <div class="ss-box xl mt-6 pt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="300">
-        <img class="img" src="public/img/content/04.png" alt="Banner" />
+        <a href="https://www.youtube.com/watch?v=5La64n-_pe4" data-fancybox>
+          <img class="img" src="public/img/content/04.png" alt="Banner" />
+        </a>
       </div>
     </div>
   </section>
@@ -541,14 +551,14 @@
       </div>
     </div>
 
-    <?php 
-      $titles = [
-        "กระทรวงศึกษา", "กระทรวงพลังงาน", "กระทรวงอุตสาหกรรม", "กรมธนารักษณ์", "กรมโยธาธิการและผังเมือง", 
-        "มหาวิทยาลัยเกษตร", "กรมอนามัย", "ความร่วมมือทางเศรษฐกิจในเอเชียแปซิฟิก (เอเปค)", 
-        "ศูนย์วัฒนธรรมอาเซียน Asean Cultural Center","กรมการขนส่งทางบก"
-      ];
-    ?>
     <div class="clients pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="450">
+      <?php 
+        $titles = [
+          "กระทรวงศึกษา", "กระทรวงพลังงาน", "กระทรวงอุตสาหกรรม", "กรมธนารักษณ์", "กรมโยธาธิการและผังเมือง", 
+          "มหาวิทยาลัยเกษตร", "กรมอนามัย", "ความร่วมมือทางเศรษฐกิจในเอเชียแปซิฟิก (เอเปค)", 
+          "ศูนย์วัฒนธรรมอาเซียน Asean Cultural Center","กรมการขนส่งทางบก"
+        ];
+      ?>
       <?php for($i=0; $i<9; $i++){?>
         <div class="client">
           <div class="ss-card ss-card-26">
@@ -557,7 +567,7 @@
                 <img src="public/img/clients/client-0<?= ($i%9+1) ?>.png" alt="Client" />
               </div>
               <div class="text-container mt-4">
-                <p class="xs title">
+                <p class="xs title lh-sm">
                   <?php echo $titles[$i] ?>
                 </p>
               </div>
@@ -568,7 +578,7 @@
 
       <?php 
         $titles = [
-          "กรมการขนส่งทางบก", " สำนักงานคณะกรรมการกำกับกิจการพลังงาน", "GSSD Expo Thailand", 
+          "กรมการขนส่งทางบก", "สำนักงานคณะกรรมการกำกับกิจการพลังงาน", "GSSD Expo Thailand", 
           "สำนักงานรับรองมาตรฐานและประเมินคุณภาพการศึกษา", "สำนักงานกองทุนสนับสนุนการสร้างเสริมสุขภาพ", 
           "สำนักงานคณะกรรมการกำกับและส่งเสริมการประกอบธุรกิจประกันภัย","การนิคมอุตสาหกรรมแห่งประเทศไทย", 
           "กรมคุ้มครองสิทธิและเสรีภาพ", "นักงานคณะกรรมการนโยบายเขตพัฒนาพิเศษภาคตะวันออก","การไฟฟ้านครหลวง" 
@@ -582,7 +592,7 @@
                 <img src="public/img/clients/client-1<?= ($i%10+0) ?>.png" alt="Client" />
               </div>
               <div class="text-container mt-4">
-                <p class="xs title">
+                <p class="xs title lh-sm">
                   <?php echo $titles[$i] ?>
                 </p>
               </div>
@@ -606,7 +616,7 @@
                 <img src="public/img/clients/client-2<?= ($i%5+0) ?>.png" alt="Client" />
               </div>
               <div class="text-container mt-4">
-                <p class="xs title">
+                <p class="xs title lh-sm">
                   <?php echo $titles[$i] ?>
                 </p>
               </div>
