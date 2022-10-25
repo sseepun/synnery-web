@@ -190,9 +190,19 @@ $(function(){ 'use strict';
     $(window).scroll(function(){
         checkOnScroll( $(this).scrollTop() );
     });
+
+    // Check on Resize
+    var bodySize = 16;
+    function checkOnResize(sw) {
+        if(sw > 1400) bodySize = 16 + 2.5*Math.ceil((sw - 1400) / 200);
+        else bodySize = 16;
+        $('html, body').css('font-size', bodySize+'px');
+    }
+    checkOnResize( $(window).width() );
     $(window).resize(function(){
         calculateSectionAnchors();
         checkOnScroll( $(this).scrollTop() );
+        checkOnResize( $(this).width() );
     });
     
 

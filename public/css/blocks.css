@@ -312,7 +312,7 @@
 
 /* Section 05 */
 .section-05{  
-  position:relative; display:flex; align-items:center; 
+  position:relative; display:flex; align-items:center; overflow:hidden;
   background-attachment:fixed; background-position:center;
   background-repeat:no-repeat; background-size:cover;
 }
