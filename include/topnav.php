@@ -92,7 +92,7 @@
           </div>
 
           <?php
-              $menus = [
+              $clients = [
                 [
                   'bg' => 'public/img/content/menu-service-01.jpg',
                   'title' => 'Government Standard Website',
@@ -125,7 +125,7 @@
             <div class="d-grids">
               <?php foreach($menus as $d){?>
                 <div class="d-grid">
-                  <a href="#" class="ss-card">
+                  <a href="<?= $d['href'] ?>" class="ss-card">
                     <div class="ss-img no-hover">
                       <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                     </div>
