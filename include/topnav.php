@@ -92,7 +92,7 @@
           </div>
 
           <?php
-              $clients = [
+              $menus = [
                 [
                   'bg' => 'public/img/content/menu-service-01.jpg',
                   'title' => 'Government Standard Website',
@@ -123,7 +123,7 @@
           
           <div class="dropdown-wrapper" data-dropdown="2">
             <div class="d-grids">
-              <?php foreach($clients as $d){?>
+              <?php foreach($menus as $d){?>
                 <div class="d-grid">
                   <a href="#" class="ss-card">
                     <div class="ss-img no-hover">

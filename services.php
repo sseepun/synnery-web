@@ -37,7 +37,7 @@
           <div class="grid xl-25 lg-25 md-50 sm-50 xs-100">
             <a class="ss-card ss-card-05">
               <div class="ss-img vertical-01">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-1<?= ($i%4+6) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('public/img/content/content-3<?= ($i%4+6) ?>.jpg');"></div>
               </div>
               <div class="filter-02"></div>
               <div class="hover-filter-01"></div>
@@ -267,17 +267,89 @@
       <h3 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
         Content Marketing <span class="color-01">Strategy</span>
       </h3>
+
+      <?php
+        $marketings = [
+          [
+            'icon' => 'public/img/icon/marketing-20.png',
+            'title' => 'Facebook',
+          ],[
+            'icon' => 'public/img/icon/marketing-02.png',
+            'title' => 'YouTube',
+          ],[
+            'icon' => 'public/img/icon/marketing-24.png',
+            'title' => 'TikTok',
+          ],[
+            'icon' => 'public/img/icon/marketing-21.png',
+            'title' => 'Line',
+          ],[
+            'icon' => 'public/img/icon/marketing-22.png',
+            'title' => 'Twitter',
+          ],[
+            'icon' => 'public/img/icon/marketing-04.png',
+            'title' => 'Instagram',
+          ],[
+            'icon' => 'public/img/icon/marketing-05.png',
+            'title' => 'SoundCloud',
+          ],[
+            'icon' => 'public/img/icon/marketing-23.png',
+            'title' => 'Blockdit',
+          ],[
+            'icon' => 'public/img/icon/marketing-06.png',
+            'title' => 'Blogs Post',
+          ],[
+            'icon' => 'public/img/icon/marketing-07.png',
+            'title' => 'Video Blogs',
+          ],[
+            'icon' => 'public/img/icon/marketing-08.png',
+            'title' => 'Animation & Multimedia',
+          ],[
+            'icon' => 'public/img/icon/marketing-09.png',
+            'title' => 'On-site and live-action',
+          ],[
+            'icon' => 'public/img/icon/marketing-10.png',
+            'title' => 'Infographics',
+          ],[
+            'icon' => 'public/img/icon/marketing-11.png',
+            'title' => 'White papers',
+          ],[
+            'icon' => 'public/img/icon/marketing-12.png',
+            'title' => 'eBooks',
+          ],[
+            'icon' => 'public/img/icon/marketing-13.png',
+            'title' => 'Case Studies',
+          ],[
+            'icon' => 'public/img/icon/marketing-14.png',
+            'title' => 'Copywriter + SEO Score',
+          ],[
+            'icon' => 'public/img/icon/marketing-15.png',
+            'title' => 'Corporate VDO Productions',
+          ],[
+            'icon' => 'public/img/icon/marketing-16.png',
+            'title' => 'Viral VDO Production',
+          ],[
+            'icon' => 'public/img/icon/marketing-17.png',
+            'title' => 'SITCOM VDO Production',
+          ],[
+            'icon' => 'public/img/icon/marketing-18.png',
+            'title' => 'Cartoon',
+          ],[
+            'icon' => 'public/img/icon/marketing-19.png',
+            'title' => 'Banner Advertising',
+          ],       
+        ];
+      ?>
       <div class="ss-box xxl pt-6 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <div class="gallery-grids jc-center" >
-          <?php for($i=0; $i<22; $i++){?>
+          <?php foreach($marketings as $d){?>
             <div class="grid lg-1-6 md-20 sm-1-3 xs-50">
               <div class="ss-card ss-card-08">
                 <div class="icon">
-                  <em class="fa-solid fa-heart"></em>
+                  <img src="<?= $d['icon'] ?>" alt="Icon Inactive" />
                 </div>
                 <div class="text-container">
                   <p class="title xs fw-500 text-center">
-                    Animation & Multimedia
+                    <?= $d['title'] ?>
                   </p>
                 </div>
               </div>
@@ -561,7 +633,7 @@
       </div>
     </div>
     <div class="img-bg" style="background-image:url('public/img/bg/12.jpg');"></div> 
-    <div class="container">
+    <div class="container" style="z-index:2;">
       <div class="text-center" data-aos="fade-up" data-aos-delay="0">
         <h4 class="lg color-01 text-center fw-600">
           Channel & Media Planning
@@ -579,17 +651,64 @@
           ที่จะคอยคิด วางแผน และช่วยดูแล
         </p>
       </div>
+
+      <?php
+        $socials = [
+          [
+            'iconInactive' => 'public/img/icon/media-02.png',
+            'iconActive' => 'public/img/icon/media-02-active.png',
+            'title' => 'Google AdWords',
+          ],[
+            'iconInactive' => 'public/img/icon/media-03.png',
+            'iconActive' => 'public/img/icon/media-03-active.png',
+            'title' => 'Facebook Advertising',
+          ], [
+            'iconInactive' => 'public/img/icon/media-04.png',
+            'iconActive' => 'public/img/icon/media-04-active.png',
+            'title' => 'Facebook Remarketing',
+          ],[
+            'iconInactive' => 'public/img/icon/media-05.png',
+            'iconActive' => 'public/img/icon/media-05-active.png',
+            'title' => 'YouTube Advertising',
+          ],[
+            'iconInactive' => 'public/img/icon/media-06.png',
+            'iconActive' => 'public/img/icon/media-06-active.png',
+            'title' => 'Google Remarketing',
+          ],[
+            'iconInactive' => 'public/img/icon/media-07.png',
+            'iconActive' => 'public/img/icon/media-07-active.png',
+            'title' => 'Google Display Ads.',
+          ],[
+            'iconInactive' => 'public/img/icon/media-08.png',
+            'iconActive' => 'public/img/icon/media-08-active.png',
+            'title' => 'Line@ Advertising',
+          ],[
+            'iconInactive' => 'public/img/icon/media-09.png',
+            'iconActive' => 'public/img/icon/media-09-active.png',
+            'title' => 'LinkedIn Advertising',
+          ],[
+            'iconInactive' => 'public/img/icon/media-01.png',
+            'iconActive' => 'public/img/icon/media-01-active.png',
+            'title' => 'Twitter Advertising',
+          ],[
+            'iconInactive' => 'public/img/icon/media-10.png',
+            'iconActive' => 'public/img/icon/media-10-active.png',
+            'title' => 'Instagram Advertising',
+          ]
+          
+        ];
+      ?>
       <div class="ss-box xl mt-6" data-aos="fade-up" data-aos-delay="300">
         <div class="grids jc-center">
-          <?php for($i=0; $i<10; $i++){?>
+          <?php foreach($socials as $d){?>
             <div class="grid lg-20 md-20 sm-1-3 xs-50 pt-3">
               <a class="ss-card ss-card-10" href="#">
                 <div class="icon">
-                  <img class="inactive" src="public/img/icon/media-01.png" alt="Icon Inactive" />
-                  <img class="active" src="public/img/icon/media-01-active.png" alt="Icon Active" />
+                  <img class="inactive" src="<?= $d['iconInactive'] ?>" alt="Icon Inactive" />
+                  <img class="active" src="<?= $d['iconActive'] ?>" alt="Icon Active" />
                 </div>
                 <div class="text-container">
-                  <p class="xs title mt-2">Google AdWords</p>
+                  <p class="xs title mt-2"><?= $d['title'] ?></p>
                 </div>
               </a>
             </div>
