@@ -152,7 +152,7 @@
             </h3>
             <p class="color-03 fw-400 mt-2" data-aos="fade-up" data-aos-delay="150">
               บริการออกแบบและพัฒนาเว็บไซต์ภาครัฐ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA 
-              พร้อมระบบรักษาความปลอดภัย และโครงสร้าง และเครื่องมือที่ทันสมัย ใช้งานง่าย
+              พร้อมระบบรักษาความปลอดภัย และโครงสร้างเครื่องมือที่ทันสมัย ใช้งานง่าย
             </p>
             <div class="btns pt-4" data-aos="fade-up" data-aos-delay="300">
               <a class="btn btn-action round btn-color-01" href="web-gov-standard.php">
@@ -163,14 +163,56 @@
         </div>
         <div class="block-float right d-flex ai-end">
           <div class="grids no-gap">
-            <?php for($i=0; $i<6; $i++){?>
+            <?php
+              $clients = [
+                [
+                  'bg' => 'public/img/content/33.jpg',
+                  'icon' => 'public/img/clients/client-01.png',
+                  'title' => 'กระทรวงศึกษา',
+                  'bgColor' => 'rgba(11,62,31,.7)'
+                ], [
+                  'bg' => 'public/img/content/34.jpg',
+                  'icon' => 'public/img/clients/client-02.png',
+                  'title' => 'กระทรวงพลังงาน',
+                  'bgColor' => 'rgba(254,77,1,.7)'
+                ], [
+                  'bg' => 'public/img/content/35.jpg',
+                  'icon' => 'public/img/clients/client-03.png',
+                  'title' => 'กระทรวงอุตสาหกรรม',
+                  'bgColor' => 'rgba(136,0,156,.7)'
+                ], [
+                  'bg' => 'public/img/content/36.jpg',
+                  'icon' => 'public/img/clients/client-04.png',
+                  'title' => 'กรมธนารักษณ์',
+                  'bgColor' => 'rgba(204,165,33,.7)'
+                ], [
+                  'bg' => 'public/img/content/37.jpg',
+                  'icon' => 'public/img/clients/client-05.png',
+                  'title' => 'กรมโยธาธิการและผังเมือง',
+                  'bgColor' => 'rgba(52,14,21,.7)'
+                ], [
+                  'bg' => 'public/img/content/38.jpg',
+                  'icon' => 'public/img/clients/client-06.png',
+                  'title' => 'มหาวิทยาลัยเกษตร',
+                  'bgColor' => 'rgba(177,187,27,.7)'
+                ],
+              ];
+            ?>
+            <?php foreach($clients as $d){?>
               <div class="grid lg-1-3 md-50 sm-1-3 xs-50 mt-0">
-                <div class="ss-card ss-card-37">
-                  <div class="ss-img square">
-                    <div class="img-bg inactive" style="background-image:url('public/img/content/3<?= ($i%6+3) ?>.jpg');"></div>
-                    <div class="img-bg active" style="background-image:url('public/img/content/08.png');"></div>
+                <a class="ss-img square" href="#">
+                  <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+                  <div class="hover-container" style="background:<?= $d['bgColor'] ?>;">
+                    <div class="wrapper">
+                      <div class="icon">
+                        <img src="<?= $d['icon'] ?>" alt="Client" />
+                      </div>
+                      <p class="color-white text-center lh-sm mt-3">
+                        <?= $d['title'] ?>
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             <?php }?>     
           </div>
@@ -178,11 +220,56 @@
       </div>
     </div>
     <div class="grids no-gap">
-      <?php for($i=0; $i<6; $i++){?>
+      <?php
+        $clients = [
+          [
+            'bg' => 'public/img/content/60.jpg',
+            'icon' => 'public/img/clients/client-07.png',
+            'title' => 'กรมอนามัย',
+            'bgColor' => 'rgba(0,108,63,.7)'
+          ], [
+            'bg' => 'public/img/content/61.jpg',
+            'icon' => 'public/img/clients/client-08.png',
+            'title' => 'ความร่วมมือทางเศรษฐกิจ<br>ในเอเชียแปซิฟิก (เอเปค)',
+            'bgColor' => 'rgba(43,48,125,.7)'
+          ], [
+            'bg' => 'public/img/content/62.jpg',
+            'icon' => 'public/img/clients/client-09.png',
+            'title' => 'ศูนย์วัฒนธรรมอาเซียน<br>Asean Cultural Center',
+            'bgColor' => 'rgba(38,15,71,.7)'
+          ], [
+            'bg' => 'public/img/content/63.jpg',
+            'icon' => 'public/img/clients/client-10.png',
+            'title' => 'กรมการขนส่งทางบก',
+            'bgColor' => 'rgba(102,66,132,.7)'
+          ], [
+            'bg' => 'public/img/content/64.jpg',
+            'icon' => 'public/img/clients/client-11.png',
+            'title' => 'สำนักงานคณะกรรมการ<br>กำกับกิจการพลังงาน',
+            'bgColor' => 'rgba(243,119,54,.7)'
+          ], [
+            'bg' => 'public/img/content/65.jpg',
+            'icon' => 'public/img/clients/client-12.png',
+            'title' => 'GSSD Expo Thailand',
+            'bgColor' => 'rgba(214,46,26,.7)'
+          ], 
+        ];
+      ?>
+      <?php foreach($clients as $d){?>
         <div class="grid lg-1-6 md-25 sm-1-3 xs-50 mt-0">
-          <div class="ss-img square">
-            <div class="img-bg" style="background-image:url('public/img/content/6<?= ($i%6+0) ?>.jpg');"></div>
-          </div>
+          <a class="ss-img square" href="#">
+            <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+            <div class="hover-container" style="background:<?= $d['bgColor'] ?>;">
+              <div class="wrapper">
+                <div class="icon">
+                  <img src="<?= $d['icon'] ?>" alt="Client" />
+                </div>
+                <p class="color-white text-center lh-sm mt-3">
+                  <?= $d['title'] ?>
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       <?php }?>
     </div>
