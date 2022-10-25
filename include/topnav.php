@@ -90,18 +90,48 @@
               <?php }?>
             </div>
           </div>
+
+          <?php
+              $clients = [
+                [
+                  'bg' => 'public/img/content/menu-service-01.jpg',
+                  'title' => 'Government Standard Website',
+                ], [
+                  'bg' => 'public/img/content/menu-service-02.jpg',
+                  'title' => 'Unlimited Microsite for Government',
+                ], [
+                  'bg' => 'public/img/content/menu-service-03.jpg',
+                  'title' => 'Enterprise Wordpress Solutions',
+                ], [
+                  'bg' => 'public/img/content/menu-service-04.jpg',
+                  'title' => 'Network Architecture/ DevSecOps',
+                ], [
+                  'bg' => 'public/img/content/menu-service-05.jpg',
+                  'title' => 'Full Services Digital Marketing',
+                ], [
+                  'bg' => 'public/img/content/menu-service-06.jpg',
+                  'title' => 'AR,VR/3D Virtual Tour, Metaverse',
+                ],[
+                  'bg' => 'public/img/content/menu-service-07.jpg',
+                  'title' => 'Live & Virtual Exhibition',
+                ],[
+                  'bg' => 'public/img/content/menu-service-08.jpg',
+                  'title' => 'E-Office / ERP for Government',
+                ],
+              ];
+            ?>
           
           <div class="dropdown-wrapper" data-dropdown="2">
             <div class="d-grids">
-              <?php for($i=0; $i<12; $i++){?>
+              <?php foreach($clients as $d){?>
                 <div class="d-grid">
                   <a href="#" class="ss-card">
                     <div class="ss-img no-hover">
-                      <div class="img-bg" style="background-image:url('public/img/content/topnav-01.jpg');"></div>
+                      <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                     </div>
                     <div class="text-container">
                       <p class="sm fw-400 mt-3">
-                        Web Design / Development
+                        <?= $d['title'] ?>
                       </p>
                     </div>
                   </a>

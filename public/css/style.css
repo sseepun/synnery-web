@@ -383,9 +383,11 @@ fieldset{padding:0; margin:0; border:0;}
     display:block; width:auto; max-width:100%; height:auto; max-height:100%;
 }
 
-.ss-card .line-1, .ss-card .line-2{pointer-events:none;}
+.ss-card .line-1, .ss-card .line-2, .ss-card .line-3{pointer-events:none;}
 .ss-card .line-1::before, .ss-card .line-1::after,
-.ss-card .line-2::before, .ss-card .line-2::after{
+.ss-card .line-2::before, .ss-card .line-2::after,
+.ss-card .line-3::before, .ss-card .line-3::after,
+.ss-card .line-4::before, .ss-card .line-4::after{
     content:''; position:absolute; background:#ec2c23; z-index:1;
 }
 .ss-card .line-1::before, .ss-card .line-1::after{
@@ -398,6 +400,31 @@ fieldset{padding:0; margin:0; border:0;}
 }
 .ss-card .line-2::before{left:0;} .ss-card .line-2::after{right:0;}
 .ss-card:hover .line-2::before, .ss-card:hover .line-2::after{top:0; height:100%;}
+
+.ss-card .line-3::before{
+    left:0; height:3px; width:0; transition:left .5s, width .5s;
+}
+.ss-card .line-3::after{
+    right:0; height:3px; width:0; transition:right .5s, width .5s;
+}
+.ss-card .line-3::before{top:0;} 
+.ss-card .line-3::after{bottom:0;}
+
+.ss-card:hover .line-3::before, 
+.ss-card:hover .line-3::after{width:100%;}
+
+.ss-card .line-4::before{
+    bottom:0; width:3px; height:0; transition:top .5s, height .5s;
+}
+.ss-card .line-4::after{
+    top:0; width:3px; height:0; transition:top .5s, height .5s;
+}
+
+.ss-card .line-4::before{left:0;}
+.ss-card .line-4::after{right:0;}
+
+.ss-card:hover .line-4::after{top:0; height:100%;}
+.ss-card:hover .line-4::before{bottom:0; height:100%;}
 
 .ss-card .card-line-1::before{width:.125rem; height:1.875rem; left:1rem; top:1rem;}
 .ss-card .card-line-1::after{width:1.875rem; height:.125rem; left:1rem; top:1rem;}
@@ -699,7 +726,7 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-27 .overlay{
     position:absolute; top:0; left:0; right:0; padding:100% 0 0 0; border-radius:50%;
     background:#ec2c23; opacity:0; transform:scale(0);
-    transition:transform 1s ease-out, opacity .3s;
+    transition:transform 2s ease-out, opacity .3s;
 }
 .ss-card-27:hover .overlay{transform:scale(4); opacity:1;}
 .ss-card-27 > .wrapper{padding:1rem;}

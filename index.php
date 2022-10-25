@@ -114,6 +114,7 @@
                     </div>
                   </div>
                 </div>
+                <div class="line-3"></div><div class="line-4"></div>
               </a>
             </div>
           <?php }?>
