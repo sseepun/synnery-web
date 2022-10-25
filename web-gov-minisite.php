@@ -439,7 +439,7 @@
           <div class="grid lg-1-3 md-50 sm-50 xs-100 pt-6">
             <a class="ss-card ss-card-03" href="#">
               <div class="ss-img">
-                <div class="img-bg" style="background-image:url('public/img/content/chart-0<?= ($i%3+1) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('public/img/content/content-4<?= ($i%6+0) ?>.jpg');"></div>
               </div>
               <div class="icon">
                 <em class="fa-solid fa-plus"></em>
