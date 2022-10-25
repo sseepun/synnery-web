@@ -96,7 +96,6 @@
           <?php foreach($titles as $i=>$d){?>
             <div class="grid lg-25 md-50 sm-50 xs-100">
               <a class="ss-card ss-card-27" href="<?= $d['url'] ?>">
-                <div class="overlay"></div>
                 <div class="wrapper">
                   <div class="icon mt-1">
                     <img class="inactive" src="public/img/icon/service-0<?= ($i%7+1) ?>.png" alt="Icon Inactive" />
@@ -326,7 +325,7 @@
       </p>
       <div class="hex-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="300">
         <?php for($i=0; $i<10; $i++){?>
-          <div class="hex-flip">
+          <a class="hex-flip" href="erp-for-government.php">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
@@ -342,7 +341,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         <?php }?>
 
         <?php
@@ -352,9 +351,8 @@
             'JIGSAW<br>HRD', 'JIGSAW<br>Budgeting'
           ];
         ?>
-
         <?php for($i=0; $i<10; $i++){?>
-          <div class="hex-flip">
+          <a class="hex-flip" href="erp-for-government.php">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
@@ -370,7 +368,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         <?php }?>
 
         <?php
@@ -378,9 +376,8 @@
             'JIGSAW<br>E-Form', 'JIGSAW<br>BI'
           ];
         ?>
-
         <?php for($i=0; $i<2; $i++){?>
-          <div class="hex-flip">
+          <a class="hex-flip" href="erp-for-government.php">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
@@ -396,7 +393,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         <?php }?>
       </div>   
     </div>

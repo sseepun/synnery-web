@@ -725,14 +725,10 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-26 .text-container .title{text-align:center; color:#ffffff;}
 
 /* Special Card 27 */
-.ss-card-27{border:1px solid #ec2c23; background:#ffffff; transition:all .3s; overflow: hidden;}
-.ss-card-27 .overlay{
-    position:absolute; top:0; left:0; right:0; padding:100% 0 0 0; border-radius:50%;
-    background:#ec2c23; opacity:0; transform:scale(0);
-    transition:transform 2s ease-out, opacity .3s;
-}
-.ss-card-27:hover .overlay{transform:scale(4); opacity:1;}
+.ss-card-27{border:1px solid #ec2c23; background:#ffffff; transition:all .3s; overflow: hidden; }
+.ss-card-27:hover{background:#ec2c23!important; transition-delay:.3s;}
 .ss-card-27 > .wrapper{padding:1rem;}
+.ss-card-27:hover > .wrapper{padding:1rem; transition-delay:.3s;}
 .ss-card-27 .icon{
     position:relative; width:4rem; height:4rem;
     display:flex; justify-content:flex-start; align-items:center;
