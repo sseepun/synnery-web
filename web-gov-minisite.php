@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="container">
-      <div class="ss-box xl">
+      <div class="ss-box xl pos-relative" style="z-index:2;">
         <div class="text-center color-01">
           <h3 class="color-black fw-600 lh-2xs" data-aos="fade-up" data-aos-delay="0">
             Unlimited

@@ -976,7 +976,7 @@
       </div>
     </div>
     <div class="img-bg" style="background-image:url('public/img/bg/09.jpg');"></div> 
-    <div class="container">
+    <div class="container" style="z-index:2;">
       <h3 class="text-center color-black fw-200" data-aos="fade-up" data-aos-delay="0">
         พร้อมรองรับ<span class="color-01 fw-600">มาตรฐานต่างๆ</span>
       </h3>  
