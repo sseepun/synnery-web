@@ -396,6 +396,25 @@ $(function(){ 'use strict';
         });
     }
 
+    // Section 12
+    var section12= $('.section-12');
+    if(section12.length){
+        section12.find('.content-container').each(function(){
+            var self = $(this);
+            new Swiper(self.find('.swiper-container'), {
+                loop: true,
+                speed: 900,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                grabCursor: true,
+                navigation: {
+                    nextEl: self.find('.arrow-prev'),
+                    prevEl: self.find('.arrow-next'),
+                },
+            });
+        });
+    }
+
     // Section 13
     var section13 = $('.section-13');
     if(section13.length){
@@ -422,7 +441,6 @@ $(function(){ 'use strict';
             });
         });
     }
-
 
     // Page Loader
     let pageLoader = $('.page-loader');

@@ -84,7 +84,7 @@
         <div class="grid xl-25 lg-1-3 md-50 sm-50 xs-100">
           <a class="ss-card ss-card-05 bradius-round-02">
             <div class="ss-img vertical-01">
-              <div class="img-bg" style="background-image:url('public/img/content/unsplash-08.jpg');"></div>
+              <div class="img-bg" style="background-image:url('public/img/content/content-52.jpg');"></div>
             </div>
             <div class="filter-03"></div>
             <div class="hover-filter-01"></div>
@@ -103,7 +103,7 @@
         <div class="grid xl-25 lg-1-3 md-50 sm-50 xs-100">
           <a class="ss-card ss-card-05 bradius-round-02">
             <div class="ss-img vertical-01">
-              <div class="img-bg" style="background-image:url('public/img/content/unsplash-18.jpg');"></div>
+              <div class="img-bg" style="background-image:url('public/img/content/content-47.jpg');"></div>
             </div>
             <div class="filter-03"></div>
             <div class="hover-filter-01"></div>
@@ -124,7 +124,7 @@
         <div class="grid xl-25 lg-1-3 md-50 sm-50 xs-100">
           <a class="ss-card ss-card-05 bradius-round-02">
             <div class="ss-img vertical-01">
-              <div class="img-bg" style="background-image:url('public/img/content/unsplash-19.jpg');"></div>
+              <div class="img-bg" style="background-image:url('public/img/content/content-48.jpg');"></div>
             </div>
             <div class="filter-03"></div>
             <div class="hover-filter-01"></div>
@@ -941,6 +941,24 @@
     </div>
   </section>
 
+  <?php
+    $standards = [
+      [
+        'topic' => 'W3C', 
+        'title' => 'การออกแบบเว็บไซต์ให้ตรงตาม<br>ข้อกำหนดขององค์กร<br>มาตรฐานเวิลด์ ไวด์ เว็บ',
+        'desc' => '(World Wide Web Consortium:W3C) สำหรับ Hypertext Markup Language<br>(HTML) อย่างน้อย HTML 4.01'
+      ],[
+        'topic' => 'WAI', 
+        'title' => 'การออกแบบและจัดทำให้เว็บไซต์<br>เข้าถึงและใช้ประโยชน์ได้',
+        'desc' => '(Web Accessibility Initiative : WAI)'
+      ],[
+        'topic' => 'WCAG 2.0',
+        'title' => 'การออกแบบเว็บไซต์ให้ตรงตามข้อกำหนดเนื้อหาเว็บ สามารถเข้าถึงและใช้ประโยชน์ได้ รุ่น 2.0',
+        'desc' => '(Web Content Accessibility Guidelines 2.0 : WCAG 2.0) ในเกณฑ์ความสำเร็จระดับเอ (A) และรองรับกับแนวทางของ Thai Web Content Accessibility Guidelines 2010 (TWCAG 2010)'
+      ],
+    ];
+  ?>
+  
   <section data-section="5" class="section-01 section-padding">
     <div class="pattern style-33">
       <div class="wrapper" value=".5">
@@ -964,23 +982,44 @@
       </h3>  
       <div class="ss-box xxl" data-aos="fade-up" data-aos-delay="150">
         <div class="grids jc-center">
-          <?php for($i=0; $i<4; $i++){?>
+          <?php foreach($standards as $d){?>
             <div class="grid lg-25 md-1-3 pt-3">
               <a class="ss-card ss-card-17" href="#">
                 <div class="icon-text">
-                  <p class="h5 title fw-600">W3C</p>
+                  <p class="h6 title lh-2xs text-center fw-600">
+                    <?= $d['topic'] ?>
+                  </p>
                 </div>
                 <div class="text-container mt-3">
                   <p class="text-center color-01 lh-sm fw-600">
-                    World Wide Web <br> Consortium
+                    <?= $d['title'] ?>
                   </p>
                   <p class="xs text-center color-black fw-600 mt-1">
-                    มาตรฐานเว็บไซต์ของหน่วยงานภาครัฐ <br> ให้เป็นไปในทิศทางเดียวกัน
+                    <?= $d['desc'] ?>
                   </p>
                 </div>
               </a>
             </div>
           <?php }?>
+          <div class="grid lg-25 md-1-3 pt-3">
+              <a class="ss-card ss-card-17" href="#">
+                <div class="icon-text">
+                  <p class="h6 title lh-2xs text-center fw-600">
+                    Government<br>website<br>standard<br>v.2
+                  </p>
+                </div>
+                <ul class="ss-list-01 pl-5 style-05">
+                  <li class="color-black fw-400">การตั้งชื่อเว็บไซต์ภาครัฐ</li>
+                  <li class="color-black fw-400 mt-1">คุณลักษณะที่ควรมี</li>
+                  <li class="color-black fw-400 mt-1">การมีส่วนร่วมของประชาชน</li>
+                  <li class="color-black fw-400 mt-1">ความมั่นคงปลอดภัยสำหรับเว็บไซต์</li>
+                  <li class="color-black fw-400 mt-1">ข้อมูลพื้นฐานเกี่ยวกับหน่วยงาน</li>
+                  <li class="color-black fw-400 mt-1">การให้บริการของหน่วยงาน</li>
+                  <li class="color-black fw-400 mt-1">ข้อมูลเปิดภาครัฐ</li>
+                  <li class="color-black fw-400 mt-1">การประกาศนโยบาย</li>
+                </ul>
+              </a>
+            </div>
         </div>  
       </div>
     </div>
@@ -1063,15 +1102,32 @@
   <section data-section="8" class="section-12">
     <div class="container">
       <div class="blocks mh-0">
-        <div class="block-float left d-flex ai-center">
-          <div class="grids no-gap">
-            <?php for($i=0; $i<4; $i++){?>
-              <div class="grid sm-50 xs-50 mt-0">
-                <div class="ss-img horizontal-04">
-                  <div class="img-bg" style="background-image:url('public/img/content/chart-0<?= ($i%3+1) ?>.jpg');"></div>
-                </div>
+        <div class="block-float left">
+          <div class="content-container">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <?php for($i=0; $i<5; $i++){?>
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="ss-img no-hover horizontal-03">
+                        <div class="img-bg" style="background-image:url('public/img/content/content-5<?= ($i%1+1) ?>.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                <?php }?>
               </div>
-            <?php }?> 
+            </div>
+            <div class="arrows">
+              <div class="arrow arrow-prev">
+                <img src="public/img/icon/arrow-left.png" alt="Arrow" />
+              </div>
+              <div class="arrow-sep">
+                <img src="public/img/icon/arrow-sep.png" alt="Arrow Sep" />
+              </div>
+              <div class="arrow arrow-next">
+                <img src="public/img/icon/arrow-right.png" alt="Arrow" />
+              </div>
+            </div>
           </div>
         </div>
         <div class="block">
@@ -1094,6 +1150,16 @@
     </div>
   </section>
 
+  <?php
+    $tools = [
+      ['bg' => 'public/img/content/content-40.jpg', 'title' => 'BENCHMARKING'], 
+      ['bg' => 'public/img/content/content-41.jpg', 'title' => 'PERFORMANCE & ERROR CHECKING'], 
+      ['bg' => 'public/img/content/content-42.jpg', 'title' => 'SPEED PAGE'], 
+      ['bg' => 'public/img/content/content-43.jpg', 'title' => 'RESPONSIVE TESTING'], 
+      ['bg' => 'public/img/content/content-44.jpg', 'title' => 'SEO SCORING'], 
+      ['bg' => 'public/img/content/content-45.jpg', 'title' => 'SEO SCORING'], 
+    ];
+  ?>
   <section data-section="9" class="section-01 section-padding">
     <div class="pattern style-41">
       <div class="wrapper" value="-.5">
@@ -1121,17 +1187,17 @@
         เครื่องมือในการ<span class="color-white fw-500">ทดสอบตรวจสอบคุณภาพ</span>ของเว็บไซต์
       </h3>      
       <div class="grids pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
-        <?php for($i=0; $i<6; $i++){?>
+        <?php foreach($tools as $d){?>
           <div class="grid lg-1-3 md-50 sm-50 xs-100 pt-6">
             <a class="ss-card ss-card-03 bradius-round-02" href="#">
               <div class="ss-img">
-                <div class="img-bg" style="background-image:url('public/img/content/content-4<?= ($i%6+0) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
               </div>
               <div class="line-1"></div><div class="line-2"></div>
             </a>
             <div class="mt-3">
               <a class="p lg color-white h-color-p fw-600" href="#">
-                BENCHMARKING
+                <?= $d['title'] ?>
               </a>
             </div>
           </div>
@@ -1168,15 +1234,32 @@
   <section data-section="11" class="section-12">
     <div class="container">
       <div class="blocks mh-0">
-        <div class="block-float left d-flex ai-center">
-          <div class="grids no-gap">
-            <?php for($i=0; $i<4; $i++){?>
-              <div class="grid sm-50 xs-50 mt-0">
-                <div class="ss-img horizontal-04">
-                  <div class="img-bg" style="background-image:url('public/img/content/chart-0<?= ($i%3+1) ?>.jpg');"></div>
-                </div>
+        <div class="block-float left">
+          <div class="content-container">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <?php for($i=0; $i<5; $i++){?>
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="ss-img no-hover horizontal-03">
+                        <div class="img-bg" style="background-image:url('public/img/content/content-4<?= ($i%1+9) ?>.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                <?php }?>
               </div>
-            <?php }?> 
+            </div>
+            <div class="arrows">
+              <div class="arrow arrow-prev">
+                <img src="public/img/icon/arrow-left.png" alt="Arrow" />
+              </div>
+              <div class="arrow-sep">
+                <img src="public/img/icon/arrow-sep.png" alt="Arrow Sep" />
+              </div>
+              <div class="arrow arrow-next">
+                <img src="public/img/icon/arrow-right.png" alt="Arrow" />
+              </div>
+            </div>
           </div>
         </div>
         <div class="block">
@@ -1193,10 +1276,15 @@
     </div>
   </section>
   
-  <section data-section="12" class="section-12">
+  <section data-section="14" class="section-12">
     <div class="container">
       <div class="blocks mh-0">
         <div class="block">
+          <div class="pattern style-07">
+            <div class="wrapper">
+              <img src="public/img/content/pattern-46.png" alt="Hero" />
+            </div>
+          </div>
           <div class="text-container md">
             <h4 class="lg color-01 lh-2xs fw-600" data-aos="fade-up" data-aos-delay="0">
               กระบวนการออกแบบ
@@ -1207,33 +1295,33 @@
             </h4>
           </div>
         </div>
-        <div class="block-float right d-flex ai-center">
-          <div class="grids no-gap">
-            <div class="grid sm-100 mt-0">
-              <a class="ss-card ss-card-03" href="#">
-                <div class="ss-img horizontal-01">
-                  <div class="img-bg" style="background-image:url('public/img/content/chart-01.jpg');"></div>
-                </div>
-                <div class="icon">
-                  <em class="fa-solid fa-plus"></em>
-                </div>
-                <div class="line-1"></div><div class="line-2"></div>
-              </a>
-            </div>
-            <?php for($i=0; $i<3; $i++){?>
-              <div class="grid sm-1-3 mt-0">
-                <a class="ss-card ss-card-03" href="#">
-                  <div class="ss-img horizontal-01">
-                    <div class="img-bg" style="background-image:url('public/img/content/chart-01.jpg');"></div>
+        <div class="block-float right">
+          <div class="content-container">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <?php for($i=0; $i<5; $i++){?>
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="ss-img no-hover horizontal-03">
+                        <div class="img-bg" style="background-image:url('public/img/content/content-5<?= ($i%1+0) ?>.jpg');"></div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="icon">
-                    <em class="fa-solid fa-plus"></em>
-                  </div>
-                  <div class="line-1"></div><div class="line-2"></div>
-                </a>
+                <?php }?>
               </div>
-            <?php }?> 
-          </div>
+            </div>
+            <div class="arrows">
+              <div class="arrow arrow-prev">
+                <img src="public/img/icon/arrow-left.png" alt="Arrow" />
+              </div>
+              <div class="arrow-sep">
+                <img src="public/img/icon/arrow-sep.png" alt="Arrow Sep" />
+              </div>
+              <div class="arrow arrow-next">
+                <img src="public/img/icon/arrow-right.png" alt="Arrow" />
+              </div>
+            </div>
+          </div> 
         </div>
       </div>    
     </div>

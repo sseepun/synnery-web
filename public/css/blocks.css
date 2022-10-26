@@ -545,6 +545,13 @@
 
 .section-12 .blocks > .block > .pattern.style-07{position:absolute; bottom:-4rem; left:auto; right:-16rem; z-index:1;}
 .section-12 .blocks > .block > .pattern.style-07 > .wrapper img{display:block; width:50rem; height:auto;}
+
+.section-12 .arrows{
+  position:absolute; bottom:2rem; right:1.5rem; display:flex; align-items:center; z-index:1;
+}
+.section-12 .arrow, .section-12 .arrow-sep{padding:0 .5rem; transition:opacity .3s;}
+.section-12 .arrow:hover{opacity:.8;}
+.section-12 .arrow img, .section-12 .arrow-sep img{display:block; height:1.75rem; width:auto;}
 @media screen and (max-width:1199.98px){
   .section-12 .blocks{min-height:29rem;}
   .section-12 .blocks > .block{padding-top:4.5rem; padding-bottom:4.5rem;}

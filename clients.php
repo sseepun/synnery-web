@@ -47,73 +47,20 @@
       </div>
     </div>
     
+    <?php include_once('include/clients-data.php'); ?>
+
     <div class="clients pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="450">
-      <?php 
-        $titles = [
-          "กระทรวงศึกษา", "กระทรวงพลังงาน", "กระทรวงอุตสาหกรรม", "กรมธนารักษณ์", "กรมโยธาธิการและผังเมือง", 
-          "มหาวิทยาลัยเกษตร", "กรมอนามัย", "ความร่วมมือทางเศรษฐกิจในเอเชียแปซิฟิก (เอเปค)", 
-          "ศูนย์วัฒนธรรมอาเซียน Asean Cultural Center","กรมการขนส่งทางบก"
-        ];
-      ?>
-      <?php for($i=0; $i<9; $i++){?>
+      <?php foreach($clients02 as $d){?>
         <div class="client">
           <div class="ss-card ss-card-26">
+            <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
             <div class="wrapper">
               <div class="image-container">
-                <img src="public/img/clients/client-0<?= ($i%9+1) ?>.png" alt="Client" />
+                <img src="<?= $d['icon'] ?>" alt="Client" />
               </div>
               <div class="text-container mt-4">
                 <p class="xs title lh-sm">
-                  <?php echo $titles[$i] ?>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      <?php }?>
-
-      <?php 
-        $titles = [
-          "กรมการขนส่งทางบก", "สำนักงานคณะกรรมการกำกับกิจการพลังงาน", "GSSD Expo Thailand", 
-          "สำนักงานรับรองมาตรฐานและประเมินคุณภาพการศึกษา", "สำนักงานกองทุนสนับสนุนการสร้างเสริมสุขภาพ", 
-          "สำนักงานคณะกรรมการกำกับและส่งเสริมการประกอบธุรกิจประกันภัย","การนิคมอุตสาหกรรมแห่งประเทศไทย", 
-          "กรมคุ้มครองสิทธิและเสรีภาพ", "นักงานคณะกรรมการนโยบายเขตพัฒนาพิเศษภาคตะวันออก","การไฟฟ้านครหลวง" 
-        ];
-      ?>
-      <?php for($i=0; $i<10; $i++){?>
-        <div class="client">
-          <div class="ss-card ss-card-26">
-            <div class="wrapper">
-              <div class="image-container">
-                <img src="public/img/clients/client-1<?= ($i%10+0) ?>.png" alt="Client" />
-              </div>
-              <div class="text-container mt-4">
-                <p class="xs title lh-sm">
-                  <?php echo $titles[$i] ?>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      <?php }?>
-
-      <?php 
-        $titles = [
-          "สำนักงานส่งเสริมวิสาหกิจขนาดกลางและขนาดย่อม", 
-          "สถาบันคุณวุฒิวิชาชีพ", "บริษัท อายิโนะโมะโต๊ะ (ประเทศไทย) จำกัด", 
-          "บริษัท โตโยต้า มอเตอร์ ประเทศไทย จำกัด", "กรมท่าอากาศยาน"
-        ]
-      ?>
-      <?php for($i=0; $i<5; $i++){?>
-        <div class="client">
-          <div class="ss-card ss-card-26">
-            <div class="wrapper">
-              <div class="image-container">
-                <img src="public/img/clients/client-2<?= ($i%5+0) ?>.png" alt="Client" />
-              </div>
-              <div class="text-container mt-4">
-                <p class="xs title lh-sm">
-                  <?php echo $titles[$i] ?>
+                  <?= $d['title']?>
                 </p>
               </div>
             </div>
