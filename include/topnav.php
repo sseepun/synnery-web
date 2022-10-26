@@ -72,58 +72,46 @@
       <div class="scroll-wrapper">
         <div class="container">
 
-          <div class="dropdown-wrapper" data-dropdown="1">
-            <div class="d-grids">
-              <?php for($i=0; $i<12; $i++){?>
-                <div class="d-grid">
-                  <a href="#" class="ss-card">
-                    <div class="ss-img no-hover">
-                      <div class="img-bg" style="background-image:url('public/img/content/menu-service-0<?= ($i%8+1) ?>.jpg');"></div>
-                    </div>
-                    <div class="text-container">
-                      <p class="sm fw-400 mt-3">
-                        Web Design / Development
-                      </p>
-                    </div>
-                  </a>
-                </div>
-              <?php }?>
-            </div>
-          </div>
-
           <?php
-              $clients = [
-                [
-                  'bg' => 'public/img/content/menu-service-01.jpg',
-                  'title' => 'Government Standard Website',
-                ], [
-                  'bg' => 'public/img/content/menu-service-02.jpg',
-                  'title' => 'Unlimited Microsite for Government',
-                ], [
-                  'bg' => 'public/img/content/menu-service-03.jpg',
-                  'title' => 'Enterprise Wordpress Solutions',
-                ], [
-                  'bg' => 'public/img/content/menu-service-04.jpg',
-                  'title' => 'Network Architecture/ DevSecOps',
-                ], [
-                  'bg' => 'public/img/content/menu-service-05.jpg',
-                  'title' => 'Full Services Digital Marketing',
-                ], [
-                  'bg' => 'public/img/content/menu-service-06.jpg',
-                  'title' => 'AR,VR/3D Virtual Tour, Metaverse',
-                ],[
-                  'bg' => 'public/img/content/menu-service-07.jpg',
-                  'title' => 'Live & Virtual Exhibition',
-                ],[
-                  'bg' => 'public/img/content/menu-service-08.jpg',
-                  'title' => 'E-Office / ERP for Government',
-                ],
-              ];
-            ?>
-          
+            $clients = [
+              [
+                'bg' => 'public/img/content/menu-service-01.jpg',
+                'title' => 'Government Standard Website',
+                'href' => 'web-gov-standard.php',
+              ], [
+                'bg' => 'public/img/content/menu-service-02.jpg',
+                'title' => 'Unlimited Microsite for Government',
+                'href' => 'web-gov-minisite.php',
+              ], [
+                'bg' => 'public/img/content/menu-service-03.jpg',
+                'title' => 'Enterprise Wordpress Solutions',
+                'href' => 'enterprise-wordpress-solution.php',
+              ], [
+                'bg' => 'public/img/content/menu-service-04.jpg',
+                'title' => 'Network Architecture/ DevSecOps',
+                'href' => 'network-security-system.php',
+              ], [
+                'bg' => 'public/img/content/menu-service-05.jpg',
+                'title' => 'Full Services Digital Marketing',
+                'href' => 'services.php',
+              ], [
+                'bg' => 'public/img/content/menu-service-06.jpg',
+                'title' => 'AR,VR/3D Virtual Tour, Metaverse',
+                'href' => 'virtual-world.php',
+              ],[
+                'bg' => 'public/img/content/menu-service-07.jpg',
+                'title' => 'Live & Virtual Exhibition',
+                'href' => 'virtual-world.php',
+              ],[
+                'bg' => 'public/img/content/menu-service-08.jpg',
+                'title' => 'E-Office / ERP for Government',
+                'href' => 'erp-for-government.php',
+              ],
+            ];
+          ?>
           <div class="dropdown-wrapper" data-dropdown="2">
             <div class="d-grids">
-              <?php foreach($menus as $d){?>
+              <?php foreach($clients as $d){?>
                 <div class="d-grid">
                   <a href="<?= $d['href'] ?>" class="ss-card">
                     <div class="ss-img no-hover">

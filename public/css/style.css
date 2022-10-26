@@ -34,9 +34,7 @@ textarea, button{font-family:'Noto Sans Thai', sans-serif;}
 /* Section & Container */
 .section-padding{padding:5rem 0;}
 .container{position:relative; width:100%; max-width:calc(1300px - 2rem); padding:0; margin:0 auto;}
-@media screen and (min-width:1600px){
-    .container{max-width:calc(1600px - 2rem);}
-}
+
 @media screen and (max-width:1299.98px){
     .container{max-width:calc(1200px - 2rem);}
 }
@@ -55,6 +53,22 @@ textarea, button{font-family:'Noto Sans Thai', sans-serif;}
 @media screen and (max-width:575.98px){
     .section-padding{padding:3rem 0;}
     .container{max-width:calc(100% - 2rem);}
+}
+
+@media screen and (min-width:1600px){
+    .container{max-width:calc(1600px - 2rem);}
+}
+@media screen and (min-width:1900px){
+    .container{max-width:calc(1900px - 2rem);}
+}
+@media screen and (min-width:2200px){
+    .container{max-width:calc(2200px - 2rem);}
+}
+@media screen and (min-width:2500px){
+    .container{max-width:calc(2500px - 2rem);}
+}
+@media screen and (min-width:2800px){
+    .container{max-width:calc(2800px - 2rem);}
 }
 
 

@@ -133,9 +133,12 @@
                         </button>
                       </div>
                       <div class="btn-custom">
-                        <button type="submit" class="btn btn-action btn-color-02 style-02">
+                        <a 
+                          class="btn btn-action btn-color-02 style-02 toggle-contact" 
+                          data-contact="1" href="#" 
+                        >
                           <p class="fw-400">ยกเลิก</p>
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
