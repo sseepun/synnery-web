@@ -871,7 +871,7 @@
       <div class="swiper-wrapper">
         <?php for($i=0; $i<12; $i++){?>
           <div class="swiper-slide">
-            <a class="ss-card ss-card-03" href="#">
+            <a class="ss-card ss-card-03" href="public/img/content/6<?= ($i%3+6) ?>.jpg" data-fancybox="gallery">
               <div class="ss-img">
                 <div class="img-bg" style="background-image:url('public/img/content/6<?= ($i%3+6) ?>.jpg');"></div>
               </div>

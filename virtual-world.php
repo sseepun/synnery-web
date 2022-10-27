@@ -292,7 +292,16 @@
 
   <section data-section="7" class="p-1">
     <div class="grids no-gap" data-aos="fade-up" data-aos-delay="300">
-      <?php for($i=0; $i<6; $i++) {?>
+      <div class="grid lg-1-3 style-02 mt-0">
+          <div class="p-1">
+            <a class="ss-card">
+              <div class="ss-img horizontal-2">
+                <div class="img-bg" style="background-image:url('public/img/content/content-01.jpg');"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      <?php for($i=0; $i<5; $i++) {?>
         <div class="grid lg-1-3 style-02 mt-0">
           <div class="p-1">
             <a 
@@ -300,7 +309,7 @@
               href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
             >
               <div class="ss-img horizontal-2">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%3+1) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('public/img/content/content-0<?= ($i%5+2) ?>.jpg');"></div>
               </div>
               <div class="card-icon">
                 <div class="icon">
@@ -408,9 +417,9 @@
             <?php for($i=0; $i<3; $i++){?>
               <div class="grid sm-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
                 <div class="p-1">
-                  <a class="ss-card ss-card-03 style-03" href="public/img/content/unsplash-0<?= ($i%6+3) ?>.jpg" data-fancybox="gallery">
+                  <a class="ss-card ss-card-03 style-03" href="public/img/content/content-1<?= ($i%3+3) ?>.jpg" data-fancybox="gallery">
                     <div class="ss-img">
-                      <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+                      <div class="img-bg" style="background-image:url('public/img/content/content-1<?= ($i%3+3) ?>.jpg')"></div>
                     </div>
                     <div class="hover-filter-01"></div>
                     <div class="icon">

@@ -296,7 +296,7 @@
       <div class="grids jc-center" data-aos="fade-up" data-aos-delay="150">
         <?php for($i=0; $i<3; $i++) {?>
           <div class="grid lg-1-3 md-50 sm-50 xs-100 pt-6">
-            <a class="ss-card ss-card-03" href="#">
+            <a class="ss-card ss-card-03" href="public/img/content/4<?= ($i%2+2) ?>.jpg" data-fancybox="gallery">
               <div class="ss-img">
                 <div class="img-bg" style="background-image:url('public/img/content/4<?= ($i%2+2) ?>.jpg');"></div>
               </div>
@@ -361,12 +361,19 @@
       <h3 class="text-center text-uppercase color-01 fw-600 lh-sm" data-aos="fade-up" data-aos-delay="150">
         Web Base Application
       </h3>
-      <div class="ss-box xxl">
-        <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="300">
-          <div class="ss-img horizontal-2 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/unsplash-10.jpg');"></div>
-          </div>   
-        </div>
+      <div class="p-1 bg-white box-shadow ss-box xxl">
+        <a class="ss-card" href="https://www.youtube.com/watch?v=lFa14nKS_pk" data-fancybox="">
+          <div class="ss-img horizontal-03">
+            <div class="img-bg" style="background-image:url('public/img/content/content-70.jpg');"></div>
+          </div>
+          <div class="hover-filter-01"></div>
+          <div class="card-icon">
+            <div class="icon">
+              <img class="img" src="public/img/icon/play.png" alt="Banner">
+            </div>
+          </div>
+          <div class="card-line-1"></div><div class="card-line-2"></div>
+        </a>
       </div>
     </div> 
   </section>
@@ -549,12 +556,19 @@
       <h4 class="lg color-01 text-center fw-600" data-aos="fade-up" data-aos-delay="0">
         Mobile Application Development
       </h4>
-      <div class="ss-box xxl">
-        <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="150">
-          <div class="ss-img horizontal-2 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/unsplash-11.jpg');"></div>
-          </div>   
-        </div>
+      <div class="p-1 bg-white box-shadow ss-box xxl">
+        <a class="ss-card" href="https://www.youtube.com/watch?v=lFa14nKS_pk" data-fancybox="">
+          <div class="ss-img horizontal-03">
+            <div class="img-bg" style="background-image:url('public/img/content/content-71.jpg');"></div>
+          </div>
+          <div class="hover-filter-01"></div>
+          <div class="card-icon">
+            <div class="icon">
+              <img class="img" src="public/img/icon/play.png" alt="Banner">
+            </div>
+          </div>
+          <div class="card-line-1"></div><div class="card-line-2"></div>
+        </a>
       </div>
       <div class="grids jc-center">
         <?php for($i=0; $i<5; $i++) {?>
