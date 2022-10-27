@@ -56,7 +56,7 @@
             </ul> 
           </div>   
           <div class="grid xl-50 lg-50 md-50 sm-50 xs-100">
-            <ul class="ss-list-01 style-04">
+            <ul class="ss-list-01 style-04 size-02">
               <li class="pb-2">
                 <p class="color-black fw-600 mt-1">การปรับแต่ง Fied Form, Workflow ทำได้ยาก</p>
                 <p class="sm color-black fw-400">
@@ -473,7 +473,7 @@
               <div class="swiper-slide ss-card-padding">
                 <a class="ss-card ss-card-34 " href="#">
                   <div class="ss-img">
-                    <div class="img-bg" style="background-image:url('public/img/content/unsplash-10.jpg');"></div>
+                    <div class="img-bg" style="background-image:url('public/img/content/content-73.jpg');"></div>
                   </div>
                   <div class="icon">
                     <em class="fa-solid fa-plus"></em>
@@ -526,7 +526,7 @@
       <div class="ss-box xxl">
         <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="150">
           <div class="ss-img horizontal-2 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/unsplash-10.jpg');"></div>
+            <div class="img-bg" style="background-image:url('public/img/content/content-74.jpg');"></div>
           </div>   
         </div>
       </div>

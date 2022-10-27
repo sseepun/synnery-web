@@ -181,12 +181,14 @@
                   'bg' => 'public/img/content/33.jpg',
                   'icon' => 'public/img/clients/client-01.png',
                   'title' => 'กระทรวงศึกษา',
-                  'bgColor' => 'rgba(11,62,31,.7)'
+                  'bgColor' => 'rgba(11,62,31,.7)',
+                  'classer' => 'active'
                 ], [
                   'bg' => 'public/img/content/34.jpg',
                   'icon' => 'public/img/clients/client-02.png',
                   'title' => 'กระทรวงพลังงาน',
-                  'bgColor' => 'rgba(254,77,1,.7)'
+                  'bgColor' => 'rgba(254,77,1,.7)',
+                  'classer' => 'inactive'
                 ], [
                   'bg' => 'public/img/content/35.jpg',
                   'icon' => 'public/img/clients/client-03.png',
@@ -212,19 +214,25 @@
             ?>
             <?php foreach($clients as $d){?>
               <div class="grid lg-1-3 md-50 sm-1-3 xs-50 mt-0">
-                <a class="ss-img square" href="#">
-                  <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
-                  <div class="hover-container" style="background:<?= $d['bgColor'] ?>;">
-                    <div class="wrapper">
-                      <div class="icon">
-                        <img src="<?= $d['icon'] ?>" alt="Client" />
+                <div class="ss-card ss-card-37">
+                  <a class="ss-img square" href="#">
+                    <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+                      <div class="hover-container <?= $d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
+                      <div class="wrapper">
+                        <div class="icon">
+                          <img src="<?= $d['icon'] ?>" alt="Client" />
+                        </div>
+                        <p class="color-white text-center lh-sm mt-3">
+                          <?= $d['title'] ?>
+                        </p>
                       </div>
-                      <p class="color-white text-center lh-sm mt-3">
-                        <?= $d['title'] ?>
-                      </p>
                     </div>
-                  </div>
-                </a>
+                  </a>
+                  <!-- <svg width="100%" height="100%" viewBox="0 0 100 100" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                  </svg> -->
+                </div>
               </div>
             <?php }?>     
           </div>

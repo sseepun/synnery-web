@@ -75,7 +75,7 @@
                             'มากกว่า 5,000,000'
                           ] as $i=>$d){
                         ?>
-                        <div class="grid md-1-3 sm-1-3 xs-50">
+                        <div class="grid md-1-3 sm-1-3 xs-100">
                           <div class="checkbox-set">
                             <input type="radio" name="radio" id="radio_<?= $i ?>" <?php if($i==0)echo 'checked'; ?> />
                             <label for="radio_<?= $i ?>" class="p sm fw-400">
@@ -105,7 +105,7 @@
                             'อื่นๆ'
                           ] as $i=>$d){
                         ?>
-                        <div class="grid md-1-3 sm-1-3 xs-50">
+                        <div class="grid md-1-3 sm-1-3 xs-100">
                           <div class="checkbox-set">
                             <input type="radio" name="radio" id="radio_<?= $i ?>" <?php if($i==0)echo 'checked'; ?> />
                             <label for="radio_<?= $i ?>" class="p sm fw-400">

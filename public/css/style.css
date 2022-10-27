@@ -837,6 +837,19 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-36:hover .icon > img.inactive{opacity:0;}
 .ss-card-36:hover .icon > img.active{opacity:1;}
 
+/* Special Card 37 */
+.ss-card-37{position:relative; height:100%;}
+.ss-card-37 svg {
+    position: absolute; left:0; top:0; fill:none; stroke: #fff; stroke-dasharray: 150 480;
+    stroke-dashoffset: 150; transition: 1s ease-in-out; z-index:99;
+  }
+.ss-card-37:hover svg{
+    stroke-dashoffset: -480;
+  }
+@media screen and (max-width:575.98px){
+    .ss-card-37 .hover-container.active{opacity:1;}
+}
+
 
 /* Special Image */
 .ss-img{display:block; position:relative; width:100%; padding:60% 0 0 0; overflow:hidden;}
@@ -920,6 +933,9 @@ fieldset{padding:0; margin:0; border:0;}
     border-radius:50%; background-image:url('../img/icon/correct-01.png');
     background-size:cover; background-position:center; background-repeat:no-repeat;
 }
+
+.ss-list-01.size-02 li:before{width:1rem; height:1rem;} 
+
 .ss-list-01.style-02 li:before{background-image:url('../img/icon/correct-02.png');}
 .ss-list-01.style-03 li:before{background-image:url('../img/icon/correct-03.png');}
 .ss-list-01.style-04 li:before{border-radius:0;}

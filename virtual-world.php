@@ -183,14 +183,31 @@
           "สรุปภาพรวมของ Live Exhibition Streaming"
         ]
       ?>
-   
+
+    <?php 
+        $videopresent03 = [
+          [
+            'bg' => 'public/img/content/content-30.jpg',
+            'url' => 'https://youtu.be/wOl1jLpVNbU',
+            'title' => 'เบิ้องหลังการถ่ายทำ Video Present ของพิธีกร'
+          ],[
+            'bg' => 'public/img/content/content-31.jpg',
+            'url' => 'https://youtu.be/wOl1jLpVNbU',
+            'title' => 'เบื้องหลังการซ้อมก่อน Live จริง'
+          ],[
+            'bg' => 'public/img/content/content-32.jpg',
+            'url' => 'https://youtu.be/wOl1jLpVNbU',
+            'title' => 'สรุปภาพรวมของ Live Exhibition Streaming'
+          ],
+        ]
+      ?>
       <div class="grids jc-center mt-6 pt-2" data-aos="fade-up" data-aos-delay="0">
-        <?php for($i=0; $i<3; $i++){?>
+        <?php foreach($videopresent03 as $d){?>
           <div class="grid lg-1-3 md-50 sm-50 xs-100">
             <div class="p-1 bg-white box-shadow">
-              <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+              <a class="ss-card" href="<?= $d['url']?>" data-fancybox>
                 <div class="ss-img square">
-                  <div class="img-bg" style="background-image:url('public/img/content/content-3<?= ($i%3+0) ?>.jpg');"></div>
+                  <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
                 </div>
                 <div class="card-icon">
                   <div class="icon">
@@ -201,7 +218,7 @@
               </a>
             </div>
             <a class="p text-center d-block mt-4 fw-500" href="#">
-              <?php echo $titles[$i] ?>
+              <?= $d['title']?>
             </a>
           </div>
         <?php }?>
@@ -209,6 +226,12 @@
     </div>        
   </section>
 
+  <?php 
+    $videopresent02 = [
+      ['bg' => 'public/img/content/content-33.jpg','url' => 'https://youtu.be/wOl1jLpVNbU'],
+      ['bg' => 'public/img/content/content-34.jpg','url' => 'https://youtu.be/neVyngHybvc'],
+    ]
+  ?>
   <section data-section="4" class="section-01 section-padding bg-05">
     <div class="pattern style-33">
       <div class="wrapper" value=".5">
@@ -221,12 +244,12 @@
         วิดีโอแนะนำ <span class="color-black fw-300">เพื่อใช้ในการประชาสัมพันธ์</span>
       </h3> 
       <div class="grids pt-2" data-aos="fade-up" data-aos-delay="150">
-        <?php for($i=0; $i<2; $i++) {?>
+        <?php foreach($videopresent02 as $d) {?>
           <div class="grid lg-50 md-50 sm-50 xs-100">
             <div class="p-1 bg-white box-shadow">
-              <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+              <a class="ss-card" href="<?= $d['url'] ?>" data-fancybox>
                 <div class="ss-img">
-                  <div class="img-bg" style="background-image:url('public/img/content/content-3<?= ($i%2+3) ?>.jpg');"></div>
+                  <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                 </div>
                 <div class="card-icon">
                   <div class="icon">
@@ -263,10 +286,10 @@
       <div class="p-1 bg-white box-shadow mt-6" data-fancybox data-aos="fade-up" data-aos-delay="300">
         <a 
           class="ss-card" data-fancybox 
-          href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
+          href="https://www.youtube.com/watch?v=QXjjqG6xCUU&ab_channel=JigsawGroups" 
         >
           <div class="ss-img horizontal-02">
-            <div class="img-bg" style="background-image:url('public/img/content/content-3<?= ($i%1+5) ?>.jpg');"></div>
+            <div class="img-bg" style="background-image:url('public/img/content/content-35.jpg');"></div>
           </div>
           <div class="card-icon">
             <div class="icon">
@@ -290,26 +313,35 @@
     </div>
   </section>
 
+  <?php 
+    $videopresent = [
+      ['bg' => 'public/img/content/content-02.jpg','url' => 'https://youtu.be/QnR_7j25bsk'],
+      ['bg' => 'public/img/content/content-03.jpg','url' => 'https://youtu.be/PLpMXuSXeX8'],
+      ['bg' => 'public/img/content/content-04.jpg','url' => 'https://youtu.be/dlwJVAb1J4Q'],
+      ['bg' => 'public/img/content/content-05.jpg','url' => 'https://youtu.be/y8QrX4Z5lR8'],
+      ['bg' => 'public/img/content/content-06.jpg','url' => 'https://youtu.be/cEFB_2Lp0Pk']
+    ]
+  ?>
   <section data-section="7" class="p-1">
     <div class="grids no-gap" data-aos="fade-up" data-aos-delay="300">
       <div class="grid lg-1-3 style-02 mt-0">
-          <div class="p-1">
-            <a class="ss-card">
-              <div class="ss-img horizontal-2">
-                <div class="img-bg" style="background-image:url('public/img/content/content-01.jpg');"></div>
-              </div>
-            </a>
-          </div>
+        <div class="p-1">
+          <a class="ss-card">
+            <div class="ss-img horizontal-2">
+              <div class="img-bg" style="background-image:url('public/img/content/content-01.jpg');"></div>
+            </div>
+          </a>
         </div>
-      <?php for($i=0; $i<5; $i++) {?>
+      </div>
+      <?php foreach($videopresent as $d) {?>
         <div class="grid lg-1-3 style-02 mt-0">
           <div class="p-1">
             <a 
               class="ss-card" data-fancybox
-              href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
+              href="<?= $d['url']?>" 
             >
               <div class="ss-img horizontal-2">
-                <div class="img-bg" style="background-image:url('public/img/content/content-0<?= ($i%5+2) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
               </div>
               <div class="card-icon">
                 <div class="icon">
@@ -365,6 +397,15 @@
     </div>   
   </section>
 
+  <?php 
+    $varturewalk = [
+      ['bg' => 'public/img/content/41.jpg', 'url' => 'https://chatuchak2shop.com/chatuchak/street.html'],
+      ['bg' => 'public/img/content/41.jpg', 'url' => 'https://bit.ly/3swyo9V'],
+      ['bg' => 'public/img/content/41.jpg', 'url' => 'https://bit.ly/3a1Lci9'],
+      ['bg' => 'public/img/content/41.jpg', 'url' => 'https://bit.ly/3PfUDL3']
+    ]
+  ?>
+
   <section data-section="8" class="section-11 section-padding">
     <div class="pattern style-01">
       <div class="wrapper" value=".5">
@@ -391,14 +432,14 @@
       Virtual Walk Throught (Chatuchak)
     </h3> 
     <div class="grids no-gap mt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
-      <?php for($i=0; $i<4; $i++) {?>
+      <?php foreach($varturewalk as $d) {?>
         <div class="grid lg-25 style-03 mt-0">
           <div class="p-1 bg-white">
-            <div class="ss-card">
+            <a class="ss-card" href="<?= $d['url']?>">
               <div class="ss-img no-hover">
-                <div class="img-bg" style="background-image:url('public/img/content/41.jpg');"></div>
+                <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
               </div>
-            </div>
+            </a>
           </div>
           <p class="xs color-white pos-relative text-center text-uppercase fw-500 mt-3">
             chatuchak2shop
