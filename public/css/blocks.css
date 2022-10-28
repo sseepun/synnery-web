@@ -17,20 +17,6 @@
 .banner-02 .arrow, .banner-02 .arrow-sep{padding:0 .5rem; transition:opacity .3s;}
 .banner-02 .arrow:hover{opacity:.8;}
 .banner-02 .arrow img, .banner-02 .arrow-sep img{display:block; height:1.75rem; width:auto;}
-
-.banner-02 .swiper-container .waves {
-  position:absolute; right:0; left:0; bottom:0; width:100%; height:15vh; 
-  margin-bottom:-.4375rem; min-height:6.25rem; max-height:9.375rem; z-index:1;
-}
-.parallax > use {animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;}
-.parallax > use:nth-child(1){animation-delay:-2s; animation-duration:7s;}
-.parallax > use:nth-child(2){animation-delay:-3s; animation-duration:10s;}
-.parallax > use:nth-child(3){animation-delay:-4s; animation-duration:13s;}
-.parallax > use:nth-child(4){animation-delay:-5s; animation-duration:20s;}
-@keyframes move-forever {
-  0%{transform: translate3d(-90px,0,0);}
-  100%{transform: translate3d(85px,0,0);}
-}
 @media screen and (max-width:1299.98px){
   .banner-02 .swiper-slide > .wrapper{height:31rem;}
   .banner-02 .swiper-slide .hero{left:44rem;}
@@ -53,6 +39,20 @@
   .banner-02 .swiper-slide .text-container{text-align:center;}
   .banner-02 .swiper-slide .btns{justify-content:center;}
   .banner-02 .arrows{bottom:1rem; right:.5rem;}
+}
+
+.banner-02 .swiper-container .waves{
+  position:absolute; right:0; left:0; bottom:0; width:100%; z-index:1;
+  height:4rem; min-height:4rem; max-height:4rem; margin:0;
+}
+.parallax > use {animation:waveMotion 25s cubic-bezier(.55,.5,.45,.5) infinite;}
+.parallax > use:nth-child(1){animation-delay:-2s; animation-duration:7s;}
+.parallax > use:nth-child(2){animation-delay:-3s; animation-duration:10s;}
+.parallax > use:nth-child(3){animation-delay:-4s; animation-duration:13s;}
+.parallax > use:nth-child(4){animation-delay:-5s; animation-duration:20s;}
+@keyframes waveMotion{
+  0% {transform:translate3d(-90px,0,0);}
+  100% {transform:translate3d(85px,0,0);}
 }
 
 .banner-02 .swiper-slide .animate-01{
@@ -522,7 +522,6 @@
   position:absolute; top:0; bottom:0; left:0; right:0;
   background-size:cover; background-position:center; background-repeat:no-repeat;
 }
-
 .section-12 .blocks{display:flex; width:100%; min-height:32rem;}
 .section-12 .blocks.mh-0{min-height:0!important;}
 .section-12 .blocks > .block-float{position:relative; width:50vw; margin:0}
@@ -539,33 +538,20 @@
 }
 .section-12 .blocks > .block > .text-container.md{max-width:30rem;}
 
-.section-12 .blocks > .block > .pattern.style-01{position:absolute; top:-2rem; left:-13rem; right:auto; z-index:1;}
-.section-12 .blocks > .block > .pattern.style-01 > .wrapper img{display:block; width:15rem; height:auto;}
+.section-12 .content-container{position:relative; height:100%; z-index:2;}
+.section-12 .swiper-container{position:relative; height:100%;}
+.section-12 .swiper-slide, .section-12 .swiper-slide > .wrapper,
+.section-12 .swiper-slide .ss-card{height:100%;}
+.section-12 .swiper-slide .ss-img{height:100%;}
 
-.section-12 .blocks > .block > .pattern.style-02{position:absolute; top:-16rem; left:-12.5rem; right:auto; z-index:1;}
-.section-12 .blocks > .block > .pattern.style-02 > .wrapper img{display:block; width:15rem; height:auto;}
-
-.section-12 .blocks > .block > .pattern.style-03{position:absolute; top:5rem; left:auto; right:1rem; z-index:1;}
-.section-12 .blocks > .block > .pattern.style-03 > .wrapper img{display:block; width:5rem; height:auto;}
-
-.section-12 .blocks > .block > .pattern.style-04{position:absolute; bottom:0; left:auto; right:-10rem; z-index:1;}
-.section-12 .blocks > .block > .pattern.style-04 > .wrapper img{display:block; width:14rem; height:auto;}
-
-.section-12 .blocks > .block > .pattern.style-05{position:absolute; bottom:1.5rem; left:auto; right:2rem; z-index:1;}
-.section-12 .blocks > .block > .pattern.style-05 > .wrapper img{display:block; width:8rem; height:auto;}
-
-.section-12 .blocks > .block > .pattern.style-06{position:absolute; bottom:-2rem; left:auto; right:1.5rem; z-index:1;}
-.section-12 .blocks > .block > .pattern.style-06 > .wrapper img{display:block; width:20rem; height:auto;}
-
-.section-12 .blocks > .block > .pattern.style-07{position:absolute; bottom:-4rem; left:auto; right:-16rem; z-index:1;}
-.section-12 .blocks > .block > .pattern.style-07 > .wrapper img{display:block; width:50rem; height:auto;}
-
-.section-12 .arrows{
-  position:absolute; bottom:2rem; right:1.5rem; display:flex; align-items:center; z-index:1;
+.section-12 .content-container .arrows{
+  position:absolute; bottom:1rem; right:1rem; display:flex; align-items:center; z-index:1;
 }
-.section-12 .arrow, .section-12 .arrow-sep{padding:0 .25rem; transition:opacity .3s;}
-.section-12 .arrow:hover{opacity:.8;}
-.section-12 .arrow img, .section-12 .arrow-sep img{display:block; height:1rem; width:auto; cursor:pointer}
+.section-12 .content-container .arrow{cursor:pointer; transition:opacity .3s;}
+.section-12 .content-container .arrow:hover{opacity:.7;}
+.section-12 .content-container .arrow-sep{padding:0 .625rem;}
+.section-12 .content-container .arrow img,
+.section-12 .content-container .arrow-sep img{display:block; height:1.5rem; width:auto;}
 @media screen and (max-width:1199.98px){
   .section-12 .blocks{min-height:29rem;}
   .section-12 .blocks > .block{padding-top:4.5rem; padding-bottom:4.5rem;}
@@ -599,6 +585,21 @@
 @media screen and (min-width:768px){
   .section-12 .blocks > .block-float > .ss-img{padding:0; height:100%;}
 }
+
+.section-12 .blocks > .block > .pattern.style-01{position:absolute; top:-2rem; left:-13rem; right:auto; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-01 > .wrapper img{display:block; width:15rem; height:auto;}
+.section-12 .blocks > .block > .pattern.style-02{position:absolute; top:-16rem; left:-12.5rem; right:auto; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-02 > .wrapper img{display:block; width:15rem; height:auto;}
+.section-12 .blocks > .block > .pattern.style-03{position:absolute; top:5rem; left:auto; right:1rem; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-03 > .wrapper img{display:block; width:5rem; height:auto;}
+.section-12 .blocks > .block > .pattern.style-04{position:absolute; bottom:0; left:auto; right:-10rem; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-04 > .wrapper img{display:block; width:14rem; height:auto;}
+.section-12 .blocks > .block > .pattern.style-05{position:absolute; bottom:1.5rem; left:auto; right:2rem; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-05 > .wrapper img{display:block; width:8rem; height:auto;}
+.section-12 .blocks > .block > .pattern.style-06{position:absolute; bottom:-2rem; left:auto; right:1.5rem; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-06 > .wrapper img{display:block; width:20rem; height:auto;}
+.section-12 .blocks > .block > .pattern.style-07{position:absolute; bottom:-4rem; left:auto; right:-16rem; z-index:1;}
+.section-12 .blocks > .block > .pattern.style-07 > .wrapper img{display:block; width:50rem; height:auto;}
 
 
 /* Section 13 */

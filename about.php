@@ -24,11 +24,14 @@
       ]
     ]
   ?>
-  <div class="tab-container" data-section="2">
+  <div class="tab-container ovf-hidden" id="tab-header" data-section="2">
     <div class="bg-01" data-aos="fade-in" data-aos-delay="150">
       <div class="tabs tabs-01">
         <?php foreach($categories as $j=>$k){?>
-          <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
+          <a 
+            class="tab <?php if($j==0)echo 'active'; ?>" 
+            data-tab="<?= $j ?>" data-anchor="#tab-header" href="#" 
+          >
             <h6 class="title color-white"><?= $k['title'] ?></h6>
           </a>
         <?php }?>
@@ -465,7 +468,6 @@
 
     </div>
   </div>
-
   
   <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>

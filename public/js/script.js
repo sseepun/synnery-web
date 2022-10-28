@@ -237,6 +237,17 @@ $(function(){ 'use strict';
                             $(this)[0].swiper.update();
                         });
                     }
+
+                    let anchor = $(this).data('anchor');
+                    if(anchor){
+                        let anchorTarget = $(anchor);
+                        if(anchorTarget){
+                            let offset = anchorTarget.offset();
+                            $('html, body').stop().animate({
+                                scrollTop: offset.top - bodySize * 3.5
+                            }, 700, 'easeInOutCubic');
+                        }
+                    }
                 }
             });
         });
