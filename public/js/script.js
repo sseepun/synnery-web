@@ -441,7 +441,12 @@ $(function(){ 'use strict';
     if(section13.length){
         section13.find('.swiper-container').each(function(){
             var self = $(this);
-            new Swiper(self, {
+            self.css('--slide-pp', 1);
+            self.attr('data-pp', 1);
+            self.css('--slide-max', self.find('.swiper-slide').length);
+            self.attr('data-max', self.find('.swiper-slide').length);
+
+            let swiper13 = new Swiper(self, {
                 direction: 'vertical',
                 loop: true,
                 speed: 900,
@@ -453,12 +458,47 @@ $(function(){ 'use strict';
                     prevEl: self.find('.btn-icon-prev'),
                 },
                 pagination: {
-                    el: self.find('.dots > .wrapper'),
+                    el: self.find('.dots .wrapper'),
                     clickable: true,
+                    renderBullet: function (index, className) {
+                        return `<span class="swiper-pagination-bullet">
+                                ${String(index+1).padStart(2, '0')}
+                            </span>`;
+                    }
                 },
             });
-            self.find('.swiper-pagination-bullet').each(function(d){
-                $(this).html(String(d+1).padStart(2, '0'));
+
+            let dotsWrapper = self.find('.dots .wrapper');
+            swiper13.on('slideChange', function(){
+                dotsWrapper.css('--slide', swiper13.activeIndex);
+            });
+            
+            let expanded = false;
+            self.find('.btn-slide-more').click(function(e){
+                e.preventDefault();
+                let dataMax = Number(self.data('max'));
+                if(!expanded){
+                    expanded = true;
+                    self.addClass('show-all');
+                    self.attr('data-pp', dataMax);
+                    self.css('--slide-pp', dataMax);
+                    swiper13.params.allowSwipeToNext = false;
+                    swiper13.params.allowSwipeToPrev = false;
+                }else{
+                    expanded = false;
+                    self.removeClass('show-all');
+                    self.attr('data-pp', 1);
+                    self.css('--slide-pp', 1);
+                    swiper13.params.allowSwipeToNext = true;
+                    swiper13.params.allowSwipeToPrev = true;
+                }
+                swiper13.params.speed = 0;
+                swiper13.slideTo(1);
+                setTimeout(function(){
+                    AOS.refresh();
+                    calculateSectionAnchors();
+                    swiper13.params.speed = 900;
+                }, 500);
             });
         });
     }
@@ -508,7 +548,6 @@ $(function(){ 'use strict';
     }
 
 });
-
 
 
 // Section 10

@@ -922,11 +922,15 @@
       </div>
       <div class="navigator">
         <div class="dots">
-          <div class="wrapper"></div>
+          <div class="dots-wrapper">
+            <div class="out-wrapper">
+              <div class="wrapper" style="--slide:1;"></div>
+            </div>
+          </div>
         </div>
         <div class="arrows">
           <div class="wrapper">
-            <div class="icon btn-icon-next">
+            <div class="icon btn-icon-prev">
               <img class="img" src="public/img/icon/arrow-03.png" alt="Arrow" />
             </div>
             <div class="icon">
@@ -937,6 +941,7 @@
             </div>
           </div>
         </div>
+        <div class="btn-slide-more"></div>
       </div>
     </div>
   </section>
