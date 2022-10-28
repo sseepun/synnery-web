@@ -420,8 +420,13 @@
                 <?php for($i=0; $i<5; $i++){?>
                   <div class="swiper-slide">
                     <div class="wrapper">
-                      <div class="ss-img no-hover horizontal-03">
-                        <div class="img-bg" style="background-image:url('public/img/content/content-5<?= ($i%1+1) ?>.jpg');"></div>
+                      <div class="ss-card ss-card-03">
+                        <div class="ss-img no-hover horizontal-03">
+                          <div class="img-bg" style="background-image:url('public/img/content/content-7<?= ($i%3+5) ?>.jpg');"></div>
+                        </div>
+                        <div class="icon">
+                          <em class="fa-solid fa-plus"></em>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -560,8 +565,13 @@
                 <?php for($i=0; $i<5; $i++){?>
                   <div class="swiper-slide">
                     <div class="wrapper">
-                      <div class="ss-img no-hover horizontal-03">
-                        <div class="img-bg" style="background-image:url('public/img/content/content-4<?= ($i%1+9) ?>.jpg');"></div>
+                      <div class="ss-card ss-card-03">
+                        <div class="ss-img no-hover horizontal-03">
+                          <div class="img-bg" style="background-image:url('public/img/content/content-8<?= ($i%3+0) ?>.jpg');"></div>
+                        </div>
+                        <div class="icon">
+                          <em class="fa-solid fa-plus"></em>
+                        </div>
                       </div>
                     </div>
                   </div>
