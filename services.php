@@ -613,7 +613,7 @@
         </div>
         <div class="grid lg-1-6 mt-0" data-aos="fade-up" data-aos-delay="0">
           <div class="p-1">
-            <a class="ss-card ss-card-03 style-02" href="https://bit.ly/3hf5jcI" data-fancybox="gallery">
+            <a class="ss-card ss-card-03 style-02" href="https://bit.ly/3hf5jcI">
               <div class="ss-img">
                 <div class="img-bg" style="background-image:url('public/img/content/content-64.jpg')"></div>
               </div>
@@ -627,7 +627,7 @@
         </div>
         <div class="grid lg-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
           <div class="p-1">
-            <a class="ss-card ss-card-03" href="https://bit.ly/3hf5jcI" data-fancybox="gallery">
+            <a class="ss-card ss-card-03" href="https://bit.ly/3hf5jcI">
               <div class="ss-img horizontal-03">
                 <div class="img-bg" style="background-image:url('public/img/content/content-65.jpg');"></div>
               </div>
@@ -641,7 +641,7 @@
         </div>
         <div class="grid lg-1-6 mt-0" data-aos="fade-up" data-aos-delay="0">
            <div class="p-1">
-            <a class="ss-card ss-card-03 style-02" href="https://bit.ly/3hf5jcI" data-fancybox="gallery">
+            <a class="ss-card ss-card-03 style-02" href="https://bit.ly/3hf5jcI">
               <div class="ss-img">
                 <div class="img-bg" style="background-image:url('public/img/content/content-94.jpg')"></div>
               </div>
@@ -653,34 +653,29 @@
             </a>
           </div>
         </div>
-        
-
         <?php for($i=0; $i<3; $i++){?>
           <div class="grid md-1-3 <?= $i==2? 'sm-100': '' ?> mt-0" data-aos="fade-up" data-aos-delay="0">
             <div class="p-1">
-              <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+              <a class="ss-card ss-card-03" href="https://bit.ly/3hf5jcI">
                 <div class="ss-img horizontal-03">
-                  <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+                  <div class="img-bg" style="background-image:url('public/img/content/content-9<?= ($i%3+5) ?>.jpg');"></div>
                 </div>
                 <div class="hover-filter-01"></div>
-                <div class="card-icon">
                   <div class="icon">
-                    <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                    <em class="fa-solid fa-plus"></em>
                   </div>
-                </div>
-                <div class="card-line-1"></div><div class="card-line-2"></div>
+                <div class="line-1"></div><div class="line-2"></div>
               </a>
             </div>
           </div>
         <?php }?>
-
         <div class="grid lg-2-3 sm-100 mt-0">
           <div class="grids no-gap">
             <div class="grid sm-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
               <div class="p-1">
-                <a class="ss-card ss-card-03 style-03" href="public/img/content/unsplash-0<?= (0%6+3) ?>.jpg" data-fancybox="gallery">
+                <a class="ss-card ss-card-03 style-03" href="https://bit.ly/3hf5jcI">
                   <div class="ss-img">
-                    <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= (0%6+1) ?>.jpg')"></div>
+                    <div class="img-bg" style="background-image:url('public/img/content/content-98.jpg')"></div>
                   </div>
                   <div class="hover-filter-01"></div>
                   <div class="icon">
@@ -692,9 +687,9 @@
             </div>
             <div class="grid sm-2-3 mt-0" data-aos="fade-up" data-aos-delay="0">
               <div class="p-1">
-                <a class="ss-card ss-card-03 style-04" href="public/img/content/unsplash-0<?= (1%6+3) ?>.jpg" data-fancybox="gallery">
+                <a class="ss-card ss-card-03 style-04" href="https://bit.ly/3hf5jcI">
                   <div class="ss-img">
-                    <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= (1%6+3) ?>.jpg')"></div>
+                    <div class="img-bg" style="background-image:url('public/img/content/content-99.jpg')"></div>
                   </div>
                   <div class="hover-filter-01"></div>
                   <div class="icon">
@@ -709,26 +704,19 @@
         <div class="grid lg-1-3 sm-100 mt-0">
           <div class="grids no-gap">
             <div class="grid lg-100 md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
-              <div class="p-1">
-                <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+              <div class="p-1 h-full">
+                <a class="ss-card" href="https://bit.ly/3hf5jcI">
                   <div class="ss-img horizontal-03">
-                    <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+2) ?>.jpg');"></div>
+                    <div class="img-bg" style="background-image:url('public/img/content/content-100.jpg');"></div>
                   </div>
-                  <div class="hover-filter-01"></div>
-                  <div class="card-icon">
-                    <div class="icon">
-                      <img class="img" src="public/img/icon/play.png" alt="Banner" />
-                    </div>
-                  </div>
-                  <div class="card-line-1"></div><div class="card-line-2"></div>
                 </a>
               </div>
             </div>
             <div class="grid lg-50 md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
               <div class="p-1 h-full">
-                <a class="ss-card ss-card-03 style-02" href="public/img/content/unsplash-0<?= ($i%6+3) ?>.jpg" data-fancybox="gallery">
+                <a class="ss-card ss-card-03 style-02" href="https://bit.ly/3hf5jcI">
                   <div class="ss-img">
-                    <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+                    <div class="img-bg" style="background-image:url('public/img/content/content-64.jpg')"></div>
                   </div>
                   <div class="hover-filter-01"></div>
                   <div class="icon">
@@ -740,9 +728,9 @@
             </div>
             <div class="grid lg-50 md-1-3 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
               <div class="p-1 h-full">
-                <a class="ss-card ss-card-03 style-02" href="public/img/content/unsplash-0<?= ($i%6+3) ?>.jpg" data-fancybox="gallery">
+                <a class="ss-card ss-card-03 style-02" href="https://bit.ly/3hf5jcI">
                   <div class="ss-img">
-                    <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg')"></div>
+                    <div class="img-bg" style="background-image:url('public/img/content/content-101.jpg')"></div>
                   </div>
                   <div class="hover-filter-01"></div>
                   <div class="icon">
