@@ -360,6 +360,7 @@
     </div>  
   </section>
 
+
   <section data-section="8">
     <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
       <div class="container">
@@ -373,20 +374,29 @@
     <div class="p-1">
       <div class="grids no-gap">
         <div class="grid md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
-            <div class="p-1">
-              <a class="ss-card">
-                <div class="ss-img horizontal-03">
-                  <div class="img-bg" style="background-image:url('public/img/content/content-01.jpg');"></div>
-                </div>
-              </a>
-            </div>
+          <div class="p-1">
+            <a class="ss-card">
+              <div class="ss-img horizontal-03">
+                <div class="img-bg" style="background-image:url('public/img/content/content-01.jpg');"></div>
+              </div>
+            </a>
           </div>
-        <?php for($i=0; $i<14; $i++){?>
-          <div class="grid md-1-3 <?= $i==13? 'sm-100': '' ?> mt-0" data-aos="fade-up" data-aos-delay="0">
+        </div>
+        <?php 
+          $videopresent = [
+            ['bg' => 'public/img/content/content-02.jpg','url' => 'https://youtu.be/QnR_7j25bsk'],
+            ['bg' => 'public/img/content/content-03.jpg','url' => 'https://youtu.be/PLpMXuSXeX8'],
+            ['bg' => 'public/img/content/content-04.jpg','url' => 'https://youtu.be/dlwJVAb1J4Q'],
+            ['bg' => 'public/img/content/content-05.jpg','url' => 'https://youtu.be/y8QrX4Z5lR8'],
+            ['bg' => 'public/img/content/content-06.jpg','url' => 'https://youtu.be/cEFB_2Lp0Pk']
+          ]
+        ?>
+        <?php foreach($videopresent as $d){?>
+          <div class="grid md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
             <div class="p-1">
-              <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+              <a class="ss-card" href="<?= $d['url']?>" data-fancybox>
                 <div class="ss-img horizontal-03">
-                  <div class="img-bg" style="background-image:url('public/img/content/content-0<?= ($i%8+2) ?>.jpg');"></div>
+                  <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
                 </div>
                 <div class="hover-filter-01"></div>
                 <div class="card-icon">
@@ -399,6 +409,133 @@
             </div>
           </div>
         <?php }?>
+        <div class="grid lg-1-3 sm-100 mt-0">
+          <div class="grids no-gap">
+            <div class="grid lg-50 md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
+              <div class="p-1 h-full">
+                <a class="ss-card ss-card-03 style-02" href="public/img/content/content-87.jpg" data-fancybox="gallery">
+                  <div class="ss-img">
+                    <div class="img-bg" style="background-image:url('public/img/content/content-87.jpg')"></div>
+                  </div>
+                  <div class="hover-filter-01"></div>
+                  <div class="icon">
+                    <em class="fa-solid fa-plus"></em>
+                  </div>
+                  <div class="line-1"></div><div class="line-2"></div>
+                </a>
+              </div>
+            </div>
+            <div class="grid lg-50 md-1-3 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
+              <div class="p-1 h-full">
+                <a class="ss-card ss-card-03 style-02" href="public/img/content/content-62.jpg" data-fancybox="gallery">
+                  <div class="ss-img">
+                    <div class="img-bg" style="background-image:url('public/img/content/content-62.jpg')"></div>
+                  </div>
+                  <div class="hover-filter-01"></div>
+                  <div class="icon">
+                    <em class="fa-solid fa-plus"></em>
+                  </div>
+                  <div class="line-1"></div><div class="line-2"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
+          <div class="p-1">
+            <a class="ss-card" href="https://youtu.be/QnR_7j25bsk" data-fancybox>
+              <div class="ss-img horizontal-03">
+                <div class="img-bg" style="background-image:url('public/img/content/content-08.jpg');"></div>
+              </div>
+              <div class="hover-filter-01"></div>
+                <div class="card-icon">
+                  <div class="icon">
+                    <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                  </div>
+                </div>
+              <div class="card-line-1"></div><div class="card-line-2"></div>
+            </a>
+          </div>
+        </div>
+        <div class="grid md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
+          <div class="p-1">
+            <a class="ss-card">
+              <div class="ss-img horizontal-03">
+                <div class="img-bg" style="background-image:url('public/img/content/content-09.jpg');"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <?php 
+          $infovideos = [
+            [
+              'bg' => 'public/img/content/content-88.jpg',
+              'url' => 'https://www.youtube.com/watch?v=4fIp6acNLm4&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=4'
+            ],[
+              'bg' => 'public/img/content/content-89.jpg',
+              'url' => 'https://www.youtube.com/watch?v=fjsj5h-2nlc&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=5'
+            ],[
+              'bg' => 'public/img/content/content-90.jpg',
+              'url' => 'https://www.youtube.com/watch?v=jp0TzYFGFo4&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=6'
+            ],[
+              'bg' => 'public/img/content/content-91.jpg',
+              'url' => 'https://www.youtube.com/watch?v=fgb3_rAOiOc&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=2'
+            ],[
+              'bg' => 'public/img/content/content-92.jpg',
+              'url' => 'https://www.youtube.com/watch?v=Nen_sgy_cUo&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=3 
+            '],
+          ]
+        ?>
+        <?php foreach($infovideos as $d){?>
+          <div class="grid md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
+            <div class="p-1">
+              <a class="ss-card" href="<?= $d['url']?>" data-fancybox>
+                <div class="ss-img horizontal-03">
+                  <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
+                </div>
+                <div class="hover-filter-01"></div>
+                <div class="card-icon">
+                  <div class="icon">
+                    <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                  </div>
+                </div>
+                <div class="card-line-1"></div><div class="card-line-2"></div>
+              </a>
+            </div>
+          </div>
+        <?php }?>
+        <div class="grid lg-1-3 sm-100 mt-0">
+          <div class="grids no-gap">
+            <div class="grid lg-50 md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
+              <div class="p-1 h-full">
+                <a class="ss-card ss-card-03 style-02" href="public/img/content/content-62.jpg" data-fancybox="gallery">
+                  <div class="ss-img">
+                    <div class="img-bg" style="background-image:url('public/img/content/content-62.jpg')"></div>
+                  </div>
+                  <div class="hover-filter-01"></div>
+                  <div class="icon">
+                    <em class="fa-solid fa-plus"></em>
+                  </div>
+                  <div class="line-1"></div><div class="line-2"></div>
+                </a>
+              </div>
+            </div>
+            <div class="grid lg-50 md-1-3 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
+              <div class="p-1 h-full">
+                <a class="ss-card ss-card-03 style-02" href="public/img/content/content-93.jpg" data-fancybox="gallery">
+                  <div class="ss-img">
+                    <div class="img-bg" style="background-image:url('public/img/content/content-93.jpg')"></div>
+                  </div>
+                  <div class="hover-filter-01"></div>
+                  <div class="icon">
+                    <em class="fa-solid fa-plus"></em>
+                  </div>
+                  <div class="line-1"></div><div class="line-2"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -432,7 +569,6 @@
                   <div class="ss-img horizontal-03">
                     <div class="img-bg" style="background-image:url('public/img/content/content-60.jpg');"></div>
                   </div>
-
                 </a>
               </div>
             </div>
@@ -466,32 +602,58 @@
             </div>
           </div>
         </div>
-
-        <?php for($i=0; $i<2; $i++){?>
-          <div class="grid lg-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
-            <div class="p-1">
-              <a class="ss-card">
-                <div class="ss-img horizontal-03">
-                  <div class="img-bg" style="background-image:url('public/img/content/content-6<?= ($i%1+3) ?>.jpg');"></div>
-                </div>
-              </a>
-            </div>
+        <div class="grid lg-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
+          <div class="p-1 h-full">
+            <a class="ss-card">
+              <div class="ss-img horizontal-03">
+                <div class="img-bg" style="background-image:url('public/img/content/content-63.jpg');"></div>
+              </div>
+            </a>
           </div>
-          <div class="grid lg-1-6 mt-0" data-aos="fade-up" data-aos-delay="0">
-            <div class="p-1 h-full">
-              <a class="ss-card ss-card-03 style-02" href="public/img/content/content-6<?= ($i%6+4) ?>.jpg" data-fancybox="gallery">
-                <div class="ss-img">
-                  <div class="img-bg" style="background-image:url('public/img/content/content-6<?= ($i%6+5) ?>.jpg')"></div>
-                </div>
-                <div class="hover-filter-01"></div>
-                <div class="icon">
-                  <em class="fa-solid fa-plus"></em>
-                </div>
-                <div class="line-1"></div><div class="line-2"></div>
-              </a>
-            </div>
+        </div>
+        <div class="grid lg-1-6 mt-0" data-aos="fade-up" data-aos-delay="0">
+          <div class="p-1">
+            <a class="ss-card ss-card-03 style-02" href="https://bit.ly/3hf5jcI" data-fancybox="gallery">
+              <div class="ss-img">
+                <div class="img-bg" style="background-image:url('public/img/content/content-64.jpg')"></div>
+              </div>
+              <div class="hover-filter-01"></div>
+              <div class="icon">
+                <em class="fa-solid fa-plus"></em>
+              </div>
+              <div class="line-1"></div><div class="line-2"></div>
+            </a>
           </div>
-        <?php }?>
+        </div>
+        <div class="grid lg-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
+          <div class="p-1">
+            <a class="ss-card ss-card-03" href="https://bit.ly/3hf5jcI" data-fancybox="gallery">
+              <div class="ss-img horizontal-03">
+                <div class="img-bg" style="background-image:url('public/img/content/content-65.jpg');"></div>
+              </div>
+              <div class="hover-filter-01"></div>
+              <div class="icon">
+                <em class="fa-solid fa-plus"></em>
+              </div>
+              <div class="line-1"></div><div class="line-2"></div>
+            </a>
+          </div>
+        </div>
+        <div class="grid lg-1-6 mt-0" data-aos="fade-up" data-aos-delay="0">
+           <div class="p-1">
+            <a class="ss-card ss-card-03 style-02" href="https://bit.ly/3hf5jcI" data-fancybox="gallery">
+              <div class="ss-img">
+                <div class="img-bg" style="background-image:url('public/img/content/content-94.jpg')"></div>
+              </div>
+              <div class="hover-filter-01"></div>
+              <div class="icon">
+                <em class="fa-solid fa-plus"></em>
+              </div>
+              <div class="line-1"></div><div class="line-2"></div>
+            </a>
+          </div>
+        </div>
+        
 
         <?php for($i=0; $i<3; $i++){?>
           <div class="grid md-1-3 <?= $i==2? 'sm-100': '' ?> mt-0" data-aos="fade-up" data-aos-delay="0">
@@ -860,6 +1022,8 @@
       </div>
     </div>
   </section>
+
+
 
   <section data-section="12" class="section-06 section-padding pb-3 mb-3 bg-p">
     <div class="container">

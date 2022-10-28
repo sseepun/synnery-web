@@ -635,7 +635,7 @@
                   <div class="swiper-slide">
                     <div class="wrapper">
                       <div class="ss-img no-hover horizontal-04">
-                        <div class="img-bg" style="background-image:url('public/img/content/content-5<?= ($i%1+0) ?>.jpg');"></div>
+                        <div class="img-bg" style="background-image:url('public/img/content/content-8<?= ($i%4+3) ?>.jpg');"></div>
                       </div>
                     </div>
                   </div>
