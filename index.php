@@ -228,10 +228,12 @@
                       </div>
                     </div>
                   </a>
-                  <!-- <svg width="100%" height="100%" viewBox="0 0 100 100" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-                  </svg> -->
+                  <div class="card-line-3">
+                    <svg viewBox="0 0 100 100">
+                      <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+                      <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             <?php }?>     
@@ -277,19 +279,27 @@
       ?>
       <?php foreach($clients as $d){?>
         <div class="grid lg-1-6 md-25 sm-1-3 xs-50 mt-0">
-          <a class="ss-img square" href="#">
-            <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
-            <div class="hover-container" style="background:<?= $d['bgColor'] ?>;">
-              <div class="wrapper">
-                <div class="icon">
-                  <img src="<?= $d['icon'] ?>" alt="Client" />
+          <div class="ss-card">
+            <a class="ss-img square" href="#">
+              <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+              <div class="hover-container" style="background:<?= $d['bgColor'] ?>;">
+                <div class="wrapper">
+                  <div class="icon">
+                    <img src="<?= $d['icon'] ?>" alt="Client" />
+                  </div>
+                  <p class="color-white text-center lh-sm mt-3">
+                    <?= $d['title'] ?>
+                  </p>
                 </div>
-                <p class="color-white text-center lh-sm mt-3">
-                  <?= $d['title'] ?>
-                </p>
               </div>
+            </a>
+            <div class="card-line-3">
+              <svg viewBox="0 0 100 100">
+                <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+                <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+              </svg>
             </div>
-          </a>
+          </div>
         </div>
       <?php }?>
     </div>
@@ -656,10 +666,9 @@
       </div>
     </div>
 
-    <?php include_once('include/clients-data.php'); ?>
-
+    <?php include_once('data/clients.php'); ?>
     <div class="clients pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="450">
-      <?php foreach($clients02 as $d){?>
+      <?php foreach($clients as $d){?>
         <div class="client">
           <div class="ss-card ss-card-26">
             <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
@@ -668,7 +677,7 @@
                 <img src="<?= $d['icon'] ?>" alt="Client" />
               </div>
               <div class="text-container mt-4">
-                <p class="xs title lh-sm">
+                <p class="xxs title lh-sm">
                   <?= $d['title']?>
                 </p>
               </div>

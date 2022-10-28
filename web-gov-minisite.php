@@ -76,7 +76,6 @@
   </section>
 
   <?php include_once('include/tech-stack.php'); ?>
-
   <section data-section="11" class="section-12 bg-06">
     <div class="container">
       <div class="blocks">
@@ -96,7 +95,7 @@
                 <div class="grid xl-20 lg-25 md-1-3 sm-20 xs-1-3 pt-3">
                   <div class="ss-card ss-card-10 style-02">
                     <div class="icon">
-                    <?php echo $svgs[$i] ?>
+                      <?php echo $svgs[$i] ?>
                     </div>
                     <div class="text-container mt-1">
                       <p class="xs title text-center color-black fw-600"><?php echo $titles[$i] ?></p>
@@ -162,11 +161,15 @@
       </div>
       <div class="navigator">
         <div class="dots">
-          <div class="wrapper"></div>
+          <div class="dots-wrapper">
+            <div class="out-wrapper">
+              <div class="wrapper" style="--slide:1;"></div>
+            </div>
+          </div>
         </div>
         <div class="arrows">
           <div class="wrapper">
-            <div class="icon btn-icon-next">
+            <div class="icon btn-icon-prev">
               <img class="img" src="public/img/icon/arrow-03.png" alt="Arrow" />
             </div>
             <div class="icon">
@@ -177,6 +180,7 @@
             </div>
           </div>
         </div>
+        <div class="btn-slide-more"></div>
       </div>
     </div>
  </section>
@@ -421,7 +425,7 @@
                   <div class="swiper-slide">
                     <div class="wrapper">
                       <div class="ss-card ss-card-03">
-                        <div class="ss-img no-hover horizontal-03">
+                        <div class="ss-img no-hover horizontal-01">
                           <div class="img-bg" style="background-image:url('public/img/content/content-7<?= ($i%3+5) ?>.jpg');"></div>
                         </div>
                         <div class="icon">
@@ -566,7 +570,7 @@
                   <div class="swiper-slide">
                     <div class="wrapper">
                       <div class="ss-card ss-card-03">
-                        <div class="ss-img no-hover horizontal-03">
+                        <div class="ss-img no-hover horizontal-04">
                           <div class="img-bg" style="background-image:url('public/img/content/content-8<?= ($i%3+0) ?>.jpg');"></div>
                         </div>
                         <div class="icon">
@@ -604,7 +608,6 @@
       </div>    
     </div>
   </section>
-  
   <section data-section="14" class="section-12">
     <div class="container">
       <div class="blocks mh-0">
@@ -631,7 +634,7 @@
                 <?php for($i=0; $i<5; $i++){?>
                   <div class="swiper-slide">
                     <div class="wrapper">
-                      <div class="ss-img no-hover horizontal-03">
+                      <div class="ss-img no-hover horizontal-04">
                         <div class="img-bg" style="background-image:url('public/img/content/content-5<?= ($i%1+0) ?>.jpg');"></div>
                       </div>
                     </div>

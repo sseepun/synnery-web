@@ -47,10 +47,9 @@
       </div>
     </div>
     
-    <?php include_once('include/clients-data.php'); ?>
-
+    <?php include_once('data/clients.php'); ?>
     <div class="clients pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="450">
-      <?php foreach($clients02 as $d){?>
+      <?php foreach($clients as $d){?>
         <div class="client">
           <div class="ss-card ss-card-26">
             <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
@@ -59,7 +58,7 @@
                 <img src="<?= $d['icon'] ?>" alt="Client" />
               </div>
               <div class="text-container mt-4">
-                <p class="xs title lh-sm">
+                <p class="xxs title lh-sm">
                   <?= $d['title']?>
                 </p>
               </div>

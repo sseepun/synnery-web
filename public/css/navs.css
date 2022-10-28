@@ -142,7 +142,7 @@ nav.topnav + .topnav-spacer{display:block; width:100%; height:5.625rem;}
 
 nav.topnav .logo > img.part{position:absolute; width:auto;}
 nav.topnav .logo > img.part.part-01{top:32.2%; left:0; height:23%;}
-nav.topnav .logo > img.part.part-02{top:17%; left:33.37%; height:19%;}
+nav.topnav .logo > img.part.part-02{top:17%; left:33.52%; height:19%;}
 nav.topnav .logo > img.part.part-03{top:17%; left:90.8%; height:19%;}
 
 nav.topnav .logo:hover > img.part.part-01{animation:logoPart01 .5s ease-in-out;}
@@ -354,14 +354,13 @@ nav.footer .pattern.style-04 .wrapper img{display:block; width:calc(8rem + 60vw)
 }
 @media screen and (max-width:575.98px){
   nav.footer .top-wrapper{flex-wrap:wrap; justify-content:center; padding:2.5rem 0;}
-  nav.footer .logo-wrapper{width:100%;}
-  nav.footer .logo img{margin:0 auto;}
+  nav.footer .logo-wrapper{width:100%; margin:0; display:flex; justify-content:center;}
   nav.footer .address{width:auto; margin:2rem 0 0 0;}
 }
 
 nav.footer .logo > img.part{position:absolute; width:auto;}
 nav.footer .logo > img.part.part-01{top:32.2%; left:0; height:23%;}
-nav.footer .logo > img.part.part-02{top:17%; left:33.37%; height:19%;}
+nav.footer .logo > img.part.part-02{top:17%; left:33.52%; height:19%;}
 nav.footer .logo > img.part.part-03{top:17%; left:90.8%; height:19%;}
 nav.footer .logo:hover > img.part.part-01{animation:logoPart01 .5s ease-in-out;}
 nav.footer .logo:hover > img.part.part-02{animation:logoPart02 .5s ease-in-out;}
