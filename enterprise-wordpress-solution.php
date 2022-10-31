@@ -74,6 +74,21 @@
     </div>
   </section>
 
+  <?php 
+    $themes = [
+      ['bg' => 'public/img/content/content-103.jpg'],
+      ['bg' => 'public/img/content/content-104.jpg'],
+      ['bg' => 'public/img/content/content-105.jpg'],
+      ['bg' => 'public/img/content/content-106.jpg'],
+      ['bg' => 'public/img/content/content-107.jpg'],
+      ['bg' => 'public/img/content/content-108.jpg'],
+      ['bg' => 'public/img/content/content-109.jpg'],
+      ['bg' => 'public/img/content/content-110.jpg'],
+      ['bg' => 'public/img/content/content-111.jpg'],
+      ['bg' => 'public/img/content/content-112.jpg'],
+      ['bg' => 'public/img/content/content-113.jpg'],
+    ]
+  ?>
   <section data-section="4" class="section-08 section-padding">
     <div class="pattern style-42">
       <div class="wrapper" value="-.5">
@@ -100,12 +115,12 @@
       <div class="content-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <?php for($i=0; $i<5; $i++){?>
+            <?php foreach($themes as $d){?>
               <div class="swiper-slide">
                 <div class="wrapper">
                   <div class="ss-card ss-card-35">
                     <div class="ss-img no-hover">
-                      <div class="img-bg" style="background-image:url('public/img/content/21.jpg');"></div>
+                      <div class="img-bg" style="background-image:url(<?= $d['bg']?>);"></div>
                     </div>
                     <div class="title-header">
                       <p class="xs color-02">THEME <span class="progress"></span></p>
@@ -126,7 +141,7 @@
           </div>
         </div>
         <div class="arrows">
-          <div class="arrow btn-icon-next">
+          <div class="arrow btn-icon-prev">
             <img src="public/img/icon/arrow-01.png" alt="Arrow" />
           </div>
           <div class="arrow btn-icon-next">
