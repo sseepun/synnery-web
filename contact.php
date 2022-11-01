@@ -21,11 +21,11 @@
       </h3> 
       <div class="grids jc-center">
         <div class="grid xl-60 lg-2-3 sm-100 mt-0">
-          <p class="xs fw-400 mt-3" data-aos="fade-up" data-aos-delay="150">
-            <span class="text-danger">*</span>จำเป็นต้องกรอก
-          </p>
           <div class="mt-3" data-aos="fade-up" data-aos-delay="300">
             <form action="/" method="POST">
+              <p class="xs fw-400 mt-3" data-aos="fade-up" data-aos-delay="150">
+                <span class="text-danger">*</span> จำเป็นต้องกรอก
+              </p>
               <div class="grids">
                 <div class="grid sm-50 mt-3">
                   <div class="form-group">
@@ -119,7 +119,8 @@
                   </div>
                 </div>
                 <div class="captcha-container mt-6">
-                  <img class="img" src="public/img/misc/captcha.jpg" alt="CAPTCHA" />
+                  <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                  <!-- <img class="img" src="public/img/misc/captcha.jpg" alt="CAPTCHA" /> -->
                 </div>
               </div>
                <div class="btn-container">
@@ -190,5 +191,7 @@
  
   <?php $withFooterInfo=true; $withFooterContact=false; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
 </body>
 </html>

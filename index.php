@@ -188,7 +188,6 @@
                   'icon' => 'public/img/clients/client-02.png',
                   'title' => 'กระทรวงพลังงาน',
                   'bgColor' => 'rgba(254,77,1,.7)',
-                  'classer' => 'inactive'
                 ], [
                   'bg' => 'public/img/content/35.jpg',
                   'icon' => 'public/img/clients/client-03.png',

@@ -399,10 +399,23 @@
 
   <?php 
     $varturewalk = [
-      ['bg' => 'public/img/content/41.jpg', 'url' => 'https://chatuchak2shop.com/chatuchak/street.html'],
-      ['bg' => 'public/img/content/41.jpg', 'url' => 'https://bit.ly/3swyo9V'],
-      ['bg' => 'public/img/content/41.jpg', 'url' => 'https://bit.ly/3a1Lci9'],
-      ['bg' => 'public/img/content/41.jpg', 'url' => 'https://bit.ly/3PfUDL3']
+      [
+       'bg' => 'public/img/content/virtual-walk-01.jpg', 
+       'url' => 'https://chatuchak2shop.com/chatuchak/street.html',
+       'title' => 'chatuchak2shop'
+      ],[
+        'bg' => 'public/img/content/virtual-walk-02.jpg', 
+        'url' => 'https://bit.ly/3swyo9V',
+        'title' => 'chatuchak Street View'
+      ],[
+        'bg' => 'public/img/content/virtual-walk-03.jpg', 
+        'url' => 'https://bit.ly/3a1Lci9',
+        'title' => 'CRYSTAL HOME -JJ plaza'
+      ],[
+        'bg' => 'public/img/content/virtual-walk-04.jpg', 
+        'url' => 'https://bit.ly/3PfUDL3',
+        'title' => 'HOME HEAVEN -JJ plaza'
+      ]
     ]
   ?>
 
@@ -435,14 +448,19 @@
       <?php foreach($varturewalk as $d) {?>
         <div class="grid lg-25 style-03 mt-0">
           <div class="p-1 bg-white">
-            <a class="ss-card" href="<?= $d['url']?>">
+            <a class="ss-card ss-card-38" href="<?= $d['url']?>">
               <div class="ss-img no-hover">
                 <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+              </div>
+              <div class="wrapper">
+                <div class="icon">
+                  <img src="public/img/icon/walk.png" alt="Icon" />
+                </div>
               </div>
             </a>
           </div>
           <p class="xs color-white pos-relative text-center text-uppercase fw-500 mt-3">
-            chatuchak2shop
+            <?= $d['title']?>
           </p>
         </div>
       <?php }?>
@@ -461,9 +479,9 @@
 
     <div class="p-1">
       <div class="grids no-gap">
-        <div class="grid lg-1-3 sm-100 mt-0">
+        <div class="grid lg-1-3 md-2-3 sm-100 mt-0">
           <div class="grids no-gap">
-            <div class="grid lg-50 md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
+            <div class="grid lg-50 md-50 sm-50 mt-0" data-aos="fade-up" data-aos-delay="0">
               <div class="p-1 h-full">
                 <a class="ss-card ss-card-03 style-02" href="public/img/content/content-87.jpg" data-fancybox="gallery">
                   <div class="ss-img">
@@ -477,7 +495,7 @@
                 </a>
               </div>
             </div>
-            <div class="grid lg-50 md-1-3 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
+            <div class="grid lg-50 md-50 sm-50 mt-0" data-aos="fade-up" data-aos-delay="0">
               <div class="p-1 h-full">
                 <a class="ss-card ss-card-03 style-02" href="public/img/content/content-62.jpg" data-fancybox="gallery">
                   <div class="ss-img">
@@ -532,10 +550,7 @@
             ],[
               'bg' => 'public/img/content/content-91.jpg',
               'url' => 'https://www.youtube.com/watch?v=fgb3_rAOiOc&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=2'
-            ],[
-              'bg' => 'public/img/content/content-92.jpg',
-              'url' => 'https://www.youtube.com/watch?v=Nen_sgy_cUo&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=3 
-            '],
+            ],
           ]
         ?>
         <?php foreach($infovideos as $d){?>
@@ -556,9 +571,25 @@
             </div>
           </div>
         <?php }?>
-        <div class="grid lg-1-3 sm-100 mt-0">
+        <div class="grid md-1-3 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
+          <div class="p-1">
+            <a class="ss-card" href="https://www.youtube.com/watch?v=Nen_sgy_cUo&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=3" data-fancybox>
+              <div class="ss-img horizontal-03">
+                <div class="img-bg" style="background-image:url('public/img/content/content-92.jpg');"></div>
+              </div>
+              <div class="hover-filter-01"></div>
+              <div class="card-icon">
+                <div class="icon">
+                  <img class="img" src="public/img/icon/play.png" alt="Banner" />
+                </div>
+              </div>
+              <div class="card-line-1"></div><div class="card-line-2"></div>
+            </a>
+          </div>
+        </div>
+        <div class="grid lg-1-3 md-100 sm-100 mt-0">
           <div class="grids no-gap">
-            <div class="grid lg-50 md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
+            <div class="grid lg-50 md-50 mt-0" data-aos="fade-up" data-aos-delay="0">
               <div class="p-1 h-full">
                 <a class="ss-card ss-card-03 style-02" href="public/img/content/content-62.jpg" data-fancybox="gallery">
                   <div class="ss-img">
@@ -572,7 +603,7 @@
                 </a>
               </div>
             </div>
-            <div class="grid lg-50 md-1-3 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
+            <div class="grid lg-50 md-50 mt-0" data-aos="fade-up" data-aos-delay="0">
               <div class="p-1 h-full">
                 <a class="ss-card ss-card-03 style-02" href="public/img/content/content-93.jpg" data-fancybox="gallery">
                   <div class="ss-img">
@@ -590,7 +621,7 @@
         </div>
       </div>
     </div>
-
+   
     <div class="p-1 bg-black">
       <div class="grids no-gap">
         <div class="grid lg-2-3 sm-100 mt-0">

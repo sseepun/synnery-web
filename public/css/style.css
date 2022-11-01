@@ -410,7 +410,9 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card .line-1::before, .ss-card .line-1::after,
 .ss-card .line-2::before, .ss-card .line-2::after,
 .ss-card .line-3::before, .ss-card .line-3::after,
-.ss-card .line-4::before, .ss-card .line-4::after{
+.ss-card .line-4::before, .ss-card .line-4::after,
+.ss-card .line-5::before, .ss-card .line-5::after,
+.ss-card .line-6::before, .ss-card .line-6::after{
     content:''; position:absolute; background:#ec2c23; z-index:1;
 }
 .ss-card .line-1::before, .ss-card .line-1::after{
@@ -440,6 +442,22 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card .line-4::after{right:0;}
 .ss-card:hover .line-4::after{top:0; height:100%;}
 .ss-card:hover .line-4::before{bottom:0; height:100%;}
+
+.ss-card .line-5::before, .ss-card .line-5::after{
+  height:3px; width:0; transition:left .5s, right .5s, width .5s;
+}
+.ss-card .line-5::before{top:.5rem; left:25%;} 
+.ss-card .line-5::after{bottom:.5rem; right:25%;}
+.ss-card:hover .line-5::before{left:.5rem; width:50%;}
+.ss-card:hover .line-5::after{right:.5rem; width:50%;}
+
+.ss-card .line-6::before, .ss-card .line-6::after{
+  width:3px; height:0; transition:top .5s, bottom.5s, height .5s;
+}
+.ss-card .line-6::before{left:.5rem; top:25%;} 
+.ss-card .line-6::after{right:.5rem; bottom:25%;}
+.ss-card:hover .line-6::before{top:.5rem; height:50%;}
+.ss-card:hover .line-6::after{bottom:.5rem; height:50%;}
 
 .ss-card .card-line-1::before{width:.125rem; height:1.875rem; left:1rem; top:1rem;}
 .ss-card .card-line-1::after{width:1.875rem; height:.125rem; left:1rem; top:1rem;}
@@ -854,6 +872,19 @@ fieldset{padding:0; margin:0; border:0;}
 @media screen and (max-width:575.98px){
     .ss-card-37 .hover-container.active{opacity:1;}
 }
+
+/* Special Card 38 */
+.ss-card-38 .wrapper{
+    position:absolute; top:0; left:0; right:0; bottom:0; display:flex;
+    justify-content:center; align-items:center;
+}
+.ss-card-38 .icon{
+    width:4.5rem; height:4.5rem; display:flex; justify-content:center;
+    align-items:center; border-radius:50%; background:#ffffff; 
+}
+.ss-card-38 .icon > img{
+    display:block; width:auto; max-width:50%; height:auto; max-height:50%;
+ }
 
 
 /* Special Image */

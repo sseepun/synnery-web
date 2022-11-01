@@ -117,12 +117,13 @@
                     <div class="ss-img no-hover">
                       <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                     </div>
-                    <div class="text-container">
-                      <p class="sm fw-400 mt-3">
-                        <?= $d['title'] ?>
-                      </p>
-                    </div>
+                    <div class="line-5"></div><div class="line-6"></div>
                   </a>
+                  <div class="text-container">
+                    <p class="sm fw-400 mt-3">
+                      <?= $d['title'] ?>
+                    </p>
+                  </div>
                 </div>
               <?php }?>
             </div>
