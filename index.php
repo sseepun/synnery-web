@@ -481,6 +481,24 @@
     </div>
   </section>
 
+  <?php 
+    $titles02 = [
+      [
+        'title' => '3D Virtual Tour /<br>Metaverse',
+        'url' => 'https://www.youtube.com/watch?v=hzH1coqP4f8',
+        'bg' => 'public/img/content/v-service-01.jpg'
+      ],[
+        'title' => 'Virtual Tour',
+        'url' => 'https://www.youtube.com/watch?v=-kaiHqu5Al4',
+        'bg' => 'public/img/content/v-service-02.jpg'
+      ],[
+        'title' => 'Live & Virtual<br>Exhibition',
+        'url' => 'https://www.youtube.com/watch?v=LmJMRQNd1Xo',
+        'bg' => 'public/img/content/v-service-03.jpg'
+      ]
+    ]
+  ?>
+
   <section data-section="9" class="section-01 section-padding">
     <div class="pattern style-07">
       <div class="wrapper" value="-.5">
@@ -508,11 +526,11 @@
         Virtual World <span class="color-white">Services</sapn>
       </h3>
       <div class="grids jc-center pos-relative mt-4" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
-        <?php for($i=0; $i<3; $i++){?>
+        <?php foreach($titles02 as $d){?>
           <div class="grid lg-1-3">
             <div class="ss-card ss-card-31 box-shadow">
               <div class="ss-img vertical-01">
-                <div class="img-bg" style="background-image:url('public/img/content/v-service-0<?= ($i%3+1) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
               </div>
               <div class="filter-01"></div>
               <div class="hover-filter-01"></div>
@@ -522,11 +540,7 @@
                 <div class="video-button">
                   <a 
                     class="video-play-button" data-fancybox 
-                    href="<?php
-                      if($i==0) echo 'https://www.youtube.com/watch?v=hzH1coqP4f8';
-                      else if($i==1) echo 'https://www.youtube.com/watch?v=-kaiHqu5Al4';
-                      else echo 'https://www.youtube.com/watch?v=LmJMRQNd1Xo';
-                    ?>" 
+                    href="<?= $d['url']?>" 
                   >
                     <em class="fas fa-play"></em>
                   </a>
@@ -534,13 +548,13 @@
               </div>
               <div class="text-container">
                 <h5 class="title color-white lh-2xs fw-600">
-                  3D Virtual Tour /<br>Metaverse
+                  <?= $d['title']?>
                 </h5>
-                <p class="sm-2 desc color-white ss-text-wrapper xxxs">
+                <p class="sm desc color-white ss-text-wrapper xxxs">
                   ออกแบบและพัฒนาระบบ Virtual แบบ 360 องศา พร้อมระบบ Walk Throught รวมถึงการเชื่อมต่อวีดีโอ 
-                  เพื่อนำเสนอสถานที่สินค้า หรือบริการต่าง ๆ ในรูปแบบของภาพนิ่งแบบ 360 องศา ๆ ออกแบบและพัฒนาระบบ 
+                  เพื่อนำเสนอสถานที่สินค้า หรือบริการต่าง ๆ ในรูปแบบของภาพนิ่งแบบ 360 องศา ออกแบบและพัฒนาระบบ 
                   Virtual แบบ 360 องศา พร้อมระบบ Walk Throught รวมถึงการเชื่อมต่อวีดีโอ เพื่อนำเสนอสถานที่ สินค้า 
-                  หรือบริการต่าง ๆ ในรูปแบบของภาพนิ่งแบบ 360 องศา ๆ
+                  หรือบริการต่าง ๆ ในรูปแบบของภาพนิ่งแบบ 360 องศา
                 </p>
                 <a class="card-more p sm fw-700" href="#">
                   Read More

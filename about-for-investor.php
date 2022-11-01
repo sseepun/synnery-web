@@ -214,46 +214,6 @@
       </div>
     </div>  
   </section>
-
-  <section data-section="5" class="section-05 section-padding" style="background-image:url('public/img/bg/06.jpg');">
-    <div class="container">
-      <h3 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
-        แผนการลงทุน ร่วมทุน กับ ธุรกิจด้านอื่น ๆ
-      </h3>
-      <p class="text-center color-white md-no-br mt-4" data-aos="fade-up" data-aos-delay="150">
-        ด้วยพื้นฐานด้านการเป็นนักพัฒนาระบบโปรแกรมต่าง ๆ และการบริหารจัดการด้านการตลาด การเป็นที่ปรึกษาของเรามากกว่า 25 ปี <br>
-        เราเปิดกว้างเพื่อมองหา คู่ค้า ในธุรกิจด้านต่าง ๆ ที่สนใจนำเทคโนโลยี และองค์ความรู้ประสบการณ์ต่าง ๆ ของเรา 
-      </p>
-      <div class="ss-box xl mt-4">
-        <div class="grids" data-aos="fade-up" data-aos-delay="300">
-          <div class="grid lg-1-3 md-50 sm-50 xs-100 mt-0">
-            <ul class="ss-list-01">
-              <li>ด้านการศึกษา</li>
-              <li>ด้านสุขภาพ</li>
-              <li>ด้านการเกษตร</li>
-              <li>ด้านการขนส่ง</li>
-            </ul> 
-          </div>   
-          <div class="grid lg-1-3 md-50 sm-50 xs-100 mt-0">
-            <ul class="ss-list-01">
-              <li>ด้านอาหารและเครื่องดื่ม</li>
-              <li>ด้านแฟชั่น  </li>
-              <li>ด้านประกันชีวิต ประกันภัย</li>
-              <li>ด้านการท่องเที่ยว</li>
-            </ul> 
-          </div>
-          <div class="grid lg-1-3 md-50 sm-50 xs-100 mt-0">
-            <ul class="ss-list-01">
-              <li>ด้านธุรกิจยานยนต์</li>
-              <li>ด้านอสังหาริมทรัพย์</li>
-              <li>ด้านการแพทย์</li>
-              <li>ด้านตลาดกลาง (Market Place)</li>
-            </ul> 
-          </div> 
-        </div>
-      </div>
-    </div>
-  </section>
   
   <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>

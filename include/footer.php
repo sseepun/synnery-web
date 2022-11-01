@@ -151,25 +151,53 @@
     </section>
   <?php }?>
 
+  <?php 
+    $services = [
+      [
+        'title' => 'Unlimited Microsite for Government',
+        'bg' => 'public/img/content/menu-service-02.jpg',
+        'url' => 'web-gov-minisite.php'
+      ],[
+        'title' => 'Enterprise Wordpress<br>Solutions',
+        'bg' => 'public/img/content/menu-service-03.jpg',
+        'url' => 'enterprise-wordpress-solution.php'
+      ],[
+        'title' => 'NetWork Architecture/<br>DevSecOps',
+        'bg' => 'public/img/content/menu-service-04.jpg',
+        'url' => 'network-security-system.php'
+      ],[
+        'title' => 'Full Services Digital<br>Marketing',
+        'bg' => 'public/img/content/menu-service-05.jpg',
+        'url' => 'services.php'
+      ],[
+        'title' => 'AR, VR/3D Virtual Tour<br>Metaverse',
+        'bg' => 'public/img/content/menu-service-06.jpg',
+        'url' => 'virtual-world.php'
+      ],[
+        'title' => 'E-office/ ERP for<br>Government',
+        'bg' => 'public/img/content/menu-service-08.jpg',
+        'url' => 'erp-for-government.php'
+      ]
+    ]
+  ?>
+
   <section data-section="98" class="section-02 section-padding bg-black pb-0">
     <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
       งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
     </h3> 
     <div class="swiper-container mt-6" data-aos="fade-up" data-aos-delay="150">
       <div class="swiper-wrapper">
-        <?php for($i=0; $i<12; $i++){?>
+        <?php foreach($services as $d){?>
           <div class="swiper-slide">
-            <a class="ss-card ss-card-03" href="#">
+            <a class="ss-card ss-card-03" href="<?= $d['url']?>">
               <div class="ss-img square">
-                <div class="img-bg" style="background-image:url('public/img/content/unsplash-0<?= ($i%6+1) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
               </div>
               <div class="filter-02"></div>
               <div class="hover-filter-02"></div>
               <div class="text-container">
                 <div class="title p sm fw-400 color-white" href="#">
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
-                  Unlimited Microsite for Government
+                  <?= $d['title']?>
                 </div>
               </div>
               <div class="icon">
