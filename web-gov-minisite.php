@@ -98,7 +98,9 @@
                       <?php echo $svgs[$i] ?>
                     </div>
                     <div class="text-container mt-1">
-                      <p class="xs title text-center color-black fw-600"><?php echo $titles[$i] ?></p>
+                      <p class="xxs title text-center color-black fw-600">
+                        <?php echo $titles[$i] ?>
+                      </p>
                     </div>
                   </div>
                 </div>

@@ -101,7 +101,7 @@
       </div>
       <p class="color-03 md-no-br fw-400 text-center" data-aos="fade-up" data-aos-delay="150">
         บริการงานด้านการตลาดแบบครบวงจร ตั้งแต่ รับโจทย์ วาง Concept สร้าง Content วางกลยุทธ์ กำหนดกลุ่มเป้าหมาย <br>
-        วาง KPI และแผนประชาสัมพันธ์ผ่านช่องทางต่างๆ แบบ 360 องศา ตามโจทย์ หรือ KPI 
+        วาง KPI และแผนประชาสัมพันธ์ผ่านช่องทางต่าง ๆ แบบ 360 องศา ตามโจทย์ หรือ KPI 
       </p>
       <div class="ss-box xl mt-6" data-aos="fade-up" data-aos-delay="300">
         <div class="grids">
@@ -164,7 +164,7 @@
             </h3>
             <p class="color-03 fw-400 mt-2" data-aos="fade-up" data-aos-delay="150">
               บริการออกแบบและพัฒนาเว็บไซต์ภาครัฐ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA 
-              พร้อมระบบรักษาความปลอดภัย และโครงสร้างเครื่องมือที่ทันสมัย ใช้งานง่าย
+              พร้อมระบบรักษาความปลอดภัย<br>และโครงสร้างเครื่องมือที่ทันสมัย ใช้งานง่าย
             </p>
             <div class="btns pt-4" data-aos="fade-up" data-aos-delay="300">
               <a class="btn btn-action round btn-color-01" href="web-gov-standard.php">
@@ -351,7 +351,7 @@
       <p class="text-center color-white fw-300" data-aos="fade-up" data-aos-delay="150">
         ออกแบบและพัฒนาระบบ E-Office Automation สำหรับระบบงานภาครัฐ 
         ด้วยแนวคิดการออกแบบและวางระบบแบบ Microservices และรองรับการทำงาน <br>
-        ร่วมกับระบบอื่นๆ ได้อย่างง่ายผ่าน API และทำงานบนโครงสร้างของระบบเครือข่ายแบบ DevSecOps
+        ร่วมกับระบบอื่น ๆ ได้อย่างง่ายผ่าน API และทำงานบนโครงสร้างของระบบเครือข่ายแบบ DevSecOps
       </p>
       <div class="hex-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="300">
         <?php for($i=0; $i<10; $i++){?>
@@ -452,7 +452,7 @@
           Mini Site for <span class="color-black">Government</span>
         </h3>
         <p class="color-03 fw-400 mt-2 lg-no-br" data-aos="fade-up" data-aos-delay="150">
-          สร้างเว็บไซต์ย่อยๆ ได้อย่างไม่จำกัด เหมาะสำหรับหน่วยงานหลัก ที่มีหน่วยงานย่อยๆ ภายใต้การกำกับดูแล <br>
+          สร้างเว็บไซต์ย่อย ๆ ได้อย่างไม่จำกัด เหมาะสำหรับหน่วยงานหลัก ที่มีหน่วยงานย่อย ๆ ภายใต้การกำกับดูแล <br>
           ต้องการให้เว็บของเว็บไซต์หลัก เว็บไซต์ย่อยมีรูปแบบไปในแนวทาง Design เดียวกัน
         </p>
       </div>
@@ -536,9 +536,9 @@
                 <h5 class="title color-white lh-2xs fw-600">
                   3D Virtual Tour /<br>Metaverse
                 </h5>
-                <p class="sm desc color-white ss-text-wrapper xxxs">
+                <p class="sm-2 desc color-white ss-text-wrapper xxxs">
                   ออกแบบและพัฒนาระบบ Virtual แบบ 360 องศา พร้อมระบบ Walk Throught รวมถึงการเชื่อมต่อวีดีโอ 
-                  เพื่อนำเสนอสถานที่ สินค้า หรือบริการต่าง ๆ ในรูปแบบของภาพนิ่งแบบ 360 องศา ๆ ออกแบบและพัฒนาระบบ 
+                  เพื่อนำเสนอสถานที่สินค้า หรือบริการต่าง ๆ ในรูปแบบของภาพนิ่งแบบ 360 องศา ๆ ออกแบบและพัฒนาระบบ 
                   Virtual แบบ 360 องศา พร้อมระบบ Walk Throught รวมถึงการเชื่อมต่อวีดีโอ เพื่อนำเสนอสถานที่ สินค้า 
                   หรือบริการต่าง ๆ ในรูปแบบของภาพนิ่งแบบ 360 องศา ๆ
                 </p>
@@ -579,9 +579,9 @@
           Enterprise DevSecOps <span class="color-black">Solutions</span>
         </h3>
         <p class="text-center md-no-br" data-aos="fade-up" data-aos-delay="150">
-          บริการออกแบบ ติดตั้งระบบ เครื่อข่ายคอมพิวเตอร์ขนาดใหญ่ พร้อมทีมงานผู้เชี่ยวชายด้านการ 
+          บริการออกแบบ ติดตั้งระบบ เครื่อข่ายคอมพิวเตอร์ขนาดใหญ่ พร้อมทีมงานผู้เชี่ยวชาญด้านการ 
           ติดตั้งและบริหารจัดการงานด้าน DevSecOps <br>
-          เพื่อสร้างระบบเครือข่ายที่มีความเสถียรและสามารถ Auto Scale ได้ง่ายง่าย
+          เพื่อสร้างระบบเครือข่ายที่มีความเสถียรและสามารถ Auto Scale ได้ง่าย
         </p>  
       </div>
       <div class="ss-box xl mt-6 pt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="300">
@@ -616,7 +616,9 @@
                      <?php echo $svgs[$i] ?>
                     </div>
                     <div class="text-container mt-1">
-                      <p class="xs title text-center color-black fw-600"><?php echo $titles[$i] ?></p>
+                      <p class="xxs title text-center color-black fw-600">
+                        <?php echo $titles[$i] ?>
+                      </p>
                     </div>
                   </div>
                 </div>
