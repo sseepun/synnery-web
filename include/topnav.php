@@ -73,7 +73,7 @@
         <div class="container">
 
           <?php
-            $clients = [
+            $options01 = [
               [
                 'bg' => 'public/img/content/menu-service-01.jpg',
                 'title' => 'Government Standard Website',
@@ -90,7 +90,13 @@
                 'bg' => 'public/img/content/menu-service-04.jpg',
                 'title' => 'Network Architecture/ DevSecOps',
                 'href' => 'network-security-system.php',
-              ], [
+              ], 
+            ];
+          ?>
+
+          <?php 
+            $options02 = [
+              [
                 'bg' => 'public/img/content/menu-service-05.jpg',
                 'title' => 'Full Services Digital Marketing',
                 'href' => 'services.php',
@@ -107,11 +113,12 @@
                 'title' => 'E-Office / ERP for Government',
                 'href' => 'erp-for-government.php',
               ],
-            ];
+            ]
+          
           ?>
           <div class="dropdown-wrapper" data-dropdown="2">
-            <div class="d-grids">
-              <?php foreach($clients as $d){?>
+            <div class="d-grids jc-start pos-relative" style="z-index:2;">
+              <?php foreach($options01 as $d){?>
                 <div class="d-grid">
                   <a href="<?= $d['href'] ?>" class="ss-card">
                     <div class="ss-img no-hover">
@@ -120,15 +127,33 @@
                     <div class="line-5"></div><div class="line-6"></div>
                   </a>
                   <div class="text-container">
-                    <p class="sm fw-400 mt-3">
+                    <p class="xxs lh-sm fw-400 mt-3">
                       <?= $d['title'] ?>
                     </p>
                   </div>
                 </div>
               <?php }?>
             </div>
+            <div class="d-grids mt-2">
+              <?php foreach($options02 as $d){?>
+                <div class="d-grid">
+                  <a href="<?= $d['href'] ?>" class="ss-card">
+                    <div class="ss-img no-hover">
+                      <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+                    </div>
+                    <div class="line-5"></div><div class="line-6"></div>
+                  </a>
+                  <div class="text-container">
+                    <p class="xxs lh-sm fw-400 mt-3">
+                      <?= $d['title'] ?>
+                    </p>
+                  </div>
+                </div>
+              <?php }?>
+            </div>
+            <div class="line-1"></div>
+            <div class="line-2"></div>
           </div>
-
         </div>
       </div>
     </div>

@@ -412,9 +412,14 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card .line-3::before, .ss-card .line-3::after,
 .ss-card .line-4::before, .ss-card .line-4::after,
 .ss-card .line-5::before, .ss-card .line-5::after,
-.ss-card .line-6::before, .ss-card .line-6::after{
+.ss-card .line-6::before, .ss-card .line-6::after,
+.ss-card .line-7::before, .ss-card .line-7::after,
+.ss-card .line-8::before, .ss-card .line-8::after{
     content:''; position:absolute; background:#ec2c23; z-index:1;
 }
+.ss-card .line-7::before, .ss-card .line-7::after,
+.ss-card .line-8::before, .ss-card .line-8::after{background:white!important;}
+
 .ss-card .line-1::before, .ss-card .line-1::after{
     left:50%; height:3px; width:0; transition:left .5s, width .5s;
 }
@@ -450,7 +455,6 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card .line-5::after{bottom:.5rem; right:25%;}
 .ss-card:hover .line-5::before{left:.5rem; width:50%;}
 .ss-card:hover .line-5::after{right:.5rem; width:50%;}
-
 .ss-card .line-6::before, .ss-card .line-6::after{
   width:3px; height:0; transition:top .5s, bottom.5s, height .5s;
 }
@@ -458,6 +462,22 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card .line-6::after{right:.5rem; bottom:25%;}
 .ss-card:hover .line-6::before{top:.5rem; height:50%;}
 .ss-card:hover .line-6::after{bottom:.5rem; height:50%;}
+
+.ss-card .line-7::before, .ss-card .line-7::after{
+  height:3px; width:0; transition:left .5s, right .5s, width .5s;
+}
+.ss-card .line-7::before{top:0; left:25%;} 
+.ss-card .line-7::after{bottom:0; right:25%;}
+.ss-card:hover .line-7::before{left:0; width:50%;}
+.ss-card:hover .line-7::after{right:0; width:50%;}
+.ss-card .line-8::before, .ss-card .line-8::after{
+  width:3px; height:0; transition:top .5s, bottom.5s, height .5s;
+}
+.ss-card .line-8::before{left:0; top:25%;} 
+.ss-card .line-8::after{right:0; bottom:25%;}
+.ss-card:hover .line-8::before{top:0; height:50%;}
+.ss-card:hover .line-8::after{bottom:0; height:50%;}
+
 
 .ss-card .card-line-1::before{width:.125rem; height:1.875rem; left:1rem; top:1rem;}
 .ss-card .card-line-1::after{width:1.875rem; height:.125rem; left:1rem; top:1rem;}

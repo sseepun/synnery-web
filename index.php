@@ -697,6 +697,7 @@
                 </p>
               </div>
             </div>
+            <div class="line-7"></div><div class="line-8"></div>
           </div>
         </div>
       <?php }?>
