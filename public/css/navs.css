@@ -101,13 +101,16 @@ nav.topnav .menu::before{
   line-height:1; color:#ec2c23; opacity:0; transition:left .3s, opacity .3s;
 }
 nav.topnav .menu:hover::before,
-nav.topnav .menu.active::before{opacity:1; left:.1875rem;}
+nav.topnav .menu.active::before,
+nav.topnav .menu.active-dropdown::before{opacity:1; left:.1875rem;}
 nav.topnav .menu > *:first-child{
   position:relative; display:flex; align-items:center; height:3.75rem; white-space:nowrap;
   padding:0 1.125rem; font-size:.9375rem; font-weight:700; color:#000000; cursor:pointer;
   transition:background .3s, color .3s;
 }
-nav.topnav .menu:hover:not(.active) > *:first-child{color:#ec2c23;}
+nav.topnav .menu:hover > *:first-child,
+nav.topnav .menu.active > *:first-child,
+nav.topnav .menu.active-dropdown > *:first-child{color:#ec2c23;}
 nav.topnav .menu > *:first-child::before{
   content:''; position:absolute; bottom:-1px; right:-.3125rem; width:0; height:.4375rem;
   clip-path:polygon(0 0, calc(100% - .625rem) 0, 100% 100%, .625rem 100%);
@@ -117,6 +120,7 @@ nav.topnav .menu:hover > *:first-child::before,
 nav.topnav .menu.active > *:first-child::before{
   left:-.3125rem; right:unset; width:calc(100% + .625rem);
 }
+nav.topnav .menu > *:first-child .chev{font-size:.6875rem; margin:0 0 .1875rem .375rem;}
 
 nav.topnav + .topnav-spacer{display:block; width:100%; height:5.625rem;}
 

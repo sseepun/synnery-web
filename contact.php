@@ -6,7 +6,7 @@
 </head>
 <body class="loading">
   <?php include_once('component/page-loader.php'); ?>
-  <?php include_once('include/topnav.php'); ?>
+  <?php $topnavActive=6; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1" class="section-05 section-padding"> 

@@ -4,7 +4,7 @@
   </div>
   <div class="wrapper">
     <div class="loader-text">
-      JIGSAW GROUP
+      SYNERRY
     </div>
     <div class="loader-progress">
       <div class="bar"></div>

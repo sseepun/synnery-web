@@ -6,7 +6,7 @@
 </head>
 <body class="loading">
   <?php include_once('component/page-loader.php'); ?>
-  <?php include_once('include/topnav.php'); ?>
+  <?php $topnavActive=3; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1" data-aos="fade-in" data-aos-delay="0">
@@ -391,7 +391,13 @@
           <div class="p-1">
             <a class="ss-card">
               <div class="ss-img horizontal-03">
-                <div class="img-bg" style="background-image:url('public/img/content/content-01.jpg');"></div>
+                <div 
+                  class="img-bg" 
+                  style="
+                    background-image:url('public/img/content/content-01.jpg'); 
+                    background-position:left center; 
+                  "
+                ></div>
               </div>
             </a>
           </div>

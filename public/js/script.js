@@ -16,13 +16,13 @@ $(function(){ 'use strict';
                 dIndex = parent.data('dropdown');
             if(dIndex){
                 e.preventDefault();
-                if(parent.hasClass('active')){
-                    parent.removeClass('active');
+                if(parent.hasClass('active-dropdown')){
+                    parent.removeClass('active-dropdown');
                     topnavDropdown.removeClass('active');
                     scopeDiv.removeClass('topnav-dropdown-opened');
                 }else{
-                    topnavMenu.removeClass('active');
-                    parent.addClass('active');
+                    topnavMenu.removeClass('active-dropdown');
+                    parent.addClass('active-dropdown');
                     topnavDropdown.addClass('active');
                     scopeDiv.addClass('topnav-dropdown-opened');
 
@@ -143,26 +143,30 @@ $(function(){ 'use strict';
         accessTabBtnUp.click(function(e){
             e.preventDefault();
             let ready = true,
+                goTo = 0,
                 st = Math.ceil($(window).scrollTop());
             for(let i=sectionAnchors.length-1; i>=0; i--){
                 let d = sectionAnchors[i];
                 if(ready && st > d){
                     ready = false;
-                    $('html, body').stop().animate({ scrollTop: d }, 700, 'easeInOutCubic');
+                    goTo = d;
                 }
             }
+            $('html, body').stop().animate({ scrollTop: goTo }, 600, 'easeInOutCubic');
         });
         accessTabBtnDown.click(function(e){
             e.preventDefault();
             let ready = true,
+                goTo = 0,
                 st = Math.ceil($(window).scrollTop());
             for(let i=1; i<sectionAnchors.length; i++){
                 let d = sectionAnchors[i];
                 if(ready && st < d){
                     ready = false;
-                    $('html, body').stop().animate({ scrollTop: d }, 900, 'easeInOutCubic');
+                    goTo = d;
                 }
             }
+            $('html, body').stop().animate({ scrollTop: goTo }, 600, 'easeInOutCubic');
         });
     }
     
