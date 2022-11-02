@@ -145,28 +145,27 @@ nav.topnav .logo > img.part.part-01{top:32.2%; left:0; height:23%;}
 nav.topnav .logo > img.part.part-02{top:17%; left:33.52%; height:19%;}
 nav.topnav .logo > img.part.part-03{top:17%; left:90.8%; height:19%;}
 
-nav.topnav .logo:hover > img.part.part-01{animation:logoPart01 .5s ease-in-out;}
+nav.topnav .logo:hover > img.part.part-01{animation:logoPart01 .6s ease-in-out;}
 @keyframes logoPart01{
   0% {transform:rotate(0);}
-  10% {transform:rotate(-30deg);}
-  20% {transform:rotate(0);}
+  30% {transform:rotate(-30deg);}
+  60% {transform:rotate(0);}
   100% {transform:rotate(0);}
 }
 
-nav.topnav .logo:hover > img.part.part-02{animation:logoPart02 .5s ease-in-out;}
+nav.topnav .logo:hover > img.part.part-02{animation:logoPart02 .6s ease-in-out;}
 @keyframes logoPart02{
   0% {transform:translateY(0);}
-  20% {transform:translateY(0);}
-  50% {transform:translateY(-45%);}
-  80% {transform:translateY(0);}
+  30% {transform:translateY(-45%);}
+  60% {transform:translateY(0);}
   100% {transform:translateY(0);}
 }
 
-nav.topnav .logo:hover > img.part.part-03{animation:logoPart03 .5s ease-in-out;}
+nav.topnav .logo:hover > img.part.part-03{animation:logoPart03 .6s ease-in-out;}
 @keyframes logoPart03{
   0% {transform:translateY(0);}
-  40% {transform:translateY(0);}
-  70% {transform:translateY(-45%);}
+  30% {transform:translateY(-45%);}
+  60% {transform:translateY(0);}
   100% {transform:translateY(0);}
 }
 
@@ -362,9 +361,9 @@ nav.footer .logo > img.part{position:absolute; width:auto;}
 nav.footer .logo > img.part.part-01{top:32.2%; left:0; height:23%;}
 nav.footer .logo > img.part.part-02{top:17%; left:33.52%; height:19%;}
 nav.footer .logo > img.part.part-03{top:17%; left:90.8%; height:19%;}
-nav.footer .logo:hover > img.part.part-01{animation:logoPart01 .5s ease-in-out;}
-nav.footer .logo:hover > img.part.part-02{animation:logoPart02 .5s ease-in-out;}
-nav.footer .logo:hover > img.part.part-03{animation:logoPart03 .5s ease-in-out;}
+nav.footer .logo:hover > img.part.part-01{animation:logoPart01 .6s ease-in-out;}
+nav.footer .logo:hover > img.part.part-02{animation:logoPart02 .6s ease-in-out;}
+nav.footer .logo:hover > img.part.part-03{animation:logoPart03 .6s ease-in-out;}
 
 
 /* Accessibility */

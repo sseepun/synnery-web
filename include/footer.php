@@ -11,140 +11,148 @@
         </div>    
       </div>  
     </section>
-    <section class="section-05 section-padding bg-05 toggle-contact-section" data-contact="1"> 
-      <div class="pattern style-01">
+    <section class="section-05 section-padding toggle-contact-section" data-contact="1"> 
+      <div class="pattern style-01" style="z-index:2;">
         <div class="wrapper" value=".5">
           <img src="public/img/content/pattern-18.png" alt="Hero">
         </div>
       </div>
-      <div class="container" style="z-index:2;">
+      <div class="container" style="z-index:1;">
         <h3 class="color-01 text-center text-shadow fw-600">
           Contact Us
-        </h3> 
-        <div class="grids jc-center">
-          <div class="grid xl-60 lg-2-3 sm-100 mt-0">
-            <div class="mt-3" data-aos="fade-up" data-aos-delay="300">
-              <form action="/" method="POST">
-                <p class="xs fw-400 mt-3" data-aos="fade-up" data-aos-delay="150">
-                  <span class="text-danger">*</span> จำเป็นต้องกรอก
-                </p>
-                <div class="grids">
-                  <div class="grid sm-50 mt-3">
-                    <div class="form-group">
-                      <label class="p sm fw-500">ชื่อ-นามสกุล <span class="text-danger">*</span></label>
-                      <input type="text" name="name" required title="General Text Input" />
+        </h3>
+        <?php if(false){?>
+          <div class="grids jc-center">
+            <div class="grid xl-60 lg-2-3 sm-100 mt-0">
+              <div class="mt-3" data-aos="fade-up" data-aos-delay="300">
+                <form action="/" method="POST">
+                  <p class="xs fw-400 mt-3" data-aos="fade-up" data-aos-delay="150">
+                    <span class="text-danger">*</span> จำเป็นต้องกรอก
+                  </p>
+                  <div class="grids">
+                    <div class="grid sm-50 mt-3">
+                      <div class="form-group">
+                        <label class="p sm fw-500">ชื่อ-นามสกุล <span class="text-danger">*</span></label>
+                        <input type="text" name="name" required title="General Text Input" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid sm-50 mt-3">
-                    <div class="form-group">
-                      <label class="p sm fw-500">บริษัท/องค์กร</label>
-                      <input type="text" name="name" required title="General Text Input" />
+                    <div class="grid sm-50 mt-3">
+                      <div class="form-group">
+                        <label class="p sm fw-500">บริษัท/องค์กร</label>
+                        <input type="text" name="name" required title="General Text Input" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid sm-50 mt-3">
-                    <div class="form-group">
-                      <label class="p sm fw-500">อีเมล <span class="text-danger">*</span></label>
-                      <input type="email" name="email" required title="General Text Input" />
+                    <div class="grid sm-50 mt-3">
+                      <div class="form-group">
+                        <label class="p sm fw-500">อีเมล <span class="text-danger">*</span></label>
+                        <input type="email" name="email" required title="General Text Input" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid sm-50 mt-3">
-                    <div class="form-group">
-                      <label class="p sm fw-500">หมายเลขโทรศัพท์ <span class="text-danger">*</span></label>
-                      <input type="text" name="phone" required title="General Text Input" />
+                    <div class="grid sm-50 mt-3">
+                      <div class="form-group">
+                        <label class="p sm fw-500">หมายเลขโทรศัพท์ <span class="text-danger">*</span></label>
+                        <input type="text" name="phone" required title="General Text Input" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid sm-50 mt-3">
-                    <div class="form-group">
-                      <label class="p sm fw-500">ต้องการติดต่อเรื่อง <span class="text-danger">*</span></label>
-                      <input type="text" name="subject" required title="General Text Input" />
+                    <div class="grid sm-50 mt-3">
+                      <div class="form-group">
+                        <label class="p sm fw-500">ต้องการติดต่อเรื่อง <span class="text-danger">*</span></label>
+                        <input type="text" name="subject" required title="General Text Input" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid sm-50 mt-3">
-                    <div class="form-group">
-                      <label class="p sm fw-500">โทรศัพท์องค์กร/ที่ทำงาน <span class="text-danger">*</span></label>
-                      <input type="text" name="phone" required title="General Text Input" />
+                    <div class="grid sm-50 mt-3">
+                      <div class="form-group">
+                        <label class="p sm fw-500">โทรศัพท์องค์กร/ที่ทำงาน <span class="text-danger">*</span></label>
+                        <input type="text" name="phone" required title="General Text Input" />
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid sm-100">
-                    <div class="form-group">
-                      <label class="p sm fw-500">งบประมาณ (บาท) <span class="text-danger">*</span></label>
-                      <fieldset>
-                        <div class="gallery-grids">
-                          <?php
-                            foreach([
-                              '500,000 - 1,000,000', '1,000,001 - 1,500,000', '1,500,001 - 2,000,000',
-                              '2,000,001 - 2,500,000', '2,500,001 - 3,000,000', '3,000,001 - 5,000,000',
-                              'มากกว่า 5,000,000'
-                            ] as $i=>$d){
-                          ?>
-                          <div class="grid md-1-3 sm-1-3 xs-100">
-                            <div class="checkbox-set">
-                              <input type="radio" name="radio" id="radio_<?= $i ?>" <?php if($i==0)echo 'checked'; ?> />
-                              <label for="radio_<?= $i ?>" class="p sm fw-400">
-                                <span><?= $d ?></span>
-                              </label>
+                    <div class="grid sm-100">
+                      <div class="form-group">
+                        <label class="p sm fw-500">งบประมาณ (บาท) <span class="text-danger">*</span></label>
+                        <fieldset>
+                          <div class="gallery-grids">
+                            <?php
+                              foreach([
+                                '500,000 - 1,000,000', '1,000,001 - 1,500,000', '1,500,001 - 2,000,000',
+                                '2,000,001 - 2,500,000', '2,500,001 - 3,000,000', '3,000,001 - 5,000,000',
+                                'มากกว่า 5,000,000'
+                              ] as $i=>$d){
+                            ?>
+                            <div class="grid md-1-3 sm-1-3 xs-100">
+                              <div class="checkbox-set">
+                                <input type="radio" name="radio" id="radio_<?= $i ?>" <?php if($i==0)echo 'checked'; ?> />
+                                <label for="radio_<?= $i ?>" class="p sm fw-400">
+                                  <span><?= $d ?></span>
+                                </label>
+                              </div>
                             </div>
+                            <?php }?>
                           </div>
-                          <?php }?>
-                        </div>
-                      </fieldset>
+                        </fieldset>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid sm-100 mt-3">
-                    <div class="form-group">
-                      <label class="p sm fw-500">ต้องการติดต่อเรื่อง <span class="text-danger">*</span></label>
-                      <textarea name="message" rows="5" required title="General Textarea"></textarea>
+                    <div class="grid sm-100 mt-3">
+                      <div class="form-group">
+                        <label class="p sm fw-500">ต้องการติดต่อเรื่อง <span class="text-danger">*</span></label>
+                        <textarea name="message" rows="5" required title="General Textarea"></textarea>
+                      </div>
                     </div>
-                  </div>
-                  <div class="grid sm-100">
-                    <div class="form-group">
-                      <label class="p sm fw-500">คุณรู้จักเราได้อย่างไร <span class="text-danger">*</span></label>
-                      <fieldset>
-                        <div class="gallery-grids">
-                          <?php
-                            foreach([
-                              'Search from google', 'Facebook Ads.', 'ได้รับการแนะนำจากผู้อื่น',
-                              'อื่นๆ'
-                            ] as $i=>$d){
-                          ?>
-                          <div class="grid md-1-3 sm-1-3 xs-100">
-                            <div class="checkbox-set">
-                              <input type="radio" name="radio" id="radio_<?= $i ?>" <?php if($i==0)echo 'checked'; ?> />
-                              <label for="radio_<?= $i ?>" class="p sm fw-400">
-                                <span><?= $d ?></span>
-                              </label>
+                    <div class="grid sm-100">
+                      <div class="form-group">
+                        <label class="p sm fw-500">คุณรู้จักเราได้อย่างไร <span class="text-danger">*</span></label>
+                        <fieldset>
+                          <div class="gallery-grids">
+                            <?php
+                              foreach([
+                                'Search from google', 'Facebook Ads.', 'ได้รับการแนะนำจากผู้อื่น',
+                                'อื่นๆ'
+                              ] as $i=>$d){
+                            ?>
+                            <div class="grid md-1-3 sm-1-3 xs-100">
+                              <div class="checkbox-set">
+                                <input type="radio" name="radio" id="radio_<?= $i ?>" <?php if($i==0)echo 'checked'; ?> />
+                                <label for="radio_<?= $i ?>" class="p sm fw-400">
+                                  <span><?= $d ?></span>
+                                </label>
+                              </div>
                             </div>
+                            <?php }?>
                           </div>
-                          <?php }?>
-                        </div>
-                      </fieldset>
+                        </fieldset>
+                      </div>
+                    </div>
+                    <div class="captcha-container mt-6">
+                      <div class="g-recaptcha" data-sitekey="your_site_key"></div>
                     </div>
                   </div>
-                  <div class="captcha-container mt-6">
-                    <div class="g-recaptcha" data-sitekey="your_site_key"></div>
-                    <!-- <img class="img" src="public/img/misc/captcha.jpg" alt="CAPTCHA" /> -->
-                  </div>
-                </div>
                   <div class="btn-container">
-                  <div class="ss-box xs">
-                    <div class="btn-customs">
-                      <div class="btn-custom">
-                        <button type="submit" class="btn btn-action btn-color-01 style-02">
-                          <p class="fw-400">ตกลง</p>
-                        </button>
-                      </div>
-                      <div class="btn-custom">
-                        <button type="submit" class="btn btn-action btn-color-02 style-02">
-                          <p class="fw-400">ยกเลิก</p>
-                        </button>
+                    <div class="ss-box xs">
+                      <div class="btn-customs">
+                        <div class="btn-custom">
+                          <button type="submit" class="btn btn-action btn-color-01 style-02">
+                            <p class="fw-400">ตกลง</p>
+                          </button>
+                        </div>
+                        <div class="btn-custom">
+                          <button type="submit" class="btn btn-action btn-color-02 style-02">
+                            <p class="fw-400">ยกเลิก</p>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
+        <?php }else{?>
+          <div data-aos="fade-up" data-aos-delay="150">
+            <iframe 
+              style="position:relative; width:100%; height:1470px; border:0; overflow:hidden; z-index:1;" 
+              src="https://form.asana.com/?k=oniAq4i-fs1lCMY8wWWOBw&d=688901825130647&embed=true" 
+            ></iframe>
+          </div>
+        <?php }?>
       </div>
     </section>
   <?php }?>
@@ -336,15 +344,13 @@
 </svg>
 
 <script>
-    document.addEventListener("mousemove", parallax);
-    function parallax(event) {
-      this.querySelectorAll(".pattern .wrapper").forEach((shift) => {
-        const position = shift.getAttribute("value");
-        const x = (window.innerWidth - event.pageX * position) / 90;
-        const y = (window.innerHeight - event.pageY * position) / 90;
-        shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-      });
-    }
-  </script>
-
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  document.addEventListener("mousemove", parallax);
+  function parallax(event) {
+    this.querySelectorAll(".pattern .wrapper").forEach((shift) => {
+      const position = shift.getAttribute("value");
+      const x = (window.innerWidth - event.pageX * position) / 90;
+      const y = (window.innerHeight - event.pageY * position) / 90;
+      shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
+  }
+</script>

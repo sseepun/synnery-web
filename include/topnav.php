@@ -12,15 +12,17 @@
       </div>
       <div class="inner-wrapper">
         <div class="top-panel hide-tablet">
-          <div class="option">
-            <a href="#">SITE MAP</a>
-          </div>
-          <div class="option-sep">\</div>
-          <div class="option">
-            <a href="#">CAREER</a>
-          </div>
-          <div class="option-sep">\</div>
-          <div class="option">
+          <?php if(false){?>
+            <div class="option">
+              <a href="#">SITE MAP</a>
+            </div>
+            <div class="option-sep">\</div>
+            <div class="option">
+              <a href="#">CAREER</a>
+            </div>
+            <div class="option-sep">\</div>
+          <?php }?>
+          <div class="option op-0 pe-none">
             <a href="#">
               ENGLISH
             </a>
@@ -43,10 +45,10 @@
               <a href="services.php">Our Services</a>
             </div>
             <div class="menu">
-              <a href="career.php">Our Works</a>
+              <a href="clients.php">Our Clients</a>
             </div>
             <div class="menu">
-              <a href="clients.php">Our Clients</a>
+              <a href="career.php">Career</a>
             </div>
             <div class="menu">
               <a href="contact.php">Contact</a>
