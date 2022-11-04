@@ -179,33 +179,33 @@
               $clients = [
                 [
                   'bg' => 'public/img/content/33.jpg',
-                  'icon' => 'public/img/clients/client-01.png',
+                  'icon' => 'public/img/clients/กระทรวงศึกษา.svg',
                   'title' => 'กระทรวงศึกษา',
                   'bgColor' => 'rgba(11,62,31,.7)',
                   'classer' => 'active'
                 ], [
                   'bg' => 'public/img/content/34.jpg',
-                  'icon' => 'public/img/clients/client-02.png',
+                  'icon' => 'public/img/clients/กระทรวงพลังงาน.png',
                   'title' => 'กระทรวงพลังงาน',
                   'bgColor' => 'rgba(254,77,1,.7)',
                 ], [
                   'bg' => 'public/img/content/35.jpg',
-                  'icon' => 'public/img/clients/client-03.png',
+                  'icon' => 'public/img/clients/industry.svg',
                   'title' => 'กระทรวงอุตสาหกรรม',
                   'bgColor' => 'rgba(136,0,156,.7)'
                 ], [
                   'bg' => 'public/img/content/36.jpg',
-                  'icon' => 'public/img/clients/client-04.png',
+                  'icon' => 'public/img/clients/กรมธนารักษ์.svg',
                   'title' => 'กรมธนารักษณ์',
                   'bgColor' => 'rgba(204,165,33,.7)'
                 ], [
                   'bg' => 'public/img/content/37.jpg',
-                  'icon' => 'public/img/clients/client-05.png',
+                  'icon' => 'public/img/clients/กรมโยธาธิการและผังเมือง.svg',
                   'title' => 'กรมโยธาธิการและผังเมือง',
                   'bgColor' => 'rgba(52,14,21,.7)'
                 ], [
                   'bg' => 'public/img/content/38.jpg',
-                  'icon' => 'public/img/clients/client-06.png',
+                  'icon' => 'public/img/clients/มหาวิทยาลัยเกษตรศาสตร์.png',
                   'title' => 'มหาวิทยาลัยเกษตร',
                   'bgColor' => 'rgba(177,187,27,.7)'
                 ],
@@ -245,32 +245,32 @@
         $clients = [
           [
             'bg' => 'public/img/content/60.jpg',
-            'icon' => 'public/img/clients/client-07.png',
+            'icon' => 'public/img/clients/กรมอนามัย.svg',
             'title' => 'กรมอนามัย',
             'bgColor' => 'rgba(0,108,63,.7)'
           ], [
             'bg' => 'public/img/content/61.jpg',
-            'icon' => 'public/img/clients/client-08.png',
+            'icon' => 'public/img/clients/Asia-Pacific-Economic-Cooperation.svg',
             'title' => 'ความร่วมมือทางเศรษฐกิจ<br>ในเอเชียแปซิฟิก (เอเปค)',
             'bgColor' => 'rgba(43,48,125,.7)'
           ], [
             'bg' => 'public/img/content/62.jpg',
-            'icon' => 'public/img/clients/client-09.png',
+            'icon' => 'public/img/clients/กระทรวงวัฒนธรรม.svg',
             'title' => 'ศูนย์วัฒนธรรมอาเซียน<br>Asean Cultural Center',
             'bgColor' => 'rgba(38,15,71,.7)'
           ], [
             'bg' => 'public/img/content/63.jpg',
-            'icon' => 'public/img/clients/client-10.png',
+            'icon' => 'public/img/clients/กรมการขนส่งทางบก.svg',
             'title' => 'กรมการขนส่งทางบก',
             'bgColor' => 'rgba(102,66,132,.7)'
           ], [
             'bg' => 'public/img/content/64.jpg',
-            'icon' => 'public/img/clients/client-11.png',
+            'icon' => 'public/img/clients/สำนักงานคณะกรรมการกำกับกิจการพลังงาน.png',
             'title' => 'สำนักงานคณะกรรมการ<br>กำกับกิจการพลังงาน',
             'bgColor' => 'rgba(243,119,54,.7)'
           ], [
             'bg' => 'public/img/content/65.jpg',
-            'icon' => 'public/img/clients/client-12.png',
+            'icon' => 'public/img/clients/GSSD.png',
             'title' => 'GSSD Expo Thailand',
             'bgColor' => 'rgba(214,46,26,.7)'
           ], 

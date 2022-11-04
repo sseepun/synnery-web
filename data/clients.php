@@ -178,10 +178,6 @@
       'title' => 'องค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน',
       'bgColor' => 'rgba(136,0,155)'
     ], [
-      'icon' => 'public/img/clients/ศูนย์วัฒนธรรมอาเซียน.svg',
-      'title' => 'ศูนย์วัฒนธรรมอาเซียน',
-      'bgColor' => 'rgba(38,15,71)'
-    ], [
       'icon' => 'public/img/clients/APEC.png',
       'title' => 'APEC 2022',
       'bgColor' => 'rgba(38,15,71)'
