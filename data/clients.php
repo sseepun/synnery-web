@@ -2,7 +2,7 @@
   // 'rgba(136,0,156)'
   $clients = [
     [
-      'icon' => 'public/img/clients/กระทรวงศึกษาธิการ.png',
+      'icon' => 'public/img/clients/กระทรวงศึกษา.svg',
       'title' => 'กระทรวงศึกษาธิการ',
       'bgColor' => 'rgba(11,62,31)'
     ], [
@@ -10,7 +10,7 @@
       'title' => 'กระทรวงพลังงาน',
       'bgColor' => 'rgba(254,77,1)'
     ], [
-      'icon' => 'public/img/clients/กระทรวงอุตสาหกรรม.png',
+      'icon' => 'public/img/clients/industry.svg',
       'title' => 'กระทรวงอุตสาหกรรม',
       'bgColor' => 'rgba(136,0,156)'
     ], [
@@ -34,11 +34,11 @@
       'title' => 'กรมท่าอากาศยาน',
       'bgColor' => 'rgba(41,46,124)'
     ], [
-      'icon' => 'public/img/clients/กรมธนารักษ์.png',
+      'icon' => 'public/img/clients/กรมธนารักษ์.svg',
       'title' => 'กรมธนารักษ์ TRD',
       'bgColor' => 'rgba(204,165,33)'
     ], [
-      'icon' => 'public/img/clients/กรมโยธาธิการและผังเมือง.png',
+      'icon' => 'public/img/clients/กรมโยธาธิการและผังเมือง.svg',
       'title' => 'กรมโยธาธิการ<br>และผังเมือง',
       'bgColor' => 'rgba(52,14,21)'
     ], [
@@ -50,7 +50,7 @@
       'title' => 'กรมสรรพสามิต',
       'bgColor' => 'rgba(136,0,156)'
     ], [
-      'icon' => 'public/img/clients/กรมอนามัย.png',
+      'icon' => 'public/img/clients/กรมอนามัย.svg',
       'title' => 'กรมอนามัย',
       'bgColor' => 'rgba(0,108,63)'
     ], [
@@ -58,11 +58,11 @@
       'title' => 'กรมพัฒนาธุรกิจการค้า',
       'bgColor' => 'rgba(136,0,156)'
     ], [
-      'icon' => 'public/img/clients/กรมการขนส่งทางบก.png',
+      'icon' => 'public/img/clients/กรมการขนส่งทางบก.svg',
       'title' => 'กรมการขนส่งทางบก',
       'bgColor' => 'rgba(102,66,132)'
     ], [
-      'icon' => 'public/img/clients/AEC.svg',
+      'icon' => 'public/img/clients/Asia-Pacific-Economic-Cooperation.svg',
       'title' => 'Asia-Pacific Economic Cooperation',
       'bgColor' => 'rgba(43,48,125)'
     ], [
@@ -74,7 +74,7 @@
       'title' => 'สำนักงานคณะกรรมการเลือกตั้ง',
       'bgColor' => 'rgba(43,48,125)'
     ], [
-      'icon' => 'public/img/clients/สำนักงานคณะกรรมการกำกับและส่งเสริมการประกอบธุรกิจประกันภัย.png',
+      'icon' => 'public/img/clients/สำนักงานคณะกรรมการกำกับและส่งเสริมการประกอบธุรกิจประกันภัย.svg',
       'title' => 'สำนักงานคณะกรรมการกำกับและส่งเสริมการประกอบธุรกิจประกันภัย',
       'bgColor' => 'rgba(18,79,134)'
     ], [
@@ -130,7 +130,7 @@
       'title' => 'สำนักงานส่งเสริมการจัดประชุมและนิทรรศการ',
       'bgColor' => 'rgba(43,48,125)'
     ], [
-      'icon' => 'public/img/clients/สถาบันคุณวุฒิวิชาชีพ.png',
+      'icon' => 'public/img/clients/สถาบันคุณวุฒิวิชาชีพ.svg',
       'title' => 'สถาบันคุณวุฒิวิชาชีพ (องค์การมหาชน)',
       'bgColor' => 'rgba(255,21,41)'
     ], [
@@ -146,7 +146,7 @@
       'title' => 'การท่องเที่ยวแห่งประเทศไทย',
       'bgColor' => 'rgba(43,48,125)'
     ], [
-      'icon' => 'public/img/clients/การไฟฟ้านครหลวง.png',
+      'icon' => 'public/img/clients/การไฟฟ้านครหลวง.svg',
       'title' => 'การไฟฟ้านครหลวง',
       'bgColor' => 'rgba(243,111,33)'
     ], [
@@ -178,10 +178,6 @@
       'title' => 'องค์การบริหารการพัฒนาพื้นที่พิเศษเพื่อการท่องเที่ยวอย่างยั่งยืน',
       'bgColor' => 'rgba(136,0,155)'
     ], [
-      'icon' => 'public/img/clients/ศูนย์วัฒนธรรมอาเซียน.svg',
-      'title' => 'ศูนย์วัฒนธรรมอาเซียน',
-      'bgColor' => 'rgba(38,15,71)'
-    ], [
       'icon' => 'public/img/clients/APEC.png',
       'title' => 'APEC 2022',
       'bgColor' => 'rgba(38,15,71)'
@@ -212,7 +208,7 @@
       'title' => 'ธนาคารเกียรตินาคิน',
       'bgColor' => 'rgba(177,187,27)'
     ], [
-      'icon' => 'public/img/clients/ธนาคารไทยพาณิชย์.svg',
+      'icon' => 'public/img/clients/scb.svg',
       'title' => 'ธนาคารไทยพาณิชย์',
       'bgColor' => 'rgba(177,187,27)'
     ], [
@@ -220,7 +216,7 @@
       'title' => 'ธารารมณ์',
       'bgColor' => 'rgba(177,187,27)'
     ], [
-      'icon' => 'public/img/clients/เคาน์เตอร์เซอร์วิส.svg',
+      'icon' => 'public/img/clients/Counter-Service.svg',
       'title' => 'เคาน์เตอร์เซอร์วิส',
       'bgColor' => 'rgba(177,187,27)'
     ], [
@@ -280,7 +276,7 @@
       'title' => 'บริษัท ยูนิเวนเจอร์ จำกัด',
       'bgColor' => 'rgba(177,187,27)'
     ], [
-      'icon' => 'public/img/clients/YORK.svg',
+      'icon' => 'public/img/clients/ธนาคารกรุงศรีอยุธยา.svg',
       'title' => 'บริษัท ยอร์ค เอ็นจิเนียริ่ง จำกัด',
       'bgColor' => 'rgba(177,187,27)'
     ], [
@@ -308,7 +304,7 @@
       'title' => 'Ratch Group PCL',
       'bgColor' => 'rgba(177,187,27)'
     ], [
-      'icon' => 'public/img/clients/มหาวิทยาลัยหอการค้าไทย.svg',
+      'icon' => 'public/img/clients/UTCC.svg',
       'title' => 'มหาวิทยาลัยหอการค้าไทย',
       'bgColor' => 'rgba(177,187,27)'
     ], [
@@ -324,7 +320,7 @@
       'title' => 'ธนาคารอาคารสงเคราะห์',
       'bgColor' => 'rgba(177,187,27)'
     ], [
-      'icon' => 'public/img/clients/ธนาคารกรุงศรีอยุธยา.svg',
+      'icon' => 'public/img/clients/หอการค้า.svg',
       'title' => 'ธนาคารกรุงศรีอยุธยา',
       'bgColor' => 'rgba(177,187,27)'
     ], 
