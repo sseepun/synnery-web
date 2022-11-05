@@ -5,9 +5,20 @@
       <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
       <div class="container">
         <div class="btns jc-center" data-aos="fade-up" data-aos-delay="0">
-          <a class="btn btn-action style-01 btn-color-01 toggle-contact" href="#" data-contact="1">
-            สอบถามรายละเอียดเพิ่มเติม
-          </a>
+          <div class="btn-bubble__container">
+            <a href="#" class="button btn-bubble toggle-contact" data-contact="1">
+              สอบถามรายละเอียดเพิ่มเติม
+            </a>
+            <span class="btn-bubble__effect-container">
+              <span class="circle top-left"></span>
+              <span class="circle top-left"></span>
+              <span class="circle top-left"></span>
+              <span class="button effect-button"></span>
+              <span class="circle bottom-right"></span>
+              <span class="circle bottom-right"></span>
+              <span class="circle bottom-right"></span>
+            </span>
+          </div>
         </div>    
       </div>  
     </section>
@@ -104,7 +115,7 @@
                           <div class="gallery-grids">
                             <?php
                               foreach([
-                                'Search from google', 'Facebook Ads.', 'ได้รับการแนะนำจากผู้อื่น',
+                                'Search from btn-bubble-patterngle', 'Facebook Ads.', 'ได้รับการแนะนำจากผู้อื่น',
                                 'อื่นๆ'
                               ] as $i=>$d){
                             ?>
@@ -186,7 +197,6 @@
       ]
     ]
   ?>
-
   <section data-section="98" class="section-02 section-padding bg-black pb-0">
     <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
       งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
@@ -324,7 +334,7 @@
 </nav>
 
 <!-- Hex Filter -->
-<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg style="visibility:hidden; position:absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
   <defs>
     <filter id="hex">
       <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur" />    
@@ -333,7 +343,7 @@
     </filter>
   </defs>
 </svg>
-<svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg style="visibility:hidden; position:absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
   <defs>
     <filter id="hex-lg">
       <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />    
@@ -343,14 +353,18 @@
   </defs>
 </svg>
 
-<script>
-  document.addEventListener("mousemove", parallax);
-  function parallax(event) {
-    this.querySelectorAll(".pattern .wrapper").forEach((shift) => {
-      const position = shift.getAttribute("value");
-      const x = (window.innerWidth - event.pageX * position) / 90;
-      const y = (window.innerHeight - event.pageY * position) / 90;
-      shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-    });
-  }
-</script>
+<!-- Button Bubble -->
+<svg style="visibility:hidden; position:absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" class="btn-bubble-pattern">
+  <defs>
+    <filter id="btn-bubble-pattern">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="btn-bubble-pattern" />
+      <feComposite in="SourceGraphic" in2="btn-bubble-pattern"/>
+    </filter>
+  </defs>
+</svg>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZGTD78"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->

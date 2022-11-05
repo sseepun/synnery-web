@@ -97,7 +97,6 @@
               ], 
             ];
           ?>
-
           <?php 
             $options02 = [
               [
@@ -125,7 +124,7 @@
               <?php foreach($options01 as $d){?>
                 <div class="d-grid">
                   <a href="<?= $d['href'] ?>" class="ss-card">
-                    <div class="ss-img no-hover">
+                    <div class="ss-img">
                       <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                     </div>
                     <div class="line-5"></div><div class="line-6"></div>
@@ -142,7 +141,7 @@
               <?php foreach($options02 as $d){?>
                 <div class="d-grid">
                   <a href="<?= $d['href'] ?>" class="ss-card">
-                    <div class="ss-img no-hover">
+                    <div class="ss-img">
                       <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                     </div>
                     <div class="line-5"></div><div class="line-6"></div>

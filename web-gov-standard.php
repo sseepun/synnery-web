@@ -33,9 +33,13 @@
                     ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA
                   </h6>
                   <div class="btns pt-6 animate-01" style="--delay:.9s;">
-                    <a class="btn btn-action round btn-color-01" href="#">
-                      <span class="p xs fw-500">Explore More</span>
-                    </a>
+                    <?php
+                      $btnBubble = [
+                        'href' => '#',
+                        'title' => 'Explore More',
+                      ];
+                      include('component/btn-bubble.php');
+                    ?>
                   </div>
                 </div>
               </div>
