@@ -6,7 +6,7 @@
 </head>
 <body class="loading">
   <?php include_once('component/page-loader.php'); ?>
-  <?php include_once('include/topnav.php'); ?>
+  <?php $topnavActive=3; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1" data-aos="fade-in" data-aos-delay="0">
@@ -663,13 +663,15 @@
 
   <?php 
     $titles = [
-      'ระบบริหารจัดการรายการเนื้อหา เว็บไซต์ (Content Management System)', 'ระบบจัดการผู้ดูแลระบบ (Administrator WEB Master Policy) ',
-      'ระบบบริหารจัดการเมนู<br>(Sub Menu level 2-3 management)', 'ระบบดึงและกระจายข่าว<br>(RSS Feed)พร้อมระบบจัดการข้อมูล',
-      'ระบบถาม-ตอบ (FAQ)<br>ระบบ Vote', 'ระบบเว็บบอร์ด (Web board)', 'Social Media Management', 'E-Newsletter<br>(Mailing List)',
-      ' ระบบจัดการแบนเนอร์ (Banner Management)'
+      'ระบบริหารจัดการรายการเนื้อหา เว็บไซต์ (Content Management System)',
+      'ระบบจัดการผู้ดูแลระบบ (Administrator WEB Master Policy) ',
+      'ระบบบริหารจัดการเมนู<br>(Sub Menu level 2-3 management)',
+      'ระบบดึงและกระจายข่าว<br>(RSS Feed)พร้อมระบบจัดการข้อมูล',
+      'ระบบถาม-ตอบ (FAQ)<br>ระบบ Vote', 'ระบบเว็บบอร์ด (Web board)',
+      'Social Media Management', 'E-Newsletter<br>(Mailing List)',
+      'ระบบจัดการแบนเนอร์ (Banner Management)'
     ]
   ?>
-
   <section data-section="13" class="section-01 section-padding">
     <div class="pattern style-20">
       <div class="wrapper" value=".5">
@@ -706,7 +708,7 @@
       <div class="text-center">
         <h3 class="color-white text-center lh-sm fw-500" data-aos="fade-up" data-aos-delay="0">
           ระบบ <span class="text-uppercase">Back Office</span>
-        </h3> 
+        </h3>
         <p class="h6 color-white fw-200" data-aos="fade-up" data-aos-delay="150">
           สำหรับใช้ในการบริหารจัดการทั้งข้อมูลและโครงสร้างของเว็บไซต์ที่ผ่านมาตรฐาน
         </p>

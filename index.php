@@ -5,8 +5,8 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
-  <?php include_once('include/topnav.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
+  <?php $topnavActive=1; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1" class="banner-02">
@@ -33,9 +33,13 @@
                     ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA
                   </h6>
                   <div class="btns pt-6 animate-01" style="--delay:.9s;">
-                    <a class="btn btn-action round btn-color-01" href="web-gov-standard.php">
-                      <span class="p xs fw-500">Explore More</span>
-                    </a>
+                    <?php
+                      $btnBubble = [
+                        'href' => 'web-gov-standard.php',
+                        'title' => 'Explore More',
+                      ];
+                      include('component/btn-bubble.php');
+                    ?>
                   </div>
                 </div>
               </div>
@@ -167,9 +171,13 @@
               พร้อมระบบรักษาความปลอดภัย<br>และโครงสร้างเครื่องมือที่ทันสมัย ใช้งานง่าย
             </p>
             <div class="btns pt-4" data-aos="fade-up" data-aos-delay="300">
-              <a class="btn btn-action round btn-color-01" href="web-gov-standard.php">
-                <span class="p xs fw-500">Explore More</span>
-              </a>
+              <?php
+                $btnBubble = [
+                  'href' => 'web-gov-standard.php',
+                  'title' => 'Explore More',
+                ];
+                include('component/btn-bubble.php');
+              ?>
             </div>
           </div>
         </div>
@@ -674,7 +682,7 @@
         <div class="grid xl-20 lg-25 md-1-3 xs-50 pt-4">
           <div class="text-center">
             <h6 class="color-03 fw-500">MORE THAN</h6>
-            <p class="h1 lg lh-2xs color-01 counter fw-600">300</p>
+            <p class="h1 lg lh-2xs color-01 counter fw-600">25</p>
             <h4 class="color-black fw-700 lh-xs">YEARS</h4>
           </div>
         </div>

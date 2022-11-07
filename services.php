@@ -5,8 +5,8 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
-  <?php include_once('include/topnav.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
+  <?php $topnavActive=3; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1" data-aos="fade-in" data-aos-delay="0">
@@ -220,7 +220,6 @@
       'พัฒนาเครื่องมือด้านการตลาดต่างๆ ระบบ Web Application, Mobile Application ต่างๆ'
     ]
   ?>
-
   <section data-section="6" class="section-12">
     <div class="container">
       <div class="blocks">
@@ -374,7 +373,6 @@
     </div>  
   </section>
 
-
   <section data-section="8">
     <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
       <div class="container">
@@ -391,7 +389,10 @@
           <div class="p-1">
             <a class="ss-card">
               <div class="ss-img horizontal-03">
-                <div class="img-bg" style="background-image:url('public/img/content/content-01.jpg');"></div>
+                <div class="img-bg" 
+                  style="background-image:url('public/img/content/content-01.jpg'); 
+                    background-position:left center; transform-origin:left center;"
+                ></div>
               </div>
             </a>
           </div>
@@ -475,7 +476,10 @@
           <div class="p-1">
             <a class="ss-card">
               <div class="ss-img horizontal-03">
-                <div class="img-bg" style="background-image:url('public/img/content/content-09.jpg');"></div>
+                <div class="img-bg" 
+                  style="background-image:url('public/img/content/content-09.jpg'); 
+                    background-position:left center; transform-origin:left center;" 
+                ></div>
               </div>
             </a>
           </div>
@@ -594,7 +598,10 @@
               <div class="p-1">
                 <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
                   <div class="ss-img horizontal-03">
-                    <div class="img-bg" style="background-image:url('public/img/content/content-60.jpg');"></div>
+                    <div class="img-bg" 
+                      style="background-image:url('public/img/content/content-60.jpg'); 
+                        background-position:left center; transform-origin:left center;" 
+                    ></div>
                   </div>
                 </a>
               </div>
@@ -633,7 +640,10 @@
           <div class="p-1 h-full">
             <a class="ss-card">
               <div class="ss-img horizontal-03">
-                <div class="img-bg" style="background-image:url('public/img/content/content-63.jpg');"></div>
+                <div class="img-bg" 
+                  style="background-image:url('public/img/content/content-63.jpg'); 
+                    background-position:left center; transform-origin:left center;" 
+                ></div>
               </div>
             </a>
           </div>
@@ -734,7 +744,10 @@
               <div class="p-1 h-full">
                 <a class="ss-card" href="https://bit.ly/3hf5jcI">
                   <div class="ss-img horizontal-03">
-                    <div class="img-bg" style="background-image:url('public/img/content/content-100.jpg');"></div>
+                    <div class="img-bg" 
+                      style="background-image:url('public/img/content/content-100.jpg'); 
+                        background-position:left center; transform-origin:left center;" 
+                    ></div>
                   </div>
                 </a>
               </div>
@@ -1037,8 +1050,6 @@
       </div>
     </div>
   </section>
-
-
 
   <section data-section="12" class="section-06 section-padding pb-3 mb-3 bg-p">
     <div class="container">

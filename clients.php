@@ -6,7 +6,7 @@
 </head>
 <body class="loading">
   <?php include_once('component/page-loader.php'); ?>
-  <?php include_once('include/topnav.php'); ?>
+  <?php $topnavActive=4; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1" class="section-03 section-padding bg-05">
@@ -40,7 +40,7 @@
         <div class="grid xl-20 lg-25 md-1-3 xs-50 pt-4">
           <div class="text-center">
             <h6 class="color-03 fw-500">MORE THAN</h6>
-            <p class="h1 lg lh-2xs color-01 counter fw-600">300</p>
+            <p class="h1 lg lh-2xs color-01 counter fw-600">25</p>
             <h4 class="color-black fw-700 lh-xs">YEARS</h4>
           </div>
         </div>

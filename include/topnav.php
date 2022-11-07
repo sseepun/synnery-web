@@ -12,15 +12,17 @@
       </div>
       <div class="inner-wrapper">
         <div class="top-panel hide-tablet">
-          <div class="option">
-            <a href="#">SITE MAP</a>
-          </div>
-          <div class="option-sep">\</div>
-          <div class="option">
-            <a href="#">CAREER</a>
-          </div>
-          <div class="option-sep">\</div>
-          <div class="option">
+          <?php if(false){?>
+            <div class="option">
+              <a href="#">SITE MAP</a>
+            </div>
+            <div class="option-sep">\</div>
+            <div class="option">
+              <a href="#">CAREER</a>
+            </div>
+            <div class="option-sep">\</div>
+          <?php }?>
+          <div class="option op-0 pe-none">
             <a href="#">
               ENGLISH
             </a>
@@ -33,22 +35,24 @@
         </div>
         <div class="bottom-panel">
           <div class="menu-container hide-tablet">
-            <div class="menu">
+            <div class="menu <?php if(isset($topnavActive) && $topnavActive==1)echo 'active'; ?>">
               <a href="index.php">Home</a>
             </div>
-            <div class="menu">
+            <div class="menu <?php if(isset($topnavActive) && $topnavActive==2)echo 'active'; ?>">
               <a href="about.php">About us</a>
             </div>
-            <div class="menu" data-dropdown="2">
-              <a href="services.php">Our Services</a>
+            <div class="menu <?php if(isset($topnavActive) && $topnavActive==3)echo 'active'; ?>" data-dropdown="2">
+              <a href="services.php">
+                Our Services <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
+              </a>
             </div>
-            <div class="menu">
-              <a href="career.php">Our Works</a>
-            </div>
-            <div class="menu">
+            <div class="menu <?php if(isset($topnavActive) && $topnavActive==4)echo 'active'; ?>">
               <a href="clients.php">Our Clients</a>
             </div>
-            <div class="menu">
+            <div class="menu <?php if(isset($topnavActive) && $topnavActive==5)echo 'active'; ?>">
+              <a href="career.php">Career</a>
+            </div>
+            <div class="menu <?php if(isset($topnavActive) && $topnavActive==6)echo 'active'; ?>">
               <a href="contact.php">Contact</a>
             </div>
           </div>
@@ -93,7 +97,6 @@
               ], 
             ];
           ?>
-
           <?php 
             $options02 = [
               [
@@ -121,7 +124,7 @@
               <?php foreach($options01 as $d){?>
                 <div class="d-grid">
                   <a href="<?= $d['href'] ?>" class="ss-card">
-                    <div class="ss-img no-hover">
+                    <div class="ss-img">
                       <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                     </div>
                     <div class="line-5"></div><div class="line-6"></div>
@@ -138,7 +141,7 @@
               <?php foreach($options02 as $d){?>
                 <div class="d-grid">
                   <a href="<?= $d['href'] ?>" class="ss-card">
-                    <div class="ss-img no-hover">
+                    <div class="ss-img">
                       <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                     </div>
                     <div class="line-5"></div><div class="line-6"></div>

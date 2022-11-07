@@ -16,13 +16,13 @@ $(function(){ 'use strict';
                 dIndex = parent.data('dropdown');
             if(dIndex){
                 e.preventDefault();
-                if(parent.hasClass('active')){
-                    parent.removeClass('active');
+                if(parent.hasClass('active-dropdown')){
+                    parent.removeClass('active-dropdown');
                     topnavDropdown.removeClass('active');
                     scopeDiv.removeClass('topnav-dropdown-opened');
                 }else{
-                    topnavMenu.removeClass('active');
-                    parent.addClass('active');
+                    topnavMenu.removeClass('active-dropdown');
+                    parent.addClass('active-dropdown');
                     topnavDropdown.addClass('active');
                     scopeDiv.addClass('topnav-dropdown-opened');
 
@@ -143,26 +143,30 @@ $(function(){ 'use strict';
         accessTabBtnUp.click(function(e){
             e.preventDefault();
             let ready = true,
+                goTo = 0,
                 st = Math.ceil($(window).scrollTop());
             for(let i=sectionAnchors.length-1; i>=0; i--){
                 let d = sectionAnchors[i];
                 if(ready && st > d){
                     ready = false;
-                    $('html, body').stop().animate({ scrollTop: d }, 700, 'easeInOutCubic');
+                    goTo = d;
                 }
             }
+            $('html, body').stop().animate({ scrollTop: goTo }, 600, 'easeInOutCubic');
         });
         accessTabBtnDown.click(function(e){
             e.preventDefault();
             let ready = true,
+                goTo = 0,
                 st = Math.ceil($(window).scrollTop());
             for(let i=1; i<sectionAnchors.length; i++){
                 let d = sectionAnchors[i];
                 if(ready && st < d){
                     ready = false;
-                    $('html, body').stop().animate({ scrollTop: d }, 900, 'easeInOutCubic');
+                    goTo = d;
                 }
             }
+            $('html, body').stop().animate({ scrollTop: goTo }, 600, 'easeInOutCubic');
         });
     }
     
@@ -257,11 +261,20 @@ $(function(){ 'use strict';
     // Toggle Contact
     $('.toggle-contact').click(function(e){
         e.preventDefault();
-        $('.toggle-contact-section[data-contact="'+$(this).data('contact')+'"]')
-            .slideToggle(600);
-        setTimeout(function(){
-            calculateSectionAnchors();
-        }, 700);
+        let target = $('.toggle-contact-section[data-contact="'+$(this).data('contact')+'"]');
+        if(target.length){
+            target.toggleClass('expanded');
+            target.slideToggle(600);
+            if(target.hasClass('expanded')){
+                let offset = target.offset();
+                $('html, body').stop().animate({
+                    scrollTop: offset.top - bodySize * 3.5
+                }, 700);
+            }
+            setTimeout(function(){
+                calculateSectionAnchors();
+            }, 700);
+        }
     });
 
 
@@ -295,6 +308,67 @@ $(function(){ 'use strict';
             else if(pageX+5 >= o.left + w) self.addClass('from-right');
             else if(pageY-50 <= o.top) self.addClass('from-top');
             else if(pageY+50 >= o.top + h) self.addClass('from-bottom');
+        });
+    }
+
+
+    // Button Bubble
+    $('.btn-bubble').each(function(){
+        let $circlesTopLeft = $(this).parent().find('.circle.top-left');
+        let $circlesBottomRight = $(this).parent().find('.circle.bottom-right');
+      
+        let tl = new TimelineLite();
+        let tl2 = new TimelineLite();
+      
+        let btTl = new TimelineLite({ paused: true });
+      
+        tl.to($circlesTopLeft, 1.2, { x: -25, y: -25, scaleY: 2, ease: SlowMo.ease.config(0.1, 0.7, false) });
+        tl.to($circlesTopLeft.eq(0), 0.1, { scale: 0.2, x: '+=6', y: '-=2' });
+        tl.to($circlesTopLeft.eq(1), 0.1, { scaleX: 1, scaleY: 0.8, x: '-=10', y: '-=7' }, '-=0.1');
+        tl.to($circlesTopLeft.eq(2), 0.1, { scale: 0.2, x: '-=15', y: '+=6' }, '-=0.1');
+        tl.to($circlesTopLeft.eq(0), 1, { scale: 0, x: '-=5', y: '-=15', opacity: 0 });
+        tl.to($circlesTopLeft.eq(1), 1, { scaleX: 0.4, scaleY: 0.4, x: '-=10', y: '-=10', opacity: 0 }, '-=1');
+        tl.to($circlesTopLeft.eq(2), 1, { scale: 0, x: '-=15', y: '+=5', opacity: 0 }, '-=1');
+      
+        let tlBt1 = new TimelineLite();
+        let tlBt2 = new TimelineLite();
+        
+        tlBt1.set($circlesTopLeft, { x: 0, y: 0, rotation: -45 });
+        tlBt1.add(tl);
+      
+        tl2.set($circlesBottomRight, { x: 0, y: 0 });
+        tl2.to($circlesBottomRight, 1.1, { x: 30, y: 30, ease: SlowMo.ease.config(0.1, 0.7, false) });
+        tl2.to($circlesBottomRight.eq(0), 0.1, { scale: 0.2, x: '-=6', y: '+=3' });
+        tl2.to($circlesBottomRight.eq(1), 0.1, { scale: 0.8, x: '+=7', y: '+=3' }, '-=0.1');
+        tl2.to($circlesBottomRight.eq(2), 0.1, { scale: 0.2, x: '+=15', y: '-=6' }, '-=0.2');
+        tl2.to($circlesBottomRight.eq(0), 1, { scale: 0, x: '+=5', y: '+=15', opacity: 0 });
+        tl2.to($circlesBottomRight.eq(1), 1, { scale: 0.4, x: '+=7', y: '+=7', opacity: 0 }, '-=1');
+        tl2.to($circlesBottomRight.eq(2), 1, { scale: 0, x: '+=15', y: '-=5', opacity: 0 }, '-=1');
+        
+        tlBt2.set($circlesBottomRight, { x: 0, y: 0, rotation: 45 });
+        tlBt2.add(tl2);
+      
+        btTl.add(tlBt1);
+        btTl.to($(this).parent().find('.button.effect-button'), 0.8, { scaleY: 1.1 }, 0.1);
+        btTl.add(tlBt2, 0.2);
+        btTl.to($(this).parent().find('.button.effect-button'), 1.8, { scale: 1, ease: Elastic.easeOut.config(1.2, 0.4) }, 1.2);
+      
+        btTl.timeScale(2.6);
+      
+        $(this).on('mouseover', function(){
+            btTl.restart();
+        });
+    });
+
+
+    // Pattern Movement
+    document.addEventListener("mousemove", parallax);
+    function parallax(event) {
+        this.querySelectorAll(".pattern .wrapper").forEach((shift) => {
+            const position = shift.getAttribute("value");
+            const x = (window.innerWidth - event.pageX * position) / 90;
+            const y = (window.innerHeight - event.pageY * position) / 90;
+            shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
         });
     }
 
