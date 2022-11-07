@@ -457,11 +457,11 @@
       </div>
       <div class="swiper-container" data-aos="fade-up" data-aos-delay="150">
         <div class="swiper-wrapper">
-          <?php for($i=0; $i<5; $i++){?>
+          <?php for($i=0; $i<9; $i++){?>
             <div class="swiper-slide">
               <a class="ss-card ss-card-29 box-shadow" href="web-gov-minisite.php">
-                <div class="ss-img vertical-01">
-                  <div class="img-bg" style="background-image:url('public/img/content/web-showcase-0<?= ($i%7+1) ?>.jpg');"></div>
+                <div class="ss-img vertical-02">
+                  <div class="img-bg" style="background-image:url('public/img/content/minisite-gov-0<?= ($i%9+1) ?>.jpg');"></div>
                 </div>
               </a> 
             </div>
