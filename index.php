@@ -75,13 +75,13 @@
 
   <?php
     $titles = [
-      [ 'title' => 'Digital Marketing<br>for Government', 'url' => 'erp-for-government.php' ],
+      [ 'title' => 'Digital Marketing<br>for Government', 'url' => 'services.php' ],
       [ 'title' => 'Website<br>for Government', 'url' => 'web-gov-standard.php' ],
       [ 'title' => 'Mini Site<br>for Government', 'url' => 'web-gov-minisite.php' ],
       [ 'title' => 'Enterprise WordPress<br>for Government', 'url' => 'enterprise-wordpress-solution.php' ],
       [ 'title' => 'Virtual World<br>Services', 'url' => 'virtual-world.php' ],
-      [ 'title' => 'e-Office / ERP<br>for Government', 'url' => '#' ],
-      [ 'title' => 'Enterprise<br>DevSecOps Solutions', 'url' => '#' ],
+      [ 'title' => 'e-Office / ERP<br>for Government', 'url' => 'erp-for-government.php' ],
+      [ 'title' => 'Enterprise<br>DevSecOps Solutions', 'url' => 'network-security-system.php' ],
     ]
   ?>
   <section data-section="2" class="section-01 section-padding">
@@ -190,39 +190,45 @@
                   'icon' => 'public/img/clients/กระทรวงศึกษา.svg',
                   'title' => 'กระทรวงศึกษา',
                   'bgColor' => 'rgba(11,62,31,.7)',
-                  'classer' => 'active'
+                  'classer' => 'active',
+                  'link' => 'web-gov-standard.php',
                 ], [
                   'bg' => 'public/img/content/34.jpg',
                   'icon' => 'public/img/clients/กระทรวงพลังงาน.png',
                   'title' => 'กระทรวงพลังงาน',
                   'bgColor' => 'rgba(254,77,1,.7)',
+                  'link' => 'web-gov-standard.php',
                 ], [
                   'bg' => 'public/img/content/35.jpg',
                   'icon' => 'public/img/clients/industry.svg',
                   'title' => 'กระทรวงอุตสาหกรรม',
-                  'bgColor' => 'rgba(136,0,156,.7)'
+                  'bgColor' => 'rgba(136,0,156,.7)',
+                  'link' => 'web-gov-standard.php',
                 ], [
                   'bg' => 'public/img/content/36.jpg',
                   'icon' => 'public/img/clients/กรมธนารักษ์.svg',
                   'title' => 'กรมธนารักษณ์',
-                  'bgColor' => 'rgba(204,165,33,.7)'
+                  'bgColor' => 'rgba(204,165,33,.7)',
+                  'link' => 'web-gov-standard.php',
                 ], [
                   'bg' => 'public/img/content/37.jpg',
                   'icon' => 'public/img/clients/กรมโยธาธิการและผังเมือง.svg',
                   'title' => 'กรมโยธาธิการและผังเมือง',
-                  'bgColor' => 'rgba(52,14,21,.7)'
+                  'bgColor' => 'rgba(52,14,21,.7)',
+                  'link' => 'web-gov-standard.php',
                 ], [
                   'bg' => 'public/img/content/38.jpg',
                   'icon' => 'public/img/clients/มหาวิทยาลัยเกษตรศาสตร์.png',
                   'title' => 'มหาวิทยาลัยเกษตร',
-                  'bgColor' => 'rgba(177,187,27,.7)'
+                  'bgColor' => 'rgba(177,187,27,.7)',
+                  'link' => 'web-gov-standard.php',
                 ],
               ];
             ?>
             <?php foreach($clients as $d){?>
               <div class="grid lg-1-3 md-50 sm-1-3 xs-50 mt-0">
                 <div class="ss-card ss-card-37">
-                  <a class="ss-img square" href="#">
+                  <a class="ss-img square" href="<?= $d['link'] ?>">
                     <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                       <div class="hover-container <?= $d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
                       <div class="wrapper">
@@ -500,7 +506,7 @@
         'bg' => 'public/img/content/v-service-02.jpg'
       ],[
         'title' => 'Live & Virtual<br>Exhibition',
-        'url' => 'https://www.youtube.com/watch?v=LmJMRQNd1Xo',
+        'url' => 'https://youtu.be/QXjjqG6xCUU',
         'bg' => 'public/img/content/v-service-03.jpg'
       ]
     ]
