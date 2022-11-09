@@ -133,7 +133,7 @@
               <div class="grid xl-20 lg-25 md-1-3 xs-50 pt-4">
                 <div class="text-center">
                   <h6 class="color-white fw-500">MORE THAN</h6>
-                  <p class="h1 lg lh-2xs color-white counter fw-600">300</p>
+                  <p class="h1 lg lh-2xs color-white counter fw-600">25</p>
                   <h4 class="color-black fw-700 lh-xs">YEARS</h4>
                 </div>
               </div>
