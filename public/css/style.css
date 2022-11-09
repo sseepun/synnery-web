@@ -1348,3 +1348,6 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .btn.btn-color-03:active{box-shadow:inset 0 0 0 100rem rgba(0,0,0,.10);}
 
 
+.cuser-pointer {
+    cursor: pointer;
+}

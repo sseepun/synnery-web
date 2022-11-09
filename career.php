@@ -100,6 +100,8 @@
   </section>
 
   <?php
+    include_once('career/career-2566.php');
+
     $categories = [
       [
         'title' => 'All' 
@@ -112,9 +114,10 @@
       ], [
         'title' => 'Trainee'
       ]
-    ]
+    ];
+    // print_r($arrPostion);
   ?>
-  <section data-section="4" class="section-01 section-padding bg-01">
+  <section data-section="4" class="section-01 section-padding bg-01" id="job-position">
     <div class="container">
       <h3 class="color-white text-center fw-600" data-aos="fade-up" data-aos-delay="0">
         ตำแหน่งที่เปิดรับสมัคร
@@ -132,7 +135,7 @@
             <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
               <div class="scroll-x-wrapper" data-simplebar>
                 <div class="ss-box xxl">
-                  <?php for($i=0; $i<8; $i++){?>
+                  <?php /* for($i=0; $i<8; $i++){?>
                     <div class="ss-card ss-card-24 mt-2">
                       <div class="wrapper">
                         <div class="main-block">
@@ -152,7 +155,37 @@
                         </div>
                       </div>
                     </div>
-                  <?php }?>
+                  <?php } */ ?>
+                  <?php
+                  foreach($arrPostion as $index => $data) {
+                    ?>
+                    <div class="ss-card ss-card-24 mt-2">
+                      <div class="wrapper">
+                        <div class="main-block">
+                          <a class="h6 color-black fw-400 cuser-pointer btn-job-slide" data-idx="<?= $index+1 ?>" href="#job">
+                            <em class="fa-regular fa-circle-user color-01 mr-1"></em>
+                            <?= (empty($data['postion'])?'':$data['postion'].' ').(empty($data['subpostion'])?'':$data['subpostion']) ?>
+                          </a>
+                        </div>
+                        <div class="sub-block-01">
+                          <p class="color-black fw-400">
+                            <?= empty($data['vacancies'])?'ไม่มีตำแหน่ง':$data['vacancies'].' ตำแหน่ง' ?>
+                          </p>
+                        </div>
+                        <div class="sub-block-02">
+                          <p class="color-black fw-400">
+                            <span class="color-03 mr-2">ประสบการณ์</span> 
+                            <span><?= empty($data['experience'])?'0 ปีขึ้นไป':$data['experience'] ?></span>
+                          </p>
+                        </div>
+                        <div class="sub-block-03">
+                          <a class="color-white cuser-pointer btn-job-slide" data-idx="<?= $index+1 ?>" href="#job">รายละเอียด</a>
+                        </div>
+                      </div>
+                    </div>
+                    <?php
+                  }
+                  ?>
                 </div>
               </div>
             </div>
@@ -253,8 +286,9 @@
     </div>
   </section>
 
-  <section data-section="6" class="section-05 section-padding" style="background-image:url('public/img/bg/32.jpg');">
+  <section data-section="6" id="job" class="section-05 section-career section-padding" style="background-image:url('public/img/bg/32.jpg');">
     <div class="container">
+      <?php /*
       <h3 class="text-center color-01 lh-sm fw-600" data-aos="fade-up" data-aos-delay="0">
         PM <span class="h4 color-black fw-400">(Project Management)</span>
       </h3>  
@@ -342,6 +376,65 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
+      */ ?>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <?php
+          foreach ($arrPostion as $index => $data) {
+            ?>
+            <div class="swiper-slide">
+              <h3 class="text-center color-01 lh-sm fw-600" data-aos="fade-up" data-aos-delay="0">
+                <?= empty($data['postion'])?'':$data['postion'].' ' ?>
+                <span class="h4 color-black fw-400">
+                  <?= empty($data['subpostion'])?'':$data['subpostion'] ?>
+                </span>
+              </h3>
+              <p class="h5 text-center color-black fw-400" data-aos="fade-up" data-aos-delay="150">
+                <em class="fa-regular fa-circle-user color-01 mr-1"></em> <?= empty($data['vacancies'])?'ไม่มีตำแหน่ง':$data['vacancies'].' ตำแหน่ง' ?>
+              </p>
+              <div  class="ss-box xxl mt-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="grids">
+                  <div class="grid pt-2">
+                    <p class="text-uppercase fw-600">Job Description</p>
+                    <?= empty($data['jobdesc'])?'':$data['jobdesc'] ?>
+                  </div>
+                  <div class="grid pt-2">
+                    <p class="text-uppercase fw-600">Job Specification</p>
+                    <?= empty($data['jobspec'])?'':$data['jobspec'] ?>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <?php
+          }
+          ?>
+        </div>
+        <div class="pt-5" data-aos="fade-up" data-aos-delay="0">
+          <div class="btn-container">
+            <div class="btn-customs jc-center pt-3">
+              <button type="submit" class="btn btn-action btn-color-01 style-02 ml-1 mr-1">
+                <p class="fw-400">สมัคร</p>
+              </button>
+              <a href="#job-position" class="btn btn-action btn-color-02 style-02 ml-1 mr-1">
+                <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="navigator white" data-aos="fade-up" data-aos-delay="0">
+          <div class="progress p"></div>
+          <div class="line"></div>
+          <div class="dots"></div>
+        </div>
+      </div>
+      <div class="arrows">
+        <div class="arrow btn-icon-prev">
+          <img src="public/img/icon/arrow-white-01.png" alt="Arrow" />
+        </div>
+        <div class="arrow btn-icon-next">
+          <img src="public/img/icon/arrow-white-02.png" alt="Arrow" />
         </div>
       </div>
     </div>
