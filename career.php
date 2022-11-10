@@ -414,9 +414,9 @@
         <div class="pt-5" data-aos="fade-up" data-aos-delay="0">
           <div class="btn-container">
             <div class="btn-customs jc-center pt-3">
-              <button type="submit" class="btn btn-action btn-color-01 style-02 ml-1 mr-1">
+              <a href="https://lin.ee/ECVfCZs" target="_blank" class="btn btn-action btn-color-01 style-02 ml-1 mr-1">
                 <p class="fw-400">สมัคร</p>
-              </button>
+              </a>
               <a href="#job-position" class="btn btn-action btn-color-02 style-02 ml-1 mr-1">
                 <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
               </a>
