@@ -546,11 +546,13 @@ $(function(){ 'use strict';
             swiper13.on('slideChange', function(){
                 dotsWrapper.css('--slide', swiper13.activeIndex);
             });
-            
             let expanded = false;
+          
             self.find('.btn-slide-more').click(function(e){
                 e.preventDefault();
                 let dataMax = Number(self.data('max'));
+                let arrows = document.getElementById("arrows");
+                let text = document.getElementById("text");
                 if(!expanded){
                     expanded = true;
                     self.addClass('show-all');
@@ -558,6 +560,8 @@ $(function(){ 'use strict';
                     self.css('--slide-pp', dataMax);
                     swiper13.params.allowSwipeToNext = false;
                     swiper13.params.allowSwipeToPrev = false;
+                    arrows.style.transform = "rotateX(180deg)";
+                    text.style.display = "block";
                 }else{
                     expanded = false;
                     self.removeClass('show-all');
@@ -565,6 +569,9 @@ $(function(){ 'use strict';
                     self.css('--slide-pp', 1);
                     swiper13.params.allowSwipeToNext = true;
                     swiper13.params.allowSwipeToPrev = true;
+                    text.style.display = "none";
+                    arrows.style.transform = "rotateX(0deg)";
+                    location.href = "#webShowcase";
                 }
                 swiper13.params.speed = 0;
                 swiper13.slideTo(1);

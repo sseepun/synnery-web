@@ -186,7 +186,7 @@
     </div>
   </section>
 
-  <section data-section="3" class="section-13">
+  <section data-section="3" class="section-13" id="webShowcase">
     <div class="bg-p pt-6 pb-6" data-aos="fade-in" data-aos-delay="0">
       <div class="container">
         <h3 class="text-center fw-200 color-white pt-6 pb-6">
@@ -945,7 +945,14 @@
             </div>
           </div>
         </div>
-        <div class="btn-slide-more"></div>
+        <div class="btn-slide-more">
+          <div class="wrapper">
+            <p id="text" class="text color-white">ปิด</p>
+            <div id="arrows" class="icon">
+              <img class="img" src="public/img/icon/arrow-05.png" alt="Arrow" />
+            </div>      
+          </div>
+        </div>
       </div>
     </div>
   </section>

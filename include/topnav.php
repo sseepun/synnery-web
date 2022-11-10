@@ -90,10 +90,10 @@
                 'bg' => 'public/img/content/menu-service-03.jpg',
                 'title' => 'Enterprise Wordpress Solutions',
                 'href' => 'enterprise-wordpress-solution.php',
-              ], [
-                'bg' => 'public/img/content/menu-service-04.jpg',
-                'title' => 'Network Architecture/ DevSecOps',
-                'href' => 'network-security-system.php',
+              ],[
+                'bg' => 'public/img/content/menu-service-08.jpg',
+                'title' => 'E-Office / ERP for Government',
+                'href' => 'erp-for-government.php',
               ], 
             ];
           ?>
@@ -103,7 +103,11 @@
                 'bg' => 'public/img/content/menu-service-05.jpg',
                 'title' => 'Full Services Digital Marketing',
                 'href' => 'services.php',
-              ], [
+              ],[
+                'bg' => 'public/img/content/menu-service-04.jpg',
+                'title' => 'Network Architecture/ DevSecOps',
+                'href' => 'network-security-system.php',
+              ],[
                 'bg' => 'public/img/content/menu-service-06.jpg',
                 'title' => 'AR,VR/3D Virtual Tour, Metaverse',
                 'href' => 'virtual-world.php',
@@ -111,10 +115,6 @@
                 'bg' => 'public/img/content/menu-service-07.jpg',
                 'title' => 'Live & Virtual Exhibition',
                 'href' => 'virtual-world.php',
-              ],[
-                'bg' => 'public/img/content/menu-service-08.jpg',
-                'title' => 'E-Office / ERP for Government',
-                'href' => 'erp-for-government.php',
               ],
             ]
           

@@ -182,7 +182,7 @@ nav.topnav .topnav-dropdown{
   transition:opacity ease-in-out .45s, height ease-in-out .45s, clip-path 1s;
 }
 nav.topnav .topnav-dropdown.active{
-  opacity:1; pointer-events:auto; height:22rem; /* height:72vh; */
+  opacity:1; pointer-events:auto; height:24rem; /* height:72vh; */
   transition:opacity ease-in-out .45s, height ease-in-out .45s, clip-path 3s;
   /* clip-path:polygon(0 0, 100% 0, 100% 59vh, 50% 100%, 0 59vh); */
   clip-path:polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0 0);
