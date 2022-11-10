@@ -56,7 +56,7 @@
               <a href="contact.php">Contact</a>
             </div>
           </div>
-          <div class="option-menu">
+          <div class="option-menu d-none">
             <div class="global-search-toggle">
               <img src="public/img/icon/search.png" alt="Icon" />
             </div>

@@ -261,39 +261,45 @@
             'bg' => 'public/img/content/60.jpg',
             'icon' => 'public/img/clients/กรมอนามัย.svg',
             'title' => 'กรมอนามัย',
-            'bgColor' => 'rgba(0,108,63,.7)'
+            'bgColor' => 'rgba(0,108,63,.7)',
+            'link' => 'web-gov-standard.php',
           ], [
             'bg' => 'public/img/content/61.jpg',
             'icon' => 'public/img/clients/Asia-Pacific-Economic-Cooperation.svg',
             'title' => 'ความร่วมมือทางเศรษฐกิจ<br>ในเอเชียแปซิฟิก (เอเปค)',
-            'bgColor' => 'rgba(43,48,125,.7)'
+            'bgColor' => 'rgba(43,48,125,.7)',
+            'link' => 'web-gov-standard.php',
           ], [
             'bg' => 'public/img/content/62.jpg',
             'icon' => 'public/img/clients/กระทรวงวัฒนธรรม.svg',
             'title' => 'ศูนย์วัฒนธรรมอาเซียน<br>Asean Cultural Center',
-            'bgColor' => 'rgba(38,15,71,.7)'
+            'bgColor' => 'rgba(38,15,71,.7)',
+            'link' => 'web-gov-standard.php',
           ], [
             'bg' => 'public/img/content/63.jpg',
             'icon' => 'public/img/clients/กรมการขนส่งทางบก.svg',
             'title' => 'กรมการขนส่งทางบก',
-            'bgColor' => 'rgba(102,66,132,.7)'
+            'bgColor' => 'rgba(102,66,132,.7)',
+            'link' => 'web-gov-standard.php',
           ], [
             'bg' => 'public/img/content/64.jpg',
             'icon' => 'public/img/clients/สำนักงานคณะกรรมการกำกับกิจการพลังงาน.png',
             'title' => 'สำนักงานคณะกรรมการ<br>กำกับกิจการพลังงาน',
-            'bgColor' => 'rgba(243,119,54,.7)'
+            'bgColor' => 'rgba(243,119,54,.7)',
+            'link' => 'web-gov-standard.php',
           ], [
             'bg' => 'public/img/content/65.jpg',
             'icon' => 'public/img/clients/GSSD.png',
             'title' => 'GSSD Expo Thailand',
-            'bgColor' => 'rgba(214,46,26,.7)'
+            'bgColor' => 'rgba(214,46,26,.7)',
+            'link' => 'web-gov-standard.php',
           ], 
         ];
       ?>
       <?php foreach($clients as $d){?>
         <div class="grid lg-1-6 md-25 sm-1-3 xs-50 mt-0">
           <div class="ss-card">
-            <a class="ss-img square" href="#">
+            <a class="ss-img square" href="<?= $d['link'] ?>">
               <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
               <div class="hover-container" style="background:<?= $d['bgColor'] ?>;">
                 <div class="wrapper">
@@ -499,15 +505,19 @@
       [
         'title' => '3D Virtual Tour /<br>Metaverse',
         'url' => 'https://www.youtube.com/watch?v=hzH1coqP4f8',
-        'bg' => 'public/img/content/v-service-01.jpg'
+        'bg' => 'public/img/content/v-service-01.jpg',
+        'type' => 'vdo',
       ],[
         'title' => 'Virtual Tour',
-        'url' => 'https://www.youtube.com/watch?v=-kaiHqu5Al4',
-        'bg' => 'public/img/content/v-service-02.jpg'
+        'url' => 'https://www.google.com/maps/embed?pb=!4v1668062000834!6m8!1m7!1sF%3A-iY78iz90Y3E%2FWXpJPdV4P3I%2FAAAAAAAAJjs%2FJnv-_ONZ1QY_q9icKLwSxiQ45QKxvYe4wCLIBGAYYCw!2m2!1d13.79986519248794!2d100.5508173868882!3f31.77!4f0.5600000000000023!5f0.4000000000000002',
+        // 'url' => 'https://www.youtube.com/watch?v=-kaiHqu5Al4',
+        'bg' => 'public/img/content/v-service-02.jpg',
+        'type' => 'iframe',
       ],[
         'title' => 'Live & Virtual<br>Exhibition',
         'url' => 'https://youtu.be/QXjjqG6xCUU',
-        'bg' => 'public/img/content/v-service-03.jpg'
+        'bg' => 'public/img/content/v-service-03.jpg',
+        'type' => 'vdo',
       ]
     ]
   ?>
@@ -553,7 +563,7 @@
                 <div class="video-button">
                   <a 
                     class="video-play-button" data-fancybox 
-                    href="<?= $d['url']?>" 
+                    <?= $d['type']=='iframe'?'data-type="iframe" data-src="'.$d['url'].'" href="javascript:;"':'href="'.$d['url'].'"' ?>
                   >
                     <em class="fas fa-play"></em>
                   </a>
@@ -612,9 +622,12 @@
         </p>  
       </div>
       <div class="ss-box xl mt-6 pt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="300">
-        <a href="https://www.youtube.com/watch?v=5La64n-_pe4" data-fancybox>
+        <!-- <a href="https://www.youtube.com/watch?v=5La64n-_pe4" data-fancybox>
           <img class="img" src="public/img/content/04.png" alt="Banner" />
-        </a>
+        </a> -->
+        <video width="100%" height="auto" controls autoplay muted playsinline>
+          <source src="public/video/DevSecOps.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
   </section>
