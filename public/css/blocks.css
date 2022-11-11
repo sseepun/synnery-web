@@ -866,7 +866,7 @@
 .section-13 .content.style-04 .img-container > img{
   display:block; width:auto; max-width:100%; height:auto;
 }
-.section-13 .content.style-04 .text-container{padding:0; margin:-2rem 0 0 -12rem;}
+.section-13 .content.style-04 .text-container{padding:0; margin:-2rem 0 0 -12rem;z-index: 1;}
 .section-13 .content.style-04 .text-container.style-02{margin:1.5rem 0 0 -13rem;}
 .section-13 .content.style-04 .title-wrapper{display:block;}
 .section-13 .content.style-04 .title-wrapper .logo > img{
@@ -1070,6 +1070,7 @@
 }
 .section-13 .swiper-container .swiper-slide.swiper-slide-active .animate-03{
   opacity:1; transform:none; transition-delay:var(--delay);
+  z-index: 1;
 }
 .loading .section-13 .swiper-container:not(.show-all) .swiper-slide .animate-03{
   opacity:0!important; transform:translateX(-4rem)!important;

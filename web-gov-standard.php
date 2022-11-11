@@ -221,13 +221,13 @@
                     </div>
                   </div>
                   <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.moe.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
                         <em class="ml-2 fa-solid fa-play"></em>
                       </div>
                     </a>
-                    <a class="btn btn-action btn-color-03 style-02" href="#">
+                    <a class="btn btn-action btn-color-03 style-02" href="https://ops.moe.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์สำนักงานปลัด</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -259,13 +259,13 @@
                         กระทรวงพลังงาน
                       </p>
                       <div class="btns">
-                        <a class="btn btn-action btn-color-03" href="#">
+                        <a class="btn btn-action btn-color-03" href="https://energy.go.th/" target="_blank">
                           <div class="icon-container color-01">
                             <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
                             <em class="ml-2 fa-solid fa-play"></em>
                           </div>
                         </a>
-                        <a class="btn btn-action btn-color-03 style-02" href="#">
+                        <a class="btn btn-action btn-color-03 style-02" href="https://ops.energy.go.th/" target="_blank">
                           <div class="icon-container color-01">
                             <span class="p color-white fw-300">เว็บไซต์สำนักงานปลัด</span>
                             <em class="ml-2 fa-solid fa-play"></em>
@@ -307,13 +307,13 @@
                     </div>
                   </div>
                   <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.industry.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
                         <em class="ml-2 fa-solid fa-play"></em>
                       </div>
                     </a>
-                    <a class="btn btn-action btn-color-03 style-02" href="#">
+                    <a class="btn btn-action btn-color-03 style-02" href="https://ops.industry.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์สำนักงานปลัด</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -347,7 +347,7 @@
                     </div>
                   </div>
                   <div class="btns animate-03" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.treasury.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์กรม</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -387,7 +387,7 @@
                     </div>
                   </div>
                   <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.dpt.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์กรม</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -421,7 +421,7 @@
                     </div>
                   </div>
                   <div class="btns animate-03" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://anamai.moph.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์กรม</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -461,7 +461,7 @@
                     </div>
                   </div>
                   <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.dlt.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์กรม</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -495,7 +495,7 @@
                     </div>
                   </div>
                   <div class="btns mw-unset animate-03" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.acc-th.com/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์หลัก</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -535,7 +535,7 @@
                     </div>
                   </div>
                   <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.ku.ac.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์มหาวิทยาลัย</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -567,7 +567,7 @@
                         คณะกรรมการกำกับกิจการพลังงาน
                       </p>
                       <div class="btns">
-                        <a class="btn btn-action btn-color-03" href="#">
+                        <a class="btn btn-action btn-color-03" href="https://www.erc.or.th/" target="_blank">
                           <div class="icon-container color-01">
                             <span class="p color-white fw-300">เว็บไซต์สำนักงาน</span>
                             <em class="ml-2 fa-solid fa-play"></em>
@@ -609,7 +609,7 @@
                     </div>
                   </div>
                   <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.onesqa.or.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์สำนักงาน</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -640,7 +640,7 @@
                     </div>
                   </div>
                   <div class="btns animate-03" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.thaidevelopmentexpo.com/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์หลัก</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -682,7 +682,7 @@
                     </div>
                   </div>
                   <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.thaihealth.or.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์สำนักงาน</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -696,7 +696,7 @@
         </div>
 
             
-         <!-- Insurance Commission -->
+         <!-- OIC -->
          <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/86.jpg');"></div>
@@ -715,7 +715,7 @@
                         สำนักงานคณะกรรมการกำกับและส่งเสริม<br>การประกอบธุรกิจประกันภัย (คปภ.)
                       </p>
                       <div class="btns">
-                        <a class="btn btn-action btn-color-03" href="#">
+                        <a class="btn btn-action btn-color-03" href="https://oic-web-uat.jigsawgroups.work/th" target="_blank">
                           <div class="icon-container color-01">
                             <span class="p color-white fw-300">เว็บไซต์สำนักงาน</span>
                             <em class="ml-2 fa-solid fa-play"></em>
@@ -733,7 +733,7 @@
           </div>
         </div>
                  
-        <!-- INDUSTRY -->
+        <!-- IEAT -->
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/87.jpg');"></div>
@@ -757,7 +757,7 @@
                     </div>
                   </div>
                   <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.ieat.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์องค์กร</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -791,7 +791,7 @@
                     </div>
                   </div>
                   <div class="btns animate-03" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.apec2022.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์หลัก</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -807,7 +807,7 @@
           </div>
         </div>        
     
-         <!-- Eastern Economic Corridor -->
+         <!-- EEC -->
          <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/89.jpg');"></div>
@@ -831,7 +831,7 @@
                     </div>
                   </div>
                   <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://eeco.or.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์สำนักงาน</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -868,7 +868,7 @@
                     </div>
                   </div>
                   <div class="btns mw-unset animate-03" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.mea.or.th/home" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์หลัก</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -908,7 +908,7 @@
                     </div>
                   </div>
                   <div class="btns mw-unset animate-03" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
+                    <a class="btn btn-action btn-color-03" href="https://www.sme.go.th/" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์หลัก</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -1579,10 +1579,11 @@
   </section>
 
   <section data-section="3" class="section-01 size-02">
-    <video autoplay muted loop class="video-preview">
+    <iframe width="100%" height="750" src="https://www.youtube.com/embed/47VeaTCMcOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <video autoplay muted loop class="video-preview">
       <source src="public/video/02.mp4" type="video/mp4">
-    </video>
-    <div class="container">
+    </video> -->
+    <!-- <div class="container">
       <div class="video-button mt-6" data-aos="fade-up" data-aos-delay="150">
         <a id="video-container" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" 
           class="video-play-button" data-fancybox>
@@ -1590,7 +1591,7 @@
         </a>
         <p class="sm color-white text-center fw-300 mt-6 pt-4">Watch Video</p>  
       </div> 
-    </div>        
+    </div>         -->
   </section>
   
   <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
