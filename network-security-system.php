@@ -6,7 +6,7 @@
 </head>
 <body class="loading">
   <?php include_once('component/page-loader.php'); ?>
-  <?php $topnavActive=3; include_once('include/topnav.php'); ?>
+  <?php $topnavActive=3; $dropdownActive=5; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1" data-aos="fade-in" data-aos-delay="0">
@@ -59,7 +59,7 @@
         </div>
         <div class="block-float right">
           <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/25.jpg');"></div>
+            <div class="img-bg bg-fixed" style="background-image:url('public/img/content/25.jpg');"></div>
           </div>
         </div>
       </div>
@@ -71,7 +71,7 @@
       <div class="blocks flex-column-reverse">
         <div class="block-float left">
           <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/28.jpg');"></div>
+            <div class="img-bg bg-fixed" style="background-image:url('public/img/content/28.jpg');"></div>
           </div>
         </div>
         <div class="block">
@@ -113,7 +113,7 @@
         </div>
         <div class="block-float right">
           <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/26.jpg');"></div>
+            <div class="img-bg bg-fixed" style="background-image:url('public/img/content/26.jpg');"></div>
           </div>
         </div>
       </div>
@@ -125,7 +125,7 @@
       <div class="blocks flex-column-reverse">
         <div class="block-float left">
           <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/29.jpg');"></div>
+            <div class="img-bg bg-fixed" style="background-image:url('public/img/content/29.jpg');"></div>
           </div>
         </div>
         <div class="block">
@@ -162,7 +162,7 @@
         </div>
         <div class="block-float right">
           <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/27.jpg');"></div>
+            <div class="img-bg bg-fixed" style="background-image:url('public/img/content/27.jpg');"></div>
           </div>
         </div>
       </div>
@@ -174,7 +174,7 @@
       <div class="blocks flex-column-reverse">
         <div class="block-float left">
           <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/30.jpg');"></div>
+            <div class="img-bg bg-fixed" style="background-image:url('public/img/content/30.jpg');"></div>
           </div>
         </div>
         <div class="block">

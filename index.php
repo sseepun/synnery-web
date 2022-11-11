@@ -480,7 +480,7 @@
           <?php for($i=0; $i<9; $i++){?>
             <div class="swiper-slide">
               <a class="ss-card ss-card-29 box-shadow" href="web-gov-minisite.php">
-                <div class="ss-img vertical-02">
+                <div class="ss-img no-hover vertical-02">
                   <div class="img-bg" style="background-image:url('public/img/content/minisite-gov-0<?= ($i%9+1) ?>.jpg');"></div>
                 </div>
               </a> 
@@ -709,12 +709,12 @@
     </div>
 
     <?php include_once('data/clients.php'); ?>
-    <div class="clients pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="450">
+    <div class="clients pos-relative" style="z-index:2;">
       <?php foreach($clients as $d){?>
         <div class="client">
           <div class="ss-card ss-card-26">
             <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-up" data-aos-delay="150">
               <div class="image-container">
                 <img src="<?= $d['icon'] ?>" alt="Client" />
               </div>

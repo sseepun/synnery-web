@@ -77,7 +77,7 @@
         <div class="container">
 
           <?php
-            $options01 = [
+            $options = [
               [
                 'bg' => 'public/img/content/menu-service-01.jpg',
                 'title' => 'Government Standard Website',
@@ -90,20 +90,20 @@
                 'bg' => 'public/img/content/menu-service-03.jpg',
                 'title' => 'Enterprise Wordpress Solutions',
                 'href' => 'enterprise-wordpress-solution.php',
-              ], [
-                'bg' => 'public/img/content/menu-service-04.jpg',
-                'title' => 'Network Architecture/ DevSecOps',
-                'href' => 'network-security-system.php',
+              ],[
+                'bg' => 'public/img/content/menu-service-08.jpg',
+                'title' => 'E-Office / ERP for Government',
+                'href' => 'erp-for-government.php',
               ], 
-            ];
-          ?>
-          <?php 
-            $options02 = [
               [
                 'bg' => 'public/img/content/menu-service-05.jpg',
                 'title' => 'Full Services Digital Marketing',
                 'href' => 'services.php',
-              ], [
+              ],[
+                'bg' => 'public/img/content/menu-service-04.jpg',
+                'title' => 'Network Architecture/ DevSecOps',
+                'href' => 'network-security-system.php',
+              ],[
                 'bg' => 'public/img/content/menu-service-06.jpg',
                 'title' => 'AR,VR/3D Virtual Tour, Metaverse',
                 'href' => 'virtual-world.php',
@@ -111,52 +111,50 @@
                 'bg' => 'public/img/content/menu-service-07.jpg',
                 'title' => 'Live & Virtual Exhibition',
                 'href' => 'virtual-world.php',
-              ],[
-                'bg' => 'public/img/content/menu-service-08.jpg',
-                'title' => 'E-Office / ERP for Government',
-                'href' => 'erp-for-government.php',
               ],
             ]
-          
           ?>
           <div class="dropdown-wrapper" data-dropdown="2">
-            <div class="d-grids jc-start pos-relative" style="z-index:2;">
-              <?php foreach($options01 as $d){?>
-                <div class="d-grid">
-                  <a href="<?= $d['href'] ?>" class="ss-card">
-                    <div class="ss-img">
-                      <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+            <div class="d-grid-container <?php if(isset($dropdownActive))echo 'has-active'; ?>">
+              <div class="d-grids jc-start pos-relative" style="z-index:2;">
+                <?php foreach($options as $i=>$d){ if($i < 4){?>
+                  <div class="d-grid <?php if(isset($dropdownActive) && $dropdownActive==$i)echo 'active' ?>">
+                    <a href="<?= $d['href'] ?>" class="ss-card">
+                      <div class="ss-img">
+                        <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+                      </div>
+                      <div class="line-5"></div><div class="line-6"></div>
+                    </a>
+                    <div class="text-container">
+                      <p class="xxs lh-sm fw-400 mt-3">
+                        <?= $d['title'] ?>
+                      </p>
                     </div>
-                    <div class="line-5"></div><div class="line-6"></div>
-                  </a>
-                  <div class="text-container">
-                    <p class="xxs lh-sm fw-400 mt-3">
-                      <?= $d['title'] ?>
-                    </p>
                   </div>
-                </div>
-              <?php }?>
-            </div>
-            <div class="d-grids mt-2">
-              <?php foreach($options02 as $d){?>
-                <div class="d-grid">
-                  <a href="<?= $d['href'] ?>" class="ss-card">
-                    <div class="ss-img">
-                      <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+                <?php }}?>
+              </div>
+              <div class="d-grids mt-2">
+                <?php foreach($options as $i=>$d){ if($i >= 4){?>
+                  <div class="d-grid <?php if(isset($dropdownActive) && $dropdownActive==$i)echo 'active' ?>">
+                    <a href="<?= $d['href'] ?>" class="ss-card">
+                      <div class="ss-img">
+                        <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+                      </div>
+                      <div class="line-5"></div><div class="line-6"></div>
+                    </a>
+                    <div class="text-container">
+                      <p class="xxs lh-sm fw-400 mt-3">
+                        <?= $d['title'] ?>
+                      </p>
                     </div>
-                    <div class="line-5"></div><div class="line-6"></div>
-                  </a>
-                  <div class="text-container">
-                    <p class="xxs lh-sm fw-400 mt-3">
-                      <?= $d['title'] ?>
-                    </p>
                   </div>
-                </div>
-              <?php }?>
+                <?php }}?>
+              </div>
             </div>
             <div class="line-1"></div>
             <div class="line-2"></div>
           </div>
+          
         </div>
       </div>
     </div>

@@ -9,6 +9,10 @@
   <?php $topnavActive=6; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
+  <section data-section="1" data-aos="fade-in" data-aos-delay="0">
+    <img class="img" src="public/img/bg/92.jpg" alt="Banner" />
+  </section>
+
   <section data-section="1" class="section-05 section-padding"> 
     <div class="pattern style-01" style="z-index:2;">
       <div class="wrapper" value=".5">

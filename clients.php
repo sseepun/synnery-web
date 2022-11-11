@@ -48,12 +48,12 @@
     </div>
     
     <?php include_once('data/clients.php'); ?>
-    <div class="clients pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="450">
+    <div class="clients pos-relative" style="z-index:2;">
       <?php foreach($clients as $d){?>
         <div class="client">
           <div class="ss-card ss-card-26">
             <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-up" data-aos-delay="150">
               <div class="image-container">
                 <img src="<?= $d['icon'] ?>" alt="Client" />
               </div>

@@ -182,7 +182,7 @@ nav.topnav .topnav-dropdown{
   transition:opacity ease-in-out .45s, height ease-in-out .45s, clip-path 1s;
 }
 nav.topnav .topnav-dropdown.active{
-  opacity:1; pointer-events:auto; height:22rem; /* height:72vh; */
+  opacity:1; pointer-events:auto; height:24rem; /* height:72vh; */
   transition:opacity ease-in-out .45s, height ease-in-out .45s, clip-path 3s;
   /* clip-path:polygon(0 0, 100% 0, 100% 59vh, 50% 100%, 0 59vh); */
   clip-path:polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0 0);
@@ -211,8 +211,11 @@ nav.topnav .topnav-dropdown .d-grid{
   width:calc(100% / 6); padding:1rem .5rem 0 0;
   transition:opacity .15s linear .1s, filter .15s ease-in-out .1s;
 }
-nav.topnav .topnav-dropdown .d-grids:hover .d-grid{opacity:.7; filter:grayscale(100%);}
-nav.topnav .topnav-dropdown .d-grids:hover .d-grid:hover{opacity:1; filter:grayscale(0);}
+nav.topnav .d-grid-container:hover .d-grids .d-grid{opacity:.7; filter:grayscale(100%);}
+nav.topnav .d-grid-container:hover .d-grids .d-grid:hover{opacity:1; filter:grayscale(0);}
+nav.topnav .d-grid-container.has-active .d-grids .d-grid{opacity:.7; filter:grayscale(100%);}
+nav.topnav .d-grid-container.has-active .d-grids .d-grid:hover,
+nav.topnav .d-grid-container.has-active .d-grids .d-grid.active{opacity:1; filter:grayscale(0);}
 nav.topnav .topnav-dropdown .line-1{
   position:absolute; height:100%; width:5rem; top:0; right:-3rem; 
   background:#666666; transform:skewX(45deg); z-index:1;
