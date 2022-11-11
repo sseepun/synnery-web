@@ -201,12 +201,11 @@ p.xxs, .p.xxs, li.xxs{font-size:.8125rem;}
   position:absolute; visibility:hidden; width:1px; height:1px;
 }
 
-.btn-bubble__container.bubble-gray .effect-button{background:#999999;}
-.btn-bubble__container.bubble-gray .button{background-color:#999999;}
-.btn-bubble__container.bubble-gray:hover .button{background-color:#999999;}
-.btn-bubble__container.bubble-gray:hover .btn-bubble + .btn-bubble__effect-container .circle,
-.btn-bubble__container.bubble-gray:hover .btn-bubble + .btn-bubble__effect-container .button{
-    background:#999999;
+.btn-bubble__container.bubble-gray .effect-button{background:#999999!important;}
+.btn-bubble__container.bubble-gray .button{background-color:#999999!important;}
+.btn-bubble__container.bubble-gray .btn-bubble + .btn-bubble__effect-container .circle,
+.btn-bubble__container.bubble-gray .btn-bubble + .btn-bubble__effect-container .button{
+    background:#999999!important;
 }
 
 

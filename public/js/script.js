@@ -441,13 +441,9 @@ $(function(){ 'use strict';
             self.find('.progress').html('1 / '+slideNum);
             swiperCareer.on('slideChange', function(){
                 self.find('.progress').html(swiperCareer.activeIndex+' / '+slideNum);
+                AOS.refresh();
+                calculateSectionAnchors();
             });
-            // document
-            //     .querySelector('.btn-job-slide')
-            //     .addEventListener('click', function (e) {
-            //         e.preventDefault();
-            //         swiperCareer.slideTo($(this).attr('data-idx'), 0);
-            //     });
         });
         $('.btn-job-slide').click(function(){
             console.log($(this).attr('data-idx'))
