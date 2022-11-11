@@ -491,6 +491,42 @@ $(function(){ 'use strict';
         });
     }
 
+    // Section 10
+    var section10= $('.section-10');
+    if(section10.length){
+        section10.find('.swiper-container').each(function(){
+            var self = $(this);
+            new Swiper(self, {
+                loop: true,
+                speed: 900,
+                slidesPerView: 5,
+                spaceBetween: -150,
+                effect: 'coverflow', 
+                coverflowEffect: {
+                    rotate: 40,
+                    stretch: 0,
+                    // depth: 0,
+                    modifier: 1,
+                    slideShadows : true
+                },
+                grabCursor: true,
+                navigation: {
+                    nextEl: self.find('.btn-icon-next'),
+                    prevEl: self.find('.btn-icon-prev'),
+                },
+                pagination: {
+                    el: self.find('.dots'),
+                    clickable: true,
+                },
+                breakpoints: {
+                    1199.98: { slidesPerView: 3 },
+                    991.98: { slidesPerView: 3 },
+                    575.98: { slidesPerView: 3 },
+                },
+            });
+        });
+    }
+
     // Section 12
     var section12= $('.section-12');
     if(section12.length){
@@ -584,6 +620,20 @@ $(function(){ 'use strict';
         });
     }
 
+
+    // Button to Div
+    $('.btn-to-div').click(function(e){
+        e.preventDefault();
+        let target = $($(this).data('target'));
+        if(target.length){
+            let offset = target.offset();
+            $('html, body').stop().animate({
+                scrollTop: offset.top - bodySize * 3.5
+            }, 700);
+        }
+    });
+
+
     // Page Loader
     let pageLoader = $('.page-loader');
     if(pageLoader.length){
@@ -629,40 +679,3 @@ $(function(){ 'use strict';
     }
 
 });
-
-
-// Section 10
-var section10= $('.section-10');
-if(section10.length){
-    section10.find('.swiper-container').each(function(){
-        var self = $(this);
-        new Swiper(self, {
-            loop: true,
-            speed: 900,
-            slidesPerView: 5,
-            spaceBetween: -150,
-            effect: 'coverflow', 
-            coverflowEffect: {
-                rotate: 40,
-                stretch: 0,
-                // depth: 0,
-                modifier: 1,
-                slideShadows : true
-            },
-            grabCursor: true,
-            navigation: {
-                nextEl: self.find('.btn-icon-next'),
-                prevEl: self.find('.btn-icon-prev'),
-            },
-            pagination: {
-                el: self.find('.dots'),
-                clickable: true,
-            },
-            breakpoints: {
-                1199.98: { slidesPerView: 3 },
-                991.98: { slidesPerView: 3 },
-                575.98: { slidesPerView: 3 },
-            },
-        });
-    });
-}

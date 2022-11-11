@@ -14,6 +14,5 @@
 
 <link rel="stylesheet" href="public/css/grids.css" />
 <link rel="stylesheet" href="public/css/style.css" />
-<link rel="stylesheet" href="public/css/custom.css" />
 <link rel="stylesheet" href="public/css/navs.css" />
 <link rel="stylesheet" href="public/css/blocks.css" />

@@ -95,12 +95,14 @@
         </div>
       </div>
     </section>
+    
 
     <div class="tab-contents" data-aos="fade-up" data-aos-delay="300">
 
       <!-- About Us -->
       <div class="tab-content active" data-tab="0">
-        <section data-section="3" class="section-05 section-padding mh" style="background-image:url('public/img/bg/03.jpg');">
+        <section data-section="3" class="section-05 section-padding mh">
+          <div class="img-bg" style="background-image:url('public/img/bg/03.jpg');"></div>
           <div class="container">
             <div class="text-center color-white">
               <p class="lg">
@@ -197,7 +199,8 @@
             </div>
           </div>
         </section>
-        <section data-section="6" class="section-05 section-padding" style="background-image:url('public/img/bg/01.jpg');">
+        <section data-section="6" class="section-05 section-padding">
+          <div class="img-bg" style="background-image:url('public/img/bg/01.jpg');"></div>
           <div class="container">
             <h3 class="text-center color-01 fw-600">
               WHY US
@@ -426,7 +429,8 @@
           </div>
         </section>
 
-        <section data-section="5" class="section-05 section-padding" style="background-image:url('public/img/bg/06.jpg');">
+        <section data-section="5" class="section-05 section-padding">
+          <div class="img-bg" style="background-image:url('public/img/bg/06.jpg');"></div>
           <div class="container">
             <h3 class="text-center color-white fw-600" data-aos="fade-up" data-aos-delay="0">
               แผนการลงทุน ร่วมทุน กับ ธุรกิจด้านอื่น ๆ
@@ -466,6 +470,7 @@
           </div>
         </section>
       </div>
+
     </div>
   </div>
   

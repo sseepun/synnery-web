@@ -5,8 +5,8 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
-  <?php $topnavActive=3; include_once('include/topnav.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
+  <?php $topnavActive=3; $dropdownActive=4; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1" data-aos="fade-in" data-aos-delay="0">

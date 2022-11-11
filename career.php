@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php $topnavActive=5; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -64,7 +64,7 @@
               </a>
             </div>
           <?php }?>
-      </div>
+        </div>
       </div>
     </div>
   </section>
@@ -114,7 +114,7 @@
       ]
     ]
   ?>
-  <section data-section="4" class="section-01 section-padding bg-01">
+  <section data-section="4" id="careers" class="section-01 section-padding bg-01">
     <div class="container">
       <h3 class="color-white text-center fw-600" data-aos="fade-up" data-aos-delay="0">
         ตำแหน่งที่เปิดรับสมัคร
@@ -147,8 +147,10 @@
                         <div class="sub-block-02">
                           <p class="color-black fw-400"><span class="color-03 mr-2">ประสบการณ์</span> 2 ปีขึ้นไป</p>
                         </div>
-                        <div class="sub-block-03">
-                          <a class="color-white" href="#">รายละเอียด</a>
+                        <div class="sub-block-03 btn-">
+                          <a class="btn-block color-white btn-to-div" href="#" data-target="#career-detail">
+                            รายละเอียด
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -162,98 +164,7 @@
     </div>
   </section>
 
-  <section data-section="5" class="section-05 section-padding" style="background-image:url('public/img/bg/31.jpg');">
-    <div class="container">
-      <h3 class="text-center color-01 lh-sm fw-600" data-aos="fade-up" data-aos-delay="0">
-        AE <span class="h4 color-black fw-400">(Account Executive)</span>
-      </h3>  
-      <p class="h5 text-center color-black fw-400" data-aos="fade-up" data-aos-delay="150">
-        <em class="fa-regular fa-circle-user color-01 mr-1"></em> 2 ตำแหน่ง
-      </p>
-      <div class="ss-box xxl mt-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="grids">
-          <div class="grid pt-2">
-            <p class="text-uppercase fw-600">Job Description</p>
-            <ul class="ss-list-01 style-03 mt-2">
-              <li class="color-black fw-400 mt-4">
-                วางแผนและกลยุทธ์การขาย ร่วมกับทีมงาน พร้อมนำเสนอแผน ติดตาม ตรวจสอบเป้า
-                งานขายแต่ละไตรมาส รับผิดชอบยอดขายให้เป็นไปตาม Target และหาแนวทางปรับปรุง
-                ยอดขาย และดูแลยอดขาย ให้เป็นไปตามเป้าหมาย
-              </li>
-              <li class="color-black fw-400 mt-4">
-                ดูแล รักษา สร้างสัมพันธ์ ลูกค้ารายใหญ่ เข้านำเสนอข้อมูลเกี่ยวกับสินค้าและงานบริการ 
-                ของบริษัท กับผู้บริหาร และผู้ที่เกี่ยวข้อง เดือนละไม่น้อยกว่า 10 ราย
-              </li>
-              <li class="color-black fw-400 mt-4">
-                ติดต่อหาลูกค้าใหม่ นัดประชุม ติดตามงาน นำเสนองานบริการและสินค้าของบริษัท
-                ลูกค้าเป้าหมายส่วนใหญ่ เป็นหน่วยงานราชการ บริษัทชั้นนำในกลุ่มตลาดหลักทรัพย์ และ   
-                Top Brand ชั้นนำขนาดใหญ่ และลูกค้าส่วนใหญ่เป็น IT Manager, HR Manager, PR 
-                Manager, Marketing Manager, CEO, CTO, MD
-              </li>
-              <li class="color-black fw-400 mt-4">
-                จัดทำใบเสนอราคา และเอกสารต่างๆ ที่เกี่ยวข้องกับการเสนอโครงการต่างๆ ได้ เช่น
-                Proposal, Presentation ได้ด้วยตัวเอง (บริษัทฯ มีตัวอย่าง และ Template ให้)
-              </li>
-              <li class="color-black fw-400 mt-4">
-                ช่วยเหลือทีมงาน ประสานงาน ทำงานกันเป็นทีม เน้นส่งมอบ value และผลงานที่เหนือ
-                ความคาดหมายให้กับลูกค้า ติดต่อประสานงานกับ Partner / Outsource / PM และอื่นๆ
-              </li>
-              <li class="color-black fw-400 mt-4">
-                ร่วมประชุมกับ PM และทีมงาน ระหว่างการพัฒนาระบบงานเพื่อส่งมอบ
-              </li>
-              <li class="sm color-black fw-400">
-                แจกแจงรายละเอียดของงานที่ขายมาให้กับทีม Production และ Project Manager
-              </li>
-            </ul> 
-          </div>   
-          <div class="grid pt-2">
-            <p class="text-uppercase fw-600">Job Specification</p>
-            <ul class="ss-list-01 style-03 mt-2">
-              <li class="color-black fw-400 mt-4">
-                ปริญญาตรี ไม่จำกัดเพศ อายุ 25 - 35 ปี
-              </li>
-              <li class="color-black fw-400 mt-4">
-                ประสบการณ์ในการทำงานด้าน AE, Sales, หรือที่เกี่ยวข้อง ไม่น้อยกว่า 2 ปี ขึ้นไป
-              </li>
-              <li class="color-black fw-400 mt-4">
-                สามารถ Present งานได้ทั้งภาษาไทย และอังกฤษ
-              </li>
-              <li class="color-black fw-400 mt-4">
-                มีรถยนต์เพื่อใช้ในการเดินทาง และคอมพิวเตอร์โน้ตบุ๊คสำหรับทำงานของตัวเอง
-              </li>
-              <li class="color-black fw-400 mt-4">
-                ถ้ามีประสบการณ์ในการทำงานด้านไอที หรือ Software Application ให้กับภาครัฐจะพิจารณาเป็นพิเศษ
-              </li>
-              <li class="color-black fw-400 mt-4">
-                มีค่าเดินทาง ค่าโทรศัพท์ ค่า Notebook ค่า Commission และ Project Incentive และ
-                มีระบบโครงสร้างเงินเดือน ที่ปรับตามผลงานก่อนหน้า เป็นแบบขั้นบันได
-              </li>
-              <li class="color-black fw-400 mt-4">
-                สามารถทำงานเป็นทีม ร่วมกับตำแหน่งอื่นๆ ได้ดี
-              </li>
-              <li class="color-black fw-400 mt-4">
-                มีความตรงต่อเวลา รับผิดชอบในงานที่ได้รับมอบหมายเป็นอย่างดี
-              </li>
-            </ul> 
-          </div>
-        </div>
-        <div class="pt-5" data-aos="fade-up" data-aos-delay="0">
-          <div class="btn-container">
-            <div class="btn-customs jc-center pt-3">
-              <button type="submit" class="btn btn-action btn-color-01 style-02 ml-1 mr-1">
-                <p class="fw-400">สมัคร</p>
-              </button>
-              <button type="submit" class="btn btn-action btn-color-02 style-02 ml-1 mr-1">
-                <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section data-section="6" class="section-05 section-padding" style="background-image:url('public/img/bg/32.jpg');">
+  <section data-section="6" id="career-detail" class="section-05 section-padding" style="background-image:url('public/img/bg/32.jpg');">
     <div class="container">
       <h3 class="text-center color-01 lh-sm fw-600" data-aos="fade-up" data-aos-delay="0">
         PM <span class="h4 color-black fw-400">(Project Management)</span>
@@ -331,15 +242,27 @@
             </ul> 
           </div>
         </div>
-        <div class="pt-5" data-aos="fade-up" data-aos-delay="0">
+        <div class="pt-5">
           <div class="btn-container">
             <div class="btn-customs jc-center pt-3">
-              <button type="submit" class="btn btn-action btn-color-01 style-02 ml-1 mr-1">
-                <p class="fw-400">สมัคร</p>
-              </button>
-              <button type="submit" class="btn btn-action btn-color-02 style-02 ml-1 mr-1">
-                <p class="fw-400">ดูตำแหน่งอื่นๆ</p>
-              </button>
+              <?php
+                $btnBubble = [
+                  'type' => 'submit',
+                  'title' => 'สมัคร',
+                  'classWrapper' => 'mr-2'
+                ];
+                include('component/btn-bubble.php');
+              ?>
+              <?php
+                $btnBubble = [
+                  'href' => '#',
+                  'title' => 'ดูตำแหน่งอื่นๆ',
+                  'classWrapper' => 'bubble-gray',
+                  'class' => 'btn-to-div',
+                  'target' => '#careers'
+                ];
+                include('component/btn-bubble.php');
+              ?>
             </div>
           </div>
         </div>
