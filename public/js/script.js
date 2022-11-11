@@ -428,6 +428,7 @@ $(function(){ 'use strict';
                 slidesPerView: 1,
                 spaceBetween: 12,
                 grabCursor: true,
+                autoHeight: true,
                 navigation: {
                     nextEl: sectionCareer.find('.btn-icon-next'),
                     prevEl: sectionCareer.find('.btn-icon-prev'),

@@ -13,7 +13,8 @@
       <a 
         href="<?= $btnBubble['href'] ?>" 
         class="button btn-bubble <?php if(isset($btnBubble['class']))echo $btnBubble['class']; ?>" 
-        <?php if(isset($btnBubble['target'])){?>data-target="<?= $btnBubble['target'] ?>"<?php }?>
+        <?php if(isset($btnBubble['target'])){?>data-target="<?= $btnBubble['target'] ?>"<?php }?> 
+        <?php if(isset($btnBubble['blank']) && $btnBubble['blank']){?>target="_blank"<?php }?> 
       >
         <?= $btnBubble['title'] ?>
       </a>
