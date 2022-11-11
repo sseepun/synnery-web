@@ -272,26 +272,26 @@
       </div>
       <div class="footer-socials pos-relative" style="z-index:2;">
         <div class="hex-icon">
-          <a class="hex hex-fb ml-0" href="#">
+          <a class="hex hex-fb ml-0" href="www.facebook.com/Synerry/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>
           </a>
-          <a class="hex hex-fb hex-back ml-0" href="#">
+          <a class="hex hex-fb hex-back ml-0" href="www.facebook.com/Synerry/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>
           </a>
         </div>
         <div class="hex-icon">
-          <a class="hex hex-ig" href="#">
+          <a class="hex hex-ig" href="https://www.instagram.com/lifeatsynerry/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-instagram"></em></div>
           </a>
-          <a class="hex hex-ig hex-back" href="#">
+          <a class="hex hex-ig hex-back" href="https://www.instagram.com/lifeatsynerry/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-instagram"></em></div>
           </a>
         </div>
         <div class="hex-icon">
-          <a class="hex hex-yt" href="#">
+          <a class="hex hex-yt" href="https://www.youtube.com/channel/UCJMXUE5qQiTcWwicqpHmPLg" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-youtube"></em></div>
           </a>
-          <a class="hex hex-yt hex-back" href="#">
+          <a class="hex hex-yt hex-back" href="https://www.youtube.com/channel/UCJMXUE5qQiTcWwicqpHmPLg" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-youtube"></em></div>
           </a>
         </div>
@@ -301,26 +301,26 @@
           </div>
         </div>
         <div class="hex-icon">
-          <a class="hex hex-pr" href="#">
+          <a class="hex hex-pr" href="https://www.pinterest.com/synerrylife/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-pinterest-p"></em></div>
           </a>
-          <a class="hex hex-pr hex-back" href="#">
+          <a class="hex hex-pr hex-back" href="https://www.pinterest.com/synerrylife/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-pinterest-p"></em></div>
           </a>
         </div>
         <div class="hex-icon">
-          <a class="hex hex-tw" href="#">
+          <a class="hex hex-tw" href="https://twitter.com/SynerryC" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-twitter"></em></div>
           </a>
-          <a class="hex hex-tw hex-back" href="#">
+          <a class="hex hex-tw hex-back" href="https://twitter.com/SynerryC" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-twitter"></em></div>
           </a>
         </div>
         <div class="hex-icon">
-          <a class="hex hex-ln" href="#">
+          <a class="hex hex-ln" href="https://www.linkedin.com/in/synerry-corporation-thailand-co-ltd/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-linkedin-in"></em></div>
           </a>
-          <a class="hex hex-ln hex-back" href="#">
+          <a class="hex hex-ln hex-back" href="https://www.linkedin.com/in/synerry-corporation-thailand-co-ltd/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-linkedin-in"></em></div>
           </a>
         </div>

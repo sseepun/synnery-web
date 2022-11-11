@@ -10,7 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
 
-<script src="public/js/script.js"></script>
+<script src="public/js/script.js?v=0.0.1"></script>
 
 <script src="public/js/lazy-load.js"></script>
 <script src="public/lib/simplebar/simplebar.min.js"></script>

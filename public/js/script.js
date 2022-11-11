@@ -415,6 +415,45 @@ $(function(){ 'use strict';
         });
     }
     
+    // Section career
+    var sectionCareer= $('.section-career');
+    let swiperCareer;
+    if(sectionCareer.length){
+        sectionCareer.find('.swiper-container').each(function(){
+            var self = $(this);
+            let slideNum = self.find('.swiper-slide').length;
+            swiperCareer = new Swiper(self, {
+                loop: true,
+                speed: 900,
+                slidesPerView: 1,
+                spaceBetween: 12,
+                grabCursor: true,
+                navigation: {
+                    nextEl: sectionCareer.find('.btn-icon-next'),
+                    prevEl: sectionCareer.find('.btn-icon-prev'),
+                },
+                pagination: {
+                    el: self.find('.dots'),
+                    clickable: true,
+                },
+            });
+            self.find('.progress').html('1 / '+slideNum);
+            swiperCareer.on('slideChange', function(){
+                self.find('.progress').html(swiperCareer.activeIndex+' / '+slideNum);
+            });
+            // document
+            //     .querySelector('.btn-job-slide')
+            //     .addEventListener('click', function (e) {
+            //         e.preventDefault();
+            //         swiperCareer.slideTo($(this).attr('data-idx'), 0);
+            //     });
+        });
+        $('.btn-job-slide').click(function(){
+            console.log($(this).attr('data-idx'))
+            swiperCareer.slideTo($(this).attr('data-idx'), 0)
+        });
+    }
+    
     // Section 06
     var section06= $('.section-06');
     if(section06.length){
