@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php $topnavActive=5; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -44,12 +44,28 @@
           </p>
         </div>
         <div class="grids jc-center mt-6 pt-2" data-aos="fade-up" data-aos-delay="450">
-          <?php for($i=0; $i<2; $i++){?>
-            <div class="grid lg-50 md-50 sm-50 xs-100">
+          <?php
+            foreach([
+              [
+                'title' => 'ถ้ามาเป็น Dev ที่นี่จะเจออะไร',
+                'href' => 'https://www.youtube.com/watch?v=h3Vq9LjJ2tk',
+                'image' => 'public/img/content/content-18.jpg'
+              ], [
+                'title' => 'ถ้ามาเป็น Dev ที่นี่จะเจออะไร',
+                'href' => 'https://youtu.be/SMrzLWs-_0w',
+                'image' => 'public/img/content/content-19.jpg'
+              ], [
+                'title' => 'ถ้ามาเป็น Dev ที่นี่จะเจออะไร',
+                'href' => 'https://www.youtube.com/watch?v=bPrrbIakklY',
+                'image' => 'public/img/content/content-18.jpg'
+              ]
+            ] as $d){
+          ?>
+            <div class="grid lg-1-3 sm-50 xs-100">
               <div class="p-1 bg-white box-shadow">
-                <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+                <a class="ss-card" href="<?= $d['href'] ?>" data-fancybox>
                   <div class="ss-img">
-                    <div class="img-bg" style="background-image:url('public/img/content/content-1<?= ($i%2+8) ?>.jpg');"></div>
+                    <div class="img-bg" style="background-image:url('<?= $d['image'] ?>');"></div>
                   </div>
                   <div class="card-icon">
                     <div class="icon">
@@ -60,7 +76,7 @@
                 </a>
               </div>
               <a class="p text-center d-block mt-4 fw-500" href="#">
-                ถ้ามาเป็น Dev ที่นี่จะเจออะไร
+                <?= $d['title'] ?>
               </a>
             </div>
           <?php }?>

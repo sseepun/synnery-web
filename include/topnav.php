@@ -185,7 +185,49 @@
               <a href="about.php">About us</a>
             </div>
             <div class="menu" data-dropdown="2">
-              <a href="services.php">Our Services</a>
+              <a href="javascript:">Our Services</a>
+              <div class="submenu-container">
+                <div class="submenu">
+                  <a href="web-gov-standard.php">
+                    Government Standard Website
+                  </a>
+                </div>
+                <div class="submenu">
+                  <a href="web-gov-minisite.php">
+                    Unlimited Microsite for Government
+                  </a>
+                </div>
+                <div class="submenu">
+                  <a href="enterprise-wordpress-solution.php">
+                    Enterprise Wordpress Solutions
+                  </a>
+                </div>
+                <div class="submenu">
+                  <a href="erp-for-government.php">
+                    E-Office / ERP for Government
+                  </a>
+                </div>
+                <div class="submenu">
+                  <a href="services.php">
+                    Full Services Digital Marketing
+                  </a>
+                </div>
+                <div class="submenu">
+                  <a href="network-security-system.php">
+                    Network Architecture/ DevSecOps
+                  </a>
+                </div>
+                <div class="submenu">
+                  <a href="virtual-world.php">
+                    AR,VR/3D Virtual Tour, Metaverse
+                  </a>
+                </div>
+                <div class="submenu">
+                  <a href="virtual-world.php">
+                    Live & Virtual Exhibition
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="menu">
               <a href="career.php">Our Works</a>

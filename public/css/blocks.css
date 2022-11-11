@@ -162,6 +162,8 @@
 .section-01 .hex .icon > img{display:block; width:2.5rem; height:auto;}
 
 /* Section 01 --> Pattern */
+.section-01 > .pattern{pointer-events:none!important;}
+
 .section-01 > .pattern.style-01{position:absolute; top:12rem; left:2rem; right:0; z-index:1;}
 .section-01 > .pattern.style-01 > .wrapper img{display:block; width:5rem; height:auto;}
 

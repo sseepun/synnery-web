@@ -281,8 +281,9 @@ nav.sidenav .menu > *:first-child, nav.sidenav .submenu > *:first-child{
   color:#ffffff; transition:background .3s, color .3s;
 }
 nav.sidenav .menu:hover > *:first-child,
-nav.sidenav .submenu:hover > *:first-child{color:#ec2c23;}
-nav.sidenav .submenu > *:first-child{padding-left:1.5rem;}
+nav.sidenav .submenu:hover > *:first-child{color:#ffffff;}
+nav.sidenav .submenu-container{padding:0 0 .75rem 1.25rem;}
+nav.sidenav .submenu > *:first-child{font-size:1rem; padding:.5rem 0;}
 nav.sidenav .submenu .submenu > *:first-child{padding-left:2.5rem;}
 nav.sidenav .has-children > *:first-child{padding-right:4.125rem!important;}
 nav.sidenav .submenu-dropdown, nav.sidenav .submenu > .submenu-wrapper,
