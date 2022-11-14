@@ -867,6 +867,7 @@
         <div class="btn-slide-more">
           <div class="wrapper">
             <p id="text" class="text color-white">ปิด</p>
+            <p id="text02" class="text-02">ขยาย / ย่อ</p>
             <div id="arrows" class="icon">
               <img class="img" src="public/img/icon/arrow-05.png" alt="Arrow" />
             </div>      

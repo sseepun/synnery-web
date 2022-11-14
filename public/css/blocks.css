@@ -819,6 +819,10 @@
   width:.8px; height:1.5rem; background:#ffffff; top:1rem;
 }
 .section-13 .btn-slide-more > .wrapper .text{display:none; position:absolute; top:-1.5rem;}
+.section-13 .btn-slide-more > .wrapper .text-02{
+  position:absolute; top:.625rem; color:#ffffff; font-size:.625rem; min-width:5rem;
+  text-align:center; 
+}
 .section-13 .btn-slide-more > .wrapper .icon{
   display:flex; align-items:center; width:1rem; height:auto; transition:opacity .3s;
 }
@@ -839,6 +843,7 @@
 @media screen and (max-width:767.98px){
   .section-13 .swiper-container{height:38rem;}
   .section-13 .navigator{right:.5rem;}
+  .section-13 .btn-slide-more > .wrapper .text-02{display:none;}
 }
 @media screen and (max-width:575.98px){
   .section-13 .swiper-container{height:35rem;}

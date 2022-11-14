@@ -625,6 +625,7 @@ $(function(){ 'use strict';
                 let dataMax = Number(self.data('max'));
                 let arrows = document.getElementById("arrows");
                 let text = document.getElementById("text");
+                let text02 = document.getElementById("text02");
                 if(!expanded){
                     expanded = true;
                     self.addClass('show-all');
@@ -634,6 +635,7 @@ $(function(){ 'use strict';
                     swiper13.params.allowSwipeToPrev = false;
                     arrows.style.transform = "rotateX(180deg)";
                     text.style.display = "block";
+                    text02.style.display = "none";
                 }else{
                     expanded = false;
                     self.removeClass('show-all');
@@ -642,6 +644,7 @@ $(function(){ 'use strict';
                     swiper13.params.allowSwipeToNext = true;
                     swiper13.params.allowSwipeToPrev = true;
                     text.style.display = "none";
+                    text02.style.display = "block";
                     arrows.style.transform = "rotateX(0deg)";
                     location.href = "#webShowcase";
                 }
