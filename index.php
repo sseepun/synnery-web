@@ -12,37 +12,45 @@
   <section data-section="1" class="banner-02">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <?php for($i=0; $i<5; $i++){?>
+        <?php for($i=0; $i<18; $i++){?>
           <div class="swiper-slide">
             <div class="wrapper">
-              <div class="img-bg" style="background-image:url('public/img/bg/banner-02.jpg');"></div>
-              <div class="hero">
-                <div class="animate-02" style="--delay:.45s;">
-                  <img src="public/img/hero/banner-01.png" alt="Hero" />
-                </div>
-              </div>
-              <div class="container">
-                <div class="text-container">
-                  <h1 class="lg fw-500 color-white lh-3xs animate-01" style="--delay:.45s;">
-                    Website
-                  </h1>
-                  <h1 class="fw-500 color-white lh-2xs animate-01" style="--delay:.6s;">
-                    <span class="fw-200">for</span> Government
-                  </h1>
-                  <h6 class="color-white animate-01" style="--delay:.75s;">
-                    ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA
-                  </h6>
-                  <div class="btns pt-6 animate-01" style="--delay:.9s;">
-                    <?php
-                      $btnBubble = [
-                        'href' => 'web-gov-standard.php',
-                        'title' => 'Explore More',
-                      ];
-                      include('component/btn-bubble.php');
-                    ?>
+              <?php if($i === 0){?>
+                <div class="img-bg" style="background-image:url('public/img/bg/banner-02.jpg');"></div>
+                <div class="hero">
+                  <div class="animate-02" style="--delay:.45s;">
+                    <img src="public/img/hero/banner-01.png" alt="Hero" />
                   </div>
                 </div>
-              </div>
+                <div class="container">
+                  <div class="text-container">
+                    <h1 class="lg fw-500 color-white lh-3xs animate-01" style="--delay:.45s;">
+                      Website
+                    </h1>
+                    <h1 class="fw-500 color-white lh-2xs animate-01" style="--delay:.6s;">
+                      <span class="fw-200">for</span> Government
+                    </h1>
+                    <h6 class="color-white animate-01" style="--delay:.75s;">
+                      ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA
+                    </h6>
+                    <div class="btns pt-6 animate-01" style="--delay:.9s;">
+                      <?php
+                        $btnBubble = [
+                          'href' => 'web-gov-standard.php',
+                          'title' => 'Explore More',
+                        ];
+                        include('component/btn-bubble.php');
+                      ?>
+                    </div>
+                  </div>
+                </div>
+              <?php }?>
+              <?php if($i > 0){?>
+                <div class="img-bg" style="background-image:url('public/img/bg/banner-0<?= ($i%7+3) ?>.jpg');"></div>
+              <?php }?>
+              <?php if($i > 7){?>
+                <div class="img-bg" style="background-image:url('public/img/bg/banner-1<?= ($i%10+0) ?>.jpg');"></div>
+              <?php }?>
             </div>
           </div>
         <?php }?>
