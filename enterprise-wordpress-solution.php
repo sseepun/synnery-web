@@ -368,7 +368,12 @@
       <div class="ss-box xxl mt-5">
         <div class="ss-card ss-card-19" data-aos="fade-up" data-aos-delay="300">
           <img class="img" src="public/img/content/24.jpg" alt="Banner" />     
-        </div>    
+        </div>
+        <div class="mt-6 pt-6 text-center">
+          <p class="color-03 fw-300 md-no-br aos-init aos-animate" data-aos="fade-up" data-aos-delay="150">
+            ออกแบบและวางโครงสร้างของเครื่องแม่ข่ายให้เหมาะสมกับลักษณะการใช้งาน เพื่อรองรับการขยายตามปริมาณการใช้งานด้วย Kubernetes วางโครงสร้างของฐานข้อมูลโดยมี Load balance เพื่อกระจายการทำงาน แล้ววาง Service อื่นๆ เสริมเพื่อติดตามการทำงาน และให้ระบบทำงานได้สมบุรณ์ เช่น NFS, Elasticsearch, Redis, Zabbix เป็นต้น
+          </p>
+        </div>
       </div>
     </div>             
   </div>
@@ -382,7 +387,7 @@
         Video งานอบรมของ MOE
       </h3>
       <div class="ss-box xxl mt-5" data-aos="fade-up" data-aos-delay="300">
-        <div class="p-1 bg-white box-shadow">
+        <!-- <div class="p-1 bg-white box-shadow">
           <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
             <div class="ss-img">
               <div class="img-bg" style="background-image:url('public/img/content/5<?= ($i%1+4) ?>.jpg');"></div>
@@ -394,7 +399,8 @@
             </div>
             <div class="card-line-1"></div><div class="card-line-2"></div>
           </a>
-        </div>        
+        </div>         -->
+        <iframe class="yb-respon" width="100%" height="650" src="https://www.youtube.com/embed/47VeaTCMcOM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
    </div>             
   </div>

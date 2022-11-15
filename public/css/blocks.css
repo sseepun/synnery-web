@@ -258,7 +258,7 @@
 .section-01 > .pattern.style-31{position:absolute; bottom:-1rem; left:-6rem; right:auto; z-index:1;}
 .section-01 > .pattern.style-31 > .wrapper img{display:block; width:20rem; height:auto;}
 
-.section-01 > .pattern.style-32{position:absolute; top:-4rem; left:-22rem; right:auto; z-index:1;}
+.section-01 > .pattern.style-32{position:absolute; top:-4rem; left:-22rem; right:auto; z-index:0;}
 .section-01 > .pattern.style-32 > .wrapper img{display:block; width:50rem; height:auto;}
 
 .section-01 > .pattern.style-33{position:absolute; top:-2rem; left:-24rem; right:auto; z-index:1;}

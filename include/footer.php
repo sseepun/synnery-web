@@ -272,10 +272,10 @@
       </div>
       <div class="footer-socials pos-relative" style="z-index:2;">
         <div class="hex-icon">
-          <a class="hex hex-fb ml-0" href="www.facebook.com/Synerry/" target="_blank">
+          <a class="hex hex-fb ml-0" href="https://www.facebook.com/Synerry/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>
           </a>
-          <a class="hex hex-fb hex-back ml-0" href="www.facebook.com/Synerry/" target="_blank">
+          <a class="hex hex-fb hex-back ml-0" href="https://www.facebook.com/Synerry/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>
           </a>
         </div>
