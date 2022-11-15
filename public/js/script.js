@@ -532,12 +532,14 @@ $(function(){ 'use strict';
     if(section10.length){
         section10.find('.swiper-container').each(function(){
             var self = $(this);
-            new Swiper(self, {
+            var swiper10 = new Swiper(self, {
                 loop: true,
                 speed: 900,
                 slidesPerView: 5,
                 spaceBetween: -150,
-                effect: 'coverflow', 
+                slideToClickedSlide: true,
+                centeredSlides: true,
+                effect: 'coverflow',
                 coverflowEffect: {
                     rotate: 40,
                     stretch: 0,
@@ -559,6 +561,22 @@ $(function(){ 'use strict';
                     991.98: { slidesPerView: 3 },
                     575.98: { slidesPerView: 3 },
                 },
+            });
+
+            let blockClick10 = false;
+            swiper10.on('beforeTransitionStart', function(s){
+                blockClick10 = true;
+            });
+            self.find('.img-bg').click(function(){
+                if(blockClick10) blockClick10 = false;
+                else{
+                    let t = $(this),
+                        parent = t.closest('.swiper-slide');
+                    if(parent && parent.hasClass('swiper-slide-active')){
+                        let href = t.data('href');
+                        if(href) window.location = href;
+                    }
+                }
             });
         });
     }

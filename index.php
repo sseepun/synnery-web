@@ -487,11 +487,14 @@
         <div class="swiper-wrapper">
           <?php for($i=0; $i<9; $i++){?>
             <div class="swiper-slide">
-              <a class="ss-card ss-card-29 box-shadow" href="web-gov-minisite.php">
+              <div class="ss-card ss-card-29 box-shadow c-pointer">
                 <div class="ss-img no-hover vertical-02">
-                  <div class="img-bg" style="background-image:url('public/img/content/minisite-gov-0<?= ($i%9+1) ?>.jpg');"></div>
+                  <div 
+                    class="img-bg" data-href="web-gov-minisite.php" 
+                    style="background-image:url('public/img/content/minisite-gov-0<?= ($i%9+1) ?>.jpg');" 
+                  ></div>
                 </div>
-              </a> 
+              </div> 
             </div>
           <?php }?>
         </div>
