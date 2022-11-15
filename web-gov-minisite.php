@@ -122,6 +122,8 @@
     </div>
     <div class="swiper-container style-02">
       <div class="swiper-wrapper">
+
+        <!-- EDUCATION -->
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/57.jpg');"></div>
@@ -163,40 +165,35 @@
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/75.jpg');"></div>
-            <div class="content style-03">
-              <div class="text-container">
-                <div class="wrapper">
-                  <div class="title-wrapper">
-                    <div class="logo animate-03" style="--delay:.45s;">
+            <div class="content style-02">
+              <div class="img-container d-unset">
+                <div class="title-wrapper margin-left pl-0">
+                    <div class="logo">
                       <img src="public/img/logo/logo-01.png" alt="LOGO" />
                     </div>
-                    <div class="text animate-03" style="--delay:.6s;">
-                      <h3 class="color-white text-uppercase lh-3xs fw-200">
-                        Ministry of <span class="fw-600">ENERGY</span>
+                    <div class="text">
+                      <h3 class="color-white text-uppercase lh-2xs fw-200">
+                        Ministry of<br><span class="fw-600">Energy</span>
                       </h3>
-                      <p class="h4 color-white fw-500 lh-2xs mt-2">
+                      <p class="h4 color-white fw-500 lh-xs mt-2">
                         กระทรวงพลังงาน
                       </p>
-                      <div class="btns">
-                        <a class="btn btn-action btn-color-03" href="#">
-                          <div class="icon-container color-01">
-                            <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
-                            <em class="ml-2 fa-solid fa-play"></em>
-                          </div>
-                        </a>
-                        <a class="btn btn-action btn-color-03 style-02" href="#">
-                          <div class="icon-container color-01">
-                            <span class="p color-white fw-300">เว็บไซต์สำนักงานปลัด</span>
-                            <em class="ml-2 fa-solid fa-play"></em>
-                          </div>
-                        </a>
-                      </div>
+                      <p class="lg color-white fw-200">จำนวนเว็บไซต์ย่อย <span class="h3 lh-2xs fw-600">76</span> เว็บไซต์</p>
                     </div>
                   </div>
-                </div>
+                <img class="img margin-left" src="public/img/content/screen-29.png" alt="Device" />
               </div>
-              <div class="img-container animate-02" style="--delay:.45s;">
-                <img class="img" src="public/img/content/screen-10.png" alt="Device" />
+              <div class="showcase-container">
+                <div class="wrapper">
+                  <div class="showcase-02">
+                    <img class="img" src="public/img/content/screen-32.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-33.png" alt="Device" />
+                  </div>
+                  <div class="showcase-01">
+                    <img class="img" src="public/img/content/screen-30.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-31.png" alt="Device" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -206,38 +203,33 @@
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/76.jpg');"></div>
-            <div class="content style-04">
-              <div class="img-container animate-02" style="--delay:.45s;">
-                <img class="img" src="public/img/content/screen-11.png" alt="Device" />
-              </div>
-              <div class="text-container">
-                <div class="wrapper">
-                  <div class="title-wrapper">
-                    <div class="logo animate-01" style="--delay:.45s;">
+            <div class="content style-02">
+              <div class="img-container">
+                <img class="img margin-left-style-02" src="public/img/content/screen-34.png" alt="Device" />
+                <div class="title-wrapper style-02">
+                    <div class="logo">
                       <img src="public/img/logo/logo-02.png" alt="LOGO" />
                     </div>
-                    <div class="text animate-01" style="--delay:.6s;">
-                      <h3 class="color-white text-uppercase lh-xs fw-200">
-                        Ministry of<br><span class="fw-600">INDUSTRY</span>
+                    <div class="text">
+                      <h3 class="color-white text-uppercase lh-2xs fw-200">
+                        Ministry of<br><span class="fw-600">industry</span>
                       </h3>
-                      <p class="h4 color-white fw-500 lh-2xs mt-2">
+                      <p class="h4 color-white fw-500 lh-xs mt-2">
                         กระทรวงอุตสาหกรรม
                       </p>
+                      <p class="lg color-white fw-200">จำนวนเว็บไซต์ย่อย <span class="h3 lh-2xs fw-600">87</span> เว็บไซต์</p>
                     </div>
                   </div>
-                  <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
-                      <div class="icon-container color-01">
-                        <span class="p color-white fw-300">เว็บไซต์กระทรวง</span>
-                        <em class="ml-2 fa-solid fa-play"></em>
-                      </div>
-                    </a>
-                    <a class="btn btn-action btn-color-03 style-02" href="#">
-                      <div class="icon-container color-01">
-                        <span class="p color-white fw-300">เว็บไซต์สำนักงานปลัด</span>
-                        <em class="ml-2 fa-solid fa-play"></em>
-                      </div>
-                    </a>
+              </div>
+              <div class="showcase-container">
+                <div class="wrapper">
+                  <div class="showcase-01">
+                    <img class="img" src="public/img/content/screen-35.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-36.png" alt="Device" />
+                  </div>
+                  <div class="showcase-02">
+                    <img class="img" src="public/img/content/screen-37.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-38.png" alt="Device" />
                   </div>
                 </div>
               </div>
@@ -249,34 +241,35 @@
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/77.jpg');"></div>
-            <div class="content style-05">
-              <div class="text-container">
-                <div class="wrapper">
-                  <div class="title-wrapper">
-                    <div class="logo animate-03" style="--delay:.45s;">
+            <div class="content style-02">
+              <div class="img-container d-unset">
+                <div class="title-wrapper margin-left pl-0">
+                    <div class="logo">
                       <img src="public/img/logo/logo-03.png" alt="LOGO" />
                     </div>
-                    <div class="text animate-03" style="--delay:.6s;">
-                      <h3 class="color-white text-uppercase lh-2xs fw-200">
-                        <span class="fw-600">The Treasury</span><br>Department
+                    <div class="text">
+                      <h3 class="color-white text-uppercase lh-2xs fw-600">
+                        THE TREASURY<br><span class="fw-200">Department</span>
                       </h3>
-                      <p class="h4 color-white fw-500 lh-2xs mt-2">
+                      <p class="h4 color-white fw-500 lh-xs mt-2">
                         กรมธนารักษ์
                       </p>
+                      <p class="lg color-white fw-200">จำนวนเว็บไซต์ย่อย <span class="h3 lh-2xs fw-600">78</span> เว็บไซต์</p>
                     </div>
                   </div>
-                  <div class="btns animate-03" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
-                      <div class="icon-container color-01">
-                        <span class="p color-white fw-300">เว็บไซต์กรม</span>
-                        <em class="ml-2 fa-solid fa-play"></em>
-                      </div>
-                    </a>
+                <img class="img" src="public/img/content/screen-39.png" alt="Device" />
+              </div>
+              <div class="showcase-container">
+                <div class="wrapper">
+                  <div class="showcase-02">
+                    <img class="img" src="public/img/content/screen-42.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-43.png" alt="Device" />
+                  </div>
+                  <div class="showcase-01">
+                    <img class="img" src="public/img/content/screen-40.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-41.png" alt="Device" />
                   </div>
                 </div>
-              </div>
-              <div class="img-container animate-02" style="--delay:.45s;">
-                <img class="img" src="public/img/content/screen-12.png" alt="Device" />
               </div>
             </div>
           </div>
@@ -286,32 +279,36 @@
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/79.jpg');"></div>
-            <div class="content style-06">
-              <div class="img-container d-flex ai-center animate-02" style="--delay:.45s;">
-                <img class="img" src="public/img/content/screen-14.png" alt="Device" />
-              </div>
-              <div class="text-container">
-                <div class="wrapper">
-                  <div class="title-wrapper">
-                    <div class="logo animate-01" style="--delay:.45s;">
+            <div class="content style-02">
+              <div class="img-container">
+                <img class="img margin-left" src="public/img/content/screen-44.png" alt="Device" />
+                <div class="title-wrapper style-02">
+                    <div class="logo">
                       <img src="public/img/logo/logo-04.png" alt="LOGO" />
                     </div>
-                    <div class="text animate-01" style="--delay:.6s;">
+                    <div class="text">
                       <h3 class="color-white text-uppercase lh-2xs fw-200">
-                        Department of<br><span class="fw-600">Public Works and <br> Town & Country<br>Planning</span>
+                        Department of<br>
+                        <span class="fw-600">
+                          Public Works and  <br> Town & Country
+                        </span>
                       </h3>
-                      <p class="h4 color-white fw-500 lh-2xs mt-2">
-                        กรมโยธาธิการและผังเมือง
+                      <p class="h4 color-white fw-500 lh-xs mt-2">
+                        กระทรวงอุตสาหกรรม
                       </p>
+                      <p class="lg color-white fw-200">จำนวนเว็บไซต์ย่อย <span class="h3 lh-2xs fw-600">87</span> เว็บไซต์</p>
                     </div>
                   </div>
-                  <div class="btns animate-01" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
-                      <div class="icon-container color-01">
-                        <span class="p color-white fw-300">เว็บไซต์กรม</span>
-                        <em class="ml-2 fa-solid fa-play"></em>
-                      </div>
-                    </a>
+              </div>
+              <div class="showcase-container">
+                <div class="wrapper">
+                  <div class="showcase-01">
+                    <img class="img" src="public/img/content/screen-45.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-46.png" alt="Device" />
+                  </div>
+                  <div class="showcase-02">
+                    <img class="img" src="public/img/content/screen-47.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-48.png" alt="Device" />
                   </div>
                 </div>
               </div>
@@ -323,34 +320,73 @@
         <div class="swiper-slide">
           <div class="wrapper">
             <div class="img-bg" style="background-image:url('public/img/bg/78.jpg');"></div>
-            <div class="content style-05">
-              <div class="text-container">
-                <div class="wrapper">
-                  <div class="title-wrapper">
-                    <div class="logo animate-03" style="--delay:.45s;">
+            <div class="content style-02">
+              <div class="img-container d-unset">
+                <div class="title-wrapper margin-left pl-0">
+                    <div class="logo">
                       <img src="public/img/logo/logo-05.png" alt="LOGO" />
                     </div>
-                    <div class="text animate-03" style="--delay:.6s;">
-                      <h3 class="color-white text-uppercase lh-xs fw-200">
-                        Department<br>of <span class="fw-600">HEALTH</span>
+                    <div class="text">
+                      <h3 class="color-white text-uppercase lh-2xs fw-200">
+                        DEPARTMENT OF<br><span class="fw-600">HEALTH</span>
                       </h3>
-                      <p class="h4 color-white fw-500 lh-2xs mt-2">
+                      <p class="h4 color-white fw-500 lh-xs mt-2">
                         กรมอนามัย
                       </p>
+                      <p class="lg color-white fw-200">จำนวนเว็บไซต์ย่อย <span class="h3 lh-2xs fw-600">40</span> เว็บไซต์</p>
                     </div>
                   </div>
-                  <div class="btns animate-03" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03" href="#">
-                      <div class="icon-container color-01">
-                        <span class="p color-white fw-300">เว็บไซต์กรม</span>
-                        <em class="ml-2 fa-solid fa-play"></em>
-                      </div>
-                    </a>
+                <img class="img" src="public/img/content/screen-49.png" alt="Device" />
+              </div>
+              <div class="showcase-container">
+                <div class="wrapper">
+                  <div class="showcase-02">
+                    <img class="img" src="public/img/content/screen-52.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-53.png" alt="Device" />
+                  </div>
+                  <div class="showcase-01">
+                    <img class="img" src="public/img/content/screen-50.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-51.png" alt="Device" />
                   </div>
                 </div>
               </div>
-              <div class="img-container size-02 animate-02" style="--delay:.45s;">
-                <img class="img" src="public/img/content/screen-15.png" alt="Device" />
+            </div>
+          </div>
+        </div>
+
+        <!-- INDUSTRY -->
+        <div class="swiper-slide">
+          <div class="wrapper">
+            <div class="img-bg" style="background-image:url('public/img/bg/87.jpg');"></div>
+            <div class="content style-02">
+              <div class="img-container">
+                <img class="img margin-left-style-02" src="public/img/content/screen-54.png" alt="Device" />
+                <div class="title-wrapper style-02">
+                    <div class="logo">
+                      <img src="public/img/logo/logo-12.png" alt="LOGO" />
+                    </div>
+                    <div class="text">
+                      <h3 class="color-white text-uppercase lh-2xs fw-200">
+                        Ministry of<br><span class="fw-600">industry</span>
+                      </h3>
+                      <p class="h4 color-white fw-500 lh-xs mt-2">
+                        กระทรวงอุตสาหกรรม
+                      </p>
+                      <p class="lg color-white fw-200">จำนวนเว็บไซต์ย่อย <span class="h3 lh-2xs fw-600">87</span> เว็บไซต์</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="showcase-container">
+                <div class="wrapper">
+                  <div class="showcase-01">
+                    <img class="img" src="public/img/content/screen-55.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-36.png" alt="Device" />
+                  </div>
+                  <div class="showcase-02">
+                    <img class="img" src="public/img/content/screen-37.png" alt="Device" />
+                    <img class="img" src="public/img/content/screen-38.png" alt="Device" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
