@@ -636,7 +636,7 @@
         <!-- <a href="https://www.youtube.com/watch?v=5La64n-_pe4" data-fancybox>
           <img class="img" src="public/img/content/04.png" alt="Banner" />
         </a> -->
-        <video width="100%" height="auto" controls autoplay muted playsinline>
+        <video width="100%" height="auto" autoplay muted playsinline>
           <source src="public/video/DevSecOps.mp4" type="video/mp4">
         </video>
       </div>
@@ -719,7 +719,7 @@
       </div>
     </div>
 
-    <?php include_once('data/clients.php'); ?>
+    <?php include_once('data/clients-home.php'); ?>
     <div class="clients pos-relative" style="z-index:2;">
       <?php foreach($clients as $d){?>
         <div class="client">

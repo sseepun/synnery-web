@@ -126,9 +126,11 @@
                       <div class="line-5"></div><div class="line-6"></div>
                     </a>
                     <div class="text-container">
-                      <p class="xxs lh-sm fw-400 mt-3">
-                        <?= $d['title'] ?>
-                      </p>
+                      <a href="<?= $d['href'] ?>">
+                        <p class="xxs lh-sm fw-400 pt-3">
+                          <?= $d['title'] ?>
+                        </p>
+                      </a>
                     </div>
                   </div>
                 <?php }}?>
@@ -143,9 +145,11 @@
                       <div class="line-5"></div><div class="line-6"></div>
                     </a>
                     <div class="text-container">
-                      <p class="xxs lh-sm fw-400 mt-3">
-                        <?= $d['title'] ?>
-                      </p>
+                      <a href="<?= $d['href'] ?>">
+                        <p class="xxs lh-sm fw-400 pt-3">
+                          <?= $d['title'] ?>
+                        </p>
+                      </a>
                     </div>
                   </div>
                 <?php }}?>

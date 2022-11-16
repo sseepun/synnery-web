@@ -362,7 +362,7 @@
         Web Base Application
       </h3>
       <div class="p-1 bg-white box-shadow ss-box xxl">
-        <a class="ss-card" href="https://www.youtube.com/watch?v=lFa14nKS_pk" data-fancybox="">
+        <!-- <a class="ss-card" href="https://www.youtube.com/watch?v=lFa14nKS_pk" data-fancybox="">
           <div class="ss-img horizontal-03">
             <div class="img-bg" style="background-image:url('public/img/content/content-70.jpg');"></div>
           </div>
@@ -373,7 +373,8 @@
             </div>
           </div>
           <div class="card-line-1"></div><div class="card-line-2"></div>
-        </a>
+        </a> -->
+        <iframe width="100%" height="650" src="https://www.youtube.com/embed/lFa14nKS_pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div> 
   </section>
@@ -547,6 +548,11 @@
             <div class="img-bg" style="background-image:url('public/img/content/47.jpg');"></div>
           </div>   
         </div>
+      </div>
+      <div class="mt-6 text-center ss-box xl" data-aos="fade-up" data-aos-delay="300">
+        <p class="sm color-07 md-no-br">
+          ออกแบบและวางโครงสร้างของเครื่องแม่ข่ายให้เหมาะสมกับลักษณะการใช้งาน เพื่อรองรับการขยายตามปริมาณการใช้งานด้วย Kubernetes วางโครงสร้างของฐานข้อมูลโดยมี Load balance เพื่อกระจายการทำงาน แล้ววาง Service อื่นๆ เสริมเพื่อติดตามการทำงาน และให้ระบบทำงานได้สมบุรณ์ เช่น NFS, Elasticsearch, Redis, Zabbix เป็นต้น 
+        </p>
       </div>
     </div>          
   </section>
