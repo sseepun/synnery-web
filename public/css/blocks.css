@@ -930,8 +930,7 @@
   .section-13 .content.style-02{flex-wrap:wrap-reverse; justify-content:center;}
   .section-13 .content.style-02 .img-container{flex-wrap:wrap-reverse;}
   .section-13 .content.style-02 .img-container.d-unset{display:unset!important;}
-  .section-13 .content.style-02 .title-wrapper{min-width:unset;}
-  .section-13 .content.style-02 .title-wrapper.style-02{width:100%;}
+  .section-13 .content.style-02 .title-wrapper{min-width:unset; width:100%;}
   .section-13 .content.style-02 .img-container > img{max-width:36rem;}
   .section-13 .content.style-02 .text-container{width:100%; display:flex; justify-content:center;}
   .section-13 .content.style-02 .title-wrapper{display:flex; align-items:center; margin:0 0 2.5rem 0; padding-left:0; justify-content:center;}
