@@ -22,7 +22,7 @@
         </div>    
       </div>  
     </section>
-    <section class="section-05 section-padding toggle-contact-section" data-contact="1"> 
+    <section class="section-05 section-padding toggle-contact-section" data-contact="1" style="display:none;"> 
       <div class="pattern style-01" style="z-index:2;">
         <div class="wrapper" value=".5">
           <img src="public/img/content/pattern-18.png" alt="Hero">

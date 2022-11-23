@@ -273,6 +273,7 @@ $(function(){ 'use strict';
             }
             setTimeout(function(){
                 calculateSectionAnchors();
+                AOS.refresh();
             }, 700);
         }
     });
@@ -415,7 +416,7 @@ $(function(){ 'use strict';
         });
     }
     
-    // Section career
+    // Section Career
     var sectionCareer= $('.section-career');
     let swiperCareer;
     if(sectionCareer.length){
@@ -691,25 +692,7 @@ $(function(){ 'use strict';
     });
 
 
-    // Page Loader
-    let pageLoader = $('.page-loader');
-    if(pageLoader.length){
-        window.onload = function(){
-            setTimeout(function(){
-                pageLoader.addClass('started');
-            }, 100);
-            setTimeout(function(){
-                pageLoader.addClass('fade-out');
-                setTimeout(function(){
-                    pageLoader.remove();
-                    processInit();
-                }, 1700);
-            }, 1100);
-        }
-    }else{
-        processInit();
-    }
-
+    // Page Init
     function processInit(){
         $('body').removeClass('loading');
         AOS.init({
@@ -733,6 +716,35 @@ $(function(){ 'use strict';
                 offset: 'bottom-in-view',
             });
         });
+    }
+
+    // Page Loader
+    let pageLoader = $('.page-loader'),
+        pageLoaderPercent = pageLoader.find('.loader-percent');
+    if(pageLoader.length){
+        let _currval = 0;
+        let _counting = setInterval(function () {
+            ++_currval;
+            if(_currval > 90){
+                _currval = 95;
+                if(document.readyState == 'interactive'){
+                    _currval = 99;
+                }
+                if(document.readyState == 'complete'){
+                    clearInterval(_counting);
+                    _currval = 100;
+                    pageLoader.addClass('fade-out');
+                    setTimeout(function(){
+                        pageLoader.remove();
+                        processInit();
+                    }, 1700);
+                }
+            }
+            pageLoader.css('--percent', _currval);
+            pageLoaderPercent.html(_currval);
+        }, 10);
+    }else{
+        processInit();
     }
 
 });
