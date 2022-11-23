@@ -279,6 +279,38 @@ $(function(){ 'use strict';
     });
 
 
+    // Toggle Career
+    $('.btn-job-slide').click(function(e){
+        e.preventDefault();
+        var idx = $(this).data('idx');
+        $('.toggle-career-section').not(idx+' .toggle-career-section').slideUp(600);
+        $(idx).find('.toggle-career-section').slideToggle(600);
+        // let offset = $(idx).find('.toggle-career-section').offset();
+        // $('html, body').stop().animate({
+        //     scrollTop: offset.top - bodySize * 3.5
+        // }, 700);
+        let offset = $(idx).find('.toggle-career-section').offset();
+        setTimeout(function(){
+            calculateSectionAnchors();
+        }, 700);
+        // let target = $('.toggle-career-section[data-career="'+$(this).data('idx')+'"]');
+
+        // if(target.length){
+        //     target.toggleClass('expanded');
+        //     target.slideToggle(600);
+        //     if(target.hasClass('expanded')){
+        //         let offset = target.offset();
+        //         $('html, body').stop().animate({
+        //             scrollTop: offset.top - bodySize * 3.5
+        //         }, 700);
+        //     }
+        //     setTimeout(function(){
+        //         calculateSectionAnchors();
+        //     }, 700);
+        // }
+    });
+
+
     // Hex Container
     var hexContainer = $('.hex-container');
     if(hexContainer.length){
@@ -446,10 +478,10 @@ $(function(){ 'use strict';
                 calculateSectionAnchors();
             });
         });
-        $('.btn-job-slide').click(function(){
-            console.log($(this).attr('data-idx'))
-            swiperCareer.slideTo($(this).attr('data-idx'), 0)
-        });
+        // $('.btn-job-slide').click(function(){
+        //     console.log($(this).attr('data-idx'))
+        //     swiperCareer.slideTo($(this).attr('data-idx'), 0)
+        // });
     }
     
     // Section 06
