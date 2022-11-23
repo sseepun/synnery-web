@@ -810,8 +810,8 @@ fieldset{padding:0; margin:0; border:0;}
 }
 
 /* Special Card 24 */
-.ss-card-24{position:relative; width:100%; height:4rem; background:#ffffff;}
-.ss-card-24 .wrapper{height:100%; display:flex;}
+.ss-card-24{position:relative; width:100%; /*height:4rem;*/ background:#ffffff;}
+.ss-card-24 .wrapper{height:100%; display:flex; height: 4rem;}
 .ss-card-24 .wrapper > .main-block{width:50%; height:100%; background:yellow;}
 .ss-card-24 .wrapper > .main-block, .ss-card-24 .wrapper > .sub-block-01,
 .ss-card-24 .wrapper > .sub-block-02{background:#ffffff;}
@@ -827,6 +827,9 @@ fieldset{padding:0; margin:0; border:0;}
     width:100%; height:100%; transition:background .25s;
 }
 .ss-card-24 .wrapper .btn-block:hover{background:#333333;}
+.job-toggle.ss-card-24 .toggle-career-section {
+    padding: 0.5rem 1.5rem 1.5rem;
+}
 @media screen and (max-width:991.98px){
     .ss-card-24{min-width:65rem;}
 }
@@ -1477,3 +1480,24 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 
 /* Custom Grids */
 .grids.no-gap > .grid.style-03{padding:.5rem;}
+
+
+/* moe theme slide */
+.moe-theme-slide .ss-img {
+    background-color: #e5e5e5;
+}
+.moe-theme-slide .ss-img > .img-bg {
+    background-size: contain;
+}
+.moe-theme-slide .ss-card-35 .title-header {
+    min-width: 15rem;
+    padding: 0 2rem;
+    width: auto;
+}
+@media screen and (max-width: 565px) {
+    .moe-theme-slide .ss-card-35 .title-header {
+        height: 4rem;
+        min-width: 10rem;
+        padding: 0 1rem;
+    }
+}

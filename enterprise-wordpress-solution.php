@@ -13,6 +13,14 @@
     <img class="img" src="public/img/bg/25.jpg" alt="Banner" />
   </section>
 
+  <?php
+  $arrWpTxt = array(
+    'ง่าย และรวดเร็ว ในการพัฒนาเว็บไซต์เพื่อใช้งาน',
+    'ใช้งบประมาณที่ไม่สูง เหมาะสมสำหรับเว็บไซต์ที่ไม่มีความซับซ้อนมาก',
+    'สามารถติดตั้ง เพิ่ม ลบ แก้ไข Plug-in ต่างๆได้ง่าย',
+    'ออกแบบและปรับเปลี่ยน Theme Design ได้หลากหลายตามต้องการ',
+  );
+  ?>
   <section data-section="2" class="section-01 section-padding bg-05">
     <div class="pattern style-32">
       <div class="wrapper" value=".5">
@@ -52,7 +60,7 @@
                 <img class="active" src="public/img/icon/icon-active-0<?= ($i%4+1) ?>.png" alt="Icon Active" />
               </div>
               <div class="text-container h-color-01">
-                <p class="xs title color-black fw-400 mt-2">ง่าย และรวดเร็ว ในการพัฒนาเว็บไซต์เพื่อใช้งาน </p>
+                <p class="xs title color-black fw-400 mt-2"><?= $arrWpTxt[$i] ?></p>
               </div>
             </div>
           </div>
@@ -76,17 +84,17 @@
 
   <?php 
     $themes = [
-      ['bg' => 'public/img/content/content-103.jpg'],
-      ['bg' => 'public/img/content/content-104.jpg'],
-      ['bg' => 'public/img/content/content-105.jpg'],
-      ['bg' => 'public/img/content/content-106.jpg'],
-      ['bg' => 'public/img/content/content-107.jpg'],
-      ['bg' => 'public/img/content/content-108.jpg'],
-      ['bg' => 'public/img/content/content-109.jpg'],
-      ['bg' => 'public/img/content/content-110.jpg'],
-      ['bg' => 'public/img/content/content-111.jpg'],
-      ['bg' => 'public/img/content/content-112.jpg'],
-      ['bg' => 'public/img/content/content-113.jpg'],
+      ['bg' => 'public/img/wp-moe/MOE-1.png', 'name' => 'มาตรฐานการศึกษาระดับโลก'],
+      ['bg' => 'public/img/wp-moe/MOE-2.png', 'name' => 'Business หน่วยงานราชการ'],
+      ['bg' => 'public/img/wp-moe/MOE-3.png', 'name' => 'การเรียนรู้อย่างต่อเนื่องตลอดชีวิต'],
+      ['bg' => 'public/img/wp-moe/MOE-4.png', 'name' => 'ครู'],
+      ['bg' => 'public/img/wp-moe/MOE-5.png', 'name' => 'เด็ก/เยาวชน'],
+      ['bg' => 'public/img/wp-moe/MOE-6.png', 'name' => 'รักการอ่าน/ความเท่าเทียมทางการศึกษา'],
+      ['bg' => 'public/img/wp-moe/MOE-7.png', 'name' => 'วิทยาศาสตร์/การศึกษายุคดิจิทัล'],
+      ['bg' => 'public/img/wp-moe/MOE-8.png', 'name' => 'ปีใหม่'],
+      ['bg' => 'public/img/wp-moe/MOE-9.png', 'name' => 'โทนหน้าฝน'],
+      ['bg' => 'public/img/wp-moe/MOE-10.png', 'name' => 'โทนหน้าร้อน/ปิดเทอมใหญ'],
+      ['bg' => 'public/img/wp-moe/MOE-11.png', 'name' => 'โทนหน้าหนาว'],
     ]
   ?>
   <section data-section="4" class="section-08 section-padding">
@@ -112,7 +120,7 @@
     </div>
     <div class="img-bg" style="background-image:url('public/img/bg/64.jpg');"></div> 
     <div class="container">
-      <div class="content-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
+      <div class="content-container pos-relative moe-theme-slide" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <?php foreach($themes as $d){?>
@@ -124,7 +132,7 @@
                     </div>
                     <div class="title-header">
                       <p class="xs color-02">THEME <span class="progress"></span></p>
-                      <p class="xs color-04">มาตรฐานการศึกษาระดับโลก</p>
+                      <p class="xs color-04"><?= $d['name'] ?></p>
                     </div>
                     <div class="icon box-shadow">
                       <em class="fa-solid fa-magnifying-glass"></em>
@@ -215,10 +223,10 @@
                     <div class="grid">
                       <div class="d-flex flex-column jc-center height-full">
                         <p class="h5 color-01 fw-600">EVENT CALENDAR</p>  
-                        <p class="sm color-04 md-no-br">
+                        <!-- <p class="sm color-04 md-no-br">
                           ภาพหน้าจอ ที่จะให้กดเลื่อน ซ้าย ขวา ไปเรื่อยๆ 
                           โดยจะมีภาพและเชื่อระบบ<br>พร้อมคุณสมบัติพื้นฐานสัก 5-6 หัวข้อ 
-                        </p>
+                        </p> -->
                       </div>
                     </div>
                     <div class="grid">
