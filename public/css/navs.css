@@ -20,6 +20,7 @@
   font-weight:500; color:#b19777; letter-spacing:.25rem; margin:0 0 3.5rem 0;
   transition:all .8s cubic-bezier(.19,1,.22,1);
 }
+.page-loader .loader-text{color:#ffffff;}
 .page-loader.fade-out .loader-text{
   opacity:0; transform:translateY(2rem); transition-delay:.5s;
 }
@@ -30,6 +31,7 @@
 .page-loader .loader-progress > .bar{
   display:block; height:100%; width:calc(var(--percent) * 1%); background:#b19777;
 }
+.page-loader .loader-progress > .bar{background:#ec2c23;}
 .page-loader .loader-percent{
   position:absolute; top:0; bottom:0; left:0; right:0; line-height:1; color:#ffffff;
   display:flex; align-items:center; justify-content:center; opacity:.02; font-size:15rem;
