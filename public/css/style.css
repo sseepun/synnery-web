@@ -392,21 +392,22 @@ fieldset{padding:0; margin:0; border:0;}
 }
 .hex-flip.from-top .hex.bg{
     transform:scale(.25)rotateX(90deg); transform-origin:center top;
-    margin:.25rem 0 0 0; opacity:1;
+    margin:.25rem 0 0 0;
 }
 .hex-flip.from-bottom .hex.bg{
     transform:scale(.25)rotateX(90deg); transform-origin:center bottom;
-    margin:0 0 .25rem 0; opacity:1;
+    margin:0 0 .25rem 0;
 }
 .hex-flip.from-left .hex.bg{
     transform:scale(.97)rotateY(90deg); transform-origin:left center;
-    margin:0 0 0 .25rem; opacity:1;
+    margin:0 0 0 .25rem;
 }
 .hex-flip.from-right .hex.bg{
     transform:scale(.97)rotateY(90deg); transform-origin:right center;
-    margin:0 .25rem 0 0; opacity:1;
+    margin:0 .25rem 0 0;
 }
 .hex-flip:hover .hex.bg{transform:scale(.97)rotate(0deg)!important;}
+.hex-flip.show{opacity:1!important;}
 
 .hex.hex-back{color:#ffffff!important;}
 .hex.hex-fb{color:#3b5a9a;}
@@ -1085,10 +1086,11 @@ fieldset{padding:0; margin:0; border:0;}
     position:absolute; top:0; bottom:0; left:0; right:0;
     display:flex; align-items:center; justify-content:center;
     background-size:cover; background-position:center;
+    background-repeat:no-repeat; transform:scale(1.01);
     transition:transform .3s, filter .3s;
 }
 .ss-card:hover .ss-img:not(.no-hover) > .img-bg,
-.ss-img:not(.no-hover):hover > .img-bg{transform:scale(1.1);}
+.ss-img:not(.no-hover):hover > .img-bg{transform:scale(1.12);}
 .ss-img > .img-bg > img{
     display:block; width:auto; max-width:85%; height:auto; max-height:85%;
 }

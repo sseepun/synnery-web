@@ -314,33 +314,52 @@ $(function(){ 'use strict';
     // Hex Container
     var hexContainer = $('.hex-container');
     if(hexContainer.length){
+        let hexFlips = hexContainer.find('.hex-flip');
         let pageX = 0,
             pageY = 0;
         window.addEventListener('mousemove', function(e){
             pageX = e.pageX;
             pageY = e.pageY;
         });
-        hexContainer.find('.hex-flip').on('mouseenter', function(){
+        hexFlips.on('mouseenter', function(){
             let self = $(this);
-            self.removeClass('from-top from-bottom from-left from-right');
+            self.addClass('show');
             let o = self.offset(),
                 w = self.width(),
                 h = self.height();
-            if(pageX-5 <= o.left) self.addClass('from-left');
-            else if(pageX+5 >= o.left + w) self.addClass('from-right');
-            else if(pageY-50 <= o.top) self.addClass('from-top');
-            else if(pageY+50 >= o.top + h) self.addClass('from-bottom');
+            if(pageX-5 <= o.left){
+                self.removeClass('from-top from-bottom from-right');
+                self.addClass('from-left');
+            }else if(pageX+5 >= o.left + w){
+                self.removeClass('from-top from-bottom from-left');
+                self.addClass('from-right');
+            }else if(pageY-50 <= o.top){
+                self.removeClass('from-bottom from-left from-right');
+                self.addClass('from-top');
+            }else if(pageY+50 >= o.top + h){
+                self.removeClass('from-top from-left from-right');
+                self.addClass('from-bottom');
+            }
         });
-        hexContainer.find('.hex-flip').on('mouseleave', function(){
+        hexFlips.on('mouseleave', function(){
             let self = $(this);
-            self.removeClass('from-top from-bottom from-left from-right');
+            self.removeClass('show');
             let o = self.offset(),
                 w = self.width(),
                 h = self.height();
-            if(pageX-5 <= o.left) self.addClass('from-left');
-            else if(pageX+5 >= o.left + w) self.addClass('from-right');
-            else if(pageY-50 <= o.top) self.addClass('from-top');
-            else if(pageY+50 >= o.top + h) self.addClass('from-bottom');
+            if(pageX-5 <= o.left){
+                self.removeClass('from-top from-bottom from-right');
+                self.addClass('from-left');
+            }else if(pageX+5 >= o.left + w){
+                self.removeClass('from-top from-bottom from-left');
+                self.addClass('from-right');
+            }else if(pageY-50 <= o.top){
+                self.removeClass('from-bottom from-left from-right');
+                self.addClass('from-top');
+            }else if(pageY+50 >= o.top + h){
+                self.removeClass('from-top from-left from-right');
+                self.addClass('from-bottom');
+            }
         });
     }
 
