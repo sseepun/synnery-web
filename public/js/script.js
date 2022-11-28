@@ -323,7 +323,6 @@ $(function(){ 'use strict';
         });
         hexFlips.on('mouseenter', function(){
             let self = $(this);
-            self.addClass('show');
             let o = self.offset(),
                 w = self.width(),
                 h = self.height();
@@ -343,7 +342,6 @@ $(function(){ 'use strict';
         });
         hexFlips.on('mouseleave', function(){
             let self = $(this);
-            self.removeClass('show');
             let o = self.offset(),
                 w = self.width(),
                 h = self.height();
