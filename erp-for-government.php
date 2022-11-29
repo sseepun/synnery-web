@@ -140,11 +140,13 @@
       </p>
       <div class="hex-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="300">
         <?php for($i=0; $i<10; $i++){?>
-          <div class="hex-flip">
+          <a class="hex-flip" href="erp-for-government.php">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -152,11 +154,13 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/1<?= ($i%10+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         <?php }?>
 
         <?php
@@ -166,13 +170,14 @@
             'JIGSAW<br>HRD', 'JIGSAW<br>Budgeting'
           ];
         ?>
-
         <?php for($i=0; $i<10; $i++){?>
-          <div class="hex-flip">
+          <a class="hex-flip" href="erp-for-government.php">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -180,11 +185,13 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/2<?= ($i%12+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         <?php }?>
 
         <?php
@@ -192,13 +199,14 @@
             'JIGSAW<br>E-Form', 'JIGSAW<br>BI'
           ];
         ?>
-
         <?php for($i=0; $i<2; $i++){?>
-          <div class="hex-flip">
+          <a class="hex-flip" href="erp-for-government.php">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -206,13 +214,15 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/3<?= ($i%2+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         <?php }?>
-      </div>   
+      </div>
     </div>
   </section>
 

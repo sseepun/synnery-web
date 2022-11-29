@@ -386,7 +386,9 @@
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -394,7 +396,9 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/1<?= ($i%10+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
@@ -413,7 +417,9 @@
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -421,7 +427,9 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/2<?= ($i%12+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
@@ -438,7 +446,9 @@
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -446,13 +456,15 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/3<?= ($i%2+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
           </a>
         <?php }?>
-      </div>   
+      </div>
     </div>
   </section>
 
@@ -636,7 +648,7 @@
         <!-- <a href="https://www.youtube.com/watch?v=5La64n-_pe4" data-fancybox>
           <img class="img" src="public/img/content/04.png" alt="Banner" />
         </a> -->
-        <video width="100%" height="auto" autoplay muted playsinline>
+        <video width="100%" height="auto" autoplay muted playsinline loop>
           <source src="public/video/DevSecOps.mp4" type="video/mp4">
         </video>
       </div>
