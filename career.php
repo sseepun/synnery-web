@@ -377,7 +377,7 @@
                             <?php for($i=0; $i<1; $i++){?>
                               <div class="grid lg-1-3 xs-50 mt-0">
                                 <div class="p-1">
-                                  <a class="ss-card" href="public/img/content/outing/outing-1<?= ($i%1+2) ?>.jpg" data-fancybox>
+                                  <a class="ss-card" href="public/img/content-work/outing/outing-1<?= ($i%1+2) ?>.jpg" data-fancybox>
                                     <div class="ss-img horizontal-03">
                                       <div class="img-bg" style="background-image:url('');"></div>
                                     </div>
@@ -521,7 +521,7 @@
                                 <div class="p-1">
                                   <a class="ss-card" href="https://youtu.be/ADjBR0PJhOQ" data-fancybox>
                                     <div class="ss-img horizontal-03">
-                                      <div class="img-bg" style="background-image:url('public/img/content/content-1<?= ($i%2+0) ?>.jpg');"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/content/content-1<?= ($i%2+0) ?>.jpg');"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="card-line-1"></div><div class="card-line-2"></div>
@@ -535,7 +535,7 @@
                                 <div class="p-1 h-full">
                                   <a class="ss-card ss-card-03 style-02" href="public/img/content/content-1<?= ($i%2+4) ?>.jpg" data-fancybox="gallery">
                                     <div class="ss-img">
-                                      <div class="img-bg" style="background-image:url('public/img/content/content-1<?= ($i%2+4) ?>.jpg')"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/content/content-1<?= ($i%2+4) ?>.jpg')"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="line-1"></div><div class="line-2"></div>
@@ -549,7 +549,7 @@
                                 <div class="p-1 h-full">
                                   <a class="ss-card ss-card-03 style-02" href="public/img/content/content-1<?= ($i%2+6) ?>.jpg" data-fancybox="gallery">
                                     <div class="ss-img">
-                                      <div class="img-bg" style="background-image:url('public/img/content/content-1<?= ($i%2+6) ?>.jpg')"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/content/content-1<?= ($i%2+6) ?>.jpg')"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="line-1"></div><div class="line-2"></div>
@@ -562,7 +562,7 @@
                                 <div class="p-1">
                                   <a class="ss-card" href="https://youtu.be/N8zX2GU6QeQ" data-fancybox>
                                     <div class="ss-img horizontal-03">
-                                      <div class="img-bg" style="background-image:url('public/img/content/content-0<?= ($i%2+5) ?>.jpg');"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/content/content-0<?= ($i%2+5) ?>.jpg');"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="card-line-1"></div><div class="card-line-2"></div>
@@ -576,7 +576,7 @@
                                 <div class="p-1">
                                   <a class="ss-card" href="https://youtu.be/ADjBR0PJhOQ" data-fancybox>
                                     <div class="ss-img horizontal-03">
-                                      <div class="img-bg" style="background-image:url('public/img/content/content-0<?= ($i%2+1) ?>.jpg');"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/content/content-0<?= ($i%2+1) ?>.jpg');"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="card-line-1"></div><div class="card-line-2"></div>
@@ -590,7 +590,7 @@
                                 <div class="p-1">
                                 <a class="ss-card" href="public/img/content/content-1<?= ($i%2+3) ?>.jpg" data-fancybox>
                                     <div class="ss-img horizontal-03">
-                                      <div class="img-bg" style="background-image:url('public/img/content/content-1<?= ($i%2+3) ?>.jpg');"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/content/content-1<?= ($i%2+3) ?>.jpg');"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="card-line-1"></div><div class="card-line-2"></div>
@@ -634,9 +634,9 @@
                             <?php for($i=0; $i<1; $i++){?>
                               <div class="grid lg-1-3 xs-50 mt-0">
                                 <div class="p-1">
-                                  <a class="ss-card" href="public/img/content/outing/outing-1<?= ($i%1+2) ?>.jpg" data-fancybox>
+                                  <a class="ss-card" href="public/img/content-work/outing/outing-1<?= ($i%1+2) ?>.jpg" data-fancybox>
                                     <div class="ss-img horizontal-03">
-                                      <div class="img-bg" style="background-image:url('public/img/content/outing/outing-1<?= ($i%1+2) ?>.jpg');"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/outing/outing-1<?= ($i%1+2) ?>.jpg');"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="card-line-1"></div><div class="card-line-2"></div>
@@ -645,9 +645,9 @@
                               </div>
                               <div class="grid lg-1-6 xs-50 mt-0">
                                 <div class="p-1 h-full">
-                                  <a class="ss-card ss-card-03 style-02" href="public/img/content/outing/outing-2<?= ($i%1+1) ?>.jpg" data-fancybox="gallery">
+                                  <a class="ss-card ss-card-03 style-02" href="public/img/content-work/outing/outing-2<?= ($i%1+1) ?>.jpg" data-fancybox="gallery">
                                     <div class="ss-img">
-                                      <div class="img-bg" style="background-image:url('public/img/content/outing/outing-2<?= ($i%1+1) ?>.jpg')"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/outing/outing-2<?= ($i%1+1) ?>.jpg')"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="line-1"></div><div class="line-2"></div>
@@ -659,9 +659,9 @@
                             <?php for($i=0; $i<1; $i++){?>
                               <div class="grid lg-1-6 xs-50 mt-0">
                                 <div class="p-1 h-full">
-                                  <a class="ss-card ss-card-03 style-02" href="public/img/content/outing/outing-1<?= ($i%1+4) ?>.jpg" data-fancybox="gallery">
+                                  <a class="ss-card ss-card-03 style-02" href="public/img/content-work/outing/outing-1<?= ($i%1+4) ?>.jpg" data-fancybox="gallery">
                                     <div class="ss-img">
-                                      <div class="img-bg" style="background-image:url('public/img/content/outing/outing-1<?= ($i%1+4) ?>.jpg')"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/outing/outing-1<?= ($i%1+4) ?>.jpg')"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="line-1"></div><div class="line-2"></div>
@@ -673,9 +673,9 @@
                             <?php for($i=0; $i<1; $i++){?>
                               <div class="grid lg-1-3 xs-50 mt-0">
                                 <div class="p-1">
-                                  <a class="ss-card" href="public/img/content/outing/outing-0<?= ($i%1+7) ?>.jpg" data-fancybox>
+                                  <a class="ss-card" href="public/img/content-work/outing/outing-0<?= ($i%1+7) ?>.jpg" data-fancybox>
                                     <div class="ss-img horizontal-03">
-                                      <div class="img-bg" style="background-image:url('public/img/content/outing/outing-0<?= ($i%1+7) ?>.jpg');"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/outing/outing-0<?= ($i%1+7) ?>.jpg');"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="card-line-1"></div><div class="card-line-2"></div>
@@ -687,9 +687,9 @@
                             <?php for($i=0; $i<1; $i++){?>
                               <div class="grid lg-1-6 xs-50 mt-0">
                                 <div class="p-1 h-full">
-                                  <a class="ss-card ss-card-03 style-02" href="public/img/content/outing/outing-0<?= ($i%1+8) ?>.jpg" data-fancybox="gallery">
+                                  <a class="ss-card ss-card-03 style-02" href="public/img/content-work/outing/outing-0<?= ($i%1+8) ?>.jpg" data-fancybox="gallery">
                                     <div class="ss-img">
-                                      <div class="img-bg" style="background-image:url('public/img/content/outing/outing-0<?= ($i%1+8) ?>.jpg')"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/outing/outing-0<?= ($i%1+8) ?>.jpg')"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="line-1"></div><div class="line-2"></div>
@@ -701,9 +701,9 @@
                             <?php for($i=0; $i<1; $i++){?>
                               <div class="grid lg-1-3 xs-50 mt-0">
                                 <div class="p-1">
-                                  <a class="ss-card" href="public/img/content/outing/outing-0<?= ($i%1+6) ?>.jpg" data-fancybox>
+                                  <a class="ss-card" href="public/img/content-work/outing/outing-0<?= ($i%1+6) ?>.jpg" data-fancybox>
                                     <div class="ss-img horizontal-03">
-                                      <div class="img-bg" style="background-image:url('public/img/content/outing/outing-0<?= ($i%1+6) ?>.jpg');"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/outing/outing-0<?= ($i%1+6) ?>.jpg');"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="card-line-1"></div><div class="card-line-2"></div>
@@ -715,9 +715,9 @@
                             <?php for($i=0; $i<1; $i++){?>
                               <div class="grid lg-1-3 xs-50 mt-0">
                                 <div class="p-1">
-                                  <a class="ss-card" href="public/img/content/outing/outing-0<?= ($i%1+3) ?>.jpg" data-fancybox>
+                                  <a class="ss-card" href="public/img/content-work/outing/outing-0<?= ($i%1+3) ?>.jpg" data-fancybox>
                                     <div class="ss-img horizontal-03">
-                                      <div class="img-bg" style="background-image:url('public/img/content/outing/outing-0<?= ($i%1+3) ?>.jpg');"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/outing/outing-0<?= ($i%1+3) ?>.jpg');"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="card-line-1"></div><div class="card-line-2"></div>
@@ -729,9 +729,9 @@
                             <?php for($i=0; $i<1; $i++){?>
                               <div class="grid lg-1-6 xs-50 mt-0">
                                 <div class="p-1 h-full">
-                                  <a class="ss-card ss-card-03 style-02" href="public/img/content/outing/outing-2<?= ($i%1+0) ?>.jpg" data-fancybox="gallery">
+                                  <a class="ss-card ss-card-03 style-02" href="public/img/content-work/outing/outing-2<?= ($i%1+0) ?>.jpg" data-fancybox="gallery">
                                     <div class="ss-img">
-                                      <div class="img-bg" style="background-image:url('public/img/content/outing/outing-2<?= ($i%1+0) ?>.jpg')"></div>
+                                      <div class="img-bg" style="background-image:url('public/img/content-work/outing/outing-2<?= ($i%1+0) ?>.jpg')"></div>
                                     </div>
                                     <div class="hover-filter-01"></div>
                                     <div class="line-1"></div><div class="line-2"></div>
