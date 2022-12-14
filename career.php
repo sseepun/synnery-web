@@ -347,23 +347,29 @@
 
     <?php
     $videos = [
+      [
+        'videoname' => 'https://www.youtube.com/watch?v=F8aNO0JfzVg&index=2'
+      ],
+      [
+        'videoname' => 'https://www.youtube.com/watch?v=F8aNO0JfzVg&index=2'
+      ],
+      [
+        'videoname' => 'https://www.youtube.com/watch?v=F8aNO0JfzVg&index=2'
+      ],
+      [
+        'videoname' => 'https://www.youtube.com/watch?v=F8aNO0JfzVg&index=2'
+      ],
+      [
+        'videoname' => 'https://www.youtube.com/watch?v=F8aNO0JfzVg&index=2'
+      ],
+      [
+        'videoname' => 'hhttps://www.youtube.com/watch?v=F8aNO0JfzVg&index=2'
+      ],
     //   [
-    //     'videoname' => 'https://youtu.be/FtGi8fWXPpY'
+    //     'videoname' => 'https://www.youtube.com/embed/p0ym2c1LCDo'
     //   ],
     //   [
-    //     'videoname' => 'https://youtu.be/Z7rXbGQuY8E'
-    //   ],
-    //   [
-    //     'videoname' => 'https://youtu.be/uSyA-PosH9k'
-    //   ],
-    //   [
-    //     'videoname' => 'https://youtu.be/EFxSWiSqBFg'
-    //   ],
-    //   [
-    //     'videoname' => 'https://youtu.be/BH2-1gq5BHA'
-    //   ],
-    //   [
-    //     'videoname' => 'https://youtu.be/F8aNO0JfzVg'
+    //     'videoname' => 'https://www.youtube.com/embed/Crh2ct4nWFs'
     //   ],
     ]
     ?>
@@ -405,7 +411,7 @@
                         <div class="content-container">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
-                                    <?php for($j=0; $j<1; $j++){?>
+                                    <?php for($j=0; $j<=0; $j++){?>
                                     <div class="swiper-slide">
                                         <div class="wrapper">
                                             <div class="grids no-gap">
@@ -506,6 +512,45 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="swiper-slide">
+                                        <div class="wrapper">
+                                            <div class="grids no-gap">
+
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card" href="https://youtu.be/FtGi8fWXPpY"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/img-video/video-07.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card" href="https://youtu.be/Z7rXbGQuY8E"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/img-video/video-08.png');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
                                     <?php }?>
                                 </div>
                                 <div class="navigator white">
@@ -532,18 +577,95 @@
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <?php for($j=0; $j<1; $j++){?>
+                                    <!-- start slide 1 -->
                                     <div class="swiper-slide">
                                         <div class="wrapper">
                                             <div class="grids no-gap">
-
-                                                <?php for($i=0; $i<2; $i++){?>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card" href="https://youtu.be/8xNJKA8IzPc"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-01.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/content/content-02.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-02.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/content/content-03.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-03.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card" href="https://youtu.be/N8zX2GU6QeQ"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-04.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/content/content-05.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-05.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                                 <div class="grid lg-1-3 xs-50 mt-0">
                                                     <div class="p-1">
                                                         <a class="ss-card" href="https://youtu.be/ADjBR0PJhOQ"
                                                             data-fancybox>
                                                             <div class="ss-img horizontal-03">
                                                                 <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/content/content-1<?= ($i%2+0) ?>.jpg');">
+                                                                    style="background-image:url('public/img/content-work/content/content-06.jpg');">
                                                                 </div>
                                                             </div>
                                                             <div class="hover-filter-01"></div>
@@ -552,52 +674,14 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="grid lg-1-6 xs-50 mt-0">
-                                                    <div class="p-1 h-full">
-                                                        <a class="ss-card ss-card-03 style-02"
-                                                            href="public/img/content-work/content/content-1<?= ($i%6+2) ?>.jpg"
-                                                            data-fancybox="gallery">
-                                                            <div class="ss-img">
-                                                                <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/content/content-1<?= ($i%6+2) ?>.jpg')">
-                                                                </div>
-                                                            </div>
-                                                            <div class="hover-filter-01"></div>
-                                                            <div class="line-1"></div>
-                                                            <div class="line-2"></div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <?php }?>
-
-                                                <?php for($i=0; $i<2; $i++){?>
-                                                <div class="grid lg-1-6 xs-50 mt-0">
-                                                    <div class="p-1 h-full">
-                                                        <a class="ss-card ss-card-03 style-02"
-                                                            href="public/img/content-work/content/content-1<?= ($i%6+4) ?>.jpg"
-                                                            data-fancybox="gallery">
-                                                            <div class="ss-img">
-                                                                <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/content/content-1<?= ($i%6+4) ?>.jpg')">
-                                                                </div>
-                                                            </div>
-                                                            <div class="hover-filter-01"></div>
-                                                            <div class="line-1"></div>
-                                                            <div class="line-2"></div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <?php }?>
-
-                                                <?php for($i=0; $i<2; $i++){?>
                                                 <div class="grid lg-1-3 xs-50 mt-0">
                                                     <div class="p-1">
                                                         <a class="ss-card"
-                                                            href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2"
+                                                            href="public/img/content-work/content/content-07.jpg"
                                                             data-fancybox>
                                                             <div class="ss-img horizontal-03">
                                                                 <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/content/content-1<?= ($i%2+6) ?>.jpg');">
+                                                                    style="background-image:url('public/img/content-work/content/content-07.jpg');">
                                                                 </div>
                                                             </div>
                                                             <div class="hover-filter-01"></div>
@@ -606,10 +690,223 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <?php }?>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/content/content-08.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-08.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- end slide 1 -->
+
+                                    <!-- start slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="wrapper">
+                                            <div class="grids no-gap">
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/content/content-09.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-09.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/content/content-10.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-10.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/content/content-11.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-11.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/content/content-12.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-12.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/content/content-13.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-13.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/content/content-14.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-14.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/content/content-15.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-15.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/content/content-16.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-16.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slide 2 -->
+
+                                    <!-- start slide 3 -->
+                                    <div class="swiper-slide">
+                                        <div class="wrapper">
+                                            <div class="grids no-gap">
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/content/content-17.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-17.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/content/content-18.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-18.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/content/content-19.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/content/content-19.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slide 3 -->
                                     <?php }?>
                                 </div>
                                 <div class="navigator white">
@@ -636,19 +933,18 @@
                             <div class="swiper-container">
                                 <div class="swiper-wrapper">
                                     <?php for($j=0; $j<1; $j++){?>
+                                    <!-- start slide 1 -->
                                     <div class="swiper-slide">
                                         <div class="wrapper">
                                             <div class="grids no-gap">
-
-                                                <?php for($i=0; $i<1; $i++){?>
                                                 <div class="grid lg-1-3 xs-50 mt-0">
                                                     <div class="p-1">
                                                         <a class="ss-card"
-                                                            href="public/img/content-work/outing/outing-1<?= ($i%1+2) ?>.jpg"
+                                                            href="public/img/content-work/outing/outing-01.jpg"
                                                             data-fancybox>
                                                             <div class="ss-img horizontal-03">
                                                                 <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/outing/outing-1<?= ($i%1+2) ?>.jpg');">
+                                                                    style="background-image:url('public/img/content-work/outing/outing-01.jpg');">
                                                                 </div>
                                                             </div>
                                                             <div class="hover-filter-01"></div>
@@ -660,11 +956,11 @@
                                                 <div class="grid lg-1-6 xs-50 mt-0">
                                                     <div class="p-1 h-full">
                                                         <a class="ss-card ss-card-03 style-02"
-                                                            href="public/img/content-work/outing/outing-2<?= ($i%1+1) ?>.jpg"
+                                                            href="public/img/content-work/outing/outing-02.jpg"
                                                             data-fancybox="gallery">
                                                             <div class="ss-img">
                                                                 <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/outing/outing-2<?= ($i%1+1) ?>.jpg')">
+                                                                    style="background-image:url('public/img/content-work/outing/outing-02.jpg')">
                                                                 </div>
                                                             </div>
                                                             <div class="hover-filter-01"></div>
@@ -673,17 +969,14 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <?php }?>
-
-                                                <?php for($i=0; $i<1; $i++){?>
                                                 <div class="grid lg-1-6 xs-50 mt-0">
                                                     <div class="p-1 h-full">
                                                         <a class="ss-card ss-card-03 style-02"
-                                                            href="public/img/content-work/outing/outing-1<?= ($i%1+4) ?>.jpg"
+                                                            href="public/img/content-work/outing/outing-03.jpg"
                                                             data-fancybox="gallery">
                                                             <div class="ss-img">
                                                                 <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/outing/outing-1<?= ($i%1+4) ?>.jpg')">
+                                                                    style="background-image:url('public/img/content-work/outing/outing-03.jpg')">
                                                                 </div>
                                                             </div>
                                                             <div class="hover-filter-01"></div>
@@ -692,17 +985,14 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <?php }?>
-
-                                                <?php for($i=0; $i<1; $i++){?>
                                                 <div class="grid lg-1-3 xs-50 mt-0">
                                                     <div class="p-1">
                                                         <a class="ss-card"
-                                                            href="public/img/content-work/outing/outing-0<?= ($i%1+7) ?>.jpg"
+                                                            href="public/img/content-work/outing/outing-04.jpg"
                                                             data-fancybox>
                                                             <div class="ss-img horizontal-03">
                                                                 <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/outing/outing-0<?= ($i%1+7) ?>.jpg');">
+                                                                    style="background-image:url('public/img/content-work/outing/outing-04.jpg');">
                                                                 </div>
                                                             </div>
                                                             <div class="hover-filter-01"></div>
@@ -711,17 +1001,14 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <?php }?>
-
-                                                <?php for($i=0; $i<1; $i++){?>
                                                 <div class="grid lg-1-6 xs-50 mt-0">
                                                     <div class="p-1 h-full">
                                                         <a class="ss-card ss-card-03 style-02"
-                                                            href="public/img/content-work/outing/outing-0<?= ($i%1+8) ?>.jpg"
+                                                            href="public/img/content-work/outing/outing-05.jpg"
                                                             data-fancybox="gallery">
                                                             <div class="ss-img">
                                                                 <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/outing/outing-0<?= ($i%1+8) ?>.jpg')">
+                                                                    style="background-image:url('public/img/content-work/outing/outing-05.jpg')">
                                                                 </div>
                                                             </div>
                                                             <div class="hover-filter-01"></div>
@@ -730,17 +1017,14 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <?php }?>
-
-                                                <?php for($i=0; $i<1; $i++){?>
                                                 <div class="grid lg-1-3 xs-50 mt-0">
                                                     <div class="p-1">
                                                         <a class="ss-card"
-                                                            href="public/img/content-work/outing/outing-0<?= ($i%1+6) ?>.jpg"
+                                                            href="public/img/content-work/outing/outing-06.jpg"
                                                             data-fancybox>
                                                             <div class="ss-img horizontal-03">
                                                                 <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/outing/outing-0<?= ($i%1+6) ?>.jpg');">
+                                                                    style="background-image:url('public/img/content-work/outing/outing-06.jpg');">
                                                                 </div>
                                                             </div>
                                                             <div class="hover-filter-01"></div>
@@ -749,17 +1033,14 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <?php }?>
-
-                                                <?php for($i=0; $i<1; $i++){?>
                                                 <div class="grid lg-1-3 xs-50 mt-0">
                                                     <div class="p-1">
                                                         <a class="ss-card"
-                                                            href="public/img/content-work/outing/outing-0<?= ($i%1+3) ?>.jpg"
+                                                            href="public/img/content-work/outing/outing-07.jpg"
                                                             data-fancybox>
                                                             <div class="ss-img horizontal-03">
                                                                 <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/outing/outing-0<?= ($i%1+3) ?>.jpg');">
+                                                                    style="background-image:url('public/img/content-work/outing/outing-07.jpg');">
                                                                 </div>
                                                             </div>
                                                             <div class="hover-filter-01"></div>
@@ -768,17 +1049,14 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <?php }?>
-
-                                                <?php for($i=0; $i<1; $i++){?>
                                                 <div class="grid lg-1-6 xs-50 mt-0">
                                                     <div class="p-1 h-full">
                                                         <a class="ss-card ss-card-03 style-02"
-                                                            href="public/img/content-work/outing/outing-2<?= ($i%1+0) ?>.jpg"
+                                                            href="public/img/content-work/outing/outing-08.jpg"
                                                             data-fancybox="gallery">
                                                             <div class="ss-img">
                                                                 <div class="img-bg"
-                                                                    style="background-image:url('public/img/content-work/outing/outing-2<?= ($i%1+0) ?>.jpg')">
+                                                                    style="background-image:url('public/img/content-work/outing/outing-08.jpg')">
                                                                 </div>
                                                             </div>
                                                             <div class="hover-filter-01"></div>
@@ -787,12 +1065,287 @@
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <?php }?>
+
 
 
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- end slide 1 -->
+
+                                    <!-- start slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="wrapper">
+                                            <div class="grids no-gap">
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/outing/outing-09.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-09.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/outing/outing-10.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-10.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/outing/outing-11.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-11.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/outing/outing-12.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-12.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/outing/outing-13.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-13.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/outing/outing-14.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-14.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/outing/outing-15.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-15.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/outing/outing-16.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-16.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slide 2 -->
+
+                                    <!-- start slide 3 -->
+                                    <div class="swiper-slide">
+                                        <div class="wrapper">
+                                            <div class="grids no-gap">
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/outing/outing-17.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-17.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/outing/outing-18.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-18.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/outing/outing-19.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-19.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/outing/outing-20.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-20.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/outing/outing-21.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-21.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/outing/outing-22.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-22.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-3 xs-50 mt-0">
+                                                    <div class="p-1">
+                                                        <a class="ss-card"
+                                                            href="public/img/content-work/outing/outing-23.jpg"
+                                                            data-fancybox>
+                                                            <div class="ss-img horizontal-03">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-23.jpg');">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="card-line-1"></div>
+                                                            <div class="card-line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid lg-1-6 xs-50 mt-0">
+                                                    <div class="p-1 h-full">
+                                                        <a class="ss-card ss-card-03 style-02"
+                                                            href="public/img/content-work/outing/outing-24.jpg"
+                                                            data-fancybox="gallery">
+                                                            <div class="ss-img">
+                                                                <div class="img-bg"
+                                                                    style="background-image:url('public/img/content-work/outing/outing-24.jpg')">
+                                                                </div>
+                                                            </div>
+                                                            <div class="hover-filter-01"></div>
+                                                            <div class="line-1"></div>
+                                                            <div class="line-2"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end slide 3 -->
                                     <?php }?>
                                 </div>
                                 <div class="navigator white">
