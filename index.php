@@ -738,7 +738,7 @@
           <div class="ss-card ss-card-26">
             <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
             <div class="wrapper" data-aos="fade-up" data-aos-delay="150">
-              <div class="image-container">
+              <div class="image-container" <?= empty($d['style'])?'':$d['style'] ?>>
                 <img src="<?= $d['icon'] ?>" alt="Client" />
               </div>
               <div class="text-container mt-4">
