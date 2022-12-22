@@ -282,6 +282,14 @@
     </div>
   </section>
 
+  <?php
+  $arrTrend = [
+    'public/img/trend/trend-1.jpg',
+    'public/img/trend/trend-2.jpg',
+    'public/img/trend/trend-3.jpg',
+    'public/img/trend/trend-4.jpg',
+  ];
+  ?>
   <section data-section="6" class="section-01 section-padding">
     <div class="pattern style-33">
       <div class="wrapper" value=".5">
@@ -304,11 +312,11 @@
         THE TREND OF <span class="color-01 fw-600">DEVELOPMENT</span>
       </h3>
       <div class="grids jc-center" data-aos="fade-up" data-aos-delay="150">
-        <?php for($i=0; $i<3; $i++) {?>
-          <div class="grid lg-1-3 md-50 sm-50 xs-100 pt-6">
-            <a class="ss-card ss-card-03" href="public/img/content/4<?= ($i%2+2) ?>.jpg" data-fancybox="gallery">
+        <?php for($i=0; $i<4; $i++) {?>
+          <div class="grid lg-50 md-50 sm-50 xs-100 pt-6">
+            <a class="ss-card ss-card-03" href="<?= $arrTrend[$i] ?>" data-fancybox="gallery">
               <div class="ss-img">
-                <div class="img-bg" style="background-image:url('public/img/content/4<?= ($i%2+2) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url('<?= $arrTrend[$i] ?>');"></div>
               </div>
               <div class="icon">
                 <em class="fa-solid fa-plus"></em>
@@ -432,7 +440,7 @@
         <div class="grid lg-50 md-50 sm-100">
           <div class="ss-card ss-card-35 box-shadow" data-aos="fade-up" data-aos-delay="300">
             <div class="ss-img horizontal-03 no-hover">
-              <div class="img-bg" style="background-image:url('public/img/content/45.jpg');"></div>
+              <div class="img-bg" style="background-image:url('public/img/content/asana.gif');"></div>
             </div>   
           </div>
         </div>
@@ -469,6 +477,18 @@
     </div>      
   </section>
 
+  <?php
+  $arrDiagram = [
+    [
+      'title' => 'Use Case diagram & Data Flow diagram',
+      'img' => 'public/img/erp/diagram-1.png',
+    ],
+    [
+      'title' => 'Flow Chart & ER Diagram',
+      'img' => 'public/img/erp/diagram-2.png',
+    ],
+  ];
+  ?>
   <section data-section="10" class="section-08 section-padding">
     <div class="container">
       <h4 class="lg text-center color-black fw-300" data-aos="fade-up" data-aos-delay="0">
@@ -484,15 +504,15 @@
               <div class="swiper-slide ss-card-padding">
                 <a class="ss-card ss-card-34 " href="#">
                   <div class="ss-img">
-                    <div class="img-bg" style="background-image:url('public/img/content/content-73.jpg');"></div>
+                    <div class="img-bg" style="background-image:url('public/img/erp/diagram-1.png');"></div>
                   </div>
                   <div class="icon">
                     <em class="fa-solid fa-plus"></em>
                   </div>
                 </a>
                 <p class="sm text-center color-01 text-uppercase fw-600 mt-2">
-                    Use Case diagram
-                  </p>
+                  Use Case diagram & Data Flow diagram
+                </p>
               </div>
             <?php }?>
           </div>
@@ -537,7 +557,7 @@
       <div class="ss-box xxl">
         <div class="ss-card ss-card-35 box-shadow mt-5" data-aos="fade-up" data-aos-delay="150">
           <div class="ss-img horizontal-2 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/content-74.jpg');"></div>
+            <div class="img-bg" style="background-image:url('public/img/erp/diagram-2.png');"></div>
           </div>   
         </div>
       </div>

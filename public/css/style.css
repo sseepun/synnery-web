@@ -723,6 +723,9 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-10.style-02 .icon > .tech-stack{position:relative; fill:#ec2c23; display:block; width:3rem; height:3rem; transition:fill .3s;}
 .ss-card-10.style-02:hover .icon > .tech-stack{fill:#ffffff;}
 .ss-card-10.style-02:hover .icon > .tech-stack.h-red{fill:#ec2c23;} /* For Bootstrap Icon */
+.ss-card-10.style-02:hover .icon > .tech-stack path {
+    fill: #fff;
+}
 
 .ss-card-10.style-02 .icon::before{
     content:''; position:absolute; top:0; left:0; right:0; bottom:0;  margin:auto;
@@ -1501,4 +1504,12 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
         min-width: 10rem;
         padding: 0 1rem;
     }
+}
+
+/* wordpress */ 
+.bg-contain {
+    background-size: contain !important;
+}
+.bg-color-blue-dark {
+    background-color: #015778;
 }
