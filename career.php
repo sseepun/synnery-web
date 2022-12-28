@@ -12,7 +12,8 @@
     <?php include_once('include/accessibility.php'); ?>
 
     <section data-section="1" data-aos="fade-in" data-aos-delay="0">
-        <img class="img" src="public/img/bg/30.jpg" alt="Banner" />
+        <!-- <img class="img" src="public/img/bg/30.jpg" alt="Banner" /> -->
+        <img class="img" src="public/img/bg/career-tg.jpg" alt="Banner" />
     </section>
 
     <section data-section="2" class="section-01 section-padding">
