@@ -101,7 +101,7 @@
                 'href' => 'services.php',
               ],[
                 'bg' => 'public/img/content/menu-service-04.jpg',
-                'title' => 'Network Architecture/ DevSecOps',
+                'title' => 'Network Architecture',
                 'href' => 'network-security-system.php',
               ],[
                 'bg' => 'public/img/content/menu-service-06.jpg',
@@ -218,7 +218,7 @@
                 </div>
                 <div class="submenu">
                   <a href="network-security-system.php">
-                    Network Architecture/ DevSecOps
+                    Network Architecture
                   </a>
                 </div>
                 <div class="submenu">
