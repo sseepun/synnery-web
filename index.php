@@ -215,7 +215,7 @@
                 ], [
                   'bg' => 'public/img/content/36.jpg',
                   'icon' => 'public/img/clients/กรมธนารักษ์.svg',
-                  'title' => 'กรมธนารักษณ์',
+                  'title' => 'กรมธนารักษ์',
                   'bgColor' => 'rgba(204,165,33,.7)',
                   'link' => 'web-gov-standard.php',
                 ], [
