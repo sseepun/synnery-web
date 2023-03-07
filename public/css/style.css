@@ -1513,3 +1513,10 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .bg-color-blue-dark {
     background-color: #015778;
 }
+
+/* other */
+.abs-47 {
+    position: absolute;
+    top: 42.5%;
+    left: 47%;
+}
