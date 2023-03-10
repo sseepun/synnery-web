@@ -178,7 +178,7 @@
 
       <?php 
         $titles = [
-          "เบิ้องหลังการถ่ายทำ Video Present ของพิธีกร", 
+          "เบื้องหลังการถ่ายทำ Video Present ของพิธีกร", 
           "เบื้องหลังการซ้อมก่อน Live จริง", 
           "สรุปภาพรวมของ Live Exhibition Streaming"
         ]
@@ -189,7 +189,7 @@
           [
             'bg' => 'public/img/content/content-30.jpg',
             'url' => 'https://youtu.be/wOl1jLpVNbU',
-            'title' => 'เบิ้องหลังการถ่ายทำ Video Present ของพิธีกร'
+            'title' => 'เบื้องหลังการถ่ายทำ Video Present ของพิธีกร'
           ],[
             'bg' => 'public/img/content/content-31.jpg',
             'url' => 'https://youtu.be/wOl1jLpVNbU',
@@ -209,10 +209,13 @@
                 <div class="ss-img square">
                   <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
                 </div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
                 <div class="card-line-1"></div><div class="card-line-2"></div>
               </a>
@@ -251,10 +254,13 @@
                 <div class="ss-img">
                   <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                 </div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
                 <div class="card-line-1"></div><div class="card-line-2"></div>
               </a>
@@ -291,10 +297,13 @@
           <div class="ss-img horizontal-02">
             <div class="img-bg" style="background-image:url('public/img/content/content-35.jpg');"></div>
           </div>
-          <div class="card-icon">
+          <!-- <div class="card-icon">
             <div class="icon">
               <img class="img" src="public/img/icon/play.png" alt="Banner" />
             </div>
+          </div> -->
+          <div class="video-play-button abs-47">
+            <em class="fas fa-play"></em>
           </div>
           <div class="card-line-1"></div><div class="card-line-2"></div>
         </a>
@@ -343,10 +352,13 @@
               <div class="ss-img horizontal-2">
                 <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
               </div>
-              <div class="card-icon">
+              <!-- <div class="card-icon">
                 <div class="icon">
                   <img class="img" src="public/img/icon/play.png" alt="Banner" />
                 </div>
+              </div> -->
+              <div class="video-play-button abs-47">
+                <em class="fas fa-play"></em>
               </div>
               <div class="card-line-1"></div><div class="card-line-2"></div>
             </a>
@@ -465,7 +477,7 @@
       <?php foreach($varturewalk as $d) {?>
         <div class="grid lg-25 style-03 mt-0">
           <div class="p-1 bg-white">
-            <a class="ss-card ss-card-38" href="<?= $d['url']?>">
+            <a class="ss-card ss-card-38" href="<?= $d['url']?>" target="_blank">
               <div class="ss-img no-hover">
                 <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
               </div>
@@ -535,10 +547,13 @@
                 <div class="img-bg" style="background-image:url('public/img/content/content-08.jpg');"></div>
               </div>
               <div class="hover-filter-01"></div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
               <div class="card-line-1"></div><div class="card-line-2"></div>
             </a>
@@ -578,10 +593,13 @@
                   <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
                 </div>
                 <div class="hover-filter-01"></div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
                 <div class="card-line-1"></div><div class="card-line-2"></div>
               </a>
@@ -595,10 +613,13 @@
                 <div class="img-bg" style="background-image:url('public/img/content/content-92.jpg');"></div>
               </div>
               <div class="hover-filter-01"></div>
-              <div class="card-icon">
+              <!-- <div class="card-icon">
                 <div class="icon">
                   <img class="img" src="public/img/icon/play.png" alt="Banner" />
                 </div>
+              </div> -->
+              <div class="video-play-button abs-47">
+                <em class="fas fa-play"></em>
               </div>
               <div class="card-line-1"></div><div class="card-line-2"></div>
             </a>
