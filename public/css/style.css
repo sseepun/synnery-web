@@ -1561,3 +1561,30 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .tp-loader {
     display: none !important;
 }
+
+/* cookieconsent */ 
+.cc_div {
+    font-family: 'Noto Sans Thai';
+    color: #000000;
+}
+.cc_div .cc-link {
+    color: #ec2c23;
+    border-color: #ec2c23;
+}
+.cc_div .cc-link:hover {
+    color: #cf271e;
+    border-color: #cf271e;
+}
+.cc_div .c-bn {
+    color: #000000;
+}
+#c-bns button:first-child, #s-bns button:first-child {
+    background: #ec2c23;
+}
+.c-s-bn:hover {
+    background: #d8dfe6;
+}
+#c-bns button:first-child:active, 
+#c-bns button:first-child:hover {
+    background: #cf271e;
+}

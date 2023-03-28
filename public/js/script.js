@@ -5,6 +5,119 @@ $(function () {
     // Scope
     var scopeDiv = $('html, body');
 
+    // cookie 
+    var cc = initCookieConsent();
+    cc.run({
+        current_lang: 'th',
+        autoclear_cookies: true,
+        page_scripts: true,
+        gui_options: {
+            consent_modal: {
+                layout: 'cloud', // box/cloud/bar
+                position: 'bottom center', // bottom/middle/top + left/right/center
+                transition: 'slide', // zoom/slide
+                swap_buttons: false // enable to invert buttons
+            },
+            settings_modal: {
+                layout: 'bar', // box/bar
+                // position: 'left',           // left/right
+                transition: 'slide'            // zoom/slide
+            }
+
+        },
+        languages: {
+            th: {
+                consent_modal: {
+                    title: "เว็บไซต์นี้ใช้คุกกี้",
+                    description: 'บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด ขออนุญาตใช้คุกกี้เพื่อสร้างประสบการณ์นำเสนอเนื้อหาที่ดีให้กับท่าน ทั้งนี้ ท่านมั่นใจได้ว่าเราจะดูแลและรักษาความปลอดภัยข้อมูลของท่านเป็นอย่างดี ท่านสามารถเลือกตั้งค่าความยินยอมการใช้คุกกี้ได้ โดยคลิก "การตั้งค่าคุกกี้" <a aria-label="Cookie policy" class="cc-link" href="/privacy-policy">นโยบายความเป็นส่วนตัว</a>',
+                    primary_btn: { text: 'ยอมรับทั้งหมด', role: 'accept_all' },
+                    secondary_btn: { text: 'การตั้งค่าคุกกี้', role: 'settings' }
+                },
+                settings_modal: {
+                    title: 'การตั้งค่าความเป็นส่วนตัว',
+                    save_settings_btn: "ยืนยันตัวเลือกของฉัน",
+                    accept_all_btn: "ยอมรับทั้งหมด",
+                    cookie_table_headers: [
+                        { col1: "Name" },
+                        { col2: "Domain" },
+                        { col3: "Expiration" },
+                        { col4: "Description" },
+                        { col5: "Type" }
+                    ],
+                    blocks: [
+                        {
+                            title: "จัดการการกำหนดลักษณะความยินยอม",
+                            description: ''
+                        }, 
+                        {
+                            title: "คุกกี้พื้นฐานที่จำเป็น",
+                            description: 'คุกกี้พื้นฐานที่จำเป็น เพื่อช่วยให้การทำงานหลักของเว็บไซต์ใช้งานได้ รวมถึงการเข้าถึงพื้นที่ที่ปลอดภัยต่าง ๆ ของเว็บไซต์ หากไม่มีคุกกี้นี้เว็บไซต์จะไม่สามารถทำงานได้อย่างเหมาะสม และจะใช้งานได้โดยการตั้งค่าเริ่มต้น โดยไม่สามารถปิดการใช้งานได้',
+                            toggle: {
+                                value: 'necessary',
+                                enabled: true,
+                                readonly: true
+                            }
+                        }, 
+                        {
+                            title: "คุกกี้ในส่วนวิเคราะห์",
+                            description: 'คุกกี้ในส่วนวิเคราะห์ จะช่วยให้เว็บไซต์เข้าใจรูปแบบการใช้งานของผู้เข้าชมและจะช่วยปรับปรุงประสบการณ์การใช้งาน โดยการเก็บรวบรวมข้อมูลและรายงานผลการใช้งานของผู้ใช้งาน ',
+                            toggle: {
+                                value: 'analytics', // your cookie category
+                                enabled: true,
+                                readonly: false
+                            },
+                        }
+                    ]
+                }
+            },
+            en: {
+                consent_modal: {
+                    title: "This site uses cookies",
+                    description: 'We use cookies to ensure this site\'s proper operation and, if you approve, tracking cookies to understand how you interact with it. If you wish to opt-out from the use of cookies please see our <a aria-label="Cookie policy" class="cc-link" href="/privacy-policy">Cookies Policy.</a>',
+                    primary_btn: { text: 'Accept', role: 'accept_all' },
+                    secondary_btn: { text: 'Settings...', role: 'settings' }
+                },
+                settings_modal: {
+                    title: 'Cookie options',
+                    save_settings_btn: "Save settings",
+                    accept_all_btn: "Accept all",
+                    reject_all_btn: "Reject all",
+                    cookie_table_headers: [
+                        { col1: "Name" },
+                        { col2: "Domain" },
+                        { col3: "Expiration" },
+                        { col4: "Description" },
+                        { col5: "Type" }
+                    ],
+                    blocks: [
+                        {
+                            title: "Cookie usage",
+                            description: 'We use cookies to ensure the basic functionality of the website and to enhance your online experience. You can opt-in/out of receiving non-essential cookies.'
+                        }, 
+                        {
+                            title: "Strictly necessary cookies",
+                            description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly.',
+                            toggle: {
+                                value: 'necessary',
+                                enabled: true,
+                                readonly: true
+                            }
+                        }, 
+                        {
+                            title: 'Performance and Analytics cookies',
+                            description: 'These cookies allow the website to remember the choices you have made in the past',
+                            toggle: {
+                                value: 'analytics',  // your cookie category
+                                enabled: false,
+                                readonly: false
+                            },
+                        }
+                    ]
+                }
+            }
+        }
+    });
+
     // revolution
     var screen_height = $(window).height() - 150;
     var rev_slider_size = $('.rev_slider_img').height();
