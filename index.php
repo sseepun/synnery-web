@@ -69,7 +69,7 @@
   </section>
 
 
-  <section data-section="1" class="banner-02">
+  <?php /*<section data-section="1" class="banner-02">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <?php for($i=0; $i<18; $i++){?>
@@ -139,7 +139,7 @@
       </g>
       </svg>
     </div>
-  </section>
+  </section> */ ?> 
 
   <?php
     $titles = [
