@@ -1558,3 +1558,6 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
     content: '';
     background-image: url('../img/icon/arrow-right.png');
 }
+.tp-loader {
+    display: none !important;
+}
