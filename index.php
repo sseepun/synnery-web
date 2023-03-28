@@ -9,7 +9,53 @@
   <?php $topnavActive=1; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1" class="banner-02">
+  <section data-section="1" class="tg-rev-slider">
+    <div id="rev_slider_1" class="rev_slider fullwidthabanner" data-version="5.4.1">
+      <ul>
+        <?php
+        for($i=0; $i<18; $i++){
+          ?>
+          <li class="tp-revslider-slidesli" data-transition="random-premium" data-masterspeed="2000" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut">
+            <?php
+            if($i === 0){
+              ?>
+              <img src="public/img/bg/banner-02.jpg" class="rev_slider_img" alt="">
+              <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0']" data-y="['top']" data-voffset="['25','25','25','10']" data-fontsize="['24','24','22','20']" data-fontweight="400" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1500,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[50,80,90,25]">Benz</div>
+              <?php
+            }
+            if($i > 0) {
+              ?>
+              <img src="public/img/bg/banner-0<?= ($i%7+3) ?>.jpg">
+              <?php 
+            }
+            if($i > 7) {
+              ?>
+              <img src="public/img/bg/banner-1<?= ($i%10+0) ?>.jpg">
+              <?php 
+            }
+            ?>
+          </li>
+          <?php
+        }
+        ?>
+      </ul>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#ffffff" />
+        </g>
+      </svg>
+    </div>
+  </section>
+
+
+  <?php /* <section data-section="1" class="banner-02">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <?php for($i=0; $i<18; $i++){?>
@@ -79,7 +125,7 @@
       </g>
       </svg>
     </div>
-  </section>
+  </section> */ ?>
 
   <?php
     $titles = [

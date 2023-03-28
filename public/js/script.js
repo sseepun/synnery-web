@@ -5,6 +5,49 @@ $(function () {
     // Scope
     var scopeDiv = $('html, body');
 
+    // revolution
+    var screen_height = $(window).height() - 150;
+    var rev_slider_size = $('.rev_slider_img').height();
+    // if(screen_width > 1440) 
+    console.log(screen_height);
+    var revapi = jQuery('#rev_slider_1').show().revolution({
+        delay: 6000,
+        responsiveLevels: [1200, 1140, 778, 480],
+        gridwidth: [1220, 920, 700, 380],
+        jsFileLocation: "js/",
+        sliderLayout: "auto",
+        minHeight: screen_height,
+        navigation: {
+            keyboardNavigation: "off",
+            keyboard_direction: "horizontal",
+            mouseScrollNavigation: "off",
+            onHoverStop: "off",
+            arrows: {
+                style: "custom",
+                enable: true,
+                hide_onmobile: true,
+                hide_under: 700,
+                hide_onleave: false,
+                tmp: '',
+                left: {
+                    h_align: "left",
+                    v_align: "center",
+                    h_offset: 150,
+                    v_offset: 0
+                },
+                right: {
+                    h_align: "right",
+                    v_align: "center",
+                    h_offset: 150,
+                    v_offset: 0
+                }
+            },
+            bullets: {
+                enable: false
+            }
+        },
+    });
+
 
     // Topnav
     var topnav = $('nav.topnav'),

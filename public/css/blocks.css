@@ -91,8 +91,9 @@
   .banner-02 .arrows{bottom:1rem; right:.5rem;}
 }
 
-.banner-02 .swiper-container .waves{
-  position:absolute; right:0; left:0; bottom:0; width:100%; z-index:1;
+.banner-02 .swiper-container .waves,
+.tg-rev-slider .waves {
+  position:absolute; right:0; left:0; bottom:0; width:100%; z-index:25;
   height:4rem; min-height:4rem; max-height:4rem; margin:0;
 }
 .parallax > use {animation:waveMotion 25s cubic-bezier(.55,.5,.45,.5) infinite;}

@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="public/lib/simplebar/simplebar.css" />
 <link rel="stylesheet" href="public/lib/aos-2.3.1/aos.min.css" />
 
+<link rel="stylesheet" href="public/lib/revolution/css/settings.css" />
+
 <link rel="stylesheet" href="public/css/grids.css" />
 <link rel="stylesheet" href="public/css/style.css?v=0.0.1" />
 <link rel="stylesheet" href="public/css/navs.css" />
