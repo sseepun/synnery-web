@@ -9,7 +9,7 @@
   <?php $topnavActive=1; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1" class="tg-rev-slider" style="display: none;">
+  <section data-section="1" class="tg-rev-slider">
     <div id="rev_slider_1" class="rev_slider fullwidthabanner" data-version="5.4.1">
       <ul>
         <?php
