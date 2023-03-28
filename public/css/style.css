@@ -1525,6 +1525,9 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .tg-rev-slider {
     position: relative;
 }
+.tp-caption {
+    font-family: 'Noto Sans Thai';
+}
 #rev_slider_1 .tparrows {
     background-color: transparent;
     top: unset !important;
