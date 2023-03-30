@@ -62,7 +62,7 @@
 .banner-02 .swiper-slide .hero{position:absolute; bottom:1.5rem; left:50rem;}
 .banner-02 .swiper-slide .hero img{display:block; height:23rem; width:auto;}
 .banner-02 .arrows{
-  position:absolute; bottom:2rem; right:1.5rem; display:flex; align-items:center; z-index:2;
+  position:absolute; bottom:2rem; right:1.5rem; display:flex; align-items:center; z-index:26;
 }
 .banner-02 .arrow, .banner-02 .arrow-sep{padding:0 .5rem; transition:opacity .3s;}
 .banner-02 .arrow:hover{opacity:.8;}
