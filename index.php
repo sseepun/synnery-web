@@ -9,7 +9,7 @@
   <?php $topnavActive=1; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1" class="tg-rev-slider">
+  <?php /* <section data-section="1" class="tg-rev-slider">
     <div id="rev_slider_1" class="rev_slider fullwidthabanner" data-version="5.4.1">
       <ul>
         <?php
@@ -66,10 +66,10 @@
         </g>
       </svg>
     </div>
-  </section>
+  </section>*/ ?> 
 
 
-  <?php /*<section data-section="1" class="banner-02">
+  <section data-section="1" class="banner-02">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <?php for($i=0; $i<18; $i++){?>
@@ -139,7 +139,7 @@
       </g>
       </svg>
     </div>
-  </section> */ ?> 
+  </section>
 
   <?php
     $titles = [
