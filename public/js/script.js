@@ -119,17 +119,15 @@ $(function () {
     });
 
     // revolution
-    var screen_height = $(window).height() - 150;
-    var rev_slider_size = $('.rev_slider_img').height();
-    // if(screen_width > 1440) 
-    console.log(screen_height);
     var revapi = jQuery('#rev_slider_1').show().revolution({
         delay: 6000,
-        responsiveLevels: [1200, 1140, 778, 480],
+        responsiveLevels: [1400, 1200, 768, 576],
         gridwidth: [1220, 920, 700, 380],
+        gridheight: [720, 600, 500, 592],
         jsFileLocation: "js/",
         sliderLayout: "auto",
-        minHeight: screen_height,
+        // minHeight: screen_height,
+        // minHeight: [780, 650, 440, 650],
         navigation: {
             keyboardNavigation: "off",
             keyboard_direction: "horizontal",
@@ -160,6 +158,37 @@ $(function () {
             }
         },
     });
+
+    var $slider = $('.rev_slider');
+
+    function rszSlider() {
+        var winndowsWidth = $(document).width();
+        var winndowsHeight = $(document).height();
+        var winndowsWidth = window.innerWidth;
+        var winndowsHeight = window.innerHeight;
+        var slideHeight = 0;
+        if (winndowsWidth > 1400) {
+            slideHeight = winndowsHeight;
+        }
+        else if(winndowsWidth > 767 && winndowsWidth < 1401) {
+            slideHeight = winndowsHeight / 2;
+        }
+        else if (winndowsWidth < 768) {
+            slideHeight = 592;
+        }
+        console.log(slideHeight);
+        $('.rev_slider').height(slideHeight);
+        // $('.rev_slider').css({ 'height': slideHeight+'px !important;' }); // ตั้งค่าความสูงของ Slider
+        revapi.revredraw(); // ใช้คำสั่ง revredraw เพื่อปรับ Slider ให้ตรงกับขนาดหน้าจอใหม่
+        $('.rev_slider').css({ 'height': slideHeight+'px !important;' }); // ตั้งค่าความสูงของ Slider
+        // revapi.parent().css({ 'height': slideHeight }); // ตั้งค่าความสูงของ Slider
+      }
+    
+      rszSlider(); // เรียกใช้ฟังก์ชัน rszSlider ครั้งแรกเมื่อโหลดเว็บไซต์
+    
+      $(window).on('resize', function(){
+        rszSlider(); // เรียกใช้ฟังก์ชัน rszSlider เมื่อขนาดหน้าจอเปลี่ยนแปลง
+      });
 
 
     // Topnav
