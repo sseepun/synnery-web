@@ -23,6 +23,9 @@
               <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0','0','0','0']" data-y="['top']" data-voffset="['200','122','122','100']" data-fontsize="['88','70','50','70']" data-fontweight="500" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1500,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,80,90,25]">Website</div>
               <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0']" data-y="['top']" data-voffset="[280','180','180','160']" data-fontsize="['88','70','50','36']" data-fontweight="200" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1800,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,80,90,25]">for</div>
               <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0']" data-y="['top']" data-voffset="['280','180','180','160']" data-fontsize="['88','70','50','36']" data-fontweight="500" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1800,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[130,180,180,80]">Government</div>
+              <div class="tp-caption tp-resizeme anLayer" data-frames='[{"delay":3000,"speed":1100,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-type="image" data-x="right" data-y="bottom" data-hoffset="['0','100','100','200']" data-voffset="['0','50','50','100']" data-width="['auto', '300', '200', '100']" data-height="['auto', '200', '200', '100']">
+                <img src="public/img/hero/banner-01.png" alt="layer">
+              </div>
               <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0']" data-y="['top']" data-voffset="['350','230','230','200']" data-fontsize="['30','30','30','18']" data-fontweight="200" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1800,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,80,90,25]">ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA</div>
               <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0']" data-y="['top']" data-voffset="['380','250','250','250']" data-fontsize="['30','30','30','30']" data-fontweight="200" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":2200,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,80,90,25]">
                 <div class="btns pt-6 animate-01" style="--delay:.9s;">
@@ -35,12 +38,15 @@
                   ?>
                 </div>
               </div>
-              <div class="tp-caption tp-resizeme anLayer" data-frames='[{"delay":3000,"speed":1100,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-type="image" data-x="right" data-y="bottom" data-hoffset="['-340','0','0','200']" data-voffset="['0','0','0','100']" data-width="['auto', '300', '200', '100']" data-height="['auto', '200', '200', '100']">
-                <img src="public/img/hero/banner-01.png" alt="layer">
-              </div>
               <?php
             }
-            if($i > 0) {
+            elseif($i === 1){
+              ?>
+              <img src="public/img/bg/banner-09.jpg" class="rev_slider_img" alt="">
+              <?php
+              break;
+            }
+            /* if($i > 0) {
               ?>
               <img src="public/img/bg/banner-0<?= ($i%7+3) ?>.jpg">
               <?php 
@@ -49,7 +55,7 @@
               ?>
               <img src="public/img/bg/banner-1<?= ($i%10+0) ?>.jpg">
               <?php 
-            }
+            } */
             ?>
           </li>
           <?php
