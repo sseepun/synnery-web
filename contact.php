@@ -190,7 +190,7 @@
               +662-318-4939, +668-6340-6895
             </p>
             <a class="p lg color-01 border-bottom-2 bcolor-01 fw-600" href="#" data-aos="fade-up" data-aos-delay="950">
-              sales@jigsawoffice.com
+              sales@synerry.com
             </a>
           </div>
         </div>
