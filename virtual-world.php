@@ -284,7 +284,7 @@
     </div>
     <div class="container" style="z-index:2;">
       <h3 class="text-center lh-sm color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-        วีดีโอภาพรวมงานตัวเต็ม
+        วิดีโอภาพรวมงานตัวเต็ม
       </h3>   
       <p class="h4 text-center lh-sm color-black fw-400" data-aos="fade-up" data-aos-delay="150">
         ความยาวของกิจกรรมทั้งหมด 2 ชั่วโมง 
@@ -529,10 +529,10 @@
     </div>
     <div class="container" style="z-index:2;">
       <h3 class="text-center lh-sm color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-        วีดีโอภาพรวมงานตัวเต็ม
+        Virtual Web / Virtual Reality : VR / Virtual Product 360<br>Ratchadamnoen Contemporary Art Center
       </h3>   
       <p class="h4 text-center lh-sm color-black fw-400" data-aos="fade-up" data-aos-delay="150">
-        ความยาวของกิจกรรมทั้งหมด 2 ชั่วโมง 
+        หอศิลป์ร่วมสมัยราชดำเนิน
       </p>
       <div class="grids no-gap mt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <?php foreach($rcac3d as $d) {?>
