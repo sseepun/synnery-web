@@ -534,7 +534,7 @@
       <p class="h4 text-center lh-sm color-black fw-400" data-aos="fade-up" data-aos-delay="150">
         หอศิลป์ร่วมสมัยราชดำเนิน
       </p>
-      <div class="grids no-gap mt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
+      <div class="grids no-gap mt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150" style="background: linear-gradient(0deg, rgb(229 229 229) 0%, rgb(255 255 255) 100%);">
         <?php foreach($rcac3d as $d) {?>
           <div class="grid lg-1-3 style-03 mt-0">
             <div class="p-1 bg-white">
@@ -548,7 +548,7 @@
                 </div>
               </a>
             </div>
-            <p class="xs color-white pos-relative text-center text-uppercase fw-500 mt-3">
+            <p class="xs pos-relative text-center text-uppercase fw-500 mt-3">
               <?= $d['title']?>
             </p>
           </div>
