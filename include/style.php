@@ -22,3 +22,4 @@
 <link rel="stylesheet" href="public/css/style.css?v=0.0.1" />
 <link rel="stylesheet" href="public/css/navs.css" />
 <link rel="stylesheet" href="public/css/blocks.css?v=0.0.2" />
+<link rel="stylesheet" href="public/css/responsive.css?v=0.0.2" />
