@@ -5,14 +5,15 @@
 <link rel="shortcut icon" type="image/x-icon" href="public/img/favicon.png" />
 
 <meta name="title" content="Synerry Corporation (Thailand)">
-<meta name="description" content="ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA">
-<meta name="keywords" content="ออกแบบ,พัฒนาเว็บไซต์,จัดทำเว็บไซต์,เว็บไซต์ภาครัฐ,ITA,Digital Marketing,Wordpress,Virtual World,Government">
+<meta name="description" content=" ออกแบบพัฒนาเว็บไซต์ ตามมาตรฐานภาครัฐ และ ITA รวมถึงเว็บไซต์ภาคเอกชน วางแผนกลยุทธ์ทางด้านการตลาด และจัดทำ Virtual หรือนิทรรศการเสมือนจริง ประสบการณ์กว่า 25 ปี">
+<meta name="keywords" content="ออกแบบเว็บไซต์, พัฒนาเว็บไซต์, จัดทำเว็บไซต์, เว็บไซต์, เว็บไซต์ภาครัฐ, เว็บไซต์ภาคเอกชน, การตลาดแบบครบวงจร, ITA, Digital Marketing, Wordpress, Virtual World, Government">
+
 
 <!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://www.synerry.com">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Synerry Corporation (Thailand)">
-<meta property="og:description" content="ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA">
+<meta property="og:description" content=" ออกแบบพัฒนาเว็บไซต์ ตามมาตรฐานภาครัฐ และ ITA รวมถึงเว็บไซต์ภาคเอกชน วางแผนกลยุทธ์ทางด้านการตลาด และจัดทำ Virtual หรือนิทรรศการเสมือนจริง ประสบการณ์กว่า 25 ปี">
 <meta property="og:image" content="https://www.synerry.com/public/img/bg/banner-02.jpg">
 
 <!-- Twitter Meta Tags -->
@@ -20,8 +21,9 @@
 <meta property="twitter:domain" content="synerry.com">
 <meta property="twitter:url" content="https://www.synerry.com">
 <meta name="twitter:title" content="Synerry Corporation (Thailand)">
-<meta name="twitter:description" content="ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA">
+<meta name="twitter:description" content=" ออกแบบพัฒนาเว็บไซต์ ตามมาตรฐานภาครัฐ และ ITA รวมถึงเว็บไซต์ภาคเอกชน วางแผนกลยุทธ์ทางด้านการตลาด และจัดทำ Virtual หรือนิทรรศการเสมือนจริง ประสบการณ์กว่า 25 ปี">
 <meta name="twitter:image" content="https://www.synerry.com/public/img/bg/banner-02.jpg">
+
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
