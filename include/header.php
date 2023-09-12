@@ -1,8 +1,27 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Synerry</title>
+<title>Synerry Corporation (Thailand)</title>
 <link rel="shortcut icon" type="image/x-icon" href="public/img/favicon.png" />
+
+<meta name="title" content="Synerry Corporation (Thailand)">
+<meta name="description" content="ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA">
+<meta name="keywords" content="ออกแบบ,พัฒนาเว็บไซต์,จัดทำเว็บไซต์,เว็บไซต์ภาครัฐ,ITA,Digital Marketing,Wordpress,Virtual World,Government">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://www.synerry.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Synerry Corporation (Thailand)">
+<meta property="og:description" content="ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA">
+<meta property="og:image" content="https://www.synerry.com/public/img/bg/banner-02.jpg">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="synerry.com">
+<meta property="twitter:url" content="https://www.synerry.com">
+<meta name="twitter:title" content="Synerry Corporation (Thailand)">
+<meta name="twitter:description" content="ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA">
+<meta name="twitter:image" content="https://www.synerry.com/public/img/bg/banner-02.jpg">
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
