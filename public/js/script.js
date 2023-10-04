@@ -536,7 +536,7 @@ $(function(){ 'use strict';
                 loop: true,
                 speed: 900,
                 slidesPerView: 5,
-                spaceBetween: -150,
+                spaceBetween: 50,
                 effect: 'coverflow', 
                 coverflowEffect: {
                     rotate: 40,

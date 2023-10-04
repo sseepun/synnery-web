@@ -208,6 +208,12 @@ p.xxs, .p.xxs, li.xxs{font-size:.8125rem;}
     background:#999999!important;
 }
 
+.btn-link{display:flex; align-items:center;}
+.btn-link .icon{margin-right:.5rem; transition:margin .25s;}
+.btn-link:hover .icon{margin-right:.75rem;}
+.btn-link .icon > *{
+  display:block; max-width:100%; width:auto; max-height:100%; height:1rem;
+}
 
 /* Inputs */
 form .text-danger{color:#ec2c23!important;}
@@ -1428,6 +1434,8 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .color-05{color:#f2f2f2!important}
 .color-06{color:#f4f4f4!important}
 .color-07{color:#231f20!important}
+.color-08{color:#2b2a2f!important}
+.color-09{color:#cccccc!important}
 
 .bg-p{background:#ec2c23!important;}
 .bg-s{background:#000000!important;}
@@ -1440,6 +1448,8 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
 .bg-05{background:#f2f2f2!important;}
 .bg-06{background:#f4f4f4!important;}
 .bg-07{background:#231f20!important;}
+.bg-08{background:#2b2a2f!important;}
+.bg-09{background:#cccccc!important;}
 
 .bcolor-p{border-color:#ec2c23!important;}
 .bcolor-s{border-color:#000000!important;}
