@@ -586,15 +586,8 @@ $(function(){ 'use strict';
                 loop: true,
                 speed: 900,
                 slidesPerView: 5,
-<<<<<<< HEAD
                 spaceBetween: 50,
                 effect: 'coverflow', 
-=======
-                spaceBetween: -150,
-                slideToClickedSlide: true,
-                centeredSlides: true,
-                effect: 'coverflow',
->>>>>>> 20b84839432cc322f1d7134e8831bad1e1d28f2a
                 coverflowEffect: {
                     rotate: 40,
                     stretch: 0,
