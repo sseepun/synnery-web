@@ -316,8 +316,8 @@
   <?php 
     $videopresent = [
       ['bg' => 'public/img/content/content-02.jpg','url' => 'https://youtu.be/QnR_7j25bsk'],
-      ['bg' => 'public/img/content/content-03.jpg','url' => 'https://youtu.be/PLpMXuSXeX8'],
-      ['bg' => 'public/img/content/content-04.jpg','url' => 'https://youtu.be/dlwJVAb1J4Q'],
+      ['bg' => 'public/img/content/content-03.jpg','url' => 'https://youtu.be/dlwJVAb1J4Q'],
+      ['bg' => 'public/img/content/content-04.jpg','url' => 'https://youtu.be/PLpMXuSXeX8'],
       ['bg' => 'public/img/content/content-05.jpg','url' => 'https://youtu.be/y8QrX4Z5lR8'],
       ['bg' => 'public/img/content/content-06.jpg','url' => 'https://youtu.be/cEFB_2Lp0Pk']
     ]
@@ -387,11 +387,28 @@
       </h5>
       <div class="mt-6" data-aos="fade-up" data-aos-delay="300">
         <div class="p-1 bg-white box-shadow">
-          <a class="ss-card" href="#">
+          <!-- <a class="ss-card" href="#">
             <div class="ss-img horizontal-02 no-hover">
               <div class="img-bg" style="background-image:url('public/img/content/40.jpg');"></div>
             </div>
+          </a> -->
+          <iframe src="https://us508.directrouter.com/~pamjysvc/VR360/ASEAN-Cultural-Center-360/" title="" class="mw-100 w-100 h-100" width="100%" height="600"></iframe>
+        </div>
+      </div>
+      <div class="mt-6 btns jc-center" data-aos="fade-up" data-aos-delay="0">
+        <div class="mt-6 btn-bubble__container">
+          <a href="https://www.acc-th.com/th" target="_blank" class="button btn-bubble toggle-contact">
+            ไปที่เว็บไซต์
           </a>
+          <span class="btn-bubble__effect-container">
+            <span class="circle top-left"></span>
+            <span class="circle top-left"></span>
+            <span class="circle top-left"></span>
+            <span class="button effect-button"></span>
+            <span class="circle bottom-right"></span>
+            <span class="circle bottom-right"></span>
+            <span class="circle bottom-right"></span>
+          </span>
         </div>
       </div>
     </div>   

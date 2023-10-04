@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php $topnavActive=5; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -139,23 +139,23 @@
         ตำแหน่งที่เปิดรับสมัคร
       </h3>
       <div class="tab-container">
-        <div class="tabs tabs-01 style-02" data-aos="fade-up" data-aos-delay="150">
+        <!-- <div class="tabs tabs-01 style-02" data-aos="fade-up" data-aos-delay="150">
           <?php foreach($categories as $j=>$k){?>
             <a class="tab <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>" href="#">
               <p class="h6 title color-white"><?= $k['title'] ?></p>
             </a>
           <?php }?>
-        </div>
-        <div class="tab-contents" data-aos="fade-up" data-aos-delay="300">
+        </div> -->
+        <div class="tab-contents mt-5" data-aos="fade-up" data-aos-delay="300">
           <?php foreach($categories as $j=>$k){?>
             <div class="tab-content <?php if($j==0)echo 'active'; ?>" data-tab="<?= $j ?>">
               <div class="scroll-x-wrapper" data-simplebar>
                 <div class="ss-box xxl">
                   <?php foreach($arrPostion as $index => $data){?>
-                    <div class="ss-card ss-card-24 mt-2">
+                    <div class="ss-card ss-card-24 mt-2 bg-06 job-toggle" id="job-<?= $index+1 ?>">
                       <div class="wrapper">
                         <div class="main-block">
-                          <a class="h6 color-black fw-400 c-pointer btn-job-slide" data-idx="<?= $index+1 ?>" href="#job">
+                          <a class="h6 color-black fw-400 c-pointer btn-job-slide" data-idx="#job-<?= $index+1 ?>">
                             <em class="fa-regular fa-circle-user color-01 mr-1"></em>
                             <?= (empty($data['postion'])?'':$data['postion'].' ').(empty($data['subpostion'])?'':$data['subpostion']) ?>
                           </a>
@@ -172,9 +172,32 @@
                           </p>
                         </div>
                         <div class="sub-block-03">
-                          <a class="color-white btn-block c-pointer btn-job-slide" data-idx="<?= $index+1 ?>" href="#job">
+                          <a class="color-white btn-block c-pointer btn-job-slide" data-idx="#job-<?= $index+1 ?>">
                             รายละเอียด
                           </a>
+                        </div>
+                      </div>
+                      <div class="grids toggle-career-section" style="display: none;">
+                        <div class="grid">
+                          <p class="text-uppercase fw-600">Job Description</p>
+                          <?= empty($data['jobdesc'])?'':$data['jobdesc'] ?>
+                        </div>
+                        <div class="grid">
+                          <p class="text-uppercase fw-600">Job Specification</p>
+                          <?= empty($data['jobspec'])?'':$data['jobspec'] ?>
+                        </div>
+                        <div class="btn-container m-auto mb-3">
+                          <div class="btn-customs jc-center pt-3">
+                            <?php
+                              $btnBubble = [
+                                'href' => 'https://lin.ee/ECVfCZs',
+                                'blank' => true,
+                                'title' => 'สมัคร',
+                                'classWrapper' => 'mr-2'
+                              ];
+                              include('component/btn-bubble.php');
+                            ?>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -190,6 +213,29 @@
 
   <section data-section="6" id="job" class="section-05 section-career section-padding" style="background-image:url('public/img/bg/32.jpg');">
     <div class="container">
+      <div class="ss-box xxl">
+        <h3 class="text-center color-01 lh-sm fw-600 aos-init aos-animate" data-aos="fade-up" data-aos-delay="0">
+          Culture ของที่นี่
+        </h3>
+        <ul class="ss-list-01 style-03 mt-2 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+          <li class="color-black fw-400 mt-4">
+            เป็น Home Office หลังใหญ่ เป็นทีมเล็กๆ ที่ทำงานใหญ่ๆ เป็นทีมที่รวมคนเก่งๆ และ Partner เจ๋งๆ ให้มาทำงานใหญ่ๆ ร่วมกัน
+          </li>
+          <li class="color-black fw-400 mt-4">
+            ทำงานใหญ่ มูลค่าสูง คุณภาพก็ต้องสูงตาม แต่นอกงาน เล่น เฮฮา กวนๆ กันได้ เพราะเราอยากให้ทีม "ทำงานอย่างมีความสุข สนุกกับงานที่ทำ"
+          </li>
+          <li class="color-black fw-400 mt-4">
+            ทำงานกันเป็นระบบ เป็นทีม ผ่าน Software ต่างๆ เช่น Asana, Discord, Figma และอื่นๆ
+          </li>
+          <li class="color-black fw-400 mt-4">
+            งานที่นี่ งานใหญ่ งานเยอะ งานเร่ง เน้นงานคุณภาพสูง เหมาะกับคนชอบท้าทายความสามารถตัวเอง
+          </li>
+          <li class="color-black fw-400 mt-4">
+            ทำงานในลักษณะ Team Work รวมถึง Multi-Tasking ในบางจังหวะ คือหนึ่งคนอาจจะต้องทำหลากหลายหน้าที่ เรียกว่า "ช่วงงานเข้า"
+          </li>
+        </ul>
+      </div>
+      <?php /*
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <?php foreach ($arrPostion as $index => $data){?>
@@ -257,7 +303,8 @@
         <div class="arrow btn-icon-next">
           <img src="public/img/icon/arrow-white-02.png" alt="Arrow" />
         </div>
-      </div>
+      </div> 
+      */ ?>
     </div>
   </section>
 

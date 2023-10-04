@@ -458,7 +458,7 @@
         </div>
         <div class="grid md-1-3 mt-0" data-aos="fade-up" data-aos-delay="0">
           <div class="p-1">
-            <a class="ss-card" href="https://youtu.be/QnR_7j25bsk" data-fancybox>
+            <a class="ss-card" href="https://youtu.be/4fIp6acNLm4" data-fancybox>
               <div class="ss-img horizontal-03">
                 <div class="img-bg" style="background-image:url('public/img/content/content-08.jpg');"></div>
               </div>
@@ -491,10 +491,10 @@
               'url' => 'https://www.youtube.com/watch?v=4fIp6acNLm4&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=4'
             ],[
               'bg' => 'public/img/content/content-89.jpg',
-              'url' => 'https://www.youtube.com/watch?v=fjsj5h-2nlc&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=5'
+              'url' => 'https://youtu.be/fjsj5h-2nlc'
             ],[
               'bg' => 'public/img/content/content-90.jpg',
-              'url' => 'https://www.youtube.com/watch?v=jp0TzYFGFo4&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=6'
+              'url' => 'https://youtu.be/Xtvw_V6H-Qo'
             ],[
               'bg' => 'public/img/content/content-91.jpg',
               'url' => 'https://www.youtube.com/watch?v=fgb3_rAOiOc&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=2'
@@ -521,7 +521,7 @@
         <?php }?>
         <div class="grid md-1-3 sm-100 mt-0" data-aos="fade-up" data-aos-delay="0">
           <div class="p-1">
-            <a class="ss-card" href="https://www.youtube.com/watch?v=Nen_sgy_cUo&list=PLPYe34B8ZMr6sF4oqu6POMhn0Pp7pfq7T&index=3" data-fancybox>
+            <a class="ss-card" href="https://youtu.be/jp0TzYFGFo4" data-fancybox>
               <div class="ss-img horizontal-03">
                 <div class="img-bg" style="background-image:url('public/img/content/content-92.jpg');"></div>
               </div>
@@ -1051,6 +1051,13 @@
     </div>
   </section>
 
+  <?php
+  $service = [
+    'public/img/full-service/service-1.png',
+    'public/img/full-service/service-2.png',
+    'public/img/full-service/service-3.png',
+  ]
+  ?>
   <section data-section="12" class="section-06 section-padding pb-3 mb-3 bg-p">
     <div class="container">
       <h3 class="color-white text-center fw-100" data-aos="fade-up" data-aos-delay="0">
@@ -1059,11 +1066,11 @@
     </div>     
     <div class="swiper-container mt-4" data-aos="fade-up" data-aos-delay="150">
       <div class="swiper-wrapper">
-        <?php for($i=0; $i<12; $i++){?>
+        <?php for($i=0; $i<3; $i++){?>
           <div class="swiper-slide">
-            <a class="ss-card ss-card-03" href="public/img/content/6<?= ($i%3+6) ?>.jpg" data-fancybox="gallery">
+            <a class="ss-card ss-card-03" href="<?= $service[$i] ?>" data-fancybox="gallery">
               <div class="ss-img">
-                <div class="img-bg" style="background-image:url('public/img/content/6<?= ($i%3+6) ?>.jpg');"></div>
+                <div class="img-bg" style="background-image:url(<?= $service[$i] ?>);"></div>
               </div>
               <div class="hover-filter-01"></div>
               <div class="icon">

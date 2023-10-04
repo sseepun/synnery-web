@@ -1174,12 +1174,12 @@
 
   <?php
     $tools = [
-      ['bg' => 'public/img/content/content-40.jpg', 'title' => 'BENCHMARKING'], 
-      ['bg' => 'public/img/content/content-41.jpg', 'title' => 'PERFORMANCE & ERROR CHECKING'], 
+      ['bg' => 'public/img/quality/benchmarking.png', 'title' => 'BENCHMARKING'], 
+      ['bg' => 'public/img/quality/performance.png', 'title' => 'PERFORMANCE & ERROR CHECKING'], 
       ['bg' => 'public/img/content/content-42.jpg', 'title' => 'SPEED PAGE'], 
       ['bg' => 'public/img/content/content-43.jpg', 'title' => 'RESPONSIVE TESTING'], 
-      ['bg' => 'public/img/content/content-44.jpg', 'title' => 'SEO SCORING'], 
-      ['bg' => 'public/img/content/content-45.jpg', 'title' => 'SEO SCORING'], 
+      ['bg' => 'public/img/quality/seo.png', 'title' => 'SEO SCORING'], 
+      ['bg' => 'public/img/quality/wcag22.jpeg', 'title' => 'WCAG22'], 
     ];
   ?>
   <section data-section="9" class="section-01 section-padding">

@@ -9,7 +9,7 @@ $arrPostion[] = array(
     'subpostion'    => '(รับแบบ WFH ด้วย)',
     'salary'        => '35,000 - 60,000',
     'vacancies'     => 1,
-    'experience'    => '',
+    'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
         <li class="color-black fw-400 mt-4">
@@ -44,6 +44,7 @@ $arrPostion[] = array(
 /**
  * Admin Officer
  */
+/*
 $arrPostion[] = array(
     'postion'       => 'Admin',
     'subpostion'    => 'Officer',
@@ -79,7 +80,8 @@ $arrPostion[] = array(
         </li>
     </ul>    
     ',
-);
+); 
+*/
 
 /**
  * Designer
@@ -88,8 +90,8 @@ $arrPostion[] = array(
     'postion'       => 'Designer',
     'subpostion'    => '',
     'salary'        => '30,000 - 80,000',
-    'vacancies'     => 1,
-    'experience'    => '',
+    'vacancies'     => 2,
+    'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
         <li class="color-black fw-400 mt-4">
@@ -119,7 +121,7 @@ $arrPostion[] = array(
     'postion'       => 'Pre-Sales',
     'subpostion'    => '[Network Engineer]',
     'salary'        => '25,000 - 50,000',
-    'vacancies'     => 1,
+    'vacancies'     => 2,
     'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
@@ -165,7 +167,7 @@ $arrPostion[] = array(
     'postion'       => 'Full Stack',
     'subpostion'    => 'Development',
     'salary'        => '40,000 - 80,000',
-    'vacancies'     => 1,
+    'vacancies'     => 3,
     'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
@@ -220,8 +222,8 @@ $arrPostion[] = array(
     'postion'       => 'QA-QC',
     'subpostion'    => 'Web+Application',
     'salary'        => '30,000 - 80,000',
-    'vacancies'     => 1,
-    'experience'    => '',
+    'vacancies'     => 3,
+    'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
         <li class="color-black fw-400 mt-4">
@@ -287,7 +289,7 @@ $arrPostion[] = array(
     'postion'       => 'Node.js,React',
     'subpostion'    => 'Developer',
     'salary'        => '35,000 - 80,000',
-    'vacancies'     => 1,
+    'vacancies'     => 3,
     'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
@@ -336,8 +338,8 @@ $arrPostion[] = array(
     'postion'       => 'Backend',
     'subpostion'    => 'Developer',
     'salary'        => '30,000 - 80,000',
-    'vacancies'     => 1,
-    'experience'    => '3 ปีขึ้นไป',
+    'vacancies'     => 4,
+    'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
         <li class="color-black fw-400 mt-4">
@@ -391,8 +393,8 @@ $arrPostion[] = array(
     'postion'       => 'Front End',
     'subpostion'    => 'Developer',
     'salary'        => '30,000 - 80,000',
-    'vacancies'     => 1,
-    'experience'    => '',
+    'vacancies'     => 4,
+    'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
         <li class="color-black fw-400 mt-4">
@@ -434,8 +436,8 @@ $arrPostion[] = array(
     'postion'       => 'HTML',
     'subpostion'    => 'Editor',
     'salary'        => '30,000 - 60,000',
-    'vacancies'     => 1,
-    'experience'    => '',
+    'vacancies'     => 2,
+    'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
         <li class="color-black fw-400 mt-4">
@@ -471,7 +473,7 @@ $arrPostion[] = array(
     'postion'       => 'Lead',
     'subpostion'    => 'Developer',
     'salary'        => '50,000 - 100,000',
-    'vacancies'     => 1,
+    'vacancies'     => 2,
     'experience'    => '3 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
@@ -514,7 +516,7 @@ $arrPostion[] = array(
     'postion'       => 'Senior',
     'subpostion'    => 'Developer',
     'salary'        => '35,000 - 80,000',
-    'vacancies'     => 1,
+    'vacancies'     => 2,
     'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
@@ -615,7 +617,7 @@ $arrPostion[] = array(
     'postion'       => 'Sales',
     'subpostion'    => 'Manager',
     'salary'        => '50,000 - 100,000',
-    'vacancies'     => 1,
+    'vacancies'     => 2,
     'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
@@ -721,6 +723,7 @@ $arrPostion[] = array(
 /**
  * Sales Coordinator
  */
+/*
 $arrPostion[] = array(
     'postion'       => 'Sales',
     'subpostion'    => 'Coordinator',
@@ -757,6 +760,7 @@ $arrPostion[] = array(
     </ul>    
     ',
 );
+*/
 
 /**
  * นักศึกษาฝึกงาน [Trainee]
@@ -765,7 +769,7 @@ $arrPostion[] = array(
     'postion'       => 'นักศึกษาฝึกงาน',
     'subpostion'    => '[Trainee]',
     'salary'        => '6,000 - 20,000',
-    'vacancies'     => 1,
+    'vacancies'     => 10,
     'experience'    => '',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">
@@ -799,7 +803,7 @@ $arrPostion[] = array(
     'postion'       => 'Account Executive',
     'subpostion'    => '(AE)',
     'salary'        => '30,000 - 60,000',
-    'vacancies'     => 1,
+    'vacancies'     => 4,
     'experience'    => '2 ปีขึ้นไป',
     'jobdesc'   => '
     <ul class="ss-list-01 style-03 mt-2">

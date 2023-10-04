@@ -140,11 +140,13 @@
       </p>
       <div class="hex-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="300">
         <?php for($i=0; $i<10; $i++){?>
-          <div class="hex-flip">
+          <a class="hex-flip" href="erp-for-government.php">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -152,11 +154,13 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/1<?= ($i%10+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         <?php }?>
 
         <?php
@@ -166,13 +170,14 @@
             'JIGSAW<br>HRD', 'JIGSAW<br>Budgeting'
           ];
         ?>
-
         <?php for($i=0; $i<10; $i++){?>
-          <div class="hex-flip">
+          <a class="hex-flip" href="erp-for-government.php">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -180,11 +185,13 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/2<?= ($i%12+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         <?php }?>
 
         <?php
@@ -192,13 +199,14 @@
             'JIGSAW<br>E-Form', 'JIGSAW<br>BI'
           ];
         ?>
-
         <?php for($i=0; $i<2; $i++){?>
-          <div class="hex-flip">
+          <a class="hex-flip" href="erp-for-government.php">
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -206,13 +214,15 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/3<?= ($i%2+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
         <?php }?>
-      </div>   
+      </div>
     </div>
   </section>
 
@@ -362,7 +372,7 @@
         Web Base Application
       </h3>
       <div class="p-1 bg-white box-shadow ss-box xxl">
-        <a class="ss-card" href="https://www.youtube.com/watch?v=lFa14nKS_pk" data-fancybox="">
+        <!-- <a class="ss-card" href="https://www.youtube.com/watch?v=lFa14nKS_pk" data-fancybox="">
           <div class="ss-img horizontal-03">
             <div class="img-bg" style="background-image:url('public/img/content/content-70.jpg');"></div>
           </div>
@@ -373,7 +383,8 @@
             </div>
           </div>
           <div class="card-line-1"></div><div class="card-line-2"></div>
-        </a>
+        </a> -->
+        <iframe width="100%" height="650" src="https://www.youtube.com/embed/lFa14nKS_pk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div> 
   </section>
@@ -547,6 +558,11 @@
             <div class="img-bg" style="background-image:url('public/img/content/47.jpg');"></div>
           </div>   
         </div>
+      </div>
+      <div class="mt-6 text-center ss-box xl" data-aos="fade-up" data-aos-delay="300">
+        <p class="sm color-07 md-no-br">
+          วางโครงสร้างการ Deploy แบบ DevSecOps เป็นการ Deploy แบบอัตโนมัติโดยใช้ Jenkins และแยกโครงสร้างของ Server ระหว่าง Development, Staging, Production อย่างชัดเจนเพื่อไม่ให้กระทบการทำงานระหว่างกัน รวมถึงมีการแจ้งเตือนทีมงานรับทราบเมื่อมีการอัพเดทใหม่เพื่อตรวจสอบงานอีกชั้นหนึ่ง
+        </p>
       </div>
     </div>          
   </section>

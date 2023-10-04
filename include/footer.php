@@ -22,7 +22,7 @@
         </div>    
       </div>  
     </section>
-    <section class="section-05 section-padding toggle-contact-section" data-contact="1"> 
+    <section class="section-05 section-padding toggle-contact-section" data-contact="1" style="display:none;"> 
       <div class="pattern style-01" style="z-index:2;">
         <div class="wrapper" value=".5">
           <img src="public/img/content/pattern-18.png" alt="Hero">
@@ -272,10 +272,10 @@
       </div>
       <div class="footer-socials pos-relative" style="z-index:2;">
         <div class="hex-icon">
-          <a class="hex hex-fb ml-0" href="www.facebook.com/Synerry/" target="_blank">
+          <a class="hex hex-fb ml-0" href="https://www.facebook.com/Synerry/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>
           </a>
-          <a class="hex hex-fb hex-back ml-0" href="www.facebook.com/Synerry/" target="_blank">
+          <a class="hex hex-fb hex-back ml-0" href="https://www.facebook.com/Synerry/" target="_blank">
             <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>
           </a>
         </div>
@@ -327,7 +327,7 @@
       </div>
     </div>
     <div class="bottom-wrapper">
-      <p class="xs">ลิขสิทธิ์ 1998 - 2019 บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>
+      <p class="xs">ลิขสิทธิ์ 1998 - <?= date('Y') ?> บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>
       <p class="xs">เลขประจำตัวผู้เสียภาษี 0105542030547</p>
     </div>
   </div>

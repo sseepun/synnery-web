@@ -386,7 +386,9 @@
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -394,7 +396,9 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/1<?= ($i%10+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
@@ -413,7 +417,9 @@
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -421,7 +427,9 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/2<?= ($i%12+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
@@ -438,7 +446,9 @@
             <div class="hex lg">
               <div class="hex lg bg">
                 <div class="wrapper text-center color-white">
-                  <p class="xs fw-400 lh-sm mt-1"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
               <div class="hex lg inner">
@@ -446,13 +456,15 @@
                   <div class="icon">
                     <img class="img" src="public/img/icon/3<?= ($i%2+0) ?>.png" alt="Banner" />
                   </div>
-                  <p class="xs fw-400 lh-sm mt-2"><?php echo $titles[$i] ?></p>
+                  <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
+                    <?php echo $titles[$i] ?>
+                  </p>
                 </div>
               </div>
             </div>
           </a>
         <?php }?>
-      </div>   
+      </div>
     </div>
   </section>
 
@@ -487,11 +499,14 @@
         <div class="swiper-wrapper">
           <?php for($i=0; $i<9; $i++){?>
             <div class="swiper-slide">
-              <a class="ss-card ss-card-29 box-shadow" href="web-gov-minisite.php">
+              <div class="ss-card ss-card-29 box-shadow c-pointer">
                 <div class="ss-img no-hover vertical-02">
-                  <div class="img-bg" style="background-image:url('public/img/content/minisite-gov-0<?= ($i%9+1) ?>.jpg');"></div>
+                  <div 
+                    class="img-bg" data-href="web-gov-minisite.php" 
+                    style="background-image:url('public/img/content/minisite-gov-0<?= ($i%9+1) ?>.jpg');" 
+                  ></div>
                 </div>
-              </a> 
+              </div> 
             </div>
           <?php }?>
         </div>
@@ -633,7 +648,7 @@
         <!-- <a href="https://www.youtube.com/watch?v=5La64n-_pe4" data-fancybox>
           <img class="img" src="public/img/content/04.png" alt="Banner" />
         </a> -->
-        <video width="100%" height="auto" controls autoplay muted playsinline>
+        <video width="100%" height="auto" autoplay muted playsinline loop>
           <source src="public/video/DevSecOps.mp4" type="video/mp4">
         </video>
       </div>
@@ -716,7 +731,7 @@
       </div>
     </div>
 
-    <?php include_once('data/clients.php'); ?>
+    <?php include_once('data/clients-home.php'); ?>
     <div class="clients pos-relative" style="z-index:2;">
       <?php foreach($clients as $d){?>
         <div class="client">
