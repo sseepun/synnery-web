@@ -210,7 +210,7 @@ $(function(){ 'use strict';
     });
     
 
-    // Tab Container
+    // Tab Container 01
     var tabContainers = $('.tab-container');
     if(tabContainers.length){
         tabContainers.each(function(){
@@ -252,6 +252,37 @@ $(function(){ 'use strict';
                             }, 700, 'easeInOutCubic');
                         }
                     }
+                }
+            });
+        });
+    }
+
+    // Tab container 02
+    var tabContainers = $('.sub-tab-container');
+    if(tabContainers.length){
+        tabContainers.each(function(){
+            var self = $(this),
+                tabs = self.find('.tabs .tab'),
+                tabContents = self.find('.tab-contents > .tab-content');
+            tabs.click(function(e){
+                console.log('hello')
+                var target = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]'),
+                    oldTargets = tabContents.filter('.active');
+                if($(this).hasClass('active')) e.preventDefault();
+                if(target.length && !$(this).hasClass('active')){
+                    e.preventDefault();
+                    tabs.removeClass('active');
+                    $(this).addClass('active');
+
+                    tabContents.removeClass('fade-in');
+                    oldTargets.addClass('fade-out');
+                    target.addClass('fade-in');
+                    setTimeout(function(){
+                        tabContents.removeClass('fade-in fade-out active');
+                        target.addClass('active');
+                    }, 600);
+    
+                    AOS.refresh();
                 }
             });
         });
@@ -578,7 +609,7 @@ $(function(){ 'use strict';
     }
 
     // Section 10
-    var section10= $('.section-10');
+    var section10 = $('.section-10');
     if(section10.length){
         section10.find('.swiper-container').each(function(){
             var self = $(this);

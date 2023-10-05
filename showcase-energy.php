@@ -95,20 +95,27 @@
     <div class="img-bg" style="background-image:url('public/img/bg/09.jpg');"></div>
     <div class="container" style="z-index:3">
       <h4 class="lg text-center color-p fw-700">COMPARE</h4>
+      <div class="line-container">
+        <div class="line-wrapper">
+          <img src="public/img/patterns/line.png" alt="Line">
+        </div>
+      </div>
       <div class="grids">
         <div class="grid lg-50">
-          <div class="ss-card">
+          <p class="lg text-center fw-600">Before</p>
+          <a href="#" class="ss-card ss-card-39">
             <div class="ss-img">
               <div class="img-bg" style="background-image:url('public/img/content/84.jpg');"></div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="grid lg-50">
-          <div class="ss-card">
+          <p class="lg text-center fw-600">After</p>
+          <a href="#" class="ss-card ss-card-39">
             <div class="ss-img">
               <div class="img-bg" style="background-image:url('public/img/content/85.jpg');"></div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
