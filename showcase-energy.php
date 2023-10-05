@@ -114,11 +114,11 @@
     </div>
   </section>
 
-  <section class="section-12">
+  <section class="section-14">
     <div class="container">
-      <div class="blocks size-02 flex-column-reverse">
-        <div class="block-float ai-start left style-02 bg-08">
-          <div class="text-container md">
+      <div class="grids">
+        <div class="grid lg-50 md-50 sm-100 mt-0">
+          <div class="block block-left bg-08">
             <h4 class="fw-700 color-p" data-aos="fade-up" data-aos-delay="0">
               PROBLEMS
             </h4> 
@@ -145,8 +145,8 @@
             </div>
           </div>
         </div>
-        <div class="block ai-start">
-          <div class="text-container md">
+        <div class="grid lg-50 md-50 sm-100 mt-0">
+          <div class="block block-right">
             <h4 class="fw-700 color-p" data-aos="fade-up" data-aos-delay="0">
               SOLUTIONS
             </h4> 
@@ -172,6 +172,7 @@
                 </span>
               </div>
             </div>
+        
           </div>
         </div>
       </div>
