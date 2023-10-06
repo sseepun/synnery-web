@@ -185,20 +185,22 @@
           'iconInactive' => 'public/img/icon/service-08.png',
           'iconActive' => 'public/img/icon/service-active-08.png'
         ], [
-          'pageId' => 'aiSolution',
+          'pageId' => 'ai-solution',
           'title' => 'AI Solution',
           'iconInactive' => 'public/img/icon/service-09.png',
           'iconActive' => 'public/img/icon/service-active-09.png'
         ],
-      ]
+      ];
     ?>
-    <div class="tab-wrapper">
+    <div class="tab-wrapper" data-aos="fade-up" data-aos-delay="0">
       <?php foreach($mainTabs as $j=>$d){?>
-        <div class="tab-link <?php if($j==0)echo 'active'; ?>" id="defaultOpen" onclick="openPage('<?= $d['pageId'] ?>')" data-tab="tab_<?= $j ?>">
+        <div class="tab-link <?php if($j==0)echo 'active'; ?>" id="default-open" 
+          onclick="openPage('<?= $d['pageId'] ?>')" data-tab="tab_<?= $j ?>" 
+        >
           <div class="wrapper">
             <div class="icon">
-              <img src="<?= $d['iconInactive'] ?>" alt="Icon Inactive">
-              <img class="active" src="<?= $d['iconActive'] ?>" alt="Icon Active">
+              <img src="<?= $d['iconInactive'] ?>" alt="Icon Inactive" />
+              <img class="active" src="<?= $d['iconActive'] ?>" alt="Icon Active" />
             </div>
             <p class="text"><?= $d['title'] ?></p>
           </div>
@@ -252,7 +254,7 @@
                 <div class="ss-card ss-card-37">
                   <a class="ss-img square" href="<?= $d['link'] ?>">
                     <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
-                      <div class="hover-container <?= $d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
+                    <div class="hover-container <?= $d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
                       <div class="wrapper">
                         <div class="icon">
                           <img src="<?= $d['icon'] ?>" alt="Client" />
@@ -387,8 +389,7 @@
       </div>
     </div>
 
-    <!-- AI Solutin -->
-    <div id="aiSolution" class="main-tab-content">
+    <div id="ai-solution" class="main-tab-content">
       <?php
         $categories = [
           ['title' => 'AI ChatGPT'],
@@ -509,7 +510,7 @@
         document.getElementById(pageName).classList.add('active');
       }, 400);
     }
-    document.getElementById("defaultOpen").click();
+    document.getElementById("default-open").click();
   </script>
 </body>
 </html>
