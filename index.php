@@ -100,18 +100,15 @@
     </div>
     <div class="container" style="z-index:2;">
       <div class="text-center" data-aos="fade-up" data-aos-delay="0">
-        <h3 class="color-01 fw-600">
+        <p class="h3 color-01 fw-600">
           Full Services
-        </h3>
-        <h1 class="color-01 lh-2xs text-shadow fw-600">
-          Digital Solutions
+        </p>
+        <h1 class="color-black lh-2xs text-shadow fw-600">
+          DIGITAL SOLUTIONS
         </h1>
-        <h3>
-          for <span class="color-black fw-600">Government</span>
-        </h3>
       </div>
-      <p class="color-03 md-no-br fw-400 text-center" data-aos="fade-up" data-aos-delay="150">
-        บริการด้านดิจิทัลแบบครบวงจร  ตอบโจทย์ทุกความต้องการ
+      <p class="h6 color-black md-no-br fw-400 text-center" data-aos="fade-up" data-aos-delay="150">
+        บริการด้านดิจิทัลแบบครบวงจร ตอบโจทย์ทุกความต้องการ
       </p>
     </div>
   </section>
@@ -174,7 +171,7 @@
         <div class="tabs tabs-02">
           <?php foreach($categories as $i=>$d){?>
             <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?= $d['title'] ?>
+              <p class="title"><?= $d['title'] ?></p>
             </div>
           <?php }?>
         </div>
@@ -204,7 +201,7 @@
         <div class="tabs tabs-02">
           <?php foreach($categories as $i=>$d){?>
             <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?= $d['title'] ?>
+              <p class="title"><?= $d['title'] ?></p>
             </div>
           <?php }?>
         </div>
@@ -232,7 +229,7 @@
         <div class="tabs tabs-02">
           <?php foreach($categories as $i=>$d){?>
             <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?= $d['title'] ?>
+              <p class="title"><?= $d['title'] ?></p>
             </div>
           <?php }?>
         </div>
@@ -240,7 +237,7 @@
           <?php foreach($categories as $i=>$d) {?>
             <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
               <?php 
-                if($i === 0){include('data/block04.php');} 
+                if($i === 0){include('data/block06.php');} 
               ?> 
             </div>
           <?php }?>
@@ -260,7 +257,7 @@
         <div class="tabs tabs-02">
           <?php foreach($categories as $i=>$d){?>
             <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?= $d['title'] ?>
+              <p class="title"><?= $d['title'] ?></p>
             </div>
           <?php }?>
         </div>
@@ -268,8 +265,8 @@
           <?php foreach($categories as $i=>$d) {?>
             <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
               <?php 
-                if($i === 0){include('data/block04.php');} 
-                if($i === 1){include('data/block04.php');} 
+                if($i === 0){include('data/block07.php');} 
+                if($i === 1){include('data/block08.php');} 
               ?> 
             </div>
           <?php }?>
@@ -290,7 +287,7 @@
         <div class="tabs tabs-02">
           <?php foreach($categories as $i=>$d){?>
             <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?= $d['title'] ?>
+              <p class="title"><?= $d['title'] ?></p>
             </div>
           <?php }?>
         </div>
@@ -298,9 +295,9 @@
           <?php foreach($categories as $i=>$d) {?>
             <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
               <?php 
-                if($i === 0){include('data/block04.php');} 
-                if($i === 1){include('data/block04.php');} 
-                if($i === 2){include('data/block04.php');} 
+                if($i === 0){include('data/block09.php');} 
+                if($i === 1){include('data/block10.php');} 
+                if($i === 2){include('data/block11.php');} 
               ?> 
             </div>
           <?php }?>

@@ -257,7 +257,25 @@ $(function(){ 'use strict';
         });
     }
 
-    // Tab container 02
+    // Main Tab Container 
+    var tabContainers = $('.main-tabs-container');
+    if(tabContainers.length){
+        tabContainers.each(function(){
+            var self = $(this),
+                tabs = self.find('.tab-link');
+            tabs.click(function(e){
+                var target = tabs.filter('[data-tab="'+$(this).data('tab')+'"]');
+                    console.log(target)
+                if(target.length){
+                    e.preventDefault();
+                    tabs.removeClass('active');
+                    $(this).addClass('active');
+                }
+            });
+        });
+    }
+
+    // Sub Tab container 
     var tabContainers = $('.sub-tab-container');
     if(tabContainers.length){
         tabContainers.each(function(){
@@ -609,56 +627,59 @@ $(function(){ 'use strict';
     }
 
     // Section 10
-    var section10 = $('.section-10');
-    if(section10.length){
-        section10.find('.swiper-container').each(function(){
-            var self = $(this);
-            var swiper10 = new Swiper(self, {
-                loop: true,
-                speed: 900,
-                slidesPerView: 5,
-                spaceBetween: 50,
-                effect: 'coverflow', 
-                coverflowEffect: {
-                    rotate: 40,
-                    stretch: 0,
-                    // depth: 0,
-                    modifier: 1,
-                    slideShadows : true
-                },
-                grabCursor: true,
-                navigation: {
-                    nextEl: self.find('.btn-icon-next'),
-                    prevEl: self.find('.btn-icon-prev'),
-                },
-                pagination: {
-                    el: self.find('.dots'),
-                    clickable: true,
-                },
-                breakpoints: {
-                    1199.98: { slidesPerView: 3 },
-                    991.98: { slidesPerView: 3 },
-                    575.98: { slidesPerView: 3 },
-                },
-            });
-
-            let blockClick10 = false;
-            swiper10.on('beforeTransitionStart', function(s){
-                blockClick10 = true;
-            });
-            self.find('.img-bg').click(function(){
-                if(blockClick10) blockClick10 = false;
-                else{
-                    let t = $(this),
-                        parent = t.closest('.swiper-slide');
-                    if(parent && parent.hasClass('swiper-slide-active')){
-                        let href = t.data('href');
-                        if(href) window.location = href;
-                    }
-                }
-            });
-        });
-    }
+     // Section 10
+     var section10 = $('.section-10');
+     if (section10.length) {
+         section10.find('.swiper-container').each(function () {
+             var self = $(this);
+             var swiper10 = new Swiper(self, {
+                 loop: true,
+                 speed: 900,
+                 slidesPerView: 5,
+                 spaceBetween: -150,
+                 slideToClickedSlide: true,
+                 centeredSlides: true,
+                 effect: 'coverflow',
+                 coverflowEffect: {
+                     rotate: 40,
+                     stretch: 0,
+                     // depth: 0,
+                     modifier: 1,
+                     slideShadows: true
+                 },
+                 grabCursor: true,
+                 navigation: {
+                     nextEl: self.find('.btn-icon-next'),
+                     prevEl: self.find('.btn-icon-prev'),
+                 },
+                 pagination: {
+                     el: self.find('.dots'),
+                     clickable: true,
+                 },
+                 breakpoints: {
+                     1199.98: { slidesPerView: 3 },
+                     991.98: { slidesPerView: 3 },
+                     575.98: { slidesPerView: 3 },
+                 },
+             });
+ 
+             let blockClick10 = false;
+             swiper10.on('beforeTransitionStart', function (s) {
+                 blockClick10 = true;
+             });
+             self.find('.img-bg').click(function () {
+                 if (blockClick10) blockClick10 = false;
+                 else {
+                     let t = $(this),
+                         parent = t.closest('.swiper-slide');
+                     if (parent && parent.hasClass('swiper-slide-active')) {
+                         let href = t.data('href');
+                         if (href) window.location = href;
+                     }
+                 }
+             });
+         });
+     }
 
     // Section 12
     var section12= $('.section-12');
