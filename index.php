@@ -12,13 +12,9 @@
   <section data-section="1" class="tg-rev-slider">
     <div id="rev_slider_1" class="rev_slider fullwidthabanner" data-version="5.4.1">
       <ul>
-        <?php
-        for($i=0; $i<18; $i++){
-          ?>
+        <?php for($i=0; $i<18; $i++){?>
           <li class="tp-revslider-slidesli" data-transition="random-premium" data-masterspeed="1000" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut">
-            <?php
-            if($i === 0){
-              ?>
+            <?php if($i === 0){?>
               <img src="public/img/bg/banner-02.jpg" class="rev_slider_img" alt="">
               <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0','0','0','0']" data-y="['top']" data-voffset="['200','122','122','100']" data-fontsize="['88','70','50','70']" data-fontweight="500" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1500,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,80,90,25]">Website</div>
               <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0']" data-y="['top']" data-voffset="[280','180','180','160']" data-fontsize="['88','70','50','36']" data-fontweight="200" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1800,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,80,90,25]">for</div>
@@ -38,32 +34,14 @@
                   ?>
                 </div>
               </div>
-              <?php
-            }
-            elseif($i === 1){
-              ?>
+            <?php }elseif($i === 1){?>
               <img src="public/img/bg/banner-09.jpg" class="rev_slider_img" alt="">
-              <?php
-              break;
-            }
-            /* if($i > 0) {
-              ?>
-              <img src="public/img/bg/banner-0<?= ($i%7+3) ?>.jpg">
-              <?php 
-            }
-            if($i > 7) {
-              ?>
-              <img src="public/img/bg/banner-1<?= ($i%10+0) ?>.jpg">
-              <?php 
-            } */
-            ?>
+            <?php break; }?>
           </li>
-          <?php
-        }
-        ?>
+        <?php }?>
       </ul>
       <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
         <defs>
           <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
@@ -77,78 +55,79 @@
     </div>
   </section> 
 
-
-  <?php /* <section data-section="1" class="banner-02">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <?php for($i=0; $i<18; $i++){?>
-          <div class="swiper-slide">
-            <div class="wrapper">
-              <?php if($i === 0){?>
-                <div class="img-bg" style="background-image:url('public/img/bg/banner-02.jpg');"></div>
-                <div class="hero">
-                  <div class="animate-02" style="--delay:.45s;">
-                    <img src="public/img/hero/banner-01.png" alt="Hero" />
-                  </div>
-                </div>
-                <div class="container">
-                  <div class="text-container">
-                    <h1 class="lg fw-500 color-white lh-3xs animate-01" style="--delay:.45s;">
-                      Website
-                    </h1>
-                    <h1 class="fw-500 color-white lh-2xs animate-01" style="--delay:.6s;">
-                      <span class="fw-200">for</span> Government
-                    </h1>
-                    <h6 class="color-white animate-01" style="--delay:.75s;">
-                      ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA
-                    </h6>
-                    <div class="btns pt-6 animate-01" style="--delay:.9s;">
-                      <?php
-                        $btnBubble = [
-                          'href' => 'web-gov-standard.php',
-                          'title' => 'Explore More',
-                        ];
-                        include('component/btn-bubble.php');
-                      ?>
+  <?php if(false){?>
+    <section data-section="1" class="banner-02">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <?php for($i=0; $i<18; $i++){?>
+            <div class="swiper-slide">
+              <div class="wrapper">
+                <?php if($i === 0){?>
+                  <div class="img-bg" style="background-image:url('public/img/bg/banner-02.jpg');"></div>
+                  <div class="hero">
+                    <div class="animate-02" style="--delay:.45s;">
+                      <img src="public/img/hero/banner-01.png" alt="Hero" />
                     </div>
                   </div>
-                </div>
-              <?php }?>
-              <?php if($i > 0){?>
-                <div class="img-bg" style="background-image:url('public/img/bg/banner-0<?= ($i%7+3) ?>.jpg');"></div>
-              <?php }?>
-              <?php if($i > 7){?>
-                <div class="img-bg" style="background-image:url('public/img/bg/banner-1<?= ($i%10+0) ?>.jpg');"></div>
-              <?php }?>
+                  <div class="container">
+                    <div class="text-container">
+                      <h1 class="lg fw-500 color-white lh-3xs animate-01" style="--delay:.45s;">
+                        Website
+                      </h1>
+                      <h1 class="fw-500 color-white lh-2xs animate-01" style="--delay:.6s;">
+                        <span class="fw-200">for</span> Government
+                      </h1>
+                      <h6 class="color-white animate-01" style="--delay:.75s;">
+                        ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA
+                      </h6>
+                      <div class="btns pt-6 animate-01" style="--delay:.9s;">
+                        <?php
+                          $btnBubble = [
+                            'href' => 'web-gov-standard.php',
+                            'title' => 'Explore More',
+                          ];
+                          include('component/btn-bubble.php');
+                        ?>
+                      </div>
+                    </div>
+                  </div>
+                <?php }?>
+                <?php if($i > 0){?>
+                  <div class="img-bg" style="background-image:url('public/img/bg/banner-0<?= ($i%7+3) ?>.jpg');"></div>
+                <?php }?>
+                <?php if($i > 7){?>
+                  <div class="img-bg" style="background-image:url('public/img/bg/banner-1<?= ($i%10+0) ?>.jpg');"></div>
+                <?php }?>
+              </div>
             </div>
+          <?php }?>
+        </div>
+        <div class="arrows">
+          <div class="arrow arrow-prev">
+            <img src="public/img/icon/arrow-left.png" alt="Arrow" />
           </div>
-        <?php }?>
+          <div class="arrow-sep">
+            <img src="public/img/icon/arrow-sep.png" alt="Arrow Sep" />
+          </div>
+          <div class="arrow arrow-next">
+            <img src="public/img/icon/arrow-right.png" alt="Arrow" />
+          </div>
+        </div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#ffffff" />
+        </g>
+        </svg>
       </div>
-      <div class="arrows">
-        <div class="arrow arrow-prev">
-          <img src="public/img/icon/arrow-left.png" alt="Arrow" />
-        </div>
-        <div class="arrow-sep">
-          <img src="public/img/icon/arrow-sep.png" alt="Arrow Sep" />
-        </div>
-        <div class="arrow arrow-next">
-          <img src="public/img/icon/arrow-right.png" alt="Arrow" />
-        </div>
-      </div>
-      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-      <defs>
-        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-      </defs>
-      <g class="parallax">
-        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-        <use xlink:href="#gentle-wave" x="48" y="7" fill="#ffffff" />
-      </g>
-      </svg>
-    </div>
-  </section>*/ ?>
+    </section>
+  <?php }?>
 
   <?php
     $titles = [
@@ -159,7 +138,7 @@
       [ 'title' => 'Virtual World<br>Services', 'url' => 'virtual-world.php' ],
       [ 'title' => 'e-Office / ERP<br>for Government', 'url' => 'erp-for-government.php' ],
       [ 'title' => 'Enterprise<br>DevSecOps Solutions', 'url' => 'network-security-system.php' ],
-    ]
+    ];
   ?>
   <section data-section="2" class="section-01 section-padding">
     <div class="pattern style-32">
@@ -186,26 +165,26 @@
     <?php
       $mainTabs = [
         [
-          'pageId' => 'webDesign',
+          'pageId' => 'web-design',
           'title' => 'Web Design',
           'iconInactive' => 'public/img/icon/service-02.png',
           'iconActive' => 'public/img/icon/service-active-02.png'
-        ],[
-          'pageId' => 'fullService',
+        ], [
+          'pageId' => 'full-service',
           'title' => 'Full Service Digital Marketing',
           'iconInactive' => 'public/img/icon/service-01.png',
           'iconActive' => 'public/img/icon/service-active-01.png'
-        ],[
-          'pageId' => 'webMobileApp',
+        ], [
+          'pageId' => 'web-mobile-app',
           'title' => 'Web & Mobile Application Development',
           'iconInactive' => 'public/img/icon/service-07.png',
           'iconActive' => 'public/img/icon/service-active-07.png'
-        ],[
-          'pageId' => 'netWork',
+        ], [
+          'pageId' => 'net-work',
           'title' => 'Network & Security',
           'iconInactive' => 'public/img/icon/service-08.png',
           'iconActive' => 'public/img/icon/service-active-08.png'
-        ],[
+        ], [
           'pageId' => 'aiSolution',
           'title' => 'AI Solution',
           'iconInactive' => 'public/img/icon/service-09.png',
@@ -214,7 +193,7 @@
       ]
     ?>
     <div class="tab-wrapper">
-      <?php foreach($mainTabs as $j=>$d) {?>
+      <?php foreach($mainTabs as $j=>$d){?>
         <div class="tab-link <?php if($j==0)echo 'active'; ?>" id="defaultOpen" onclick="openPage('<?= $d['pageId'] ?>')" data-tab="tab_<?= $j ?>">
           <div class="wrapper">
             <div class="icon">
@@ -295,17 +274,16 @@
             <?php }?>     
           </div>
         </div>
-      </div>
+      <?php }?>
     </div>
 
-    <!-- Web Design -->
-    <div id="webDesign" class="main-tab-content">
+    <div id="web-design" class="main-tab-content">
       <?php
         $categories = [
           ['title' => 'Web Design'],
           ['title' => 'Unlimited Minisite'], 
           ['title' => 'Enterprise WordPress']
-        ]
+        ];
       ?>
       <div class="sub-tab-container">
         <div class="tabs tabs-02">
@@ -329,13 +307,12 @@
       </div>
     </div>
 
-    <!-- Full Service Digital Marketing -->
-    <div id="fullService" class="main-tab-content">
+    <div id="full-service" class="main-tab-content">
       <?php
         $categories = [
           ['title' => 'Digital Marketing'],
-          ['title' => 'Virtual World']
-        ]
+          ['title' => 'Virtual World'],
+        ];
       ?>
       <div class="sub-tab-container">
         <div class="tabs tabs-02">
@@ -358,12 +335,11 @@
       </div>
     </div>
 
-    <!-- Web & Mobile Application Development -->
-    <div id="webMobileApp" class="main-tab-content">
+    <div id="web-mobile-app" class="main-tab-content">
       <?php
         $categories = [
           ['title' => 'Web & Mobile Application Development'],
-        ]
+        ];
       ?>
       <div class="sub-tab-container">
         <div class="tabs tabs-02">
@@ -376,22 +352,19 @@
         <div class="tab-contents">
           <?php foreach($categories as $i=>$d) {?>
             <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?php 
-                if($i === 0){include('data/block06.php');} 
-              ?> 
+              <?php if($i === 0){ include('data/block06.php'); } ?> 
             </div>
           <?php }?>
         </div>
       </div>
     </div>
 
-    <!-- Network & Security -->
-    <div id="netWork" class="main-tab-content">
+    <div id="net-work" class="main-tab-content">
       <?php
         $categories = [
           ['title' => 'Network & Security'],
           ['title' => 'DevSecOps'],
-        ]
+        ];
       ?>
       <div class="sub-tab-container">
         <div class="tabs tabs-02">
