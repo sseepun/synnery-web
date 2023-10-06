@@ -732,6 +732,9 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-10.style-02 .icon > .tech-stack{position:relative; fill:#ec2c23; display:block; width:3rem; height:3rem; transition:fill .3s;}
 .ss-card-10.style-02:hover .icon > .tech-stack{fill:#ffffff;}
 .ss-card-10.style-02:hover .icon > .tech-stack.h-red{fill:#ec2c23;} /* For Bootstrap Icon */
+.ss-card-10.style-02:hover .icon > .tech-stack path {
+    fill: #fff;
+}
 
 .ss-card-10.style-02 .icon::before{
     content:''; position:absolute; top:0; left:0; right:0; bottom:0;  margin:auto;
@@ -1540,4 +1543,87 @@ table.table.table-sm th:last-child{padding:.4375rem 0 .4375rem .5625rem;}
         min-width: 10rem;
         padding: 0 1rem;
     }
+}
+
+/* wordpress */ 
+.bg-contain {
+    background-size: contain !important;
+}
+.bg-color-blue-dark {
+    background-color: #015778;
+}
+
+/* other */
+.abs-47 {
+    position: absolute;
+    top: 42.5%;
+    left: 47%;
+}
+
+/* revolution */
+.tg-rev-slider {
+    position: relative;
+}
+.tp-caption {
+    font-family: 'Noto Sans Thai';
+}
+#rev_slider_1 .tparrows {
+    background-color: transparent;
+    top: unset !important;
+    bottom: 1rem;
+    transform: unset !important;
+}
+#rev_slider_1 .tparrows::before {
+    font-size: 1.75rem;
+    color: #ec2c23;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 38px;
+    width: 1rem;
+}
+#rev_slider_1 .tparrows.tp-leftarrow {
+    left: unset !important;
+    right: 5rem;
+}
+#rev_slider_1 .tparrows.tp-rightarrow {
+    left: unset !important;
+    right: 2rem;
+}
+#rev_slider_1 .tparrows.tp-leftarrow::before {
+    content: '';
+    background-image: url('../img/icon/arrow-left.png');
+}
+#rev_slider_1 .tparrows.tp-rightarrow::before {
+    content: '';
+    background-image: url('../img/icon/arrow-right.png');
+}
+.tp-loader {
+    display: none !important;
+}
+
+/* cookieconsent */ 
+.cc_div {
+    font-family: 'Noto Sans Thai';
+    color: #000000;
+}
+.cc_div .cc-link {
+    color: #ec2c23;
+    border-color: #ec2c23;
+}
+.cc_div .cc-link:hover {
+    color: #cf271e;
+    border-color: #cf271e;
+}
+.cc_div .c-bn {
+    color: #000000;
+}
+#c-bns button:first-child, #s-bns button:first-child {
+    background: #ec2c23;
+}
+.c-s-bn:hover {
+    background: #d8dfe6;
+}
+#c-bns button:first-child:active, 
+#c-bns button:first-child:hover {
+    background: #cf271e;
 }

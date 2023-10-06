@@ -149,10 +149,17 @@
         </div>
       <?php }else{?>
         <div data-aos="fade-up" data-aos-delay="150">
-          <iframe 
+          <!-- <iframe 
             style="position:relative; width:100%; height:1470px; border:0; overflow:hidden; z-index:1;" 
             src="https://form.asana.com/?k=oniAq4i-fs1lCMY8wWWOBw&d=688901825130647&embed=true" 
-          ></iframe>
+          ></iframe> -->
+          <div class="asana-embed-container" style="margin: auto;">
+            <link rel="stylesheet" href="https://form.asana.com/static/asana-form-embed-style.css"/>
+            <iframe class="asana-embed-iframe" height="533" width = "800" src="https://form.asana.com/?k=oniAq4i-fs1lCMY8wWWOBw&d=688901825130647&embed=true" style="height: 1500px;"></iframe>
+            <div class="asana-embed-footer"><a rel="nofollow noopener" target="_blank" class="asana-embed-footer-link" href="https://asana.com/?utm_source=embedded_form">
+              <span class="asana-embed-footer-text">Form powered by</span>
+              <div class="asana-embed-footer-logo" role="img" aria-label="Logo of Asana"></div></a></div>
+            </div>
         </div>
       <?php }?>
     </div>
@@ -183,7 +190,7 @@
               +662-318-4939, +668-6340-6895
             </p>
             <a class="p lg color-01 border-bottom-2 bcolor-01 fw-600" href="#" data-aos="fade-up" data-aos-delay="950">
-              sales@jigsawoffice.com
+              sales@synerry.com
             </a>
           </div>
         </div>

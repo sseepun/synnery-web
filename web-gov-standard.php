@@ -145,6 +145,21 @@
           </a>
         </div>
       </div>
+
+      <?php if($_GET['show_form'] == 1) { ?>
+        <div style="display: flex; justify-content: center; padding-top: 5rem;">
+          <div class="asana-embed-container">
+            <link rel="stylesheet" href="https://form.asana.com/static/asana-form-embed-style.css"/>
+            <iframe class="asana-embed-iframe" height="533" width = "800" src="https://form.asana.com/?k=oniAq4i-fs1lCMY8wWWOBw&d=688901825130647&embed=true"></iframe>
+            <div class="asana-embed-footer">
+              <a rel="nofollow noopener" target="_blank" class="asana-embed-footer-link" href="https://asana.com/?utm_source=embedded_form">
+                <span class="asana-embed-footer-text">Form powered by</span>
+                <div class="asana-embed-footer-logo" role="img" aria-label="Logo of Asana"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      <?php } ?>
     </div>
   </section>
 
@@ -1601,6 +1616,21 @@
       </div> 
     </div>         -->
   </section>
+
+  <?php if($_GET['show_form'] == 2) { ?>
+    <div style="display: flex; justify-content: center; padding-bottom: 1.6rem;">
+      <div class="asana-embed-container">
+        <link rel="stylesheet" href="https://form.asana.com/static/asana-form-embed-style.css"/>
+        <iframe class="asana-embed-iframe" height="533" width = "800" src="https://form.asana.com/?k=oniAq4i-fs1lCMY8wWWOBw&d=688901825130647&embed=true"></iframe>
+        <div class="asana-embed-footer">
+          <a rel="nofollow noopener" target="_blank" class="asana-embed-footer-link" href="https://asana.com/?utm_source=embedded_form">
+            <span class="asana-embed-footer-text">Form powered by</span>
+            <div class="asana-embed-footer-logo" role="img" aria-label="Logo of Asana"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  <?php } ?>
   
   <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>

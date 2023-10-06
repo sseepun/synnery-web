@@ -414,10 +414,13 @@
                   <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
                 </div>
                 <div class="hover-filter-01"></div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
                 <div class="card-line-1"></div><div class="card-line-2"></div>
               </a>
@@ -463,10 +466,13 @@
                 <div class="img-bg" style="background-image:url('public/img/content/content-08.jpg');"></div>
               </div>
               <div class="hover-filter-01"></div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
               <div class="card-line-1"></div><div class="card-line-2"></div>
             </a>
@@ -509,10 +515,13 @@
                   <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
                 </div>
                 <div class="hover-filter-01"></div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
                 <div class="card-line-1"></div><div class="card-line-2"></div>
               </a>
@@ -526,10 +535,13 @@
                 <div class="img-bg" style="background-image:url('public/img/content/content-92.jpg');"></div>
               </div>
               <div class="hover-filter-01"></div>
-              <div class="card-icon">
+              <!-- <div class="card-icon">
                 <div class="icon">
                   <img class="img" src="public/img/icon/play.png" alt="Banner" />
                 </div>
+              </div> -->
+              <div class="video-play-button abs-47">
+                <em class="fas fa-play"></em>
               </div>
               <div class="card-line-1"></div><div class="card-line-2"></div>
             </a>

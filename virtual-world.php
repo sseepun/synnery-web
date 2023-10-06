@@ -178,7 +178,7 @@
 
       <?php 
         $titles = [
-          "เบิ้องหลังการถ่ายทำ Video Present ของพิธีกร", 
+          "เบื้องหลังการถ่ายทำ Video Present ของพิธีกร", 
           "เบื้องหลังการซ้อมก่อน Live จริง", 
           "สรุปภาพรวมของ Live Exhibition Streaming"
         ]
@@ -189,7 +189,7 @@
           [
             'bg' => 'public/img/content/content-30.jpg',
             'url' => 'https://youtu.be/wOl1jLpVNbU',
-            'title' => 'เบิ้องหลังการถ่ายทำ Video Present ของพิธีกร'
+            'title' => 'เบื้องหลังการถ่ายทำ Video Present ของพิธีกร'
           ],[
             'bg' => 'public/img/content/content-31.jpg',
             'url' => 'https://youtu.be/wOl1jLpVNbU',
@@ -209,10 +209,13 @@
                 <div class="ss-img square">
                   <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
                 </div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
                 <div class="card-line-1"></div><div class="card-line-2"></div>
               </a>
@@ -251,10 +254,13 @@
                 <div class="ss-img">
                   <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
                 </div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
                 <div class="card-line-1"></div><div class="card-line-2"></div>
               </a>
@@ -278,7 +284,7 @@
     </div>
     <div class="container" style="z-index:2;">
       <h3 class="text-center lh-sm color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-        วีดีโอภาพรวมงานตัวเต็ม
+        วิดีโอภาพรวมงานตัวเต็ม
       </h3>   
       <p class="h4 text-center lh-sm color-black fw-400" data-aos="fade-up" data-aos-delay="150">
         ความยาวของกิจกรรมทั้งหมด 2 ชั่วโมง 
@@ -291,10 +297,13 @@
           <div class="ss-img horizontal-02">
             <div class="img-bg" style="background-image:url('public/img/content/content-35.jpg');"></div>
           </div>
-          <div class="card-icon">
+          <!-- <div class="card-icon">
             <div class="icon">
               <img class="img" src="public/img/icon/play.png" alt="Banner" />
             </div>
+          </div> -->
+          <div class="video-play-button abs-47">
+            <em class="fas fa-play"></em>
           </div>
           <div class="card-line-1"></div><div class="card-line-2"></div>
         </a>
@@ -343,10 +352,13 @@
               <div class="ss-img horizontal-2">
                 <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
               </div>
-              <div class="card-icon">
+              <!-- <div class="card-icon">
                 <div class="icon">
                   <img class="img" src="public/img/icon/play.png" alt="Banner" />
                 </div>
+              </div> -->
+              <div class="video-play-button abs-47">
+                <em class="fas fa-play"></em>
               </div>
               <div class="card-line-1"></div><div class="card-line-2"></div>
             </a>
@@ -465,7 +477,7 @@
       <?php foreach($varturewalk as $d) {?>
         <div class="grid lg-25 style-03 mt-0">
           <div class="p-1 bg-white">
-            <a class="ss-card ss-card-38" href="<?= $d['url']?>">
+            <a class="ss-card ss-card-38" href="<?= $d['url']?>" target="_blank">
               <div class="ss-img no-hover">
                 <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
               </div>
@@ -482,6 +494,67 @@
         </div>
       <?php }?>
     </div>  
+  </section>
+  
+  <?php
+  $rcac3d = [
+    [
+      'bg' => 'public/img/content/rcac-3d-model-1.jpeg',
+      'url' => 'https://sketchfab.com/models/39d70ba7c7244bff8139f9fe3ff9090c/embed',
+      'title' => 'นิทรรศการ<br>ชุดสุภาพสตรีจากผ้าทอ ลายพิกุล',
+      'type' => 'iframe',
+    ],[
+      'bg' => 'public/img/content/rcac-3d-model-2.jpeg',
+      'url' => 'https://sketchfab.com/models/5935147472144ec19142c86edc0d2b86/embed',
+      'title' => 'นิทรรศการ<br>Choco Dragon, 2023',
+      'type' => 'iframe',
+    ],[
+      'bg' => 'public/img/content/rcac-3d-model-3.jpeg',
+      'url' => 'https://sketchfab.com/models/8a953dd119034f60bd911b10ef2793bf/embed',
+      'title' => 'นิทรรศการ<br>คลื่นมหาสงกรานต์ / Wave of Songkarn',
+      'type' => 'iframe',
+    ],
+  ]
+  ?>
+  <section data-section="9" class="section-01 section-padding">
+    <div class="pattern style-34">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-31.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-35">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-30.png" alt="Hero">
+      </div>
+    </div>
+    <div class="container" style="z-index:2;">
+      <h3 class="text-center lh-sm color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+        Virtual Web / Virtual Reality : VR / Virtual Product 360<br>Ratchadamnoen Contemporary Art Center
+      </h3>   
+      <p class="h4 text-center lh-sm color-black fw-400" data-aos="fade-up" data-aos-delay="150">
+        หอศิลป์ร่วมสมัยราชดำเนิน
+      </p>
+      <div class="grids no-gap mt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150" style="background: linear-gradient(0deg, rgb(229 229 229) 0%, rgb(255 255 255) 100%);">
+        <?php foreach($rcac3d as $d) {?>
+          <div class="grid lg-1-3 style-03 mt-0">
+            <div class="p-1 bg-white">
+              <a class="ss-card" href="<?= $d['url']?>" data-fancybox data-type="iframe">
+                <div class="ss-img horizontal-03">
+                  <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+                </div>
+                <div class="hover-filter-01"></div>
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
+                </div>
+              </a>
+            </div>
+            <p class="xs pos-relative text-center text-uppercase fw-500 mt-3">
+              <?= $d['title']?>
+            </p>
+          </div>
+        <?php }?>
+      </div>
+    </div>
   </section>
 
   <section data-section="8">
@@ -535,10 +608,13 @@
                 <div class="img-bg" style="background-image:url('public/img/content/content-08.jpg');"></div>
               </div>
               <div class="hover-filter-01"></div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
               <div class="card-line-1"></div><div class="card-line-2"></div>
             </a>
@@ -578,10 +654,13 @@
                   <div class="img-bg" style="background-image:url('<?= $d['bg']?>');"></div>
                 </div>
                 <div class="hover-filter-01"></div>
-                <div class="card-icon">
+                <!-- <div class="card-icon">
                   <div class="icon">
                     <img class="img" src="public/img/icon/play.png" alt="Banner" />
                   </div>
+                </div> -->
+                <div class="video-play-button abs-47">
+                  <em class="fas fa-play"></em>
                 </div>
                 <div class="card-line-1"></div><div class="card-line-2"></div>
               </a>
@@ -595,10 +674,13 @@
                 <div class="img-bg" style="background-image:url('public/img/content/content-92.jpg');"></div>
               </div>
               <div class="hover-filter-01"></div>
-              <div class="card-icon">
+              <!-- <div class="card-icon">
                 <div class="icon">
                   <img class="img" src="public/img/icon/play.png" alt="Banner" />
                 </div>
+              </div> -->
+              <div class="video-play-button abs-47">
+                <em class="fas fa-play"></em>
               </div>
               <div class="card-line-1"></div><div class="card-line-2"></div>
             </a>

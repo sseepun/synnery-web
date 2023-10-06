@@ -180,7 +180,7 @@
     ], [
       'icon' => 'public/img/clients/APEC.png',
       'title' => 'APEC 2022',
-      'bgColor' => 'rgba(38,15,71)'
+      'bgColor' => 'rgba(49,113,176)'
     ], [
       'icon' => 'public/img/clients/มหาวิทยาลัยเกษตรศาสตร์.png',
       'title' => 'มหาวิทยาลัยเกษตรศาสตร์',

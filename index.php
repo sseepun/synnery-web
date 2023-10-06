@@ -9,7 +9,76 @@
   <?php $topnavActive=1; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1" class="banner-02">
+  <section data-section="1" class="tg-rev-slider">
+    <div id="rev_slider_1" class="rev_slider fullwidthabanner" data-version="5.4.1">
+      <ul>
+        <?php
+        for($i=0; $i<18; $i++){
+          ?>
+          <li class="tp-revslider-slidesli" data-transition="random-premium" data-masterspeed="1000" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut">
+            <?php
+            if($i === 0){
+              ?>
+              <img src="public/img/bg/banner-02.jpg" class="rev_slider_img" alt="">
+              <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0','0','0','0']" data-y="['top']" data-voffset="['200','122','122','100']" data-fontsize="['88','70','50','70']" data-fontweight="500" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1500,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,80,90,25]">Website</div>
+              <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0']" data-y="['top']" data-voffset="[280','180','180','160']" data-fontsize="['88','70','50','36']" data-fontweight="200" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1800,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,80,90,25]">for</div>
+              <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0']" data-y="['top']" data-voffset="['280','180','180','160']" data-fontsize="['88','70','50','36']" data-fontweight="500" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1800,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[130,180,180,80]">Government</div>
+              <div class="tp-caption tp-resizeme anLayer" data-frames='[{"delay":3000,"speed":1100,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-type="image" data-x="right" data-y="bottom" data-hoffset="['0','100','100','200']" data-voffset="['0','50','50','100']" data-width="['auto', '300', '200', '100']" data-height="['auto', '200', '200', '100']">
+                <img src="public/img/hero/banner-01.png" alt="layer">
+              </div>
+              <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0']" data-y="['top']" data-voffset="['350','230','230','200']" data-fontsize="['30','30','30','18']" data-fontweight="200" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":1800,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,80,90,25]">ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA</div>
+              <div class="tp-caption ws_nowrap" data-x="['left']" data-hoffset="['0']" data-y="['top']" data-voffset="['380','250','250','250']" data-fontsize="['30','30','30','30']" data-fontweight="200" data-lineheight="['30']" data-letterspacing="1.4" data-width="['500','500','100%', '100%']" data-height="['auto']" data-whitesapce="normal" data-color="['#fff']" data-type="text" data-responsive_offset="off" data-frames='[{"delay":2200,"speed":300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":500,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]' data-textAlign="['left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,25]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,80,90,25]">
+                <div class="btns pt-6 animate-01" style="--delay:.9s;">
+                  <?php
+                    $btnBubble = [
+                      'href' => 'web-gov-standard.php',
+                      'title' => 'Explore More',
+                    ];
+                    include('component/btn-bubble.php');
+                  ?>
+                </div>
+              </div>
+              <?php
+            }
+            elseif($i === 1){
+              ?>
+              <img src="public/img/bg/banner-09.jpg" class="rev_slider_img" alt="">
+              <?php
+              break;
+            }
+            /* if($i > 0) {
+              ?>
+              <img src="public/img/bg/banner-0<?= ($i%7+3) ?>.jpg">
+              <?php 
+            }
+            if($i > 7) {
+              ?>
+              <img src="public/img/bg/banner-1<?= ($i%10+0) ?>.jpg">
+              <?php 
+            } */
+            ?>
+          </li>
+          <?php
+        }
+        ?>
+      </ul>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#ffffff" />
+        </g>
+      </svg>
+    </div>
+  </section> 
+
+
+  <?php /* <section data-section="1" class="banner-02">
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <?php for($i=0; $i<18; $i++){?>
@@ -79,7 +148,7 @@
       </g>
       </svg>
     </div>
-  </section>
+  </section>*/ ?>
 
   <?php
     $titles = [
@@ -155,7 +224,78 @@
             <p class="text"><?= $d['title'] ?></p>
           </div>
         </div>
-      <?php } ?>
+        <div class="block-float right d-flex ai-end">
+          <div class="grids no-gap">
+            <?php
+              $clients = [
+                [
+                  'bg' => 'public/img/content/33.jpg',
+                  'icon' => 'public/img/clients/กระทรวงศึกษา.svg',
+                  'title' => 'กระทรวงศึกษา',
+                  'bgColor' => 'rgba(11,62,31,.7)',
+                  'classer' => 'active',
+                  'link' => 'web-gov-standard.php',
+                ], [
+                  'bg' => 'public/img/content/34.jpg',
+                  'icon' => 'public/img/clients/กระทรวงพลังงาน.png',
+                  'title' => 'กระทรวงพลังงาน',
+                  'bgColor' => 'rgba(254,77,1,.7)',
+                  'link' => 'web-gov-standard.php',
+                ], [
+                  'bg' => 'public/img/content/35.jpg',
+                  'icon' => 'public/img/clients/industry.svg',
+                  'title' => 'กระทรวงอุตสาหกรรม',
+                  'bgColor' => 'rgba(136,0,156,.7)',
+                  'link' => 'web-gov-standard.php',
+                ], [
+                  'bg' => 'public/img/content/36.jpg',
+                  'icon' => 'public/img/clients/กรมธนารักษ์.svg',
+                  'title' => 'กรมธนารักษ์',
+                  'bgColor' => 'rgba(204,165,33,.7)',
+                  'link' => 'web-gov-standard.php',
+                ], [
+                  'bg' => 'public/img/content/37.jpg',
+                  'icon' => 'public/img/clients/กรมโยธาธิการและผังเมือง.svg',
+                  'title' => 'กรมโยธาธิการและผังเมือง',
+                  'bgColor' => 'rgba(52,14,21,.7)',
+                  'link' => 'web-gov-standard.php',
+                ], [
+                  'bg' => 'public/img/content/38.jpg',
+                  'icon' => 'public/img/clients/มหาวิทยาลัยเกษตรศาสตร์.png',
+                  'title' => 'มหาวิทยาลัยเกษตร',
+                  'bgColor' => 'rgba(177,187,27,.7)',
+                  'link' => 'web-gov-standard.php',
+                ],
+              ];
+            ?>
+            <?php foreach($clients as $d){?>
+              <div class="grid lg-1-3 md-50 sm-1-3 xs-50 mt-0">
+                <div class="ss-card ss-card-37">
+                  <a class="ss-img square" href="<?= $d['link'] ?>">
+                    <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+                      <div class="hover-container <?= $d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
+                      <div class="wrapper">
+                        <div class="icon">
+                          <img src="<?= $d['icon'] ?>" alt="Client" />
+                        </div>
+                        <p class="color-white text-center lh-sm mt-3">
+                          <?= $d['title'] ?>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="card-line-3">
+                    <svg viewBox="0 0 100 100">
+                      <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+                      <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            <?php }?>     
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Web Design -->
@@ -351,7 +491,7 @@
           <div class="ss-card ss-card-26">
             <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
             <div class="wrapper" data-aos="fade-up" data-aos-delay="150">
-              <div class="image-container">
+              <div class="image-container" <?= empty($d['style'])?'':$d['style'] ?>>
                 <img src="<?= $d['icon'] ?>" alt="Client" />
               </div>
               <div class="text-container mt-4">

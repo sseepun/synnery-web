@@ -267,7 +267,7 @@
         <p class="xs mt-1">1/1 ซอยรามคำแหง 12 แยก 2 แขวงหัวหมาก เขตบางกะปิ กทม. 10240</p>
         <p class="xs fw-500 mt-1">+662-318-4939, +668-6340-6895</p>
         <div class="mt-1">
-          <a class="p xs a-line color-p fw-400" href="#">sales@jigsawoffice.com</a>
+          <a class="p xs a-line color-p fw-400" href="#">sales@synerry.com</a>
         </div>
       </div>
       <div class="footer-socials pos-relative" style="z-index:2;">

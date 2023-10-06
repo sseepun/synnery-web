@@ -173,7 +173,7 @@
           <div class="text-container md">
             <h3 class="color-01 lh-2xs fw-600">
               ทำไมไม่ใช้ <span class="text-uppercase color-black fw-300">
-              Plug-in ของ WorD Press</span> <span>ที่มีอยู่แล้ว</span>
+              Plug-in ของ WordPress</span> <span>ที่มีอยู่แล้ว</span>
             </h3>
             <p class="sm color-black fw-400 mt-3">
               Plug-in ของ Wordpress บางระบบจะมีอยู่แล้ว แต่จะมี function บางอย่างไม่รองรับการทำงาน 
@@ -211,7 +211,7 @@
     <div class="img-bg" style="background-image:url('public/img/bg/65.jpg');"></div> 
     <div class="container">
       <h3 class="text-center color-01 fw-600 lh-sm pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
-        Word Press Plug-In <span class="color-white fw-200">ที่บริษัทฯ พัฒนาขึ้นมาใหม่</span>
+        WordPress Plug-In <span class="color-white fw-200">ที่บริษัทฯ พัฒนาขึ้นมาใหม่</span>
       </h3>
       <div class="content-container mt-6 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <div class="swiper-container">
@@ -277,7 +277,7 @@
       <div class="blocks">
         <div class="block-float left">
           <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/22.jpg');"></div>
+            <div class="img-bg bg-contain bg-color-blue-dark" style="background-image:url('public/img/content/22.jpg');"></div>
           </div>
         </div>
         <div class="block">
@@ -342,7 +342,7 @@
         </div>
         <div class="block-float right">
           <div class="ss-img horizontal-01 no-hover">
-            <div class="img-bg" style="background-image:url('public/img/content/23.jpg');"></div>
+            <div class="img-bg bg-contain bg-color-blue-dark" style="background-image:url('public/img/content/23.jpg');"></div>
           </div>
         </div>
       </div>
@@ -413,6 +413,52 @@
    </div>             
   </div>
 
+  <?php
+  $arrTrain = [
+    [
+      [
+        'type' => 'gallery',
+        'vdo' => 'https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2',
+        'img' => 'public/img/train/01/GF1A5469-188.jpg'
+      ],
+      [
+        'type' => 'gallery',
+        'vdo' => 'https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2',
+        'img' => 'public/img/train/01/GF1A5315-87.jpg'
+      ],
+      [
+        'type' => 'gallery',
+        'vdo' => 'https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2',
+        'img' => 'public/img/train/01/GF1A5253-32.jpg'
+      ],
+      [
+        'vdo' => 'https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2',
+        'img' => 'public/img/train/01/GF1A5271-54.jpg'
+      ],
+      [
+        'type' => 'gallery',
+        'vdo' => 'https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2',
+        'img' => 'public/img/train/01/GF1A5242-20.jpg'
+      ],
+      [
+        'type' => 'gallery',
+        'vdo' => 'https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2',
+        'img' => 'public/img/train/01/GF1A5441-173.jpg'
+      ],
+      [
+        'type' => 'gallery',
+        'vdo' => 'https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2',
+        'img' => 'public/img/train/01/GF1A5406-153.jpg'
+      ],
+      [
+        'type' => 'gallery',
+        'vdo' => 'https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2',
+        'img' => 'public/img/train/01/GF1A5827-518.jpg'
+      ],
+    ],
+    // [],
+  ];
+  ?>
   <section data-section="10" class="section-08 section-padding bg-p">
     <div class="pattern style-02">
       <div class="wrapper" value=".5">
@@ -426,60 +472,81 @@
       <div class="content-container mt-6 pt-4 pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="150">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <?php for($j=0; $j<12; $j++){?>
+            <?php for($j=0; $j<1; $j++){?>
+              <?php $num = 0; ?>
               <div class="swiper-slide">
                 <div class="wrapper">
                   <div class="grids no-gap">
-                    <?php for($i=0; $i<2; $i++){?>
+                    <?php for($i=0; $i<4; $i+=2){?>
                       <div class="grid lg-1-3 xs-50 mt-0">
                         <div class="p-1">
-                          <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+                          <?php /*  <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
                             <div class="ss-img horizontal-03">
                               <div class="img-bg" style="background-image:url('public/img/content/content-2<?= ($i%6+0) ?>.jpg');"></div>
                             </div>
                             <div class="hover-filter-01"></div>
                             <div class="card-line-1"></div><div class="card-line-2"></div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="grid lg-1-6 xs-50 mt-0">
-                        <div class="p-1 h-full">
-                          <a class="ss-card ss-card-03 style-02" href="public/img/content/content-2<?= ($i%6+2) ?>.jpg" data-fancybox="gallery">
-                            <div class="ss-img">
-                              <div class="img-bg" style="background-image:url('public/img/content/content-2<?= ($i%6+2) ?>.jpg')"></div>
-                            </div>
-                            <div class="hover-filter-01"></div>
-                            <div class="line-1"></div><div class="line-2"></div>
-                          </a>
-                        </div>
-                      </div>
-                    <?php }?>
-                    <?php for($i=0; $i<2; $i++){?>
-                      <div class="grid lg-1-6 xs-50 mt-0">
-                        <div class="p-1 h-full">
-                          <a class="ss-card ss-card-03 style-02" href="public/img/content/content-2<?= ($i%6+4) ?>.jpg" data-fancybox="gallery">
-                            <div class="ss-img">
-                              <div class="img-bg" style="background-image:url('public/img/content/content-2<?= ($i%6+4) ?>.jpg')"></div>
-                            </div>
-                            <div class="hover-filter-01"></div>
-                            <div class="line-1"></div><div class="line-2"></div>
-                          </a>
-                        </div>
-                      </div>
-                    <?php }?>
-                    <?php for($i=0; $i<2; $i++){?>
-                      <div class="grid lg-1-3 xs-50 mt-0">
-                        <div class="p-1">
-                          <a class="ss-card" href="https://www.youtube.com/watch?v=47VeaTCMcOM&list=PLPYe34B8ZMr6qMxH9YN8woSfe5f47jcv4&index=2" data-fancybox>
+                          </a> */ ?>
+                          <a class="ss-card" href="<?= $arrTrain[$j][$i]['img'] ?>" data-fancybox="gallery">
                             <div class="ss-img horizontal-03">
-                              <div class="img-bg" style="background-image:url('public/img/content/content-2<?= ($i%6+6) ?>.jpg');"></div>
+                              <div class="img-bg" style="background-image:url('<?= $arrTrain[$j][$i]['img'] ?>');"></div>
                             </div>
                             <div class="hover-filter-01"></div>
                             <div class="card-line-1"></div><div class="card-line-2"></div>
                           </a>
                         </div>
                       </div>
+                      <div class="grid lg-1-6 xs-50 mt-0">
+                        <div class="p-1 h-full">
+                          <?php /* <a class="ss-card ss-card-03 style-02" href="public/img/content/content-2<?= ($i%6+2) ?>.jpg" data-fancybox="gallery">
+                            <div class="ss-img">
+                              <div class="img-bg" style="background-image:url('public/img/content/content-2<?= ($i%6+2) ?>.jpg')"></div>
+                            </div>
+                            <div class="hover-filter-01"></div>
+                            <div class="line-1"></div><div class="line-2"></div>
+                          </a> */ ?>
+                          <a class="ss-card ss-card-03 style-02" href="<?= $arrTrain[$j][$i+1]['img'] ?>" data-fancybox="gallery">
+                            <div class="ss-img">
+                              <div class="img-bg" style="background-image:url('<?= $arrTrain[$j][$i+1]['img'] ?>')"></div>
+                            </div>
+                            <div class="hover-filter-01"></div>
+                            <div class="line-1"></div><div class="line-2"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <?php $num = $i; ?>
                     <?php }?>
+                    <?php
+                    $number = 4+$num;
+                    for($i=$num+2; $i<$number; $i++){?>
+                      <div class="grid lg-1-6 xs-50 mt-0">
+                        <div class="p-1 h-full">
+                          <a class="ss-card ss-card-03 style-02" href="<?= $arrTrain[$j][$i]['img'] ?>" data-fancybox="gallery">
+                            <div class="ss-img">
+                              <div class="img-bg" style="background-image:url('<?= $arrTrain[$j][$i]['img'] ?>')"></div>
+                            </div>
+                            <div class="hover-filter-01"></div>
+                            <div class="line-1"></div><div class="line-2"></div>
+                          </a>
+                        </div>
+                      </div>
+                      <?php $num = $i; ?>
+                    <?php }?>
+                    <?php 
+                    $number = 3+$num;
+                    for($i=$num+1; $i<$number; $i++){?>
+                      <div class="grid lg-1-3 xs-50 mt-0">
+                        <div class="p-1">
+                          <a class="ss-card" href="<?= $arrTrain[$j][$i]['img'] ?>" data-fancybox="gallery">
+                            <div class="ss-img horizontal-03">
+                              <div class="img-bg" style="background-image:url('<?= $arrTrain[$j][$i]['img'] ?>');"></div>
+                            </div>
+                            <div class="hover-filter-01"></div>
+                            <div class="card-line-1"></div><div class="card-line-2"></div>
+                          </a>
+                        </div>
+                      </div>
+                    <?php } ?>
                   </div>
                 </div>
               </div>
