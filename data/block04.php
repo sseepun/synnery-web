@@ -32,12 +32,6 @@
     </div>
   </div>
   <div class="container">
-    <div class="text-center color-01 pos-relative" style="z-index:2;">
-      <p class="h3 lh-2xs fw-700">Full Services</p>
-      <h1 class="color-black mt-1 lh-2xs fw-700">
-        DIGITAL MARKETING
-      </h1>
-    </div>
     <div class="grids pt-6 pos-relative" style="z-index:2;">
       <?php foreach($contents as $d){?>
         <div class="grid xl-25 lg-25 md-50 sm-50 xs-100">

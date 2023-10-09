@@ -425,10 +425,20 @@
         <img src="public/img/content/pattern-18.png" alt="Hero">
       </div>
     </div>
+    <div class="pattern style-02">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-20.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-21.png" alt="Hero">
+      </div>
+    </div>
     <div class="container">
-      <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-        Our Clients
-      </h3>
+      <h2 class="lg text-center fw-800" data-aos="fade-up" data-aos-delay="0">
+        OUR CLIENTS
+      </h2>
       <p class="text-center md-no-br" data-aos="fade-up" data-aos-delay="150">
         ประสบการณ์มากกว่า 24 ปี ผลงานกับลูกค้าทั้งภาครัฐและเอกชนขนาดใหญ่กว่า 300 ราย มากกว่า 500 โครงการ
       </p>
@@ -458,13 +468,26 @@
     </div>
 
     <?php include_once('data/clients-home.php'); ?>
-    <div class="clients pos-relative" style="z-index:2;">
+    <div class="isotope-toolbar mt-6" style="position:relative; z-index:3;" data-aos="fade-up" data-aos-delay="600">
+      <div class="isotope-wrapper">
+        <div class="isotope-toolbar-btn isotope-tab active" data-type="*" name="isotope-filter">
+          <p class="fw-400">ทั้งหมด</p>
+        </div>
+        <div class="isotope-toolbar-btn isotope-tab" data-type="govertment" name="isotope-filter">
+          <p class="fw-400">รายชื่อลูกค้าภาครัฐ</p>
+        </div>
+        <div class="isotope-toolbar-btn isotope-tab" data-type="corporation" name="isotope-filter">
+          <p class="fw-400">รายชื่อลูกค้าเอกชน</p>
+        </div>
+      </div>
+    </div>
+    <div class="clients isotope-box pos-relative" style="z-index:2;">
       <?php foreach($clients as $d){?>
-        <div class="client">
+        <div class="client isotope-item" data-type="<?= $d['type'] ?>">
           <div class="ss-card ss-card-26">
             <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
-            <div class="wrapper" data-aos="fade-up" data-aos-delay="150">
-              <div class="image-container" <?= empty($d['style'])?'':$d['style'] ?>>
+            <div class="wrapper">
+              <div class="image-container">
                 <img src="<?= $d['icon'] ?>" alt="Client" />
               </div>
               <div class="text-container mt-4">
@@ -510,6 +533,20 @@
       }, 400);
     }
     document.getElementById("defaultOpen").click();
+
+    var $isotopeContainer = $('.isotope-box').isotope({
+      itemSelector: '.isotope-item'
+    });
+    $('.isotope-toolbar').on('click', '.isotope-tab', function () {
+      var filterValue = $(this).attr('data-type');
+      $('.isotope-toolbar-btn').removeClass('active');
+      $(this).addClass('active');
+      if(filterValue !== '*') {
+        filterValue = '[data-type="' + filterValue + '"]';
+      }
+      console.log(filterValue);
+      $isotopeContainer.isotope({ filter: filterValue });
+    });
   </script>
 </body>
 </html>

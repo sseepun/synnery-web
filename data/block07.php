@@ -16,19 +16,6 @@
   </div>
   <div class="img-bg" style="background-image:url('public/img/bg/63.jpg'); background-position:top center;"></div>  
   <div class="container">
-    <div class="pos-relative" style="z-index:2;">
-      <h2 class="color-black text-center mt-1 lh-2xs fw-700">
-        NETWORK & SECURITY
-      </h2>
-      <p class="h4 lg color-p text-center fw-600">Services</p>
-      <p class="text-center fw-400 md-no-br">
-        หลายโครงการที่เราดูแลแบบครบวงจร ตั้งแต่รับฟังปัญหา วิเคราะห์ ศึกษา 
-        และนำเสนอแผนการพัฒนา ปรับเปลี่ยนตั้งแต่ระบบโครงสร้าง<br>
-        พื้นฐานด้านไอที เรามีทีมงาน ทีมผู้เชี่ยวชาญ ทั้งคู่ค้า ที่มีความชำนาญ 
-        ในการนำเทคโนโลยีใหม่ๆ เข้ามาช่วยแก้ไขปัญหา<br>
-        พร้อมกับรองรับวางแผนการพัฒนา การขยาย  ต่อยอดในอนาคต 
-      </p>  
-    </div>
     <div class="grids mt-adaptive">
       <div class="grid lg-50 md-100 sm-100 mt-0">
         <div class="ss-card ss-card-40">
