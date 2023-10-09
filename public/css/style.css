@@ -1112,9 +1112,13 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-img.horizontal-05{padding:15% 0 0 0;}
 @media screen and (max-width:991.98px){
     .ss-img.vertical-03{padding:110% 0 0 0;}
+    .ss-img.square.unset-md{padding:60% 0 0 0;}
+    .ss-img.square-md{padding:100% 0 0 0;}
+    .ss-img.horizontal-md{padding:50% 0 0 0;}
 }
 @media screen and (max-width:575.98px){
     .ss-img.vertical-03{padding:60% 0 0 0;}
+    .ss-img.square-md.unset-xs{padding:60% 0 0 0;}
 }
 .ss-img > .img-bg{
     position:absolute; top:0; bottom:0; left:0; right:0;

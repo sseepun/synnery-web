@@ -11,18 +11,6 @@
     </div>
   </div>
   <div class="container" style="z-index:2;">
-    <div class="text-center">
-      <h3 class="color-p fw-600">
-        Full Services
-      </h3>
-      <h1 class="lh-2xs text-shadow fw-600">
-        VIRTUAL WORLD,<br>AR-VR,ANIMATION,<br>MULTIMEDIA, GRAPHICS
-      </h1>
-      <p class="color-black md-no-br fw-400 mt-3">
-        บริการและบริหารโครงการด้านการสร้าง และออกแบบงาน Virtual Online ต่างๆ แบบครบวงจร ตั้งแต่เริ่มต้นคิด วางรูปแบบงาน 
-        แนวทาง<br>การประชาสัมพันธ์ไปยังกลุ่มเป้าหมาย การจัดกิจกรรมประกอบต่างๆ เพื่อบรรลุวัตถุประสงค์และเป้าหมายของโครงการ  
-      </p>
-    </div>
     <div class="ss-box xl mt-6">
       <div class="grids jc-center">
         <?php for($i=0; $i<9; $i++){?>
