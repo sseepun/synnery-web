@@ -407,7 +407,7 @@ $(function () {
                 var target = tabContents.filter('[data-tab="' + $(this).data('tab') + '"]'),
                     oldTargets = tabContents.filter('.active'),
                     swiperContainers = target.find('.swiper-container');
-                if (target.length) {
+                if(target.length) {
                     e.preventDefault();
                     tabs.removeClass('active');
                     $(this).addClass('active');
@@ -415,7 +415,7 @@ $(function () {
                     tabContents.removeClass('fade-in');
                     oldTargets.addClass('fade-out');
                     target.addClass('fade-in');
-                    setTimeout(function () {
+                    setTimeout(function(){
                         tabContents.removeClass('fade-in fade-out active');
                         target.addClass('active');
                         AOS.refresh();
@@ -451,11 +451,11 @@ $(function () {
                 tabs = self.find('.tab-link');
             tabs.click(function(e){
                 var target = tabs.filter('[data-tab="'+$(this).data('tab')+'"]');
-                    console.log(target)
                 if(target.length){
                     e.preventDefault();
                     tabs.removeClass('active');
                     $(this).addClass('active');
+                    AOS.refresh();
                 }
             });
         });
@@ -469,7 +469,6 @@ $(function () {
                 tabs = self.find('.tabs .tab'),
                 tabContents = self.find('.tab-contents > .tab-content');
             tabs.click(function(e){
-                console.log('hello')
                 var target = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]'),
                     oldTargets = tabContents.filter('.active');
                 if($(this).hasClass('active')) e.preventDefault();
@@ -484,8 +483,33 @@ $(function () {
                     setTimeout(function(){
                         tabContents.removeClass('fade-in fade-out active');
                         target.addClass('active');
+                        AOS.refresh();
                     }, 600);
-    
+                }
+            });
+        });
+    }
+
+
+     // Menu Tab container 
+     var tabContainers = $('.submenu-blocks');
+    if(tabContainers.length){
+        tabContainers.each(function(){
+            var self = $(this),
+                tabs = self.find('.submenu'),
+                tabContents = self.find('.menu-content');
+            tabs.click(function(e){
+                console.log('hello')
+                var target = tabs.filter('[data-tab="'+$(this).data('tab')+'"]');
+                var target02 = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]');
+                if($(this).hasClass('active')) e.preventDefault();
+                if(target.length && !$(this).hasClass('active')){
+                    e.preventDefault();
+                    tabs.removeClass('active');
+                    tabContents.removeClass('active');
+                    $(this).addClass('active');
+                    target.addClass('active');
+                    target02.addClass('active');
                     AOS.refresh();
                 }
             });
@@ -646,16 +670,24 @@ $(function () {
     });
 
 
-    // Pattern Movement
-    document.addEventListener("mousemove", parallax);
-    function parallax(event) {
-        this.querySelectorAll(".pattern .wrapper").forEach((shift) => {
-            const position = shift.getAttribute("value");
-            const x = (window.innerWidth - event.pageX * position) / 90;
-            const y = (window.innerHeight - event.pageY * position) / 90;
-            shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        });
+    // Isotope Filter
+    var filterValue = $(this).attr('data-type');
+    var $isotopeContainer = $('.isotope-box').isotope({itemSelector: '.isotope-item'});
+
+    if(filterValue !== 'corporation') {
+      filterValue = '[data-type="government"]';
     }
+
+    $isotopeContainer.isotope({ filter: filterValue });
+    $('.isotope-toolbar').on('click', '.isotope-tab', function () {
+      var filterValue = $(this).attr('data-type');
+      $('.isotope-toolbar-btn').removeClass('active');
+      $(this).addClass('active');
+      if(filterValue !== '*') {
+        filterValue = '[data-type="' + filterValue + '"]';
+      }
+      $isotopeContainer.isotope({ filter: filterValue });
+    });
 
 
     // Banner 02

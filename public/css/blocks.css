@@ -1,3 +1,8 @@
+/* Animation */
+@-webkit-keyframes shine {100% {left: 125%;}}
+@keyframes shine {100% {left: 125%;}}
+
+
 /* Banner 01 */
 .banner-01{position:relative; width:100%; display:flex; align-items:center;}
 .banner-01 .swiper-container .swiper-slide{position:relative; height:500px;}
@@ -171,18 +176,60 @@
 }
 
 
-.isotope-toolbar .isotope-wrapper{
-  display:flex; justify-content:center;
-}
+.isotope-toolbar{margin-top:4rem;}
+.isotope-toolbar .isotope-wrapper{display:flex; justify-content:center;}
 .isotope-toolbar .isotope-tab{
-  border:1px solid #000000; padding:1rem; cursor:pointer;
-  transition:background .25s;
+  position:relative; cursor:pointer;
+  transition:background .25s; margin:.25rem .25rem; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
+.isotope-toolbar .isotope-tab .wrapper{
+  position:relative; display:flex; align-items:center; 
+  padding:.5rem .875rem; overflow:hidden; height:100%;
+}
+.isotope-toolbar .isotope-tab > .wrapper::after{
+  position:absolute; top:0; left:-75%; z-index:2; display:block;
+	content:''; width:50%; height:100%; 
+  background:-webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background:linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	transform:skewX(-25deg); transform:skewX(-25deg);
+}
+.isotope-toolbar .isotope-tab:hover > .wrapper:after{-webkit-animation:shine 1.5s; animation:shine 1.5s;}
 .isotope-toolbar .isotope-tab:hover,
 .isotope-toolbar .isotope-tab.active{background:#000000;}
-.isotope-toolbar .isotope-tab:hover > p,
-.isotope-toolbar .isotope-tab.active > p{color:#ffffff;}
-.isotope-toolbar .isotope-tab > p{font-size:.875rem; transition:color .25s;}
+.isotope-toolbar .isotope-tab:hover > .wrapper .title,
+.isotope-toolbar .isotope-tab.active > .wrapper .title{color:#ffffff;}
+.isotope-toolbar .isotope-tab > .wrapper .title{font-size:.875rem; transition:color .25s;}
+.isotope-toolbar .isotope-tab .wrapper > .icon{
+  position:relative; width:3rem; height:3rem; display:flex; justify-content:center;
+  align-items:center; border:2px solid #eb2c22; border-radius:50%; transition:border .25s;
+}
+.isotope-toolbar .isotope-tab .wrapper > .icon img{
+  display:block; max-width:100%; width:auto; height:1.75rem;
+  transition:opacity .25s;
+}
+.isotope-toolbar .isotope-tab:hover .wrapper > .icon,
+.isotope-toolbar .isotope-tab.active .wrapper > .icon{border-color:#ffffff;}
+.isotope-toolbar .isotope-tab .wrapper > .icon img.icon-active{position:absolute; opacity:0;}
+.isotope-toolbar .isotope-tab:hover .wrapper > .icon img.icon-inactive,
+.isotope-toolbar .isotope-tab.active .wrapper > .icon img.icon-inactive{opacity:0;}
+.isotope-toolbar .isotope-tab:hover .wrapper > .icon img.icon-active,
+.isotope-toolbar .isotope-tab.active .wrapper > .icon img.icon-active{opacity:1;}
+.isotope-toolbar .isotope-tab .wrapper > .icon img.mt-nagative{margin-top:-.25rem;}
+.isotope-toolbar .isotope-tab > .wrapper .title{width:calc(100% - 3rem); padding-left:.75rem;}
+.isotope-toolbar .isotope-tab::after{
+  position:absolute; content:''; top:auto; right:auto; bottom:.5rem; left:45%; transition:opacity .3125s, bottom .5s;
+  width:1rem; height:1rem; background:#000000; transform:rotate(45deg); opacity:0;
+}
+.isotope-toolbar .isotope-tab:hover::after,
+.isotope-toolbar .isotope-tab.active::after{opacity:1; bottom:-.5rem;}
+@media screen and (max-width:390.98px){
+  .isotope-toolbar .isotope-tab .wrapper{
+    flex-direction:column; justify-content:center;
+  }
+  .isotope-toolbar .isotope-tab > .wrapper .title{
+    width:100%; padding-left:0; margin-top:.5rem;
+  }
+}
 
 
 /* Section 01 */
@@ -1412,8 +1459,8 @@
 .main-tabs-container .tab-wrapper .tab-link.active .text{color:#ffffff;}
 .main-tabs-container .tab-link > .wrapper .icon  img.active{position:absolute; opacity:0;}
 .main-tabs-container .tab-link:hover > .wrapper .icon img,
-.main-tabs-container .tab-link.active > .wrapper .icon img{opacity:1;}{opacity:1;}
-.main-tab-content{display:none; transform:translateY(5rem); opacity:0; transition:transform 1s, opacity 1s;}
+.main-tabs-container .tab-link.active > .wrapper .icon img{opacity:1;}
+.main-tab-content{display:none; transform:translateY(2.5rem); opacity:0; transition:transform 1s, opacity 1s;}
 .main-tab-content.active{transform:translateY(0); opacity:1;}
 @media screen and (max-width:1142.98px){
   .main-tabs-container .tab-link > .wrapper{

@@ -5,6 +5,7 @@ html, body{
     font-family:'Noto Sans Thai', sans-serif; scroll-behavior:smooth;
 }
 body.loading{height:100vh!important; overflow-y:hidden!important;}
+body.loading .tg-rev-slider{min-height:100vh!important;}
 
 *{box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; outline:none;}
 
