@@ -166,7 +166,7 @@
       $mainTabs = [
         [
           'pageId' => 'web-design',
-          'title' => 'Web Design',
+          'title' => 'Web Design Standard Solution',
           'iconInactive' => 'public/img/icon/service-02.png',
           'iconActive' => 'public/img/icon/service-active-02.png'
         ], [
@@ -176,17 +176,17 @@
           'iconActive' => 'public/img/icon/service-active-01.png'
         ], [
           'pageId' => 'web-mobile-app',
-          'title' => 'Web & Mobile Application Development',
+          'title' => 'Web & Mobile App Development',
           'iconInactive' => 'public/img/icon/service-07.png',
           'iconActive' => 'public/img/icon/service-active-07.png'
         ], [
           'pageId' => 'net-work',
-          'title' => 'Network & Security',
+          'title' => 'Network & Security Service',
           'iconInactive' => 'public/img/icon/service-08.png',
           'iconActive' => 'public/img/icon/service-active-08.png'
         ], [
           'pageId' => 'ai-solution',
-          'title' => 'AI Solution',
+          'title' => 'Artificial Intelligence Solution',
           'iconInactive' => 'public/img/icon/service-09.png',
           'iconActive' => 'public/img/icon/service-active-09.png'
         ],
@@ -311,7 +311,7 @@
       <?php
         $categories = [
           ['title' => 'Digital Marketing'],
-          ['title' => 'Virtual World'],
+          ['title' => 'Virtual Exhibition / Virtual Live Event'],
         ];
       ?>
       <div class="sub-tab-container">

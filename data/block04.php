@@ -20,7 +20,7 @@
   ]
 ?>
 
-<section data-section="2" class="section-01 section-padding">
+<section data-section="2" class="section-01 section-padding pt-0">
   <div class="pattern style-47">
     <div class="wrapper" value=".5">
       <img src="public/img/patterns/07.png" alt="Hero">
@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="container">
-    <div class="grids pt-6 pos-relative" style="z-index:2;">
+    <div class="grids pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
       <?php foreach($contents as $d){?>
         <div class="grid xl-25 lg-25 md-50 sm-50 xs-100">
           <a class="ss-card ss-card-05">
@@ -54,7 +54,7 @@
         </div>
       <?php }?>
     </div>
-    <div class="social-blocks">
+    <div class="social-blocks" data-aos="fade-up" data-aos-delay="150">
       <?php for($i=0; $i<5; $i++){?>
         <div class="social-block">
           <div class="ss-card ss-card-36">
@@ -71,7 +71,7 @@
 
 <section class="section-01 section-padding">   
   <div class="container">
-    <div class="text-center color-white pos-relative" style="z-index:2;">
+    <div class="text-center color-white pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
       <h5 class="color-black fw-300 lh-xs">
         วาง <span class="h3 color-01 fw-600 lh-xs">Action Plan</span> และ 
         <span class="h3 color-01 fw-600 lh-xs">งบประมาณ</span>
@@ -82,11 +82,11 @@
       </h5>
     </div>
     <div class="grids jc-center pt-3 pos-relative" style="z-index:2;">
-      <div class="grid xl-80 sm-100">
+      <div class="grid xl-80 sm-100" data-aos="fade-up" data-aos-delay="150">
         <img class="img" src="public/img/content/01.png" alt="Image" />
       </div>
     </div>
-    <div class="btns pt-6 mt-2 jc-center animate-01" style="--delay:.9s;">
+    <div class="btns pt-6 mt-2 jc-center animate-01" style="--delay:.9s;" data-aos="fade-up" data-aos-delay="300">
       <?php
         $btnBubble = [
           'href' => 'web-gov-standard.php',

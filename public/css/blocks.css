@@ -261,7 +261,7 @@
 .section-01.size-03{min-height:20rem;}
 
 .section-01 .hex-container{
-  width:100%; max-width:1056px; margin:0 auto; padding:4.5rem 0 0 0;
+  width:100%; max-width:1056px; margin:0 auto; padding:3rem 0 0 0;
   display:flex; flex-wrap:wrap; justify-content:center;
 }
 .section-01 .hex-flip{margin:-36px 2px 2px 2px; cursor:pointer;}
@@ -420,7 +420,7 @@
 .section-01 > .pattern.style-46{position:absolute; bottom:-33rem; left:auto; right:-7rem; z-index:1;}
 .section-01 > .pattern.style-46 > .wrapper img{display:block; width:46rem; height:auto;}
 
-.section-01 > .pattern.style-47{position:absolute; top:4rem; bottom:auto; left:auto; right:22rem; z-index:1;}
+.section-01 > .pattern.style-47{position:absolute; top:4rem; bottom:auto; left:auto; right:1rem; z-index:1;}
 .section-01 > .pattern.style-47 > .wrapper img{display:block; width:4.9375rem; height:auto;}
 
 .section-01 > .pattern.style-48{position:absolute; top:30rem; bottom:auto; left:1.5rem; right:auto; z-index:1;}
@@ -1510,7 +1510,7 @@
 .sub-tab-container{position:relative; display:block; width:100%;}
 .sub-tab-container .tabs{position:relative; width:100%;}
 .sub-tab-container .tab{cursor:pointer;}
-.sub-tab-container .tab-contents{position:relative; width:100%; margin-top:1.5rem;}
+.sub-tab-container .tab-contents{position:relative; width:100%; margin-top:0;}
 .sub-tab-container .tab-content{position:relative; display:none; width:100%; padding:0; margin:0; transition:opacity .6s, transform .6s;}
 .sub-tab-container .tab-content.active{display:block;}
 .sub-tab-container .tab-content.swiper-block{display:block;}

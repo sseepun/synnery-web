@@ -4,14 +4,9 @@
     'Virtual Product 360', 'Metaverse', 'VR (Virtual Reality)', 'Mixed Reality'
   ]
 ?>
-<section class="section-01 section-padding bg-05">
-  <div class="pattern style-32">
-    <div class="wrapper" value=".5">
-      <img src="public/img/content/pattern-18.png" alt="Hero">
-    </div>
-  </div>
+<section class="section-01 section-padding pt-0">
   <div class="container" style="z-index:2;">
-    <div class="ss-box xl mt-6">
+    <div class="ss-box xl">
       <div class="grids jc-center">
         <?php for($i=0; $i<9; $i++){?>
           <div class="grid lg-20 md-25 sm-1-3 xs-50">
@@ -63,14 +58,14 @@
   </div>
   <div class="container" style="z-index:2;">
     <div class="text-center">
-      <h3 class="color-01 lh-3xs fw-600">
+      <h3 class="color-01 lh-3xs fw-600" data-aos="fade-up" data-aos-delay="0">
         Virtual Exhibition /<span class="h4 lg color-black fw-600">Virtual Live Event</span>
       </h3> 
-      <p class="lg color-03 fw-500">
+      <p class="lg color-03 fw-500" data-aos="fade-up" data-aos-delay="150">
         รวมภาพเบื้องหลังการทำงานของทีมงาน
       </p>   
     </div>
-    <div class="content-container width-full mt-6 pt-4">
+    <div class="content-container width-full mt-6 pt-4" data-aos="fade-up" data-aos-delay="300">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <?php for($j=0; $j<12; $j++){?>
