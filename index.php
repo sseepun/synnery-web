@@ -185,14 +185,14 @@
           'iconInactive' => 'public/img/icon/service-08.png',
           'iconActive' => 'public/img/icon/service-active-08.png'
         ], [
-          'pageId' => 'aiSolution',
+          'pageId' => 'ai-solution',
           'title' => 'AI Solution',
           'iconInactive' => 'public/img/icon/service-09.png',
           'iconActive' => 'public/img/icon/service-active-09.png'
         ],
       ]
     ?>
-    <div class="tab-wrapper">
+    <div class="tab-wrapper" data-aos="fade-up" data-aos-delay="150">
       <?php foreach($mainTabs as $j=>$d){?>
         <div class="tab-link <?php if($j==0)echo 'active'; ?>" id="defaultOpen" onclick="openPage('<?= $d['pageId'] ?>')" data-tab="tab_<?= $j ?>">
           <div class="wrapper">
@@ -282,11 +282,11 @@
         $categories = [
           ['title' => 'Web Design'],
           ['title' => 'Unlimited Minisite'], 
-          ['title' => 'Enterprise WordPress']
+          ['title' => 'Enterprise WordPress'],
         ];
       ?>
       <div class="sub-tab-container">
-        <div class="tabs tabs-02">
+        <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
           <?php foreach($categories as $i=>$d){?>
             <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
               <p class="title"><?= $d['title'] ?></p>
@@ -315,7 +315,7 @@
         ];
       ?>
       <div class="sub-tab-container">
-        <div class="tabs tabs-02">
+        <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
           <?php foreach($categories as $i=>$d){?>
             <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
               <p class="title"><?= $d['title'] ?></p>
@@ -342,7 +342,7 @@
         ];
       ?>
       <div class="sub-tab-container">
-        <div class="tabs tabs-02">
+        <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
           <?php foreach($categories as $i=>$d){?>
             <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
               <p class="title"><?= $d['title'] ?></p>
@@ -367,7 +367,7 @@
         ];
       ?>
       <div class="sub-tab-container">
-        <div class="tabs tabs-02">
+        <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
           <?php foreach($categories as $i=>$d){?>
             <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
               <p class="title"><?= $d['title'] ?></p>
@@ -387,8 +387,7 @@
       </div>
     </div>
 
-    <!-- AI Solutin -->
-    <div id="aiSolution" class="main-tab-content">
+    <div id="ai-solution" class="main-tab-content">
       <?php
         $categories = [
           ['title' => 'AI ChatGPT'],
@@ -397,7 +396,7 @@
         ]
       ?>
       <div class="sub-tab-container">
-        <div class="tabs tabs-02">
+        <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
           <?php foreach($categories as $i=>$d){?>
             <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
               <p class="title"><?= $d['title'] ?></p>
@@ -468,40 +467,54 @@
     </div>
 
     <?php include_once('data/clients-home.php'); ?>
-    <div class="isotope-toolbar mt-6" style="position:relative; z-index:3;" data-aos="fade-up" data-aos-delay="600">
-      <div class="isotope-wrapper">
-        <div class="isotope-toolbar-btn isotope-tab active" data-type="*" name="isotope-filter">
-          <p class="fw-400">ทั้งหมด</p>
-        </div>
-        <div class="isotope-toolbar-btn isotope-tab" data-type="govertment" name="isotope-filter">
-          <p class="fw-400">รายชื่อลูกค้าภาครัฐ</p>
-        </div>
-        <div class="isotope-toolbar-btn isotope-tab" data-type="corporation" name="isotope-filter">
-          <p class="fw-400">รายชื่อลูกค้าเอกชน</p>
+    <div class="container" data-aos="fade-up" data-aos-delay="300">
+      <div class="isotope-toolbar" style="position:relative; z-index:3;">
+        <div class="isotope-wrapper">
+          <div class="isotope-toolbar-btn isotope-tab active" data-type="government" name="isotope-filter">
+            <div class="wrapper">
+              <div class="icon">
+                <img class="mt-nagative icon-inactive" src="public/img/icon/tab-client-inactive.png">
+                <img class="mt-nagative icon-active" src="public/img/icon/tab-client-active.png">
+              </div>
+              <span class="p title fw-400">รายชื่อลูกค้าภาครัฐ</span>
+            </div>
+          </div>
+          <div class="isotope-toolbar-btn isotope-tab" data-type="corporation" name="isotope-filter">
+            <div class="wrapper">
+              <div class="icon">
+                <img class="mt-nagative icon-inactive" src="public/img/icon/tab-client-02-inactive.png">
+                <img class="mt-nagative icon-active" src="public/img/icon/tab-client-02-active.png">
+              </div>
+              <span class="p title fw-400">รายชื่อลูกค้าภาคเอกชน</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="clients isotope-box pos-relative" style="z-index:2;">
-      <?php foreach($clients as $d){?>
-        <div class="client isotope-item" data-type="<?= $d['type'] ?>">
-          <div class="ss-card ss-card-26">
-            <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
-            <div class="wrapper">
-              <div class="image-container">
-                <img src="<?= $d['icon'] ?>" alt="Client" />
+    <div data-aos="fade-up" data-aos-delay="450">
+      <div class="clients isotope-box pos-relative" style="z-index:2;">
+        <?php foreach($clients as $d){?>
+          <div class="client isotope-item" data-type="<?= $d['type'] ?>">
+            <div class="ss-card ss-card-26">
+              <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
+              <div class="wrapper">
+                <div class="image-container">
+                  <img src="<?= $d['icon'] ?>" alt="Client" />
+                </div>
+                <div class="text-container mt-4">
+                  <p class="xxs title lh-sm">
+                    <?= $d['title']?>
+                  </p>
+                </div>
               </div>
-              <div class="text-container mt-4">
-                <p class="xxs title lh-sm">
-                  <?= $d['title']?>
-                </p>
-              </div>
+              <div class="line-7"></div><div class="line-8"></div>
             </div>
-            <div class="line-7"></div><div class="line-8"></div>
           </div>
-        </div>
-      <?php }?>
+        <?php }?>
+      </div>
     </div>
   </section>
+
 
   <?php include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
@@ -516,9 +529,7 @@
         shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
       });
     }
-  </script>
 
-  <script>
     function openPage(pageName) {
       var i, mainTabContent, tabLink;
       mainTabContent = document.getElementsByClassName("main-tab-content");
@@ -530,23 +541,12 @@
       document.getElementById(pageName).style.display = "block";
       setTimeout(function() {
         document.getElementById(pageName).classList.add('active');
+        AOS.refresh();
       }, 400);
     }
     document.getElementById("defaultOpen").click();
 
-    var $isotopeContainer = $('.isotope-box').isotope({
-      itemSelector: '.isotope-item'
-    });
-    $('.isotope-toolbar').on('click', '.isotope-tab', function () {
-      var filterValue = $(this).attr('data-type');
-      $('.isotope-toolbar-btn').removeClass('active');
-      $(this).addClass('active');
-      if(filterValue !== '*') {
-        filterValue = '[data-type="' + filterValue + '"]';
-      }
-      console.log(filterValue);
-      $isotopeContainer.isotope({ filter: filterValue });
-    });
+    
   </script>
 </body>
 </html>

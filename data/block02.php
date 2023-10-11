@@ -17,15 +17,15 @@
   <div class="img-bg" style="background-image:url('public/img/bg/95.jpg'); background-position:top center;"></div>
   <div class="container" style="z-index:2;">
     <div class="text-center">
-      <h3 class="lh-2xs color-01 fw-600">
+      <h3 class="lh-2xs color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
         Unlimited Minisite
       </h3>
-      <p class="fw-400 mt-2 lg-no-br">
+      <p class="fw-400 mt-2 lg-no-br" data-aos="fade-up" data-aos-delay="150">
         สร้างเว็บไซต์ย่อย ๆ ได้อย่างไม่จำกัด เหมาะสำหรับหน่วยงานหลัก ที่มีหน่วยงานย่อย ๆ ภายใต้การกำกับดูแล <br>
         ต้องการให้เว็บของเว็บไซต์หลัก เว็บไซต์ย่อยมีรูปแบบไปในแนวทาง Design เดียวกัน
       </p>
     </div>
-    <div class="swiper-container">
+    <div class="swiper-container" data-aos="fade-up" data-aos-delay="300">
       <div class="swiper-wrapper">
         <?php for($i=0; $i<9; $i++){?>
           <div class="swiper-slide">
@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-    <div class="btns pt-6 jc-center animate-01" style="--delay:.9s;">
+    <div class="btns pt-6 jc-center animate-01" style="--delay:.9s;" data-aos="fade-up" data-aos-delay="0">
       <?php
         $btnBubble = [
           'href' => 'web-gov-standard.php',

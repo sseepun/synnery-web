@@ -72,204 +72,400 @@
       </div>
     </div>
     
-    <div class="topnav-dropdown not-polygon">
+    <div class="topnav-dropdown">
       <div class="scroll-wrapper">
-        <div class="container">
-
-          <?php /*
-            $options = [
+        <div>
+          <?php
+            $subMenu = [
               [
-                'bg' => 'public/img/content/menu-service-01.jpg',
-                'title' => 'Government Standard Website',
-                'href' => 'web-gov-standard.php',
-              ], [
-                'bg' => 'public/img/content/menu-service-02.jpg',
-                'title' => 'Unlimited Microsite for Government',
-                'href' => 'web-gov-minisite.php',
-              ], [
-                'bg' => 'public/img/content/menu-service-03.jpg',
-                'title' => 'Enterprise Wordpress Solutions',
-                'href' => 'enterprise-wordpress-solution.php',
+                'title' => 'STANDARD WEBSITE',
+                'desc' => 'FOR GOVERNMENT'
               ],[
-                'bg' => 'public/img/content/menu-service-08.jpg',
-                'title' => 'E-Office / ERP for Government',
-                'href' => 'erp-for-government.php',
-              ], 
-              [
-                'bg' => 'public/img/content/menu-service-05.jpg',
-                'title' => 'Full Services Digital Marketing',
-                'href' => 'services.php',
+                'title' => 'FULL DIGITAL SERVICE',
+                'desc' => 'FOR GOVERNMENT'
               ],[
-                'bg' => 'public/img/content/menu-service-04.jpg',
-                'title' => 'Network Architecture',
-                'href' => 'network-security-system.php',
+                'title' => 'FULL DIGITAL MARKETING',
+                'desc' => 'FOR GOVERNMENT'
               ],[
-                'bg' => 'public/img/content/menu-service-06.jpg',
-                'title' => 'AR,VR/3D Virtual Tour, Metaverse',
-                'href' => 'virtual-world.php',
+                'title' => 'E-OFFICE DEVELOPMENT',
+                'desc' => 'FOR GOVERNMENT'
               ],[
-                'bg' => 'public/img/content/menu-service-07.jpg',
-                'title' => 'Live & Virtual Exhibition',
-                'href' => 'virtual-world.php',
+                'title' => 'NETWORK & SECURITY',
+                'desc' => 'FOR GOVERNMENT'
               ],
             ]
           ?>
           <div class="dropdown-wrapper" data-dropdown="2">
-            <div class="d-grid-container <?php if(isset($dropdownActive))echo 'has-active'; ?>">
-              <div class="d-grids jc-start pos-relative" style="z-index:2;">
-                <?php foreach($options as $i=>$d){ if($i < 4){?>
-                  <div class="d-grid <?php if(isset($dropdownActive) && $dropdownActive==$i)echo 'active' ?>">
-                    <a href="<?= $d['href'] ?>" class="ss-card">
-                      <div class="ss-img">
-                        <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
-                      </div>
-                      <div class="line-5"></div><div class="line-6"></div>
+            <div class="submenu-blocks">
+              <div class="submenu-block block-left">
+                <?php foreach($subMenu as $i=>$d) {?>
+                  <div class="submenu <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
+                    <a class="title submenu-main p xs lh-sm" href="#">
+                      <?= $d['title'] ?><p class="desc p lh-sm"><?= $d['desc'] ?></p>
                     </a>
-                    <div class="text-container">
-                      <a href="<?= $d['href'] ?>">
-                        <p class="xxs lh-sm fw-400 pt-3">
-                          <?= $d['title'] ?>
-                        </p>
-                      </a>
-                    </div>
                   </div>
-                <?php }}?>
+                <?php }?>
               </div>
-              <div class="d-grids mt-2">
-                <?php foreach($options as $i=>$d){ if($i >= 4){?>
-                  <div class="d-grid <?php if(isset($dropdownActive) && $dropdownActive==$i)echo 'active' ?>">
-                    <a href="<?= $d['href'] ?>" class="ss-card">
-                      <div class="ss-img">
-                        <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
-                      </div>
-                      <div class="line-5"></div><div class="line-6"></div>
-                    </a>
-                    <div class="text-container">
-                      <a href="<?= $d['href'] ?>">
-                        <p class="xxs lh-sm fw-400 pt-3">
-                          <?= $d['title'] ?>
-                        </p>
-                      </a>
-                    </div>
+              <div class="submenu-block block-right">
+                <?php foreach($subMenu as $i=>$d) {?>
+                  <div class="menu-content <?= $i==0? 'active': '' ?> "  data-tab="tab_<?= $i ?>">
+                    <?php if($i == 0) {?>
+                      <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                      <div style="position:relative; z-index:5;">
+                          <div class="grids">
+                            <div class="grid lg-1-3">
+                              <a href="#" class="card-submenu">
+                                <div class="wrapper">
+                                  <div class="icon">
+                                    <img src="public/img/icon/topnav-menu-01.png" alt="ICON">
+                                  </div>
+                                  <div class="text">
+                                    <p class="title">
+                                      Government<br> 
+                                      Standard Website
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="grid lg-1-3">
+                              <a href="#" class="card-submenu">
+                                <div class="wrapper">
+                                  <div class="icon">
+                                    <img src="public/img/icon/topnav-menu-02.png" alt="ICON">
+                                  </div>
+                                  <div class="text">
+                                    <p class="title">
+                                      Unlimited Microsite<br>
+                                      for Government
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="grid lg-1-3">
+                              <a href="#" class="card-submenu">
+                                <div class="wrapper">
+                                  <div class="icon">
+                                    <img src="public/img/icon/topnav-menu-03.png" alt="ICON">
+                                  </div>
+                                  <div class="text">
+                                    <p class="title">
+                                    Enterprise Wordpress<br>
+                                    Solutions
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          </div>
+                      </div> 
+                    <?php }?> 
+                    <?php if($i == 1) {?>
+                      <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                      <div style="position:relative; z-index:5;">
+                        <div class="grids">
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-04.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    Full Services Digital<br>Marketing
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-02.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    AR, VR/3D Virtual Tour,<br>Metaverse
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-03.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    Live & Virtual<br>Exhibition
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div> 
+                    <?php }?> 
+                    <?php if($i == 2) {?>
+                      <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                      <div style="position:relative; z-index:5;">
+                        <div class="grids">
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-04.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    jigsaw Web Engine
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-02.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    Jigsaw Meeting Room
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-03.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                   jigsaw Vehicle
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-04.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    jigsaw HRM
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-02.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    Jigsaw Help Desk
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-03.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    E-Learning
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-04.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    E-Saraban /<br>E-Signature
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-02.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    E-Document
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-03.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    E-Budgeting
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-04.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    E-Form
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-02.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    Intranet & KM
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-03.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    PDPA
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div> 
+                    <?php }?> 
+                    <?php if($i == 3) {?>
+                      <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                      <div style="position:relative; z-index:5;">
+                        <div class="grids">
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-04.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    Full Services Digital<br>Marketing
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-02.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    AR, VR/3D Virtual Tour,<br>Metaverse
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-03.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    Live & Virtual<br>Exhibition
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div> 
+                    <?php }?>
+                    <?php if($i == 4) {?>
+                      <p class="color-p fw-500"><?= $d['title'] ?></p> 
+                      <div style="position:relative; z-index:5;">
+                        <div class="grids">
+                          <div class="grid lg-1-3">
+                            <a href="#" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="public/img/icon/topnav-menu-04.png" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    DevSecOps
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div> 
+                    <?php }?>
                   </div>
-                <?php }}?>
+                <?php }?>
               </div>
             </div>
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-          </div>
-          */
-          ?>
-          <?php
-          $options = [
-            [
-              'title' => 'Standard Website',
-              'subtitle' => 'for Goverment',
-              'url' => '#',
-              'submenu' => [
-                [
-                  'title' => 'Government Standard Website',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'Unlimited Microsite',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'Enterprise Wordpress Solutions',
-                  'img' => '',
-                  'url' => '',
-                ],
-              ],
-            ],
-            [
-              'title' => 'Full Digital Service',
-              'subtitle' => 'for Goverment',
-              'url' => '#',
-              'submenu' => [
-                [
-                  'title' => 'Full Services Digital Marketing',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'AR, VR/3D Virtual Tour, Metaverse',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'Live & Virtual Exhibition',
-                  'img' => '',
-                  'url' => '',
-                ],
-              ],
-            ],
-            // [
-            //   'title' => '',
-            //   'submenu' => [
-            //     [  
-            //       ['title' => ''],
-            //       ['img' => ''],
-            //       ['url' => ''],
-            //     ],
-            //   ],
-            // ],
-            // [
-            //   'title' => '',
-            //   'submenu' => [
-            //     [  
-            //       ['title' => ''],
-            //       ['img' => ''],
-            //       ['url' => ''],
-            //     ],
-            //   ],
-            // ],
-          ];
-          ?>
-          <div class="dropdown-wrapper" data-dropdown="2">
-            <div class="d-grid-container <?php if(isset($dropdownActive))echo 'has-active'; ?>">
-              <div class="d-grids jc-start pos-relative" style="z-index:2;">
-                <div class="d-block">
-                  <?php 
-                    foreach($options as $i=>$d) {
-                      ?>
-                        <a class="submenu-title" href="<?= $d['url'] ?>" data-menu="menu-<?= $i ?>">
-                          <div class="fw-500"><?= $d['title'] ?></div>
-                          <div class="fw-300"><?= $d['subtitle'] ?></div>
-                        </a>
-                      <?php
-                    } 
-                  ?>
-                </div>
-                <div class="d-block submenu-lv-3">
-                  <?php 
-                    foreach($options as $i=>$d) {
-                      ?>
-                        <div class="fw-500"><?= $d['title'] ?></div>
-                        <div class="d-flex">
-                          <?php
-                            foreach($d['submenu'] as $i2 => $d2) {
-                              ?>
-                                <a href="">
-                                  <?= $d2['title'] ?>
-                                </a>
-                              <?php
-                            }
-                          ?>
-                        </a>
-                      <?php
-                    } 
-                  ?>
-                </div>
-              </div>
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>
             </div>
           </div>
-          
         </div>
       </div>
-    </div>
     <div class="dropdown-filter"></div>
   </div>
 </nav>
@@ -326,7 +522,7 @@
                 </div>
                 <div class="submenu">
                   <a href="network-security-system.php">
-                    Network Architecture
+                    Network Architecture/ DevSecOps
                   </a>
                 </div>
                 <div class="submenu">
