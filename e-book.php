@@ -50,7 +50,7 @@
                         </div>
                         <div class="col-md-7 col-lg-8 d-flex align-content-center tool-item-right position-relative">
                             <p class="abs-bg-number" data-aos="fade-up" data-aos-delay="<?= $fade_time ?>"><?= sprintf("%02d", $start+$index+1) ?></p>
-                            <p class="h2 lh-xs color-01 fw-600 fst-italic position-relative mb-3" data-aos="fade-up" data-aos-delay="<?= $fade_time+200 ?>"><?= $data['title'] ?></p>
+                            <p class="h3 lh-xs color-01 fw-600 fst-italic position-relative mb-3" data-aos="fade-up" data-aos-delay="<?= $fade_time+200 ?>"><?= $data['title'] ?></p>
                             <p class="position-relative tool-content mb-3" data-aos="fade-up" data-aos-delay="<?= $fade_time+300 ?>"><?= $data['content'] ?></p>
                             <p class="position-relative" data-aos="fade-up" data-aos-delay="<?= $fade_time+400 ?>">
                                 <a class="color-01 fst-italic text-sm" href="<?= $data['link'] ?>" target="_blank">
