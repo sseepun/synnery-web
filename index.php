@@ -148,12 +148,9 @@
     </div>
     <div class="container" style="z-index:2;">
       <div class="text-center" data-aos="fade-up" data-aos-delay="0">
-        <p class="h3 color-01 fw-600">
-          Full Services
+        <p class="h2 lg lh-xs color-black fw-600">
+          Full Services <span class="color-black lh-2xs text-shadow fw-600">Digital Solutions</span>
         </p>
-        <h1 class="color-black lh-2xs text-shadow fw-600">
-          DIGITAL SOLUTIONS
-        </h1>
       </div>
       <p class="h6 color-black md-no-br fw-400 text-center" data-aos="fade-up" data-aos-delay="150">
         บริการด้านดิจิทัลแบบครบวงจร ตอบโจทย์ทุกความต้องการ
@@ -161,7 +158,7 @@
     </div>
   </section>
 
-  <div class="main-tabs-container">
+  <div data-section="3" class="main-tabs-container" id="tab-header">
     <?php
       $mainTabs = [
         [
@@ -194,7 +191,7 @@
     ?>
     <div class="tab-wrapper" data-aos="fade-up" data-aos-delay="150">
       <?php foreach($mainTabs as $j=>$d){?>
-        <div class="tab-link <?php if($j==0)echo 'active'; ?>" id="defaultOpen" onclick="openPage('<?= $d['pageId'] ?>')" data-tab="tab_<?= $j ?>">
+        <div class="tab-link <?php if($j==0)echo 'active'; ?>" id="defaultOpen" onmouseover="openPage('<?= $d['pageId'] ?>')" data-tab="tab_<?= $j ?>" data-anchor="#tab-header">
           <div class="wrapper">
             <div class="icon">
               <img src="<?= $d['iconInactive'] ?>" alt="Icon Inactive">
@@ -418,7 +415,7 @@
     </div>
   </div>
 
-  <section data-section="13" class="section-03 section-padding bg-05 pb-0">
+  <section data-section="4" class="section-03 section-padding bg-05 pb-0">
     <div class="pattern style-01">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">
@@ -544,7 +541,7 @@
         AOS.refresh();
       }, 400);
     }
-    document.getElementById("defaultOpen").click();
+    document.getElementById("defaultOpen").onmouseover();
 
     
   </script>

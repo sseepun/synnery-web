@@ -41,18 +41,23 @@
             <div class="menu <?php if(isset($topnavActive) && $topnavActive==2)echo 'active'; ?>">
               <a href="about.php">About us</a>
             </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==3)echo 'active'; ?>" data-dropdown="2">
+            <div class="menu sub-menu <?php if(isset($topnavActive) && $topnavActive==3)echo 'active'; ?>" data-dropdown="2">
               <a href="services.php">
                 Our Services <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
               </a>
             </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==4)echo 'active'; ?>">
-              <a href="clients.php">Our Clients</a>
+            <div class="menu sub-menu <?php if(isset($topnavActive) && $topnavActive==4)echo 'active'; ?>" data-dropdown="3">
+              <a href="services.php">
+                Our Works <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
+              </a>
             </div>
             <div class="menu <?php if(isset($topnavActive) && $topnavActive==5)echo 'active'; ?>">
-              <a href="career.php">Career</a>
+              <a href="clients.php">Our Clients</a>
             </div>
             <div class="menu <?php if(isset($topnavActive) && $topnavActive==6)echo 'active'; ?>">
+              <a href="career.php">Career</a>
+            </div>
+            <div class="menu <?php if(isset($topnavActive) && $topnavActive==7)echo 'active'; ?>">
               <a href="contact.php">Contact</a>
             </div>
           </div>
@@ -76,7 +81,7 @@
       <div class="scroll-wrapper">
         <div>
           <?php
-            $subMenu = [
+            $subMenuServices = [
               [
                 'title' => 'ENTERPRISE WEB DESIGN SOLUTIONS',
                 'desc' => 'FOR GOVERNMENT'
@@ -92,7 +97,12 @@
               ],[
                 'title' => 'INTRANET/SOCIAL PRIVATE NETWORK E-LEARNING + KM',
                 'desc' => ''
-              ],[
+              ]
+            ]
+          ?>
+          <?php 
+             $subMenuOurWorks = [
+              [
                 'title' => 'PROUND TO PRESENT',
                 'desc' => ''
               ],[
@@ -110,7 +120,7 @@
           <div class="dropdown-wrapper" data-dropdown="2">
             <div class="submenu-blocks menu-container">
               <div class="submenu-block block-left">
-                <?php foreach($subMenu as $i=>$d) {?>
+                <?php foreach($subMenuServices as $i=>$d) {?>
                   <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
                     <div class="wrapper">
                       <a class="title d-block submenu-main p xs lh-sm" href="#">
@@ -122,7 +132,7 @@
                 <?php }?>
               </div>
               <div class="submenu-block block-right">
-                <?php foreach($subMenu as $i=>$d) {?>
+                <?php foreach($subMenuServices as $i=>$d) {?>
                   <div class="menu-content <?= $i==0? 'active': '' ?> "  data-tab="tab_<?= $i ?>">
 
                     <!-- ENTERPRISE WEB DESIGN SOLUTIONS -->
@@ -254,9 +264,35 @@
                         </div>
                       </div> 
                     <?php }?>
+                  </div>
+                <?php }?>
+              </div>
+            </div>
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>
+            </div>
+
+            <div class="dropdown-wrapper" data-dropdown="3">
+            <div class="submenu-blocks menu-container">
+              <div class="submenu-block block-left">
+                <?php foreach($subMenuOurWorks as $i=>$d) {?>
+                  <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
+                    <div class="wrapper">
+                      <a class="title d-block submenu-main p xs lh-sm" href="#">
+                        <?= $d['title'] ?>
+                      </a>
+                      <p class="desc sm lh-sm"><?= $d['desc'] ?></p>
+                    </div>
+                  </div>
+                <?php }?>
+              </div>
+              <div class="submenu-block block-right">
+                <?php foreach($subMenuOurWorks as $i=>$d) {?>
+                  <div class="menu-content <?= $i==0? 'active': '' ?> "  data-tab="tab_<?= $i ?>">                
 
                     <!-- PROUND TO PRESENT -->
-                    <?php if($i == 5) {?>
+                    <?php if($i == 0) {?>
                       <?php include('data/menu/pround-present.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
@@ -282,7 +318,7 @@
                     <?php }?>
 
                     <!-- SHOWCASE WEB GOVERNMENT -->
-                    <?php if($i == 6) {?>
+                    <?php if($i == 1) {?>
                       <?php include('data/menu/showcase-web.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
@@ -308,7 +344,7 @@
                     <?php }?>
 
                     <!-- SHOWCASE MKT -->
-                    <?php if($i == 7) {?>
+                    <?php if($i == 2) {?>
                       <?php include('data/menu/showcase-mkt.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
@@ -334,7 +370,7 @@
                     <?php }?>
 
                     <!-- E-OFFICE -->
-                    <?php if($i == 8) {?>
+                    <?php if($i == 3) {?>
                       <?php include('data/menu/e-office.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
@@ -362,9 +398,6 @@
                 <?php }?>
               </div>
             </div>
-              <div class="line-1"></div>
-              <div class="line-2"></div>
-              <div class="line-3"></div>
             </div>
           </div>
         </div>
@@ -396,9 +429,9 @@
               <a href="about.php">About us</a>
             </div>
             <div class="menu" data-dropdown="2">
-              <a href="javascript:">Our Services</a>
+              <a href="javascript:void(0)">Our Services</a>
               <div class="submenu-container">
-                <?php foreach($subMenu as $i=>$d) {?>
+                <?php foreach($subMenuServices as $i=>$d) {?>
                   <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
                     <a class="title submenu-main p xs lh-sm" href="#">
                       <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
@@ -473,9 +506,21 @@
                         <?php } ?>
                       </div>
                     <?php }?>
-
+                  </div>
+                <?php }?>
+              </div>
+            </div>
+            <div class="menu">
+              <a href="javascript:void(0)">Our Works</a>
+              <div class="submenu-container">
+                <?php foreach($subMenuOurWorks as $i=>$d) {?>
+                  <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
+                    <a class="title submenu-main p xs lh-sm" href="#">
+                      <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
+                    </a>
+                    
                     <!-- PROUND TO PRESENT -->
-                    <?php if($i == 5) {?>
+                    <?php if($i == 0) {?>
                       <?php include('data/menu/pround-present.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($proundPresent as $d) {?>
@@ -489,7 +534,7 @@
                     <?php }?>
 
                     <!-- SHOWCASE WEB GOVERNMENT -->
-                    <?php if($i == 6) {?>
+                    <?php if($i == 1) {?>
                       <?php include('data/menu/showcase-web.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($showWeb as $d) {?>
@@ -503,7 +548,7 @@
                     <?php }?>
 
                     <!-- SHOWCASE MKT -->
-                    <?php if($i == 7) {?>
+                    <?php if($i == 2) {?>
                       <?php include('data/menu/showcase-mkt.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($showMKT as $d) {?>
@@ -517,7 +562,7 @@
                     <?php }?>
 
                     <!-- E-OFFICE -->
-                    <?php if($i == 8) {?>
+                    <?php if($i == 3) {?>
                       <?php include('data/menu/e-office.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($eOffice as $d) {?>
@@ -532,9 +577,6 @@
                   </div>
                 <?php }?>
               </div>
-            </div>
-            <div class="menu">
-              <a href="career.php">Our Works</a>
             </div>
             <div class="menu">
               <a href="clients.php">Our Clients</a>

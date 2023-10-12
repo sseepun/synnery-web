@@ -4,7 +4,7 @@
       <img src="public/img/content/pattern-14.png" alt="Hero" />
     </div>
   </div> -->
-  <div class="pattern style-12">
+  <!-- <div class="pattern style-12">
     <div class="wrapper" value="-.5">
       <img src="public/img/content/pattern-15.png" alt="Hero" />
     </div>
@@ -13,7 +13,7 @@
     <div class="wrapper" value="-.5">
       <img src="public/img/content/pattern-16.png" alt="Hero" />
     </div>
-  </div>
+  </div> -->
   <div class="img-bg" style="background-image:url('public/img/bg/63.jpg'); background-position:top center;"></div>  
   <div class="container">
     <div class="grids" data-aos="fade-up" data-aos-delay="0">

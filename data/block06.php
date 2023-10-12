@@ -6,7 +6,7 @@
   ];
 ?>
 <section class="section-01 section-padding pt-0">
-  <div class="pattern style-01">
+  <!-- <div class="pattern style-01">
     <div class="wrapper" value=".5">
       <img src="public/img/content/pattern-02.png" alt="Hero" />
     </div>
@@ -35,7 +35,7 @@
     <div class="wrapper" value="-.5">
       <img src="public/img/content/pattern-06.png" alt="Hero" />
     </div>
-  </div>
+  </div> -->
   <div class="container">
     <div class="hex-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
       <?php for($i=0; $i<10; $i++){?>
