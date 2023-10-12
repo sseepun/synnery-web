@@ -4,10 +4,10 @@
       <div class="block">
         <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
         <div class="text-container">
-          <h3 class="lh-2xs color-01 fw-700">
+          <h3 class="lh-2xs color-01 fw-700" data-aos="fade-up" data-aos-delay="0">
             ChatGPT E-Office
           </h3>
-          <p class="sm-no-br fw-300 mt-2">
+          <p class="sm-no-br fw-300 mt-2" data-aos="fade-up" data-aos-delay="150">
             <span class="color-p fw-500">
               ChatGPT (Chat Generative Pre-Trained Transformer) E-Offic
             </span> 
@@ -15,7 +15,7 @@
             โดยสามารถเลือกส่วนเฉพาะที่ต้องการแสดงของ Internal 
             หรือบางส่วนที่แสดงสำหรับ External ได้ 
           </p>
-          <div class="btns pt-4">
+          <div class="btns pt-4" data-aos="fade-up" data-aos-delay="300">
             <?php
               $btnBubble = [
                 'href' => 'web-gov-standard.php',

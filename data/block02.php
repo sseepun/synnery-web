@@ -1,4 +1,4 @@
-<section class="section-10 section-padding">
+<section class="section-10 section-padding pt-0">
   <div class="pattern style-04">
     <div class="wrapper" value=".5">
       <img src="public/img/patterns/05.png" alt="Hero">
