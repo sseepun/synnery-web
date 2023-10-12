@@ -193,6 +193,7 @@ $(function () {
     // Topnav
     var topnav = $('nav.topnav'),
         topnavMenu = topnav.find('.menu-container > .menu'),
+        topnavSubMenu = topnav.find('.menu-container > .menu.sub-menu'),
         topnavDropdown = topnav.find('.topnav-dropdown'),
         topnavDropdownDivs = topnavDropdown.find('.dropdown-wrapper');
     var sidenav = $('nav.sidenav'),
@@ -231,6 +232,15 @@ $(function () {
                     }
                 }
             }
+            topnavSubMenu.click(function(e){
+                e.preventDefault()
+                if (topnavDropdown.hasClass('active')) {
+                    topnavDropdown.removeClass('active');
+                    setTimeout(function(){
+                        topnavDropdown.addClass('active');
+                    }, 1100);
+                }
+            });
         });
         topnav.find('.dropdown-filter').click(function (e) {
             e.preventDefault();
@@ -459,7 +469,7 @@ $(function () {
         tabContainers.each(function(){
             var self = $(this),
                 tabs = self.find('.tab-link');
-            tabs.click(function(e){
+            tabs.mouseover(function(e){
                 var target = tabs.filter('[data-tab="'+$(this).data('tab')+'"]');
                 if(target.length){
                     e.preventDefault();
@@ -467,6 +477,21 @@ $(function () {
                     $(this).addClass('active');
                     AOS.refresh();
                 }
+            });
+          
+
+            tabs.click(function(e){
+                calculateSectionAnchors();
+                let anchor = $(this).data('anchor');
+                    if (anchor) {
+                        let anchorTarget = $(anchor);
+                        if (anchorTarget) {
+                            let offset = anchorTarget.offset();
+                            $('html, body').stop().animate({
+                                scrollTop: offset.top - bodySize * 4.5
+                            }, 700, 'easeInOutCubic');
+                        }
+                    }
             });
         });
     }
@@ -509,7 +534,7 @@ $(function () {
                 tabs = self.find('.submenu'),
                 tabContents = self.find('.menu-content');
               
-            tabs.click(function(e){
+            tabs.mouseover(function(e){
                 var target = tabs.filter('[data-tab="'+$(this).data('tab')+'"]');
                 var tabContentFilter = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]'),
                     oldTargets = tabContents.filter('.active');
