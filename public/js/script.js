@@ -508,9 +508,11 @@ $(function () {
             var self = $(this),
                 tabs = self.find('.submenu'),
                 tabContents = self.find('.menu-content');
+              
             tabs.click(function(e){
                 var target = tabs.filter('[data-tab="'+$(this).data('tab')+'"]');
-                var tabContentFilter = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]');
+                var tabContentFilter = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]'),
+                    oldTargets = tabContents.filter('.active');
                 if($(this).hasClass('active')) e.preventDefault();
                 if(target.length && !$(this).hasClass('active')){
                     e.preventDefault();
@@ -518,8 +520,46 @@ $(function () {
                     tabContents.removeClass('active');
                     $(this).addClass('active');
 
-                    target.addClass('active');
-                    tabContentFilter.addClass('active');
+                    tabContents.removeClass('fade-in');
+                    oldTargets.addClass('fade-out');
+                    tabContentFilter.addClass('fade-in');
+                    // target.addClass('fade-in');
+                    // target.addClass('active');
+                  
+                    setTimeout(function(){
+                        tabContents.removeClass('fade-in fade-out active');
+                        tabContentFilter.addClass('active');
+                        AOS.refresh();
+                    }, 600);
+                }
+            });
+        });
+    }
+
+    // Sub Tab container 
+    var tabContainers = $('.sub-tab-container');
+    if(tabContainers.length){
+        tabContainers.each(function(){
+            var self = $(this),
+                tabs = self.find('.tabs .tab'),
+                tabContents = self.find('.tab-contents > .tab-content');
+            tabs.click(function(e){
+                var target = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]'),
+                    oldTargets = tabContents.filter('.active');
+                if($(this).hasClass('active')) e.preventDefault();
+                if(target.length && !$(this).hasClass('active')){
+                    e.preventDefault();
+                    tabs.removeClass('active');
+                    $(this).addClass('active');
+
+                    tabContents.removeClass('fade-in');
+                    oldTargets.addClass('fade-out');
+                    target.addClass('fade-in');
+                    setTimeout(function(){
+                        tabContents.removeClass('fade-in fade-out active');
+                        target.addClass('active');
+                        AOS.refresh();
+                    }, 600);
                 }
             });
         });
