@@ -1,0 +1,89 @@
+html, body {
+    font-family: 'Noto Sans Thai', sans-serif !important;
+}
+.bg-sec {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.max-width-960 {
+    position: relative;
+    max-width: 960px;
+    margin: auto;
+}
+.max-width-960 div[class*="col"] {
+    padding-bottom: 2rem;
+}
+.align-content-center {
+    flex-wrap: wrap;
+    align-content: center;
+}
+.tool-even .tool-item-left {
+    order: 2;
+}
+.tool-even .tool-item-right {
+    order: 1;
+}
+.abs-bg-number {
+    position: absolute;
+    color: #f0f0f0;
+    font-size: 14rem;
+    font-weight: 900;
+    line-height: 17rem;
+    right: 2vw;
+}
+.tool-even .tool-item-right .abs-bg-number {
+    left: 2vw;
+}
+.tool-even .tool-item-left .abs-bg-number {
+    right: 2vw;
+}
+.img-box-radius {
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    border: 4px solid #fff;
+    overflow: hidden;
+}
+.img-box-radius img {
+    max-width: 100%;
+}
+
+.paginations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+} 
+.paginations .item {
+    display: inline-flex;
+    min-width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+    background: transparent;
+    text-align: center;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.paginations .item.active {
+    color: #fff;
+    background: #999999;
+}
+.paginations .item.item-prev,
+.paginations .item.item-next {
+    color: #fff;
+    background: #ff2c2c;
+    margin: 0 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .tool-even .tool-item-right:not(.tool-item-right .abs-bg-number) {
+        justify-content: flex-end;
+        text-align: right;
+    }
+    .tool-even .tool-item-right .abs-bg-number {
+        text-align: left;
+    }
+}
