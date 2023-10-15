@@ -496,6 +496,18 @@ $(function () {
         });
     }
 
+
+    // Parallax Pattern
+    $("body").on("mousemove", function(event){
+        $(".pattern .wrapper").each(function () {
+          var position = $(this).attr("value");
+          var x = (window.innerWidth - event.pageX * position) / 90;
+          var y = (window.innerHeight - event.pageY * position) / 90;
+          $(this).css("transform", "translateX(" + x + "px) translateY(" + y + "px)");
+        });
+    });
+
+
     // Sub Tab container 
     var tabContainers = $('.sub-tab-container');
     if(tabContainers.length){
