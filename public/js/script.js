@@ -422,13 +422,17 @@ $(function () {
         tabContainers.each(function () {
             var self = $(this),
                 tabs = self.find('.tabs .tab'),
-                tabContents = self.find('.tab-contents > .tab-content');
+                tabContents = self.find('.tab-contents > .tab-content'),
+                subMenus = self.find('.tabs .submenu-dropdown .menu'),
+                subContents = self.find('.sub-contents > .sub-content');
             tabs.click(function (e) {
                 var target = tabContents.filter('[data-tab="' + $(this).data('tab') + '"]'),
                     oldTargets = tabContents.filter('.active'),
                     swiperContainers = target.find('.swiper-container');
                 if(target.length) {
                     e.preventDefault();
+                    subMenus.removeClass('active');
+                    subContents.removeClass('active');
                     tabs.removeClass('active');
                     $(this).addClass('active');
 
@@ -458,6 +462,26 @@ $(function () {
                             }, 700, 'easeInOutCubic');
                         }
                     }
+                }
+            });
+            subMenus.click(function (e) {
+                var subTarget = subContents.filter('[data-tab="' + $(this).data('tab') + '"]'),
+                suboldTargets = subContents.filter('.active');
+                if(subTarget.length) {
+                    e.preventDefault();
+                    tabs.removeClass('active');
+                    tabContents.removeClass('active');
+                    subMenus.removeClass('active');
+                    $(this).addClass('active');
+
+                    subContents.removeClass('fade-in');
+                    suboldTargets.addClass('fade-out');
+                    subTarget.addClass('fade-in');
+                    setTimeout(function(){
+                        subContents.removeClass('fade-in fade-out active');
+                        subTarget.addClass('active');
+                        AOS.refresh();
+                    }, 600);
                 }
             });
         });

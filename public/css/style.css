@@ -470,8 +470,15 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card .card-icon .icon{
     display:flex; align-items:center; justify-content:center; width:4.5rem; height:4.5rem;
 }
+.ss-card .card-icon .icon.xs{width:2rem; height:2rem;}
 .ss-card .card-icon .icon > img{
     display:block; width:auto; max-width:100%; height:auto; max-height:100%;
+}
+@media screen and (max-width:767.98px){
+    .ss-card .card-icon .icon.xs{width:3rem; height:3rem;}
+}
+@media screen and (max-width:575.98px){
+    .ss-card .card-icon .icon.xs{width:4.5rem; height:4.5rem;}
 }
 
 .ss-card .line-1, .ss-card .line-2, .ss-card .line-3{pointer-events:none;}

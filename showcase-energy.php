@@ -94,13 +94,15 @@
     </div>
     <div class="img-bg" style="background-image:url('public/img/bg/09.jpg');"></div>
     <div class="container" style="z-index:3">
-      <h4 class="lg text-center color-p fw-700">COMPARE</h4>
-      <div class="line-container">
+      <h4 class="lg text-center color-p fw-700" data-aos="fade-up" data-aos-delay="0">
+        COMPARE
+      </h4>
+      <div class="line-container" data-aos="fade-up" data-aos-delay="150">
         <div class="line-wrapper">
           <img src="public/img/patterns/line.png" alt="Line">
         </div>
       </div>
-      <div class="grids">
+      <div class="grids" data-aos="fade-up" data-aos-delay="300">
         <div class="grid lg-50">
           <p class="lg text-center fw-600">Before</p>
           <a href="#" class="ss-card ss-card-39">
@@ -121,7 +123,7 @@
     </div>
   </section>
 
-  <section class="section-14">
+  <section class="section-14 d-grid-unset">
     <div class="container">
       <div class="grids">
         <div class="grid lg-50 md-50 sm-100 mt-0">
@@ -179,7 +181,6 @@
                 </span>
               </div>
             </div>
-        
           </div>
         </div>
       </div>
@@ -188,6 +189,25 @@
 
   <section data-aos="fade-in" data-aos-delay="0">
     <img class="img" src="public/img/bg/94.jpg" alt="Banner">
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <h4 class="lg text-center color-p fw-700" data-aos="fade-up" data-aos-delay="0">DESIGN SYSTEM</h4>
+      <img class="img mt-4" src="public/img/showcase/energy/01.png" alt="Banner" data-aos="fade-up" data-aos-delay="150">
+    </div>
+  </section>
+
+  <section data-aos="fade-in" data-aos-delay="0">
+    <img class="img" src="public/img/bg/98.jpg" alt="Banner">
+  </section>
+
+  <section class="section-padding">
+    <div class="container">
+      <h4 class="fw-700 color-p text-center" data-aos="fade-up" data-aos-delay="0">
+        DESIGN
+      </h4> 
+    </div>
   </section>
 
   <?php include_once('include/footer.php'); ?>

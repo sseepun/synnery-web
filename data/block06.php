@@ -6,36 +6,16 @@
   ];
 ?>
 <section class="section-01 section-padding pt-0">
-  <!-- <div class="pattern style-01">
+  <div class="pattern style-50">
     <div class="wrapper" value=".5">
-      <img src="public/img/content/pattern-02.png" alt="Hero" />
+      <img src="public/img/patterns/07.png" alt="Hero">
     </div>
   </div>
-  <div class="pattern style-02">
-    <div class="wrapper" value=".5">
-      <img src="public/img/content/pattern-02.png" alt="Hero" />
-    </div>
-  </div>
-  <div class="pattern style-03">
+  <div class="pattern style-51">
     <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-03.png" alt="Hero" />
+      <img src="public/img/patterns/08.png" alt="Hero">
     </div>
   </div>
-  <div class="pattern style-04">
-    <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-04.png" alt="Hero" />
-    </div>
-  </div>
-  <div class="pattern style-05">
-    <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-05.png" alt="Hero" />
-    </div>
-  </div>
-  <div class="pattern style-06">
-    <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-06.png" alt="Hero" />
-    </div>
-  </div> -->
   <div class="container">
     <div class="hex-container pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
       <?php for($i=0; $i<10; $i++){?>

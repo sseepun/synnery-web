@@ -5,6 +5,13 @@
   ]
 ?>
 <section class="section-01 section-padding pt-0">
+  <div class="pattern style-49">
+    <div class="wrapper" value="-.5">
+      <img src="public/img/patterns/09.png" alt="Hero">
+    </div>
+  </div>
+  <div class="img-bg" style="background-image:url('public/img/bg/96.jpg');"></div>
+  <div class="container">
   <div class="container" style="z-index:2;">
     <div class="ss-box xl">
       <div class="grids jc-center">
