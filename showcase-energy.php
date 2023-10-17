@@ -191,12 +191,67 @@
     <img class="img" src="public/img/bg/94.jpg" alt="Banner">
   </section>
 
-  <section class="section-padding">
+  <section class="section-padding section-15">
     <div class="container">
       <h4 class="lg text-center color-p fw-700" data-aos="fade-up" data-aos-delay="0">DESIGN SYSTEM</h4>
-      <img class="img mt-4" src="public/img/showcase/energy/01.png" alt="Banner" data-aos="fade-up" data-aos-delay="150">
+      <div class="box-content">
+        <div class="grids">
+          <div class="grid lg-50 mt-0">
+            <p class="xxs color-03 fw-400">Typeface</p>
+            <h4 class="lg lh-2xs fw-500 mt-1">Sukhumvit</h4>
+            <p class="xxxs fw-600">
+              <span>Regular /</span>
+              <span>Medium /</span>
+              <span>Bold</span>
+            </p>
+            <div class="color-container">
+              <p class="xxs color-03 fw-400">Color Scheme</p>
+              <div class="items">
+                <div class="item">
+                  <div class="color-box p"></div>
+                  <p class="xxxs text fw-400">#FE4D01</p>
+                </div>
+                <div class="item">
+                  <div class="color-box s"></div>
+                  <p class="xxxs text fw-400">#303030</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="ss-card ss-card-42">
+                <div class="ss-img horizontal-04">
+                  <div class="img-bg" style="background-image:url('public/img/showcase/energy/screen-01.jpg');"></div>
+                </div>
+              </div>
+              <div class="ss-card ss-card-42 mt-3">
+                <div class="ss-img horizontal-06">
+                  <div class="img-bg" style="background-image:url('public/img/showcase/energy/screen-02.jpg');"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- <section class="section-padding section-16 bg-10">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/11.png" alt="Hero">
+      </div>
+    </div>
+    <div class="container">
+      <h4 class="fw-700 color-p text-center" data-aos="fade-up" data-aos-delay="0">
+        SITEMAP
+      </h4> 
+      <div class="grids">
+        <div class="grid lg-50">
+
+        </div>
+      </div>
+    </div>
+  </section> -->
 
   <section data-aos="fade-in" data-aos-delay="0">
     <img class="img" src="public/img/bg/98.jpg" alt="Banner">
