@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="block-float right d-flex ai-end">
-        <div class="grids no-gap">
+        <div class="grids no-gap" data-aos="fade-up" data-aos-delay="450">
           <?php
             $clients = [
               [
@@ -96,7 +96,7 @@
       </div>
     </div>
   </div>
-  <div class="grids no-gap">
+  <div class="grids no-gap" data-aos="fade-up" data-aos-delay="450">
     <?php
       $clients = [
         [

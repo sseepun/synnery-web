@@ -68,32 +68,3 @@
     </div>
   </div>
 </section>
-
-<section class="section-01 section-padding">   
-  <div class="container">
-    <div class="text-center color-white pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
-      <h5 class="color-black fw-300 lh-xs">
-        วาง <span class="h3 color-01 fw-600 lh-xs">Action Plan</span> และ 
-        <span class="h3 color-01 fw-600 lh-xs">งบประมาณ</span>
-      </h5>  
-      <h5 class="color-black fw-300 lh-xs">
-        รวมถึง <span class="h3 color-01 fw-600 lh-xs">Financial Plan</span> และ 
-        <span class="h3 color-01 fw-600 lh-xs">Scenario Case</span> ต่างๆ
-      </h5>
-    </div>
-    <div class="grids jc-center pt-3 pos-relative" style="z-index:2;">
-      <div class="grid xl-80 sm-100" data-aos="fade-up" data-aos-delay="150">
-        <img class="img" src="public/img/content/01.png" alt="Image" />
-      </div>
-    </div>
-    <div class="btns pt-6 mt-2 jc-center animate-01" style="--delay:.9s;" data-aos="fade-up" data-aos-delay="300">
-      <?php
-        $btnBubble = [
-          'href' => 'web-gov-standard.php',
-          'title' => 'Explore More',
-        ];
-        include('component/btn-bubble.php');
-      ?>
-    </div>
-  </div> 
-</section>

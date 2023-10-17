@@ -1,17 +1,12 @@
 <section class="section-01 section-padding pt-0">
-  <div class="pattern style-11">
+  <div class="pattern style-53">
     <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-14.png" alt="Hero" />
+      <img src="public/img/patterns/08.png" alt="Pattern">
     </div>
   </div>
-  <div class="pattern style-12">
+  <div class="pattern style-54">
     <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-15.png" alt="Hero" />
-    </div>
-  </div>
-  <div class="pattern style-13">
-    <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-16.png" alt="Hero" />
+      <img src="public/img/patterns/10.png" alt="Pattern">
     </div>
   </div>
   <div class="img-bg" style="background-image:url('public/img/bg/63.jpg'); background-position:top center;"></div>  
