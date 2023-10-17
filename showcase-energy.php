@@ -193,19 +193,39 @@
 
   <section class="section-padding section-15">
     <div class="container">
-      <h4 class="lg text-center color-p fw-700" data-aos="fade-up" data-aos-delay="0">DESIGN SYSTEM</h4>
-      <div class="box-content">
-        <div class="grids">
-          <div class="grid lg-50 mt-0">
-            <p class="xxs color-03 fw-400">Typeface</p>
+      <h4 class="lg text-center color-p fw-700" data-aos="fade-up" data-aos-delay="0">
+        DESIGN SYSTEM
+      </h4>
+      <div class="box-content mt-4">
+        <div class="grids" data-aos="fade-up" data-aos-delay="150">
+          <div class="grid lg-50 sm-100 mt-0">
+            <p class="xs color-03 fw-400">Typeface</p>
             <h4 class="lg lh-2xs fw-500 mt-1">Sukhumvit</h4>
             <p class="xxxs fw-600">
               <span>Regular /</span>
               <span>Medium /</span>
               <span>Bold</span>
             </p>
+          </div>
+          <div class="grid lg-50 sm-100 mt-0 md-mt-6">
+            <p class="xs color-03 fw-400">Characters</p>
+            <p class="sm lh-xs fw-400 mt-2">
+              ก ข ฃ ค ฅ ฆ ง จ ฉ ช ซ ฌ ญ ฎ ฏ ฐ ฑ ฒ ณ ด ต ถ ท ธ<br> 
+              น บ ป ผ ฝ พ ฟ ภ ม ย ร ล ว ศ ษ ส ห ฬ อ ฮ
+            </p>
+            <p class="xxs lh-xs fw-400 mt-3">
+              A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>
+              a b c d e f g h i j k l m n o p q r s t u v w x y z
+            </p>
+            <p class="xxs lh-xs fw-400 mt-3">
+              1 2 3 4 5 6 7 8 9 0 !@#$%^^&*()_+
+            </p>
+          </div>
+        </div>
+        <div class="grids mt-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="grid lg-50 sm-100">
             <div class="color-container">
-              <p class="xxs color-03 fw-400">Color Scheme</p>
+              <p class="xs color-03 fw-400">Color Scheme</p>
               <div class="items">
                 <div class="item">
                   <div class="color-box p"></div>
@@ -217,51 +237,146 @@
                 </div>
               </div>
             </div>
-            <div class="card-container">
-              <div class="ss-card ss-card-42">
-                <div class="ss-img horizontal-04">
-                  <div class="img-bg" style="background-image:url('public/img/showcase/energy/screen-01.jpg');"></div>
+          </div>
+          <div class="grid lg-50 sm-100 md-mt-6">
+            <div class="grid-system-container">
+              <p class="xs color-03 fw-400">Grid System</p>
+              <div class="grids">
+                <div class="grid lg-50">
+                  <div class="ss-card ss-card-43">
+                    <div class="ss-img horizontal-04 clip-path-01">
+                      <div class="img-bg" style="background-image:url('public/img/showcase/energy/grid-system.png');"></div>
+                    </div>
+                    <div class="text-container">
+                      <div class="wrapper">
+                        <p class="xs title fw-400">แผนปฏิบัติราชการและผลสัมฤทธิ์</p>
+                        <div class="icon">
+                          <img src="public/img/showcase/energy/arrow.png" alt="Arrow">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-center fw-400 mt-1">Normal</p>
                 </div>
-              </div>
-              <div class="ss-card ss-card-42 mt-3">
-                <div class="ss-img horizontal-06">
-                  <div class="img-bg" style="background-image:url('public/img/showcase/energy/screen-02.jpg');"></div>
+                <div class="grid lg-50">
+                  <div class="ss-card ss-card-43">
+                    <div class="ss-img horizontal-04 clip-path-01">
+                      <div class="img-bg" style="background-image:url('public/img/showcase/energy/grid-system.png');"></div>
+                    </div>
+                    <div class="text-container">
+                      <div class="wrapper">
+                        <p class="xs title fw-400">แผนปฏิบัติราชการและผลสัมฤทธิ์</p>
+                        <div class="icon">
+                          <img src="public/img/showcase/energy/arrow.png" alt="Arrow">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hover-container clip-path-01">
+                      <div class="icon">
+                        <img src="public/img/showcase/energy/plus.png" alt="Plus">
+                      </div>
+                    </div>
+                  </div>
+                  <p class="text-center fw-400 mt-1">Hover</p>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div class="grids mt-6" data-aos="fade-up" data-aos-delay="450">
+          <div class="grid lg-50 md-50 sm-100">
+            <div class="grids">
+              <div class="grid lg-100 sm-100 mt-0">
+                <div class="ss-card ss-card-42">
+                  <div class="ss-img horizontal-04">
+                    <div class="img-bg" style="background-image:url('public/img/showcase/energy/screen-01.jpg');"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="grid lg-100 sm-100">
+                <div class="ss-card ss-card-42">
+                  <div class="ss-img horizontal-06">
+                    <div class="img-bg" style="background-image:url('public/img/showcase/energy/screen-02.jpg');"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid lg-50 md-50 sm-100">
+            <p class="xs color-03 fw-400">Concept Design</p>
+            <p class="fw-500 mt-3">ด้านการเลือกใช้โทนสี</p>
+            <p class="xs">
+              สีหลักในการออกแบบคือสีส้ม ตามโลโก้ของกระทรวงพลังงาน แล้วตัดด้วยสีเข้มอย่างสีเทา  
+              เพื่อให้สีส้มโดดเด่นขึ้น และทำให้หน้าเว็บไซต์ดูเข้มแข็ง ทรงพลังมากขึ้น
+            </p>
+            <p class="fw-500 mt-3">ด้านการเลือกใช้ภาพ</p>
+            <p class="xs">
+              เลือกใช้ภาพที่สื่อถึงพลังงานในรูปแบบต่าง ๆ เพื่อให้สื่อถึงภาพ
+              ลักษณ์และแนวทางตามพันธกิจวิสัยทัศน์ของกระทรวง
+            </p>
+            <p class="fw-500 mt-3">ด้านรูปแบบการแสดงผล</p>
+            <p class="xs">
+              ลักษณะหน้าสั้น ไม่มี Scroll (Single Page) เน้นรูปภาพและ
+              สัญลักษณ์เป็นหลัก แทนการให้หน้าเว็บไซต์มีข้อความแสดงมากเกินไป
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- <section class="section-padding section-16 bg-10">
-    <div class="pattern style-01">
-      <div class="wrapper" value=".5">
-        <img src="public/img/patterns/11.png" alt="Hero">
-      </div>
-    </div>
-    <div class="container">
-      <h4 class="fw-700 color-p text-center" data-aos="fade-up" data-aos-delay="0">
-        SITEMAP
-      </h4> 
-      <div class="grids">
-        <div class="grid lg-50">
-
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <section data-aos="fade-in" data-aos-delay="0">
     <img class="img" src="public/img/bg/98.jpg" alt="Banner">
   </section>
 
-  <section class="section-padding">
+  <section class="section-padding section-16">
     <div class="container">
       <h4 class="fw-700 color-p text-center" data-aos="fade-up" data-aos-delay="0">
         DESIGN
       </h4> 
+      <div class="box-content mt-2">
+        <div class="pos-relative">
+          <h6 class="text-center fw-400">เว็บไซต์กระทรวงพลังงาน</h6>
+          <div class="grids">
+            <div class="grid lg-50">
+              <div class="grids">
+                <div class="grid lg-100">
+                  <div class="ss-card ss-card-42">
+                    <div class="ss-img horizontal-04">
+                      <div class="img-bg" style="background-image:url('public/img/showcase/energy/screen-01.jpg');"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg-100">
+                  <div class="ss-card ss-card-42">
+                    <div class="ss-img horizontal-04">
+                      <div class="img-bg" style="background-image:url('public/img/showcase/energy/screen-01.jpg');"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid lg-50">
+              <div class="grids">
+                <div class="grid lg-100">
+                  <div class="ss-card ss-card-42">
+                    <div class="ss-img horizontal-07">
+                      <div class="img-bg" style="background-image:url('public/img/showcase/energy/screen-02.jpg');"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg-100">
+                  <div class="ss-card ss-card-42">
+                    <div class="ss-img horizontal-08">
+                      <div class="img-bg" style="background-image:url('public/img/showcase/energy/screen-01.jpg');"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

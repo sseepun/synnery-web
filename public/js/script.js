@@ -546,7 +546,9 @@ $(function () {
                             $(this)[0].style.display = 'none';
                         });
                         _target[0].style.display = 'block';
+                        _target.addClass('fade-in');
                         setTimeout(function(){
+                            _subContents.removeClass('fade-in fade-out active');
                             _target.addClass('active');
                             AOS.refresh();
                         }, 400);
