@@ -20,8 +20,8 @@ $(function () {
             },
             settings_modal: {
                 layout: 'bar', // box/bar
-                // position: 'left',           // left/right
-                transition: 'slide'            // zoom/slide
+                // position: 'left', // left/right
+                transition: 'slide', // zoom/slide
             }
 
         },
@@ -181,13 +181,12 @@ $(function () {
         revapi.revredraw(); // ใช้คำสั่ง revredraw เพื่อปรับ Slider ให้ตรงกับขนาดหน้าจอใหม่
         $('.rev_slider').css({ 'height': slideHeight+'px !important;' }); // ตั้งค่าความสูงของ Slider
         // revapi.parent().css({ 'height': slideHeight }); // ตั้งค่าความสูงของ Slider
-      }
+    }
+    rszSlider(); // เรียกใช้ฟังก์ชัน rszSlider ครั้งแรกเมื่อโหลดเว็บไซต์
     
-      rszSlider(); // เรียกใช้ฟังก์ชัน rszSlider ครั้งแรกเมื่อโหลดเว็บไซต์
-    
-      $(window).on('resize', function(){
+    $(window).on('resize', function(){
         rszSlider(); // เรียกใช้ฟังก์ชัน rszSlider เมื่อขนาดหน้าจอเปลี่ยนแปลง
-      });
+    });
 
 
     // Topnav
@@ -198,7 +197,7 @@ $(function () {
         topnavDropdownDivs = topnavDropdown.find('.dropdown-wrapper');
     var sidenav = $('nav.sidenav'),
         sidenavMenus = sidenav.find('.menu-container');
-    if (topnav.length) {
+    if(topnav.length){
         topnavMenu.find('> *:first-child').click(function (e) {
             let parent = $(this).parent(),
                 dIndex = parent.data('dropdown');
@@ -417,9 +416,9 @@ $(function () {
 
 
     // Tab Container 01
-    var tabContainers = $('.tab-container');
-    if (tabContainers.length) {
-        tabContainers.each(function () {
+    var tabContainers01 = $('.tab-container');
+    if(tabContainers01.length) {
+        tabContainers01.each(function () {
             var self = $(this),
                 tabs = self.find('.tabs .tab'),
                 tabContents = self.find('.tab-contents > .tab-content'),
@@ -488,35 +487,72 @@ $(function () {
     }
 
     // Main Tab Container 
-    var tabContainers = $('.main-tabs-container');
-    if(tabContainers.length){
-        tabContainers.each(function(){
-            var self = $(this),
-                tabs = self.find('.tab-link');
-            tabs.mouseover(function(e){
-                var target = tabs.filter('[data-tab="'+$(this).data('tab')+'"]');
+    var mainTabTimer;
+    var mainTabContainers = $('.main-tabs-container');
+    if(mainTabContainers.length){
+        let _tabLinks = mainTabContainers.find('.tab-wrapper .tab-link');
+        let _tabContents = mainTabContainers.find('.main-tab-content');
+
+        _tabLinks.mouseenter(function(e){
+            let self = $(this);
+            if(!self.hasClass('active')){
+                let lastIndex = _tabLinks.filter('.active').index();
+                let nowIndex = self.index();
+                if(nowIndex > lastIndex){
+                    mainTabContainers.removeClass('from-left');
+                    mainTabContainers.addClass('from-right');
+                }else{
+                    mainTabContainers.removeClass('from-right');
+                    mainTabContainers.addClass('from-left');
+                }
+
+                let dataTab = self.data('maintab');
+                _tabLinks.removeClass('active');
+                self.addClass('active');
+
+                let target = _tabContents.filter('[data-maintab="'+dataTab+'"]');
                 if(target.length){
-                    e.preventDefault();
-                    tabs.removeClass('active');
-                    $(this).addClass('active');
+                    if(mainTabTimer){
+                        clearTimeout(mainTabTimer);
+                        _tabContents.removeClass('previous');
+                    }
+                    mainTabTimer = setTimeout(function(){
+                        _tabContents.removeClass('previous');
+                    }, 600);
+                    _tabContents.filter('.active').addClass('previous');
+
+                    _tabContents.removeClass('active');
+                    target.removeClass('previous');
+                    target.addClass('active');
                     AOS.refresh();
                 }
-            });
-          
+            }
+        });
 
-            tabs.click(function(e){
-                calculateSectionAnchors();
-                let anchor = $(this).data('anchor');
-                    if (anchor) {
-                        let anchorTarget = $(anchor);
-                        if (anchorTarget) {
-                            let offset = anchorTarget.offset();
-                            $('html, body').stop().animate({
-                                scrollTop: offset.top - bodySize * 4.5
-                            }, 700, 'easeInOutCubic');
-                        }
+        _tabContents.each(function(){
+            let self = $(this);
+            let _subTabs = self.find('> .sub-tab-container > .tabs > .tab');
+            let _subContents = self.find('> .sub-tab-container > .tab-contents > .tab-content');
+            _subTabs.click(function(){
+                let _s = $(this);
+                let _d = _s.data('tab');
+                if(!_s.hasClass('active')){
+                    _subTabs.removeClass('active');
+                    _s.addClass('active');
+                    let _target = _subContents.filter('[data-tab="'+_d+'"]');
+                    if(_target.length){
+                        _subContents.removeClass('active');
+                        _subContents.each(function(){
+                            $(this)[0].style.display = 'none';
+                        });
+                        _target[0].style.display = 'block';
+                        setTimeout(function(){
+                            _target.addClass('active');
+                            AOS.refresh();
+                        }, 400);
                     }
-            });
+                }
+            })
         });
     }
 
@@ -533,9 +569,9 @@ $(function () {
 
 
     // Sub Tab container 
-    var tabContainers = $('.sub-tab-container');
-    if(tabContainers.length){
-        tabContainers.each(function(){
+    var subTabContainers = $('.sub-tab-container');
+    if(subTabContainers.length){
+        subTabContainers.each(function(){
             var self = $(this),
                 tabs = self.find('.tabs .tab'),
                 tabContents = self.find('.tab-contents > .tab-content');
@@ -563,9 +599,9 @@ $(function () {
 
 
     // Menu Tab container 
-    var tabContainers = $('.submenu-blocks');
-    if(tabContainers.length){
-        tabContainers.each(function(){
+    var menuTabContainers = $('.submenu-blocks');
+    if(menuTabContainers.length){
+        menuTabContainers.each(function(){
             var self = $(this),
                 tabs = self.find('.submenu'),
                 tabContents = self.find('.menu-content');
@@ -590,35 +626,6 @@ $(function () {
                     setTimeout(function(){
                         tabContents.removeClass('fade-in fade-out active');
                         tabContentFilter.addClass('active');
-                        AOS.refresh();
-                    }, 600);
-                }
-            });
-        });
-    }
-
-    // Sub Tab container 
-    var tabContainers = $('.sub-tab-container');
-    if(tabContainers.length){
-        tabContainers.each(function(){
-            var self = $(this),
-                tabs = self.find('.tabs .tab'),
-                tabContents = self.find('.tab-contents > .tab-content');
-            tabs.click(function(e){
-                var target = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]'),
-                    oldTargets = tabContents.filter('.active');
-                if($(this).hasClass('active')) e.preventDefault();
-                if(target.length && !$(this).hasClass('active')){
-                    e.preventDefault();
-                    tabs.removeClass('active');
-                    $(this).addClass('active');
-
-                    tabContents.removeClass('fade-in');
-                    oldTargets.addClass('fade-out');
-                    target.addClass('fade-in');
-                    setTimeout(function(){
-                        tabContents.removeClass('fade-in fade-out active');
-                        target.addClass('active');
                         AOS.refresh();
                     }, 600);
                 }
@@ -682,7 +689,7 @@ $(function () {
 
     // Hex Container
     var hexContainer = $('.hex-container');
-    if (hexContainer.length) {
+    if(hexContainer.length){
         let hexFlips = hexContainer.find('.hex-flip');
         let pageX = 0,
             pageY = 0;
@@ -732,7 +739,7 @@ $(function () {
 
 
     // Button Bubble
-    $('.btn-bubble').each(function () {
+    $('.btn-bubble').each(function(){
         let $circlesTopLeft = $(this).parent().find('.circle.top-left');
         let $circlesBottomRight = $(this).parent().find('.circle.bottom-right');
 

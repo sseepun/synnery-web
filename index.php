@@ -191,7 +191,7 @@
     ?>
     <div class="tab-wrapper" data-aos="fade-up" data-aos-delay="150">
       <?php foreach($mainTabs as $j=>$d){?>
-        <div class="tab-link <?php if($j==0)echo 'active'; ?>" id="defaultOpen" onmouseover="openPage('<?= $d['pageId'] ?>')" data-tab="tab_<?= $j ?>" data-anchor="#tab-header">
+        <div class="tab-link <?php if($j==0)echo 'active'; ?>" data-maintab="<?= $d['pageId'] ?>" data-anchor="#tab-header">
           <div class="wrapper">
             <div class="icon">
               <img src="<?= $d['iconInactive'] ?>" alt="Icon Inactive">
@@ -273,145 +273,148 @@
         </div>
       <?php }?>
     </div>
+    <div class="tab-contents">
 
-    <div id="web-design" class="main-tab-content">
-      <?php
-        $categories = [
-          ['title' => 'Web Design'],
-          ['title' => 'Unlimited Minisite'], 
-          ['title' => 'Enterprise WordPress'],
-        ];
-      ?>
-      <div class="sub-tab-container">
-        <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
-          <?php foreach($categories as $i=>$d){?>
-            <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <p class="title"><?= $d['title'] ?></p>
-            </div>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $i=>$d) {?>
-            <div class="tab-content <?= $i==0? 'active': '' ?> <?= $i==1? 'swiper-block': '' ?>" data-tab="content_<?= $i ?>">
-              <?php 
-                if($i === 0){include('data/block01.php');} 
-                else if($i === 1){include('data/block02.php');}
-                else if($i === 2) {include('data/block03.php');}
-              ?> 
-            </div>
-          <?php }?>
+      <div data-maintab="web-design" class="main-tab-content active">
+        <?php
+          $categories = [
+            ['title' => 'Web Design'],
+            ['title' => 'Unlimited Minisite'], 
+            ['title' => 'Enterprise WordPress'],
+          ];
+        ?>
+        <div class="sub-tab-container">
+          <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
+            <?php foreach($categories as $i=>$d){?>
+              <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <p class="title"><?= $d['title'] ?></p>
+              </div>
+            <?php }?>
+          </div>
+          <div class="tab-contents">
+            <?php foreach($categories as $i=>$d) {?>
+              <div class="tab-content <?= $i==0? 'active': '' ?> <?= $i==1? 'swiper-block': '' ?>" data-tab="content_<?= $i ?>">
+                <?php 
+                  if($i === 0){include('data/block01.php');} 
+                  else if($i === 1){include('data/block02.php');}
+                  else if($i === 2) {include('data/block03.php');}
+                ?> 
+              </div>
+            <?php }?>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="full-service" class="main-tab-content">
-      <?php
-        $categories = [
-          ['title' => 'Digital Marketing'],
-          ['title' => 'Virtual Exhibition / Virtual Live Event'],
-        ];
-      ?>
-      <div class="sub-tab-container">
-        <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
-          <?php foreach($categories as $i=>$d){?>
-            <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <p class="title"><?= $d['title'] ?></p>
-            </div>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $i=>$d) {?>
-            <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?php 
-                if($i === 0){include('data/block04.php');} 
-                else if($i === 1){include('data/block05.php');}
-              ?> 
-            </div>
-          <?php }?>
+      <div data-maintab="full-service" class="main-tab-content">
+        <?php
+          $categories = [
+            ['title' => 'Digital Marketing'],
+            ['title' => 'Virtual Exhibition / Virtual Live Event'],
+          ];
+        ?>
+        <div class="sub-tab-container">
+          <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
+            <?php foreach($categories as $i=>$d){?>
+              <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <p class="title"><?= $d['title'] ?></p>
+              </div>
+            <?php }?>
+          </div>
+          <div class="tab-contents">
+            <?php foreach($categories as $i=>$d) {?>
+              <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <?php 
+                  if($i === 0){include('data/block04.php');} 
+                  else if($i === 1){include('data/block05.php');}
+                ?> 
+              </div>
+            <?php }?>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="web-mobile-app" class="main-tab-content">
-      <?php
-        $categories = [
-          ['title' => 'Web & Mobile Application Development'],
-        ];
-      ?>
-      <div class="sub-tab-container">
-        <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
-          <?php foreach($categories as $i=>$d){?>
-            <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <p class="title"><?= $d['title'] ?></p>
-            </div>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $i=>$d) {?>
-            <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?php if($i === 0){ include('data/block06.php'); } ?> 
-            </div>
-          <?php }?>
+      <div data-maintab="web-mobile-app" class="main-tab-content">
+        <?php
+          $categories = [
+            ['title' => 'Web & Mobile Application Development'],
+          ];
+        ?>
+        <div class="sub-tab-container">
+          <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
+            <?php foreach($categories as $i=>$d){?>
+              <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <p class="title"><?= $d['title'] ?></p>
+              </div>
+            <?php }?>
+          </div>
+          <div class="tab-contents">
+            <?php foreach($categories as $i=>$d) {?>
+              <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <?php if($i === 0){ include('data/block06.php'); } ?> 
+              </div>
+            <?php }?>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="net-work" class="main-tab-content">
-      <?php
-        $categories = [
-          ['title' => 'Network & Security'],
-          ['title' => 'DevSecOps'],
-        ];
-      ?>
-      <div class="sub-tab-container">
-        <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
-          <?php foreach($categories as $i=>$d){?>
-            <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <p class="title"><?= $d['title'] ?></p>
-            </div>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $i=>$d) {?>
-            <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?php 
-                if($i === 0){include('data/block07.php');} 
-                if($i === 1){include('data/block08.php');} 
-              ?> 
-            </div>
-          <?php }?>
+      <div data-maintab="net-work" class="main-tab-content">
+        <?php
+          $categories = [
+            ['title' => 'Network & Security'],
+            ['title' => 'DevSecOps'],
+          ];
+        ?>
+        <div class="sub-tab-container">
+          <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
+            <?php foreach($categories as $i=>$d){?>
+              <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <p class="title"><?= $d['title'] ?></p>
+              </div>
+            <?php }?>
+          </div>
+          <div class="tab-contents">
+            <?php foreach($categories as $i=>$d) {?>
+              <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <?php 
+                  if($i === 0){include('data/block07.php');} 
+                  if($i === 1){include('data/block08.php');} 
+                ?> 
+              </div>
+            <?php }?>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="ai-solution" class="main-tab-content">
-      <?php
-        $categories = [
-          ['title' => 'AI ChatGPT'],
-          ['title' => 'OCR For Laws & Document'],
-          ['title' => 'ChatGPT E-Office'],
-        ]
-      ?>
-      <div class="sub-tab-container">
-        <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
-          <?php foreach($categories as $i=>$d){?>
-            <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <p class="title"><?= $d['title'] ?></p>
-            </div>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $i=>$d) {?>
-            <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?php 
-                if($i === 0){include('data/block09.php');} 
-                if($i === 1){include('data/block10.php');} 
-                if($i === 2){include('data/block11.php');} 
-              ?> 
-            </div>
-          <?php }?>
+      <div data-maintab="ai-solution" class="main-tab-content">
+        <?php
+          $categories = [
+            ['title' => 'AI ChatGPT'],
+            ['title' => 'OCR For Laws & Document'],
+            ['title' => 'ChatGPT E-Office'],
+          ]
+        ?>
+        <div class="sub-tab-container">
+          <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
+            <?php foreach($categories as $i=>$d){?>
+              <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <p class="title"><?= $d['title'] ?></p>
+              </div>
+            <?php }?>
+          </div>
+          <div class="tab-contents">
+            <?php foreach($categories as $i=>$d) {?>
+              <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <?php 
+                  if($i === 0){include('data/block09.php');} 
+                  if($i === 1){include('data/block10.php');} 
+                  if($i === 2){include('data/block11.php');} 
+                ?> 
+              </div>
+            <?php }?>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 
@@ -512,26 +515,7 @@
     </div>
   </section>
 
-
   <?php include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
-
-  <script>
-    function openPage(pageName) {
-      var i, mainTabContent, tabLink;
-      mainTabContent = document.getElementsByClassName("main-tab-content");
-      tabLink = document.getElementsByClassName("tab-link");
-      for (i = 0; i < mainTabContent.length; i++) {
-        mainTabContent[i].classList.remove('active');
-        mainTabContent[i].style.display = "none";
-      }
-      document.getElementById(pageName).style.display = "block";
-      setTimeout(function() {
-        document.getElementById(pageName).classList.add('active');
-        AOS.refresh();
-      }, 400);
-    }
-    document.getElementById("defaultOpen").onmouseover();
-  </script>
 </body>
 </html>
