@@ -72,11 +72,11 @@
       </div>
     </div>
     
-    <div class="topnav-dropdown not-polygon">
+    <div class="topnav-dropdown">
       <div class="scroll-wrapper">
         <div class="container">
 
-          <?php /*
+          <?php
             $options = [
               [
                 'bg' => 'public/img/content/menu-service-01.jpg',
@@ -157,114 +157,6 @@
             </div>
             <div class="line-1"></div>
             <div class="line-2"></div>
-          </div>
-          */
-          ?>
-          <?php
-          $options = [
-            [
-              'title' => 'Standard Website',
-              'subtitle' => 'for Goverment',
-              'url' => '#',
-              'submenu' => [
-                [
-                  'title' => 'Government Standard Website',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'Unlimited Microsite',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'Enterprise Wordpress Solutions',
-                  'img' => '',
-                  'url' => '',
-                ],
-              ],
-            ],
-            [
-              'title' => 'Full Digital Service',
-              'subtitle' => 'for Goverment',
-              'url' => '#',
-              'submenu' => [
-                [
-                  'title' => 'Full Services Digital Marketing',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'AR, VR/3D Virtual Tour, Metaverse',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'Live & Virtual Exhibition',
-                  'img' => '',
-                  'url' => '',
-                ],
-              ],
-            ],
-            // [
-            //   'title' => '',
-            //   'submenu' => [
-            //     [  
-            //       ['title' => ''],
-            //       ['img' => ''],
-            //       ['url' => ''],
-            //     ],
-            //   ],
-            // ],
-            // [
-            //   'title' => '',
-            //   'submenu' => [
-            //     [  
-            //       ['title' => ''],
-            //       ['img' => ''],
-            //       ['url' => ''],
-            //     ],
-            //   ],
-            // ],
-          ];
-          ?>
-          <div class="dropdown-wrapper" data-dropdown="2">
-            <div class="d-grid-container <?php if(isset($dropdownActive))echo 'has-active'; ?>">
-              <div class="d-grids jc-start pos-relative" style="z-index:2;">
-                <div class="d-block">
-                  <?php 
-                    foreach($options as $i=>$d) {
-                      ?>
-                        <a class="submenu-title" href="<?= $d['url'] ?>" data-menu="menu-<?= $i ?>">
-                          <div class="fw-500"><?= $d['title'] ?></div>
-                          <div class="fw-300"><?= $d['subtitle'] ?></div>
-                        </a>
-                      <?php
-                    } 
-                  ?>
-                </div>
-                <div class="d-block submenu-lv-3">
-                  <?php 
-                    foreach($options as $i=>$d) {
-                      ?>
-                        <div class="fw-500"><?= $d['title'] ?></div>
-                        <div class="d-flex">
-                          <?php
-                            foreach($d['submenu'] as $i2 => $d2) {
-                              ?>
-                                <a href="">
-                                  <?= $d2['title'] ?>
-                                </a>
-                              <?php
-                            }
-                          ?>
-                        </a>
-                      <?php
-                    } 
-                  ?>
-                </div>
-              </div>
-            </div>
           </div>
           
         </div>
