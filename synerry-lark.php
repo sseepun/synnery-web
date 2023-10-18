@@ -21,7 +21,7 @@
     </div>
   </section> */ ?>
   <section data-section="1" data-aos="fade-in" data-aos-delay="0" >
-    <img src="public/img/lark/lark.jpg" alt="lark" />
+    <img src="public/img/lark/lark.jpg" alt="lark" width="100%" />
   </section>
   
   <?php $withFooterInfo=true; include_once('include/footer.php'); ?>
