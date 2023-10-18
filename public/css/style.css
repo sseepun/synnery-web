@@ -1162,6 +1162,20 @@ fieldset{padding:0; margin:0; border:0;}
     display:block; max-width:100%; width:auto; max-height:100%; height:auto;
 }
 
+/* Special Card 44 */
+.ss-card-44{
+    position:relative; border:5px solid #ffffff; border-radius:.9375rem; overflow:hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ss-card-44::after{
+    position:absolute; top:0; left:-110%; z-index:2; display:block;
+    content:''; width:50%; height:100%; 
+    background:-webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background:linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    transform:skewX(-25deg); transform:skewX(-25deg);
+  }
+.ss-card-44:hover:after{-webkit-animation:shine 1.5s; animation:shine 1.5s;}
+.ss-card-44.style-02::after{left:-140%;}
 
 
 /* Special Image */
