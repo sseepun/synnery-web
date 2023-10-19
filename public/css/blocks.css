@@ -1510,6 +1510,41 @@
   .section-16 .box-content::before{max-width:25rem;}
 }
 
+
+/* Section 17 */
+.section-17{position:relative; background-size:cover; overflow:hidden;}
+.section-17 > .img-bg{
+  position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+  background-position:center; background-repeat:no-repeat;
+}
+.section-17 > .pattern.style-01{position:absolute; top:10rem; left:-3rem; right:auto; z-index:1;}
+.section-17 > .pattern.style-01 > .wrapper img{display:block; width:12rem; height:auto;}
+
+.section-17 > .pattern.style-02{position:absolute; top:10rem; left:2rem; right:auto; z-index:1;}
+.section-17 > .pattern.style-02 > .wrapper img{display:block; width:1.5rem; height:auto;}
+
+.section-17 > .pattern.style-03{position:absolute; bottom:-19rem; left:-1.5rem; right:auto; z-index:1;}
+.section-17 > .pattern.style-03 > .wrapper img{display:block; width:17rem; height:auto;}
+
+.section-17 > .pattern.style-04{position:absolute; bottom:10rem; left:45%; right:auto; z-index:2;}
+.section-17 > .pattern.style-04 > .wrapper img{display:block; width:4rem; height:auto;}
+
+.section-17 > .pattern.style-05{position:absolute; bottom:-10.5rem; left:auto; right:8rem; z-index:2;}
+.section-17 > .pattern.style-05 > .wrapper img{display:block; width:6.5rem; height:auto;}
+
+.section-17 > .pattern.style-06{position:absolute; top:-10rem; left:auto; right:-3rem; z-index:2;}
+.section-17 > .pattern.style-06 > .wrapper img{display:block; width:22rem; height:auto;}
+
+.section-17 > .pattern.style-07{position:absolute; top:-1.5rem; left:auto; right:38%; z-index:2;}
+.section-17 > .pattern.style-07 > .wrapper img{display:block; width:13rem; height:auto;}
+
+.section-17 > .pattern.style-08{position:absolute; bottom:10rem; left:auto; right:-.5rem; z-index:2;}
+.section-17 > .pattern.style-08 > .wrapper img{display:block; width:5rem; height:auto;}
+
+.section-17 > .pattern.style-09{position:absolute; top:10rem; left:auto; right:2rem; z-index:2;}
+.section-17 > .pattern.style-09 > .wrapper img{display:block; width:4rem; height:auto;}
+
+
 /* Main Tab Container */
 .main-tabs-container .tab-wrapper{
   display:flex; flex-wrap:wrap; justify-content:space-evenly;
