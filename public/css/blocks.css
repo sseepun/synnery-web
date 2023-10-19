@@ -176,7 +176,17 @@
   .banner-03 > .pattern.style-04 > .wrapper img{width:9rem;}
 }
 
+/* Banner 04 */
+.banner-04{position:relative;}
+.banner-04 .swiper-container .wrapper{
+  position:relative; height:650px;
+}
+.banner-04 .swiper-container .wrapper .img-bg{
+  background-position:center top;
+}
 
+
+/* Isotope */
 .isotope-toolbar{margin-top:4rem;}
 .isotope-toolbar .isotope-wrapper{display:flex; justify-content:center;}
 .isotope-toolbar .isotope-tab{
@@ -1544,6 +1554,58 @@
 .section-17 > .pattern.style-09{position:absolute; top:10rem; left:auto; right:2rem; z-index:2;}
 .section-17 > .pattern.style-09 > .wrapper img{display:block; width:4rem; height:auto;}
 
+.section-17 > .pattern.style-10{position:absolute; top:20rem; left:1rem; right:auto; z-index:1;}
+.section-17 > .pattern.style-10 > .wrapper img{display:block; width:.625rem; height:auto;}
+@media screen and (max-width:767.98px){
+  .section-17 .title{text-align:center;}
+  .section-17 > .pattern{display:none;}
+}
+
+/* Section 18 */
+.section-18{position:relative; background-size:cover; overflow:hidden;}
+.section-18 > .img-bg{
+  position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+  background-position:center -8.5rem; background-repeat:no-repeat;
+}
+.section-18 .title-header{
+  display:flex; align-items:center; justify-content:center;
+}
+.section-18 .title-header .logo{width:3.25rem; height:3.25rem;}
+.section-18 .title-header .logo img{
+  display:block; max-width:100%; width:auto; max-height:100%; height:auto;
+}
+.section-18 .title-header .question-mark{width:2.5rem; height:2.5rem; margin-top:-.625rem;}
+.section-18 .title-header .question-mark img{
+  display:block; max-width:100%; width:auto; max-height:100%; height:auto;
+}
+.section-18 .tiktok-content .wrapper{display:flex;}
+.section-18 .tiktok-content .icon{
+  position:relative; width:4.5rem; height:4.5rem; background:#000000; border-radius:.75rem;
+  display:flex; justify-content:center; align-items:center;
+}
+.section-18 .tiktok-content .icon img{
+  display:block; max-width:100%; width:auto; max-height:100%; height:3rem;
+}
+.section-18 .tiktok-content .text{
+  background:#ffffff; margin-left:-1rem; padding:0 1rem 0 2rem;
+  display:flex; align-items:center; border-radius:.75rem;
+}
+.section-18 .feature-container{margin-top:1.5rem; display:flex;}
+.section-18 .feature-container .feature-item{
+  background:#ffffff; border-radius:.75rem;
+  width:100%; max-width:6rem; padding:.625rem .4375rem;
+}
+.section-18 .feature-container .feature-item:not(:first-child){margin-left:.6875rem;}
+.section-18 .feature-container .feature-item .number{
+  color:#ec2c23; font-weight:800; font-size:1.875rem; line-height:1;
+  text-align:center;
+}
+.section-18 .feature-container .feature-item .text{
+  font-weight:400; line-height:1.4; margin-top:.25rem;
+}
+@media screen and (max-width:991.98px){
+  .section-18 > .img-bg{background-position:center -5.5rem;}
+}
 
 /* Main Tab Container */
 .main-tabs-container .tab-wrapper{
@@ -1675,6 +1737,39 @@
 @media screen and (max-width:490.98px){
   .sub-tab-container .tab-contents{margin-top:0;}
 }
+
+
+/* Showcases Tab Container */
+.showcases-tab-container .tabs{
+  display:flex; flex-wrap:wrap;
+}
+.showcases-tab-container .tabs .tab{
+  width:calc(100% / 4); background:#eb2c22; padding:.75rem .75rem;
+  text-align:center; border:1px solid #ffffff; cursor:pointer;
+  color:#ffffff; transition:background .25s;
+}
+.showcases-tab-container .tabs .tab.active,
+.showcases-tab-container .tabs .tab:hover{background:#000000;}
+.showcases-tab-container .tabs .tab:first-child{border-left:0;}
+.showcases-tab-container .tabs .tab:last-child{border-right:0;}
+.showcases-tab-container .tab-contents{position:relative; width:100%;}
+.showcases-tab-container .tab-content{
+  position:relative; display:none; width:100%; padding:0; margin:0;
+  transition:opacity .6s, transform .6s;
+}
+.showcases-tab-container .tab-content.fade-out:not(.no-fade){opacity:0; pointer-events:none;}
+.showcases-tab-container .tab-content.fade-in:not(.no-fade){
+  display:block; position:absolute; opacity:0; transform:translateY(1.5rem);
+  pointer-events:none;
+}
+.showcases-tab-container .tab-content.active{display:block;}
+@media screen and (max-width:767.98px){
+  .showcases-tab-container .tabs .tab{width:calc(100% / 2);}
+}
+@media screen and (max-width:612.98px){
+  .showcases-tab-container .tabs .tab{width:100%;}
+}
+
 
 
 .tab-container{position:relative; display:block; width:100%;}

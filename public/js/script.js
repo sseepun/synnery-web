@@ -570,6 +570,47 @@ $(function () {
     });
 
 
+     // Tab Container 01
+     var showCaseTabContainers = $('.showcases-tab-container');
+     if(showCaseTabContainers.length) {
+        showCaseTabContainers.each(function () {
+             var self = $(this),
+                 tabs = self.find('.tabs .tab'),
+                 tabContents = self.find('.tab-contents > .tab-content');
+             tabs.click(function (e) {
+                 let target = tabContents.filter('[data-tab="' + $(this).data('tab') + '"]'),
+                     oldTargets = tabContents.filter('.active');
+                 if(target.length) {
+                     e.preventDefault();
+                     tabs.removeClass('active');
+                     $(this).addClass('active');
+ 
+                     tabContents.removeClass('fade-in');
+                     oldTargets.addClass('fade-out');
+                     target.addClass('fade-in');
+                     setTimeout(function(){
+                         tabContents.removeClass('fade-in fade-out active');
+                         target.addClass('active');
+                         AOS.refresh();
+                         calculateSectionAnchors();
+                     }, 600);   
+
+                     let anchor = $(this).data('anchor');
+                        if (anchor) {
+                        let anchorTarget = $(anchor);
+                        if (anchorTarget) {
+                            let offset = anchorTarget.offset();
+                            $('html, body').stop().animate({
+                                scrollTop: offset.top - bodySize * 3.7
+                            }, 700, 'easeInOutCubic');
+                        }
+                    }
+                 }
+             });
+         });
+     }
+
+
     // Sub Tab container 
     var subTabContainers = $('.sub-tab-container');
     if(subTabContainers.length){
@@ -813,6 +854,26 @@ $(function () {
     var banner02 = $('.banner-02');
     if (banner02.length) {
         banner02.find('.swiper-container').each(function () {
+            var self = $(this);
+            new Swiper(self, {
+                loop: true,
+                speed: 900,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                grabCursor: true,
+                navigation: {
+                    nextEl: self.find('.arrow.arrow-next'),
+                    prevEl: self.find('.arrow.arrow-prev'),
+                },
+            });
+        });
+    }
+
+
+    // Banner 04
+    var banner04 = $('.banner-04');
+    if (banner04.length) {
+        banner04.find('.swiper-container').each(function () {
             var self = $(this);
             new Swiper(self, {
                 loop: true,
