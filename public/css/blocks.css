@@ -1646,6 +1646,46 @@
 }
 
 
+/* Section 20 */
+.section-20{position:relative; background-size:cover; overflow:hidden;}
+.section-20 > .img-bg{
+  position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+  background-position:center; background-repeat:no-repeat;
+}
+
+/* Section 21 */
+.section-21 .data-container{
+  padding:2rem; border-radius:.75rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* Section 22 */
+.section-22{position:relative; background-size:cover; overflow:hidden;}
+.section-22 > .img-bg{
+  position:absolute; top:0; bottom:0; left:0; right:0; background-size:cover;
+  background-position:center; background-repeat:no-repeat;
+}
+.section-22 .title-header{
+  display:flex; align-items:center; justify-content:center;
+}
+.section-22 .title-header .logo{width:3.25rem; height:3.25rem;}
+.section-22 .title-header .logo img{
+  display:block; max-width:100%; width:auto; max-height:100%; height:auto;
+}
+.section-22 .img-container.right{padding-right:1rem;}
+.section-22 .text-container.left{padding-left:1rem;}
+@media screen and (max-width:767.98px){
+  .section-22 .img-container.right{padding-right:0;}
+  .section-22 .text-container.left{padding-left:0;}
+}
+
+/* Section 23 */
+.section-23 .socials{
+  display:flex; justify-content:center; margin-top:1rem;
+}
+
+
+
 
 /* Main Tab Container */
 .main-tabs-container .tab-wrapper{
