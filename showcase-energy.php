@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -28,6 +28,26 @@
     <div class="pattern style-04">
       <div class="wrapper" value=".5">
         <img src="public/img/patterns/04.png" alt="Pattern" />
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/18.png" alt="Pattern" />
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/19.png" alt="Pattern" />
+      </div>
+    </div>
+    <div class="pattern style-07">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/20.png" alt="Pattern" />
+      </div>
+    </div>
+    <div class="pattern style-08">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/21.png" alt="Pattern" />
       </div>
     </div>
     <div class="img-bg" style="background-image:url('public/img/bg/banner-20.jpg');"></div>

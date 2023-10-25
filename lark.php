@@ -5,10 +5,9 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
-
 
   <?php 
     $banner = [
@@ -27,7 +26,7 @@
             <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
           </div>
         </div>
-        <?php } ?>
+        <?php }?>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -801,7 +800,7 @@
         Lark Connector
       </h2>
       <div class="ss-box xl size-02 mt-4" data-aos="fade-up" data-aos-delay="150">
-        <div class="gallery-grids">
+        <div class="gallery-grids jc-center-xs">
           <?php foreach($content as $d) {?>
             <div class="grid lg-25 md-1-3 sm-1-3 xs-50">
               <a href="#" class="ss-card ss-card-49">
@@ -1160,20 +1159,20 @@
                     <img src="public/img/lark/logo/aws.png" alt="AWS">
                   </div>
                   <div class="text-container">
-                    <p class="title">US East (N. Virginia)</p>
+                    <p class="title">Asia Pacific (Tokyo)</p>
                     <p class="desc">Amazon Web Services</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="grid lg-1-3 sm-50">
+            <div class="grid lg-1-3 sm-60">
               <div class="ss-card ss-card-51">
                 <div class="wrapper">
                   <div class="logo">
                     <img src="public/img/lark/logo/aws.png" alt="AWS">
                   </div>
                   <div class="text-container">
-                    <p class="title">US East (N. Virginia)</p>
+                    <p class="title">Asia Pacific (Singapore)</p>
                     <p class="desc">Amazon Web Services</p>
                   </div>
                 </div>
@@ -1190,12 +1189,12 @@
               ],[
                 'logo' => 'public/img/lark/logo/soc.png',
                 'title' => 'ISO/IEC',
-                'alt' => 'ISO/IEC',
+                'alt' => 'ISO IEC',
                 'classer' => ''
               ],[
                 'logo' => 'public/img/lark/logo/iso.png',
                 'title' => 'SOC 2/3',
-                'alt' => 'SOC 2/3',
+                'alt' => 'SOC 23',
                 'classer' => ''
               ],[
                 'logo' => 'public/img/lark/logo/assured.png',

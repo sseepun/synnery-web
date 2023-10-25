@@ -60,7 +60,7 @@
                   เว็บไซต์ที่มีไม่รองรับมาตรฐานเว็บไซต์ภาครัฐของ สพร.
                 </span>
               </div>
-              <div class="list-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="list-item min-height-md size-02" data-aos="fade-up" data-aos-delay="300">
                 <span class="h4 number color-p fw-600">02</span>
                 <span class="p color-09 fw-300">
                   ไม่สามารถเผยแพร่ข้อมูล และแสดงถึงความโปร่งใสในการบริหารงานและการดำ
