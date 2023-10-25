@@ -881,9 +881,9 @@ $(function () {
                 slidesPerView: 1,
                 spaceBetween: 0,
                 grabCursor: true,
-                navigation: {
-                    nextEl: self.find('.arrow.arrow-next'),
-                    prevEl: self.find('.arrow.arrow-prev'),
+                pagination: {
+                    el: self.find('.swiper-pagination'),
+                    clickable: true,
                 },
             });
         });

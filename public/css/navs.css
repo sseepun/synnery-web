@@ -235,7 +235,7 @@ nav.topnav .topnav-dropdown .dropdown-wrapper .block-left .submenu:before{
   left:100%; top: calc(50% - 0.5625rem); opacity:0; transition:opacity .25s;
 }
 nav.topnav .topnav-dropdown .dropdown-wrapper .block-left .submenu:after{
-  position:absolute; content:''; top:0; right:0; bottom:0; left:0; height:0;
+  position:absolute; content:''; top:0; right:0;  left:0; height:0;
   background:#000000; transition: .8s;
 }
 nav.topnav .topnav-dropdown .dropdown-wrapper .block-left .submenu.active:after,

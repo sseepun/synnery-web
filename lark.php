@@ -29,10 +29,11 @@
         </div>
         <?php } ?>
       </div>
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 
-  <section class="section-padding section-18">
+  <section data-section="2" class="section-padding section-18">
     <div class="img-bg" style="background-image:url('public/img/lark/bg/01.png');"></div>
     <div class="container">
       <div class="title-header" data-aos="fade-up" data-aos-delay="0">
@@ -115,7 +116,7 @@
     </div>      
   </section>
 
-  <section class="section-padding">
+  <section data-section="3" class="section-padding">
     <div class="container">
       <h2 class="fw-700 text-center lh-sm" data-aos="fade-up" data-aos-delay="0">
         Lark <span class="color-p">Together</span>
@@ -134,10 +135,10 @@
                   </div>
                 </div>
                 <div class="text-container">
-                  <h4 class="color-p fw-700 lh-sm">WORKING TOGETHER</h4>
+                  <h4 class="color-p fw-700 lh-sm font-popins">WORKING TOGETHER</h4>
                   <div class="grids">
                     <div class="grid lg-1-3 md-1-3 xs-50 mt-0">
-                      <p class="fw-700">FOR EVERYONE</p>
+                      <p class="fw-700 font-popins">FOR EVERYONE</p>
                       <ul class="ss-list-02">
                         <li>Messenger</li>
                         <li>Meeting</li>
@@ -150,7 +151,7 @@
                       </ul>
                     </div>
                     <div class="grid lg-1-3 md-1-3 xs-50 mt-0">
-                      <p class="fw-700">FOR HR</p>
+                      <p class="fw-700 font-popins">FOR HR</p>
                       <ul class="ss-list-02">
                         <li>Attendance</li>
                         <li>OKR</li>
@@ -161,7 +162,7 @@
                       </ul>
                     </div>
                     <div class="grid lg-1-3 md-1-3 mt-0 mt-sm">
-                      <p class="fw-700">FOR ACCOUNTING</p>
+                      <p class="fw-700 font-popins">FOR ACCOUNTING</p>
                       <ul class="ss-list-02">
                         <li>Seal Request</li>
                         <li>Reimbursement</li>
@@ -184,7 +185,7 @@
                   </div>
                 </div>
                 <div class="text-container">
-                  <h4 class="color-p title fw-700 lh-xs">CHATTING TOGETHER</h4>
+                  <h4 class="color-p title fw-700 lh-xs font-popins">CHATTING TOGETHER</h4>
                   <ul class="ss-list-02">
                     <li>Messenger</li>
                     <li>Meeting</li>
@@ -202,7 +203,7 @@
                   </div>
                 </div>
                 <div class="text-container">
-                  <h4 class="color-p title fw-700 lh-xs">SHARING TOGETHER</h4>
+                  <h4 class="color-p title fw-700 lh-xs font-popins">SHARING TOGETHER</h4>
                   <ul class="ss-list-02">
                     <li>Contacts</li>
                     <li>Moment</li>
@@ -218,10 +219,10 @@
     </div>      
   </section>
 
-  <section class="section-padding section-19">
+  <section data-section="4" class="section-padding section-19">
     <div class="img-bg" style="background-image:url('public/img/lark/bg/02.jpg');"></div>
     <div class="container" style="z-index:3;">
-      <p class="h3 fw-700 text-center lh-xs color-p" data-aos="fade-up" data-aos-delay="0">
+      <p class="h3 fw-700 text-center lh-xs color-p font-popins" data-aos="fade-up" data-aos-delay="0">
         ALL THE APPS YOU NEED.
       </p>
       <h2 class="lg fw-700 font-popins text-center lh-2xs" data-aos="fade-up" data-aos-delay="150">
@@ -793,7 +794,7 @@
       ],
     ]
   ?>
-  <section class="section-padding section-19">
+  <section data-section="5" class="section-padding section-19">
     <div class="img-bg" style="background-image:url('public/img/lark/bg/03.jpg');"></div>
     <div class="container">
       <h2 class="lg fw-600 font-popins text-center lh-2xs color-white" data-aos="fade-up" data-aos-delay="0">
@@ -820,15 +821,15 @@
     </div>      
   </section>
 
-  <section class="section-padding section-20">
+  <section data-section="6" class="section-padding section-20">
     <div class="img-bg" style="background-image:url('public/img/lark/bg/04.jpg');"></div>
     <div class="container">
-      <h2 class="lg fw-600 text-center lh-2xs" data-aos="fade-up" data-aos-delay="0">
+      <h2 class="lg fw-600 text-center lh-2xs font-popins" data-aos="fade-up" data-aos-delay="0">
         Global. Trusted.
       </h2>      
-      <h6 class="text-center color-p fw-400" data-aos="fade-up" data-aos-delay="150">
+      <p class="h5 text-center color-p fw-600" data-aos="fade-up" data-aos-delay="150">
         บริษัทฯ ระดับโลกยังใช้ แล้วบริษัทคุณล่ะ!! ทีมคุณล่ะ?
-      </h6>
+      </p>
       <div class="ss-box xl size-02 mt-4" data-aos="fade-up" data-aos-delay="300">
         <div class="grids">
           <div class="grid lg-1-3" data-aos="fade-up" data-aos-delay="0">
@@ -1130,9 +1131,9 @@
     </div>        
   </section>
 
-  <section class="section-padding section-21">
+  <section data-section="7" class="section-padding section-21">
     <div class="container">
-      <h3 class="lg fw-600 text-center lh-2xs" data-aos="fade-up" data-aos-delay="0">
+      <h3 class="lg fw-600 text-center lh-2xs font-popins" data-aos="fade-up" data-aos-delay="0">
         Robust data security and compliance
       </h3>
       <div class="ss-box xl size-02 mt-4" data-aos="fade-up" data-aos-delay="150">
@@ -1235,17 +1236,19 @@
     </div>
   </section>
 
-  <section class="section-padding section-22">
+  <section data-section="8" class="section-padding section-22">
     <div class="img-bg" style="background-image:url('public/img/lark/bg/05.jpg');"></div>
     <div class="container">
       <div class="title-header" data-aos="fade-up" data-aos-delay="0">
         <p class="h3 color-p fw-500 mr-2">ทำไมต้องใช้</p>
-        <div class="logo">
-          <img src="public/img/lark/logo/lark-logo.png" alt="Lark Logo">
+        <div class="d-flex ai-center">
+          <div class="logo">
+            <img src="public/img/lark/logo/lark-logo.png" alt="Lark Logo">
+          </div>
+          <h2 class="title fw-700 ml-2">
+            Lark <span class="h3 color-p fw-500">จาก</span> <span class="h2 fw-700">Synnery</span>
+          </h2>
         </div>
-        <h2 class="fw-700 ml-2">
-          Lark <span class="h3 color-p fw-500">จาก</span> <span class="h2 fw-700">Synnery</span>
-        </h2>
       </div>
       <div class="ss-box xl size-02 mt-4" data-aos="fade-up" data-aos-delay="150">
         <div class="grids">
@@ -1253,7 +1256,7 @@
             <div class="img-container right">
               <div class="ss-card ss-card-47">
                 <div class="ss-img square">
-                  <div class="img-bg" style="background-image:url('public/img/lark/content/01.png');"></div>
+                  <div class="img-bg" style="background-image:url('public/img/lark/content/09.jpg');"></div>
                 </div>
               </div>
             </div>
@@ -1290,27 +1293,38 @@
     </div>
   </section>
 
-  <section class="section-padding section-23">
+  <section data-section="9" class="section-padding section-23">
+    <div class="img-bg" style="background-image:url('public/img/lark/bg/06.jpg');"></div>
     <div class="container">
-      <h5 class="text-center fw-400">ติดตามข้อมูลข่าวสารอื่นๆ ได้ที่ Lark Community</h5>
-      <div class="socials">
+      <h4 class="text-center fw-600 color-white" data-aos="fade-up" data-aos-delay="0">
+        ติดตามข้อมูลข่าวสารอื่นๆ ได้ที่ Lark Community
+      </h4>
+      <div class="socials" data-aos="fade-up" data-aos-delay="150">
         <div class="wrapper">
-          <a href="#" class="link">
-            <em class="fa-brands fa-facebook-f"></em>
+          <a href="#" class="link facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+            </svg>
           </a>
-          <a href="#" class="link">
-            <em class="fa-brands fa-instagram"></em>
+          <a href="#" class="link instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+            </svg>
           </a>
-          <a href="#" class="link">
-            <em class="fa-brands fa-youtube"></em>
+          <a href="#" class="link youtube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+              <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+            </svg>
           </a>
-          <a href="#" class="link">
-            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+          <a href="#" class="link twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
             </svg>
           </a>
-          <a href="#" class="link">
-            <em class="fa-brands fa-tiktok"></em>
+          <a href="#" class="link tiktok">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/>
+            </svg>
           </a>
         </div>
       </div>
