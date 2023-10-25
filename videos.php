@@ -13,9 +13,9 @@
     <img class="img" src="public/img/bg/97.jpg" alt="Banner" />
   </section>
 
-  <section data-section="2" class="video-tabs-container tab-container" data-aos="fade-up" data-aos-delay="150">
+  <section data-section="2" class="video-tabs-container ovf-hidden tab-container" data-aos="fade-up" data-aos-delay="150">
     <div class="grids no-gap">
-      <div class="grid lg-15 md-1-3 sm-100 mt-0">
+      <div class="grid lg-20 md-30 sm-30 xs-100 mt-0">
         <div class="menu-container">
           <?php 
              $tabs = [
@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="grid lg-85 md-2-3 sm-100 mt-0">
+      <div class="grid lg-80 md-70 sm-70 xs-100 mt-0">
         <div class="tab-contents">
           <?php foreach($tabs as $i=>$d){?>
             <div class="tab-content" data-tab="tab_<?= $i ?>">

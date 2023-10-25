@@ -37,7 +37,7 @@
   ?>
   <div class="section-padding">
     <p class="lg color-p fw-500">วิดีโอที่เกี่ยวข้อง</p>
-    <div class="grids">
+    <div class="grids jc-center">
       <?php foreach($musicContent as $d) {?>
         <div class="grid lg-1-3">
         <a class="ss-card" href="<?= $d['href'] ?>" data-fancybox>

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="blocks flex-column-reverse mh-0">
       <div class="block-float left d-flex ai-end">
-        <div class="grids no-gap">
+        <div class="grids no-gap"  data-aos="fade-up" data-aos-delay="0">
           <div class="grid lg-66 md-100 sm-1-3 xs-100 mt-0">
             <div class="ss-card h-full">
               <a class="ss-img square unset-md h-full" href="web-gov-standard.php">
@@ -73,7 +73,7 @@
       </div>
     </div>
   </div>
-  <div class="grids no-gap">
+  <div class="grids no-gap" data-aos="fade-up" data-aos-delay="450">
     <div class="grid lg-1-3 md-1-3 sm-1-3 xs-50 mt-0">
       <div class="ss-card">
         <a class="ss-img horizontal-03 square-md" href="web-gov-standard.php">

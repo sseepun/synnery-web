@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -424,17 +424,17 @@
         <img src="public/img/content/pattern-18.png" alt="Hero">
       </div>
     </div>
-    <div class="pattern style-02">
+    <div class="pattern style-04">
       <div class="wrapper" value="-.5">
         <img src="public/img/content/pattern-20.png" alt="Hero">
       </div>
     </div>
-    <div class="pattern style-03">
+    <div class="pattern style-05">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-21.png" alt="Hero">
       </div>
     </div>
-    <div class="container">
+    <div class="container" style="z-index:3;">
       <h2 class="lg text-center fw-800" data-aos="fade-up" data-aos-delay="0">
         OUR CLIENTS
       </h2>
@@ -468,7 +468,7 @@
 
     <?php include_once('data/clients-home.php'); ?>
     <div class="container" data-aos="fade-up" data-aos-delay="300">
-      <div class="isotope-toolbar" style="position:relative; z-index:3;">
+      <div class="isotope-toolbar" style="position:relative;">
         <div class="isotope-wrapper">
           <div class="isotope-toolbar-btn isotope-tab active" data-type="government" name="isotope-filter">
             <div class="wrapper">

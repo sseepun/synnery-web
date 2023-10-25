@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+/* Gilroy */
+@font-face{
+    font-family:'Gilroy'; font-weight:200; font-style:normal;
+    src:url('./Gilroy/Gilroy-Light.otf') format('truetype');
+}
+@font-face{
+    font-family:'Gilroy'; font-weight:600; font-style:normal;
+    src:url('./Gilroy/Gilroy-Bold.ttf') format('truetype');
+}
+@font-face{
+    font-family:'Gilroy'; font-weight:700; font-style:normal;
+    src:url('./Gilroy/Gilroy-ExtraBold.otf') format('truetype');
+}
+
 
 /* NatoSans */
 @font-face{

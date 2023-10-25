@@ -21,6 +21,7 @@
     margin:0 calc(-1 * var(--ggs)) 0 0; box-sizing:border-box; -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box; outline:none;
 }
+
 .gallery-grids > .grid{
     width:calc(50% - var(--ggs)); margin:var(--ggs) var(--ggs) 0 0;
     box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; outline:none;
