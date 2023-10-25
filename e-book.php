@@ -5,6 +5,7 @@
     <?php include_once('include/header.php'); ?>
     <link rel="stylesheet" href="public/css/other/bootstrap/bootstrap.css" />
     <?php include_once('include/style.php'); ?>
+    <link rel="stylesheet" href="public/css/style2.css?v=0.0.1" />
 </head>
 
 <body class="loading">
