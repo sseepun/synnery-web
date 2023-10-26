@@ -2,23 +2,11 @@
   $webMobile = [
     [
       'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'jigsaw Web Engine',
+      'title' => 'E-Saraban / E-Signature',
       'href' => '#'
     ],[
       'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'Jigsaw Meeting Room',
-      'href' => '#'
-    ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'jigsaw Vehicle',
-      'href' => '#'
-    ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'jigsaw HRM',
-      'href' => '#'
-    ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'Jigsaw Help Desk',
+      'title' => 'E-Document',
       'href' => '#'
     ],[
       'icon' => 'public/img/icon/topnav-menu-04.png',
@@ -26,11 +14,7 @@
       'href' => '#'
     ],[
       'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'E-Saraban /<br>E-Signature',
-      'href' => '#'
-    ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'E-Document',
+      'title' => 'Intranet & KM',
       'href' => '#'
     ],[
       'icon' => 'public/img/icon/topnav-menu-04.png',
@@ -42,11 +26,23 @@
       'href' => '#'
     ],[
       'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'Intranet & KM',
+      'title' => 'Jigsaw Web Engine',
       'href' => '#'
     ],[
       'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'PDPA',
+      'title' => 'Jigsaw Meeting Room',
+      'href' => '#'
+    ],[
+      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'title' => 'Jigsaw Vehicle',
+      'href' => '#'
+    ],[
+      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'title' => 'Jigsaw HRM',
+      'href' => '#'
+    ],[
+      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'title' => 'Jigsaw Help Desk',
       'href' => '#'
     ]
   ]

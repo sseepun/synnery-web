@@ -1,16 +1,16 @@
 <?php
-  $lakeSuite = [
+  $artificialIntelligence = [
     [
       'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'Full Services Digital<br> Marketing',
+      'title' => 'AI ChatGPT',
       'href' => '#'
     ],[
       'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'AR, VR/3D Virtual Tour,<br> Metaverse',
+      'title' => 'OCR For Laws & Document',
       'href' => '#'
     ],[
       'icon' => 'public/img/icon/topnav-menu-04.png',
-      'title' => 'Live & Virtual<br> Exhibition',
+      'title' => 'ChatGPT E-Office',
       'href' => '#'
     ]
   ]
