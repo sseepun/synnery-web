@@ -5,14 +5,20 @@
     </div>
   </div>
   <div class="img-bg" style="background-image:url('public/img/bg/96.jpg');"></div>
-  <div class="container">
+  <div class="container" style="z-index:3;">
     <div class="grids" data-aos="fade-up" data-aos-delay="0">
       <div class="grid lg-50 md-100 sm-100 mt-0">
-        <div class="ss-card ss-card-41">
+        <a href="#" class="ss-card ss-card-41">
           <div class="wrapper">
             <div class="img-container">
               <div class="ss-img vertical-03">
                 <div class="img-bg" style="background-image:url('public/img/content/87.jpg');"></div>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox="0 10 100 100">
+                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
+                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
+                </svg>
               </div>
             </div>
             <div class="text-container">
@@ -29,14 +35,20 @@
               </ul> 
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="grid lg-50 md-100 sm-100 mt-0">
-        <div class="ss-card ss-card-41 row-reverse">
+        <a href="#" class="ss-card ss-card-41 row-reverse">
           <div class="wrapper">
             <div class="img-container">
               <div class="ss-img vertical-03">
                 <div class="img-bg" style="background-image:url('public/img/content/86.jpg');"></div>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox="0 10 100 100">
+                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
+                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
+                </svg>
               </div>
             </div>
             <div class="text-container">
@@ -53,14 +65,20 @@
               </ul> 
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="grid lg-50 md-100 sm-100">
-        <div class="ss-card ss-card-41">
+        <a href="#" class="ss-card ss-card-41">
           <div class="wrapper">
             <div class="img-container">
               <div class="ss-img vertical-03">
                 <div class="img-bg" style="background-image:url('public/img/content/88.jpg');"></div>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox="0 10 100 100">
+                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
+                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
+                </svg>
               </div>
             </div>
             <div class="text-container">
@@ -75,14 +93,20 @@
               </ul>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="grid lg-50 md-100 sm-100">
-        <div class="ss-card ss-card-41 row-reverse">
+        <a href="#" class="ss-card ss-card-41 row-reverse">
           <div class="wrapper">
             <div class="img-container">
               <div class="ss-img vertical-03">
                 <div class="img-bg" style="background-image:url('public/img/content/89.jpg');"></div>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox="0 10 100 100">
+                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" stroke="red" />
+                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" stroke="red" />
+                </svg>
               </div>
             </div>
             <div class="text-container">
@@ -95,7 +119,7 @@
             </ul>
           </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <div class="btns pt-6 mt-2 jc-center animate-01" style="--delay:.9s;" data-aos="fade-up" data-aos-delay="0">

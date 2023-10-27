@@ -35,32 +35,50 @@
         </div>
         <div class="bottom-panel">
           <div class="menu-container hide-tablet">
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==1)echo 'active'; ?>">
-              <a href="index.php">Home</a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==2)echo 'active'; ?>">
-              <a href="about.php">About us</a>
-            </div>
-            <div class="menu sub-menu <?php if(isset($topnavActive) && $topnavActive==3)echo 'active'; ?>" data-dropdown="2">
-              <a href="services.php">
-                Our Services <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
-              </a>
-            </div>
-            <div class="menu sub-menu <?php if(isset($topnavActive) && $topnavActive==4)echo 'active'; ?>" data-dropdown="3">
-              <a href="services.php">
-                Our Works <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
-              </a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==5)echo 'active'; ?>">
-              <a href="clients.php">Our Clients</a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==6)echo 'active'; ?>">
-              <a href="career.php">Career</a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==7)echo 'active'; ?>">
-              <a href="contact.php">Contact</a>
-            </div>
+            <?php 
+              $menu = [
+                [
+                  'title' => 'Home',
+                  'href' => 'index.php'
+                ],[
+                  'title' => 'About us',
+                  'href' => 'about.php'
+                ],[
+                  'title' => 'Our Services',
+                  'href' => ''
+                ],[
+                  'title' => 'Our Works',
+                  'href' => ''
+                ],[
+                  'title' => 'Our Clients',
+                  'href' => 'clients.php'
+                ],[
+                  'title' => 'Career',
+                  'href' => 'career.php'
+                ],[
+                  'title' => 'Contact',
+                  'href' => 'contact.php'
+                ],
+              ]
+            ?>
+
+            <?php foreach($menu as $i=>$d) {?>
+              <div class="menu <?= $i == 2 || $i == 3? 'sub-menu': ''?>
+                <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
+                <?php if($i == 2 || $i == 3){ ?>
+                  data-dropdown="<?php echo $i ?>"
+                 <?php }?>
+                >
+                <a href="<?= $d['href'] ?>">
+                  <?= $d['title'] ?> 
+                  <?php if($i == 2 || $i == 3){ ?>
+                    <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
+                  <?php } ?>
+                </a>
+              </div>
+            <?php } ?>
           </div>
+          
           <div class="option-menu d-none">
             <div class="global-search-toggle">
               <img src="public/img/icon/search.png" alt="Icon" />

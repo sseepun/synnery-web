@@ -1151,9 +1151,9 @@ fieldset{padding:0; margin:0; border:0;}
  .ss-card-39{border:5px solid #ffffff; border-radius:.9375rem; overflow:hidden;}
 
 /* Special Card 41 */
-.ss-card-41{position:relative; z-index:3;}
+.ss-card-41{position:relative;}
 .ss-card-41 .wrapper{display:flex; flex-wrap:wrap;}
-.ss-card-41 .wrapper > .img-container{width:50%;}
+.ss-card-41 .wrapper > .img-container{position:relative; width:50%;}
 .ss-card-41 .wrapper > .text-container{
     width:50%; padding:1.5rem; background:#f8f8f8;
 }

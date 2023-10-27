@@ -9,7 +9,7 @@
   <?php $topnavActive=4; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1" class="section-03 section-padding bg-05">
+  <section data-section="1" class="section-03 section-padding pb-0 bg-05">
     <div class="pattern style-01">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">

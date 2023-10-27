@@ -56,7 +56,7 @@
   </section> 
 
   <?php if(false){?>
-    <section data-section="1" class="banner-02">
+    <section  data-section="1" class="banner-02">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <?php for($i=0; $i<18; $i++){?>
@@ -140,7 +140,7 @@
       [ 'title' => 'Enterprise<br>DevSecOps Solutions', 'url' => 'network-security-system.php' ],
     ];
   ?>
-  <section data-section="2" class="section-01 section-padding">
+  <section class="section-01 section-padding pt-4 pb-4">
     <div class="pattern style-32">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">
@@ -158,7 +158,7 @@
     </div>
   </section>
 
-  <div data-section="3" class="main-tabs-container" id="tab-header">
+  <div class="main-tabs-container" id="tab-header">
     <?php
       $mainTabs = [
         [
@@ -283,7 +283,7 @@
             ['title' => 'Enterprise WordPress'],
           ];
         ?>
-        <div class="sub-tab-container">
+        <div class="sub-tab-container"  data-section="2">
           <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
             <?php foreach($categories as $i=>$d){?>
               <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
@@ -361,7 +361,7 @@
         <?php
           $categories = [
             ['title' => 'Network & Security'],
-            ['title' => 'DevSecOps'],
+            ['title' => 'DevSecOps & Microservices'],
           ];
         ?>
         <div class="sub-tab-container">
@@ -418,7 +418,7 @@
     </div>
   </div>
 
-  <section data-section="4" class="section-03 section-padding bg-05 pb-0">
+  <section data-section="3" class="section-03 section-padding bg-05 pb-0">
     <div class="pattern style-01">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">
