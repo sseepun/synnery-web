@@ -159,7 +159,7 @@
         <?php }else{?>
           <div data-aos="fade-up" data-aos-delay="150">
             <iframe 
-              style="position:relative; width:100%; height:1470px; border:0; overflow:hidden; z-index:1;" 
+              style="position:relative; width:100%; height:60rem; border:0; overflow:hidden; z-index:1;" 
               src="https://form.asana.com/?k=oniAq4i-fs1lCMY8wWWOBw&d=688901825130647&embed=true" 
             ></iframe>
           </div>

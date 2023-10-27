@@ -191,14 +191,32 @@ $(function () {
 
     // Topnav
     var topnav = $('nav.topnav'),
+        topnavMenuContainer = topnav.find('.menu-container'),
         topnavMenu = topnav.find('.menu-container > .menu'),
+        topnavMenuNotsub = topnav.find('.menu-container > .menu:not(.menu.sub-menu)'),
         topnavSubMenu = topnav.find('.menu-container > .menu.sub-menu'),
         topnavDropdown = topnav.find('.topnav-dropdown'),
         topnavDropdownDivs = topnavDropdown.find('.dropdown-wrapper');
     var sidenav = $('nav.sidenav'),
         sidenavMenus = sidenav.find('.menu-container');
     if(topnav.length){
-        topnavMenu.find('> *:first-child').click(function (e) {
+        topnavMenu.mouseenter(function(e){
+            let self = $(this);
+            if(!self.hasClass('active')){
+                let lastIndex = topnavMenu.filter('.menu-active').index();
+                let nowIndex = self.index();
+                if(nowIndex > lastIndex){
+                    topnavMenuContainer.removeClass('from-left');
+                   topnavMenuContainer.addClass('from-right');
+                }else{
+                    topnavMenuContainer.removeClass('from-right');
+                    topnavMenuContainer.addClass('from-left');
+                }
+            }
+            topnavMenu.removeClass('menu-active');
+            self.addClass('menu-active');
+        })
+        topnavMenu.find('> *:first-child').mouseenter(function (e) {
             let parent = $(this).parent(),
                 dIndex = parent.data('dropdown');
             if (dIndex) {
@@ -231,17 +249,23 @@ $(function () {
                     }
                 }
             }
-            topnavSubMenu.click(function(e){
-                e.preventDefault()
+        
+            topnavMenuNotsub.mouseenter(function(){
+                if (topnavDropdown.hasClass('active')) {
+                    topnavDropdown.removeClass('active');
+                }
+            });
+            topnavSubMenu.mouseenter(function(){
                 if (topnavDropdown.hasClass('active')) {
                     topnavDropdown.removeClass('active');
                     setTimeout(function(){
                         topnavDropdown.addClass('active');
-                    }, 1100);
+                    }, 980);
                 }
             });
         });
-        topnav.find('.dropdown-filter').click(function (e) {
+    
+        topnav.find('.dropdown-filter').mouseenter(function (e) {
             e.preventDefault();
             topnavMenu.removeClass('active');
             topnavDropdown.removeClass('active');
@@ -529,16 +553,34 @@ $(function () {
             }
         });
 
+        _tabLinks.click(function(e){
+            let anchor = $(this).data('anchor');
+                if (anchor) {
+                    let anchorTarget = $(anchor);
+                    if (anchorTarget) {
+                        let offset = anchorTarget.offset();
+                        $('html, body').stop().animate({
+                            scrollTop: offset.top - bodySize * 4.1
+                        }, 700, 'easeInOutCubic');
+                    }
+                }
+                calculateSectionAnchors();
+        })
+
         _tabContents.each(function(){
             let self = $(this);
+           
             let _subTabs = self.find('> .sub-tab-container > .tabs > .tab');
             let _subContents = self.find('> .sub-tab-container > .tab-contents > .tab-content');
-            _subTabs.click(function(){
+            _subTabs.mouseenter(function(){
                 let _s = $(this);
                 let _d = _s.data('tab');
                 if(!_s.hasClass('active')){
+                   
+                   
                     _subTabs.removeClass('active');
                     _s.addClass('active');
+
                     let _target = _subContents.filter('[data-tab="'+_d+'"]');
                     if(_target.length){
                         _subContents.removeClass('active');
@@ -554,6 +596,8 @@ $(function () {
                         }, 400);
                     }
                 }
+
+               
             })
         });
     }
@@ -1204,7 +1248,7 @@ $(function () {
                         duration: 2000,
                         delay: 10,
                     });
-                    this.destroy();
+                    // this.destroy();
                 },
                 offset: 'bottom-in-view',
             });

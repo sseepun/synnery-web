@@ -1,11 +1,11 @@
 <?php
   $titles = [
-    'JIGSAW<br>Intranet', 'JIGSAW<br>E-Saraban', 'JIGSAW<br>E-Document', 'JIGSAW<br>Project', 
-    'JIGSAW<br>E-Learning', 'JIGSAW<br>Procurement','JIGSAW<br>Accounting', 'JIGSAW<br>Listening', 
-    'JIGSAW<br>Vehicle', 'JIGSAW<br>Meeting Room'
+    'Intranet', 'E-Saraban', 'E-Document', 'Project Management', 
+    'E-Learning', 'E-Procurement', 'Accounting', 'Social Listening', 'Vehicle System', 
+    'Meeting Room'
   ];
 ?>
-<section class="section-01 section-padding pt-0">
+<section class="section-01">
   <div class="pattern style-50">
     <div class="wrapper" value=".5">
       <img src="public/img/patterns/07.png" alt="Hero">
@@ -46,9 +46,9 @@
 
       <?php
         $titles = [
-          'JIGSAW<br>Help Desk', 'JIGSAW<br>Chat Bot', 'JIGSAW<br>Portal', 'JIGSAW<br>Financial', 
-          'JIGSAW<br>Asset', 'JIGSAW<br>Sales Force','JIGSAW<br>CRM', 'JIGSAW<br>HRM', 
-          'JIGSAW<br>HRD', 'JIGSAW<br>Budgeting'
+          'Help Desk System', 'AI Chat Bot', 'Web Portal', 'E-Financial System', 
+          'Asset Management', 'Sales Force System','CRM System', 'HRM System', 
+          'HRD System', 'e-Budgeting', 'e-Budgeting', 'E-Form', 'Business Inteligent(BI)' 
         ];
       ?>
       <?php for($i=0; $i<10; $i++){?>

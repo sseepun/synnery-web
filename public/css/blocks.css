@@ -1816,6 +1816,12 @@
   width:0; background:#eb2c22; transition:width .6s;
 }
 .main-tabs-container .tab-wrapper .tab-link:hover::before{width:100%; right:unset; left:0;}
+.main-tabs-container.from-left .tab-wrapper .tab-link::before{
+  position:absolute; content:''; top:0; left:0; bottom:0; 
+  width:0; background:#eb2c22; transition:width .6s;
+}
+.main-tabs-container.from-left .tab-wrapper .tab-link:hover::before{left:unset; right:0;}
+
 .main-tabs-container .tab-wrapper .tab-link:after{
   content: ''; position:absolute; bottom:-12px; left:calc(50% - 5px);
   border-top:12px solid #eb2c22; transform-origin:center top;

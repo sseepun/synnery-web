@@ -35,32 +35,50 @@
         </div>
         <div class="bottom-panel">
           <div class="menu-container hide-tablet">
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==1)echo 'active'; ?>">
-              <a href="index.php">Home</a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==2)echo 'active'; ?>">
-              <a href="about.php">About us</a>
-            </div>
-            <div class="menu sub-menu <?php if(isset($topnavActive) && $topnavActive==3)echo 'active'; ?>" data-dropdown="2">
-              <a href="services.php">
-                Our Services <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
-              </a>
-            </div>
-            <div class="menu sub-menu <?php if(isset($topnavActive) && $topnavActive==4)echo 'active'; ?>" data-dropdown="3">
-              <a href="services.php">
-                Our Works <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
-              </a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==5)echo 'active'; ?>">
-              <a href="clients.php">Our Clients</a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==6)echo 'active'; ?>">
-              <a href="career.php">Career</a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==7)echo 'active'; ?>">
-              <a href="contact.php">Contact</a>
-            </div>
+            <?php 
+              $menu = [
+                [
+                  'title' => 'Home',
+                  'href' => 'index.php'
+                ],[
+                  'title' => 'About us',
+                  'href' => 'about.php'
+                ],[
+                  'title' => 'Our Services',
+                  'href' => ''
+                ],[
+                  'title' => 'Our Works',
+                  'href' => ''
+                ],[
+                  'title' => 'Our Clients',
+                  'href' => 'clients.php'
+                ],[
+                  'title' => 'Career',
+                  'href' => 'career.php'
+                ],[
+                  'title' => 'Contact',
+                  'href' => 'contact.php'
+                ],
+              ]
+            ?>
+
+            <?php foreach($menu as $i=>$d) {?>
+              <div class="menu <?= $i == 2 || $i == 3? 'sub-menu': ''?>
+                <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
+                <?php if($i == 2 || $i == 3){ ?>
+                  data-dropdown="<?php echo $i ?>"
+                 <?php }?>
+                >
+                <a href="<?= $d['href'] ?>">
+                  <?= $d['title'] ?> 
+                  <?php if($i == 2 || $i == 3){ ?>
+                    <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
+                  <?php } ?>
+                </a>
+              </div>
+            <?php } ?>
           </div>
+          
           <div class="option-menu d-none">
             <div class="global-search-toggle">
               <img src="public/img/icon/search.png" alt="Icon" />
@@ -83,19 +101,22 @@
           <?php
             $subMenuServices = [
               [
-                'title' => 'ENTERPRISE WEB DESIGN SOLUTIONS',
-                'desc' => 'FOR GOVERNMENT'
+                'title' => 'WEB DESIGN',
+                'desc' => 'STANDARD SOLUTION'
               ],[
-                'title' => 'FULL DIGITAL MARKETING SOLUTION',
-                'desc' => 'FOR GOVERNMENT'
+                'title' => 'DIGITAL MARKETING',
+                'desc' => 'FULL SERVICE'
               ],[
-                'title' => 'ENTERPRISE WEBBASE+MOBILE APPLICATION DEVELOPMENT SERVICES',
-                'desc' => 'FOR GOVERNMENT'
+                'title' => 'WEB & MOBILE',
+                'desc' => 'APPLICATION DEVELOPMENT'
               ],[
-                'title' => 'LARK SUITE APPLICATION',
-                'desc' => 'FOR GOVERNMENT'
+                'title' => 'NETWORK & SECURITY',
+                'desc' => 'SERVICE'
               ],[
-                'title' => 'INTRANET/SOCIAL PRIVATE NETWORK E-LEARNING + KM',
+                'title' => 'ARTIFICIAL INTELLIGENCE',
+                'desc' => 'SOLUTION'
+              ],[
+                'title' => 'LARK',
                 'desc' => ''
               ]
             ]
@@ -135,7 +156,7 @@
                 <?php foreach($subMenuServices as $i=>$d) {?>
                   <div class="menu-content <?= $i==0? 'active': '' ?> "  data-tab="tab_<?= $i ?>">
 
-                    <!-- ENTERPRISE WEB DESIGN SOLUTIONS -->
+                    <!-- WEB DESIGN -->
                     <?php if($i == 0) {?>
                       <?php include('data/menu/web-design.php') ?>
                       <div class="block-content">
@@ -146,7 +167,7 @@
                               <a href="<?= $d['href'] ?>" class="card-submenu">
                                 <div class="wrapper">
                                   <div class="icon">
-                                    <img src="<?= $d['icon'] ?>" alt="ICON">
+                                    <?= $d['icon'] ?>
                                   </div>
                                   <div class="text">
                                     <p class="title">
@@ -161,7 +182,7 @@
                       </div>
                     <?php }?> 
 
-                    <!-- FULL DIGITAL MARKETING SOLUTION -->
+                    <!-- DIGITAL MARKETING -->
                     <?php if($i == 1) {?>
                       <?php include('data/menu/digital-marketing.php') ?>
                       <div class="block-content">
@@ -172,7 +193,7 @@
                             <a href="<?= $d['href'] ?>" class="card-submenu">
                               <div class="wrapper">
                                 <div class="icon">
-                                  <img src="<?= $d['icon'] ?>" alt="ICON">
+                                  <?= $d['icon'] ?>
                                 </div>
                                 <div class="text">
                                   <p class="title">
@@ -187,7 +208,7 @@
                       </div> 
                     <?php }?> 
                     
-                    <!-- ENTERPRISE WEBBASE+MOBILE APPLICATION DEVELOPMENT SERVICES -->
+                    <!-- WEB & MOBILE -->
                     <?php if($i == 2) {?>
                       <?php include('data/menu/web-mobile.php') ?>
                       <div class="block-content">
@@ -198,7 +219,7 @@
                             <a href="<?= $d['href'] ?>" class="card-submenu">
                               <div class="wrapper">
                                 <div class="icon">
-                                  <img src="<?= $d['icon'] ?>" alt="ICON">
+                                  <?= $d['icon'] ?>
                                 </div>
                                 <div class="text">
                                   <p class="title">
@@ -213,18 +234,18 @@
                       </div> 
                     <?php }?> 
 
-                    <!-- LARK SUITE APPLICATION -->
+                    <!-- NETWORK & SECURITY -->
                     <?php if($i == 3) {?>
-                      <?php include('data/menu/lake-suite.php') ?>
+                      <?php include('data/menu/network-security.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
-                          <?php foreach($lakeSuite as $d) {?>
+                          <?php foreach($networkSecurity as $d) {?>
                             <div class="grid lg-1-3">
                             <a href="<?= $d['href'] ?>" class="card-submenu">
                               <div class="wrapper">
                                 <div class="icon">
-                                  <img src="<?= $d['icon'] ?>" alt="ICON">
+                                  <?= $d['icon'] ?>
                                 </div>
                                 <div class="text">
                                   <p class="title">
@@ -239,18 +260,44 @@
                       </div>  
                     <?php }?>
 
-                    <!-- INTRANET/SOCIAL PRIVATE NETWORK E-LEARNING + KM -->
+                    <!-- ARTIFICIAL INTELLIGENCE -->
                     <?php if($i == 4) {?>
-                      <?php include('data/menu/intranet-social.php') ?>
+                      <?php include('data/menu/artificial-intelligence.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
-                          <?php foreach($intranetSocial as $d) {?>
+                          <?php foreach($artificialIntelligence as $d) {?>
                             <div class="grid lg-1-3">
                             <a href="<?= $d['href'] ?>" class="card-submenu">
                               <div class="wrapper">
                                 <div class="icon">
-                                  <img src="<?= $d['icon'] ?>" alt="ICON">
+                                  <?= $d['icon'] ?>
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    <?= $d['title'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <?php } ?>
+                        </div>
+                      </div> 
+                    <?php }?>
+
+                    <!-- LARK -->
+                    <?php if($i == 5) {?>
+                      <?php include('data/menu/lark.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($lark as $d) {?>
+                            <div class="grid lg-1-3">
+                            <a href="<?= $d['href'] ?>" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <?= $d['icon'] ?>
                                 </div>
                                 <div class="text">
                                   <p class="title">
@@ -437,7 +484,7 @@
                       <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
                     </a>
                     
-                    <!-- ENTERPRISE WEB DESIGN SOLUTIONS -->
+                    <!-- WEB DESIGN -->
                     <?php if($i == 0) {?>
                       <?php include('data/menu/web-design.php') ?>
                       <div class="submenu-blocks">
@@ -451,7 +498,7 @@
                       </div>
                     <?php }?>
 
-                    <!-- FULL DIGITAL MARKETING SOLUTION -->
+                    <!-- DIGITAL MARKETING -->
                     <?php if($i == 1) {?>
                       <?php include('data/menu/digital-marketing.php') ?>
                       <div class="submenu-blocks">
@@ -465,7 +512,7 @@
                       </div>
                     <?php }?>
 
-                    <!-- ENTERPRISE WEBBASE+MOBILE APPLICATION DEVELOPMENT SERVICES -->
+                    <!-- WEB & MOBILE -->
                     <?php if($i == 2) {?>
                       <?php include('data/menu/web-mobile.php') ?>
                       <div class="submenu-blocks">
@@ -479,11 +526,11 @@
                       </div>
                     <?php }?>
 
-                    <!-- LARK SUITE APPLICATION -->
+                     <!-- NETWORK & SECURITY -->
                     <?php if($i == 3) {?>
-                      <?php include('data/menu/lake-suite.php') ?>
+                      <?php include('data/menu/network-security.php') ?>
                       <div class="submenu-blocks">
-                        <?php foreach($lakeSuite as $d) {?>
+                        <?php foreach($networkSecurity as $d) {?>
                           <div class="submenu">
                             <a class="lg-no-br" href="<?= $d['href'] ?>">
                               <?= $d['title'] ?>
@@ -493,11 +540,25 @@
                       </div>
                     <?php }?>
 
-                    <!-- INTRANET/SOCIAL PRIVATE NETWORK E-LEARNING + KM -->
+                    <!-- ARTIFICIAL INTELLIGENCE -->
                     <?php if($i == 4) {?>
-                      <?php include('data/menu/intranet-social.php') ?>
+                      <?php include('data/menu/artificial-intelligence.php') ?>
                       <div class="submenu-blocks">
-                        <?php foreach($intranetSocial as $d) {?>
+                        <?php foreach($artificialIntelligence as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+
+                    <!-- LARK -->
+                    <?php if($i == 5) {?>
+                      <?php include('data/menu/lark.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($lark as $d) {?>
                           <div class="submenu">
                             <a class="lg-no-br" href="<?= $d['href'] ?>">
                               <?= $d['title'] ?>
