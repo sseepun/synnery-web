@@ -148,11 +148,12 @@
     </div>
     <div class="container" style="z-index:2;">
       <div class="text-center" data-aos="fade-up" data-aos-delay="0">
-        <p class="h2 lg lh-xs color-black fw-600">
-          Full Services <span class="color-black lh-2xs text-shadow fw-600">Digital Solutions</span>
+        <h3 class="color-p font-popins fw-600 lh-xs">Full Services</h3>
+        <p class="h1 font-popins color-black lh-2xs text-shadow fw-600">
+          DIGITAL SOLUTIONS
         </p>
       </div>
-      <p class="h6 color-black md-no-br fw-400 text-center" data-aos="fade-up" data-aos-delay="150">
+      <p class="h5 color-black md-no-br fw-300 text-center mt-1" data-aos="fade-up" data-aos-delay="150">
         บริการด้านดิจิทัลแบบครบวงจร ตอบโจทย์ทุกความต้องการ
       </p>
     </div>
@@ -163,27 +164,27 @@
       $mainTabs = [
         [
           'pageId' => 'web-design',
-          'title' => 'Web Design Standard Solution',
+          'title' => 'Web Design<br>Standard Solution',
           'iconInactive' => 'public/img/icon/service-02.png',
           'iconActive' => 'public/img/icon/service-active-02.png'
         ], [
           'pageId' => 'full-service',
-          'title' => 'Full Service Digital Marketing',
+          'title' => 'Full Service<br>Digital Marketing',
           'iconInactive' => 'public/img/icon/service-01.png',
           'iconActive' => 'public/img/icon/service-active-01.png'
         ], [
           'pageId' => 'web-mobile-app',
-          'title' => 'Web & Mobile App Development',
+          'title' => 'Web & Mobile App<br>Development',
           'iconInactive' => 'public/img/icon/service-07.png',
           'iconActive' => 'public/img/icon/service-active-07.png'
         ], [
           'pageId' => 'net-work',
-          'title' => 'Network & Security Service',
+          'title' => 'Network & Security<br>Service',
           'iconInactive' => 'public/img/icon/service-08.png',
           'iconActive' => 'public/img/icon/service-active-08.png'
         ], [
           'pageId' => 'ai-solution',
-          'title' => 'Artificial Intelligence Solution',
+          'title' => 'Artificial Intelligence<br>Solution',
           'iconInactive' => 'public/img/icon/service-09.png',
           'iconActive' => 'public/img/icon/service-active-09.png'
         ],
@@ -193,11 +194,7 @@
       <?php foreach($mainTabs as $j=>$d){?>
         <div class="tab-link <?php if($j==0)echo 'active'; ?>" data-maintab="<?= $d['pageId'] ?>" data-anchor="#tab-header">
           <div class="wrapper">
-            <div class="icon">
-              <img src="<?= $d['iconInactive'] ?>" alt="Icon Inactive">
-              <img class="active" src="<?= $d['iconActive'] ?>" alt="Icon Active">
-            </div>
-            <p class="text"><?= $d['title'] ?></p>
+            <p class="text font-popins lh-sm"><?= $d['title'] ?></p>
           </div>
         </div>
         <div class="block-float right d-flex ai-end">
