@@ -4,7 +4,7 @@
       <div class="block">
         <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
         <div class="text-container">
-          <h3 class="lh-2xs color-01 fw-700" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="lh-2xs color-01 font-popins fw-700" data-aos="fade-up" data-aos-delay="0">
             AI ChatGPT
           </h3>
           <p class="sm-no-br fw-300 mt-2" data-aos="fade-up" data-aos-delay="150">
@@ -79,10 +79,10 @@
         <a class="ss-img square-md" href="web-gov-standard.php">
           <div class="img-bg" style="background-image:url('public/img/content/95.jpg');"></div>
         </a>
-        <div class="card-line-3">
-          <svg viewBox="0 0 100 100">
-            <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
-            <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+        <div class="card-line-3 size-02">
+          <svg viewBox="33.5 0 100 100">
+            <polyline points="166.5,.5 166.5,100 .5,100 .5,.5 166.5,.5" />
+            <polyline points="166.5,.5 166.5,100 .5,100 .5,.5 166.5,.5" />
           </svg>
         </div>
       </div>
@@ -92,10 +92,10 @@
         <a class="ss-img square-md" href="web-gov-standard.php">
           <div class="img-bg" style="background-image:url('public/img/content/96.jpg');"></div>
         </a>
-        <div class="card-line-3">
-          <svg viewBox="0 0 100 100">
-            <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
-            <polyline class="w-full" points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+        <div class="card-line-3 size-02">
+          <svg viewBox="33.5 0 100 100">
+            <polyline points="166.5,.5 166.5,100 .5,100 .5,.5 166.5,.5" />
+            <polyline points="166.5,.5 166.5,100 .5,100 .5,.5 166.5,.5" />
           </svg>
         </div>
       </div>
@@ -105,10 +105,10 @@
         <a class="ss-img square-md unset-xs" href="web-gov-standard.php">
           <div class="img-bg" style="background-image:url('public/img/content/97.jpg');"></div>
         </a>
-        <div class="card-line-3">
-          <svg viewBox="0 0 100 100">
-            <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
-            <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+        <div class="card-line-3 size-02">
+          <svg viewBox="33.5 0 100 100">
+            <polyline points="166.5,.5 166.5,100 .5,100 .5,.5 166.5,.5" />
+            <polyline points="166.5,.5 166.5,100 .5,100 .5,.5 166.5,.5" />
           </svg>
         </div>
       </div>

@@ -51,7 +51,7 @@
       <div class="block">
         <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
         <div class="text-container">
-          <h3 class="lh-2xs color-01 fw-700" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="lh-2xs color-01 font-popins fw-700" data-aos="fade-up" data-aos-delay="0">
             OCR For Laws<br>& Document
           </h3>
           <p class="sm-no-br fw-300 mt-2" data-aos="fade-up" data-aos-delay="150">
@@ -79,10 +79,10 @@
         <a class="ss-img horizontal-03 square-md" href="web-gov-standard.php">
           <div class="img-bg" style="background-image:url('public/img/content/101.jpg');"></div>
         </a>
-        <div class="card-line-3">
-          <svg viewBox="0 0 100 100">
-            <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
-            <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+        <div class="card-line-3 size-02">
+          <svg viewBox="50 0 100 100">
+            <polyline points="199.5,.5 199.5,100 .5,100 .5,.5 199.5,.5" />
+            <polyline points="199.5,.5 199.5,100 .5,100 .5,.5 199.5,.5" />
           </svg>
         </div>
       </div>
@@ -122,10 +122,10 @@
         <a class="ss-img horizontal-03 square-md unset-xs" href="web-gov-standard.php">
           <div class="img-bg" style="background-image:url('public/img/content/104.jpg');"></div>
         </a>
-        <div class="card-line-3">
-          <svg viewBox="0 0 100 100">
-            <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
-            <polyline points="99.5,.5 99.5,99.5 .5,99.5 .5,.5 99.5,.5" />
+        <div class="card-line-3 size-02">
+          <svg viewBox="50 0 100 100">
+            <polyline points="199.5,.5 199.5,100 .5,100 .5,.5 199.5,.5" />
+            <polyline points="199.5,.5 199.5,100 .5,100 .5,.5 199.5,.5" />
           </svg>
         </div>
       </div>

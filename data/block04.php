@@ -20,7 +20,7 @@
   ]
 ?>
 
-<section data-section="2" class="section-01 section-padding pt-0 pb-3">
+<section data-section="2" class="section-01 section-padding pt-0 pb-5">
   <div class="pattern style-47">
     <div class="wrapper" value=".5">
       <img src="public/img/patterns/07.png" alt="Hero">

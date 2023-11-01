@@ -252,6 +252,7 @@ $(function () {
         
             topnavMenuNotsub.mouseenter(function(){
                 if (topnavDropdown.hasClass('active')) {
+                    topnavSubMenu.removeClass('active-dropdown');
                     topnavDropdown.removeClass('active');
                 }
             });
@@ -269,6 +270,7 @@ $(function () {
             e.preventDefault();
             topnavMenu.removeClass('active');
             topnavDropdown.removeClass('active');
+            topnavSubMenu.removeClass('active-dropdown');
             scopeDiv.removeClass('topnav-dropdown-opened');
         });
         sidenavMenus.find('.has-children').each(function(){
@@ -516,7 +518,26 @@ $(function () {
     if(mainTabContainers.length){
         let _tabLinks = mainTabContainers.find('.tab-wrapper .tab-link');
         let _tabContents = mainTabContainers.find('.main-tab-content');
+        let _subTabContent = mainTabContainers.find('.sub-tab-container');
+        let _subTabs = mainTabContainers.find('.sub-tab-container > .tabs > .tab');
 
+        _subTabs.mouseenter(function(){
+            let self = $(this);
+            if(!self.hasClass('active')){
+                let lastIndex = _subTabs.filter('.menu-active').index();
+                let nowIndex = self.index();
+                if(nowIndex > lastIndex){
+                    _subTabContent.removeClass('from-left');
+                    _subTabContent.addClass('from-right');
+                }else{
+                    _subTabContent.removeClass('from-right');
+                    _subTabContent.addClass('from-left');
+                }
+                _subTabs.removeClass('menu-active');
+                !self.addClass('menu-active');
+            }
+        })
+   
         _tabLinks.mouseenter(function(e){
             let self = $(this);
             if(!self.hasClass('active')){
@@ -569,15 +590,12 @@ $(function () {
 
         _tabContents.each(function(){
             let self = $(this);
-           
             let _subTabs = self.find('> .sub-tab-container > .tabs > .tab');
             let _subContents = self.find('> .sub-tab-container > .tab-contents > .tab-content');
             _subTabs.mouseenter(function(){
                 let _s = $(this);
                 let _d = _s.data('tab');
                 if(!_s.hasClass('active')){
-                   
-                   
                     _subTabs.removeClass('active');
                     _s.addClass('active');
 
@@ -596,10 +614,10 @@ $(function () {
                         }, 400);
                     }
                 }
-
-               
             })
-        });
+        })
+
+        
     }
 
 

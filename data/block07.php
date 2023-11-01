@@ -15,9 +15,9 @@
                 <div class="img-bg" style="background-image:url('public/img/content/87.jpg');"></div>
               </div>
               <div class="card-line-3">
-                <svg viewBox="0 10 100 100">
-                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
-                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
+                <svg viewBox=".25 10 100 100">
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
                 </svg>
               </div>
             </div>
@@ -41,13 +41,13 @@
         <a href="#" class="ss-card ss-card-41 row-reverse">
           <div class="wrapper">
             <div class="img-container">
-              <div class="ss-img vertical-03">
+              <div class="ss-img vertical-03 h-full">
                 <div class="img-bg" style="background-image:url('public/img/content/86.jpg');"></div>
               </div>
               <div class="card-line-3">
-                <svg viewBox="0 10 100 100">
-                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
-                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
+                <svg viewBox=".25 10 100 100">
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
                 </svg>
               </div>
             </div>
@@ -75,9 +75,9 @@
                 <div class="img-bg" style="background-image:url('public/img/content/88.jpg');"></div>
               </div>
               <div class="card-line-3">
-                <svg viewBox="0 10 100 100">
-                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
-                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" />
+                <svg viewBox=".25 10 100 100">
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
                 </svg>
               </div>
             </div>
@@ -103,9 +103,9 @@
                 <div class="img-bg" style="background-image:url('public/img/content/89.jpg');"></div>
               </div>
               <div class="card-line-3">
-                <svg viewBox="0 10 100 100">
-                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" stroke="red" />
-                  <polyline points="120,.5 120,120 .5,120 .5,.5 120,.5" stroke="red" />
+                <svg viewBox=".25 10 100 100">
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
                 </svg>
               </div>
             </div>

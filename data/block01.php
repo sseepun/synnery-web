@@ -4,7 +4,7 @@
       <div class="block">
         <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
         <div class="text-container">
-          <h3 class="lh-2xs color-01 fw-700" data-aos="fade-up" data-aos-delay="0">
+          <h3 class="lh-2xs color-01 font-popins fw-700" data-aos="fade-up" data-aos-delay="0">
             Web Design<br> 
           </h3>
           <p class="sm-no-br fw-300 mt-2" data-aos="fade-up" data-aos-delay="150">

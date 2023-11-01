@@ -17,7 +17,7 @@
   <div class="img-bg" style="background-image:url('public/img/bg/95.jpg'); background-position:top center;"></div>
   <div class="container" style="z-index:2;">
     <div class="text-center">
-      <h3 class="lh-2xs color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
+      <h3 class="lh-2xs color-01 font-popins fw-600" data-aos="fade-up" data-aos-delay="0">
         Unlimited Minisite
       </h3>
       <p class="fw-400 mt-2 lg-no-br" data-aos="fade-up" data-aos-delay="150">

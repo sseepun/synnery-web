@@ -5,7 +5,7 @@
     'Meeting Room'
   ];
 ?>
-<section class="section-01">
+<section class="section-01 pb-6">
   <div class="pattern style-50">
     <div class="wrapper" value=".5">
       <img src="public/img/patterns/07.png" alt="Hero">
@@ -103,31 +103,6 @@
           </div>
         </a>
       <?php }?>
-    </div>
-  </div>
-</section>
-
-<section class="section-01 section-padding">
-  <div class="container">
-    <h3 class="text-center color-p fw-600 lh-sm" data-aos="fade-up" data-aos-delay="0">
-      Microservices Architechture
-    </h3>
-    <p class="sm text-center md-no-br fw-400 mt-2" data-aos="fade-up" data-aos-delay="150">
-      ด้วยประสบการณ์ในการทำงานและแลกเปลี่ยนพูดคุย ถึงปัญหาเกี่ยวกับระบบเทคโนโลยีและสารสนเทศภาครัฐมานาน<br>
-      ทำให้เราเข้าใจและมองเห็นปัญหาที่ถูกสะสมมายาวนาน ทำให้เราเข้าใจและสามารถออกแบบระบบใหม่<br>
-      เพื่อแก้ไขปัญหาเก่าๆ และนำเทคโนโลยีใหม่ๆ เข้ามาใช้งาน 
-    </p>
-    <div class="ss-box xl mt-6" style="background:#2b2a2f; border-radius:1rem; padding:1.5rem;" data-aos="fade-up" data-aos-delay="300">
-      <img class="img" src="public/img/content/05.png" alt="Image" />
-    </div>
-    <div class="btns pt-6 mt-2 jc-center animate-01" style="--delay:.9s;" data-aos="fade-up" data-aos-delay="450">
-      <?php
-        $btnBubble = [
-          'href' => 'web-gov-standard.php',
-          'title' => 'Explore More',
-        ];
-        include('component/btn-bubble.php');
-      ?>
     </div>
   </div>
 </section>
