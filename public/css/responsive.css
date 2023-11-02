@@ -125,9 +125,9 @@
     display: block;
     margin-bottom: 1.25rem;
   }
-  .section-14 .grids {
+  /* .section-14 .grids {
     display: block;
-  }
+  } */
   .section-14 .w100 {
     width: calc(100% - var(--gs)) !important;
   }
