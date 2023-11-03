@@ -327,7 +327,9 @@
 .section-01 .hex .icon{display:flex; justify-content:center; align-items:center;}
 .section-01 .hex .icon > img,
 .section-01 .hex .icon > svg{display:block; width:40px; height:auto;}
-.hex.lg.inner::before{background:#ffffff;}
+.section-01 .hex.inner .icon svg{fill:#eb2c22;}
+.section-01 .hex .icon svg{fill:#ffffff;}
+.section-01 .hex.lg.inner::before{background:#ffffff;}
 
 /* Section 01 --> Pattern */
 .section-01 > .pattern{pointer-events:none!important;}
@@ -1880,6 +1882,19 @@
 .main-tabs-container .tab-link > .wrapper .text{
   text-align:center; width:100%; 
 }
+.sub-tab-container .tab-content{
+  position:absolute; top:0; left:0; right:0; pointer-events:none!important;
+  display:block; width:100%; opacity:0; transform:translate(0,1.5rem);
+  transition:all .6s;
+}
+.sub-tab-container.from-right .tab-content.previous,
+.sub-tab-container.from-left .tab-content{transform:translate(-6rem,0);}
+.sub-tab-container.from-left .tab-content.previous,
+.sub-tab-container.from-right .tab-content{transform:translate(6rem,0);}
+.sub-tab-container .tab-content.active{
+  position:relative; top:unset; left:unset; right:unset; pointer-events:unset!important;
+  opacity:1; transform:translate(0,0)!important; display:block;
+}
 @media screen and (max-width:991.98px){
   .main-tabs-container .tab-link > .wrapper{padding:.5rem;}
 }
@@ -1932,14 +1947,14 @@
   position:relative; display:none; width:100%; padding:0; margin:0; 
   transition:opacity .6s, transform .6s; 
 }
-.sub-tab-container .tab-content.active{display:block;}
+/* .sub-tab-container .tab-content.active{display:block;} */
 .sub-tab-container .tab-content.swiper-block{display:block; position:absolute; visibility:hidden; pointer-events:auto;}
 .sub-tab-container .tab-content.active.swiper-block{position:relative; visibility:visible;}
-.sub-tab-container .tab-content.fade-out:not(.no-fade){opacity:0; pointer-events:none;}
+/* .sub-tab-container .tab-content.fade-out:not(.no-fade){opacity:0; pointer-events:none;}
 .sub-tab-container .tab-content.fade-in:not(.no-fade){
   display:block; position:absolute; opacity:0; transform:translateY(1.5rem);
   pointer-events:none;
-}
+} */
 @media screen and (max-width:490.98px){
   .sub-tab-container .tab-contents{margin-top:0;}
 }

@@ -207,7 +207,7 @@ $(function () {
                 let nowIndex = self.index();
                 if(nowIndex > lastIndex){
                     topnavMenuContainer.removeClass('from-left');
-                   topnavMenuContainer.addClass('from-right');
+                    topnavMenuContainer.addClass('from-right');
                 }else{
                     topnavMenuContainer.removeClass('from-right');
                     topnavMenuContainer.addClass('from-left');
@@ -601,6 +601,14 @@ $(function () {
 
                     let _target = _subContents.filter('[data-tab="'+_d+'"]');
                     if(_target.length){
+                        if(mainTabTimer){
+                            clearTimeout(mainTabTimer);
+                            _subContents.removeClass('previous');
+                        }
+                        mainTabTimer = setTimeout(function(){
+                            _subContents.removeClass('previous');
+                        }, 600);
+                        _subContents.filter('.active').addClass('previous');
                         _subContents.removeClass('active');
                         _subContents.each(function(){
                             $(this)[0].style.display = 'none';
@@ -706,15 +714,36 @@ $(function () {
     // Menu Tab container 
     var menuTabContainers = $('.submenu-blocks');
     if(menuTabContainers.length){
+        let _subBlockLeft = topnav.find('.submenu-blocks .submenu-block.block-left');
+        let _subBlockRight = topnav.find('.submenu-blocks .submenu-block.block-right');
+        let _subMenu = $('.submenu-blocks .submenu-block.block-left .submenu');
+        let _subMenuLevel3 = $('.submenu-blocks .submenu-block.block-right .grids > .grid');
+        
+        _subMenu.mouseenter(function(){
+            let self = $(this);
+            if(!self.hasClass('active')){
+                let lastIndex = _subMenu.filter('.menu-active').index();
+                let nowIndex = self.index();
+                if(nowIndex > lastIndex){
+                    _subBlockLeft.removeClass('from-up');
+                    _subBlockLeft.addClass('from-down');
+                }else{
+                    _subBlockLeft.removeClass('from-down');
+                    _subBlockLeft.addClass('from-up');
+                }
+                _subMenu.removeClass('menu-active');
+                !self.addClass('menu-active');
+            }
+        });
         menuTabContainers.each(function(){
             var self = $(this),
                 tabs = self.find('.submenu'),
                 tabContents = self.find('.menu-content');
-              
-            tabs.mouseover(function(e){
+            tabs.mouseenter(function(e){
                 var target = tabs.filter('[data-tab="'+$(this).data('tab')+'"]');
                 var tabContentFilter = tabContents.filter('[data-tab="'+$(this).data('tab')+'"]'),
                     oldTargets = tabContents.filter('.active');
+
                 if($(this).hasClass('active')) e.preventDefault();
                 if(target.length && !$(this).hasClass('active')){
                     e.preventDefault();
@@ -725,8 +754,7 @@ $(function () {
                     tabContents.removeClass('fade-in');
                     oldTargets.addClass('fade-out');
                     tabContentFilter.addClass('fade-in');
-                    // target.addClass('fade-in');
-                    // target.addClass('active');
+                    _subMenuLevel3.removeClass('menu-active')
                   
                     setTimeout(function(){
                         tabContents.removeClass('fade-in fade-out active');
@@ -734,8 +762,24 @@ $(function () {
                         AOS.refresh();
                     }, 600);
                 }
+              
             });
         });
+
+        _subMenuLevel3.mouseenter(function(){
+            let self = $(this);
+            let lastIndex = _subMenuLevel3.filter('.menu-active').index();
+            let nowIndex = self.index();
+            if(nowIndex > lastIndex){
+                _subBlockRight.removeClass('from-left');
+                _subBlockRight.addClass('from-right');
+            }else{
+                _subBlockRight.removeClass('from-right');
+                _subBlockRight.addClass('from-left');
+            }
+            _subMenuLevel3.removeClass('menu-active');
+            !self.addClass('menu-active');
+        })
     }
 
 

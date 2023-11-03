@@ -45,10 +45,10 @@
                   'href' => 'about.php'
                 ],[
                   'title' => 'Our Services',
-                  'href' => ''
+                  'href' => 'javascript:void(0)'
                 ],[
                   'title' => 'Our Works',
-                  'href' => ''
+                  'href' => 'javascript:void(0)'
                 ],[
                   'title' => 'Our Clients',
                   'href' => 'clients.php'
