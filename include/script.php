@@ -49,5 +49,8 @@ $('.slider').slick({
     lazyLoad: 'progressive',
     arrows: false,
     dots: true,
-}).slickAnimation();
+    adaptiveHeigh: true,
+})
+.slickAnimation();
+
 </script>

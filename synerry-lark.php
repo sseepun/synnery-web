@@ -8,15 +8,15 @@
 </head>
 
 <body class="loading ovf-hidden">
-<?php include_once('component/page-loader.php'); ?>
-    <section class="top-banner">
+    <?php include_once('component/page-loader.php'); ?>
+    <?php  include_once('include/topnav.php'); ?>
+    <?php include_once('include/accessibility.php'); ?>
+    <section data-section="1" class="top-banner">
         <div class="slider stick-dots">
-            <div class="slide">
+        <div class="slide">
                 <div class="slide__img">
                     <img src="" alt="" data-lazy="./public/img/lark/top-banner-01.jpg" class="full-image animated"
                         data-animation-in="zoomInImage" />
-                </div>
-                <div class="slide__content">
                 </div>
             </div>
             <div class="slide">
@@ -40,7 +40,7 @@
         </div>
     </section>
 
-    <section class="section-padding lark-whatis" data-aos="fade-in" data-aos-delay="300">
+    <section data-section="2" class="section-padding lark-whatis" data-aos="fade-in" data-aos-delay="300">
         <div class="container">
             <div class="text-center" data-aos="fade-up" data-aos-delay="300">
                 <p class="h2 fw-700 "><i><img src="./public/img/lark/ico-lark.svg" alt=""></i>Lark <span
@@ -79,13 +79,13 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="img"><img src="./public/img/lark/img-whatis.png" alt=""></div>
+                    <div class="img glass border-rd-20"><img src="./public/img/lark/img-whatis.png" alt=""></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-padding lark-together">
+    <section data-section="3" class="section-padding lark-together">
         <div class="container">
             <div class="text-center" data-aos="fade-up" data-aos-delay="300">
                 <p class="h1 lh-xs fw-700 ">Lark <span class="color-01 fw-600">Together</span></p>
@@ -96,10 +96,10 @@
             </div>
             <div class="ss-box xl mt-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                 <div class="inner">
-                    <div class="grid-1-col">
-                        <div class="content">
-                            <div class="cover-bg">
-                                <div class="bg-img"
+                    <div class="grid-1-col ">
+                        <div class="content ">
+                            <div class="cover-bg ">
+                                <div class="bg-img glass"
                                     style="background-image: url(./public/img/lark/img-together-01.jpg);">
                                 </div>
                             </div>
@@ -144,7 +144,7 @@
                     <div class="grid-2-col">
                         <div class="content">
                             <div class="cover-bg">
-                                <div class="bg-img"
+                                <div class="bg-img glass"
                                     style="background-image: url(./public/img/lark/img-together-02.jpg);">
                                 </div>
                             </div>
@@ -160,7 +160,7 @@
                         </div>
                         <div class="content">
                             <div class="cover-bg">
-                                <div class="bg-img"
+                                <div class="bg-img glass"
                                     style="background-image: url(./public/img/lark/img-together-03.jpg);">
                                 </div>
                             </div>
@@ -183,7 +183,7 @@
         </div>
     </section>
 
-    <section class="section-padding inone-lark" data-aos="fade-up" data-aos-delay="300">
+    <section data-section="4" class="section-padding inone-lark" data-aos="fade-up" data-aos-delay="300">
         <div class="container" style="z-index: 1;">
             <div class="text-center" data-aos="fade-up" data-aos-delay="300">
                 <p class="h3 lh-xs fw-600 color-01">All the apps you need.</p>
@@ -195,7 +195,7 @@
                     <div class="grid-2-col" data-aos="fade-up" data-aos-delay="300">
                         <div class="bg-cover">
                             <div class="icon"><img src="./public/img/lark/ico-inone-lark-01.png" alt=""></div>
-                            <div class="bg-img" style="background-image: url(./public/img/lark/img-inone-lark-01.jpg);">
+                            <div class="bg-img glass" style="background-image: url(./public/img/lark/img-inone-lark-01.jpg);">
                             </div>
                         </div>
                         <div class="content">
@@ -250,14 +250,14 @@
 
                         <div class="bg-cover">
                             <div class="icon"><img src="./public/img/lark/ico-inone-lark-02.png" alt=""></div>
-                            <div class="bg-img" style="background-image: url(./public/img/lark/img-inone-lark-02.jpg);">
+                            <div class="bg-img glass" style="background-image: url(./public/img/lark/img-inone-lark-02.jpg);">
                             </div>
                         </div>
                     </div>
                     <div class="grid-2-col" data-aos="fade-up" data-aos-delay="300">
                         <div class="bg-cover">
                             <div class="icon"><img src="./public/img/lark/ico-inone-lark-03.png" alt=""></div>
-                            <div class="bg-img" style="background-image: url(./public/img/lark/img-inone-lark-03.jpg);">
+                            <div class="bg-img glass" style="background-image: url(./public/img/lark/img-inone-lark-03.jpg);">
                             </div>
                         </div>
                         <div class="content">
@@ -308,7 +308,7 @@
 
                         <div class="bg-cover">
                             <div class="icon"><img src="./public/img/lark/ico-inone-lark-04.png" alt=""></div>
-                            <div class="bg-img" style="background-image: url(./public/img/lark/img-inone-lark-04.jpg);">
+                            <div class="bg-img glass" style="background-image: url(./public/img/lark/img-inone-lark-04.jpg);">
                             </div>
                         </div>
                     </div>
@@ -511,7 +511,7 @@
         </div>
     </section>
 
-    <section class="section-padding lark-connector">
+    <section data-section="5" class="section-padding lark-connector">
         <div class="container">
             <div class="text-center" data-aos="fade-up" data-aos-delay="300">
                 <p class="color-white h1 text-center lh-xs fw-700 ">Lark Connector
@@ -573,7 +573,7 @@
 
     </section>
 
-    <section class="section-padding global">
+    <section data-section="6" class="section-padding global">
         <div class="container" style="z-index: 1;">
             <div class="text-center" data-aos="fade-up" data-aos-delay="300">
                 <p class=" h1 text-center lh-xs fw-700 ">Global. Trusted.
@@ -586,7 +586,7 @@
                     <div class="grid-3-col">
                         <div class="content">
                             <div class="title  fw-700">Automotive</div>
-                            <div class="detail grid-2-col">
+                            <div class="detail animate-floating grid-2-col">
                                 <div class="icon"><img src="./public/img/lark/ico-global-01.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-02.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-03.png" alt=""></div>
@@ -598,9 +598,9 @@
                             </div>
                         </div>
 
-                        <div class="content">
+                        <div class="content ">
                             <div class="title  fw-700">electronics</div>
-                            <div class="detail grid-2-col">
+                            <div class="detail animate-floating grid-2-col">
                                 <div class="icon"><img src="./public/img/lark/ico-global-09.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-10.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-11.png" alt=""></div>
@@ -614,7 +614,7 @@
                         </div>
                         <div class="content">
                             <div class="title  fw-700">Manufacturing</div>
-                            <div class="detail grid-2-col">
+                            <div class="detail animate-floating grid-2-col">
                                 <div class="icon"><img src="./public/img/lark/ico-global-17.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-18.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-19.png" alt=""></div>
@@ -624,9 +624,9 @@
 
                             </div>
                         </div>
-                        <div class="content">
+                        <div class="content ">
                             <div class="title  fw-700">Consumer goods</div>
-                            <div class="detail grid-1-col">
+                            <div class="detail animate-floating grid-1-col">
                                 <div class="icon"><img src="./public/img/lark/ico-global-23.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-24.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-25.png" alt=""></div>
@@ -634,9 +634,9 @@
 
                             </div>
                         </div>
-                        <div class="content">
+                        <div class="content ">
                             <div class="title  fw-700">internet/software</div>
-                            <div class="detail grid-2-col">
+                            <div class="detail animate-floating grid-2-col">
                                 <div class="icon"><img src="./public/img/lark/ico-global-27.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-28.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-29.png" alt=""></div>
@@ -647,9 +647,9 @@
                                 <div class="icon"><img src="./public/img/lark/ico-global-34.png" alt=""></div>
                             </div>
                         </div>
-                        <div class="content">
+                        <div class="content ">
                             <div class="title  fw-700">others</div>
-                            <div class="detail grid-2-col">
+                            <div class="detail animate-floating grid-2-col">
                                 <div class="icon"><img src="./public/img/lark/ico-global-35.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-36.png" alt=""></div>
                                 <div class="icon"><img src="./public/img/lark/ico-global-37.png" alt=""></div>
@@ -666,7 +666,7 @@
         </div>
     </section>
 
-    <section class="section-padding robust-data">
+    <section data-section="7" class="section-padding robust-data">
         <div class="container">
             <div class="text-center" data-aos="fade-up" data-aos-delay="300">
                 <p class="h3 text-center lh-xs fw-700 ">Robust data security and compliance
@@ -735,7 +735,7 @@
         </div>
     </section>
 
-    <section class="section-padding lark-synerry">
+    <section data-section="8" class="section-padding lark-synerry">
         <div class="container" style="z-index: 1;">
             <div class="text-center" data-aos="fade-up" data-aos-delay="300">
                 <p class="h2 text-center lh-xs fw-700 "><span class="color-01 fw-500">ทำไมต้องใช้ <i><img
@@ -748,7 +748,7 @@
                     <div class="grid-2-col" data-aos="fade-up" data-aos-delay="300">
                         <div class="bg-cover">
 
-                            <div class="bg-img"
+                            <div class="bg-img glass"
                                 style="background-image: url(./public/img/lark/img-lark-synerry-01.jpg);">
                             </div>
                         </div>
@@ -779,7 +779,7 @@
         </div>
     </section>
 
-    <section class="section-padding lark-community">
+    <!-- <section data-section="9" class="section-padding lark-community">
         <div class="container">
             <div class="text-center" data-aos="fade-up" data-aos-delay="300">
                 <p class="h3 text-center lh-xs fw-400 color-white">
@@ -806,11 +806,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
 
-
+    <?php  include_once('include/footer.php'); ?>
     <?php include_once('include/script.php'); ?>
 </body>
 
