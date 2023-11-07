@@ -45,10 +45,10 @@
                   'href' => 'about.php'
                 ],[
                   'title' => 'Our Services',
-                  'href' => ''
+                  'href' => 'javascript:void(0)'
                 ],[
                   'title' => 'Our Works',
-                  'href' => ''
+                  'href' => 'javascript:void(0)'
                 ],[
                   'title' => 'Our Clients',
                   'href' => 'clients.php'
@@ -317,7 +317,7 @@
             </div>
               <div class="line-1"></div>
               <div class="line-2"></div>
-              <div class="line-3"></div>
+              <div class="line-3"></div>             
             </div>
 
             <div class="dropdown-wrapper" data-dropdown="3">
@@ -445,6 +445,9 @@
                 <?php }?>
               </div>
             </div>
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>
             </div>
           </div>
         </div>

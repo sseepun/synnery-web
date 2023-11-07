@@ -1432,25 +1432,6 @@ fieldset{padding:0; margin:0; border:0;}
     .ss-card-52 .wrapper{justify-content:center;}
 }
 
-/* .ss-card-53{
-    position:relative;
-}
-.ss-card-53 .hover-line-container{
-    position:absolute; top:0; right:0; bottom:0; left:0;
-}
-.ss-card-53 .hover-line-container > .line-wrapper{position:relative; height:100%;}
-.ss-card-53 .line-wrapper > .line-01{
-    position:absolute; content:''; top:0; bottom:0; left:0; width:3px; height:100%;
-    background:#ec2c23; z-index:2; transition: all .25s; 
-}
-.ss-card-53:hover .line-wrapper > .line-01{bottom:unset; height:0; animation-name: menagerie; }
-@keyframes menagerie { 
-	0% {opacity: 1;} 
-	25% {opacity: 0;} 
-	}     */
-
-
-
 /* Special Image */
 .ss-img{display:block; position:relative; width:100%; padding:60% 0 0 0; overflow:hidden;}
 .ss-img.square{padding:100% 0 0 0;}
