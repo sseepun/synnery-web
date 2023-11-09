@@ -19,7 +19,7 @@
             <div class="hex lg bg">
               <div class="wrapper text-center color-white">
                 <div class="icon">
-                  <?= $d['icon'] ?>
+                  <img src="<?= $d['iconHover'] ?>" alt="<?= $d['alt'] ?>">
                 </div>
                 <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
                   <?= $d['title'] ?>
@@ -29,7 +29,7 @@
             <div class="hex lg inner">
               <div class="wrapper text-center color-p">
                 <div class="icon">
-                  <?= $d['icon'] ?>
+                  <img src="<?= $d['icon'] ?>" alt="<?= $d['alt'] ?>">
                 </div>
                 <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
                   <?= $d['title'] ?>
@@ -40,14 +40,13 @@
         </a>
       <?php }?>
 
-     
       <?php foreach($subWebMobile02 as $d ){?>
         <a class="hex-flip" href="erp-for-government.php">
           <div class="hex lg">
             <div class="hex lg bg">
               <div class="wrapper text-center color-white">
                 <div class="icon">
-                  <?= $d['icon'] ?>
+                  <img src="<?= $d['iconHover'] ?>" alt="<?= $d['alt'] ?>">
                 </div>
                 <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
                   <?= $d['title'] ?>
@@ -57,7 +56,7 @@
             <div class="hex lg inner">
               <div class="wrapper text-center color-p">
                 <div class="icon">
-                  <?= $d['icon'] ?>
+                  <img src="<?= $d['icon'] ?>" alt="<?= $d['alt'] ?>">
                 </div>
                 <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
                   <?= $d['title'] ?>
@@ -74,7 +73,7 @@
             <div class="hex lg bg">
               <div class="wrapper text-center color-white">
                 <div class="icon">
-                  <?= $d['icon'] ?>
+                  <img src="<?= $d['iconHover'] ?>" alt="<?= $d['alt'] ?>">
                 </div>
                 <p class="xs fw-400 lh-sm mt-1" style="font-size:14px;">
                   <?= $d['title'] ?>
@@ -84,7 +83,7 @@
             <div class="hex lg inner">
               <div class="wrapper text-center color-p">
                 <div class="icon">
-                  <?= $d['icon'] ?>
+                  <img src="<?= $d['icon'] ?>" alt="<?= $d['alt'] ?>">
                 </div>
                 <p class="xs fw-400 lh-sm mt-2" style="font-size:14px;">
                   <?= $d['title'] ?>

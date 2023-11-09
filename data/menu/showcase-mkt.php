@@ -1,13 +1,15 @@
 <?php
   $showMKT = [
     [
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/gssd.png',
       'title' => 'GSSD',
-      'href' => '#'
+      'href' => '#',
+      'classer' => 'sm'
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/pr-bangkok.png',
       'title' => 'PR Bangkok',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ]
   ]
 ?>
