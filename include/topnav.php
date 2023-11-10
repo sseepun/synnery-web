@@ -107,10 +107,16 @@
                 'bg' => 'public/img/content/menu-service-06.jpg',
                 'title' => 'AR,VR/3D Virtual Tour, Metaverse',
                 'href' => 'virtual-world.php',
-              ],[
-                'bg' => 'public/img/content/menu-service-07.jpg',
-                'title' => 'Live & Virtual Exhibition',
-                'href' => 'virtual-world.php',
+              ],
+              // [
+              //   'bg' => 'public/img/content/menu-service-07.jpg',
+              //   'title' => 'Live & Virtual Exhibition',
+              //   'href' => 'virtual-world.php',
+              // ],
+              [
+                'bg' => 'public/img/content/menu-service-lark.jpeg',
+                'title' => 'Lark',
+                'href' => 'synerry-lark.php',
               ],
             ]
           ?>
