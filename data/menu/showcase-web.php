@@ -1,53 +1,65 @@
 <?php
   $showWeb = [
     [
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/ieat.png',
       'title' => 'IEAT',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/dpt.png',
       'title' => 'DPT',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/anamai.png',
       'title' => 'Anamai',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/onesqa.png',
       'title' => 'Onesqa',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/eec.png',
       'title' => 'EEC',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/gssd.png',
       'title' => 'GSSD',
-      'href' => '#'
+      'href' => '#',
+      'classer' => 'sm'
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/pr-bangkok.png',
       'title' => 'PR Bangkok',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/ect.png',
       'title' => 'ECT',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/oic.png',
       'title' => 'OIC',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/m-culture.png',
       'title' => 'CRI',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/dlt.png',
       'title' => 'DLT',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ],[
-      'icon' => 'public/img/icon/topnav-menu-04.png',
+      'icon' => 'public/img/menu-clients/erc.png',
       'title' => 'ERC',
-      'href' => '#'
+      'href' => '#',
+      'classer' => ''
     ]
   ]
 ?>

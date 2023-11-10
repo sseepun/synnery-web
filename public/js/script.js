@@ -261,14 +261,13 @@ $(function () {
                     topnavDropdown.removeClass('active');
                     setTimeout(function(){
                         topnavDropdown.addClass('active');
-                    }, 980);
+                    }, 940);
                 }
             });
         });
     
         topnav.find('.dropdown-filter').mouseenter(function (e) {
             e.preventDefault();
-            topnavMenu.removeClass('active');
             topnavDropdown.removeClass('active');
             topnavSubMenu.removeClass('active-dropdown');
             scopeDiv.removeClass('topnav-dropdown-opened');
@@ -283,6 +282,12 @@ $(function () {
             self.prev().slideToggle();
         });
     }
+
+    var main = $('.tp-leftarrow');
+    console.log(main)
+    main.click(function (e) {
+        console.log('Hello');
+    })
 
     // Sidenav
     var sidenav = $('nav.sidenav'),

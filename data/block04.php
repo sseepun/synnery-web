@@ -55,16 +55,47 @@
       <?php }?>
     </div>
     <div class="social-blocks" data-aos="fade-up" data-aos-delay="150">
-      <?php for($i=0; $i<5; $i++){?>
-        <div class="social-block">
-          <div class="ss-card ss-card-36">
-            <div class="icon">
-              <img class="inactive" src="public/img/icon/social-0<?= ($i%5+1) ?>.png" alt="Icon Inactive" />
-              <img class="active" src="public/img/icon/active-social-0<?= ($i%5+1) ?>.png" alt="Icon Active" />
-            </div>
+      <div class="social-block">
+        <div class="ss-card ss-card-36">
+          <div class="icon">
+            <img class="inactive" src="public/img/icon/social-01.png" alt="Icon Inactive" />
+            <img class="active" src="public/img/icon/active-social-01.png" alt="Icon Active" />
           </div>
         </div>
-      <?php }?>
+      </div>
+      <div class="social-block">
+        <div class="ss-card ss-card-36">
+          <div class="icon">
+            <img class="inactive" src="public/img/icon/social-02.png" alt="Icon Inactive" />
+            <img class="active" src="public/img/icon/active-social-02.png" alt="Icon Active" />
+          </div>
+        </div>
+      </div>
+      <div class="social-block">
+        <div class="ss-card ss-card-36">
+          <div class="icon tw">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="social-block">
+        <div class="ss-card ss-card-36">
+          <div class="icon">
+            <img class="inactive" src="public/img/icon/social-04.png" alt="Icon Inactive" />
+            <img class="active" src="public/img/icon/active-social-04.png" alt="Icon Active" />
+          </div>
+        </div>
+      </div>
+      <div class="social-block">
+        <div class="ss-card ss-card-36">
+          <div class="icon">
+            <img class="inactive" src="public/img/icon/social-05.png" alt="Icon Inactive" />
+            <img class="active" src="public/img/icon/active-social-05.png" alt="Icon Active" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

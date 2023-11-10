@@ -374,7 +374,7 @@
                             <div class="grid lg-1-3">
                             <a href="<?= $d['href'] ?>" class="card-submenu">
                               <div class="wrapper">
-                                <div class="icon">
+                                <div class="icon <?= $d['classer'] ?>">
                                   <img src="<?= $d['icon'] ?>" alt="ICON">
                                 </div>
                                 <div class="text">
@@ -400,7 +400,7 @@
                             <div class="grid lg-1-3">
                             <a href="<?= $d['href'] ?>" class="card-submenu">
                               <div class="wrapper">
-                                <div class="icon">
+                                <div class="icon <?= $d['classer'] ?>">
                                   <img src="<?= $d['icon'] ?>" alt="ICON">
                                 </div>
                                 <div class="text">

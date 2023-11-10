@@ -436,7 +436,7 @@
         OUR CLIENTS
       </h2>
       <p class="text-center md-no-br" data-aos="fade-up" data-aos-delay="150">
-        ประสบการณ์มากกว่า 24 ปี ผลงานกับลูกค้าทั้งภาครัฐและเอกชนขนาดใหญ่กว่า 300 ราย มากกว่า 500 โครงการ
+        ประสบการณ์มากกว่า 25 ปี ผลงานกับลูกค้าทั้งภาครัฐและเอกชนขนาดใหญ่กว่า 300 ราย มากกว่า 500 โครงการ
       </p>
       <div class="grids jc-center" data-aos="fade-up" data-aos-delay="300">
         <div class="grid xl-20 lg-25 md-1-3 xs-50 pt-4">

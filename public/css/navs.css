@@ -305,7 +305,11 @@ nav.topnav .block-right .card-submenu .wrapper .icon{
   width:3rem; height:3rem; display:flex; justify-content:center; 
   align-items:center;
 }
-nav.topnav .block-right .card-submenu .wrapper img,
+nav.topnav .block-right .card-submenu .wrapper .icon.sm img{height:2rem;}
+nav.topnav .block-right .card-submenu .wrapper img{
+  display:block; max-width:100%; width:auto; 
+  max-height:100%; height:2.4375rem; 
+}
 nav.topnav .block-right .card-submenu .wrapper svg{
   display:block; max-width:100%; width:auto; transition:fill .8s;
   max-height:100%; height:2.3125rem; fill:#ec2c23;
