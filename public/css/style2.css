@@ -1,6 +1,14 @@
 html, body {
     font-family: 'Noto Sans Thai', sans-serif !important;
 }
+html[lang="en"] *:not(em):not(i) {
+    font-family: 'Poppins', 'Noto Sans Thai';
+}
+
+.letter-spacing-7 {
+    letter-spacing: 7px;
+}
+
 .bg-sec {
     background-size: cover;
     background-repeat: no-repeat;
@@ -203,4 +211,38 @@ html, body {
     z-index: 99;
     padding-bottom: 1rem;
     background: linear-gradient(180deg, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%);
+}
+
+.section-home-12 .blocks > .block > .text-container {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .section-home-12 .blocks {
+        min-height: 22rem;
+    }
+    .section-home-12 .blocks > .block {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .section-home-12 .blocks > .block-float.left {
+        padding-right: 2rem;
+    }
+    .section-home-12 .blocks > .block-float.right {
+        order: 2;
+        padding-left: 2rem;
+    }
+}
+@media screen and (min-width: 992px) {
+    .section-home-12 .blocks {
+        min-height: 22rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .section-home-12 .blocks > .block-float.left {
+        background-position: left top;
+    }
+    .section-home-12 .blocks > .block-float.right {
+        background-position: right top;
+    }
 }
