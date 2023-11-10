@@ -232,9 +232,14 @@
                     AR,VR/3D Virtual Tour, Metaverse
                   </a>
                 </div>
-                <div class="submenu">
+                <!-- <div class="submenu">
                   <a href="virtual-world.php">
                     Live & Virtual Exhibition
+                  </a>
+                </div> -->
+                <div class="submenu">
+                  <a href="synerry-lark.php">
+                    Lark
                   </a>
                 </div>
               </div>
