@@ -159,7 +159,7 @@
         <?php }else{?>
           <div data-aos="fade-up" data-aos-delay="150">
             <iframe 
-              style="position:relative; width:100%; height:1470px; border:0; overflow:hidden; z-index:1;" 
+              style="position:relative; width:100%; height:60rem; border:0; overflow:hidden; z-index:1;" 
               src="https://form.asana.com/?k=oniAq4i-fs1lCMY8wWWOBw&d=688901825130647&embed=true" 
             ></iframe>
           </div>
@@ -265,9 +265,12 @@
       <div class="address">
         <p class="sm fw-500">บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>
         <p class="xs mt-1">1/1 ซอยรามคำแหง 12 แยก 2 แขวงหัวหมาก เขตบางกะปิ กทม. 10240</p>
-        <p class="xs fw-500 mt-1">+662-318-4939, +668-6340-6895</p>
+        <p class="xs fw-500 mt-1">
+          <a href="tel:+6623184939">+662-318-4939</a>, 
+          <a href="tel:+66863406895">+668-6340-6895</a>
+        </p>
         <div class="mt-1">
-          <a class="p xs a-line color-p fw-400" href="#">sales@synerry.com</a>
+          <a class="p xs a-line color-p fw-400" href="mailto:sales@synerry.com">sales@synerry.com</a>
         </div>
       </div>
       <div class="footer-socials pos-relative" style="z-index:2;">
@@ -310,10 +313,16 @@
         </div>
         <div class="hex-icon">
           <a class="hex hex-tw" href="https://twitter.com/SynerryC" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-twitter"></em></div>
+            <div class="wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+              </svg>
+            </div>
           </a>
           <a class="hex hex-tw hex-back" href="https://twitter.com/SynerryC" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-twitter"></em></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+            </svg>
           </a>
         </div>
         <div class="hex-icon">

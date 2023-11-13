@@ -1,4 +1,4 @@
-
+<link rel="stylesheet" href="public/fonts/includes.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100;200;300;400;500;600;700;800;900&display=swap" />
@@ -20,7 +20,6 @@
 
 <link rel="stylesheet" href="public/css/grids.css" />
 <link rel="stylesheet" href="public/css/style.css?v=0.0.1" />
-<link rel="stylesheet" href="public/css/custom.css?v=0.0.1" />
 <link rel="stylesheet" href="public/css/navs.css" />
 <link rel="stylesheet" href="public/css/blocks.css?v=0.0.2" />
 <link rel="stylesheet" href="public/css/responsive.css?v=0.0.2" />
