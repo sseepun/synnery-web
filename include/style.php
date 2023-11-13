@@ -23,8 +23,8 @@
 <link rel="stylesheet" href="public/css/navs.css" />
 <link rel="stylesheet" href="public/css/blocks.css?v=0.0.2" />
 <link rel="stylesheet" href="public/css/responsive.css?v=0.0.2" />
-<link rel="stylesheet" href="public/css/cookie-concent.css?v=0.0.2" />
+<!-- <link rel="stylesheet" href="public/css/cookie-concent.css?v=0.0.2" />
 
 
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'> -->

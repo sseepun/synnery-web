@@ -142,7 +142,7 @@
             <div class="submenu-blocks menu-container">
               <div class="submenu-block block-left">
                 <?php foreach($subMenuServices as $i=>$d) {?>
-                  <div class="submenu has-children <?= $i == 0? 'active': '' ?> <?= ($i == 2 || $i == 4)? 'd-none':'' ?>" data-tab="tab_<?= $i ?>">
+                  <div class="submenu has-children <?= $i == 0? 'active': '' ?> <?= ($i == 2 || $i == 4 || $i == 3) ? 'd-none':'' ?>" data-tab="tab_<?= $i ?>">
                     <div class="wrapper">
                       <a class="title d-block submenu-main p xs lh-sm" href="#">
                         <?= $d['title'] ?>
