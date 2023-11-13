@@ -64,7 +64,9 @@
 
             <?php foreach($menu as $i=>$d) {?>
               <div class="menu <?= $i == 2 || $i == 3? 'sub-menu': ''?>
-                <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
+                <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?> 
+                <?php if($i == 3) { echo 'd-none'; } ?>
+                " 
                 <?php if($i == 2 || $i == 3){ ?>
                   data-dropdown="<?php echo $i ?>"
                  <?php }?>
