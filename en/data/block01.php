@@ -72,7 +72,7 @@
               <div class="ss-card ss-card-37">
                 <a class="ss-img square" href="<?= $d['link'] ?>">
                   <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
-                    <div class="hover-container <?= $d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
+                    <div class="hover-container <?= empty($d['classer'])?'':$d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
                     <div class="wrapper">
                       <div class="icon">
                         <img src="<?= $d['icon'] ?>" alt="Client" />

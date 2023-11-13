@@ -20,7 +20,7 @@
         <div class="hint">Phone: +662-318-4939</div>
         <div class="icon"><img src="<?php echo DOMAIN ?>public/img/icon/a-phone.png" alt="Icon" /></div>
       </a>
-      <a class="btn-a btn-a-04" href="mail: sales@jigsawoffice.com" target="_blank">
+      <a class="btn-a btn-a-04" href="mailto:sales@synerry.com" target="_blank">
         <div class="hint">Mail</div>
         <div class="icon"><em class="fa-solid fa-envelope"></em></div>
       </a>

@@ -1,6 +1,6 @@
 <?php
   $digitalMarketing = [
-    [
+    /*[
       'icon' => 
         '<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -51,7 +51,8 @@
         </svg>',
       'title' => 'Special Package',
       'href' => '#'
-    ],[
+    ],*/
+    [
       'icon' => '
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -119,8 +120,9 @@
           </g>
         </svg>',
       'title' => 'Full Services Digital<br> Marketing',
-      'href' => '#'
-    ],[
+      'href' => 'services.php'
+    ],
+    [
       'icon' => 
         '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
           y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -181,8 +183,9 @@
           </g>
         </svg>',
       'title' => 'AR, VR/3D Virtual Tour,<br> Metaverse',
-      'href' => '#'
-    ],[
+      'href' => 'virtual-world.php'
+    ],
+    /*[
       'icon' => 
         '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -262,7 +265,8 @@
         </svg>',
       'title' => 'Live & Virtual<br> Exhibition',
       'href' => '#'
-    ],[
+    ],*/
+    /*[
       'icon' => 
         '<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -333,6 +337,6 @@
         </svg>',
       'title' => 'Design Package',
       'href' => '#'
-    ]
+    ]*/
   ]
 ?>

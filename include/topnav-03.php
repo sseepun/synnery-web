@@ -126,7 +126,7 @@
               [
                 'title' => 'PROUND TO PRESENT',
                 'desc' => ''
-              ],/*[
+              ],[
                 'title' => 'SHOWCASE WEB GOVERNMENT',
                 'desc' => ''
               ],[
@@ -135,14 +135,14 @@
               ],[
                 'title' => 'E-OFFICE',
                 'desc' => ''
-              ],*/
+              ],
             ]
           ?>
           <div class="dropdown-wrapper" data-dropdown="2">
             <div class="submenu-blocks menu-container">
               <div class="submenu-block block-left">
                 <?php foreach($subMenuServices as $i=>$d) {?>
-                  <div class="submenu has-children <?= $i == 0? 'active': '' ?> <?= ($i == 2 || $i == 4)? 'd-none':'' ?>" data-tab="tab_<?= $i ?>">
+                  <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
                     <div class="wrapper">
                       <a class="title d-block submenu-main p xs lh-sm" href="#">
                         <?= $d['title'] ?>
@@ -232,7 +232,7 @@
                           <?php } ?>
                         </div>
                       </div> 
-                    <?php } ?> 
+                    <?php }?> 
 
                     <!-- NETWORK & SECURITY -->
                     <?php if($i == 3) {?>
