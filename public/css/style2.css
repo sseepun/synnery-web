@@ -9,6 +9,32 @@ html[lang="en"] *:not(em):not(i) {
     letter-spacing: 7px;
 }
 
+.tp-loader.spinner0 {
+    display: none;
+}
+
+.opacity-0 {
+    opacity: 0 !important;
+}
+.opacity-1 {
+    opacity: 1 !important;
+}
+
+@media screen and (min-width: 768px) {
+    .opacity-md-0 {
+        opacity: 0 !important;
+    }
+    .opacity-md-1 {
+        opacity: 1 !important;
+    }
+}
+
+/* Start Index */
+.tg-rev-slider .tp-caption {
+    font-family: 'Poppins', 'Noto Sans Thai';
+}
+/* End Index */
+
 .bg-sec {
     background-size: cover;
     background-repeat: no-repeat;
