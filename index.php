@@ -3,7 +3,6 @@
 <head>
   <?php include_once('include/header.php'); ?>
   <?php include_once('include/style.php'); ?>
-  <link rel="stylesheet" href="bootstrap-grid.css" />
 </head>
 <body class="loading">
   <?php include_once('component/page-loader.php'); ?>
