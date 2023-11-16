@@ -2,7 +2,7 @@
 <?php if(isset($withFooterInfo) && $withFooterInfo){?>
   <?php if(!isset($withFooterContact) || $withFooterContact){?>
     <section data-section="97" class="section-01 size-03">
-      <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
+      <div class="img-bg" style="background-image:url('public/img/bg/footer-03.jpg');"></div>  
       <div class="container">
         <div class="btns jc-center" data-aos="fade-up" data-aos-delay="0">
           <div class="btn-bubble__container">
