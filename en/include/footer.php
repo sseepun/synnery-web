@@ -172,34 +172,34 @@
     $services = [
       [
         'title' => 'Unlimited Microsite for Government',
-        'bg' => DOMAIN.'public/img/content/menu-service-02.jpg',
+        'bg' => DOMAIN.'public/img/content/01-Microsite.jpg',
         'url' => 'web-gov-minisite.php'
       ],[
         'title' => 'Enterprise Wordpress<br>Solutions',
-        'bg' => DOMAIN.'/img/content/menu-service-03.jpg',
+        'bg' => DOMAIN.'/img/content/02-Wordpress.jpg',
         'url' => 'enterprise-wordpress-solution.php'
       ],[
         'title' => 'NetWork Architecture/<br>DevSecOps',
-        'bg' => DOMAIN.'public/img/content/menu-service-04.jpg',
+        'bg' => DOMAIN.'public/img/content/03-NetWork Architecture.jpg',
         'url' => 'network-security-system.php'
       ],[
         'title' => 'Full Services Digital<br>Marketing',
-        'bg' => DOMAIN.'public/img/content/menu-service-05.jpg',
+        'bg' => DOMAIN.'public/img/content/04-Marketing.jpg',
         'url' => 'services.php'
       ],[
         'title' => 'AR, VR/3D Virtual Tour<br>Metaverse',
-        'bg' => DOMAIN.'public/img/content/menu-service-06.jpg',
+        'bg' => DOMAIN.'public/img/content/05-AR.jpg',
         'url' => 'virtual-world.php'
       ],[
         'title' => 'E-office/ ERP for<br>Government',
-        'bg' => DOMAIN.'public/img/content/menu-service-08.jpg',
+        'bg' => DOMAIN.'public/img/content/06-E-office.jpg',
         'url' => 'erp-for-government.php'
       ]
     ]
   ?>
   <section data-section="98" class="section-02 section-padding bg-black pb-0">
     <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-      งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
+      งานบริการอื่น ๆ <span class="fw-100 color-white">ของเรา</span>
     </h3> 
     <div class="swiper-container mt-6" data-aos="fade-up" data-aos-delay="150">
       <div class="swiper-wrapper">
