@@ -20,7 +20,7 @@ html[lang="en"] *:not(em):not(i) {
     opacity: 1 !important;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 580px) {
     .opacity-md-0 {
         opacity: 0 !important;
     }

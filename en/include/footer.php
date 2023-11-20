@@ -7,7 +7,7 @@
         <div class="btns jc-center" data-aos="fade-up" data-aos-delay="0">
           <div class="btn-bubble__container">
             <a href="#" class="button btn-bubble toggle-contact" data-contact="1">
-              สอบถามรายละเอียดเพิ่มเติม
+              Ask for more details.
             </a>
             <span class="btn-bubble__effect-container">
               <span class="circle top-left"></span>
@@ -176,7 +176,7 @@
         'url' => 'web-gov-minisite.php'
       ],[
         'title' => 'Enterprise Wordpress<br>Solutions',
-        'bg' => DOMAIN.'/img/content/02-Wordpress.jpg',
+        'bg' => DOMAIN.'public/img/content/02-Wordpress.jpg',
         'url' => 'enterprise-wordpress-solution.php'
       ],[
         'title' => 'NetWork Architecture/<br>DevSecOps',
@@ -199,7 +199,7 @@
   ?>
   <section data-section="98" class="section-02 section-padding bg-black pb-0">
     <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-      งานบริการอื่น ๆ <span class="fw-100 color-white">ของเรา</span>
+      <span class="fw-100 color-white">Our </span>Additional Services
     </h3> 
     <div class="swiper-container mt-6" data-aos="fade-up" data-aos-delay="150">
       <div class="swiper-wrapper">
@@ -270,7 +270,7 @@
           <a href="tel:+66863406895">+668-6340-6895</a>
         </p>
         <div class="mt-1">
-          <a class="p xs a-line color-p fw-400" href="#">sales@synerry.com</a>
+          <a class="p xs a-line color-p fw-400" href="mailto:sales@synerry.com">sales@synerry.com</a>
         </div>
       </div>
       <div class="footer-socials pos-relative" style="z-index:2;">

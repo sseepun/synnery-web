@@ -662,7 +662,7 @@
   <!-- End Our Services -->
 
   <!-- Start Our Clients -->
-  <section data-section="5" class="section-03 section-padding pt-0">
+  <section data-section="5" class="section-03 section-padding pt-0 pb-0">
 
     <?php include_once('data/clients-home.php'); ?>
     <div class="container" data-aos="fade-up" data-aos-delay="0">

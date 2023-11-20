@@ -64,7 +64,9 @@
 
             <?php foreach($menu as $i=>$d) {?>
               <div class="menu <?= $i == 2 || $i == 3? 'sub-menu': ''?>
-                <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
+                <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?> 
+                <?php if($i == 3) { echo 'd-none'; } ?>
+                " 
                 <?php if($i == 2 || $i == 3){ ?>
                   data-dropdown="<?php echo $i ?>"
                  <?php }?>
@@ -126,7 +128,7 @@
               [
                 'title' => 'PROUND TO PRESENT',
                 'desc' => ''
-              ],[
+              ],/*[
                 'title' => 'SHOWCASE WEB GOVERNMENT',
                 'desc' => ''
               ],[
@@ -135,14 +137,14 @@
               ],[
                 'title' => 'E-OFFICE',
                 'desc' => ''
-              ],
+              ],*/
             ]
           ?>
           <div class="dropdown-wrapper" data-dropdown="2">
             <div class="submenu-blocks menu-container">
               <div class="submenu-block block-left">
                 <?php foreach($subMenuServices as $i=>$d) {?>
-                  <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
+                  <div class="submenu has-children <?= $i == 0? 'active': '' ?> <?= ($i == 2 || $i == 4 || $i == 3) ? 'd-none':'' ?>" data-tab="tab_<?= $i ?>">
                     <div class="wrapper">
                       <a class="title d-block submenu-main p xs lh-sm" href="#">
                         <?= $d['title'] ?>
@@ -158,7 +160,7 @@
 
                     <!-- WEB DESIGN -->
                     <?php if($i == 0) {?>
-                      <?php include('../data/menu/web-design.php') ?>
+                      <?php include('data/menu/web-design.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
@@ -184,7 +186,7 @@
 
                     <!-- DIGITAL MARKETING -->
                     <?php if($i == 1) {?>
-                      <?php include('../data/menu/digital-marketing.php') ?>
+                      <?php include('data/menu/digital-marketing.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
@@ -210,7 +212,7 @@
                     
                     <!-- WEB & MOBILE -->
                     <?php if($i == 2) {?>
-                      <?php include('../data/menu/web-mobile.php') ?>
+                      <?php include('data/menu/web-mobile.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
@@ -232,11 +234,11 @@
                           <?php } ?>
                         </div>
                       </div> 
-                    <?php }?> 
+                    <?php } ?> 
 
                     <!-- NETWORK & SECURITY -->
                     <?php if($i == 3) {?>
-                      <?php include('../data/menu/network-security.php') ?>
+                      <?php include('data/menu/network-security.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
@@ -262,7 +264,7 @@
 
                     <!-- ARTIFICIAL INTELLIGENCE -->
                     <?php if($i == 4) {?>
-                      <?php include('../data/menu/artificial-intelligence.php') ?>
+                      <?php include('data/menu/artificial-intelligence.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
@@ -288,7 +290,7 @@
 
                     <!-- LARK -->
                     <?php if($i == 5) {?>
-                      <?php include('../data/menu/lark.php') ?>
+                      <?php include('data/menu/lark.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
@@ -340,7 +342,7 @@
 
                     <!-- PROUND TO PRESENT -->
                     <?php if($i == 0) {?>
-                      <?php include('../data/menu/pround-present.php') ?>
+                      <?php include('data/menu/pround-present.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
@@ -366,7 +368,7 @@
 
                     <!-- SHOWCASE WEB GOVERNMENT -->
                     <?php if($i == 1) {?>
-                      <?php include('../data/menu/showcase-web.php') ?>
+                      <?php include('data/menu/showcase-web.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
@@ -374,7 +376,7 @@
                             <div class="grid lg-1-3">
                             <a href="<?= $d['href'] ?>" class="card-submenu">
                               <div class="wrapper">
-                                <div class="icon">
+                                <div class="icon <?= $d['classer'] ?>">
                                   <img src="<?= $d['icon'] ?>" alt="ICON">
                                 </div>
                                 <div class="text">
@@ -392,7 +394,7 @@
 
                     <!-- SHOWCASE MKT -->
                     <?php if($i == 2) {?>
-                      <?php include('../data/menu/showcase-mkt.php') ?>
+                      <?php include('data/menu/showcase-mkt.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
@@ -400,7 +402,7 @@
                             <div class="grid lg-1-3">
                             <a href="<?= $d['href'] ?>" class="card-submenu">
                               <div class="wrapper">
-                                <div class="icon">
+                                <div class="icon <?= $d['classer'] ?>">
                                   <img src="<?= $d['icon'] ?>" alt="ICON">
                                 </div>
                                 <div class="text">
@@ -418,7 +420,7 @@
 
                     <!-- E-OFFICE -->
                     <?php if($i == 3) {?>
-                      <?php include('../data/menu/e-office.php') ?>
+                      <?php include('data/menu/e-office.php') ?>
                       <div class="block-content">
                         <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
                         <div class="grids">
@@ -489,7 +491,7 @@
                     
                     <!-- WEB DESIGN -->
                     <?php if($i == 0) {?>
-                      <?php include('../data/menu/web-design.php') ?>
+                      <?php include('data/menu/web-design.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($webDesign as $d) {?>
                           <div class="submenu">
@@ -503,7 +505,7 @@
 
                     <!-- DIGITAL MARKETING -->
                     <?php if($i == 1) {?>
-                      <?php include('../data/menu/digital-marketing.php') ?>
+                      <?php include('data/menu/digital-marketing.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($digitalMarketing as $d) {?>
                           <div class="submenu">
@@ -517,7 +519,7 @@
 
                     <!-- WEB & MOBILE -->
                     <?php if($i == 2) {?>
-                      <?php include('../data/menu/web-mobile.php') ?>
+                      <?php include('data/menu/web-mobile.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($webMobile as $d) {?>
                           <div class="submenu">
@@ -531,7 +533,7 @@
 
                      <!-- NETWORK & SECURITY -->
                     <?php if($i == 3) {?>
-                      <?php include('../data/menu/network-security.php') ?>
+                      <?php include('data/menu/network-security.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($networkSecurity as $d) {?>
                           <div class="submenu">
@@ -545,7 +547,7 @@
 
                     <!-- ARTIFICIAL INTELLIGENCE -->
                     <?php if($i == 4) {?>
-                      <?php include('../data/menu/artificial-intelligence.php') ?>
+                      <?php include('data/menu/artificial-intelligence.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($artificialIntelligence as $d) {?>
                           <div class="submenu">
@@ -559,7 +561,7 @@
 
                     <!-- LARK -->
                     <?php if($i == 5) {?>
-                      <?php include('../data/menu/lark.php') ?>
+                      <?php include('data/menu/lark.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($lark as $d) {?>
                           <div class="submenu">
@@ -585,7 +587,7 @@
                     
                     <!-- PROUND TO PRESENT -->
                     <?php if($i == 0) {?>
-                      <?php include('../data/menu/pround-present.php') ?>
+                      <?php include('data/menu/pround-present.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($proundPresent as $d) {?>
                           <div class="submenu">
@@ -599,7 +601,7 @@
 
                     <!-- SHOWCASE WEB GOVERNMENT -->
                     <?php if($i == 1) {?>
-                      <?php include('../data/menu/showcase-web.php') ?>
+                      <?php include('data/menu/showcase-web.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($showWeb as $d) {?>
                           <div class="submenu">
@@ -613,7 +615,7 @@
 
                     <!-- SHOWCASE MKT -->
                     <?php if($i == 2) {?>
-                      <?php include('../data/menu/showcase-mkt.php') ?>
+                      <?php include('data/menu/showcase-mkt.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($showMKT as $d) {?>
                           <div class="submenu">
@@ -627,7 +629,7 @@
 
                     <!-- E-OFFICE -->
                     <?php if($i == 3) {?>
-                      <?php include('../data/menu/e-office.php') ?>
+                      <?php include('data/menu/e-office.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($eOffice as $d) {?>
                           <div class="submenu">
