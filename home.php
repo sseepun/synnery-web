@@ -330,7 +330,7 @@
             <div class="service-list">
               <div class="wrapper">
                 <div class="icon style-04">
-                  <?php include('public/img/icon/svg/e-sarabun.php'); ?>
+                  <img src="public/img/icon/32.png" alt="Mobile Icon" class="ml-1" />
                 </div>
                 <div class="text">
                   <p class="title">
@@ -368,29 +368,29 @@
   <?php 
     $content = [
       [
-        'logo' => 'public/img/lark/logo/zapier.png',
+        'logo' => 'public/img/partners/01.png',
         'title' => 'Lark',
         'alt' => 'Lark'
       ],[
-        'logo' => 'public/img/lark/logo/sentry.png',
+        'logo' => 'public/img/partners/02.png',
         'title' => 'Asana',
         'alt' => 'Asana'
       ],[
-        'logo' => 'public/img/lark/logo/app-follow.png',
+        'logo' => 'public/img/partners/03.png',
         'title' => 'Device42',
         'alt' => 'Device42'
       ],[
-        'logo' => 'public/img/lark/logo/dropbox.png',
+        'logo' => 'public/img/partners/04.png',
         'title' => 'DISPL',
-        'alt' => 'Dropbox'
+        'alt' => 'DISPL'
       ],[
-        'logo' => 'public/img/lark/logo/cal.png',
+        'logo' => 'public/img/partners/05.png',
         'title' => 'My Learning Hub',
         'alt' => 'My Learning Hub'
       ]
     ]
   ?>
-  <section class="section-padding bg-04">
+  <section class="section-padding section-25 bg-04">
     <div class="container">
       <h3 class="text-center fw-700" data-aos="fade-up" data-aos-delay="150">
         <span class="color-p fw-700">Global</span> Product Partner
@@ -398,7 +398,7 @@
       <div class="grids jc-center" data-aos="fade-up" data-aos-delay="300">
         <?php foreach($content as $d) {?>
           <div class="grid lg-20 md-1-3 sm-1-3 xs-50">
-            <a href="#" class="ss-card ss-card-49">
+            <a href="#" class="ss-card ss-card-55">
               <div class="wrapper">
                 <div class="logo">
                   <img src="<?= $d['logo'] ?>" alt="<?= $d['alt'] ?>">
@@ -414,7 +414,7 @@
     </div>
   </section>
 
-  <section data-section="3" class="section-03 section-padding bg-05 pb-0">
+  <section data-section="3" class="section-24 section-padding bg-05 pb-0">
     <div class="pattern style-01">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">
@@ -472,7 +472,7 @@
                 <img class="mt-nagative icon-inactive" src="public/img/icon/tab-client-inactive.png">
                 <img class="mt-nagative icon-active" src="public/img/icon/tab-client-active.png">
               </div>
-              <span class="p title fw-400">รายชื่อลูกค้าภาครัฐ</span>
+              <span class="p title fw-400">Government</span>
             </div>
           </div>
           <div class="isotope-toolbar-btn isotope-tab" data-type="corporation" name="isotope-filter">
@@ -481,13 +481,13 @@
                 <img class="mt-nagative icon-inactive" src="public/img/icon/tab-client-02-inactive.png">
                 <img class="mt-nagative icon-active" src="public/img/icon/tab-client-02-active.png">
               </div>
-              <span class="p title fw-400">รายชื่อลูกค้าภาคเอกชน</span>
+              <span class="p title fw-400">Enterprise bussiness</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div data-aos="fade-up" data-aos-delay="450">
+    <div class="container" data-aos="fade-up" data-aos-delay="450">
       <div class="clients isotope-box pos-relative" style="z-index:2;">
         <?php foreach($clients as $d){?>
           <div class="client isotope-item" data-type="<?= $d['type'] ?>">
@@ -498,7 +498,7 @@
                   <img src="<?= $d['icon'] ?>" alt="Client" />
                 </div>
                 <div class="text-container mt-4">
-                  <p class="xxs title lh-sm">
+                  <p class="xxxs title lh-sm">
                     <?= $d['title']?>
                   </p>
                 </div>
@@ -532,13 +532,69 @@
       ]
     ]
   ?>
-  <div class="section-padding bg-04">
-    <div class="container">
+  <div class="section-padding section-01 bg-04">
+    <div class="pattern style-55">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/23.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-56">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/24.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-57">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/26.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-58">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/27.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-59">
+      <div class="wrapper" value="5">
+        <img src="public/img/patterns/28.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-60">
+      <div class="wrapper" value="-5">
+        <img src="public/img/patterns/29.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-61">
+      <div class="wrapper" value="5">
+        <img src="public/img/patterns/29.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-62">
+      <div class="wrapper" value="-5">
+        <img src="public/img/patterns/30.png" alt="Hero">
+      </div>
+    </div>
+    <div class="container" style="z-index:3;">
       <div class="ss-title" data-aos="fade-up" data-aos-delay="150">
         <div class="wrapper">
           <h3 class="text-center fw-700" data-aos="fade-up" data-aos-delay="150">
             <span class="color-p fw-700">Our</span> Activities
           </h3>
+          <div class="btns jc-center" data-aos="fade-up" data-aos-delay="0">
+            <div class="btn-bubble__container">
+              <a href="#" class="button btn-bubble toggle-contact" data-contact="1">
+                View all
+              </a>
+              <span class="btn-bubble__effect-container">
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="button effect-button"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+              </span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="grids" data-aos="fade-up" data-aos-delay="300">
@@ -562,7 +618,8 @@
     </div>      
   </div>
 
-  <?php include_once('include/footer.php'); ?>
+  <?php $withFooterInfo=true; include_once('include/footer-02.php'); ?>
   <?php include_once('include/script.php'); ?>
+  
 </body>
 </html>

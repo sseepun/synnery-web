@@ -141,11 +141,11 @@
     ];
   ?>
   <section class="section-01 section-padding pt-4 pb-4">
-    <div class="pattern style-32">
+    <!-- <div class="pattern style-32">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">
       </div>
-    </div>
+    </div> -->
     <div class="container" style="z-index:2;">
       <div class="text-center" data-aos="fade-up" data-aos-delay="0">
         <h3 class="color-p font-popins fw-600 lh-xs">Full Services</h3>

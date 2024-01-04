@@ -968,7 +968,7 @@ fieldset{padding:0; margin:0; border:0;}
 /* Special Card 26 */
 .ss-card-26{
     position:relative; width:100%; background:#ec2c23; color:#000000;
-    padding:1.25rem .75rem .5rem .75rem; height:11.25rem;
+    padding:1rem .1875rem 1rem .1875rem; height:6.5rem;
     display:flex; justify-content:center;
     transition:background .25s, color .25s;
 }
@@ -981,12 +981,15 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-26 .wrapper{position:relative; z-index:2;}
 .ss-card-26 .image-container{
     display:flex; justify-content:center; align-items:center;
-    width:5rem; height:4.5rem; margin:0 auto;
+    width:5rem; height:2.25rem; margin:0 auto;
 }
 .ss-card-26 .image-container img{
     display:block; width:auto; max-width:100%; height:auto; max-height:100%;
 }
-.ss-card-26 .text-container .title{text-align:center; color:#ffffff;}
+.ss-card-26 .text-container .title{
+    text-align:center; color:#ffffff; font-size:.5625rem; width:100%;
+    display: block;
+}
 
 /* Special Card 27 */
 .ss-card-27{border:1px solid #ec2c23; background:#ffffff; transition:all .3s; overflow:hidden; }
@@ -1471,30 +1474,63 @@ fieldset{padding:0; margin:0; border:0;}
     color:#ffffff; text-align:center; font-weight:500;
     font-size:1.125rem;
 }
+.ss-card-53:after{
+    position:absolute; top:0; left:-75%; z-index:2; display:block; content:''; width:50%; height:100%; 
+    background:-webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background:linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    transform:skewX(-25deg); transform:skewX(-25deg);
+}
+.ss-card-53:hover:after{
+    -webkit-animation:shine 1s; animation:shine 1s;
+}
 
 
 /* Special Card 54 */
-.ss-card-54{
-    position:relative;
-}
-.ss-card-54 .ss-img{
-    border-radius: .5rem;
-}
+.ss-card-54{position:relative;}
+.ss-card-54 .ss-img{border-radius: .5rem;}
 .ss-card-54 .text-container{
     background:#ffffff; margin-top:-.5rem; padding:1.5rem 1rem 1rem 1rem;
-    border-radius:0 0 .5rem .5rem;
+    border-radius:0 0 .5rem .5rem; transition: background .25s;
 }
+.ss-card-54:hover .text-container{background:#ec2c23;}
 .ss-card-54 .text-container .title{
     font-size:.8125rem; font-weight:600; -webkit-line-clamp:2; 
-    min-height:2.5rem;
+    min-height:2.5rem; transition:color .25s;
 }
 .ss-card-54 .text-container .desc{
     font-size:.75rem; color:#666666; -webkit-line-clamp:2; 
-    min-height:2.5rem;
+    min-height:2.5rem; transition:color .25s;
 }
+.ss-card-54:hover .text-container .title,
+.ss-card-54:hover .text-container .desc{color:#ffffff;}
 @media screen and (max-width:575.98px){
     .ss-card-54 .text-container .title,
     .ss-card-54 .text-container .desc{min-height:0;}
+}
+
+/* Special 55 */
+.ss-card-55{
+    position:relative; display:flex; align-items:center; justify-content:center;  overflow:hidden;
+    background:#FFFFFF; padding:2rem; border-radius:.75rem;
+}
+.ss-card-55 .wrapper{
+    display:flex; flex-direction:column; align-items:center;
+}
+.ss-card-55 .wrapper .logo{
+    width:6.5rem; height:2rem; transition:transform .3s linear; animation-iteration-count:infinite;
+    -webkit-animation-name:floating; animation-duration:5s;
+}
+
+.ss-card-55 .wrapper .logo img{
+    display:block; max-width:100%; width:auto; max-height:100%; height:auto;
+}
+.ss-card-55 .title{font-weight:500; margin-top:.5rem; text-align:center;}
+@media screen and (max-width:767.98px){
+    .ss-card-55{padding:1.375rem;}
+}
+@media screen and (max-width:490.98px){
+    .ss-card-55{height:8rem;}
+    .ss-card-55 .wrapper{justify-content:center;}
 }
 
 
@@ -1643,6 +1679,19 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-tags > .tag{
     display:inline-block; font-size:.8125rem; font-weight:300;
     padding:.3125rem .875rem .25rem .875rem; border-radius:.5rem;
+}
+
+/* Special Title */
+.ss-title .wrapper{
+    position:relative; display:flex; align-items:center; 
+    justify-content:center;
+}
+.ss-title .wrapper > .btns{
+    width:unset; position:absolute; top:.5rem; right:0;
+}
+@media screen and (max-width:767.98px){
+    .ss-title .wrapper{display:unset;}
+    .ss-title .wrapper > .btns{position:relative; margin-bottom:1rem;}
 }
 
 

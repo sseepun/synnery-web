@@ -259,6 +259,7 @@ $(function () {
             topnavSubMenu.mouseenter(function(){
                 if (topnavDropdown.hasClass('active')) {
                     topnavDropdown.removeClass('active');
+                 
                     setTimeout(function(){
                         topnavDropdown.addClass('active');
                     }, 940);
@@ -284,9 +285,9 @@ $(function () {
     }
 
     var main = $('.tp-leftarrow');
-    console.log(main)
+    // console.log(main)
     main.click(function (e) {
-        console.log('Hello');
+        // console.log('Hello');
     })
 
     // Sidenav

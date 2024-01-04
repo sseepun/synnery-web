@@ -55,10 +55,7 @@
                 ],[
                   'title' => 'Career',
                   'href' => 'career.php'
-                ],[
-                  'title' => 'Contact',
-                  'href' => 'contact.php'
-                ],
+                ]
               ]
             ?>
 
@@ -77,6 +74,22 @@
                 </a>
               </div>
             <?php } ?>
+             <div class="btns">
+              <div class="btn-bubble__container">
+                <a href="contact.php" class="button btn-bubble toggle-contact" data-contact="1">
+                  Contact Us
+                </a>
+                <span class="btn-bubble__effect-container">
+                  <span class="circle top-left"></span>
+                  <span class="circle top-left"></span>
+                  <span class="circle top-left"></span>
+                  <span class="button effect-button"></span>
+                  <span class="circle bottom-right"></span>
+                  <span class="circle bottom-right"></span>
+                  <span class="circle bottom-right"></span>
+                </span>
+              </div>
+             </div>
           </div>
           
           <div class="option-menu d-none">
@@ -646,7 +659,7 @@
               <a href="clients.php">Our Clients</a>
             </div>
             <div class="menu">
-              <a href="contact.php">Contact</a>
+              <a href="contact.php">Contact Us</a>
             </div>
           </div>
         </div>
