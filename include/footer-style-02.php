@@ -206,108 +206,188 @@
 
 
 <!-- Footer -->
-<nav class="footer">
+<nav class="footer-style-02">
   <div class="pattern style-01">
-    <div class="wrapper" value=".5">
-      <img src="public/img/content/pattern-09.png" alt="Hero" />
+    <div class="wrapper" value="-.5">
+      <img src="public/img/patterns/34.png" alt="Pattern" />
     </div>
   </div>
   <div class="pattern style-02">
     <div class="wrapper" value=".5">
-      <img src="public/img/content/pattern-10.png" alt="Hero" />
+      <img src="public/img/patterns/31.png" alt="Pattern" />
     </div>
   </div>
   <div class="pattern style-03">
     <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-07.png" alt="Hero" />
+      <img src="public/img/patterns/32.png" alt="Pattern" />
     </div>
   </div>
   <div class="pattern style-04">
-    <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-08.png" alt="Hero" />
+    <div class="wrapper" value=".5">
+      <img src="public/img/patterns/33.png" alt="Pattern" />
     </div>
   </div>
-  <div class="img-bg" style="background-image:url('public/img/bg/footer-02.jpg');"></div>
-  <div class="container">
-    <div class="top-wrapper">
-      <div class="logo-wrapper">
-        <a class="logo" href="index.php">
-          <img src="public/img/logo-white-part.png" alt="Logo" />
-          <img class="part part-01" src="public/img/logo-white-part-01.png" alt="Logo Part" />
-          <img class="part part-02" src="public/img/logo-part-02.png" alt="Logo Part" />
-          <img class="part part-03" src="public/img/logo-part-02.png" alt="Logo Part" />
-        </a>
-      </div>
-      <div class="address">
-        <p class="sm fw-500">บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>
-        <p class="xs mt-1">1/1 ซอยรามคำแหง 12 แยก 2 แขวงหัวหมาก เขตบางกะปิ กทม. 10240</p>
-        <p class="xs fw-500 mt-1">+662-318-4939, +668-6340-6895</p>
-        <div class="mt-1">
-          <a class="p xs a-line color-p fw-400" href="#">sales@synerry.com</a>
-        </div>
-      </div>
-      <div class="footer-socials pos-relative" style="z-index:2;">
-        <div class="hex-icon">
-          <a class="hex hex-fb ml-0" href="https://www.facebook.com/Synerry/" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>
-          </a>
-          <a class="hex hex-fb hex-back ml-0" href="https://www.facebook.com/Synerry/" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>
-          </a>
-        </div>
-        <div class="hex-icon">
-          <a class="hex hex-ig" href="https://www.instagram.com/lifeatsynerry/" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-instagram"></em></div>
-          </a>
-          <a class="hex hex-ig hex-back" href="https://www.instagram.com/lifeatsynerry/" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-instagram"></em></div>
-          </a>
-        </div>
-        <div class="hex-icon">
-          <a class="hex hex-yt" href="https://www.youtube.com/channel/UCJMXUE5qQiTcWwicqpHmPLg" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-youtube"></em></div>
-          </a>
-          <a class="hex hex-yt hex-back" href="https://www.youtube.com/channel/UCJMXUE5qQiTcWwicqpHmPLg" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-youtube"></em></div>
-          </a>
-        </div>
-        <div class="hex lg">
-          <div class="wrapper">
-            <img src="public/img/default/qr-code.jpg" alt="QR Code" />
+  <div class="pattern style-05">
+    <div class="wrapper" value="-.5">
+      <img src="public/img/patterns/35.png" alt="Pattern" />
+    </div>
+  </div>
+  <div class="pattern style-06">
+    <div class="wrapper" value=".5">
+      <img src="public/img/patterns/36.png" alt="Pattern" />
+    </div>
+  </div>
+  <div class="img-bg" style="background-image:url('public/img/bg/footer-style-02.jpg');"></div>
+  <div class="container" style="z-index:3;">
+    <div class="grids mt-6">
+      <div class="grid xl-1-3 lg-1-3 md-100 sm-100">
+        <div class="top-wrapper">
+          <div>
+          <div class="logo-wrapper">
+            <a class="logo" href="index.php">
+              <img src="public/img/logo-white-part.png" alt="Logo" />
+              <img class="part part-01" src="public/img/logo-white-part-01.png" alt="Logo Part" />
+              <img class="part part-02" src="public/img/logo-part-02.png" alt="Logo Part" />
+              <img class="part part-03" src="public/img/logo-part-02.png" alt="Logo Part" />
+            </a>
+          </div>
+          <div class="address">
+            <p class="sm fw-500">บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>
+            <p class="xs mt-1">1/1 ซอยรามคำแหง 12 แยก 2 แขวงหัวหมาก เขตบางกะปิ กทม. 10240</p>
+            <p class="xs fw-500 mt-1">+662-318-4939, +668-6340-6895</p>
+            <div class="mt-1">
+              <a class="p xs a-line color-p fw-400" href="#">sales@synerry.com</a>
+            </div>
+          </div>
+          </div>
+         
+          <div class="footer-socials pos-relative" style="z-index:2;">
+            <div class="hex-icon">
+              <a class="hex hex-fb ml-0" href="https://www.facebook.com/Synerry/" target="_blank">
+                <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>
+              </a>
+              <a class="hex hex-fb hex-back ml-0" href="https://www.facebook.com/Synerry/" target="_blank">
+                <div class="wrapper"><em class="fa-brands fa-facebook-f"></em></div>
+              </a>
+            </div>
+            <div class="hex-icon">
+              <a class="hex hex-ig" href="https://www.instagram.com/lifeatsynerry/" target="_blank">
+                <div class="wrapper"><em class="fa-brands fa-instagram"></em></div>
+              </a>
+              <a class="hex hex-ig hex-back" href="https://www.instagram.com/lifeatsynerry/" target="_blank">
+                <div class="wrapper"><em class="fa-brands fa-instagram"></em></div>
+              </a>
+            </div>
+            <div class="hex-icon">
+              <a class="hex hex-yt" href="https://www.youtube.com/channel/UCJMXUE5qQiTcWwicqpHmPLg" target="_blank">
+                <div class="wrapper"><em class="fa-brands fa-youtube"></em></div>
+              </a>
+              <a class="hex hex-yt hex-back" href="https://www.youtube.com/channel/UCJMXUE5qQiTcWwicqpHmPLg" target="_blank">
+                <div class="wrapper"><em class="fa-brands fa-youtube"></em></div>
+              </a>
+            </div>
+            <div class="hex lg">
+              <div class="wrapper">
+                <img src="public/img/default/qr-code.jpg" alt="QR Code" />
+              </div>
+            </div>
+            <div class="hex-icon">
+              <a class="hex hex-pr" href="https://www.pinterest.com/synerrylife/" target="_blank">
+                <div class="wrapper"><em class="fa-brands fa-pinterest-p"></em></div>
+              </a>
+              <a class="hex hex-pr hex-back" href="https://www.pinterest.com/synerrylife/" target="_blank">
+                <div class="wrapper"><em class="fa-brands fa-pinterest-p"></em></div>
+              </a>
+            </div>
+            <div class="hex-icon">
+              <a class="hex hex-tw" href="https://twitter.com/SynerryC" target="_blank">
+                <div class="wrapper">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                  </svg>
+                </div>
+              </a>
+              <a class="hex hex-tw hex-back" href="https://twitter.com/SynerryC" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                </svg>
+              </a>
+            </div>
+            <div class="hex-icon">
+              <a class="hex hex-ln" href="https://www.linkedin.com/in/synerry-corporation-thailand-co-ltd/" target="_blank">
+                <div class="wrapper"><em class="fa-brands fa-linkedin-in"></em></div>
+              </a>
+              <a class="hex hex-ln hex-back" href="https://www.linkedin.com/in/synerry-corporation-thailand-co-ltd/" target="_blank">
+                <div class="wrapper"><em class="fa-brands fa-linkedin-in"></em></div>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="hex-icon">
-          <a class="hex hex-pr" href="https://www.pinterest.com/synerrylife/" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-pinterest-p"></em></div>
-          </a>
-          <a class="hex hex-pr hex-back" href="https://www.pinterest.com/synerrylife/" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-pinterest-p"></em></div>
-          </a>
+      </div>
+      <div class="grid xl-1-3 lg-1-3 md-50 sm-100">
+        <div class="grids">
+          <div class="grid sm-50 mt-0">
+            <p class="title">SYNERRY</p>
+            <ul class="ss-list style-05">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">For Investor</a></li>
+              <li><a href="#">For Startup</a></li>
+              <li><a href="#">Become a Partner</a></li>
+              <li><a href="#">Activities</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="grid sm-50 mt-0">
+            <p class="title">SERVICES</p>
+            <ul class="ss-list style-05">
+              <li><a href="#">Full Digital Marketing</a></li>
+              <li><a href="#">Digital & Graphic Design</a></li>
+              <li><a href="#">Corporate Website</a></li>
+              <li><a href="#">Microsite for Gov</a></li>
+              <li><a href="#">E-Saraban</a></li>
+              <li><a href="#">E-Meeting</a></li>
+              <li><a href="#">E-Learning</a></li>
+              <li><a href="#">Web & Mobile Application</a></li>
+              <li><a href="#">Network & Security</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="hex-icon">
-          <a class="hex hex-tw" href="https://twitter.com/SynerryC" target="_blank">
-            <div class="wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
-              </svg>
-            </div>
-          </a>
-          <a class="hex hex-tw hex-back" href="https://twitter.com/SynerryC" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
-            </svg>
-          </a>
-        </div>
-        <div class="hex-icon">
-          <a class="hex hex-ln" href="https://www.linkedin.com/in/synerry-corporation-thailand-co-ltd/" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-linkedin-in"></em></div>
-          </a>
-          <a class="hex hex-ln hex-back" href="https://www.linkedin.com/in/synerry-corporation-thailand-co-ltd/" target="_blank">
-            <div class="wrapper"><em class="fa-brands fa-linkedin-in"></em></div>
-          </a>
+      </div>
+      <div class="grid xl-1-3 lg-1-3 md-50 sm-100">
+        <div class="grids">
+          <div class="grid sm-50 mt-0">
+            <p class="title">PRODUCTS</p>
+            <ul class="ss-list style-05">
+              <li><a href="#">Lark</a></li>
+              <li><a href="#">Asana</a></li>
+              <li><a href="#">Device42</a></li>
+              <li><a href="#">DISPL</a></li>
+              <li><a href="#">LearningHub</a></li>
+            </ul>
+          </div>
+          <div class="grid sm-50 mt-0">
+            <p class="title">SUCCESS STORIES</p>
+            <ul class="ss-list style-05">
+              <li><a href="#">Global South-South Development Expo 2022</a></li>
+              <li><a href="#">สำนักงานประชาสัมพันธ์ สำนักปลัดกรุงเทพมหานคร</a></li>
+              <li><a href="#">การกีฬาแห่งประเทศไทย</a></li>
+              <li><a href="#">กระทรวงอุตสาหกรรม</a></li>
+              <li><a href="#">กระทรวงศึกษาธิการ</a></li>
+              <li><a href="#">กระทรวงวัฒนธรรม</a></li>
+              <li><a href="#">กระทรวงพลังงาน</a></li>
+              <li><a href="#">สำนักงานคณะกรรมการการเลือกตั้ง</a></li>
+              <li><a href="#">กรมอนามัย</a></li>
+              <li><a href="#">APEC 2022 Thailand</a></li>
+              <li><a href="#">สำนักงานเศรษฐกิจการเกษตร</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+  
     <div class="bottom-wrapper">
       <p class="xs">ลิขสิทธิ์ 1998 - <?= date('Y') ?> บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>
       <p class="xs">เลขประจำตัวผู้เสียภาษี 0105542030547</p>

@@ -1674,6 +1674,14 @@ fieldset{padding:0; margin:0; border:0;}
 }
 .ss-list-04 li .icon{margin-right:.5rem; color:#ec2c23;}
 
+
+/* Special List 05 */
+.ss-list.style-05 > li::before{
+    content:''; position:absolute; top:.875rem; left:0;
+    background:#ec2c23; width:.375rem; height:.375rem; border-radius:50%;
+}
+
+
 /* Special Tags */
 .ss-tags{display:block;}
 .ss-tags > .tag{

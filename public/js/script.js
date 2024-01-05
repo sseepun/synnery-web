@@ -284,6 +284,101 @@ $(function () {
         });
     }
 
+     // Topnav
+     var topnavStyle02 = $('nav.topnav-style-02'),
+     topnavMenuContainer = topnavStyle02.find('.menu-container'),
+     topnavMenu = topnavStyle02.find('.menu-container > .menu'),
+     topnavMenuNotsub = topnavStyle02.find('.menu-container > .menu:not(.menu.sub-menu)'),
+     topnavSubMenu = topnavStyle02.find('.menu-container > .menu.sub-menu'),
+     topnavDropdown = topnavStyle02.find('.topnav-dropdown'),
+     topnavDropdownDivs = topnavDropdown.find('.dropdown-wrapper');
+ var sidenav = $('nav.sidenav'),
+     sidenavMenus = sidenav.find('.menu-container');
+ if(topnavStyle02.length){
+     topnavMenu.mouseenter(function(e){
+         let self = $(this);
+         if(!self.hasClass('active')){
+             let lastIndex = topnavMenu.filter('.menu-active').index();
+             let nowIndex = self.index();
+             if(nowIndex > lastIndex){
+                 topnavMenuContainer.removeClass('from-left');
+                 topnavMenuContainer.addClass('from-right');
+             }else{
+                 topnavMenuContainer.removeClass('from-right');
+                 topnavMenuContainer.addClass('from-left');
+             }
+         }
+         topnavMenu.removeClass('menu-active');
+         self.addClass('menu-active');
+     })
+     topnavMenu.find('> *:first-child').mouseenter(function (e) {
+         let parent = $(this).parent(),
+             dIndex = parent.data('dropdown');
+         if (dIndex) {
+             e.preventDefault();
+             if (parent.hasClass('active-dropdown')) {
+                 parent.removeClass('active-dropdown');
+                 topnavDropdown.removeClass('active');
+                 scopeDiv.removeClass('topnav-dropdown-opened');
+             } else {
+                 topnavMenu.removeClass('active-dropdown');
+                 parent.addClass('active-dropdown');
+                 topnavDropdown.addClass('active');
+                 scopeDiv.addClass('topnav-dropdown-opened');
+
+                 let prevActive = topnavDropdownDivs.filter('.active'),
+                     nextActive = topnavDropdownDivs.filter('[data-dropdown="' + dIndex + '"]');
+                 if (nextActive.length && !nextActive.hasClass('active')) {
+                     if (prevActive.length) {
+                         prevActive.addClass('fade-out');
+                         nextActive.addClass('fade-in');
+                         setTimeout(function () {
+                             prevActive.removeClass('fade-in fade-out active');
+                             nextActive.addClass('active');
+                             nextActive.removeClass('fade-in fade-out');
+                         }, 600);
+                     } else {
+                         nextActive.addClass('active');
+                         nextActive.removeClass('fade-in fade-out');
+                     }
+                 }
+             }
+         }
+     
+         topnavMenuNotsub.mouseenter(function(){
+             if (topnavDropdown.hasClass('active')) {
+                 topnavSubMenu.removeClass('active-dropdown');
+                 topnavDropdown.removeClass('active');
+             }
+         });
+         topnavSubMenu.mouseenter(function(){
+             if (topnavDropdown.hasClass('active')) {
+                 topnavDropdown.removeClass('active');
+              
+                 setTimeout(function(){
+                     topnavDropdown.addClass('active');
+                 }, 940);
+             }
+         });
+     });
+ 
+     topnav.find('.dropdown-filter').mouseenter(function (e) {
+         e.preventDefault();
+         topnavDropdown.removeClass('active');
+         topnavSubMenu.removeClass('active-dropdown');
+         scopeDiv.removeClass('topnav-dropdown-opened');
+     });
+     sidenavMenus.find('.has-children').each(function(){
+         $(this).append('<div class="dropdown-toggle"><em class="fas fa-chevron-right"></em></div>');
+     });
+     sidenavMenus.find('.dropdown-toggle').click(function(e){
+         e.preventDefault();
+         var self = $(this);
+         self.toggleClass('active');
+         self.prev().slideToggle();
+     });
+ }
+
     var main = $('.tp-leftarrow');
     // console.log(main)
     main.click(function (e) {

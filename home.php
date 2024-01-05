@@ -6,7 +6,7 @@
 </head>
 <body class="loading">
   <?php //include_once('component/page-loader.php'); ?>
-  <?php $topnavActive=1; include_once('include/topnav.php'); ?>
+  <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1" class="tg-rev-slider">
@@ -618,7 +618,7 @@
     </div>      
   </div>
 
-  <?php $withFooterInfo=true; include_once('include/footer-02.php'); ?>
+  <?php $withFooterInfo=true; include_once('include/footer-style-02.php'); ?>
   <?php include_once('include/script.php'); ?>
   
 </body>
