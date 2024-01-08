@@ -55,18 +55,13 @@
                 ],[
                   'title' => 'Career',
                   'href' => 'career.php'
-                ],[
-                  'title' => 'Contact',
-                  'href' => 'contact.php'
-                ],
+                ]
               ]
             ?>
 
             <?php foreach($menu as $i=>$d) {?>
               <div class="menu <?= $i == 2 || $i == 3? 'sub-menu': ''?>
-                <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?> 
-                <?php if($i == 3) { echo 'd-none'; } ?>
-                " 
+                <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
                 <?php if($i == 2 || $i == 3){ ?>
                   data-dropdown="<?php echo $i ?>"
                  <?php }?>
@@ -79,6 +74,22 @@
                 </a>
               </div>
             <?php } ?>
+             <div class="btns">
+              <div class="btn-bubble__container">
+                <a href="contact.php" class="button btn-bubble toggle-contact" data-contact="1">
+                  Contact Us
+                </a>
+                <span class="btn-bubble__effect-container">
+                  <span class="circle top-left"></span>
+                  <span class="circle top-left"></span>
+                  <span class="circle top-left"></span>
+                  <span class="button effect-button"></span>
+                  <span class="circle bottom-right"></span>
+                  <span class="circle bottom-right"></span>
+                  <span class="circle bottom-right"></span>
+                </span>
+              </div>
+             </div>
           </div>
           
           <div class="option-menu d-none">
@@ -128,7 +139,7 @@
               [
                 'title' => 'PROUND TO PRESENT',
                 'desc' => ''
-              ],/*[
+              ],[
                 'title' => 'SHOWCASE WEB GOVERNMENT',
                 'desc' => ''
               ],[
@@ -137,14 +148,14 @@
               ],[
                 'title' => 'E-OFFICE',
                 'desc' => ''
-              ],*/
+              ],
             ]
           ?>
           <div class="dropdown-wrapper" data-dropdown="2">
             <div class="submenu-blocks menu-container">
               <div class="submenu-block block-left">
                 <?php foreach($subMenuServices as $i=>$d) {?>
-                  <div class="submenu has-children <?= $i == 0? 'active': '' ?> <?= ($i == 2 || $i == 4 || $i == 3) ? 'd-none':'' ?>" data-tab="tab_<?= $i ?>">
+                  <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
                     <div class="wrapper">
                       <a class="title d-block submenu-main p xs lh-sm" href="#">
                         <?= $d['title'] ?>
@@ -234,7 +245,7 @@
                           <?php } ?>
                         </div>
                       </div> 
-                    <?php } ?> 
+                    <?php }?> 
 
                     <!-- NETWORK & SECURITY -->
                     <?php if($i == 3) {?>
@@ -648,7 +659,7 @@
               <a href="clients.php">Our Clients</a>
             </div>
             <div class="menu">
-              <a href="contact.php">Contact</a>
+              <a href="contact.php">Contact Us</a>
             </div>
           </div>
         </div>
