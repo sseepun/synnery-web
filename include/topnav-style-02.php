@@ -47,28 +47,70 @@
                   'title' => 'Products',
                   'href' => 'javascript:void(0)'
                 ],[
-                  'title' => 'Our Clients',
-                  'href' => 'clients.php'
+                  'title' => 'Success stories',
+                  'href' => 'javascript:void(0)'
                 ],[
-                  'title' => 'Career',
-                  'href' => 'career.php'
+                  'title' => 'Company',
+                  'href' => 'javascript:void(0)'
+                ],[
+                  'title' => 'Client',
+                  'href' => '#'
                 ]
               ]
             ?>
 
             <?php foreach($menu as $i=>$d) {?>
-              <div class="menu <?= $i == 1 || $i == 2? 'sub-menu': ''?>
+              <div class="menu <?= $i == 1 || $i == 2 || $i == 3 || $i == 4? 'sub-menu': ''?>
                 <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
-                <?php if($i == 1 || $i == 2){ ?>
+                <?php if($i == 1 || $i == 2 || $i == 3){ ?>
                   data-dropdown="<?php echo $i ?>"
                  <?php }?>
                 >
                 <a href="<?= $d['href'] ?>">
                   <?= $d['title'] ?> 
-                  <?php if($i == 1 || $i == 2){ ?>
+                  <?php if($i == 1 || $i == 2 || $i == 3 || $i == 4){ ?>
                     <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
                   <?php } ?>
                 </a>
+                <?php if($i == 4){ ?>
+                  <?php
+                    $dropDownMenu = [
+                      [
+                        'icon' => 'public/img/menu-clients/apec.png',
+                        'title' => 'About Us',
+                        'href' => '#'
+                      ],[
+                        'icon' => 'public/img/menu-clients/oic.png',
+                        'title' => 'For Investor',
+                        'href' => '#'
+                      ],[
+                        'icon' => 'public/img/menu-clients/oic.png',
+                        'title' => 'For Startup',
+                        'href' => '#'
+                      ],[
+                        'icon' => 'public/img/menu-clients/oic.png',
+                        'title' => 'For Startup',
+                        'href' => '#'
+                      ],[
+                        'icon' => 'public/img/menu-clients/oic.png',
+                        'title' => 'Become a Partner',
+                        'href' => '#'
+                      ],
+                    ]
+                  ?>
+                  <div class="dropdown-container">
+                    <div class="dropdown-menu">
+                      <div class="wrapper">
+                        <div class="icon">
+
+                        </div>
+                        <div class="text">
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <?php } ?>
               </div>
             <?php } ?>
              <div class="btns">
@@ -173,214 +215,202 @@
                 </div>
               </div> 
             </div>   
-            <div class="topnav-dropdown-footer">
-              <div class="container">
-                <div class="grids">
-                  <div class="grid lg-60 mt-0">
-                    <div class="contacts">
-                      <div class="contact-item">
-                        <div class="icon">
-                          <em class="fa-solid fa-phone"></em>
-                        </div>
-                        <div class="text">
-                          <p class="title">Call</p>      
-                          <a href="tel:0623184939" class="desc">+662-318-4939</a><span>,</span> 
-                          <a href="tel:06863406895" class="desc">+668-6340-6895</a>
-                        </div>
-                      </div>
-                      <div class="contact-item">
-                        <div class="icon">
-                          <em class="fa-regular fa-envelope"></em>
-                        </div>
-                        <div class="text">
-                          <p class="title">eMail</p>      
-                          <a href="mailto:sales@synerry.com" class="desc">sales@synerry.com</a>
-                        </div>
-                      </div>
-                      <div class="contact-item">
-                        <div class="icon line">
-                          <em class="fa-brands fa-line"></em>
-                        </div>
-                        <div class="text">
-                          <p class="title">Line OA</p>      
-                          <a href="https://page.line.me/flw2270k" class="desc">@synerry</a>
-                        </div>
-                      </div>
-                    </div>            
-                  </div>      
-                  <div class="grid lg-40 mt-0">
-                    <div class="socials">
-                      <div class="social-wrapper">
-                        <a href="#" class="social fb">
-                          <em class="fa-brands fa-facebook-f"></em>
-                        </a>
-                        <a href="#" class="social ig">
-                          <em class="fa-brands fa-instagram"></em>
-                        </a>
-                        <a href="#" class="social yt">
-                          <em class="fa-brands fa-youtube"></em>
-                        </a>
-                        <a href="#" class="social tw">
-                          <em class="fa-brands fa-twitter"></em>
-                        </a>
-                        <a href="#" class="social pt">
-                          <em class="fa-brands fa-pinterest-p"></em>
-                        </a>
-                        <a href="#" class="social ln">
-                          <em class="fa-brands fa-linkedin-in"></em>
-                        </a>
-                      </div>
-                    </div>
-                  </div>        
-                </div>                
-              </div>                  
-            </div> 
           </div>
 
+          <!-- Products -->
           <div class="dropdown-wrapper products" data-dropdown="2">
             <div class="container">
             <div class="submenu-blocks menu-container">
-              <?php include('data/topnav-style-02/menu/services/other.php'); ?>
+              <?php include('data/topnav-style-02/menu/products/lark.php'); ?>
               <div class="submenu-block">
-                <p class="fw-600">Other</p>
-                <?php foreach($other as $d) {?>
-                  <a href="#" class="submenu-block-list style-04">
-                    <div class="wrapper">
-                      <div class="icon"><?= $d['icon'] ?></div>
-                      <div class="text">
-                        <p class="title"><?= $d['title'] ?></p>
-                        <p class="desc"><?= $d['desc'] ?></p>
-                      </div>
+                <?php foreach($larkMenu as $d) {?>
+                  <p class="fw-600"><?= $d['title'] ?></p>
+                  <a href="#" class="ss-card ss-card-56">
+                    <div class="ss-img square-02">
+                      <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
                     </div>
                   </a>
                 <?php } ?>
               </div>  
-              <?php include('data/topnav-style-02/menu/services/other.php'); ?>
+              <?php include('data/topnav-style-02/menu/products/asana.php'); ?>
               <div class="submenu-block">
-                <p class="fw-600">Other</p>
-                <?php foreach($other as $d) {?>
-                  <a href="#" class="submenu-block-list style-04">
-                    <div class="wrapper">
-                      <div class="icon"><?= $d['icon'] ?></div>
-                      <div class="text">
-                        <p class="title"><?= $d['title'] ?></p>
-                        <p class="desc"><?= $d['desc'] ?></p>
-                      </div>
+                <?php foreach($asanaMenu as $d) {?>
+                  <p class="fw-600"><?= $d['title'] ?></p>
+                  <a href="#" class="ss-card ss-card-56">
+                    <div class="ss-img square-02">
+                      <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
                     </div>
                   </a>
                 <?php } ?>
-              </div>
-              <?php include('data/topnav-style-02/menu/services/other.php'); ?>
+              </div> 
+              <?php include('data/topnav-style-02/menu/products/device42.php'); ?>
               <div class="submenu-block">
-                <p class="fw-600">Other</p>
-                <?php foreach($other as $d) {?>
-                  <a href="#" class="submenu-block-list style-04">
-                    <div class="wrapper">
-                      <div class="icon"><?= $d['icon'] ?></div>
-                      <div class="text">
-                        <p class="title"><?= $d['title'] ?></p>
-                        <p class="desc"><?= $d['desc'] ?></p>
-                      </div>
+                <?php foreach($device42Menu as $d) {?>
+                  <p class="fw-600"><?= $d['title'] ?></p>
+                  <a href="#" class="ss-card ss-card-56">
+                    <div class="ss-img square-02">
+                      <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
                     </div>
                   </a>
                 <?php } ?>
-              </div>
-              <?php include('data/topnav-style-02/menu/services/other.php'); ?>
+              </div> 
+              <?php include('data/topnav-style-02/menu/products/displ.php'); ?>
               <div class="submenu-block">
-                <p class="fw-600">Other</p>
-                <?php foreach($other as $d) {?>
-                  <a href="#" class="submenu-block-list style-04">
-                    <div class="wrapper">
-                      <div class="icon"><?= $d['icon'] ?></div>
-                      <div class="text">
-                        <p class="title"><?= $d['title'] ?></p>
-                        <p class="desc"><?= $d['desc'] ?></p>
-                      </div>
+                <?php foreach($displMenu as $d) {?>
+                  <p class="fw-600"><?= $d['title'] ?></p>
+                  <a href="#" class="ss-card ss-card-56">
+                    <div class="ss-img square-02">
+                      <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
                     </div>
                   </a>
                 <?php } ?>
               </div>  
-              <?php include('data/topnav-style-02/menu/services/other.php'); ?>
+              <?php include('data/topnav-style-02/menu/products/learning.php'); ?>
               <div class="submenu-block">
-                <p class="fw-600">Other</p>
-                <?php foreach($other as $d) {?>
-                  <a href="#" class="submenu-block-list style-04">
-                    <div class="wrapper">
-                      <div class="icon"><?= $d['icon'] ?></div>
-                      <div class="text">
-                        <p class="title"><?= $d['title'] ?></p>
-                        <p class="desc"><?= $d['desc'] ?></p>
-                      </div>
+                <?php foreach($learningMenu as $d) {?>
+                  <p class="fw-600"><?= $d['title'] ?></p>
+                  <a href="#" class="ss-card ss-card-56">
+                    <div class="ss-img square-02">
+                      <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
                     </div>
                   </a>
                 <?php } ?>
               </div> 
             </div>
             </div>
-            <div class="topnav-dropdown-footer">
-              <div class="container">
-                <div class="grids">
-                  <div class="grid lg-60 mt-0">
-                    <div class="contacts">
-                      <div class="contact-item">
-                        <div class="icon">
-                          <em class="fa-solid fa-phone"></em>
-                        </div>
-                        <div class="text">
-                          <p class="title">Call</p>      
-                          <a href="tel:0623184939" class="desc">+662-318-4939</a><span>,</span> 
-                          <a href="tel:06863406895" class="desc">+668-6340-6895</a>
-                        </div>
-                      </div>
-                      <div class="contact-item">
-                        <div class="icon">
-                          <em class="fa-regular fa-envelope"></em>
-                        </div>
-                        <div class="text">
-                          <p class="title">eMail</p>      
-                          <a href="mailto:sales@synerry.com" class="desc">sales@synerry.com</a>
-                        </div>
-                      </div>
-                      <div class="contact-item">
-                        <div class="icon line">
-                          <em class="fa-brands fa-line"></em>
-                        </div>
-                        <div class="text">
-                          <p class="title">Line OA</p>      
-                          <a href="https://page.line.me/flw2270k" class="desc">@synerry</a>
-                        </div>
-                      </div>
-                    </div>            
-                  </div>      
-                  <div class="grid lg-40 mt-0">
-                    <div class="socials">
-                      <div class="social-wrapper">
-                        <a href="#" class="social fb">
-                          <em class="fa-brands fa-facebook-f"></em>
-                        </a>
-                        <a href="#" class="social ig">
-                          <em class="fa-brands fa-instagram"></em>
-                        </a>
-                        <a href="#" class="social yt">
-                          <em class="fa-brands fa-youtube"></em>
-                        </a>
-                        <a href="#" class="social tw">
-                          <em class="fa-brands fa-twitter"></em>
-                        </a>
-                        <a href="#" class="social pt">
-                          <em class="fa-brands fa-pinterest-p"></em>
-                        </a>
-                        <a href="#" class="social ln">
-                          <em class="fa-brands fa-linkedin-in"></em>
-                        </a>
+          </div>
+
+          <!-- Success stories -->
+          <div class="dropdown-wrapper success-stories" data-dropdown="3">
+            <div class="container">
+            <div class="submenu-blocks menu-container">
+              <?php include('data/topnav-style-02/menu/success-stories/digital-marketing.php'); ?>
+              <div class="submenu-block left">
+                <p class="fw-600">Digital Marketing</p>
+                <?php foreach($digitalMarketing as $d) {?>
+                  <a href="#" class="submenu-block-list">
+                    <div class="wrapper">
+                      <div class="icon"><?= $d['icon'] ?></div>
+                      <div class="text">
+                        <p class="title"><?= $d['title'] ?></p>
                       </div>
                     </div>
-                  </div>        
-                </div>                
-              </div>                  
+                  </a>
+                <?php } ?>
+                <?php include('data/topnav-style-02/menu/success-stories/e-office.php'); ?>
+               <p class="fw-600 mt-6">E-Office for Government</p>
+                <?php foreach($eOffice as $d) {?>
+                  <a href="#" class="submenu-block-list">
+                    <div class="wrapper">
+                      <div class="icon"><?= $d['icon'] ?></div>
+                      <div class="text">
+                        <p class="title"><?= $d['title'] ?></p>
+                      </div>
+                    </div>
+                  </a>
+                <?php } ?>
+              </div>  
+              <?php include('data/topnav-style-02/menu/success-stories/corporate-website.php'); ?>
+              <div class="submenu-block right">
+                <p class="fw-600">Corporate Website</p>
+                <div class="grids">
+                  <?php foreach($corporateWebsite as $d) {?>
+                    <div class="grid lg-1-3 mt-0">
+                      <a href="#" class="submenu-block-list">
+                        <div class="wrapper">
+                          <div class="icon"><?= $d['icon'] ?></div>
+                          <div class="text">
+                            <p class="title"><?= $d['title'] ?></p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  <?php } ?>
+                </div>
+                <?php include('data/topnav-style-02/menu/success-stories/web-mobile.php'); ?>
+                <p class="fw-600 mt-6">Web & Mobile Application</p>
+                <div class="grids">
+                  <?php foreach($webMobile as $d) {?>
+                    <div class="grid lg-1-3 mt-0">
+                      <a href="#" class="submenu-block-list">
+                        <div class="wrapper">
+                          <div class="icon"><?= $d['icon'] ?></div>
+                          <div class="text">
+                            <p class="title"><?= $d['title'] ?></p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  <?php } ?>
+                </div>
+              </div> 
+            </div>
             </div>
           </div>
-          
+
+          <!-- Dropdown Footer -->
+          <div class="topnav-dropdown-footer">
+            <div class="container">
+              <div class="grids">
+                <div class="grid lg-60 mt-0">
+                  <div class="contacts">
+                    <div class="contact-item">
+                      <div class="icon">
+                        <em class="fa-solid fa-phone"></em>
+                      </div>
+                      <div class="text">
+                        <p class="title">Call</p>      
+                        <a href="tel:0623184939" class="desc">+662-318-4939</a><span>,</span> 
+                        <a href="tel:06863406895" class="desc">+668-6340-6895</a>
+                      </div>
+                    </div>
+                    <div class="contact-item">
+                      <div class="icon">
+                        <em class="fa-regular fa-envelope"></em>
+                      </div>
+                      <div class="text">
+                        <p class="title">eMail</p>      
+                        <a href="mailto:sales@synerry.com" class="desc">sales@synerry.com</a>
+                      </div>
+                    </div>
+                    <div class="contact-item">
+                      <div class="icon line">
+                        <em class="fa-brands fa-line"></em>
+                      </div>
+                      <div class="text">
+                        <p class="title">Line OA</p>      
+                        <a href="https://page.line.me/flw2270k" class="desc">@synerry</a>
+                      </div>
+                    </div>
+                  </div>            
+                </div>      
+                <div class="grid lg-40 mt-0">
+                  <div class="socials">
+                    <div class="social-wrapper">
+                      <a href="#" class="social fb">
+                        <em class="fa-brands fa-facebook-f"></em>
+                      </a>
+                      <a href="#" class="social ig">
+                        <em class="fa-brands fa-instagram"></em>
+                      </a>
+                      <a href="#" class="social yt">
+                        <em class="fa-brands fa-youtube"></em>
+                      </a>
+                      <a href="#" class="social tw">
+                        <em class="fa-brands fa-twitter"></em>
+                      </a>
+                      <a href="#" class="social pt">
+                        <em class="fa-brands fa-pinterest-p"></em>
+                      </a>
+                      <a href="#" class="social ln">
+                        <em class="fa-brands fa-linkedin-in"></em>
+                      </a>
+                    </div>
+                  </div>
+                </div>        
+              </div>                
+            </div>                  
+          </div> 
         </div>
       </div>
       
