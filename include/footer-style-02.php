@@ -329,29 +329,119 @@
           <div class="grid sm-50 mt-0">
             <p class="title">SYNERRY</p>
             <ul class="ss-list style-05">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">For Investor</a></li>
-              <li><a href="#">For Startup</a></li>
-              <li><a href="#">Become a Partner</a></li>
-              <li><a href="#">Activities</a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Clients</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">For Investor</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">For Startup</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Become a Partner</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Activities</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Career</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Clients</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Contact Us</a>
+              </li>
             </ul>
           </div>
           <div class="grid sm-50 mt-0">
             <p class="title">SERVICES</p>
             <ul class="ss-list style-05">
-              <li><a href="#">Full Digital Marketing</a></li>
-              <li><a href="#">Digital & Graphic Design</a></li>
-              <li><a href="#">Corporate Website</a></li>
-              <li><a href="#">Microsite for Gov</a></li>
-              <li><a href="#">E-Saraban</a></li>
-              <li><a href="#">E-Meeting</a></li>
-              <li><a href="#">E-Learning</a></li>
-              <li><a href="#">Web & Mobile Application</a></li>
-              <li><a href="#">Network & Security</a></li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Full Digital Marketing</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Digital & Graphic Design</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Corporate Website</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Microsite for Gov</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">E-Saraban</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">E-Meeting</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">E-Learning</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Web & Mobile Application</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Network & Security</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -361,27 +451,107 @@
           <div class="grid sm-50 mt-0">
             <p class="title">PRODUCTS</p>
             <ul class="ss-list style-05">
-              <li><a href="#">Lark</a></li>
-              <li><a href="#">Asana</a></li>
-              <li><a href="#">Device42</a></li>
-              <li><a href="#">DISPL</a></li>
-              <li><a href="#">LearningHub</a></li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Lark</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Asana</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Device42</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">DISPL</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">LearningHub</a>
+              </li>
             </ul>
           </div>
           <div class="grid sm-50 mt-0">
             <p class="title">SUCCESS STORIES</p>
             <ul class="ss-list style-05">
-              <li><a href="#">Global South-South Development Expo 2022</a></li>
-              <li><a href="#">สำนักงานประชาสัมพันธ์ สำนักปลัดกรุงเทพมหานคร</a></li>
-              <li><a href="#">การกีฬาแห่งประเทศไทย</a></li>
-              <li><a href="#">กระทรวงอุตสาหกรรม</a></li>
-              <li><a href="#">กระทรวงศึกษาธิการ</a></li>
-              <li><a href="#">กระทรวงวัฒนธรรม</a></li>
-              <li><a href="#">กระทรวงพลังงาน</a></li>
-              <li><a href="#">สำนักงานคณะกรรมการการเลือกตั้ง</a></li>
-              <li><a href="#">กรมอนามัย</a></li>
-              <li><a href="#">APEC 2022 Thailand</a></li>
-              <li><a href="#">สำนักงานเศรษฐกิจการเกษตร</a></li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">Global South-South Development Expo 2022</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">สำนักงานประชาสัมพันธ์ สำนักปลัดกรุงเทพมหานคร</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">การกีฬาแห่งประเทศไทย</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">กระทรวงอุตสาหกรรม</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">กระทรวงศึกษาธิการ</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">กระทรวงวัฒนธรรม</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">กระทรวงพลังงาน</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">สำนักงานคณะกรรมการการเลือกตั้ง</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">กรมอนามัย</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">APEC 2022 Thailand</a>
+              </li>
+              <li>
+                <div class="icon">
+                  <?php include('public/img/icon/svg/chevron-right.php'); ?>
+                </div>
+                <a href="#">สำนักงานเศรษฐกิจการเกษตร</a>
+              </li>
             </ul>
           </div>
         </div>

@@ -60,7 +60,7 @@
             ?>
 
             <?php foreach($menu as $i=>$d) {?>
-              <div class="menu <?= $i == 1 || $i == 2 || $i == 3 || $i == 4? 'sub-menu': ''?>
+              <div class="menu <?= $i == 1 || $i == 2 || $i == 3? 'sub-menu': ''?> <?= $i == 4 ? 'company': ''?>
                 <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
                 <?php if($i == 1 || $i == 2 || $i == 3){ ?>
                   data-dropdown="<?php echo $i ?>"
@@ -73,47 +73,25 @@
                   <?php } ?>
                 </a>
                 <?php if($i == 4){ ?>
-                  <?php
-                    $dropDownMenu = [
-                      [
-                        'icon' => 'public/img/menu-clients/apec.png',
-                        'title' => 'About Us',
-                        'href' => '#'
-                      ],[
-                        'icon' => 'public/img/menu-clients/oic.png',
-                        'title' => 'For Investor',
-                        'href' => '#'
-                      ],[
-                        'icon' => 'public/img/menu-clients/oic.png',
-                        'title' => 'For Startup',
-                        'href' => '#'
-                      ],[
-                        'icon' => 'public/img/menu-clients/oic.png',
-                        'title' => 'For Startup',
-                        'href' => '#'
-                      ],[
-                        'icon' => 'public/img/menu-clients/oic.png',
-                        'title' => 'Become a Partner',
-                        'href' => '#'
-                      ],
-                    ]
-                  ?>
+                  <?php include('data/topnav-style-02/menu/company/company.php'); ?>
                   <div class="dropdown-container">
-                    <div class="dropdown-menu">
-                      <div class="wrapper">
-                        <div class="icon">
-
+                    <?php foreach($companyMenu as $d) {?>
+                      <a href="#" class="dropdown-menu">
+                        <div class="wrapper">
+                          <div class="icon">
+                           <?= $d['icon'] ?>
+                          </div>
+                          <div class="text">
+                            <p class="title"><?= $d['title'] ?></p>
+                          </div>
                         </div>
-                        <div class="text">
-
-                        </div>
-                      </div>
-                    </div>
+                      </a>
+                    <?php } ?>
                   </div>
                 <?php } ?>
               </div>
             <?php } ?>
-             <div class="btns">
+             <div class="btns" style="z-index:95;">
               <div class="btn-bubble__container">
                 <a href="contact.php" class="button btn-bubble toggle-contact" data-contact="1">
                   Contact Us
@@ -147,14 +125,14 @@
       </div>
     </div>
     
-    <div class="topnav-dropdown" id="topnav-menu">
+    <div class="topnav-dropdown">
       <div class="scroll-wrapper">
         <div>
-          <div class="dropdown-wrapper" data-dropdown="1">
+          <div class="dropdown-wrapper services" data-dropdown="1">
             <div class="container">
               <?php include('data/topnav-style-02/menu/services/full-digital.php'); ?>
               <div class="submenu-blocks menu-container">
-                <div class="submenu-block">
+                <div class="submenu-block active menu-active">
                   <p class="fw-600">Full Digital Marketing</p>
                   <?php foreach($fullDigital as $d) {?>
                     <a href="#" class="submenu-block-list style-01">
@@ -186,7 +164,7 @@
                 <?php include('data/topnav-style-02/menu/services/e-office.php'); ?>
                 <div class="submenu-block">
                   <p class="fw-600">E-Office for Government</p>
-                  <?php foreach($eOffice as $d) {?>
+                  <?php foreach($eOfficeService as $d) {?>
                     <a href="#" class="submenu-block-list style-03">
                       <div class="wrapper">
                         <div class="icon"><?= $d['icon'] ?></div>
@@ -214,6 +192,87 @@
                   <?php } ?>
                 </div>
               </div> 
+            </div> 
+            <!-- Dropdown Footer -->
+            <div class="topnav-dropdown-footer">
+              <div class="container">
+                <div class="grids">
+                  <div class="grid lg-60 mt-0">
+                    <div class="contacts">
+                      <div class="contact-item">
+                        <div class="contact-inner">
+                          <div class="icon">
+                            <em class="fa-solid fa-phone"></em>
+                          </div>
+                        </div>
+                        <div class="text">
+                          <p class="title">Call</p>      
+                          <a href="tel:0623184939" class="desc">+662-318-4939</a><span>,</span> 
+                          <a href="tel:06863406895" class="desc">+668-6340-6895</a>
+                        </div>
+                      </div>
+                      <div class="contact-item">
+                        <div class="contact-inner">
+                          <div class="icon">
+                            <em class="fa-regular fa-envelope"></em>
+                          </div>
+                        </div>
+                        <div class="text">
+                          <p class="title">eMail</p>      
+                          <a href="mailto:sales@synerry.com" class="desc">sales@synerry.com</a>
+                        </div>
+                      </div>
+                      <div class="contact-item">
+                        <div class="contact-inner">
+                          <div class="icon line">
+                            <em class="fa-brands fa-line"></em>
+                          </div>
+                        </div>
+                        <div class="text">
+                          <p class="title">Line OA</p>      
+                          <a href="https://page.line.me/flw2270k" class="desc">@synerry</a>
+                        </div>
+                      </div>
+                    </div>            
+                  </div>      
+                  <div class="grid lg-40 mt-0">
+                    <div class="socials">
+                      <div class="social-wrapper">
+                        <div class="social-inner">
+                          <a href="#" class="social fb">
+                            <em class="fa-brands fa-facebook-f"></em>
+                          </a>
+                        </div>
+                        <div class="social-inner">
+                          <a href="#" class="social ig">
+                            <em class="fa-brands fa-instagram"></em>
+                          </a>
+                        </div>
+                        <div class="social-inner">
+                          <a href="#" class="social yt">
+                            <em class="fa-brands fa-youtube"></em>
+                          </a>
+                        </div>
+                        <div class="social-inner">
+                          <a href="#" class="social tw">
+                            <em class="fa-brands fa-twitter"></em>
+                          </a>      
+                        </div>
+                        <div class="social-inner">
+                          <a href="#" class="social pt">
+                            <em class="fa-brands fa-pinterest-p"></em>
+                          </a>
+                        </div>
+                        <div class="social-inner">
+                          <a href="#" class="social ln">
+                            <em class="fa-brands fa-linkedin-in"></em>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>        
+                </div>                
+              </div>                  
             </div>   
           </div>
 
@@ -278,6 +337,87 @@
               </div> 
             </div>
             </div>
+            <!-- Dropdown Footer -->
+            <div class="topnav-dropdown-footer">
+              <div class="container">
+                <div class="grids">
+                  <div class="grid lg-60 mt-0">
+                    <div class="contacts">
+                      <div class="contact-item">
+                        <div class="contact-inner">
+                          <div class="icon">
+                            <em class="fa-solid fa-phone"></em>
+                          </div>
+                        </div>
+                        <div class="text">
+                          <p class="title">Call</p>      
+                          <a href="tel:0623184939" class="desc">+662-318-4939</a><span>,</span> 
+                          <a href="tel:06863406895" class="desc">+668-6340-6895</a>
+                        </div>
+                      </div>
+                      <div class="contact-item">
+                        <div class="contact-inner">
+                          <div class="icon">
+                            <em class="fa-regular fa-envelope"></em>
+                          </div>
+                        </div>
+                        <div class="text">
+                          <p class="title">eMail</p>      
+                          <a href="mailto:sales@synerry.com" class="desc">sales@synerry.com</a>
+                        </div>
+                      </div>
+                      <div class="contact-item">
+                        <div class="contact-inner">
+                          <div class="icon line">
+                            <em class="fa-brands fa-line"></em>
+                          </div>
+                        </div>
+                        <div class="text">
+                          <p class="title">Line OA</p>      
+                          <a href="https://page.line.me/flw2270k" class="desc">@synerry</a>
+                        </div>
+                      </div>
+                    </div>            
+                  </div>      
+                  <div class="grid lg-40 mt-0">
+                    <div class="socials">
+                      <div class="social-wrapper">
+                        <div class="social-inner">
+                          <a href="#" class="social fb">
+                            <em class="fa-brands fa-facebook-f"></em>
+                          </a>
+                        </div>
+                        <div class="social-inner">
+                          <a href="#" class="social ig">
+                            <em class="fa-brands fa-instagram"></em>
+                          </a>
+                        </div>
+                        <div class="social-inner">
+                          <a href="#" class="social yt">
+                            <em class="fa-brands fa-youtube"></em>
+                          </a>
+                        </div>
+                        <div class="social-inner">
+                          <a href="#" class="social tw">
+                            <em class="fa-brands fa-twitter"></em>
+                          </a>      
+                        </div>
+                        <div class="social-inner">
+                          <a href="#" class="social pt">
+                            <em class="fa-brands fa-pinterest-p"></em>
+                          </a>
+                        </div>
+                        <div class="social-inner">
+                          <a href="#" class="social ln">
+                            <em class="fa-brands fa-linkedin-in"></em>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>        
+                </div>                
+              </div>                  
+            </div> 
           </div>
 
           <!-- Success stories -->
@@ -346,17 +486,17 @@
               </div> 
             </div>
             </div>
-          </div>
-
-          <!-- Dropdown Footer -->
+                <!-- Dropdown Footer -->
           <div class="topnav-dropdown-footer">
             <div class="container">
               <div class="grids">
                 <div class="grid lg-60 mt-0">
                   <div class="contacts">
                     <div class="contact-item">
-                      <div class="icon">
-                        <em class="fa-solid fa-phone"></em>
+                      <div class="contact-inner">
+                        <div class="icon">
+                          <em class="fa-solid fa-phone"></em>
+                        </div>
                       </div>
                       <div class="text">
                         <p class="title">Call</p>      
@@ -365,8 +505,10 @@
                       </div>
                     </div>
                     <div class="contact-item">
-                      <div class="icon">
-                        <em class="fa-regular fa-envelope"></em>
+                      <div class="contact-inner">
+                        <div class="icon">
+                          <em class="fa-regular fa-envelope"></em>
+                        </div>
                       </div>
                       <div class="text">
                         <p class="title">eMail</p>      
@@ -374,8 +516,10 @@
                       </div>
                     </div>
                     <div class="contact-item">
-                      <div class="icon line">
-                        <em class="fa-brands fa-line"></em>
+                      <div class="contact-inner">
+                        <div class="icon line">
+                          <em class="fa-brands fa-line"></em>
+                        </div>
                       </div>
                       <div class="text">
                         <p class="title">Line OA</p>      
@@ -387,33 +531,47 @@
                 <div class="grid lg-40 mt-0">
                   <div class="socials">
                     <div class="social-wrapper">
-                      <a href="#" class="social fb">
-                        <em class="fa-brands fa-facebook-f"></em>
-                      </a>
-                      <a href="#" class="social ig">
-                        <em class="fa-brands fa-instagram"></em>
-                      </a>
-                      <a href="#" class="social yt">
-                        <em class="fa-brands fa-youtube"></em>
-                      </a>
-                      <a href="#" class="social tw">
-                        <em class="fa-brands fa-twitter"></em>
-                      </a>
-                      <a href="#" class="social pt">
-                        <em class="fa-brands fa-pinterest-p"></em>
-                      </a>
-                      <a href="#" class="social ln">
-                        <em class="fa-brands fa-linkedin-in"></em>
-                      </a>
+                      <div class="social-inner">
+                        <a href="#" class="social fb">
+                          <em class="fa-brands fa-facebook-f"></em>
+                        </a>
+                      </div>
+                      <div class="social-inner">
+                        <a href="#" class="social ig">
+                          <em class="fa-brands fa-instagram"></em>
+                        </a>
+                      </div>
+                      <div class="social-inner">
+                        <a href="#" class="social yt">
+                          <em class="fa-brands fa-youtube"></em>
+                        </a>
+                      </div>
+                      <div class="social-inner">
+                        <a href="#" class="social tw">
+                          <em class="fa-brands fa-twitter"></em>
+                        </a>      
+                      </div>
+                      <div class="social-inner">
+                        <a href="#" class="social pt">
+                          <em class="fa-brands fa-pinterest-p"></em>
+                        </a>
+                      </div>
+                      <div class="social-inner">
+                        <a href="#" class="social ln">
+                          <em class="fa-brands fa-linkedin-in"></em>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>        
               </div>                
             </div>                  
           </div> 
+          </div>
+
+      
         </div>
       </div>
-      
       </div>
     <div class="dropdown-filter"></div>
   </div>
@@ -422,7 +580,7 @@
 
 
 <!-- Sidenav -->
-<nav class="sidenav">
+<nav class="sidenav style-02">
   <div class="wrapper">
     <div class="inner-wrapper">
       <div class="container pos-relative h-full">
@@ -438,96 +596,62 @@
             <div class="menu">
               <a href="index.php">Home</a>
             </div>
-            <div class="menu" data-dropdown="1">
-              <a href="about.php">About us</a>
-            </div>
-            <div class="menu" data-dropdown="2">
-              <a href="javascript:void(0)">Our Services</a>
+            <div class="menu">
+              <?php include('data/topnav-style-02/menu/services/categories.php'); ?>
+              <a href="javascript:void(0)">Services</a>
               <div class="submenu-container">
-                <?php foreach($subMenuServices as $i=>$d) {?>
+                <?php foreach($categories as $i=>$d) {?>
                   <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
                     <a class="title submenu-main p xs lh-sm" href="#">
-                      <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
+                      <?= $d['title'] ?><p class="desc lh-sm">
                     </a>
                     
-                    <!-- WEB DESIGN -->
+                    <!-- Full Digital Marketing -->
                     <?php if($i == 0) {?>
-                      <?php include('data/menu/web-design.php') ?>
                       <div class="submenu-blocks">
-                        <?php foreach($webDesign as $d) {?>
+                        <?php foreach($fullDigital as $d) {?>
                           <div class="submenu">
                             <a class="title lg-no-br" href="<?= $d['href'] ?>">
-                              <?= $d['title'] ?>
+                              <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
                             </a>
                           </div>
                         <?php } ?>
                       </div>
                     <?php }?>
 
-                    <!-- DIGITAL MARKETING -->
+                    <!-- Corporate Websites -->
                     <?php if($i == 1) {?>
-                      <?php include('data/menu/digital-marketing.php') ?>
                       <div class="submenu-blocks">
-                        <?php foreach($digitalMarketing as $d) {?>
+                        <?php foreach($corporRate as $d) {?>
                           <div class="submenu">
                             <a class="lg-no-br" href="<?= $d['href'] ?>">
-                              <?= $d['title'] ?>
+                              <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
                             </a>
                           </div>
                         <?php } ?>
                       </div>
                     <?php }?>
 
-                    <!-- WEB & MOBILE -->
+                    <!-- E-Office for Government -->
                     <?php if($i == 2) {?>
-                      <?php include('data/menu/web-mobile.php') ?>
                       <div class="submenu-blocks">
-                        <?php foreach($webMobile as $d) {?>
+                        <?php foreach($eOfficeService as $d) {?>
                           <div class="submenu">
                             <a class="lg-no-br" href="<?= $d['href'] ?>">
-                              <?= $d['title'] ?>
+                              <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
                             </a>
                           </div>
                         <?php } ?>
                       </div>
                     <?php }?>
 
-                     <!-- NETWORK & SECURITY -->
+                     <!-- Other -->
                     <?php if($i == 3) {?>
-                      <?php include('data/menu/network-security.php') ?>
                       <div class="submenu-blocks">
-                        <?php foreach($networkSecurity as $d) {?>
+                        <?php foreach($other as $d) {?>
                           <div class="submenu">
                             <a class="lg-no-br" href="<?= $d['href'] ?>">
-                              <?= $d['title'] ?>
-                            </a>
-                          </div>
-                        <?php } ?>
-                      </div>
-                    <?php }?>
-
-                    <!-- ARTIFICIAL INTELLIGENCE -->
-                    <?php if($i == 4) {?>
-                      <?php include('data/menu/artificial-intelligence.php') ?>
-                      <div class="submenu-blocks">
-                        <?php foreach($artificialIntelligence as $d) {?>
-                          <div class="submenu">
-                            <a class="lg-no-br" href="<?= $d['href'] ?>">
-                              <?= $d['title'] ?>
-                            </a>
-                          </div>
-                        <?php } ?>
-                      </div>
-                    <?php }?>
-
-                    <!-- LARK -->
-                    <?php if($i == 5) {?>
-                      <?php include('data/menu/lark.php') ?>
-                      <div class="submenu-blocks">
-                        <?php foreach($lark as $d) {?>
-                          <div class="submenu">
-                            <a class="lg-no-br" href="<?= $d['href'] ?>">
-                              <?= $d['title'] ?>
+                              <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
                             </a>
                           </div>
                         <?php } ?>
@@ -538,21 +662,38 @@
               </div>
             </div>
             <div class="menu">
-              <a href="javascript:void(0)">Our Works</a>
+              <?php include('data/topnav-style-02/menu/products/categories.php'); ?>
+              <a href="javascript:void(0)">Products</a>
               <div class="submenu-container">
-                <?php foreach($subMenuOurWorks as $i=>$d) {?>
+                <div class="submenu ">
+                  <div class="submenu-blocks">
+                    <?php foreach($productCategories as $d) {?>
+                      <div class="submenu">
+                        <a class="lg-no-br" href="<?= $d['href'] ?>">
+                          <?= $d['title'] ?>
+                        </a>
+                      </div>
+                    <?php } ?>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="menu">
+              <?php include('data/topnav-style-02/menu/success-stories/categories.php'); ?>
+              <a href="javascript:void(0)">Success stories</a>
+              <div class="submenu-container">
+                <?php foreach($successCategories as $i=>$d) {?>
                   <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
                     <a class="title submenu-main p xs lh-sm" href="#">
-                      <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
+                      <?= $d['title'] ?>
                     </a>
                     
-                    <!-- PROUND TO PRESENT -->
+                    <!-- Full Digital Marketing -->
                     <?php if($i == 0) {?>
-                      <?php include('data/menu/pround-present.php') ?>
                       <div class="submenu-blocks">
-                        <?php foreach($proundPresent as $d) {?>
+                        <?php foreach($digitalMarketing as $d) {?>
                           <div class="submenu">
-                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                            <a class="title lg-no-br" href="<?= $d['href'] ?>">
                               <?= $d['title'] ?>
                             </a>
                           </div>
@@ -560,11 +701,10 @@
                       </div>
                     <?php }?>
 
-                    <!-- SHOWCASE WEB GOVERNMENT -->
+                    <!-- Corporate Websites -->
                     <?php if($i == 1) {?>
-                      <?php include('data/menu/showcase-web.php') ?>
                       <div class="submenu-blocks">
-                        <?php foreach($showWeb as $d) {?>
+                        <?php foreach($corporateWebsite as $d) {?>
                           <div class="submenu">
                             <a class="lg-no-br" href="<?= $d['href'] ?>">
                               <?= $d['title'] ?>
@@ -574,23 +714,8 @@
                       </div>
                     <?php }?>
 
-                    <!-- SHOWCASE MKT -->
+                    <!-- E-Office for Government -->
                     <?php if($i == 2) {?>
-                      <?php include('data/menu/showcase-mkt.php') ?>
-                      <div class="submenu-blocks">
-                        <?php foreach($showMKT as $d) {?>
-                          <div class="submenu">
-                            <a class="lg-no-br" href="<?= $d['href'] ?>">
-                              <?= $d['title'] ?>
-                            </a>
-                          </div>
-                        <?php } ?>
-                      </div>
-                    <?php }?>
-
-                    <!-- E-OFFICE -->
-                    <?php if($i == 3) {?>
-                      <?php include('data/menu/e-office.php') ?>
                       <div class="submenu-blocks">
                         <?php foreach($eOffice as $d) {?>
                           <div class="submenu">
@@ -601,12 +726,39 @@
                         <?php } ?>
                       </div>
                     <?php }?>
+
+                     <!-- Web & Mobile Application -->
+                    <?php if($i == 3) {?>
+                      <div class="submenu-blocks">
+                        <?php foreach($webMobile as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
                   </div>
                 <?php }?>
               </div>
             </div>
             <div class="menu">
-              <a href="clients.php">Our Clients</a>
+              <?php include('data/topnav-style-02/menu/products/categories.php'); ?>
+              <a href="javascript:void(0)">Company</a>
+              <div class="submenu-container">
+                <div class="submenu ">
+                  <div class="submenu-blocks">
+                    <?php foreach($companyMenu as $d) {?>
+                      <div class="submenu">
+                        <a class="lg-no-br" href="<?= $d['href'] ?>">
+                          <?= $d['title'] ?>
+                        </a>
+                      </div>
+                    <?php } ?>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="menu">
               <a href="contact.php">Contact Us</a>
