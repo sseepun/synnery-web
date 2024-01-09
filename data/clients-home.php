@@ -89,42 +89,42 @@
       'icon' => 'public/img/clients/กรมคุ้มครองสิทธิและเสรีภาพ.svg',
       'title' => 'กรมคุ้มครองสิทธิและเสรีภาพ',
       'bgColor' => 'rgba(136,0,155)',
-      'type' => 'corporation'
+      'type' => 'government'
     ], [
       'icon' => 'public/img/clients/เขตพัฒนาพิเศษภาคตะวันออก.png',
       'title' => 'เขตพัฒนาพิเศษภาคตะวันออก EEC',
       'bgColor' => 'rgba(245,156,56)',
-      'type' => 'corporation'
+      'type' => 'government'
     ], [
       'icon' => 'public/img/clients/การไฟฟ้านครหลวง.svg',
       'title' => 'การไฟฟ้านครหลวง',
       'bgColor' => 'rgba(243,111,33)',
-      'type' => 'corporation'
+      'type' => 'government'
     ], [
       'icon' => 'public/img/clients/สำนักงานส่งเสริมวิสาหกิจขนาดกลางและขนาดย่อม.png',
       'title' => 'สำนักงานส่งเสริมวิสาหกิจขนาดกลางและขนาดย่อม',
       'bgColor' => 'rgba(0,119,193)',
-      'type' => 'corporation'
+      'type' => 'government'
     ], [
       'icon' => 'public/img/clients/สถาบันคุณวุฒิวิชาชีพ.svg',
       'title' => 'สถาบันคุณวุฒิวิชาชีพ (องค์การมหาชน)',
       'bgColor' => 'rgba(255,21,41)',
-      'type' => 'corporation'
+      'type' => 'government'
     ], [
       'icon' => 'public/img/clients/Ajinomoto.svg',
       'title' => 'บริษัทอาจิโนโมโตะ จำกัด',
       'bgColor' => 'rgba(177,187,27)',
-      'type' => 'corporation'
+      'type' => 'government'
     ], [
       'icon' => 'public/img/clients/Toyota.svg',
       'title' => 'บริษัท โตโยต้า มอเตอร์ ประเทศไทย จำกัด',
       'bgColor' => 'rgba(177,187,27)',
-      'type' => 'corporation'
+      'type' => 'government'
     ], [
       'icon' => 'public/img/clients/กรมท่าอากาศยาน.png',
       'title' => 'กรมท่าอากาศยาน',
       'bgColor' => 'rgba(58, 70, 149)',
-      'type' => 'corporation'
+      'type' => 'government'
     ], [
       'icon' => 'public/img/clients/กระทรวงศึกษา.svg',
       'title' => 'กระทรวงศึกษาธิการ',

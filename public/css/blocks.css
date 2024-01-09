@@ -232,6 +232,7 @@
 
 /* Isotope */
 .isotope-toolbar{margin-top:4rem;}
+.isotope-toolbar.style-02{margin-top:2.875rem;}
 .isotope-toolbar .isotope-wrapper{display:flex; justify-content:center;}
 .isotope-toolbar .isotope-tab{
   position:relative; cursor:pointer;

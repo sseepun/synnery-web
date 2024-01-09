@@ -2,7 +2,7 @@
 <?php if(isset($withFooterInfo) && $withFooterInfo){?>
   <?php if(!isset($withFooterContact) || $withFooterContact){?>
     <section data-section="97" class="section-01 size-03">
-      <div class="img-bg" style="background-image:url('public/img/bg/footer-03.jpg');"></div>  
+      <div class="img-bg" style="background-image:url('public/img/bg/02.jpg');"></div>  
       <div class="container">
         <div class="btns jc-center" data-aos="fade-up" data-aos-delay="0">
           <div class="btn-bubble__container">
@@ -172,34 +172,34 @@
     $services = [
       [
         'title' => 'Unlimited Microsite for Government',
-        'bg' => 'public/img/content/01-Microsite.jpg',
+        'bg' => 'public/img/content/menu-service-02.jpg',
         'url' => 'web-gov-minisite.php'
       ],[
         'title' => 'Enterprise Wordpress<br>Solutions',
-        'bg' => 'public/img/content/02-Wordpress.jpg',
+        'bg' => 'public/img/content/menu-service-03.jpg',
         'url' => 'enterprise-wordpress-solution.php'
       ],[
         'title' => 'NetWork Architecture/<br>DevSecOps',
-        'bg' => 'public/img/content/03-NetWork Architecture.jpg',
+        'bg' => 'public/img/content/menu-service-04.jpg',
         'url' => 'network-security-system.php'
       ],[
         'title' => 'Full Services Digital<br>Marketing',
-        'bg' => 'public/img/content/04-Marketing.jpg',
+        'bg' => 'public/img/content/menu-service-05.jpg',
         'url' => 'services.php'
       ],[
         'title' => 'AR, VR/3D Virtual Tour<br>Metaverse',
-        'bg' => 'public/img/content/05-AR.jpg',
+        'bg' => 'public/img/content/menu-service-06.jpg',
         'url' => 'virtual-world.php'
       ],[
         'title' => 'E-office/ ERP for<br>Government',
-        'bg' => 'public/img/content/06-E-office.jpg',
+        'bg' => 'public/img/content/menu-service-08.jpg',
         'url' => 'erp-for-government.php'
       ]
     ]
   ?>
   <section data-section="98" class="section-02 section-padding bg-black pb-0">
     <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-      งานบริการอื่น ๆ <span class="fw-100 color-white">ของเรา</span>
+      งานบริการอื่นๆ <span class="fw-100 color-white">ของเรา</span>
     </h3> 
     <div class="swiper-container mt-6" data-aos="fade-up" data-aos-delay="150">
       <div class="swiper-wrapper">
@@ -265,12 +265,9 @@
       <div class="address">
         <p class="sm fw-500">บริษัท ซินเนอร์รี่ คอร์ปอเรชั่น (ประเทศไทย) จำกัด</p>
         <p class="xs mt-1">1/1 ซอยรามคำแหง 12 แยก 2 แขวงหัวหมาก เขตบางกะปิ กทม. 10240</p>
-        <p class="xs fw-500 mt-1">
-          <a href="tel:+6623184939">+662-318-4939</a>, 
-          <a href="tel:+66863406895">+668-6340-6895</a>
-        </p>
+        <p class="xs fw-500 mt-1">+662-318-4939, +668-6340-6895</p>
         <div class="mt-1">
-          <a class="p xs a-line color-p fw-400" href="mailto:sales@synerry.com">sales@synerry.com</a>
+          <a class="p xs a-line color-p fw-400" href="#">sales@synerry.com</a>
         </div>
       </div>
       <div class="footer-socials pos-relative" style="z-index:2;">

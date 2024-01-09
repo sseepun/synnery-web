@@ -95,7 +95,7 @@
         </g>
       </svg>',
       'title' => 'Unlimited Minisite<br>Solution',
-      'href' => 'web-gov-minisite.php'
+      'href' => '#'
     ],[
       'icon' => '<svg version="1.1" id="Isolation_Mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
         y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
@@ -135,7 +135,7 @@
         </g>
       </svg>',
       'title' => 'Enterprise Wordpress<br> Solutions',
-      'href' => 'enterprise-wordpress-solution.php'
+      'href' => '#'
     ]
   ]
 ?>

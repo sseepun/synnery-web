@@ -32,20 +32,3 @@
 
 <script src="public/js/lazy-load.js"></script>
 <script src="public/lib/simplebar/simplebar.min.js"></script>
-
-
-<script src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js'></script>
-<script src='https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js'></script>
-<script>
-$('.slider').slick({
-    autoplay: true,
-    speed: 1300,
-    autoplaySpeed: 7000,
-    lazyLoad: 'progressive',
-    arrows: false,
-    dots: true,
-    adaptiveHeigh: true,
-})
-.slickAnimation();
-
-</script>

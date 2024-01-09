@@ -32,37 +32,37 @@
                 'title' => 'กระทรวงศึกษา',
                 'bgColor' => 'rgba(11,62,31,.7)',
                 'classer' => 'active',
-                'link' => 'https://www.moe.go.th/',
+                'link' => 'web-gov-standard.php',
               ], [
                 'bg' => 'public/img/content/34.jpg',
                 'icon' => 'public/img/clients/กระทรวงพลังงาน.png',
                 'title' => 'กระทรวงพลังงาน',
                 'bgColor' => 'rgba(254,77,1,.7)',
-                'link' => 'https://www.energy.go.th/th/',
+                'link' => 'web-gov-standard.php',
               ], [
                 'bg' => 'public/img/content/35.jpg',
                 'icon' => 'public/img/clients/industry.svg',
                 'title' => 'กระทรวงอุตสาหกรรม',
                 'bgColor' => 'rgba(136,0,156,.7)',
-                'link' => 'https://www.industry.go.th/th',
+                'link' => 'web-gov-standard.php',
               ], [
                 'bg' => 'public/img/content/36.jpg',
                 'icon' => 'public/img/clients/กรมธนารักษ์.svg',
                 'title' => 'กรมธนารักษณ์',
                 'bgColor' => 'rgba(204,165,33,.7)',
-                'link' => 'https://www.treasury.go.th/th/',
+                'link' => 'web-gov-standard.php',
               ], [
                 'bg' => 'public/img/content/37.jpg',
                 'icon' => 'public/img/clients/กรมโยธาธิการและผังเมือง.svg',
                 'title' => 'กรมโยธาธิการและผังเมือง',
                 'bgColor' => 'rgba(52,14,21,.7)',
-                'link' => 'https://www.dpt.go.th/',
+                'link' => 'web-gov-standard.php',
               ], [
                 'bg' => 'public/img/content/38.jpg',
                 'icon' => 'public/img/clients/มหาวิทยาลัยเกษตรศาสตร์.png',
                 'title' => 'มหาวิทยาลัยเกษตร',
                 'bgColor' => 'rgba(177,187,27,.7)',
-                'link' => 'https://www.ku.ac.th/th',
+                'link' => 'web-gov-standard.php',
               ],
             ];
           ?>
@@ -71,7 +71,7 @@
               <div class="ss-card ss-card-37">
                 <a class="ss-img square" href="<?= $d['link'] ?>">
                   <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
-                    <div class="hover-container <?= empty($d['classer'])?'':$d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
+                    <div class="hover-container <?= $d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
                     <div class="wrapper">
                       <div class="icon">
                         <img src="<?= $d['icon'] ?>" alt="Client" />
@@ -103,50 +103,44 @@
           'icon' => 'public/img/clients/กรมอนามัย.svg',
           'title' => 'กรมอนามัย',
           'bgColor' => 'rgba(0,108,63,.7)',
-          'link' => 'https://anamai.moph.go.th/th',
-          'target' => '_blank',
+          'link' => 'web-gov-standard.php',
         ], [
           'bg' => 'public/img/content/61.jpg',
           'icon' => 'public/img/clients/Asia-Pacific-Economic-Cooperation.svg',
           'title' => 'ความร่วมมือทางเศรษฐกิจ<br>ในเอเชียแปซิฟิก (เอเปค)',
           'bgColor' => 'rgba(43,48,125,.7)',
-          'link' => 'https://www.apec2022.go.th/',
-          'target' => '_blank',
+          'link' => 'web-gov-standard.php',
         ], [
           'bg' => 'public/img/content/62.jpg',
           'icon' => 'public/img/clients/กระทรวงวัฒนธรรม.svg',
           'title' => 'ศูนย์วัฒนธรรมอาเซียน<br>Asean Cultural Center',
           'bgColor' => 'rgba(38,15,71,.7)',
           'link' => 'web-gov-standard.php',
-          'target' => '_blank',
         ], [
           'bg' => 'public/img/content/63.jpg',
           'icon' => 'public/img/clients/กรมการขนส่งทางบก.svg',
           'title' => 'กรมการขนส่งทางบก',
           'bgColor' => 'rgba(102,66,132,.7)',
-          'link' => 'https://www.dlt.go.th/th',
-          'target' => '_blank',
+          'link' => 'web-gov-standard.php',
         ], [
           'bg' => 'public/img/content/64.jpg',
           'icon' => 'public/img/clients/สำนักงานคณะกรรมการกำกับกิจการพลังงาน.png',
           'title' => 'สำนักงานคณะกรรมการ<br>กำกับกิจการพลังงาน',
           'bgColor' => 'rgba(243,119,54,.7)',
-          'link' => 'https://www.erc.or.th/',
-          'target' => '_blank',
+          'link' => 'web-gov-standard.php',
         ], [
           'bg' => 'public/img/content/65.jpg',
           'icon' => 'public/img/clients/GSSD.png',
           'title' => 'GSSD Expo Thailand',
           'bgColor' => 'rgba(214,46,26,.7)',
-          'link' => 'https://3dwalkthrough.jigsawgroups.work/?gssd_token=20f7e8979957ee322b914f099f9c21fb',
-          'target' => '_blank',
+          'link' => 'web-gov-standard.php',
         ], 
       ];
     ?>
     <?php foreach($clients as $d){?>
       <div class="grid lg-1-6 md-25 sm-1-3 xs-50 mt-0">
         <div class="ss-card">
-          <a class="ss-img square" href="<?= $d['link'] ?>" <?= $d['target'] ?>>
+          <a class="ss-img square" href="<?= $d['link'] ?>">
             <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
             <div class="hover-container" style="background:<?= $d['bgColor'] ?>;">
               <div class="wrapper">

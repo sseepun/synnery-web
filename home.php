@@ -56,7 +56,7 @@
   </section> 
 
   <?php if(false){?>
-    <section  data-section="1" class="banner-02">
+    <section data-section="1" class="banner-02">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <?php for($i=0; $i<18; $i++){?>
@@ -140,7 +140,7 @@
       [ 'title' => 'Enterprise<br>DevSecOps Solutions', 'url' => 'network-security-system.php' ],
     ];
   ?>
-  <section class="section-01 section-padding">
+  <section data-section="2" class="section-01 section-padding">
     <div class="pattern style-32">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">
@@ -161,7 +161,13 @@
           <a href="#" class="ss-card ss-card-53">
             <div class="ss-img square">
               <div class="img-bg" style="background-image:url('public/img/content/demo-01.jpg');"></div>
-            </div>  
+            </div> 
+            <div class="card-line-3">
+              <svg viewBox="0 0 100.25 100.25">
+                <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                <polyline points="100,0 100,100 0,100 0,0 100,0" />
+              </svg>
+            </div> 
             <div class="text-wrapper">
               <p class="title">
                 Full Digital Marketing
@@ -214,6 +220,12 @@
                 Corporate Website
               </p>
             </div>
+            <div class="card-line-3">
+              <svg viewBox="0 0 100.25 100.25">
+                <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                <polyline points="100,0 100,100 0,100 0,0 100,0" />
+              </svg>
+            </div>
             <div class="filter-04"></div>
           </a> 
           <div class="services md-mb">
@@ -260,6 +272,12 @@
               <p class="title">
                 E-office for Government
               </p>
+            </div>
+            <div class="card-line-3">
+              <svg viewBox="0 0 100.25 100.25">
+                <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                <polyline points="100,0 100,100 0,100 0,0 100,0" />
+              </svg>
             </div>
             <div class="filter-04"></div>
           </a> 
@@ -323,6 +341,12 @@
               <p class="title">
                 Other
               </p>
+            </div>
+            <div class="card-line-3">
+              <svg viewBox="0 0 100.25 100.25">
+                <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                <polyline points="100,0 100,100 0,100 0,0 100,0" />
+              </svg>
             </div>
             <div class="filter-04"></div>
           </a> 
@@ -390,7 +414,7 @@
       ]
     ]
   ?>
-  <section class="section-padding section-25 bg-04">
+  <section data-section="3" class="section-padding section-25 bg-04">
     <div class="container">
       <h3 class="text-center fw-700" data-aos="fade-up" data-aos-delay="150">
         <span class="color-p fw-700">Global</span> Product Partner
@@ -407,6 +431,8 @@
                   <?= $d['title'] ?>
                 </p>
               </div>
+              <div class="line-1"></div>
+              <div class="line-2"></div>
             </a>
           </div>
         <?php } ?>
@@ -414,7 +440,7 @@
     </div>
   </section>
 
-  <section data-section="3" class="section-24 section-padding bg-05 pb-0">
+  <section data-section="4" class="section-24 section-padding pt-0 bg-05 pb-0">
     <div class="pattern style-01">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">
@@ -464,7 +490,7 @@
 
     <?php include_once('data/clients-home.php'); ?>
     <div class="container" data-aos="fade-up" data-aos-delay="300">
-      <div class="isotope-toolbar" style="position:relative;">
+      <div class="isotope-toolbar style-02" style="position:relative;">
         <div class="isotope-wrapper">
           <div class="isotope-toolbar-btn isotope-tab active" data-type="government" name="isotope-filter">
             <div class="wrapper">
@@ -487,7 +513,7 @@
         </div>
       </div>
     </div>
-    <div class="container" data-aos="fade-up" data-aos-delay="450">
+    <div class="container" style="z-index:3;" data-aos="fade-up" data-aos-delay="450">
       <div class="clients isotope-box pos-relative" style="z-index:2;">
         <?php foreach($clients as $d){?>
           <div class="client isotope-item" data-type="<?= $d['type'] ?>">
@@ -532,7 +558,7 @@
       ]
     ]
   ?>
-  <div class="section-padding section-01 bg-04">
+  <section data-section="5" class="section-padding section-01 pt-6 bg-04">
     <div class="pattern style-55">
       <div class="wrapper" value=".5">
         <img src="public/img/patterns/23.png" alt="Hero">
@@ -603,6 +629,9 @@
             <a href="#" class="ss-card ss-card-54">
               <div class="ss-img">
                 <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
+                <div class="hover-filter-02"></div>
+                <div class="line-1"></div>
+                <div class="line-2"></div>
               </div>  
               <div class="text-container">
                 <p class="title">Day 2 งาน DigiTech ASEAN Thailand 2023</p>
@@ -616,7 +645,7 @@
         <?php }?>
       </div>
     </div>      
-  </div>
+  </section>
 
   <?php $withFooterInfo=true; include_once('include/footer-style-02.php'); ?>
   <?php include_once('include/script.php'); ?>

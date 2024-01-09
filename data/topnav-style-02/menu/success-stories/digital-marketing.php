@@ -1,8 +1,7 @@
 <?php 
-  $eOfficeService = [
+  $digitalMarketing = [
     [
-      'title' => 'E-Saraban',
-      'desc' => 'ออกแบบ และพัฒนาเว็บไซต์ ที่ได้มาตรฐาน รองรับทั้งภาครัฐ และเอกชน',
+      'title' => 'Global South-South Development Expo 2022',
       'icon' => '<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
       <g>
@@ -69,8 +68,7 @@
       </g>
     </svg>'
     ],[
-      'title' => 'E-Meeting',
-      'desc' => 'ออกแบบ และพัฒนาเว็บไซต์ย่อย ๆ สำหรับหน่วยงานภายใต้การกำกับดูแล',
+      'title' => 'สำนักงานประชาสัมพันธ์สำนักปลัดกรุงเทพมหานคร',
       'icon' => '<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
         <g>
@@ -139,8 +137,7 @@
         </g>
       </svg>'
     ],[
-      'title' => 'E-Learning',
-      'desc' => 'ออกแบบ และพัฒนาเว็บไซต์ ภายใต้ระยะและงบประมาณที่จำกัด',
+      'title' => 'การกีฬาแห่งประเทศไทย',
       'icon' => '<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
         <g>

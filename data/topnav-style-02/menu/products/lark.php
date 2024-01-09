@@ -1,8 +1,8 @@
 <?php 
-  $lark = [
+  $larkMenu = [
     [
       'title' => 'Lark',
-      'imgBg' => 'public/img/content/demo-01.jpg'
+      'imgBg' => 'public/img/content/113.jpg'
     ],
   ]
 ?>
