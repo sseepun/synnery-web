@@ -132,7 +132,7 @@
             <div class="container">
               <?php include('data/topnav-style-02/menu/services/full-digital.php'); ?>
               <div class="submenu-blocks menu-container">
-                <div class="submenu-block active menu-active">
+                <div class="submenu-block">
                   <p class="fw-600">Full Digital Marketing</p>
                   <?php foreach($fullDigital as $d) {?>
                     <a href="#" class="submenu-block-list style-01">

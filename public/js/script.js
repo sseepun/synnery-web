@@ -291,8 +291,29 @@ $(function () {
      topnavMenuNotsub02 = topnavStyle02.find('.menu-container > .menu:not(.menu.sub-menu)'),
      topnavSubMenu02 = topnavStyle02.find('.menu-container > .menu.sub-menu'),
      topnavDropdown02 = topnavStyle02.find('.topnav-dropdown'),
-     topnavDropdownDivs02 = topnavDropdown02.find('.dropdown-wrapper');
+     topnavDropdownDivs02 = topnavDropdown02.find('.dropdown-wrapper'),
+     topnavDropdownServices = topnavDropdown02.find('.dropdown-wrapper.services .submenu-blocks'),
+     topnavDropdownServicesSub = topnavDropdown02.find('.dropdown-wrapper.services .submenu-block');
+     console.log(topnavDropdownServicesSub.length);
 
+    topnavDropdownServicesSub.mouseenter(function(e){
+        let self = $(this);
+        console.log(self.index());
+        if(!self.hasClass('active')){
+            let lastIndex = topnavDropdownServicesSub.filter('.menu-active').index();
+            let nowIndex = self.index();
+            if(nowIndex > lastIndex){
+                topnavDropdownServices.removeClass('from-left');
+                topnavDropdownServices.addClass('from-right');
+            }else{
+                topnavDropdownServices.removeClass('from-right');
+                topnavDropdownServices.addClass('from-left');
+            }
+            topnavDropdownServicesSub.removeClass('menu-active');
+            self.addClass('menu-active');
+        }
+    })
+    
      var sidenav = $('nav.sidenav'),
      sidenavMenus = sidenav.find('.menu-container');
     if(topnavStyle02.length){
