@@ -140,7 +140,7 @@
       [ 'title' => 'Enterprise<br>DevSecOps Solutions', 'url' => 'network-security-system.php' ],
     ];
   ?>
-  <section data-section="2" class="section-01 section-padding">
+  <section data-section="2" class="section-01 section-padding pt-4 pb-6">
     <div class="pattern style-32">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">
@@ -156,234 +156,237 @@
       <p class="h5 color-black md-no-br fw-300 text-center mt-1" data-aos="fade-up" data-aos-delay="150">
         บริการด้านดิจิทัลแบบครบวงจร ตอบโจทย์ทุกความต้องการ
       </p>
-      <div class="grids mt-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="grid lg-25">
-          <a href="#" class="ss-card ss-card-53">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/demo-01.jpg');"></div>
+      <div class="services-container">
+        <div class="grids mt-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="grid lg-25">
+            <a href="#" class="ss-card ss-card-53">
+              <div class="ss-img square">
+                <div class="img-bg" style="background-image:url('public/img/content/demo-01.jpg');"></div>
+              </div> 
+              <div class="card-line-3">
+                <svg viewBox="-.375 0 100.625 100">
+                  <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                  <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                </svg>
+              </div> 
+              <div class="text-wrapper">
+                <p class="title">
+                  Full Digital Marketing
+                </p>
+              </div>
+              <div class="filter-04"></div>
+            </a> 
+            <div class="services md-mb">
+              <div class="service-list style-01">
+                <div class="wrapper">
+                  <div class="icon">
+                    <?php include('public/img/icon/svg/full-digital-marketing.php'); ?>
+                  </div>
+                  <div class="text">
+                    <p class="title">
+                      Full Digital Marketing
+                    </p>
+                    <p class="desc">
+                      วางกลยุทธ์ทั้งรุกและรับ ผ่านสื่อออนไลน์ ออฟไลน์ 
+                      ผ่านสื่อการตลาดต่างๆ
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="service-list style-01">
+                <div class="wrapper">
+                  <div class="icon">
+                    <?php include('public/img/icon/svg/digital-graphic-design.php'); ?>
+                  </div>
+                  <div class="text">
+                    <p class="title">
+                      Digital & Graphic Design 
+                    </p>
+                    <p class="desc">
+                      วางกลยุทธ์ทั้งรุกและรับ ผ่านสื่อออนไลน์ ออฟไลน์ 
+                      ผ่านสื่อการตลาดต่างๆ
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div> 
-            <div class="card-line-3">
-              <svg viewBox="0 0 100.25 100.25">
-                <polyline points="100,0 100,100 0,100 0,0 100,0" />
-                <polyline points="100,0 100,100 0,100 0,0 100,0" />
-              </svg>
+          </div>
+          <div class="grid lg-25">
+            <a href="#" class="ss-card ss-card-53">
+              <div class="ss-img square">
+                <div class="img-bg" style="background-image:url('public/img/content/demo-03.jpg');"></div>
+              </div>  
+              <div class="text-wrapper">
+                <p class="title">
+                  Corporate Website
+                </p>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox="0 0 100.25 100.25">
+                  <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                  <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                </svg>
+              </div>
+              <div class="filter-04"></div>
+            </a> 
+            <div class="services md-mb">
+              <div class="service-list style-02">
+                <div class="wrapper">
+                  <div class="icon style-02">
+                    <?php include('public/img/icon/svg/corporate-website.php'); ?>
+                  </div>
+                  <div class="text">
+                    <p class="title">
+                      Corporate Website
+                    </p>
+                    <p class="desc">
+                      ออกแบบ และพัฒนาเว็บไซต์ ที่ได้มาตรฐาน
+                      รองรับทั้งภาครัฐ และเอกชน
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="service-list style-02">
+                <div class="wrapper">
+                  <div class="icon style-02">
+                    <?php include('public/img/icon/svg/microsite-for-gov.php'); ?>
+                  </div>
+                  <div class="text">
+                    <p class="title">
+                      Microsite for Gov 
+                    </p>
+                    <p class="desc">
+                      ออกแบบ และพัฒนาเว็บไซต์ย่อยๆ สำหรับ
+                      หน่วยงานภายใต้การกำกับดูแล
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div> 
-            <div class="text-wrapper">
-              <p class="title">
-                Full Digital Marketing
-              </p>
-            </div>
-            <div class="filter-04"></div>
-          </a> 
-          <div class="services md-mb">
-            <div class="service-list">
-              <div class="wrapper">
-                <div class="icon">
-                  <?php include('public/img/icon/svg/full-digital-marketing.php'); ?>
-                </div>
-                <div class="text">
-                  <p class="title">
-                    Full Digital Marketing
-                  </p>
-                  <p class="desc">
-                    วางกลยุทธ์ทั้งรุกและรับ ผ่านสื่อออนไลน์ ออฟไลน์ 
-                    ผ่านสื่อการตลาดต่างๆ
-                  </p>
+          </div>
+          <div class="grid lg-25">
+            <a href="#" class="ss-card ss-card-53">
+              <div class="ss-img square">
+                <div class="img-bg" style="background-image:url('public/img/content/demo-02.jpg');"></div>
+              </div>  
+              <div class="text-wrapper">
+                <p class="title">
+                  E-office for Government
+                </p>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox="0 0 100.25 100.25">
+                  <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                  <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                </svg>
+              </div>
+              <div class="filter-04"></div>
+            </a> 
+            <div class="services sm-mb">
+              <div class="service-list style-03">
+                <div class="wrapper">
+                  <div class="icon style-03">
+                    <?php include('public/img/icon/svg/e-sarabun.php'); ?>
+                  </div>
+                  <div class="text">
+                    <p class="title">
+                      E-Sarabun
+                    </p>
+                    <p class="desc">
+                      ออกแบบ และพัฒนาเว็บไซต์ ที่ได้มาตรฐาน
+                      รองรับทั้งภาครัฐ และเอกชน
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-list">
-              <div class="wrapper">
-                <div class="icon">
-                  <?php include('public/img/icon/svg/digital-graphic-design.php'); ?>
-                </div>
-                <div class="text">
-                  <p class="title">
-                    Digital & Graphic Design 
-                  </p>
-                  <p class="desc">
-                    วางกลยุทธ์ทั้งรุกและรับ ผ่านสื่อออนไลน์ ออฟไลน์ 
-                    ผ่านสื่อการตลาดต่างๆ
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> 
-        </div>
-        <div class="grid lg-25">
-          <a href="#" class="ss-card ss-card-53">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/demo-03.jpg');"></div>
-            </div>  
-            <div class="text-wrapper">
-              <p class="title">
-                Corporate Website
-              </p>
-            </div>
-            <div class="card-line-3">
-              <svg viewBox="0 0 100.25 100.25">
-                <polyline points="100,0 100,100 0,100 0,0 100,0" />
-                <polyline points="100,0 100,100 0,100 0,0 100,0" />
-              </svg>
-            </div>
-            <div class="filter-04"></div>
-          </a> 
-          <div class="services md-mb">
-            <div class="service-list">
-              <div class="wrapper">
-                <div class="icon style-02">
-                  <?php include('public/img/icon/svg/corporate-website.php'); ?>
-                </div>
-                <div class="text">
-                  <p class="title">
-                    Corporate Website
-                  </p>
-                  <p class="desc">
-                    ออกแบบ และพัฒนาเว็บไซต์ ที่ได้มาตรฐาน
-                    รองรับทั้งภาครัฐ และเอกชน
-                  </p>
+              <div class="service-list style-03">
+                <div class="wrapper">
+                  <div class="icon style-03">
+                    <?php include('public/img/icon/svg/e-meeting.php'); ?>
+                  </div>
+                  <div class="text">
+                    <p class="title">
+                      E-Meeting
+                    </p>
+                    <p class="desc">
+                      ออกแบบ และพัฒนาเว็บไซต์ย่อยๆ สำหรับ
+                      หน่วยงานภายใต้การกำกับดูแล
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-list">
-              <div class="wrapper">
-                <div class="icon style-02">
-                  <?php include('public/img/icon/svg/microsite-for-gov.php'); ?>
-                </div>
-                <div class="text">
-                  <p class="title">
-                    Microsite for Gov 
-                  </p>
-                  <p class="desc">
-                    ออกแบบ และพัฒนาเว็บไซต์ย่อยๆ สำหรับ
-                    หน่วยงานภายใต้การกำกับดูแล
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> 
-        </div>
-        <div class="grid lg-25">
-          <a href="#" class="ss-card ss-card-53">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/demo-02.jpg');"></div>
-            </div>  
-            <div class="text-wrapper">
-              <p class="title">
-                E-office for Government
-              </p>
-            </div>
-            <div class="card-line-3">
-              <svg viewBox="0 0 100.25 100.25">
-                <polyline points="100,0 100,100 0,100 0,0 100,0" />
-                <polyline points="100,0 100,100 0,100 0,0 100,0" />
-              </svg>
-            </div>
-            <div class="filter-04"></div>
-          </a> 
-          <div class="services sm-mb">
-            <div class="service-list">
-              <div class="wrapper">
-                <div class="icon style-03">
-                  <?php include('public/img/icon/svg/e-sarabun.php'); ?>
-                </div>
-                <div class="text">
-                  <p class="title">
-                    E-Sarabun
-                  </p>
-                  <p class="desc">
-                    ออกแบบ และพัฒนาเว็บไซต์ ที่ได้มาตรฐาน
-                    รองรับทั้งภาครัฐ และเอกชน
-                  </p>
+              <div class="service-list style-03">
+                <div class="wrapper">
+                  <div class="icon style-03">
+                    <?php include('public/img/icon/svg/e-learning.php'); ?>
+                  </div>
+                  <div class="text">
+                    <p class="title">
+                      E-Learning
+                    </p>
+                    <p class="desc">
+                      ออกแบบ และพัฒนาเว็บไซต์ ภายใต้ระยะเวลา
+                      และงบประมาณจำกัด
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-list">
-              <div class="wrapper">
-                <div class="icon style-03">
-                  <?php include('public/img/icon/svg/e-meeting.php'); ?>
-                </div>
-                <div class="text">
-                  <p class="title">
-                    E-Meeting
-                  </p>
-                  <p class="desc">
-                    ออกแบบ และพัฒนาเว็บไซต์ย่อยๆ สำหรับ
-                    หน่วยงานภายใต้การกำกับดูแล
-                  </p>
+            </div> 
+          </div>
+          <div class="grid lg-25">
+            <a href="#" class="ss-card ss-card-53">
+              <div class="ss-img square">
+                <div class="img-bg" style="background-image:url('public/img/content/demo-04.jpg');"></div>
+              </div>  
+              <div class="text-wrapper">
+                <p class="title">
+                  Other
+                </p>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox="0 0 100.25 100.25">
+                  <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                  <polyline points="100,0 100,100 0,100 0,0 100,0" />
+                </svg>
+              </div>
+              <div class="filter-04"></div>
+            </a> 
+            <div class="services">
+              <div class="service-list style-04">
+                <div class="wrapper">
+                  <div class="icon style-04">
+                    <?php include('public/img/icon/svg/e-learning.php'); ?>
+                    <!-- <img src="public/img/icon/32.png" alt="Mobile Icon" class="ml-1" /> -->
+                  </div>
+                  <div class="text">
+                    <p class="title">
+                      Web & Mobile Apps
+                    </p>
+                    <p class="desc">
+                      ออกแบบ และพัฒนาเว็บไซต์ ที่ได้มาตรฐาน
+                      รองรับทั้งภาครัฐ และเอกชน
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-list">
-              <div class="wrapper">
-                <div class="icon style-03">
-                  <?php include('public/img/icon/svg/e-learning.php'); ?>
-                </div>
-                <div class="text">
-                  <p class="title">
-                    E-Learning
-                  </p>
-                  <p class="desc">
-                    ออกแบบ และพัฒนาเว็บไซต์ ภายใต้ระยะเวลา
-                    และงบประมาณจำกัด
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> 
-        </div>
-        <div class="grid lg-25">
-          <a href="#" class="ss-card ss-card-53">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/demo-04.jpg');"></div>
-            </div>  
-            <div class="text-wrapper">
-              <p class="title">
-                Other
-              </p>
-            </div>
-            <div class="card-line-3">
-              <svg viewBox="0 0 100.25 100.25">
-                <polyline points="100,0 100,100 0,100 0,0 100,0" />
-                <polyline points="100,0 100,100 0,100 0,0 100,0" />
-              </svg>
-            </div>
-            <div class="filter-04"></div>
-          </a> 
-          <div class="services">
-            <div class="service-list">
-              <div class="wrapper">
-                <div class="icon style-04">
-                  <img src="public/img/icon/32.png" alt="Mobile Icon" class="ml-1" />
-                </div>
-                <div class="text">
-                  <p class="title">
-                    Web & Mobile Apps
-                  </p>
-                  <p class="desc">
-                    ออกแบบ และพัฒนาเว็บไซต์ ที่ได้มาตรฐาน
-                    รองรับทั้งภาครัฐ และเอกชน
-                  </p>
+              <div class="service-list style-04">
+                <div class="wrapper">
+                  <div class="icon style-04">
+                    <?php include('public/img/icon/svg/network-security.php'); ?>
+                  </div>
+                  <div class="text">
+                    <p class="title">
+                      Network & Security
+                    </p>
+                    <p class="desc">
+                      ออกแบบ และพัฒนาเว็บไซต์ ภายใต้ระยะเวลา
+                      และงบประมาณจำกัด
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-list">
-              <div class="wrapper">
-                <div class="icon style-04">
-                  <?php include('public/img/icon/svg/network-security.php'); ?>
-                </div>
-                <div class="text">
-                  <p class="title">
-                    Network & Security
-                  </p>
-                  <p class="desc">
-                    ออกแบบ และพัฒนาเว็บไซต์ ภายใต้ระยะเวลา
-                    และงบประมาณจำกัด
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> 
+            </div> 
+          </div>
         </div>
       </div>
     </div>
@@ -393,19 +396,19 @@
     $content = [
       [
         'logo' => 'public/img/partners/01.png',
-        'title' => 'Lark',
-        'alt' => 'Lark'
+        'title' => 'All in One E-Office',
+        'alt' => 'Lark',
       ],[
         'logo' => 'public/img/partners/02.png',
-        'title' => 'Asana',
+        'title' => 'Project Management',
         'alt' => 'Asana'
       ],[
         'logo' => 'public/img/partners/03.png',
-        'title' => 'Device42',
+        'title' => 'Digital Asset Management',
         'alt' => 'Device42'
       ],[
         'logo' => 'public/img/partners/04.png',
-        'title' => 'DISPL',
+        'title' => 'AI Audience Anslytics',
         'alt' => 'DISPL'
       ],[
         'logo' => 'public/img/partners/05.png',
@@ -414,7 +417,7 @@
       ]
     ]
   ?>
-  <section data-section="3" class="section-padding section-25 bg-04">
+  <section data-section="3" class="section-padding section-25 pt-6 bg-04">
     <div class="container">
       <h3 class="text-center fw-700" data-aos="fade-up" data-aos-delay="150">
         <span class="color-p fw-700">Global</span> Product Partner

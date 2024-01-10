@@ -1441,7 +1441,7 @@ fieldset{padding:0; margin:0; border:0;}
     background:-webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
     background:linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
     transform:skewX(-25deg); transform:skewX(-25deg);
-  }
+}
 .ss-card-52:hover:after{
     -webkit-animation:shine 1.5s; animation:shine 1.5s;
 }
@@ -1474,6 +1474,15 @@ fieldset{padding:0; margin:0; border:0;}
     color:#ffffff; text-align:center; font-weight:500;
     font-size:1.125rem;
 }
+.ss-card-53:after{
+    position:absolute; top:0; left:-75%; z-index:2; display:block; content:''; width:50%; height:100%; 
+    background:-webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background:linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    transform:skewX(-25deg); transform:skewX(-25deg);
+}
+.ss-card-53:hover:after{
+    -webkit-animation:shine 1.5s; animation:shine 1.5s;
+}
 
 
 /* Special Card 54 */
@@ -1499,8 +1508,8 @@ fieldset{padding:0; margin:0; border:0;}
 
 /* Special 55 */
 .ss-card-55{
-    position:relative; display:flex; align-items:center; justify-content:center;  overflow:hidden;
-    background:#FFFFFF; padding:2rem; border-radius:.75rem;
+    position:relative; display:flex; align-items:center; justify-content:center; overflow:hidden;
+    background:#FFFFFF; padding:2rem .4375rem; border-radius:.75rem;
 }
 .ss-card-55 .wrapper{
     display:flex; flex-direction:column; align-items:center;
