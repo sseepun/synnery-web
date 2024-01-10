@@ -294,26 +294,7 @@ $(function () {
      topnavDropdownDivs02 = topnavDropdown02.find('.dropdown-wrapper'),
      topnavDropdownServices = topnavDropdown02.find('.dropdown-wrapper.services .submenu-blocks'),
      topnavDropdownServicesSub = topnavDropdown02.find('.dropdown-wrapper.services .submenu-block');
-     console.log(topnavDropdownServicesSub.length);
 
-    topnavDropdownServicesSub.mouseenter(function(e){
-        let self = $(this);
-        console.log(self.index());
-        if(!self.hasClass('active')){
-            let lastIndex = topnavDropdownServicesSub.filter('.menu-active').index();
-            let nowIndex = self.index();
-            if(nowIndex > lastIndex){
-                topnavDropdownServices.removeClass('from-left');
-                topnavDropdownServices.addClass('from-right');
-            }else{
-                topnavDropdownServices.removeClass('from-right');
-                topnavDropdownServices.addClass('from-left');
-            }
-            topnavDropdownServicesSub.removeClass('menu-active');
-            self.addClass('menu-active');
-        }
-    })
-    
      var sidenav = $('nav.sidenav'),
      sidenavMenus = sidenav.find('.menu-container');
     if(topnavStyle02.length){
@@ -373,13 +354,29 @@ $(function () {
              if (topnavDropdown02.hasClass('active')) {
                     topnavDropdown02.removeClass('active');
                     setTimeout(function(){
-                        topnavDropdown02.addClass('active');
+                        topnavDropdown02.addClass('active')
                     }, 600);
-             }else{
-                
              }
          });
      });
+
+     topnavDropdownServicesSub.mouseenter(function(e){
+        let self = $(this);
+        
+        if(!self.hasClass('active')){
+            let lastIndex = topnavDropdownServicesSub.filter('.menu-active').index();
+            let nowIndex = self.index();
+            if(nowIndex > lastIndex){
+                topnavDropdownServices.removeClass('from-left');
+                topnavDropdownServices.addClass('from-right');
+            }else{
+                topnavDropdownServices.removeClass('from-right');
+                topnavDropdownServices.addClass('from-left');
+            }
+            topnavDropdownServicesSub.removeClass('menu-active');
+            self.addClass('menu-active');
+        }
+    })
      sidenavMenus.find('.has-children').each(function(){
          $(this).append('<div class="dropdown-toggle"><em class="fas fa-chevron-right"></em></div>');
      });
@@ -396,25 +393,6 @@ $(function () {
         scopeDiv.removeClass('topnav-dropdown-opened');
     });
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    var main = $('.tp-leftarrow');
-    // console.log(main)
-    main.click(function (e) {
-        // console.log('Hello');
-    })
 
     // Sidenav
     var sidenav = $('nav.sidenav'),
@@ -1068,16 +1046,58 @@ $(function () {
     });
 
 
+    var serviceContainer = $('.services-container .grids'),
+        serviceList = serviceContainer.find('.grid');
+
+    serviceList.mouseenter(function(e){
+        let self = $(this);
+        if(!self.hasClass('active')){
+            let lastIndex = serviceList.filter('.menu-active').index();
+            let nowIndex = self.index();
+            if(nowIndex > lastIndex){
+                serviceContainer.removeClass('from-left');
+                serviceContainer.addClass('from-right');
+            }else{
+                serviceContainer.removeClass('from-right');
+                serviceContainer.addClass('from-left');
+            }
+        }
+        serviceList.removeClass('menu-active');
+        self.addClass('menu-active');
+    })
+
+
+
+
     // Isotope Filter
     var filterValue = $(this).attr('data-type');
     var $isotopeContainer = $('.isotope-box').isotope({itemSelector: '.isotope-item'});
+    var isotobeToolBar = $('.isotope-toolbar'),
+        isotopeButton = isotobeToolBar.find('.isotope-tab');
+
+    isotopeButton.mouseenter(function(e){
+        let self = $(this);
+        if(!self.hasClass('active')){
+            let lastIndex =    isotopeButton.filter('.menu-active').index();
+            let nowIndex = self.index();
+            if(nowIndex > lastIndex){
+                isotobeToolBar.removeClass('from-left');
+                isotobeToolBar.addClass('from-right');
+            }else{
+                isotobeToolBar.removeClass('from-right');
+                isotobeToolBar.addClass('from-left');
+            }
+        }
+        isotopeButton.removeClass('menu-active');
+        self.addClass('menu-active');
+    })
 
     if(filterValue !== 'corporation') {
       filterValue = '[data-type="government"]';
     }
 
     $isotopeContainer.isotope({ filter: filterValue });
-    $('.isotope-toolbar').on('click', '.isotope-tab', function () {
+    $('.isotope-toolbar').on('mouseenter', '.isotope-tab', function () {
       var filterValue = $(this).attr('data-type');
       $('.isotope-toolbar-btn').removeClass('active');
       $(this).addClass('active');
