@@ -224,12 +224,12 @@ $(function () {
                 if (parent.hasClass('active-dropdown')) {
                     parent.removeClass('active-dropdown');
                     topnavDropdown.removeClass('active');
-                    scopeDiv.removeClass('topnav-dropdown-opened');
+                    // scopeDiv.removeClass('topnav-dropdown-opened');
                 } else {
                     topnavMenu.removeClass('active-dropdown');
                     parent.addClass('active-dropdown');
                     topnavDropdown.addClass('active');
-                    scopeDiv.addClass('topnav-dropdown-opened');
+                    // scopeDiv.addClass('topnav-dropdown-opened');
 
                     let prevActive = topnavDropdownDivs.filter('.active'),
                         nextActive = topnavDropdownDivs.filter('[data-dropdown="' + dIndex + '"]');
@@ -271,7 +271,7 @@ $(function () {
             e.preventDefault();
             topnavDropdown.removeClass('active');
             topnavSubMenu.removeClass('active-dropdown');
-            scopeDiv.removeClass('topnav-dropdown-opened');
+            // scopeDiv.removeClass('topnav-dropdown-opened');
         });
         sidenavMenus.find('.has-children').each(function(){
             $(this).append('<div class="dropdown-toggle"><em class="fas fa-chevron-right"></em></div>');
@@ -322,12 +322,12 @@ $(function () {
              if (parent.hasClass('active-dropdown')) {
                  parent.removeClass('active-dropdown');
                  topnavDropdown02.removeClass('active');
-                 scopeDiv.removeClass('topnav-dropdown-opened');
+                //  scopeDiv.removeClass('topnav-dropdown-opened');
              } else {
                  topnavMenu02.removeClass('active-dropdown');
                  parent.addClass('active-dropdown');
                  topnavDropdown02.addClass('active');
-                 scopeDiv.addClass('topnav-dropdown-opened');
+                //  scopeDiv.addClass('topnav-dropdown-opened');
 
                  let prevActive = topnavDropdownDivs02.filter('.active'),
                      nextActive = topnavDropdownDivs02.filter('[data-dropdown="' + dIndex + '"]');
@@ -390,7 +390,7 @@ $(function () {
         e.preventDefault();
         topnavDropdown02.removeClass('active');
         topnavSubMenu02.removeClass('active-dropdown');
-        scopeDiv.removeClass('topnav-dropdown-opened');
+        // scopeDiv.removeClass('topnav-dropdown-opened');
     });
  }
 
