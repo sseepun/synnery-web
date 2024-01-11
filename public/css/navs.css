@@ -61,6 +61,81 @@
 }
 .page-loader.fade-out .loader-progress{left:0; right:0; opacity:0;}
 
+
+
+
+@keyframes textLoading{
+  0%{transform: translateY(5rem); opacity:0;}
+  100%{transform:translateY(0); opacity:1}
+}
+@keyframes textScale{
+  0%{transform:scale(1);}
+  100%{transform:scale(1.2);}
+}
+
+/* Page Loader Style 02 */
+.page-loader-style-02{
+  position:fixed; top:0; left:0; width:100vw; height:100vh; 
+  z-index:999; background:#000000;
+}
+.page-loader-style-02 .wrapper{
+  display:flex; justify-content:center; align-items:center;
+  height:100%; flex-direction:column;
+}
+.page-loader-style-02 .text-intro{
+  color:#ffffff; font-size:4rem; font-weight:700;
+  width:100%; text-align:center; overflow:hidden; animation:textScale 2s forwards;
+}
+.page-loader-style-02 .text-intro .text{
+  display:inline-block; margin:0 -.5625rem; transform:translateY(5rem);
+  animation:textLoading .75s forwards; 
+}
+.page-loader-style-02 .text-intro .text:nth-child(2){animation-delay:.1s;}
+.page-loader-style-02 .text-intro .text:nth-child(3){animation-delay:.2s;}
+.page-loader-style-02 .text-intro .text:nth-child(4){animation-delay:.3s;}
+.page-loader-style-02 .text-intro .text:nth-child(5){animation-delay:.4s;}
+.page-loader-style-02 .text-intro .text:nth-child(6){animation-delay:.5s;}
+.page-loader-style-02 .text-intro .text:nth-child(7){animation-delay:.6s;}
+
+@keyframes sloganLeftMain{
+  0%{transform:translateY(-2rem)}
+  100%{transform:translateY(-.28125rem)}
+}
+@keyframes sloganLeftSub{
+  0%{transform:translateY(-2rem)}
+  100%{transform:translateY(2rem)}
+}
+@keyframes sloganRightMain{
+  0%{transform:translateY(0)}
+  100%{transform:translateY(-2rem)}
+}
+@keyframes sloganRightSub{
+  0%{transform:translateY(2rem)}
+  100%{transform:translateY(-2rem)}
+}
+
+.page-loader-style-02 .slogan{color:#ffffff; margin-top:1rem;}
+.page-loader-style-02 .slogan-wrapper{overflow:hidden; height:1rem; display:flex;}
+.page-loader-style-02 .slogan-wrapper .slogan-left{margin-right:.5rem; color:#ec2c23;}
+
+.page-loader-style-02 .slogan-wrapper .slogan-left .text-main{
+  animation:sloganLeftMain 1s forwards;
+}
+.page-loader-style-02 .slogan-wrapper .slogan-left .text-sub{
+  animation:sloganLeftSub 1s forwards;  
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.page-loader-style-02 .slogan-wrapper .slogan-right .text-main{
+  animation:sloganRightMain 1s forwards;
+}
+.page-loader-style-02 .slogan-wrapper .slogan-right .text-sub{
+  animation:sloganRightSub 1s forwards;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+
+
 /* Topnav */
 nav.topnav{
   position:fixed; top:0; left:0; width:100%; padding:0; z-index:95;
@@ -469,10 +544,12 @@ nav.topnav-style-02 .menu > *:first-child{
 }
 nav.topnav-style-02 .menu > *:first-child::after{
   position:absolute; content:''; top:0; left:0; width:100%; height:3.5rem; background:#ffffff;
-  z-index:-1;
+  z-index:-1; pointer-events:none; cursor:pointer;
 }
 nav.topnav-style-02 .menu:hover > *:first-child,
 nav.topnav-style-02 .menu.active > *:first-child,
+
+nav.topnav-style-02 .menu.menu-active > *:first-child {color:#ec2c23;}
 nav.topnav-style-02 .menu.active-dropdown > *:first-child{color:#ec2c23;}
 nav.topnav-style-02 .menu > *:first-child::before{
   content:''; position:absolute; bottom:-1px; right:-.3125rem; width:0; height:.4375rem;
@@ -1200,6 +1277,7 @@ nav.footer-style-02  li > *:hover{opacity:.7;}
   nav.footer-style-02 .footer-socials{margin:0 auto .75rem 0;}
 }
 @media screen and (max-width:575.98px){
+  nav.footer-style-02 .pattern{display:none;}
   nav.footer-style-02 .top-wrapper{flex-wrap:wrap; justify-content:center; padding:2.5rem 0;}
   nav.footer-style-02 .logo-wrapper{width:100%; margin:0; display:flex; justify-content:center;}
   nav.footer-style-02 .address{width:auto; margin:2rem 0 0 0; text-align:center;}

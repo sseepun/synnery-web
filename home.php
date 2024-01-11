@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -424,7 +424,7 @@
       </h3>
       <div class="grids jc-center" data-aos="fade-up" data-aos-delay="300">
         <?php foreach($content as $d) {?>
-          <div class="grid lg-20 md-1-3 sm-1-3 xs-50">
+          <div class="grid lg-20 md-1-3 sm-50 xs-50">
             <a href="#" class="ss-card ss-card-55">
               <div class="wrapper">
                 <div class="logo">

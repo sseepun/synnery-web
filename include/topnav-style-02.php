@@ -128,7 +128,7 @@
     <div class="topnav-dropdown">
       <div class="scroll-wrapper">
         <div>
-          <div class="dropdown-wrapper services" data-dropdown="1">
+          <div class="dropdown-wrapper services" data-dropdownlist="1">
             <div class="container">
               <?php include('data/topnav-style-02/menu/services/full-digital.php'); ?>
               <div class="submenu-blocks menu-container">
@@ -202,7 +202,7 @@
           </div>
 
           <!-- Products -->
-          <div class="dropdown-wrapper products" data-dropdown="2">
+          <div class="dropdown-wrapper products" data-dropdownlist="2">
             <div class="container">
               <div class="submenu-blocks menu-container">
                 <?php include('data/topnav-style-02/menu/products/lark.php'); ?>
@@ -267,7 +267,7 @@
           </div>
 
           <!-- Success stories -->
-          <div class="dropdown-wrapper success-stories" data-dropdown="3">
+          <div class="dropdown-wrapper success-stories" data-dropdownlist="3">
             <div class="container">
               <div class="submenu-blocks menu-container">
                 <?php include('data/topnav-style-02/menu/success-stories/digital-marketing.php'); ?>
@@ -335,8 +335,6 @@
             <!-- Dropdown Footer -->
             <?php include('include/topnav-dropdown-footer.php'); ?>
           </div>
-
-      
         </div>
       </div>
       </div>

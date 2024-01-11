@@ -288,6 +288,10 @@
 }
 .isotope-toolbar .isotope-tab:hover::after,
 .isotope-toolbar .isotope-tab.active::after{opacity:1; bottom:-.5rem;}
+.isotope-toolbar .isotope-tab > .wrapper .title{text-align:center;}
+@media screen and (max-width:575.98px){
+  .isotope-toolbar .isotope-tab{min-width:auto; width:50%;}
+}
 @media screen and (max-width:390.98px){
   .isotope-toolbar .isotope-tab .wrapper{
     flex-direction:column; justify-content:center;
@@ -603,8 +607,11 @@
   .section-01.size-01 > .img-bg{background-position:center;}
   .section-01.size-02{min-height:30rem;}
   .section-01 .hex-container{max-width:924px;}
+  .section-01 .service-list > .wrapper .text > .title{font-size:.75rem;}
 }
+
 @media screen and (max-width:991.98px){
+  .section-01 .service-list > .wrapper .text > .title{font-size:.9375rem;}
   .section-01.size-01{padding-bottom:12rem;}
   .section-01.size-02{min-height:26rem;}
   .section-01 .hex-container{max-width:660px;}
