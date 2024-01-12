@@ -60,7 +60,7 @@
             ?>
 
             <?php foreach($menu as $i=>$d) {?>
-              <div class="menu <?= $i == 1 || $i == 2 || $i == 3? 'sub-menu': ''?> <?= $i == 4 ? 'company': ''?>
+              <div class="menu <?= $i == 1 || $i == 2 || $i == 3? 'sub-menu': ''?> <?=  $i == 4 ? 'company': ''?> <?=  $i == 0 || $i == 5 ? 'not-sub': ''?>
                 <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
                 <?php if($i == 1 || $i == 2 || $i == 3){ ?>
                   data-dropdown="<?php echo $i ?>"

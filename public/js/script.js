@@ -294,7 +294,8 @@ $(function () {
     topnavDropdownDivs02 = topnavDropdown02.find('.dropdown-wrapper'),
     topnavDropdownServices = topnavDropdown02.find('.dropdown-wrapper.services .submenu-blocks'),
     topnavDropdownServicesSub = topnavDropdown02.find('.dropdown-wrapper.services .submenu-block'),
-    topnavDropdownCompany = topnavStyle02.find('.menu.company');
+    topnavDropdownCompany = topnavStyle02.find('.menu.company'),
+    topnavDropdownNotsub = topnavStyle02.find('.menu.not-sub');
 
     var sidenav = $('nav.sidenav'),
     sidenavMenus = sidenav.find('.menu-container');
@@ -361,6 +362,12 @@ $(function () {
             }
          });
      });
+     topnavDropdownNotsub.mouseenter(function (e){
+        scopeDiv.addClass('topnav-dropdown-opened');
+     })
+     topnavDropdownNotsub.mouseleave(function (e){
+        scopeDiv.removeClass('topnav-dropdown-opened');
+     })
      topnavDropdownCompany.mouseenter(function (e){
         scopeDiv.addClass('topnav-dropdown-opened');
      })
