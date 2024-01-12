@@ -1674,14 +1674,25 @@
   width:100%; max-width:55rem; margin:0 auto;
   height:100%; background:#ecf2f3; z-index:-1; border-radius:.75rem;
 }
+.section-16 .section-inner{margin-top:3rem;}
+.section-16 .ss-text{width:100%; max-width:25rem;}
+.section-16 .sm-show{display:none;}
 @media screen and (max-width:1199.98px){
   .section-16 .box-content::before{max-width:45rem;}
+  .section-16 .ss-text{width:100%; max-width:20rem;}
 }
 @media screen and (max-width:991.98px){
   .section-16 .box-content::before{max-width:35rem;}
+  .section-16 .ss-text{width:100%; max-width:15rem;}
 }
 @media screen and (max-width:767.98px){
   .section-16 .box-content::before{max-width:25rem;}
+  .section-16 .section-inner{margin-top:2.5rem;}
+  .section-16 .ss-text{margin:0 auto; text-align:center; max-width:20rem;}
+  .section-16 .col-sm-reverse{flex-direction:column-reverse;}
+  .section-16 .mt-sm-unset{margin-top:unset!important;}
+  .section-16 .sm-show{display:block!important;}
+  .section-16 .sm-hidden{display:none!important;}
 }
 
 
@@ -1910,7 +1921,7 @@
 }
 
 
-/* Section 03 */
+/* Section 24 */
 .section-24{position:relative; overflow:hidden;}
 .section-24 .clients{
   width:calc(100% + .0625rem); margin:1rem -.03125rem 0 -.03125rem;
@@ -1964,6 +1975,7 @@
   .section-24 .clients > .client{width:calc(100% / 2);}
 }
 
+/* Section 25 */
 .section-25 .grid:nth-child(1) .logo{animation-delay:.5s!important;}
 .section-25 .grid:nth-child(2) .logo{animation-delay:3s!important;}
 .section-25 .grid:nth-child(3) .logo{animation-delay:.5s!important;}
@@ -1971,6 +1983,18 @@
 .section-25 .grid:nth-child(5) .logo{animation-delay:1s!important;}
 
 
+/* Section 26 */
+.section-26{position:relative; background:#f5f5f5;}
+.section-26 .hexagon-container{
+  /* position:absolute; */
+}
+.section-26 .hexagon-wrapper{display:flex; justify-content:center; width:100%;}
+.section-26 .hexagon{
+  width:11rem;
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+     
+}
 
 
 /* Main Tab Container */

@@ -491,6 +491,7 @@ fieldset{padding:0; margin:0; border:0;}
 
 /* Special Box */
 .ss-box{display:block; width:100%; max-width:35rem; margin:0 auto;}
+.ss-box.m-unset{margin:unset;}
 .ss-box.xxl{max-width:65rem;}
 .ss-box.xl.size-02{max-width:57rem;}
 .ss-box.xl{max-width:55rem;}
@@ -1545,7 +1546,6 @@ fieldset{padding:0; margin:0; border:0;}
 .ss-card-56:hover:after{
     -webkit-animation:shine 1s; animation:shine 1s;
 }
-
 
 /* Special Image */
 .ss-img{display:block; position:relative; width:100%; padding:60% 0 0 0; overflow:hidden;}
