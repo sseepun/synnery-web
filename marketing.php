@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -859,55 +859,177 @@
   </section>
 
   <div class="section-padding section-26">
+    <div class="hexagon-container mt-3" data-aos="fade-up" data-aos-delay="450">
+      <div class="hexagon-wrapper">
+        <div class="hexagon">
+          <div class="ss-img square">
+            <div class="img-bg" style="background-image:url('public/img/content/117.jpg');"></div>
+          </div>        
+        </div>     
+        <div class="hexagon">
+          <div class="ss-img square">
+            <div class="img-bg" style="background-image:url('public/img/content/122.jpg');"></div>
+          </div>        
+        </div>
+        <div class="hexagon">
+          <div class="ss-img square">
+            <div class="img-bg" style="background-image:url('public/img/content/118.jpg');"></div>
+          </div>        
+        </div> 
+        <div class="hexagon">
+          <div class="ss-img square">
+            <div class="img-bg" style="background-image:url('public/img/content/121.jpg');"></div>
+          </div>        
+        </div>  
+        <div class="hexagon">
+          <div class="ss-img square">
+            <div class="img-bg" style="background-image:url('public/img/content/120.jpg');"></div>
+          </div>        
+        </div>  
+        <div class="hexagon">
+          <div class="ss-img square">
+            <div class="img-bg" style="background-image:url('public/img/content/122.jpg');"></div>
+          </div>        
+        </div> 
+        <div class="hexagon">
+          <div class="ss-img square">
+            <div class="img-bg" style="background-image:url('public/img/content/119.jpg');"></div>
+          </div>        
+        </div> 
+      </div>        
+    </div>
     <div class="container">
       <h3 class="text-center color-p fw-700" data-aos="fade-up" data-aos-delay="150">
         INFLUENCER / KOL
       </h3>
       <div class="grids" data-aos="fade-up" data-aos-delay="300">
-        <div class="grid lg-50">
+        <div class="grid lg-1-3 md-1-3 sm-100">
           <p class="sm fw-400">
             หากคุณต้องประชาสัมพันธ์ แบบวงกว้าง ทางเรามี Solution 
             ในเรื่องนี้โดยเฉพาะ โดยมี Influencer / KOL ที่สามารถเข้าถึงกลุ่มเป้าหมาย 
             ในแต่ละประเภทได้เป็นอย่างดี ไม่ว่าจะเป็น     
-          </p>          
-        </div>           
+          </p>     
+          <ul class="ss-list style-06">
+            <li class="p sm fw-400">ประชาสัมพันธ์ แบรนด์ / หน่วยงาน</li>
+            <li class="p sm fw-400">สินค้าประเภทอุปโภคบริโภค</li>
+            <li class="p sm fw-400" >เสื้อผ้าเครื่องแต่งกาย</li>
+          </ul>     
+        </div> 
+        <div class="grid lg-2-3 md-2-3"></div>          
       </div>
-      <div class="hexagon-container mt-3" data-aos="fade-up" data-aos-delay="450">
-        <div class="hexagon-wrapper">
-          <div class="hexagon">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/117.jpg');"></div>
-            </div>        
-          </div>     
-          <div class="hexagon">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/118.jpg');"></div>
-            </div>        
-          </div>
-          <div class="hexagon">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/117.jpg');"></div>
-            </div>        
-          </div> 
-          <div class="hexagon">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/118.jpg');"></div>
-            </div>        
-          </div>  
-          <div class="hexagon">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/117.jpg');"></div>
-            </div>        
-          </div>  
-          <div class="hexagon">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/118.jpg');"></div>
-            </div>        
-          </div>     
-        </div>        
+      <div class="grids ss-mt" data-aos="fade-up" data-aos-delay="300">
+        <div class="grid lg-2-3 md-2-3 mt-0"></div>   
+        <div class="grid lg-1-3 md-1-3 sm-100 mt-0">
+          <p class="sm fw-400">
+            Influencer / KOL จะมีผู้ติดตามหลาย Size แบรนด์ / 
+            หน่วยงาน สามารถเลือกได้ตามความเหมาะสม   
+          </p>     
+          <ul class="ss-list style-06">
+            <li class="p sm fw-400">Influencer / KOL ที่มีผู้ติดตามไม่น้อยกว่า 100K</li>
+            <li class="p sm fw-400">Influencer / KOL ที่มีผู้ติดตามไม่น้อยกว่า 500K</li>
+            <li class="p sm fw-400">Influencer / KOL ที่มีผู้ติดตามไม่น้อยกว่า 1M</li>
+            <li class="p sm fw-400">Influencer / KOL ที่มีผู้ติดตามไม่น้อยกว่า 5M</li>
+          </ul>     
+        </div>           
       </div>
     </div>                
   </div>
+
+  <section class="section-padding section-27">
+    <div class="container">
+      <h3 class="text-center color-p fw-700" data-aos="fade-up" data-aos-delay="150">
+        ONLINE CHANNEL
+      </h3>  
+      <div class="grids" data-aos="fade-up" data-aos-delay="300">
+        <div class="grid lg-50 h-full">
+          <div class="pos-relative h-full">
+            <div class="hexagon-container">
+              <div class="hexagon-wrapper">
+                <div class="hexagon">
+                  <div class="ss-img square">
+                    <div class="img-bg" style="background-image:url('public/img/content/123.jpg');"></div>
+                  </div>        
+                </div>     
+                <div class="hexagon">
+                  <div class="ss-img square">
+                    <div class="img-bg" style="background-image:url('public/img/content/124.jpg');"></div>
+                  </div>        
+                </div>
+                <div class="hexagon">
+                  <div class="ss-img square">
+                    <div class="img-bg" style="background-image:url('public/img/content/125.jpg');"></div>
+                  </div>        
+                </div> 
+              </div>     
+            </div> 
+          </div>          
+        </div>
+        <div class="grid lg-50">
+          <div class="ss-box xs size-02 m-unset">
+            <p class="sm fw-400">
+              บริษัทรับดูแล Online Channel ทุกช่องทาง เรามีประสบการณ์และเชี่ยวชาญในการบริหารจัดการช่องทางออนไลน์ทุกช่องทาง 
+              ไม่ว่าจะเป็น - Facebook, Instagram, X, Youtube, Tiktok, WebSite Or Landing Page 
+              ซินเนอร์รี่จะช่วยคุณกำหนดเป้าหมายและวัตถุประสงค์ของช่องทางออนไลน์ของคุณ พัฒนาเนื้อหาที่มีคุณภาพและตรงกับกลุ่มเป้าหมาย 
+              โปรโมตช่องทางออนไลน์ของคุณให้เป็นที่รู้จักและเข้าถึงกลุ่มเป้าหมายมากขึ้น 
+              และวิเคราะห์ผลลัพธ์ของช่องทางออนไลน์ของคุณเพื่อนำไปปรับปรุงและพัฒนาต่อไป
+            </p>         
+          </div>
+          <div class="socials">
+            <div class="social-wrapper">
+              <div class="social-item">
+                <div class="social-inner">
+                  <a href="#" class="social fb">
+                    <em class="fa-brands fa-facebook-f"></em>
+                  </a>
+                </div>    
+                <p class="title">Facebook</p>
+              </div>
+              <div class="social-item">
+                <div class="social-inner">
+                  <a href="#" class="social ig">
+                    <em class="fa-brands fa-instagram"></em>
+                  </a>
+                </div>
+                <p class="title">Tiktok</p>    
+              </div>
+              <div class="social-item">
+                <div class="social-inner">
+                  <a href="#" class="social yt">
+                    <em class="fa-brands fa-youtube"></em>
+                  </a>
+                </div> 
+                <p class="title">Tiktok</p>         
+              </div>
+              <div class="social-item">
+                <div class="social-inner">
+                  <a href="#" class="social tw">
+                    <em class="fa-brands fa-twitter"></em>
+                  </a>      
+                </div>  
+                <p class="title">Tiktok</p>        
+              </div>
+              <div class="social-item">
+                <div class="social-inner">
+                  <a href="#" class="social pt">
+                    <em class="fa-brands fa-pinterest-p"></em>
+                  </a>
+                </div> 
+                <p class="title">Tiktok</p>       
+              </div>
+              <div class="social-item">
+                <div class="social-inner">
+                  <a href="#" class="social ln">
+                    <em class="fa-brands fa-linkedin-in"></em>
+                  </a>
+                </div>
+                <p class="title">Tiktok</p>        
+              </div>
+            </div>
+          </div>         
+        </div>
+      </div>           
+    </div>                
+  </section>
 
   <?php $withFooterInfo=true; include_once('include/footer-style-02.php'); ?>
   <?php include_once('include/script.php'); ?>
