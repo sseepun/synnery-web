@@ -129,30 +129,32 @@
     </section>
   <?php }?>
 
-  <section class="section-padding section-26">
+  <section class="section-padding section-28">
     <div class="container">
       <h3 class="text-center color-p fw-700" data-aos="fade-up" data-aos-delay="150">
         FULL SERVICES DIGITAL MARKETING
       </h3>
       <div class="grids" data-aos="fade-up" data-aos-delay="300">
-        <div class="grid lg-50">
-        <div class="hexagon-container mt-3">
-        <div class="hexagon-wrapper">
-          <div class="hexagon">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/117.jpg');"></div>
-            </div>        
-          </div>     
-          <div class="hexagon">
-            <div class="ss-img square">
-              <div class="img-bg" style="background-image:url('public/img/content/118.jpg');"></div>
-            </div>        
-          </div>     
-        </div>        
-      </div>
+        <div class="grid lg-50 md-50 sm-100 mt-0">
+          <div class="pos-relative">
+            <div class="hexagon-container mt-3">
+              <div class="hexagon-wrapper">
+                <div class="hexagon">
+                  <div class="ss-img square">
+                    <div class="img-bg" style="background-image:url('public/img/content/126.jpg');"></div>
+                  </div>        
+                </div>     
+                <div class="hexagon">
+                  <div class="ss-img square">
+                    <div class="img-bg" style="background-image:url('public/img/content/127.jpg');"></div>
+                  </div>        
+                </div>     
+              </div>        
+            </div>      
+          </div>
         </div>
-        <div class="grid lg-50" data-aos="fade-up" data-aos-delay="300">
-          <div class="d-flex ai-center h-full">
+        <div class="grid lg-50 md-50 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="ss-box xs size-02 ">
             <p>
               บริการด้านการออกแบบสื่อดิจิทัลแบบครบวงจร ตอบโจทย์
               ทุกความต้องการ ตั้งแต่การวิเคราะห์กลุ่มเป้าหมาย วางแผนกลยุทธ 
@@ -903,7 +905,7 @@
         INFLUENCER / KOL
       </h3>
       <div class="grids" data-aos="fade-up" data-aos-delay="300">
-        <div class="grid lg-1-3 md-1-3 sm-100">
+        <div class="grid lg-1-3 md-50 sm-100">
           <p class="sm fw-400">
             หากคุณต้องประชาสัมพันธ์ แบบวงกว้าง ทางเรามี Solution 
             ในเรื่องนี้โดยเฉพาะ โดยมี Influencer / KOL ที่สามารถเข้าถึงกลุ่มเป้าหมาย 
@@ -915,11 +917,11 @@
             <li class="p sm fw-400" >เสื้อผ้าเครื่องแต่งกาย</li>
           </ul>     
         </div> 
-        <div class="grid lg-2-3 md-2-3"></div>          
+        <div class="grid lg-2-3 md-50"></div>          
       </div>
       <div class="grids ss-mt" data-aos="fade-up" data-aos-delay="300">
-        <div class="grid lg-2-3 md-2-3 mt-0"></div>   
-        <div class="grid lg-1-3 md-1-3 sm-100 mt-0">
+        <div class="grid lg-2-3 md-50 mt-0"></div>   
+        <div class="grid lg-1-3 md-50 sm-100 mt-0">
           <p class="sm fw-400">
             Influencer / KOL จะมีผู้ติดตามหลาย Size แบรนด์ / 
             หน่วยงาน สามารถเลือกได้ตามความเหมาะสม   
@@ -941,7 +943,7 @@
         ONLINE CHANNEL
       </h3>  
       <div class="grids" data-aos="fade-up" data-aos-delay="300">
-        <div class="grid lg-50 h-full">
+        <div class="grid lg-50 md-50 sm-100 h-full">
           <div class="pos-relative h-full">
             <div class="hexagon-container">
               <div class="hexagon-wrapper">
@@ -964,7 +966,7 @@
             </div> 
           </div>          
         </div>
-        <div class="grid lg-50">
+        <div class="grid lg-50 md-50 sm-100">
           <div class="ss-box xs size-02 m-unset">
             <p class="sm fw-400">
               บริษัทรับดูแล Online Channel ทุกช่องทาง เรามีประสบการณ์และเชี่ยวชาญในการบริหารจัดการช่องทางออนไลน์ทุกช่องทาง 
@@ -986,8 +988,8 @@
               </div>
               <div class="social-item">
                 <div class="social-inner">
-                  <a href="#" class="social ig">
-                    <em class="fa-brands fa-instagram"></em>
+                  <a href="#" class="social tt">
+                    <em class="fa-brands fa-tiktok"></em>
                   </a>
                 </div>
                 <p class="title">Tiktok</p>    
@@ -998,23 +1000,23 @@
                     <em class="fa-brands fa-youtube"></em>
                   </a>
                 </div> 
-                <p class="title">Tiktok</p>         
+                <p class="title">Youtube</p>         
               </div>
               <div class="social-item">
                 <div class="social-inner">
-                  <a href="#" class="social tw">
-                    <em class="fa-brands fa-twitter"></em>
+                  <a href="#" class="social ig">
+                    <em class="fa-brands fa-instagram"></em>
                   </a>      
                 </div>  
-                <p class="title">Tiktok</p>        
+                <p class="title">Instagram</p>        
               </div>
               <div class="social-item">
                 <div class="social-inner">
-                  <a href="#" class="social pt">
-                    <em class="fa-brands fa-pinterest-p"></em>
+                  <a href="#" class="social x-tw">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
                   </a>
                 </div> 
-                <p class="title">Tiktok</p>       
+                <p class="title">Twitter</p>       
               </div>
               <div class="social-item">
                 <div class="social-inner">
@@ -1022,12 +1024,339 @@
                     <em class="fa-brands fa-linkedin-in"></em>
                   </a>
                 </div>
-                <p class="title">Tiktok</p>        
+                <p class="title">LinkedIn</p>        
               </div>
             </div>
           </div>         
         </div>
       </div>           
+    </div>                
+  </section>
+
+  <section class="section-padding section-29">
+    <div class="container">
+      <h3 class="text-center color-p fw-700" data-aos="fade-up" data-aos-delay="150">
+        OTHER CHANNEL
+      </h3>
+      <div class="ss-box md" data-aos="fade-up" data-aos-delay="300">
+        <p class="text-center sm fw-300">
+          นอกจากการบริหารจัดการ Online Channel  แล้ว บริษัทยังรับดูแลบริหารจัดการ Offline Channel แบบครบวงจร
+          บริหารจัดการช่องทางออนไลน์ของคุณให้มีประสิทธิภาพ ครอบคลุมทุกประเภท ทั้ง TV วิทยุ Billboard จอ LED
+          ด้วยประสบการณ์และความเชี่ยวชาญเชี่ยวชาญ
+        </p>            
+      </div>
+      <div class="contents">
+        <div class="wrapper">
+          <div class="content-left" data-aos="fade-up" data-aos-delay="450">
+            <div class="hexagon">
+              <div class="ss-img square">
+                <div class="img-bg" style="background-image:url('public/img/content/128.jpg');"></div>
+              </div> 
+            </div>
+            <p class="title">TV</p>        
+          </div>
+          <div class="content-center" data-aos="fade-up" data-aos-delay="600">
+            <div class="hexagon">
+              <div class="ss-img square">
+                <div class="img-bg" style="background-image:url('public/img/content/130.jpg');"></div>
+              </div> 
+            </div> 
+            <p class="title">Digital Billboard</p>
+            <div class="text-container">
+              <ul class="ss-list style-06">
+                <li class="p sm fw-400">สื่อโฆษณาประเภทป้ายบิลบอร์ด</li>
+                <li class="p sm fw-400">สื่อโฆษณาภายในระบบขนส่งสาธารณะ</li>
+                <li class="p sm fw-400">สื่อโฆษณาประเภทจอดิจิตอล</li>
+                <li class="p sm fw-400">สื่อโฆษณาภายในห้างสรรพสินค้า และไฮเปอร์มาร์เก็ต</li>
+                <li class="p sm fw-400">สื่อโฆษณาภายในสนามบิน</li>
+                <li class="p sm fw-400">สื่อโฆษณาในต่างประเทศ (New York, Singapore, Malaysia, Laos)</li>
+              </ul>       
+            </div>   
+          </div>
+          <div class="content-right" data-aos="fade-up" data-aos-delay="450">
+            <div class="hexagon">
+              <div class="ss-img square">
+                <div class="img-bg" style="background-image:url('public/img/content/129.jpg');"></div>
+              </div> 
+            </div>
+            <p class="title">RADIO</p>         
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-section="6" class="section-padding section-16">
+    <div class="container">
+      <h4 class="fw-700 color-p text-center" data-aos="fade-up" data-aos-delay="0">
+        CREATIVE ACTIVITIES
+      </h4> 
+      <div class="ss-box sm" data-aos="fade-up" data-aos-delay="300">
+        <p class="text-center sm fw-300">
+          บริษัทรับดูแลบริหารจัดการ Content creative สร้างสรรค์คอนเทนต์ที่โดนใจ 
+          ด้วยทีมงานมืออาชีพช่วยคุณบรรลุเป้าหมายทางธุรกิจ
+        </p>            
+      </div>
+      <div class="box-content mt-5">
+        <div class="pos-relative">
+          <p class="h6 text-center fw-400" data-aos="fade-up" data-aos-delay="150">
+            Facebook Live
+          </p>
+          <div class="ss-box lg mt-3" data-aos="fade-up" data-aos-delay="300">
+            <p class="text-center sm fw-300">
+            เปิดตัวเว็บไซต์ Virtual World ในรูปแบบ Live Streaming มีบุคลากรด้านเทคนิคและด้านที่เกี่ยวข้อง 
+            เพื่อดูแลระบบ Live Streaming ระบบการเข้าชม เข้าร่วม และถ่ายทอดกิจกรรมต่าง ๆ ผ่านทาง Facebook , Website
+            </p>            
+          </div>
+          <div class="section-inner mt-3">
+            <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="300">
+              <img class="img" src="public/img/showcase/facebook-live/01.jpg" alt="Image" />
+            </div>        
+          </div>
+          <div class="section-inner">
+            <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="150">
+              Marketing Campaign
+            </h6>
+            <div class="grids">
+              <div class="grid lg-50 md-50 sm-100">
+                <div class="grids">
+                  <?php 
+                    $marketing01 = [
+                      [
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ],[
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ],[
+                        'delay' => '600',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ],
+                    ]
+                  ?>
+                  <?php foreach($marketing01 as $d) {?>
+                    <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="<?= $d['delay'] ?>">
+                      <div class="ss-card ss-card-44">
+                        <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
+                      </div>
+                  </div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="grid lg-50 md-50 sm-100">
+                <div class="grids">
+                  <?php 
+                    $marketing02 = [
+                      [
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ], [
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ], 
+                    ]
+                  ?>
+                  <?php foreach($marketing02 as $d) {?>
+                    <div class="grid lg-100 md-100 sm-100" data-aos="fade-down" data-aos-delay="<?= $d['delay'] ?>">
+                      <div class="ss-card ss-card-44">
+                        <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
+                      </div>
+                    </div>
+                  <?php } ?>
+                </div>
+              </div>
+            </div>        
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding section-16 style-02">
+    <div class="container">
+      <h4 class="fw-700 color-p text-center" data-aos="fade-up" data-aos-delay="0">
+        DIGITAL & GRAPHIC DESIGN
+      </h4> 
+      <div class="box-content mt-5">
+        <div class="pos-relative">
+          <p class="h6 text-center fw-400" data-aos="fade-up" data-aos-delay="150">
+            Graphic Design
+          </p>
+          <div class="ss-box lg mt-2" data-aos="fade-up" data-aos-delay="300">
+            <p class="text-center sm fw-400">
+              สร้างสรรค์งานดีไซน์ที่โดนใจ ด้วยทีมงานมืออาชีพ ช่วยคุณบรรลุเป้าหมายทางธุรกิจ
+            </p>            
+          </div>
+          <div class="section-inner mt-0">
+            <div class="grids">
+              <div class="grid lg-50 md-50 sm-100">
+                <div class="grids">
+                  <?php 
+                    $graphic01 = [
+                      [
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/digital-graphic/01.jpg',
+                      ],[
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/digital-graphic/03.jpg',
+                      ],
+                    ]
+                  ?>
+                  <?php foreach($graphic01 as $d) {?>
+                    <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="<?= $d['delay'] ?>">
+                      <div class="ss-card ss-card-44">
+                        <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
+                      </div>
+                  </div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="grid lg-50 md-50 sm-100">
+                <div class="grids">
+                  <?php 
+                    $graphic02 = [
+                      [
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/digital-graphic/02.jpg',
+                      ], [
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/digital-graphic/04.jpg',
+                      ], 
+                    ]
+                  ?>
+                  <?php foreach($graphic02 as $d) {?>
+                    <div class="grid lg-100 md-100 sm-100" data-aos="fade-down" data-aos-delay="<?= $d['delay'] ?>">
+                      <div class="ss-card ss-card-44">
+                        <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
+                      </div>
+                    </div>
+                  <?php } ?>
+                </div>
+              </div>
+            </div>        
+          </div>
+          <div class="section-inner">
+            <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="150">
+              Infographic
+            </h6>
+            <div class="ss-box md mt-2" data-aos="fade-up" data-aos-delay="300">
+              <p class="text-center sm fw-400">
+                บริษัทรับดูแลบริหารจัดการ Infographic สื่อสารข้อมูลให้เข้าใจง่าย ด้วยทีมงานมืออาชีพ
+                ช่วยคุณบรรลุเป้าหมายทางธุรกิจ เป็นรูปแบบการสื่อสารข้อมูลในรูปแบบที่เข้าใจง่ายและน่าสนใจ 
+                โดยใช้ภาพประกอบและกราฟิกต่างๆ เพื่อนำเสนอข้อมูลเชิงตัวเลขหรือข้อมูลเชิงลึกต่างๆ ได้อย่างมีประสิทธิภาพ
+              </p>            
+            </div>
+            <div class="grids">
+              <div class="grid lg-50 md-50 sm-100">
+                <div class="grids">
+                  <?php 
+                    $infographic01 = [
+                      [
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/digital-graphic/05.jpg',
+                      ],[
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/digital-graphic/07.jpg',
+                      ],
+                    ]
+                  ?>
+                  <?php foreach($infographic01 as $d) {?>
+                    <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="<?= $d['delay'] ?>">
+                      <div class="ss-card ss-card-44">
+                        <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
+                      </div>
+                  </div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="grid lg-50 md-50 sm-100">
+                <div class="grids">
+                  <?php 
+                    $infographic02 = [
+                      [
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/digital-graphic/06.jpg',
+                      ],
+                    ]
+                  ?>
+                  <?php foreach($infographic02 as $d) {?>
+                    <div class="grid lg-100 md-100 sm-100" data-aos="fade-down" data-aos-delay="<?= $d['delay'] ?>">
+                      <div class="ss-card ss-card-44">
+                        <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
+                      </div>
+                    </div>
+                  <?php } ?>
+                </div>
+              </div>
+            </div>        
+          </div>
+          <div class="section-inner">
+            <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="150">
+              Motion Graphic
+            </h6>
+            <div class="grids">
+              <div class="grid lg-50 md-50 sm-100">
+                <div class="grids">
+                  <?php 
+                    $marketing01 = [
+                      [
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ],[
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ],[
+                        'delay' => '600',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ],
+                    ]
+                  ?>
+                  <?php foreach($marketing01 as $d) {?>
+                    <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="<?= $d['delay'] ?>">
+                      <div class="ss-card ss-card-44">
+                        <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
+                      </div>
+                  </div>
+                  <?php } ?>
+                </div>
+              </div>
+              <div class="grid lg-50 md-50 sm-100">
+                <div class="grids">
+                  <?php 
+                    $marketing02 = [
+                      [
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ],[
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ],[
+                        'delay' => '600',
+                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                      ], 
+                    ]
+                  ?>
+                  <?php foreach($marketing02 as $d) {?>
+                    <div class="grid lg-100 md-100 sm-100" data-aos="fade-down" data-aos-delay="<?= $d['delay'] ?>">
+                      <div class="ss-card ss-card-44">
+                        <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
+                      </div>
+                    </div>
+                  <?php } ?>
+                </div>
+              </div>
+            </div>        
+          </div>
+          <div class="section-inner">
+            <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="150">
+              Video
+            </h6>
+            <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="300">
+              <img class="img" src="public/img/showcase/facebook-live/01.jpg" alt="Image" />
+            </div>        
+          </div>
+        </div>
+      </div>
     </div>                
   </section>
 
