@@ -1547,13 +1547,68 @@ fieldset{padding:0; margin:0; border:0;}
     -webkit-animation:shine 1s; animation:shine 1s;
 }
 
+
+/* Special Card 57 */
+.ss-card-57{background:#ffffff; padding:2rem; box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+.ss-card-57 .wrapper{display:flex; flex-wrap:wrap;}
+.ss-card-57 .wrapper .img-container{width:50%}
+.ss-card-57 .wrapper .text-container{width:50%; padding:0 0 0 2rem;}
+@media screen and (max-width:991.98px){
+    .ss-card-57 .wrapper .img-container, .ss-card-57 .wrapper .text-container{width:100%;}
+    .ss-card-57 .wrapper .text-container{padding:1rem 0 0 0;}
+    .ss-card-57 .ss-img.square-03{padding:60% 0 0 0;}
+}
+
+
+/* Special Card 58 */
+.ss-card-58{background:#ffffff; padding:2rem; box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+.ss-card-58 .wrapper{display:flex; flex-wrap:wrap;}
+.ss-card-58 .wrapper .img-container{width:50%}
+.ss-card-58 .wrapper .text-container{width:50%; padding:0 0 0 2rem;}
+.ss-card-58 .ministry{
+    display:flex; flex-direction:column; align-items:center;
+}
+.ss-card-58 .ministry .logo img{
+    display:block; max-width:100%; width:auto; max-height:100%; height:4rem;
+}
+.ss-card-58 .ministry .title{
+    font-weight:700; text-transform:uppercase; margin-top:.75rem;
+    font-size:.875rem;
+}
+@media screen and (max-width:991.98px){
+    .ss-card-58 .wrapper .img-container, .ss-card-58 .wrapper .text-container{width:100%;}
+    .ss-card-58 .wrapper .text-container{padding:1rem 0 0 0;}
+    .ss-card-58 .ss-img.vertical-04{padding:60% 0 0 0;}
+}
+@media screen and (max-width:575.98px){
+    .ss-card-58 .ministry{max-width:14rem; margin:0 auto;}
+    .ss-card-58 .ministry.mt-3{margin-top:0!important;}
+}
+
+
+/* Special Card 59 */
+.ss-card-59{background:#ffffff; padding:2rem; box-shadow:rgba(149, 157, 165, 0.2) 0px 8px 24px;}
+.ss-card-59 .wrapper{display:flex; margin-top:1rem;}
+.ss-card-59 .wrapper .logo{
+    width:3.75rem; height:3.75rem; display:flex; 
+    justify-content:center; align-items:center;
+}
+.ss-card-59 .wrapper .logo img{
+    display:block; max-width:100%; width:auto; max-height:100%; height:auto;
+}
+.ss-card-59 .wrapper .text{padding-left:1rem;}
+
+
+
 /* Special Image */
 .ss-img{display:block; position:relative; width:100%; padding:60% 0 0 0; overflow:hidden;}
 .ss-img.square{padding:100% 0 0 0;}
 .ss-img.square-02{padding:73% 0 0 0;}
+.ss-img.square-03{padding:76% 0 0 0;}
 .ss-img.vertical-01{padding:140% 0 0 0;}
 .ss-img.vertical-02{padding:175% 0 0 0;}
 .ss-img.vertical-03{padding:120% 0 0 0;}
+.ss-img.vertical-04{padding:130% 0 0 0;}
 .ss-img.horizontal-01{padding:56% 0 0 0;}
 .ss-img.horizontal-02{padding:40% 0 0 0;}
 .ss-img.horizontal-03{padding:50% 0 0 0;}
@@ -1701,6 +1756,9 @@ fieldset{padding:0; margin:0; border:0;}
 
 /* Special List 06 */
 .ss-list.style-06 > li::before{top:.75rem; background:#ff0000;}
+
+/* Special List 07 */
+.ss-list.style-07 > li::before{top:.5rem; background:#ff0000;}
 
 
 /* Special Tags */

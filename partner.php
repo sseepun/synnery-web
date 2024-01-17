@@ -131,7 +131,7 @@
 
   <section class="section-padding section-30">
     <div class="container">
-      <h4 class="text-center lg color-p lh-sm fw-700" data-aos="fade-up" data-aos-delay="150">
+      <h4 class="text-center lg xs-no-br color-p lh-sm fw-700" data-aos="fade-up" data-aos-delay="150">
         SYNERRY CORPORATION (THAILAND)<br>COMPANY LIMITED
       </h4>
       <p class="text-center fw-600" data-aos="fade-up" data-aos-delay="300">
@@ -144,21 +144,21 @@
               <div class="hexagon-inner">
                 <div class="hexagon">
                   <div class="ss-img square">
-                    <div class="img-bg" style="background-image:url('public/img/content/126.jpg');"></div>
+                    <div class="img-bg" style="background-image:url('public/img/content/132.jpg');"></div>
                   </div>     
                 </div>  
               </div>
               <div class="hexagon-inner">
                 <div class="hexagon">
                   <div class="ss-img square">
-                    <div class="img-bg" style="background-image:url('public/img/content/126.jpg');"></div>
+                    <div class="img-bg" style="background-image:url('public/img/content/133.jpg');"></div>
                   </div>   
                 </div>
               </div>
               <div class="hexagon-inner">
                 <div class="hexagon">
                   <div class="ss-img square">
-                    <div class="img-bg" style="background-image:url('public/img/content/126.jpg');"></div>
+                    <div class="img-bg" style="background-image:url('public/img/content/131.jpg');"></div>
                   </div>   
                 </div>  
               </div>
@@ -186,82 +186,491 @@
       <p class="text-center fw-400" data-aos="fade-up" data-aos-delay="300">
         Total Digital Solutions for Government & Enterprise Business
       </p>    
-      <div class="grids jc-center pt-5" data-aos="fade-up" data-aos-delay="450">
-        <div class="grid xl-20 lg-25 md-1-3 xs-50">
-          <div class="text-center">
-            <p class="h1 lg lh-2xs color-p counter fw-800">25+</p>
-            <p class="lg color-black fw-700 lh-xs">OF EXPERIENCE</p>
+      <div class="ss-box lg">
+        <div class="grids jc-center pt-5" data-aos="fade-up" data-aos-delay="450">
+          <div class="grid  md-1-3 xs-50">
+            <div class="text-center">
+              <p class="h1 lg lh-2xs color-p counter fw-800 text-center">25+</p>
+              <p class="lg color-black fw-700 lh-xs">OF EXPERIENCE</p>
+            </div>
           </div>
-        </div>
-        <div class="grid xl-20 lg-25 md-1-3 xs-50">
-          <div class="text-center">
-            <p class="h1 lg lh-2xs color-p counter fw-800">300+</p>
-            <p class="lg color-black fw-700 lh-xs">CUSTOMER TRUST</p>
+          <div class="grid  md-1-3 xs-50">
+            <div class="text-center">
+              <p class="h1 lg lh-2xs color-p counter fw-800">300+</p>
+              <p class="lg color-black fw-700 lh-xs">CUSTOMER TRUST</p>
+            </div>
           </div>
-        </div>
-        <div class="grid xl-20 lg-25 md-1-3 xs-50">
-          <div class="text-center">
-            <p class="h1 lg lh-2xs color-p counter fw-800">500+</p>
-            <p class="lg color-black fw-700 lh-xs">PROJECTS</p>
-          </div>
-        </div>   
-      </div>  
-      <div class="ss-box md mt-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="grids">
+          <div class="grid  md-1-3 xs-50">
+            <div class="text-center">
+              <p class="h1 lg lh-2xs color-p counter fw-800 text-center">500+</p>
+              <p class="lg color-black fw-700 lh-xs">PROJECTS</p>
+            </div>
+          </div>   
+        </div>           
+      </div>
+     
+      <div class="ss-box lg mt-3" data-aos="fade-up" data-aos-delay="450">
+        <div class="grids jc-center">
           <div class="grid lg-1-3">
             <div class="hexagon-content">
-              <div class="hexagon">
-                <div class="ss-img square">
-                  <div class="img-bg" style="background-image:url('public/img/content/126.jpg');"></div>
+              <div class="wrapper">
+                <div class="hexagon-inner">
+                  <a href="#" class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/137.jpg');"></div>
+                    </div>   
+                  </a>
+                </div>
+                <div class="text-container">
+                  <p class="title">Full Services Digital Agency</p>
+                  <ul class="ss-list style-07">
+                    <li class="p sm fw-400">Consulting, analysis, planning, strategy, and goal setting, including KPI definition</li>
+                    <li class="p sm fw-400">Managing online and offline media</li>
+                    <li class="p sm fw-400">Website development, content creation, social media marketing, project management, and campaign management</li>
+                  </ul>    
                 </div>   
-              </div>      
-            </div>
-            <div class="text-container">
-              <p class="title">
-                Full Services Digital Agency
-              </p>
-              <ul class="ss-list style-06">
-                <li class="p sm fw-400">Consulting, analysis, planning, strategy, and goal setting, including KPI definition</li>
-                <li class="p sm fw-400">Managing online and offline media</li>
-                <li class="p sm fw-400">Website development, content creation, social media marketing, project management, and campaign management</li>
-              </ul>    
-            </div>
-          </div>
-          <div class="grid lg-1-3">
-            <div class="hexagon-content">
-              <div class="hexagon">
-                <div class="ss-img square">
-                  <div class="img-bg" style="background-image:url('public/img/content/126.jpg');"></div>
-                </div>   
-              </div>      
-            </div>
-            <div class="text-container">
-              <p class="title">Full Services Digital Agency</p>
-              <ul class="ss-list style-06">
-                <li class="p sm fw-400">Consulting, analysis, planning, strategy, and goal setting, including KPI definition</li>
-                <li class="p sm fw-400">Managing online and offline media</li>
-                <li class="p sm fw-400">Website development, content creation, social media marketing, project management, and campaign management</li>
-              </ul>    
+              </div>
             </div>
           </div>
           <div class="grid lg-1-3">
             <div class="hexagon-content">
-              <div class="hexagon">
-                <div class="ss-img square">
-                  <div class="img-bg" style="background-image:url('public/img/content/126.jpg');"></div>
-                </div>   
-              </div>      
+              <div class="wrapper">
+                <div class="hexagon-inner">
+                  <a href="#" class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/135.jpg');"></div>
+                    </div>   
+                  </a> 
+                </div>
+                <div class="text-container">
+                  <p class="title">Full Web App & Mobile Development</p>
+                  <ul class="ss-list style-07">
+                    <li class="p sm fw-400">
+                      We offer full-stack web and mobile application development services. 
+                      We can help you design, develop, and deploy web and mobile applications 
+                      that meet your specific needs. We follow ISO 29110 standards and OWASP 
+                      security standards to ensure that your applications are secure and reliable. 
+                      We also offer microservices architecture development services.
+                    </li>
+                  </ul>    
+                </div>  
+              </div>  
             </div>
-            <div class="text-container">
-              <p>Full Services Digital Agency</p>
-              <ul class="ss-list style-06">
-                <li class="p sm fw-400">Consulting, analysis, planning, strategy, and goal setting, including KPI definition</li>
-                <li class="p sm fw-400">Managing online and offline media</li>
-                <li class="p sm fw-400">Website development, content creation, social media marketing, project management, and campaign management</li>
-              </ul>    
+          </div>
+          <div class="grid lg-1-3">
+            <div class="hexagon-content">
+              <div class="wrapper">
+                <div class="hexagon-inner">
+                  <a href="#" class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/136.jpg');"></div>
+                    </div>   
+                  </a> 
+                </div>
+                <div class="text-container">
+                  <p class="title">Full Network & Security</p>
+                  <ul class="ss-list style-07">
+                    <li class="p sm fw-400">
+                      บริการติดตั้ง Setup ทดสอบ ระบบเครือข่าย Network & Security สำหรับองค์กรขนาดใหญ่ 
+                      ทั้งในรูปแบบ HCI, VM และ DevSecOps 
+                    </li>
+                    <li class="p sm fw-400">
+                      We offer network and security infrastructure installation, 
+                      setup, and testing services for large enterprises. 
+                      We support HCI, VM, and DevSecOps environments.
+                    </li>
+                  </ul>    
+                </div>  
+              </div> 
             </div>
           </div>
         </div>         
+      </div>
+    </div>
+  </section>
+
+  <section data-section="4" class="section-24 section-padding pb-0">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-20.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-21.png" alt="Hero">
+      </div>
+    </div>
+    <div class="container" style="z-index:3;">
+      <h4 class="lg text-center color-p fw-800" data-aos="fade-up" data-aos-delay="0">
+        OUR CLIENTS
+      </h4>
+      <div class="ss-box lg">
+        <p class="text-center md-no-br" data-aos="fade-up" data-aos-delay="150">
+          We have grown from providing comprehensive services to SMEs 
+          and have been developing our business for over 25 years. 
+          We have served over 500 projects and over 300 government and
+          private organizations.
+        </p>          
+      </div>
+      <div class="grids jc-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="grid xl-20 lg-25 md-1-3 xs-50 pt-4">
+          <div class="text-center">
+            <h6 class="color-03 fw-500">MORE THAN</h6>
+            <p class="h1 lg lh-2xs color-01 counter fw-800">300+</p>
+            <h4 class="color-black fw-700 lh-xs">CLIENTS</h4>
+          </div>
+        </div>
+        <div class="grid xl-20 lg-25 md-1-3 xs-50 pt-4">
+          <div class="text-center">
+            <h6 class="color-03 fw-500">MORE THAN</h6>
+            <p class="h1 lg lh-2xs color-01 counter fw-800">500+</p>
+            <h4 class="color-black fw-700 lh-xs">PROJECTS</h4>
+          </div>
+        </div>
+        <div class="grid xl-20 lg-25 md-1-3 xs-50 pt-4">
+          <div class="text-center">
+            <h6 class="color-03 fw-500">MORE THAN</h6>
+            <p class="h1 lg lh-2xs color-01 counter fw-800">25+</p>
+            <h4 class="color-black fw-700 lh-xs">YEARS</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <?php include_once('data/clients-home.php'); ?>
+    <div class="container" data-aos="fade-up" data-aos-delay="300">
+      <div class="isotope-toolbar style-02" style="position:relative;">
+        <div class="isotope-wrapper">
+          <div class="isotope-toolbar-btn isotope-tab active" data-type="government" name="isotope-filter">
+            <div class="wrapper">
+              <div class="icon">
+                <img class="mt-nagative icon-inactive" src="public/img/icon/tab-client-inactive.png">
+                <img class="mt-nagative icon-active" src="public/img/icon/tab-client-active.png">
+              </div>
+              <span class="p title fw-400">Government</span>
+            </div>
+          </div>
+          <div class="isotope-toolbar-btn isotope-tab" data-type="corporation" name="isotope-filter">
+            <div class="wrapper">
+              <div class="icon">
+                <img class="mt-nagative icon-inactive" src="public/img/icon/tab-client-02-inactive.png">
+                <img class="mt-nagative icon-active" src="public/img/icon/tab-client-02-active.png">
+              </div>
+              <span class="p title fw-400">Enterprise bussiness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="z-index:3;" data-aos="fade-up" data-aos-delay="450">
+      <div class="clients isotope-box pos-relative" style="z-index:2;">
+        <?php foreach($clients as $d){?>
+          <div class="client isotope-item" data-type="<?= $d['type'] ?>">
+            <div class="ss-card ss-card-26">
+              <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
+              <div class="wrapper">
+                <div class="image-container">
+                  <img src="<?= $d['icon'] ?>" alt="Client" />
+                </div>
+                <div class="text-container mt-4">
+                  <p class="xxxs title lh-sm">
+                    <?= $d['title']?>
+                  </p>
+                </div>
+              </div>
+              <div class="line-7"></div><div class="line-8"></div>
+            </div>
+          </div>
+        <?php }?>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding section-32">
+    <div class="ss-box xl">
+      <div class="container">
+        <h4 class="lg text-center color-p fw-800" data-aos="fade-up" data-aos-delay="0">
+          SUCCESS CASE
+        </h4>
+        <div class="content" data-aos="fade-up" data-aos-delay="300">
+          <div class="ss-card ss-card-57">
+            <div class="wrapper">
+              <div class="img-container">
+                <div class="ss-img square-03">
+                  <div class="img-bg" style="background-image:url('public/img/content/135.jpg');"></div>
+                </div>  
+              </div>
+              <div class="text-container">
+                <p class="color-p fw-700">
+                  APEC : ASIA-PACIFIC ECONOMIC COOPERATION 
+                  <span class="color-black fw-400">- APEC ECONOMIC LEADERS' MEETING HELD IN THAILAND IN 2022</span>
+                </p>
+                <p class="mt-2 fw-800">
+                  WEB & MOBILE DEVELOPMENT<br> 
+                  FULL 15 MONTHS ON SITE SERVICE
+                </p>
+                <p class="mt-2 fw-400">We developed</p>
+                <ul class="ss-list style-07">
+                  <li class="p sm fw-300">Web application</li>
+                  <li class="p sm fw-300">Mobile application</li>
+                  <li class="p sm fw-300">Registration system</li>
+                  <li class="p sm fw-300">Network and security infrastructure</li>
+                  <li class="p sm fw-300">Provided on-site support throughout the project</li>
+                </ul>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="content" data-aos="fade-up" data-aos-delay="450">
+          <div class="ss-card ss-card-58">
+            <div class="wrapper">
+              <div class="img-container">
+                <div class="ss-img vertical-04">
+                  <div class="img-bg" style="background-image:url('public/img/content/139.jpg');"></div>
+                </div>  
+              </div>
+              <div class="text-container">
+                <p class="color-p fw-700">
+                  MINISTRY OF THAILAND 
+                </p>
+                <p class="mt-2 fw-400">
+                  We manage 4 major national ministries & develop 
+                  microsite systems across Thailand, totaling  over 500+ sites
+                </p>
+                <div class="grids">
+                  <div class="grid sm-50">
+                    <div class="ministry">
+                      <div class="logo">
+                        <img src="public/img/logo/logo-22.png" alt="Culture" />
+                      </div>
+                      <p class="title lh-xs">Ministry of Culture</p>
+                      <p class="xs color-black">more than <span class="p color-p fw-700">128 WEBSITE</span></p>
+                      <p class="xs text-center">
+                        Responsible for preserving and promoting 
+                        Thai culture, religion, and art.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="grid sm-50">
+                    <div class="ministry">
+                      <div class="logo">
+                        <img src="public/img/logo/logo-21.png" alt="Energy" />
+                      </div>
+                      <p class="title lh-xs">Ministry of Energy</p>
+                      <p class="xs color-black">more than <span class="p color-p fw-700">129 WEBSITE</span></p>
+                      <p class="xs text-center">
+                        Responsible for developing and managing 
+                        Thailand's energy resources.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="grid sm-50">
+                    <div class="ministry mt-3">
+                      <div class="logo">
+                        <img src="public/img/logo/logo-23.png" alt="Education" />
+                      </div>
+                      <p class="title lh-xs">Ministry of Education</p>
+                      <p class="xs color-black">more than <span class="p color-p fw-700">125 WEBSITE</span></p>
+                      <p class="xs text-center">
+                        Responsible for ensuring that all Thai citizens 
+                        have access to quality education.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="grid sm-50">
+                    <div class="ministry mt-3">
+                      <div class="logo">
+                        <img src="public/img/logo/logo-24.png" alt="Industry" />
+                      </div>
+                      <p class="title lh-xs">Ministry of industry</p>
+                      <p class="xs color-black">more than <span class="p color-p fw-700">123 WEBSITE</span></p>
+                      <p class="xs text-center">
+                        Responsible for promoting and developing 
+                        Thailand's industrial sector.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class="content" data-aos="fade-up" data-aos-delay="600">
+          <div class="grids">
+            <div class="grid lg-50 md-50 sm-100">
+              <div class="ss-card ss-card-59">
+                <div class="img-container">
+                  <div class="ss-img">
+                    <div class="img-bg" style="background-image:url('public/img/content/135.jpg');"></div>
+                  </div>  
+                </div>
+                <div class="text-container">
+                  <div class="wrapper">
+                    <div class="logo">
+                      <img src="public/img/logo/logo-25.png" alt="Sat" />
+                    </div>
+                    <div class="text">
+                      <p class="lg color-p fw-700 lh-xs">SPORTS AUTHORITY OF THAILAND</p>
+                      <p class="xs color-black fw-700">INSPIRATION & CONCEPT</p>
+                      <p class="xs color-p fw-700">“START YOUR SPORT JOURNEY”</p>
+                      <p class="mt-2 fw-400">We developed</p>
+                        <ul class="ss-list style-07">
+                          <li class="p sm fw-300">Web application</li>
+                          <li class="p sm fw-300">Mobile application</li>
+                          <li class="p sm fw-300">Marketing Campaign</li>
+                          <li class="p sm fw-300">Download 10,000 User</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid lg-50 md-50 sm-100">
+              <div class="ss-card ss-card-59">
+                <div class="img-container">
+                  <div class="ss-img">
+                    <div class="img-bg" style="background-image:url('public/img/content/135.jpg');"></div>
+                  </div>  
+                </div>
+                <div class="text-container">
+                  <div class="wrapper">
+                    <div class="logo">
+                      <img src="public/img/logo/logo-26.png" alt="Sat" />
+                    </div>
+                    <div class="text">
+                      <p class="lg color-p fw-700 lh-xs">SPORTS AUTHORITY OF THAILAND</p>
+                      <p class="xs color-black fw-700">INSPIRATION & CONCEPT</p>
+                      <p class="xs color-p fw-700">“START YOUR SPORT JOURNEY”</p>
+                      <p class="mt-2 fw-400">We developed</p>
+                        <ul class="ss-list style-07">
+                          <li class="p sm fw-300">Web application</li>
+                          <li class="p sm fw-300">Mobile application</li>
+                          <li class="p sm fw-300">Marketing Campaign</li>
+                          <li class="p sm fw-300">Download 10,000 User</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content" data-aos="fade-up" data-aos-delay="750">
+          <div class="grids">
+            <div class="grid lg-50 md-50 sm-100">
+              <div class="ss-card ss-card-59">
+                <div class="img-container">
+                  <div class="ss-img">
+                    <div class="img-bg" style="background-image:url('public/img/content/135.jpg');"></div>
+                  </div>  
+                </div>
+                <div class="text-container">
+                  <div class="wrapper">
+                    <div class="logo">
+                      <img src="public/img/logo/logo-27.png" alt="Sat" />
+                    </div>
+                    <div class="text">
+                      <p class="lg color-p fw-700 lh-xs">SPORTS AUTHORITY OF THAILAND</p>
+                      <p class="xs color-black fw-700">INSPIRATION & CONCEPT</p>
+                      <p class="xs color-p fw-700">“START YOUR SPORT JOURNEY”</p>
+                      <p class="mt-2 fw-400">We developed</p>
+                        <ul class="ss-list style-07">
+                          <li class="p sm fw-300">Web application</li>
+                          <li class="p sm fw-300">Mobile application</li>
+                          <li class="p sm fw-300">Marketing Campaign</li>
+                          <li class="p sm fw-300">Download 10,000 User</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="grid lg-50 md-50 sm-100">
+              <div class="ss-card ss-card-59">
+                <div class="img-container">
+                  <div class="ss-img">
+                    <div class="img-bg" style="background-image:url('public/img/content/135.jpg');"></div>
+                  </div>  
+                </div>
+                <div class="text-container">
+                  <div class="wrapper">
+                    <div class="logo">
+                      <img src="public/img/logo/logo-28.png" alt="Sat" />
+                    </div>
+                    <div class="text">
+                      <p class="lg color-p fw-700 lh-xs">SPORTS AUTHORITY OF THAILAND</p>
+                      <p class="xs color-black fw-700">INSPIRATION & CONCEPT</p>
+                      <p class="xs color-p fw-700">“START YOUR SPORT JOURNEY”</p>
+                      <p class="mt-2 fw-400">We developed</p>
+                        <ul class="ss-list style-07">
+                          <li class="p sm fw-300">Web application</li>
+                          <li class="p sm fw-300">Mobile application</li>
+                          <li class="p sm fw-300">Marketing Campaign</li>
+                          <li class="p sm fw-300">Download 10,000 User</li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </section>
+
+  <section class="section-padding section-33">
+    <div class="container">
+      <h4 class="text-center lg xs-no-br color-p lh-sm fw-700" data-aos="fade-up" data-aos-delay="150">
+        SYNERRY'S OPPORTUNITIES<br>AND NEXT STEPS
+      </h4>
+      <div class="grids mt-3" data-aos="fade-up" data-aos-delay="300">
+        <div class="grid lg-50 md-50 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
+          <div class="ss-box xs size-02 d-flex ai-center h-full ">
+            <p class="fw-400">
+              SYNERRY sees an opportunity and gap in the SaaS market in Thailand. 
+              There are thousands of organizations that want to use large SaaS systems, with over 2.3 
+              million users. There are few competitors in the market, and most of them have problems finding 
+              new technologies from overseas to use in their organizations. They also lack knowledge and 
+              understanding of how to use these technologies, as well as after-sales support.
+              Therefore, SYNERRY wants to expand its business into a SaaS Training and Professional 
+              Services Center, as well as Hardware/Software Solutions. This will help organizations in 
+              Thailand to use technology to its fullest potential.
+            </p>     
+          </div>
+        </div>
+        <div class="grid lg-50 md-50 sm-100 mt-0">
+          <div class="hexagon-container">
+            <div class="wrapper">
+              <div class="hexagon-inner">
+                <div class="hexagon">
+                  <div class="ss-img square">
+                    <div class="img-bg" style="background-image:url('public/img/content/132.jpg');"></div>
+                  </div>     
+                </div>  
+              </div>
+              <div class="hexagon-inner">
+                <div class="hexagon">
+                  <div class="ss-img square">
+                    <div class="img-bg" style="background-image:url('public/img/content/133.jpg');"></div>
+                  </div>   
+                </div>
+              </div>
+              <div class="hexagon-inner">
+                <div class="hexagon">
+                  <div class="ss-img square">
+                    <div class="img-bg" style="background-image:url('public/img/content/131.jpg');"></div>
+                  </div>   
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

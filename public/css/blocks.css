@@ -2144,6 +2144,8 @@
 
 
 /* Section 30 */
+.section-30{position:relative;}
+.section-30 .hexagon-container{margin-top:-5rem;}
 .section-30 .hexagon-container .wrapper{
   display:flex; align-items:center; justify-content:end;
 }
@@ -2154,17 +2156,78 @@
 }
 .section-30 .hexagon-inner:nth-child(1){margin:11.875rem -12.75rem 0 0;}
 .section-30 .hexagon-inner:nth-child(2){margin:-12rem -2.875rem 0 0;}
-
+.section-30  .ss-box{margin-top:-3rem;}
+@media screen and (max-width:767.98px){
+  .section-30 .hexagon-container{position:absolute; top:-3.5rem; left:-10rem; opacity:.25; margin-top:0;}
+  .section-30  .ss-box{margin-top:1rem;}
+}
 
 
 /* Section 31 */
 .section-31{background:#f2f2f2; margin-top:-10rem;}
-.section-31 .hexagon-content{display:flex; justify-content:center;}
+.section-31 .hexagon-content .wrapper{display:flex; flex-direction:column; align-items:center;}
 .section-31 .hexagon{
-  position:relative; width:12.75rem; height:12.75rem;
+  display:block; position:relative; width:12.75rem; height:12.75rem; overflow:hidden;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); color:red;
+}
+.section-31 .hexagon:after{
+  position:absolute; top:0; left:-75%; z-index:2; display:block; content:''; width:50%; height:100%; 
+  background:-webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  background:linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  transform:skewX(-25deg); transform:skewX(-25deg); pointer-events:none;
+}
+.section-31 .hexagon-content .hexagon-inner:hover .hexagon:after{
+  -webkit-animation:shine 2s; animation:shine 2s;
+}
+.section-31 .hexagon-content .title{
+  font-weight:600; text-align:center; min-height:3.5rem; margin-top:1rem;
+  transition:color .25s;
+}
+.section-31 .hexagon-content li{font-size:.75rem;}
+.section-31 .hexagon-content .hexagon-inner{
+  position:relative; cursor:pointer;
+}
+.section-31 .hexagon-content .hexagon-inner::before{
+  position:absolute; content:''; background:currentColor; width:12.75rem; height:12.75rem; 
+  top:0rem; right:0;  left:0; bottom:0; transform: scale(1.07); transition:transform .5s;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); color:red;
+}
+.section-31 .hexagon-content .hexagon-inner:hover::before{transform:rotate(-90deg);}
+@media screen and (max-width:991.98px){
+  .section-31{margin-top:-8rem;}
+  .section-31 .hexagon-content .title{min-height:0;}
+}
+@media screen and (max-width:767.98px){
+  .section-31 .grid:nth-child(1) .hexagon-content .title,
+  .section-31 .grid:nth-child(2) .hexagon-content .title{min-height:3.25rem;}
+  .section-31{margin-top:0;}
+}
+@media screen and (max-width:575.98px){
+  .section-31 .grid:nth-child(1) .hexagon-content .title,
+  .section-31 .grid:nth-child(2) .hexagon-content .title{min-height:0;}
+  .section-31 .ss-list{max-width:25rem;}
+}
+
+
+/* Section 32 */
+.section-32{background:#f2f2f2;}
+.section-32 .content{margin-top:1.5rem;}
+
+
+/* Section 33 */
+.section-33{position:relative;}
+.section-33 .hexagon-container{position:relative; height:100%;}
+.section-33 .hexagon{
+  position:absolute; width:12.75rem; height:12.75rem;
   -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
+.section-33 .hexagon-inner:nth-child(1) .hexagon{top:5rem; left:0;}
+.section-33 .hexagon-inner:nth-child(2) .hexagon{top:11rem; left:10rem;}
+.section-33 .hexagon-inner:nth-child(3) .hexagon{top:-1rem; left:10rem;}
+
 
 
 /* Main Tab Container */
