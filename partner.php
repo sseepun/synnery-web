@@ -394,7 +394,7 @@
   <section class="section-padding section-32">
     <div class="ss-box xl">
       <div class="container">
-        <h4 class="lg text-center color-p fw-800" data-aos="fade-up" data-aos-delay="0">
+        <h4 class="lg font-popins text-center color-p fw-800" data-aos="fade-up" data-aos-delay="0">
           SUCCESS CASE
         </h4>
         <div class="content" data-aos="fade-up" data-aos-delay="300">
@@ -450,7 +450,7 @@
                       </div>
                       <p class="title lh-xs">Ministry of Culture</p>
                       <p class="xs color-black">more than <span class="p color-p fw-700">128 WEBSITE</span></p>
-                      <p class="xs text-center">
+                      <p class="xxs text-center">
                         Responsible for preserving and promoting 
                         Thai culture, religion, and art.
                       </p>
@@ -463,7 +463,7 @@
                       </div>
                       <p class="title lh-xs">Ministry of Energy</p>
                       <p class="xs color-black">more than <span class="p color-p fw-700">129 WEBSITE</span></p>
-                      <p class="xs text-center">
+                      <p class="xxs text-center">
                         Responsible for developing and managing 
                         Thailand's energy resources.
                       </p>
@@ -476,7 +476,7 @@
                       </div>
                       <p class="title lh-xs">Ministry of Education</p>
                       <p class="xs color-black">more than <span class="p color-p fw-700">125 WEBSITE</span></p>
-                      <p class="xs text-center">
+                      <p class="xxs text-center">
                         Responsible for ensuring that all Thai citizens 
                         have access to quality education.
                       </p>
@@ -489,7 +489,7 @@
                       </div>
                       <p class="title lh-xs">Ministry of industry</p>
                       <p class="xs color-black">more than <span class="p color-p fw-700">123 WEBSITE</span></p>
-                      <p class="xs text-center">
+                      <p class="xxs text-center">
                         Responsible for promoting and developing 
                         Thailand's industrial sector.
                       </p>
@@ -626,54 +626,341 @@
 
   <section class="section-padding section-33">
     <div class="container">
-      <h4 class="text-center lg xs-no-br color-p lh-sm fw-700" data-aos="fade-up" data-aos-delay="150">
+      <h4 class="text-center font-popins lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
         SYNERRY'S OPPORTUNITIES<br>AND NEXT STEPS
       </h4>
-      <div class="grids mt-3" data-aos="fade-up" data-aos-delay="300">
-        <div class="grid lg-50 md-50 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
-          <div class="ss-box xs size-02 d-flex ai-center h-full ">
-            <p class="fw-400">
-              SYNERRY sees an opportunity and gap in the SaaS market in Thailand. 
-              There are thousands of organizations that want to use large SaaS systems, with over 2.3 
-              million users. There are few competitors in the market, and most of them have problems finding 
-              new technologies from overseas to use in their organizations. They also lack knowledge and 
-              understanding of how to use these technologies, as well as after-sales support.
-              Therefore, SYNERRY wants to expand its business into a SaaS Training and Professional 
-              Services Center, as well as Hardware/Software Solutions. This will help organizations in 
-              Thailand to use technology to its fullest potential.
-            </p>     
+      <div class="ss-box xl mt-5">
+        <div class="grids" data-aos="fade-up" data-aos-delay="300">
+          <div class="grid lg-50 md-50 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
+            <div class=" d-flex ai-center h-full ">
+              <p class="fw-400 font-popins">
+                SYNERRY sees an opportunity and gap in the SaaS market in Thailand. 
+                There are thousands of organizations that want to use large SaaS systems, with over 2.3 
+                million users. There are few competitors in the market, and most of them have problems finding 
+                new technologies from overseas to use in their organizations. They also lack knowledge and 
+                understanding of how to use these technologies, as well as after-sales support.<br>
+                Therefore, SYNERRY wants to expand its business into a SaaS Training and Professional 
+                Services Center, as well as Hardware/Software Solutions. This will help organizations in 
+                Thailand to use technology to its fullest potential.
+              </p>     
+            </div>
           </div>
-        </div>
-        <div class="grid lg-50 md-50 sm-100 mt-0">
-          <div class="hexagon-container">
-            <div class="wrapper">
-              <div class="hexagon-inner">
-                <div class="hexagon">
-                  <div class="ss-img square">
-                    <div class="img-bg" style="background-image:url('public/img/content/132.jpg');"></div>
-                  </div>     
-                </div>  
-              </div>
-              <div class="hexagon-inner">
-                <div class="hexagon">
-                  <div class="ss-img square">
-                    <div class="img-bg" style="background-image:url('public/img/content/133.jpg');"></div>
-                  </div>   
+          <div class="grid lg-50 md-50 sm-100 mt-0 pos-relative">
+            <div class="hexagon-container">
+              <div class="wrapper">
+                <div class="hexagon-inner">
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/140.jpg');"></div>
+                    </div>     
+                  </div>  
+                </div>
+                <div class="hexagon-inner">
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/122.jpg');"></div>
+                    </div>   
+                  </div>
+                </div>
+                <div class="hexagon-inner">
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/140.png');"></div>
+                    </div>   
+                  </div>  
                 </div>
               </div>
-              <div class="hexagon-inner">
-                <div class="hexagon">
-                  <div class="ss-img square">
-                    <div class="img-bg" style="background-image:url('public/img/content/131.jpg');"></div>
-                  </div>   
-                </div>  
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </section>
+
+  <section class="section-padding section-34">
+    <div class="container">
+      <h4 class="text-center font-popins lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
+        OUR NEW AND EXISTING<br>TARGET AUDIENCES
+      </h4>
+      <p class="text-center color-p fw-700 mt-6" data-aos="fade-up" data-aos-delay="300">
+        Current <span class="color-black">Customer Groups</span>
+      </p>
+      <div class="ss-box lg" data-aos="fade-up" data-aos-delay="450">
+        <div class="grids jc-center no-gap mt-5">
+          <div class="grid lg-1-3 sm-50 mt-0">
+            <div class="ss-card ss-card-60">
+              <p class="title">Ministry Group</p>
+            </div>
+          </div>
+          <div class="grid lg-1-3 sm-50 mt-0">
+            <div class="ss-card ss-card-60 border-left-0 border-right-0">
+              <p class="title">Stock Exchange Group</p>
+            </div>
+          </div>
+          <div class="grid lg-1-3 sm-50 mt-0">
+            <div class="ss-card ss-card-60">
+              <p class="title">Department Group</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-center color-black fw-700 mt-6" data-aos="fade-up" data-aos-delay="450">
+          Target Customer Groups for  <span class="color-p">Future Marketing</span>
+        </p>
+        <div class="grids no-gap mt-5 jc-center" data-aos="fade-up" data-aos-delay="600">
+          <div class="grid lg-50 mt-0 d-none-xl">
+            <div class="ss-card ss-card-61  border-top-0">
+              <p class="title mt-0">
+                Digital agencies in Thailand
+              </p>
+            </div>
+          </div>
+          <div class="grid lg-50 mt-0 d-none-xl">
+            <div class="ss-card ss-card-61 d-none-sm border-top-0 border-left-0">
+              <p class="title mt-0">
+                Schools and universities in Thailand
+              </p>
+            </div>
+          </div>
+          <div class="grid lg-1-3 md-1-3 sm-50 mt-0">
+            <div class="ss-card ss-card-61">
+              <div class="icon">
+                <img class="mt-nagative icon-inactive" src="public/img/icon/tab-client-inactive.png">
               </div>
+              <p class="title">Government agencies in Thailand</p>
+              <p class="number">153</p>
+              <p class="desc">AGENCIES</p>
+              <p class="title fw-400">Estimated number of<br>employees</p>
+              <p class="number">619K</p>
+              <p class="desc">EMPLOYEES</p>
+            </div>
+          </div>
+          <div class="grid lg-1-3 md-1-3 sm-50 mt-0">
+            <div class="ss-card ss-card-61 border-left-0 border-right-0">
+              <div class="icon">
+                <img class="mt-nagative icon-inactive" src="public/img/icon/33.png">
+              </div>
+              <p class="title">
+                Companies listed on the Stock
+                Exchange of Thailand (SET)
+              </p>
+              <p class="number">496</p>
+              <p class="desc">COMPANIES</p>
+              <p class="title fw-400">Estimated number of<br>employees</p>
+              <p class="number">5.8M</p>
+              <p class="desc">EMPLOYEES</p>
+            </div>
+          </div>
+          <div class="grid lg-1-3 md-1-3 sm-50 mt-0">
+            <div class="ss-card ss-card-61">
+              <div class="icon sm">
+                <img class="mt-nagative icon-inactive" src="public/img/icon/34.png">
+              </div>
+              <p class="title">
+                Small and medium-sized
+                businesses (SMEs) in Thailand
+              </p>
+              <p class="number">3.2M</p>
+              <p class="desc">COMPANIES</p>
+              <p class="title fw-400">Estimated number of<br>employees</p>
+              <p class="number">12.4M</p>
+              <p class="desc">EMPLOYEES</p>
+            </div>
+          </div>
+          <div class="grid lg-50 mt-0 d-none-sm">
+            <div class="ss-card ss-card-61  border-top-0">
+              <p class="title mt-0">
+                Digital agencies in Thailand
+              </p>
+            </div>
+          </div>
+          <div class="grid lg-50 mt-0 d-none-sm">
+            <div class="ss-card ss-card-61 d-none-sm border-top-0 border-left-0">
+              <p class="title mt-0">
+                Schools and universities in Thailand
+              </p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="section-padding section-35">
+    <div class="container">
+      <h4 class="text-center lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
+        OUR GREATEST STRENGTH
+      </h4> 
+      <div class="ss-box xl mt-5">
+        <div class="grids" data-aos="fade-up" data-aos-delay="300">
+          <div class="grid lg-50 md-50 sm-100 h-full">
+            <div class="pos-relative h-full">
+              <div class="hexagon-container">
+                <div class="hexagon-wrapper">
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/141.jpg');"></div>
+                    </div>        
+                  </div>     
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/142.jpg');"></div>
+                    </div>        
+                  </div>
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/133.jpg');"></div>
+                    </div>        
+                  </div> 
+                </div>     
+              </div> 
+            </div>          
+          </div>
+          <div class="grid lg-50 md-50 sm-100 mt-0">
+            <p class="sm fw-400">
+              We have connections with our current customers, both government 
+              and large private sector organizations, especially government 
+              organizations that are portals or central points of service for SMEs throughout Thailand.
+            </p>        
+            <ul class="ss-list style-08">
+              <li class="p sm fw-400">
+                Expertise in marketing to a wide range of 
+                customers in Thailand, both online and offline.
+              </li>
+              <li class="p sm fw-400">
+                A comprehensive database of customers that can be 
+                used to communicate and reach target groups quickly.
+              </li>
+              <li class="p sm fw-400">
+                Adequate staffing to provide service and support to customers. 
+              </li>
+              <li class="p sm fw-400">
+                Relationships with key stakeholders 
+              </li>
+              <li class="p sm fw-400">
+                Localize Strategy Marketing 
+              </li>
+            </ul>      
+          </div>
+        </div>   
+        <div class="brands" data-aos="fade-up" data-aos-delay="450">
+          <div class="grids jc-center">
+            <div class="grid lg-1-3">
+              <div class="brand-content">
+                <div class="wrapper">
+                  <div class="brand-inner">
+                    <div class="brand size-03">
+                      <img src="public/img/content/142.png" alt="Logo">
+                    </div>
+                  </div>
+                  <p class="title">WORKPOINT</p>
+                  <p class="desc">
+                    <span class="color-p fw-500">No.1</span> of innovative and creative
+                    entertainment company in Thailand
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="grid lg-1-3">
+              <div class="brand-content">
+                <div class="wrapper">
+                  <div class="brand-inner">
+                    <div class="brand style-02">
+                      <img src="public/img/content/143.png" alt="Logo">
+                    </div>
+                  </div>
+                  <p class="title">NATION GROUP</p>
+                  <p class="desc">
+                    <span class="color-p fw-500">No.1</span> 
+                    of the strongest track record of producing successful shows in Thailand
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="grid lg-1-3">
+              <div class="brand-content">
+                <div class="wrapper">
+                  <div class="brand-inner">
+                    <div class="brand style-03 size-02">
+                      <img src="public/img/content/144.png" alt="Logo">
+                    </div>
+                  </div>
+                  <p class="title">PLAN B MEDIA</p>
+                  <p class="desc">
+                    <span class="color-p fw-500">No.1</span> 
+                    OOH advertising companies in Thailand
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>       
+    </div>                
+  </section>
+
+  <section class="section-padding section-36">
+    <div class="container">
+      <h4 class="text-center lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
+        SAMPLE MARKETING<br> ACTIVITY PLAN
+      </h4>
+      <p class="text-center fw-600 mt-1" data-aos="fade-up" data-aos-delay="300">
+        POSITIONING : TO BE SAAS SEDUCTION CENTER
+      </p>
+      <div class="ss-box xl" data-aos="fade-up" data-aos-delay="450">
+        <div class="grids">
+          <div class="grid lg-50">
+            <div class="card-content">
+              <h6 class="color-p fw-600">ONLINE</h6>
+              <p class="sm fw-600">LAUNCH ONLINE SEMINAR</p>
+              <ul class="ss-list style-08">
+                <li class="p xs fw-300">1,000-2,000 Audiences</li>
+              </ul> 
+              <p class="sm fw-600 mt-1">EDUCATE MARKET & SUPPORT</p>
+              <ul class="ss-list style-08">
+                <li class="p xs fw-300">VIDEO MANUAL (THAI)</li>
+                <li class="p xs fw-300">MANUAL (THAI)</li>
+                <li class="p xs fw-300">SUPPORT CENTER (BY CALL AND SOCIAL MEDIA)</li>
+                <li class="p xs fw-300">WEBSITE: KNOWLEDGE BASE SHARING</li>
+              </ul> 
+              <p class="sm fw-600 mt-1">SHARE & VIRAL</p>
+              <ul class="ss-list style-08">
+                <li class="p xs fw-300">COMMUNITY (ONLINE, LARK, FB GROUP)</li>
+                <li class="p xs fw-300">SHOW CASE / NEW SOLUTIONS</li>
+              </ul> 
+              <p class="sm fw-600 mt-1">MOTIVATE</p>
+              <ul class="ss-list style-08">
+                <li class="p xs fw-300">ONLINE ADVERTISING</li>
+                <li class="p xs fw-300">PR AND REVIEW BY KOLS ON EACH BUSINESSCATEGORY</li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid lg-50">
+            <div class="card-content">
+              <h6 class="color-p fw-600">OFFLINE</h6>
+              <p class="sm fw-600">LAUNCH</p>
+              <ul class="ss-list style-08">
+                <li class="p xs fw-300">EXHIBITION IN IT EVENT IN THAILAND</li>
+              </ul> 
+              <p class="sm fw-600 mt-1">EDUCATE MARKET & SUPPORT</p>
+              <ul class="ss-list style-08">
+                <li class="p xs fw-300">VIDEO MANUAL (THAI)</li>
+                <li class="p xs fw-300">MANUAL (THAI)</li>
+              </ul> 
+              <p class="sm fw-600 mt-1">SELL & ACQUIRE</p>
+              <ul class="ss-list style-08">
+                <li class="p xs fw-300">OFFLINE TRAINING MONTHLY (PAID AND REBATE)</li>
+              </ul> 
+              <p class="sm fw-600 mt-1">MOTIVATE</p>
+              <ul class="ss-list style-08">
+                <li class="p xs fw-300">PR: LEAFLET / BROCHURE BY POST MAIL</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <?php $withFooterInfo=true; include_once('include/footer-style-02.php'); ?>
   <?php include_once('include/script.php'); ?>

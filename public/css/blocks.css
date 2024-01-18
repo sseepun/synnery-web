@@ -2218,7 +2218,10 @@
 
 /* Section 33 */
 .section-33{position:relative;}
-.section-33 .hexagon-container{position:relative; height:100%;}
+.section-33 .hexagon-container{
+  position:absolute; height:100%; transform:translate(-50%, -50%);
+  left:20%; top:45%;
+}
 .section-33 .hexagon{
   position:absolute; width:12.75rem; height:12.75rem;
   -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
@@ -2227,7 +2230,87 @@
 .section-33 .hexagon-inner:nth-child(1) .hexagon{top:5rem; left:0;}
 .section-33 .hexagon-inner:nth-child(2) .hexagon{top:11rem; left:10rem;}
 .section-33 .hexagon-inner:nth-child(3) .hexagon{top:-1rem; left:10rem;}
+@media screen and (max-width:991.98px){
+  .section-33 .hexagon-container{left:15%; top:50%;}
+}
+@media screen and (max-width:767.98px){
+  .section-33 .hexagon-container{top:-15rem; left:unset; right:10rem; transform:scale(.8);}
+  .section-33 .hexagon{opacity:.25;}
+}
 
+
+/* Section 34 */
+.section-34{background:#f2f2f2;}
+.section-34 .grid.d-none-xl{display:none;}
+.section-34 .grid.d-none-xl .ss-card-61{padding:1.3125rem .625rem;}
+.section-34 .grid.d-none-xl .title{min-height:2.125rem;}
+@media screen and (max-width:767.98px){
+  .section-34 .grid.d-none-sm{display:none;}
+  .section-34 .grid.d-none-xl{display:block;}
+}
+@media screen and (max-width:575.98px){
+  .section-34 .grid.d-none-xl .title{min-height:0;}
+}
+
+
+/* Section 35 */
+.section-35{position:relative; font-family:'Poppins', sans-serif;}
+.section-35 .hexagon-container{
+  position:absolute; top:.6875rem; right:0; scale:1.15; z-index:2;
+}
+.section-35 .hexagon-wrapper{width:100%;}
+.section-35 .hexagon{
+  width:11rem; position:absolute; top:0; z-index:2;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+.section-35 .hexagon:nth-child(1){top:0; right:2rem;}
+.section-35 .hexagon:nth-child(2){top:5.25rem; right:10.625rem;}
+.section-35 .hexagon:nth-child(3){top:-5rem; right:10.625rem;}
+.section-35 .brands .wrapper{
+  display:flex; flex-direction:column; align-items:center;
+}
+.section-35 .brands{margin-top:1rem;}
+.section-35 .brands .brand{ 
+  position:relative; width:9rem; top:0; z-index:2; background:#063e79; height:9rem;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); 
+  display:flex; justify-content:center; align-items:center;
+}
+.section-35 .brands .brand img{
+  display:block; max-width:100%; width:auto; max-height:100%; height:3.5rem;
+}
+.section-35 .brands .brand.size-02 img{height:2.125rem;}
+.section-35 .brands .brand.size-03 img{height:3.75rem;}
+.section-35 .brands .brand.style-02{background:#0032a1;}
+.section-35 .brands .brand.style-03{background:#032968;}
+.section-35 .brands .brand-inner{position: relative;}
+.section-35 .brands .brand-inner::before{
+  position:absolute; content:''; background:currentColor; width:9rem; height:9rem; 
+  top:0rem; right:0;  left:0; bottom:0; transform: scale(1.1); transition:transform .5s;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); color:red;
+}
+.section-35 .brands .brand-inner::after{
+  position:absolute; content:''; width:9rem; height:9rem; background:currentColor;
+  top:0rem; right:0;  left:0; bottom:0; transform: scale(1.05); transition:transform .5s;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); color:#ffffff;
+}
+.section-35 .brands .title{font-size:.875rem; font-weight:600; margin-top:.75rem;}
+.section-35 .brands .title, .section-35 .brands .desc{text-align:center;}
+.section-35 .brands .desc{font-size:.75rem; max-width:15rem;}
+@media screen and (max-width:991.98px){
+  .section-35 .hexagon-container{top:3.25rem;}
+}
+@media screen and (max-width:767.98px){
+  .section-35 .ss-box{margin-top:0!important;}
+  .section-35 .hexagon-container{top:5rem; left:13rem;}
+  .section-35 .hexagon{opacity:.25;}
+}
+
+/* Section 36 */
+.section-36{font-family:'Poppins', sans-serif;}
 
 
 /* Main Tab Container */
