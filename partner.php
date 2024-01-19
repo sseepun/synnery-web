@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -56,7 +56,7 @@
   </section> 
 
   <?php if(false){?>
-    <section  data-section="1" class="banner-02">
+    <section data-section="1" class="banner-02">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <?php for($i=0; $i<18; $i++){?>
@@ -129,7 +129,17 @@
     </section>
   <?php }?>
 
-  <section class="section-padding section-30">
+  <section data-section="2" class="section-padding section-30">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-18.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-02">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/37.png" alt="Pattern">
+      </div>
+    </div>
     <div class="container">
       <h4 class="text-center lg xs-no-br color-p lh-sm fw-700" data-aos="fade-up" data-aos-delay="150">
         SYNERRY CORPORATION (THAILAND)<br>COMPANY LIMITED
@@ -178,7 +188,7 @@
     </div>
   </section>
 
-  <section class="section-padding section-31">
+  <section data-section="3" class="section-padding section-31">
     <div class="container">
       <h4 class="text-center lg color-p lh-sm fw-700" data-aos="fade-up" data-aos-delay="150">
         WHAT ARE WE DOING ?
@@ -306,7 +316,7 @@
       </div>
     </div>
     <div class="container" style="z-index:3;">
-      <h4 class="lg text-center color-p fw-800" data-aos="fade-up" data-aos-delay="0">
+      <h4 class="font-popins lg text-center color-p fw-800" data-aos="fade-up" data-aos-delay="0">
         OUR CLIENTS
       </h4>
       <div class="ss-box lg">
@@ -391,7 +401,72 @@
     </div>
   </section>
 
-  <section class="section-padding section-32">
+  <section data-section="5" class="section-padding section-32">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5" style="transform: translateX(6.48889px) translateY(-5.75556px);">
+        <img src="public/img/patterns/26.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-02">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1389px) translateY(19.9833px);">
+        <img src="public/img/patterns/27.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value=".5" style="transform: translateX(-49.7111px) translateY(-116.111px);">
+        <img src="public/img/patterns/28.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1167px) translateY(21.9444px);">
+        <img src="public/img/patterns/24.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value="-.5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/29.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value=".5" style="transform: translateX(6.77222px) translateY(-8.65px);">
+        <img src="public/img/patterns/23.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-07">
+      <div class="wrapper" value="-.5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/38.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-08">
+      <div class="wrapper" value="-.5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/38.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-09">
+      <div class="wrapper" value=".5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/39.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-10">
+      <div class="wrapper" value=".5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/39.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-11">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1167px) translateY(21.9444px);">
+        <img src="public/img/patterns/40.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-12">
+      <div class="wrapper" value=".5" style="transform: translateX(19.1167px) translateY(21.9444px);">
+        <img src="public/img/patterns/40.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-13">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1167px) translateY(21.9444px);">
+        <img src="public/img/patterns/41.png" alt="Pattern">
+      </div>
+    </div>
     <div class="ss-box xl">
       <div class="container">
         <h4 class="lg font-popins text-center color-p fw-800" data-aos="fade-up" data-aos-delay="0">
@@ -624,7 +699,7 @@
     </div>
   </section>
 
-  <section class="section-padding section-33">
+  <section data-section="6" class="section-padding section-33">
     <div class="container">
       <h4 class="text-center font-popins lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
         SYNERRY'S OPPORTUNITIES<br>AND NEXT STEPS
@@ -677,7 +752,57 @@
     </div>
   </section>
 
-  <section class="section-padding section-34">
+  <section data-section="7" class="section-padding section-34">
+    <div class="pattern style-01">
+      <div class="wrapper" value="-.5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/40.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value=".5" style="transform: translateX(-49.7111px) translateY(-116.111px);">
+        <img src="public/img/patterns/28.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1167px) translateY(21.9444px);">
+        <img src="public/img/patterns/42.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value="-.5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/29.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value=".5" style="transform: translateX(6.77222px) translateY(-8.65px);">
+        <img src="public/img/patterns/23.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-07">
+      <div class="wrapper" value="-.5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/38.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-09">
+      <div class="wrapper" value=".5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/39.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-10">
+      <div class="wrapper" value=".5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/39.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-11">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1167px) translateY(21.9444px);">
+        <img src="public/img/patterns/40.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-13">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1167px) translateY(21.9444px);">
+        <img src="public/img/patterns/41.png" alt="Pattern">
+      </div>
+    </div>
     <div class="container">
       <h4 class="text-center font-popins lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
         OUR NEW AND EXISTING<br>TARGET AUDIENCES
@@ -785,9 +910,9 @@
     </div>
   </section>
 
-  <section class="section-padding section-35">
+  <section data-section="8" class="section-padding section-35">
     <div class="container">
-      <h4 class="text-center lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
+      <h4 class="title text-center lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
         OUR GREATEST STRENGTH
       </h4> 
       <div class="ss-box xl mt-5">
@@ -850,6 +975,7 @@
                   <div class="brand-inner">
                     <div class="brand size-03">
                       <img src="public/img/content/142.png" alt="Logo">
+                      <div class="fade-shine"></div>
                     </div>
                   </div>
                   <p class="title">WORKPOINT</p>
@@ -866,6 +992,7 @@
                   <div class="brand-inner">
                     <div class="brand style-02">
                       <img src="public/img/content/143.png" alt="Logo">
+                      <div class="fade-shine"></div>
                     </div>
                   </div>
                   <p class="title">NATION GROUP</p>
@@ -882,6 +1009,7 @@
                   <div class="brand-inner">
                     <div class="brand style-03 size-02">
                       <img src="public/img/content/144.png" alt="Logo">
+                      <div class="fade-shine"></div>
                     </div>
                   </div>
                   <p class="title">PLAN B MEDIA</p>
@@ -898,7 +1026,9 @@
     </div>                
   </section>
 
-  <section class="section-padding section-36">
+  <section data-section="9" class="section-padding section-36">
+    <div class="hexagon" data-aos="fade-in" data-aos-delay="300"></div>
+    <div class="img-bg" style="background-image:url('public/img/bg/101.jpg')"></div>
     <div class="container">
       <h4 class="text-center lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
         SAMPLE MARKETING<br> ACTIVITY PLAN
@@ -961,6 +1091,197 @@
     </div>
   </section>
 
+  <section data-section="10" class="section-padding section-36">
+    <div class="container">
+      <div class="ss-box lg">
+        <h4 class="text-center lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
+          SAMPLE EVENT PLAN OF 2023 - 2024
+        </h4>
+        <div data-aos="fade-up" data-aos-delay="300">
+          <p class="text-center fw-600 mt-5">
+            THAILAND EXHIBITION 2023
+          </p>  
+          <img class="img mt-3" src="public/img/content/145.jpg" alt="THAILAND EXHIBITION">  
+        </div>
+        <div class="mt-6" data-aos="fade-up" data-aos-delay="450">
+          <p class="text-center fw-600 mt-5">
+            THAILAND EXHIBITION 2024
+          </p>  
+          <img class="img mt-3" src="public/img/content/145.jpg" alt="THAILAND EXHIBITION">  
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-section="11" class="section-padding section-37">
+    <div class="container">
+      <h4 class="title text-center lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
+        WHAT KIND OF PARTNERS ARE<br>WE LOOKING FOR?
+      </h4> 
+      <div class="ss-box xl mt-5">
+        <div class="grids" data-aos="fade-up" data-aos-delay="300">
+          <div class="grid lg-50 md-50 sm-100 mt-0" data-aos="fade-up" data-aos-delay="300">
+            <div class=" d-flex ai-center h-full">
+              <ul class="ss-list style-08">
+                <li class="p sm fw-400">
+                  We are looking for partners in the hardware, software, 
+                  and SaaS sectors who are interested in marketing through 
+                  a representative in Thailand.
+                </li>
+                <li class="p sm fw-400">
+                  We will only market one brand per target group for each 
+                  business category from the partner. 
+                </li>
+              </ul>     
+            </div>
+          </div>
+          <div class="grid lg-50 md-50 sm-100 mt-0 pos-relative">
+            <div class="hexagon-container">
+              <div class="wrapper">
+                <div class="hexagon-inner">
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/146.jpg');"></div>
+                    </div>     
+                  </div>  
+                </div>
+                <div class="hexagon-inner">
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/147.jpg');"></div>
+                    </div>   
+                  </div>
+                </div>
+                <div class="hexagon-inner">
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/133.jpg');"></div>
+                    </div>   
+                  </div>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>   
+    </div>      
+  </section>
+
+  <section data-section="12" class="section-padding section-38 bg-04">
+    <div class="container">
+      <h4 class="text-center lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
+        OUR PARTNERS
+      </h4>    
+      <?php 
+        $content = [
+          [
+            'logo' => 'public/img/partners/01.png',
+            'title' => 'All in One E-Office',
+            'alt' => 'Lark',
+          ],[
+            'logo' => 'public/img/partners/02.png',
+            'title' => 'Project Management',
+            'alt' => 'Asana'
+          ],[
+            'logo' => 'public/img/partners/03.png',
+            'title' => 'Digital Asset Management',
+            'alt' => 'Device42'
+          ],[
+            'logo' => 'public/img/partners/04.png',
+            'title' => 'AI Audience Anslytics',
+            'alt' => 'DISPL'
+          ],[
+            'logo' => 'public/img/partners/05.png',
+            'title' => 'My Learning Hub',
+            'alt' => 'My Learning Hub'
+          ]
+        ]
+      ?>
+      <div class="grids jc-center" data-aos="fade-up" data-aos-delay="300">
+        <?php foreach($content as $d) {?>
+          <div class="grid lg-20 md-1-3 sm-50 xs-50">
+            <a href="#" class="ss-card ss-card-55">
+              <div class="wrapper">
+                <div class="logo">
+                  <img src="<?= $d['logo'] ?>" alt="<?= $d['alt'] ?>">
+                </div>
+                <p class="xxs title">
+                  <?= $d['title'] ?>
+                </p>
+              </div>
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+            </a>
+          </div>
+        <?php } ?>
+      </div>
+    </div>
+  </section>
+
+  <section data-section="13" class="section-padding section-39">
+    <div class="container">
+      <h4 class="title text-center lg xs-no-br color-p lh-xs fw-700" data-aos="fade-up" data-aos-delay="150">
+        WHAT WE WOULD LIKE TO KNOW
+      </h4> 
+      <div class="ss-box xl mt-5">
+        <div class="grids" data-aos="fade-up" data-aos-delay="300">
+          <div class="grid lg-50 md-50 sm-100 h-full">
+            <div class="pos-relative h-full">
+              <div class="hexagon-container">
+                <div class="hexagon-wrapper">
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/148.jpg');"></div>
+                    </div>        
+                  </div>     
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/149.jpg');"></div>
+                    </div>        
+                  </div>
+                  <div class="hexagon">
+                    <div class="ss-img square">
+                      <div class="img-bg" style="background-image:url('public/img/content/133.jpg');"></div>
+                    </div>        
+                  </div> 
+                </div>     
+              </div> 
+            </div>          
+          </div>
+          <div class="grid lg-50 md-50 sm-100 mt-0">       
+            <ul class="ss-list style-08">
+              <li class="p sm fw-400">
+                Insightful information about your 
+                products and services.
+              </li>
+              <li class="p sm fw-400">
+                Strengths and selling points of 
+                your products or services.
+              </li>
+              <li class="p sm fw-400">
+                Information about your competitors in the market.
+              </li>
+              <li class="p sm fw-400">
+                Information about your competitors in the market.
+              </li>
+              <li class="p sm fw-400">
+                Your partners in Thailand.
+              </li>
+              <li class="p sm fw-400">
+                Benefit & Support for Partnershi
+              </li>
+              <li class="p sm fw-400">
+                Price for Partnership
+              </li>
+              <li class="p sm fw-400">
+                Ect.
+              </li>
+            </ul>      
+          </div>
+        </div>   
+      </div>       
+    </div>                
+  </section>
 
   <?php $withFooterInfo=true; include_once('include/footer-style-02.php'); ?>
   <?php include_once('include/script.php'); ?>

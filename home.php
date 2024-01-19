@@ -143,7 +143,12 @@
   <section data-section="2" class="section-01 section-padding pt-4 pb-6">
     <div class="pattern style-32">
       <div class="wrapper" value=".5">
-        <img src="public/img/content/pattern-18.png" alt="Hero">
+        <img src="public/img/content/pattern-18.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-63">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/37.png" alt="Pattern">
       </div>
     </div>
     <div class="container" style="z-index:2;">

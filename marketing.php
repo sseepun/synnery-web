@@ -351,7 +351,7 @@
                 <div class="grids">
                   <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="300">
                     <div class="ss-card ss-card-44">
-                      <img class="img" src="public/img/showcase/artist/01.jpg" alt="Image" />
+                      <img class="img" src="public/img/showcase/gssd/03.jpg" alt="Image" />
                     </div>
                   </div>
                 </div>
@@ -380,16 +380,16 @@
                     $virtualWorld01 = [
                       [
                         'delay' => '300',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/04.jpg',
                       ],[
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/05.jpg',
                       ],[
                         'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/06.jpg',
                       ],[
-                        'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '750',
+                        'imgBg' => 'public/img/showcase/gssd/07.jpg',
                       ],[
                         'delay' => '600',
                         'imgBg' => 'public/img/showcase/artist/01.jpg',
@@ -1034,6 +1034,56 @@
   </section>
 
   <section class="section-padding section-29">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5" style="transform: translateX(6.48889px) translateY(-5.75556px);">
+        <img src="public/img/patterns/26.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-02">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1389px) translateY(19.9833px);">
+        <img src="public/img/patterns/27.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value=".5" style="transform: translateX(-49.7111px) translateY(-116.111px);">
+        <img src="public/img/patterns/28.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1167px) translateY(21.9444px);">
+        <img src="public/img/patterns/24.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value="-.5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/29.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value=".5" style="transform: translateX(6.77222px) translateY(-8.65px);">
+        <img src="public/img/patterns/23.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-07">
+      <div class="wrapper" value="-.5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/38.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-10">
+      <div class="wrapper" value=".5" style="transform: translateX(79.3333px) translateY(152.444px);">
+        <img src="public/img/patterns/39.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-11">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1167px) translateY(21.9444px);">
+        <img src="public/img/patterns/40.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-13">
+      <div class="wrapper" value="-.5" style="transform: translateX(19.1167px) translateY(21.9444px);">
+        <img src="public/img/patterns/41.png" alt="Pattern">
+      </div>
+    </div>
     <div class="container">
       <h3 class="text-center color-p fw-700" data-aos="fade-up" data-aos-delay="150">
         OTHER CHANNEL

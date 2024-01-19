@@ -541,6 +541,9 @@
 .section-01 > .pattern.style-62{position:absolute; top:auto; bottom:20rem; left:auto; right:5rem; z-index:1;}
 .section-01 > .pattern.style-62 > .wrapper img{display:block; width:1rem; height:auto;}
 
+.section-01 > .pattern.style-63{position:absolute; top:auto; bottom:-32rem; left:auto; right:-1rem; z-index:1;}
+.section-01 > .pattern.style-63 > .wrapper img{display:block; width:30rem; height:auto;}
+
 .section-01 .services{margin-top:1rem;}
 .section-01 .service-list{
   position:relative; transition:background .25s; overflow:hidden;
@@ -2108,7 +2111,27 @@
 
 
 /* Section 29 */
-.section-29{background:#f5f5f5;}
+.section-29{position:relative; background:#f5f5f5; overflow:hidden;}
+.section-29 > .pattern.style-01{position:absolute; top:-1rem; bottom:auto; left:1rem; right:auto; z-index:1;}
+.section-29 > .pattern.style-01 > .wrapper img{display:block; width:20rem; height:auto;}
+.section-29 > .pattern.style-02{position:absolute; top:-5rem; bottom:auto; left:1rem; right:auto; z-index:1;}
+.section-29 > .pattern.style-02 > .wrapper img{display:block; width:5rem; height:auto;}
+.section-29 > .pattern.style-03{position:absolute; top:-4rem; bottom:auto; transform:translateX(-50%); left:50%; right:auto; z-index:1;}
+.section-29 > .pattern.style-03 > .wrapper img{display:block; width:8rem; height:auto;}
+.section-29 > .pattern.style-04{position:absolute; top:22rem; left:-1rem; right:auto; z-index:1;}
+.section-29 > .pattern.style-04 > .wrapper img{display:block; width:4rem; height:auto;}
+.section-29 > .pattern.style-05{position:absolute; top:-8rem; bottom:auto; left:auto; right:0; z-index:1;}
+.section-29 > .pattern.style-05 > .wrapper img{display:block; width:12rem; height:auto;}
+.section-29 > .pattern.style-06{position:absolute; bottom:-10rem; left:auto; right:-4.5rem; z-index:1;}
+.section-29 > .pattern.style-06 > .wrapper img{display:block; width:20rem; height:auto;}
+.section-29 > .pattern.style-07{position:absolute; top:10rem; bottom:auto; left:auto; right:8rem; z-index:1;}
+.section-29 > .pattern.style-07 > .wrapper img{display:block; width:1.5rem; height:auto;}
+.section-29 > .pattern.style-10{position:absolute; bottom:0rem; left:7rem; right:auto; z-index:1;}
+.section-29 > .pattern.style-10 > .wrapper img{display:block; width:8rem; height:auto;}
+.section-29 > .pattern.style-11{position:absolute; top:70rem; left:3rem; right:auto; z-index:1;}
+.section-29 > .pattern.style-11 > .wrapper img{display:block; width:3rem; height:auto;}
+.section-29 > .pattern.style-13{position:absolute; top:74rem; bottom:auto; left:auto; right:8rem; z-index:1;}
+.section-29 > .pattern.style-13 > .wrapper img{display:block; width:1.4375rem; height:auto;}
 .section-29 .hexagon{
   width:12.75rem; height:12.75rem; position:relative;
   -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
@@ -2144,19 +2167,27 @@
 
 
 /* Section 30 */
-.section-30{position:relative;}
-.section-30 .hexagon-container{margin-top:-5rem;}
+.section-30{position:relative;} 
+.section-30 .container{z-index:3;}
+.section-30 > .pattern.style-01{position:absolute; top:-4rem; left:-16rem; right:auto; z-index:0;}
+.section-30 > .pattern.style-01 > .wrapper img{display:block; width:35rem; height:auto;}
+.section-30 > .pattern.style-02{position:absolute; top:auto; bottom:-15rem; left:auto; right:-1rem; z-index:1;}
+.section-30 > .pattern.style-02 > .wrapper img{display:block; width:25rem; height:auto;}
+.section-30 .hexagon-container{position:relative; margin-top:-5rem;}
 .section-30 .hexagon-container .wrapper{
   display:flex; align-items:center; justify-content:end;
 }
 .section-30 .hexagon{
-  position:relative; width:12.75rem; height:12.75rem;
+  position:relative; width:12.75rem; height:12.75rem; z-index:3;
   -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
 .section-30 .hexagon-inner:nth-child(1){margin:11.875rem -12.75rem 0 0;}
 .section-30 .hexagon-inner:nth-child(2){margin:-12rem -2.875rem 0 0;}
 .section-30  .ss-box{margin-top:-3rem;}
+@media screen and (max-width:991.98px){
+  .section-30 > .pattern{display:none;}
+}
 @media screen and (max-width:767.98px){
   .section-30 .hexagon-container{position:absolute; top:-3.5rem; left:-10rem; opacity:.25; margin-top:0;}
   .section-30  .ss-box{margin-top:1rem;}
@@ -2164,7 +2195,7 @@
 
 
 /* Section 31 */
-.section-31{background:#f2f2f2; margin-top:-10rem;}
+.section-31{position:relative; background:#f2f2f2; margin-top:-10rem; z-index:2;}
 .section-31 .hexagon-content .wrapper{display:flex; flex-direction:column; align-items:center;}
 .section-31 .hexagon{
   display:block; position:relative; width:12.75rem; height:12.75rem; overflow:hidden;
@@ -2212,8 +2243,38 @@
 
 
 /* Section 32 */
-.section-32{background:#f2f2f2;}
-.section-32 .content{margin-top:1.5rem;}
+.section-32{position:relative; background:#f2f2f2; overflow:hidden;}
+.section-32 .container{z-index:2;}
+.section-32 > .pattern.style-01{position:absolute; top:-5rem; bottom:auto; left:1rem; right:auto; z-index:1;}
+.section-32 > .pattern.style-01 > .wrapper img{display:block; width:20rem; height:auto;}
+.section-32 > .pattern.style-02{position:absolute; top:1rem; bottom:auto; left:1rem; right:auto; z-index:1;}
+.section-32 > .pattern.style-02 > .wrapper img{display:block; width:5rem; height:auto;}
+.section-32 > .pattern.style-03{position:absolute; top:-4rem; bottom:auto; transform:translateX(-50%); left:50%; right:auto; z-index:1;}
+.section-32 > .pattern.style-03 > .wrapper img{display:block; width:8rem; height:auto;}
+.section-32 > .pattern.style-04{position:absolute; top:22rem; left:-1rem; right:auto; z-index:1;}
+.section-32 > .pattern.style-04 > .wrapper img{display:block; width:4rem; height:auto;}
+.section-32 > .pattern.style-05{position:absolute; top:-8rem; bottom:auto; left:auto; right:0; z-index:1;}
+.section-32 > .pattern.style-05 > .wrapper img{display:block; width:12rem; height:auto;}
+.section-32 > .pattern.style-06{position:absolute; bottom:-8rem; left:auto; right:-1rem; z-index:1;}
+.section-32 > .pattern.style-06 > .wrapper img{display:block; width:20rem; height:auto;}
+.section-32 > .pattern.style-07{position:absolute; top:10rem; bottom:auto; left:auto; right:8rem; z-index:1;}
+.section-32 > .pattern.style-07 > .wrapper img{display:block; width:1.5rem; height:auto;}
+.section-32 > .pattern.style-08{position:absolute; bottom:20rem; left:5rem; right:auto; z-index:1;}
+.section-32 > .pattern.style-08 > .wrapper img{display:block; width:1.5rem; height:auto;}
+.section-32 > .pattern.style-09{position:absolute; top:30rem; bottom:auto; left:auto; right:11rem; z-index:1;}
+.section-32 > .pattern.style-09 > .wrapper img{display:block; width:9rem; height:auto;}
+.section-32 > .pattern.style-10{position:absolute; bottom:0rem; left:7rem; right:auto; z-index:1;}
+.section-32 > .pattern.style-10 > .wrapper img{display:block; width:9rem; height:auto;}
+.section-32 > .pattern.style-11{position:absolute; top:70rem; left:3rem; right:auto; z-index:1;}
+.section-32 > .pattern.style-11 > .wrapper img{display:block; width:3rem; height:auto;}
+.section-32 > .pattern.style-12{position:absolute; top:auto; bottom:20rem; right:7rem; left:auto; z-index:1;}
+.section-32 > .pattern.style-12 > .wrapper img{display:block; width:3rem; height:auto;}
+.section-32 > .pattern.style-13{position:absolute; top:74rem; bottom:auto; left:auto; right:8rem; z-index:1;}
+.section-32 > .pattern.style-13 > .wrapper img{display:block; width:1.4375rem; height:auto;}
+.section-32 .content{position:relative; margin-top:1.5rem;}
+@media screen and (max-width:991.98px){
+  .section-32 > .pattern{display:none;}
+}
 
 
 /* Section 33 */
@@ -2240,10 +2301,31 @@
 
 
 /* Section 34 */
-.section-34{background:#f2f2f2;}
+.section-34{position:relative; background:#f2f2f2; overflow:hidden;}
+.section-34 .container{z-index:2;}
 .section-34 .grid.d-none-xl{display:none;}
 .section-34 .grid.d-none-xl .ss-card-61{padding:1.3125rem .625rem;}
 .section-34 .grid.d-none-xl .title{min-height:2.125rem;}
+.section-34 > .pattern.style-01{position:absolute; top:5rem; bottom:auto; left:auto; right:8rem; z-index:1;}
+.section-34 > .pattern.style-01 > .wrapper img{display:block; width:3rem; height:auto;}
+.section-34 > .pattern.style-03{position:absolute; top:-4rem; bottom:auto; transform:translateX(-50%); left:50%; right:auto; z-index:1;}
+.section-34 > .pattern.style-03 > .wrapper img{display:block; width:8rem; height:auto;}
+.section-34 > .pattern.style-04{position:absolute; top:22rem; left:auto; right:1rem; z-index:1;}
+.section-34 > .pattern.style-04 > .wrapper img{display:block; width:4rem; height:auto;}
+.section-34 > .pattern.style-05{position:absolute; top:-1rem; bottom:auto; left:-1.5rem; transform:rotate(180deg); right:auto; z-index:1;}
+.section-34 > .pattern.style-05 > .wrapper img{display:block; width:12rem; height:auto;}
+.section-34 > .pattern.style-06{position:absolute; bottom:-8rem; left:auto; right:1rem; z-index:1;}
+.section-34 > .pattern.style-06 > .wrapper img{display:block; width:18rem; height:auto;}
+.section-34 > .pattern.style-07{position:absolute; top:15rem; bottom:auto; left:5rem; right:auto; z-index:1;}
+.section-34 > .pattern.style-07 > .wrapper img{display:block; width:1.5rem; height:auto;}
+.section-34 > .pattern.style-09{position:absolute; top:30rem; bottom:auto; left:auto; right:11rem; z-index:1;}
+.section-34 > .pattern.style-09 > .wrapper img{display:block; width:5rem; height:auto;}
+.section-34 > .pattern.style-10{position:absolute; bottom:0; left:7rem; right:auto; z-index:1;}
+.section-34 > .pattern.style-10 > .wrapper img{display:block; width:9rem; height:auto;}
+.section-34 > .pattern.style-11{position:absolute; top:70rem; left:3rem; right:auto; z-index:1;}
+.section-34 > .pattern.style-11 > .wrapper img{display:block; width:3rem; height:auto;}
+.section-34 > .pattern.style-13{position:absolute; top:74rem; bottom:auto; left:auto; right:8rem; z-index:1;}
+.section-34 > .pattern.style-13 > .wrapper img{display:block; width:1.4375rem; height:auto;}
 @media screen and (max-width:767.98px){
   .section-34 .grid.d-none-sm{display:none;}
   .section-34 .grid.d-none-xl{display:block;}
@@ -2255,8 +2337,9 @@
 
 /* Section 35 */
 .section-35{position:relative; font-family:'Poppins', sans-serif;}
+.section-35 .title{position:relative;}
 .section-35 .hexagon-container{
-  position:absolute; top:.6875rem; right:0; scale:1.15; z-index:2;
+  position:absolute; top:.6875rem; right:-.25rem; scale:1.15; z-index:2;
 }
 .section-35 .hexagon-wrapper{width:100%;}
 .section-35 .hexagon{
@@ -2275,8 +2358,18 @@
   position:relative; width:9rem; top:0; z-index:2; background:#063e79; height:9rem;
   -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); 
-  display:flex; justify-content:center; align-items:center;
+  display:flex; justify-content:center; align-items:center; overflow:hidden;
 }
+.section-35 .brands .brand .fade-shine{
+  position:absolute; top:0; left:-75%; z-index:2; display:block; content:''; width:50%; height:100%; 
+  background:-webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  background:linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  transform:skewX(-25deg); transform:skewX(-25deg);
+}
+.section-35 .brands .brand:hover .fade-shine{
+  -webkit-animation:shine 1s; animation:shine 1s;
+}
+
 .section-35 .brands .brand img{
   display:block; max-width:100%; width:auto; max-height:100%; height:3.5rem;
 }
@@ -2310,8 +2403,111 @@
 }
 
 /* Section 36 */
-.section-36{font-family:'Poppins', sans-serif;}
+.section-36{position:relative; font-family:'Poppins', sans-serif; background:#f2f2f2;}
+.section-36 .img-bg{
+  position:absolute; top:0; right:0; bottom:0; left:0;
+  background-size:cover; background-repeat:no-repeat;
+}
+.section-36 .card-content{
+  background:#ffffff; padding:2rem; opacity:.8; height:100%;
+}
+.section-36 .hexagon{
+  position:absolute; width:11rem; height:11rem; top:-5.5rem; z-index:2; background:#d81927; 
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); left:-2rem;
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); 
+}
+@media screen and (max-width:767.98px){
+  .section-36 .hexagon{left:-5.25rem;}
+}
+@media screen and (max-width:575.98px){
+  .section-36 .hexagon{width:8rem; height:8rem; opacity:.25;}
+}
 
+
+/* Section 37 */
+.section-37{position:relative;}
+.section-37 .title{position:relative; z-index:2;}
+.section-37 .hexagon-container{
+  position:absolute; height:100%; transform:translate(-50%, -50%);
+  left:0; top:-.5rem; z-index:1;
+}
+.section-37 .hexagon{
+  position:absolute; width:12.75rem; height:12.75rem;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+.section-37 .hexagon-inner:nth-child(1) .hexagon{top:5rem; left:0;}
+.section-37 .hexagon-inner:nth-child(2) .hexagon{top:11rem; left:10rem;}
+.section-37 .hexagon-inner:nth-child(3) .hexagon{top:-1rem; left:10rem;}
+@media screen and (max-width:991.98px){
+  .section-37 .hexagon-container{left:15%; top:-1rem;}
+}
+@media screen and (max-width:767.98px){
+  .section-37 .hexagon-container{top:-15rem; left:unset; right:10rem; transform:scale(.8);}
+  .section-37 .hexagon{opacity:.25;}
+}
+
+
+/* Section 38 */
+.section-38{margin-top:-.75rem;}
+
+
+/* Section 39 */
+.section-39{position:relative; font-family:'Poppins', sans-serif;}
+.section-39 .title{position:relative; z-index:2;}
+.section-39 .hexagon-container{
+  position:absolute; top:.6875rem; right:-.25rem; scale:1.15; z-index:2;
+}
+.section-39 .hexagon-wrapper{width:100%;}
+.section-39 .hexagon{
+  width:11rem; position:absolute; top:0; z-index:2;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+.section-39 .hexagon:nth-child(1){top:0; right:2rem;}
+.section-39 .hexagon:nth-child(2){top:5.25rem; right:10.625rem;}
+.section-39 .hexagon:nth-child(3){top:-5rem; right:10.625rem;}
+.section-39 .brands .wrapper{
+  display:flex; flex-direction:column; align-items:center;
+}
+.section-39 .brands{margin-top:1rem;}
+.section-39 .brands .brand{ 
+  position:relative; width:9rem; top:0; z-index:2; background:#063e79; height:9rem;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); 
+  display:flex; justify-content:center; align-items:center;
+}
+.section-39 .brands .brand img{
+  display:block; max-width:100%; width:auto; max-height:100%; height:3.5rem;
+}
+.section-39 .brands .brand.size-02 img{height:2.125rem;}
+.section-39 .brands .brand.size-03 img{height:3.75rem;}
+.section-39 .brands .brand.style-02{background:#0032a1;}
+.section-39 .brands .brand.style-03{background:#032968;}
+.section-39 .brands .brand-inner{position: relative;}
+.section-39 .brands .brand-inner::before{
+  position:absolute; content:''; background:currentColor; width:9rem; height:9rem; 
+  top:0rem; right:0;  left:0; bottom:0; transform: scale(1.1); transition:transform .5s;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); color:red;
+}
+.section-39 .brands .brand-inner::after{
+  position:absolute; content:''; width:9rem; height:9rem; background:currentColor;
+  top:0rem; right:0;  left:0; bottom:0; transform: scale(1.05); transition:transform .5s;
+  -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); color:#ffffff;
+}
+.section-39 .brands .title{font-size:.875rem; font-weight:600; margin-top:.75rem;}
+.section-39 .brands .title, .section-35 .brands .desc{text-align:center;}
+.section-39 .brands .desc{font-size:.75rem; max-width:15rem;}
+@media screen and (max-width:991.98px){
+  .section-39 .hexagon-container{top:3.25rem;}
+}
+@media screen and (max-width:767.98px){
+  .section-39 .ss-box{margin-top:0!important;}
+  .section-39 .hexagon-container{top:5rem; left:13rem;}
+  .section-39 .hexagon{opacity:.25;}
+}
 
 /* Main Tab Container */
 .main-tabs-container .tab-wrapper{
