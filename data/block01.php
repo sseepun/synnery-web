@@ -4,13 +4,12 @@
       <div class="block">
         <div class="img-bg" style="background-image:url('public/img/bg/04.jpg');"></div>
         <div class="text-container">
-          <h3 class="lh-2xs color-01 fw-700">
+          <h3 class="lh-2xs color-01 font-popins fw-700" data-aos="fade-up" data-aos-delay="0">
             Web Design<br> 
           </h3>
           <p class="sm-no-br fw-300 mt-2" data-aos="fade-up" data-aos-delay="150">
             เปลี่ยนเว็บไซต์ภาครัฐให้มีมาตรฐานเดียวกัน การันตีด้วย<br>
-            ผลงานมากกว่า 500 โปรเจค “ที่เดียว ทันใด ทั่วไทย<br>
-            ทุกเวลา ทั่วถึง เท่าเทียม และธรรมาภิบาล”
+            ผลงานมากกว่า 500 โปรเจกต์ 
           </p>
           <div class="btns pt-4" data-aos="fade-up" data-aos-delay="300">
             <?php
@@ -24,7 +23,7 @@
         </div>
       </div>
       <div class="block-float right d-flex ai-end">
-        <div class="grids no-gap">
+        <div class="grids no-gap" data-aos="fade-up" data-aos-delay="450">
           <?php
             $clients = [
               [
@@ -96,7 +95,7 @@
       </div>
     </div>
   </div>
-  <div class="grids no-gap">
+  <div class="grids no-gap" data-aos="fade-up" data-aos-delay="450">
     <?php
       $clients = [
         [

@@ -1,41 +1,24 @@
-<section class="section-01 grid-margin-unset-tablet section-padding">
-  <div class="pattern style-11">
+<section class="section-01 grid-margin-unset-tablet section-padding pt-0">
+  <div class="pattern style-52">
     <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-14.png" alt="Hero" />
+      <img src="public/img/patterns/09.png" alt="Hero">
     </div>
   </div>
-  <div class="pattern style-12">
-    <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-15.png" alt="Hero" />
-    </div>
-  </div>
-  <div class="pattern style-13">
-    <div class="wrapper" value="-.5">
-      <img src="public/img/content/pattern-16.png" alt="Hero" />
-    </div>
-  </div>
-  <div class="img-bg" style="background-image:url('public/img/bg/63.jpg'); background-position:top center;"></div>  
-  <div class="container">
-    <div class="pos-relative" style="z-index:2;">
-      <h2 class="color-black text-center mt-1 lh-2xs fw-700">
-        NETWORK & SECURITY
-      </h2>
-      <p class="h4 lg color-p text-center fw-600">Services</p>
-      <p class="text-center fw-400 md-no-br">
-        หลายโครงการที่เราดูแลแบบครบวงจร ตั้งแต่รับฟังปัญหา วิเคราะห์ ศึกษา 
-        และนำเสนอแผนการพัฒนา ปรับเปลี่ยนตั้งแต่ระบบโครงสร้าง<br>
-        พื้นฐานด้านไอที เรามีทีมงาน ทีมผู้เชี่ยวชาญ ทั้งคู่ค้า ที่มีความชำนาญ 
-        ในการนำเทคโนโลยีใหม่ๆ เข้ามาช่วยแก้ไขปัญหา<br>
-        พร้อมกับรองรับวางแผนการพัฒนา การขยาย  ต่อยอดในอนาคต 
-      </p>  
-    </div>
-    <div class="grids mt-adaptive">
+  <div class="img-bg" style="background-image:url('public/img/bg/96.jpg');"></div>
+  <div class="container" style="z-index:3;">
+    <div class="grids" data-aos="fade-up" data-aos-delay="0">
       <div class="grid lg-50 md-100 sm-100 mt-0">
-        <div class="ss-card ss-card-40">
+        <a href="#" class="ss-card ss-card-41">
           <div class="wrapper">
             <div class="img-container">
               <div class="ss-img vertical-03">
                 <div class="img-bg" style="background-image:url('public/img/content/87.jpg');"></div>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox=".25 10 100 100">
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                </svg>
               </div>
             </div>
             <div class="text-container">
@@ -52,14 +35,20 @@
               </ul> 
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="grid lg-50 md-100 sm-100 mt-0">
-        <div class="ss-card ss-card-40 row-reverse">
+        <a href="#" class="ss-card ss-card-41 row-reverse">
           <div class="wrapper">
             <div class="img-container">
-              <div class="ss-img vertical-03">
+              <div class="ss-img vertical-03 h-full">
                 <div class="img-bg" style="background-image:url('public/img/content/86.jpg');"></div>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox=".25 10 100 100">
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                </svg>
               </div>
             </div>
             <div class="text-container">
@@ -76,14 +65,20 @@
               </ul> 
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="grid lg-50 md-100 sm-100">
-        <div class="ss-card ss-card-40">
+        <a href="#" class="ss-card ss-card-41">
           <div class="wrapper">
             <div class="img-container">
               <div class="ss-img vertical-03">
                 <div class="img-bg" style="background-image:url('public/img/content/88.jpg');"></div>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox=".25 10 100 100">
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                </svg>
               </div>
             </div>
             <div class="text-container">
@@ -98,14 +93,20 @@
               </ul>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div class="grid lg-50 md-100 sm-100">
-        <div class="ss-card ss-card-40 row-reverse">
+        <a href="#" class="ss-card ss-card-41 row-reverse">
           <div class="wrapper">
             <div class="img-container">
               <div class="ss-img vertical-03">
                 <div class="img-bg" style="background-image:url('public/img/content/89.jpg');"></div>
+              </div>
+              <div class="card-line-3">
+                <svg viewBox=".25 10 100 100">
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                  <polyline points="100,.5 100,120 .5,120 .5,.5 100,.5" />
+                </svg>
               </div>
             </div>
             <div class="text-container">
@@ -118,53 +119,10 @@
             </ul>
           </div>
           </div>
-        </div>
-      </div>
-      <div class="grid lg-50 md-100 sm-100">
-        <div class="ss-card ss-card-40">
-          <div class="wrapper">
-            <div class="img-container">
-              <div class="ss-img vertical-03">
-                <div class="img-bg" style="background-image:url('public/img/content/90.jpg');"></div>
-              </div>
-            </div>
-            <div class="text-container">
-            <h6 class="text-uppercase color-01 fw-600 lh-xs">
-              Cloud Services
-            </h6>
-            <ul class="ss-list-01 style-03 mt-3">
-              <li class="color-black fw-500 mt-2">INet</li>
-              <li class="color-black fw-500 mt-2">SIS</li>
-              <li class="color-black fw-500 mt-2">Other</li>
-            </ul>
-          </div>
-          </div>
-        </div>
-      </div>
-      <div class="grid lg-50 md-100 sm-100">
-        <div class="ss-card ss-card-40 row-reverse">
-          <div class="wrapper">
-            <div class="img-container">
-              <div class="ss-img vertical-03">
-                <div class="img-bg" style="background-image:url('public/img/content/91.jpg');"></div>
-              </div>
-            </div>
-            <div class="text-container">
-              <h6 class="text-uppercase color-01 fw-600 lh-xs">
-                Other Solutions<br>& Services
-              </h6>
-              <ul class="ss-list-01 style-03 mt-3">
-                <li class="color-black fw-500 mt-2">Big Data</li>
-                <li class="color-black fw-500 mt-2">AI : Artificial Intelligence</li>
-                <li class="color-black fw-500 mt-2">Internet of Things (IoT) </li>
-                <li class="color-black fw-500 mt-2">Block Chain</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
-    <div class="btns pt-6 mt-2 jc-center animate-01" style="--delay:.9s;">
+    <div class="btns pt-6 mt-2 jc-center animate-01" style="--delay:.9s;" data-aos="fade-up" data-aos-delay="0">
       <?php
         $btnBubble = [
           'href' => 'web-gov-standard.php',

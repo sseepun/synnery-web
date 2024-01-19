@@ -35,27 +35,63 @@
         </div>
         <div class="bottom-panel">
           <div class="menu-container hide-tablet">
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==1)echo 'active'; ?>">
-              <a href="index.php">Home</a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==2)echo 'active'; ?>">
-              <a href="about.php">About us</a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==3)echo 'active'; ?>" data-dropdown="2">
-              <a href="services.php">
-                Our Services <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
-              </a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==4)echo 'active'; ?>">
-              <a href="clients.php">Our Clients</a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==5)echo 'active'; ?>">
-              <a href="career.php">Career</a>
-            </div>
-            <div class="menu <?php if(isset($topnavActive) && $topnavActive==6)echo 'active'; ?>">
-              <a href="contact.php">Contact</a>
-            </div>
+            <?php 
+              $menu = [
+                [
+                  'title' => 'Home',
+                  'href' => 'index.php'
+                ],[
+                  'title' => 'About us',
+                  'href' => 'about.php'
+                ],[
+                  'title' => 'Our Services',
+                  'href' => 'javascript:void(0)'
+                ],[
+                  'title' => 'Our Works',
+                  'href' => 'javascript:void(0)'
+                ],[
+                  'title' => 'Our Clients',
+                  'href' => 'clients.php'
+                ],[
+                  'title' => 'Career',
+                  'href' => 'career.php'
+                ]
+              ]
+            ?>
+
+            <?php foreach($menu as $i=>$d) {?>
+              <div class="menu <?= $i == 2 || $i == 3? 'sub-menu': ''?>
+                <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
+                <?php if($i == 2 || $i == 3){ ?>
+                  data-dropdown="<?php echo $i ?>"
+                 <?php }?>
+                >
+                <a href="<?= $d['href'] ?>">
+                  <?= $d['title'] ?> 
+                  <?php if($i == 2 || $i == 3){ ?>
+                    <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
+                  <?php } ?>
+                </a>
+              </div>
+            <?php } ?>
+             <div class="btns">
+              <div class="btn-bubble__container">
+                <a href="contact.php" class="button btn-bubble toggle-contact" data-contact="1">
+                  Contact Us
+                </a>
+                <span class="btn-bubble__effect-container">
+                  <span class="circle top-left"></span>
+                  <span class="circle top-left"></span>
+                  <span class="circle top-left"></span>
+                  <span class="button effect-button"></span>
+                  <span class="circle bottom-right"></span>
+                  <span class="circle bottom-right"></span>
+                  <span class="circle bottom-right"></span>
+                </span>
+              </div>
+             </div>
           </div>
+          
           <div class="option-menu d-none">
             <div class="global-search-toggle">
               <img src="public/img/icon/search.png" alt="Icon" />
@@ -72,204 +108,363 @@
       </div>
     </div>
     
-    <div class="topnav-dropdown not-polygon">
+    <div class="topnav-dropdown" id="topnav-menu">
       <div class="scroll-wrapper">
-        <div class="container">
-
-          <?php /*
-            $options = [
+        <div>
+          <?php
+            $subMenuServices = [
               [
-                'bg' => 'public/img/content/menu-service-01.jpg',
-                'title' => 'Government Standard Website',
-                'href' => 'web-gov-standard.php',
-              ], [
-                'bg' => 'public/img/content/menu-service-02.jpg',
-                'title' => 'Unlimited Microsite for Government',
-                'href' => 'web-gov-minisite.php',
-              ], [
-                'bg' => 'public/img/content/menu-service-03.jpg',
-                'title' => 'Enterprise Wordpress Solutions',
-                'href' => 'enterprise-wordpress-solution.php',
+                'title' => 'WEB DESIGN',
+                'desc' => 'STANDARD SOLUTION'
               ],[
-                'bg' => 'public/img/content/menu-service-08.jpg',
-                'title' => 'E-Office / ERP for Government',
-                'href' => 'erp-for-government.php',
-              ], 
+                'title' => 'DIGITAL MARKETING',
+                'desc' => 'FULL SERVICE'
+              ],[
+                'title' => 'WEB & MOBILE',
+                'desc' => 'APPLICATION DEVELOPMENT'
+              ],[
+                'title' => 'NETWORK & SECURITY',
+                'desc' => 'SERVICE'
+              ],[
+                'title' => 'ARTIFICIAL INTELLIGENCE',
+                'desc' => 'SOLUTION'
+              ],[
+                'title' => 'LARK',
+                'desc' => ''
+              ]
+            ]
+          ?>
+          <?php 
+             $subMenuOurWorks = [
               [
-                'bg' => 'public/img/content/menu-service-05.jpg',
-                'title' => 'Full Services Digital Marketing',
-                'href' => 'services.php',
+                'title' => 'PROUND TO PRESENT',
+                'desc' => ''
               ],[
-                'bg' => 'public/img/content/menu-service-04.jpg',
-                'title' => 'Network Architecture',
-                'href' => 'network-security-system.php',
+                'title' => 'SHOWCASE WEB GOVERNMENT',
+                'desc' => ''
               ],[
-                'bg' => 'public/img/content/menu-service-06.jpg',
-                'title' => 'AR,VR/3D Virtual Tour, Metaverse',
-                'href' => 'virtual-world.php',
+                'title' => 'SHOWCASE MKT',
+                'desc' => ''
               ],[
-                'bg' => 'public/img/content/menu-service-07.jpg',
-                'title' => 'Live & Virtual Exhibition',
-                'href' => 'virtual-world.php',
+                'title' => 'E-OFFICE',
+                'desc' => ''
               ],
             ]
           ?>
           <div class="dropdown-wrapper" data-dropdown="2">
-            <div class="d-grid-container <?php if(isset($dropdownActive))echo 'has-active'; ?>">
-              <div class="d-grids jc-start pos-relative" style="z-index:2;">
-                <?php foreach($options as $i=>$d){ if($i < 4){?>
-                  <div class="d-grid <?php if(isset($dropdownActive) && $dropdownActive==$i)echo 'active' ?>">
-                    <a href="<?= $d['href'] ?>" class="ss-card">
-                      <div class="ss-img">
-                        <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
-                      </div>
-                      <div class="line-5"></div><div class="line-6"></div>
-                    </a>
-                    <div class="text-container">
-                      <a href="<?= $d['href'] ?>">
-                        <p class="xxs lh-sm fw-400 pt-3">
-                          <?= $d['title'] ?>
-                        </p>
+            <div class="submenu-blocks menu-container">
+              <div class="submenu-block block-left">
+                <?php foreach($subMenuServices as $i=>$d) {?>
+                  <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
+                    <div class="wrapper">
+                      <a class="title d-block submenu-main p xs lh-sm" href="#">
+                        <?= $d['title'] ?>
                       </a>
+                      <p class="desc sm lh-sm"><?= $d['desc'] ?></p>
                     </div>
                   </div>
-                <?php }}?>
+                <?php }?>
               </div>
-              <div class="d-grids mt-2">
-                <?php foreach($options as $i=>$d){ if($i >= 4){?>
-                  <div class="d-grid <?php if(isset($dropdownActive) && $dropdownActive==$i)echo 'active' ?>">
-                    <a href="<?= $d['href'] ?>" class="ss-card">
-                      <div class="ss-img">
-                        <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
+              <div class="submenu-block block-right">
+                <?php foreach($subMenuServices as $i=>$d) {?>
+                  <div class="menu-content <?= $i==0? 'active': '' ?> "  data-tab="tab_<?= $i ?>">
+
+                    <!-- WEB DESIGN -->
+                    <?php if($i == 0) {?>
+                      <?php include('data/menu/web-design.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($webDesign as $d) {?>
+                            <div class="grid lg-1-3">
+                              <a href="<?= $d['href'] ?>" class="card-submenu">
+                                <div class="wrapper">
+                                  <div class="icon">
+                                    <?= $d['icon'] ?>
+                                  </div>
+                                  <div class="text">
+                                    <p class="title">
+                                      <?= $d['title'] ?>
+                                    </p>
+                                  </div>
+                                </div>
+                              </a>
+                          </div>
+                          <?php } ?>
+                        </div>
                       </div>
-                      <div class="line-5"></div><div class="line-6"></div>
-                    </a>
-                    <div class="text-container">
-                      <a href="<?= $d['href'] ?>">
-                        <p class="xxs lh-sm fw-400 pt-3">
-                          <?= $d['title'] ?>
-                        </p>
+                    <?php }?> 
+
+                    <!-- DIGITAL MARKETING -->
+                    <?php if($i == 1) {?>
+                      <?php include('data/menu/digital-marketing.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($digitalMarketing as $d) {?>
+                            <div class="grid lg-1-3">
+                            <a href="<?= $d['href'] ?>" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <?= $d['icon'] ?>
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    <?= $d['title'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <?php } ?>
+                        </div>
+                      </div> 
+                    <?php }?> 
+                    
+                    <!-- WEB & MOBILE -->
+                    <?php if($i == 2) {?>
+                      <?php include('data/menu/web-mobile.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($webMobile as $d) {?>
+                            <div class="grid lg-1-3">
+                            <a href="<?= $d['href'] ?>" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <?= $d['icon'] ?>
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    <?= $d['title'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <?php } ?>
+                        </div>
+                      </div> 
+                    <?php }?> 
+
+                    <!-- NETWORK & SECURITY -->
+                    <?php if($i == 3) {?>
+                      <?php include('data/menu/network-security.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($networkSecurity as $d) {?>
+                            <div class="grid lg-1-3">
+                            <a href="<?= $d['href'] ?>" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <?= $d['icon'] ?>
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    <?= $d['title'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <?php } ?>
+                        </div>
+                      </div>  
+                    <?php }?>
+
+                    <!-- ARTIFICIAL INTELLIGENCE -->
+                    <?php if($i == 4) {?>
+                      <?php include('data/menu/artificial-intelligence.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($artificialIntelligence as $d) {?>
+                            <div class="grid lg-1-3">
+                            <a href="<?= $d['href'] ?>" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <?= $d['icon'] ?>
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    <?= $d['title'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <?php } ?>
+                        </div>
+                      </div> 
+                    <?php }?>
+
+                    <!-- LARK -->
+                    <?php if($i == 5) {?>
+                      <?php include('data/menu/lark.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($lark as $d) {?>
+                            <div class="grid lg-1-3">
+                            <a href="<?= $d['href'] ?>" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <?= $d['icon'] ?>
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    <?= $d['title'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <?php } ?>
+                        </div>
+                      </div> 
+                    <?php }?>
+                  </div>
+                <?php }?>
+              </div>
+            </div>
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>             
+            </div>
+
+            <div class="dropdown-wrapper" data-dropdown="3">
+            <div class="submenu-blocks menu-container">
+              <div class="submenu-block block-left">
+                <?php foreach($subMenuOurWorks as $i=>$d) {?>
+                  <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
+                    <div class="wrapper">
+                      <a class="title d-block submenu-main p xs lh-sm" href="#">
+                        <?= $d['title'] ?>
                       </a>
+                      <p class="desc sm lh-sm"><?= $d['desc'] ?></p>
                     </div>
                   </div>
-                <?php }}?>
+                <?php }?>
+              </div>
+              <div class="submenu-block block-right">
+                <?php foreach($subMenuOurWorks as $i=>$d) {?>
+                  <div class="menu-content <?= $i==0? 'active': '' ?> "  data-tab="tab_<?= $i ?>">                
+
+                    <!-- PROUND TO PRESENT -->
+                    <?php if($i == 0) {?>
+                      <?php include('data/menu/pround-present.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($proundPresent as $d) {?>
+                            <div class="grid lg-1-3">
+                            <a href="<?= $d['href'] ?>" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="<?= $d['icon'] ?>" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    <?= $d['title'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <?php } ?>
+                        </div>
+                      </div> 
+                    <?php }?>
+
+                    <!-- SHOWCASE WEB GOVERNMENT -->
+                    <?php if($i == 1) {?>
+                      <?php include('data/menu/showcase-web.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($showWeb as $d) {?>
+                            <div class="grid lg-1-3">
+                            <a href="<?= $d['href'] ?>" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon <?= $d['classer'] ?>">
+                                  <img src="<?= $d['icon'] ?>" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    <?= $d['title'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <?php } ?>
+                        </div>
+                      </div> 
+                    <?php }?>
+
+                    <!-- SHOWCASE MKT -->
+                    <?php if($i == 2) {?>
+                      <?php include('data/menu/showcase-mkt.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($showMKT as $d) {?>
+                            <div class="grid lg-1-3">
+                            <a href="<?= $d['href'] ?>" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon <?= $d['classer'] ?>">
+                                  <img src="<?= $d['icon'] ?>" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    <?= $d['title'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <?php } ?>
+                        </div>
+                      </div> 
+                    <?php }?>
+
+                    <!-- E-OFFICE -->
+                    <?php if($i == 3) {?>
+                      <?php include('data/menu/e-office.php') ?>
+                      <div class="block-content">
+                        <p class="color-p fw-500"><?= $d['title'] ?> <?= $d['desc'] ?></p> 
+                        <div class="grids">
+                          <?php foreach($eOffice as $d) {?>
+                            <div class="grid lg-1-3">
+                            <a href="<?= $d['href'] ?>" class="card-submenu">
+                              <div class="wrapper">
+                                <div class="icon">
+                                  <img src="<?= $d['icon'] ?>" alt="ICON">
+                                </div>
+                                <div class="text">
+                                  <p class="title">
+                                    <?= $d['title'] ?>
+                                  </p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                          <?php } ?>
+                        </div>
+                      </div> 
+                    <?php }?>
+                  </div>
+                <?php }?>
               </div>
             </div>
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-          </div>
-          */
-          ?>
-          <?php
-          $options = [
-            [
-              'title' => 'Standard Website',
-              'subtitle' => 'for Goverment',
-              'url' => '#',
-              'submenu' => [
-                [
-                  'title' => 'Government Standard Website',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'Unlimited Microsite',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'Enterprise Wordpress Solutions',
-                  'img' => '',
-                  'url' => '',
-                ],
-              ],
-            ],
-            [
-              'title' => 'Full Digital Service',
-              'subtitle' => 'for Goverment',
-              'url' => '#',
-              'submenu' => [
-                [
-                  'title' => 'Full Services Digital Marketing',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'AR, VR/3D Virtual Tour, Metaverse',
-                  'img' => '',
-                  'url' => '',
-                ],
-                [
-                  'title' => 'Live & Virtual Exhibition',
-                  'img' => '',
-                  'url' => '',
-                ],
-              ],
-            ],
-            // [
-            //   'title' => '',
-            //   'submenu' => [
-            //     [  
-            //       ['title' => ''],
-            //       ['img' => ''],
-            //       ['url' => ''],
-            //     ],
-            //   ],
-            // ],
-            // [
-            //   'title' => '',
-            //   'submenu' => [
-            //     [  
-            //       ['title' => ''],
-            //       ['img' => ''],
-            //       ['url' => ''],
-            //     ],
-            //   ],
-            // ],
-          ];
-          ?>
-          <div class="dropdown-wrapper" data-dropdown="2">
-            <div class="d-grid-container <?php if(isset($dropdownActive))echo 'has-active'; ?>">
-              <div class="d-grids jc-start pos-relative" style="z-index:2;">
-                <div class="d-block">
-                  <?php 
-                    foreach($options as $i=>$d) {
-                      ?>
-                        <a class="submenu-title" href="<?= $d['url'] ?>" data-menu="menu-<?= $i ?>">
-                          <div class="fw-500"><?= $d['title'] ?></div>
-                          <div class="fw-300"><?= $d['subtitle'] ?></div>
-                        </a>
-                      <?php
-                    } 
-                  ?>
-                </div>
-                <div class="d-block submenu-lv-3">
-                  <?php 
-                    foreach($options as $i=>$d) {
-                      ?>
-                        <div class="fw-500"><?= $d['title'] ?></div>
-                        <div class="d-flex">
-                          <?php
-                            foreach($d['submenu'] as $i2 => $d2) {
-                              ?>
-                                <a href="">
-                                  <?= $d2['title'] ?>
-                                </a>
-                              <?php
-                            }
-                          ?>
-                        </a>
-                      <?php
-                    } 
-                  ?>
-                </div>
-              </div>
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>
             </div>
           </div>
-          
         </div>
       </div>
-    </div>
     <div class="dropdown-filter"></div>
   </div>
 </nav>
@@ -297,58 +492,174 @@
               <a href="about.php">About us</a>
             </div>
             <div class="menu" data-dropdown="2">
-              <a href="javascript:">Our Services</a>
+              <a href="javascript:void(0)">Our Services</a>
               <div class="submenu-container">
-                <div class="submenu">
-                  <a href="web-gov-standard.php">
-                    Government Standard Website
-                  </a>
-                </div>
-                <div class="submenu">
-                  <a href="web-gov-minisite.php">
-                    Unlimited Microsite for Government
-                  </a>
-                </div>
-                <div class="submenu">
-                  <a href="enterprise-wordpress-solution.php">
-                    Enterprise Wordpress Solutions
-                  </a>
-                </div>
-                <div class="submenu">
-                  <a href="erp-for-government.php">
-                    E-Office / ERP for Government
-                  </a>
-                </div>
-                <div class="submenu">
-                  <a href="services.php">
-                    Full Services Digital Marketing
-                  </a>
-                </div>
-                <div class="submenu">
-                  <a href="network-security-system.php">
-                    Network Architecture
-                  </a>
-                </div>
-                <div class="submenu">
-                  <a href="virtual-world.php">
-                    AR,VR/3D Virtual Tour, Metaverse
-                  </a>
-                </div>
-                <div class="submenu">
-                  <a href="virtual-world.php">
-                    Live & Virtual Exhibition
-                  </a>
-                </div>
+                <?php foreach($subMenuServices as $i=>$d) {?>
+                  <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
+                    <a class="title submenu-main p xs lh-sm" href="#">
+                      <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
+                    </a>
+                    
+                    <!-- WEB DESIGN -->
+                    <?php if($i == 0) {?>
+                      <?php include('data/menu/web-design.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($webDesign as $d) {?>
+                          <div class="submenu">
+                            <a class="title lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+
+                    <!-- DIGITAL MARKETING -->
+                    <?php if($i == 1) {?>
+                      <?php include('data/menu/digital-marketing.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($digitalMarketing as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+
+                    <!-- WEB & MOBILE -->
+                    <?php if($i == 2) {?>
+                      <?php include('data/menu/web-mobile.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($webMobile as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+
+                     <!-- NETWORK & SECURITY -->
+                    <?php if($i == 3) {?>
+                      <?php include('data/menu/network-security.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($networkSecurity as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+
+                    <!-- ARTIFICIAL INTELLIGENCE -->
+                    <?php if($i == 4) {?>
+                      <?php include('data/menu/artificial-intelligence.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($artificialIntelligence as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+
+                    <!-- LARK -->
+                    <?php if($i == 5) {?>
+                      <?php include('data/menu/lark.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($lark as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+                  </div>
+                <?php }?>
               </div>
             </div>
             <div class="menu">
-              <a href="career.php">Our Works</a>
+              <a href="javascript:void(0)">Our Works</a>
+              <div class="submenu-container">
+                <?php foreach($subMenuOurWorks as $i=>$d) {?>
+                  <div class="submenu has-children <?= $i == 0? 'active': '' ?>" data-tab="tab_<?= $i ?>">
+                    <a class="title submenu-main p xs lh-sm" href="#">
+                      <?= $d['title'] ?><p class="desc lh-sm"><?= $d['desc'] ?></p>
+                    </a>
+                    
+                    <!-- PROUND TO PRESENT -->
+                    <?php if($i == 0) {?>
+                      <?php include('data/menu/pround-present.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($proundPresent as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+
+                    <!-- SHOWCASE WEB GOVERNMENT -->
+                    <?php if($i == 1) {?>
+                      <?php include('data/menu/showcase-web.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($showWeb as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+
+                    <!-- SHOWCASE MKT -->
+                    <?php if($i == 2) {?>
+                      <?php include('data/menu/showcase-mkt.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($showMKT as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+
+                    <!-- E-OFFICE -->
+                    <?php if($i == 3) {?>
+                      <?php include('data/menu/e-office.php') ?>
+                      <div class="submenu-blocks">
+                        <?php foreach($eOffice as $d) {?>
+                          <div class="submenu">
+                            <a class="lg-no-br" href="<?= $d['href'] ?>">
+                              <?= $d['title'] ?>
+                            </a>
+                          </div>
+                        <?php } ?>
+                      </div>
+                    <?php }?>
+                  </div>
+                <?php }?>
+              </div>
             </div>
             <div class="menu">
               <a href="clients.php">Our Clients</a>
             </div>
             <div class="menu">
-              <a href="contact.php">Contact</a>
+              <a href="contact.php">Contact Us</a>
             </div>
           </div>
         </div>

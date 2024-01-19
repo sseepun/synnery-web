@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -56,7 +56,7 @@
   </section> 
 
   <?php if(false){?>
-    <section data-section="1" class="banner-02">
+    <section  data-section="1" class="banner-02">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <?php for($i=0; $i<18; $i++){?>
@@ -140,69 +140,61 @@
       [ 'title' => 'Enterprise<br>DevSecOps Solutions', 'url' => 'network-security-system.php' ],
     ];
   ?>
-  <section data-section="2" class="section-01 section-padding">
-    <div class="pattern style-32">
+  <section class="section-01 section-padding pt-4 pb-4">
+    <!-- <div class="pattern style-32">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">
       </div>
-    </div>
+    </div> -->
     <div class="container" style="z-index:2;">
       <div class="text-center" data-aos="fade-up" data-aos-delay="0">
-        <p class="h3 color-01 fw-600">
-          Full Services
-        </p>
-        <h1 class="color-black lh-2xs text-shadow fw-600">
+        <h3 class="color-p font-popins fw-600 lh-xs">Full Services</h3>
+        <p class="h1 font-popins color-black lh-2xs text-shadow fw-600">
           DIGITAL SOLUTIONS
-        </h1>
+        </p>
       </div>
-      <p class="h6 color-black md-no-br fw-400 text-center" data-aos="fade-up" data-aos-delay="150">
+      <p class="h5 color-black md-no-br fw-300 text-center mt-1" data-aos="fade-up" data-aos-delay="150">
         บริการด้านดิจิทัลแบบครบวงจร ตอบโจทย์ทุกความต้องการ
       </p>
     </div>
   </section>
 
-  <div class="main-tabs-container">
+  <div class="main-tabs-container" id="tab-header">
     <?php
       $mainTabs = [
         [
           'pageId' => 'web-design',
-          'title' => 'Web Design',
+          'title' => 'Web Design<br>Standard Solution',
           'iconInactive' => 'public/img/icon/service-02.png',
           'iconActive' => 'public/img/icon/service-active-02.png'
         ], [
           'pageId' => 'full-service',
-          'title' => 'Full Service Digital Marketing',
+          'title' => 'Full Service<br>Digital Marketing',
           'iconInactive' => 'public/img/icon/service-01.png',
           'iconActive' => 'public/img/icon/service-active-01.png'
         ], [
           'pageId' => 'web-mobile-app',
-          'title' => 'Web & Mobile Application Development',
+          'title' => 'Web & Mobile App<br>Development',
           'iconInactive' => 'public/img/icon/service-07.png',
           'iconActive' => 'public/img/icon/service-active-07.png'
         ], [
           'pageId' => 'net-work',
-          'title' => 'Network & Security',
+          'title' => 'Network & Security<br>Service',
           'iconInactive' => 'public/img/icon/service-08.png',
           'iconActive' => 'public/img/icon/service-active-08.png'
         ], [
           'pageId' => 'ai-solution',
-          'title' => 'AI Solution',
+          'title' => 'Artificial Intelligence<br>Solution',
           'iconInactive' => 'public/img/icon/service-09.png',
           'iconActive' => 'public/img/icon/service-active-09.png'
         ],
       ];
     ?>
-    <div class="tab-wrapper" data-aos="fade-up" data-aos-delay="0">
+    <div class="tab-wrapper" data-aos="fade-up" data-aos-delay="150">
       <?php foreach($mainTabs as $j=>$d){?>
-        <div class="tab-link <?php if($j==0)echo 'active'; ?>" id="default-open" 
-          onclick="openPage('<?= $d['pageId'] ?>')" data-tab="tab_<?= $j ?>" 
-        >
+        <div class="tab-link <?php if($j==0)echo 'active'; ?>" data-maintab="<?= $d['pageId'] ?>" data-anchor="#tab-header">
           <div class="wrapper">
-            <div class="icon">
-              <img src="<?= $d['iconInactive'] ?>" alt="Icon Inactive" />
-              <img class="active" src="<?= $d['iconActive'] ?>" alt="Icon Active" />
-            </div>
-            <p class="text"><?= $d['title'] ?></p>
+            <p class="text font-popins lh-sm"><?= $d['title'] ?></p>
           </div>
         </div>
         <div class="block-float right d-flex ai-end">
@@ -278,160 +270,173 @@
         </div>
       <?php }?>
     </div>
+    <div class="tab-contents">
 
-    <div id="web-design" class="main-tab-content">
-      <?php
-        $categories = [
-          ['title' => 'Web Design'],
-          ['title' => 'Unlimited Minisite'], 
-          ['title' => 'Enterprise WordPress']
-        ];
-      ?>
-      <div class="sub-tab-container">
-        <div class="tabs tabs-02">
-          <?php foreach($categories as $i=>$d){?>
-            <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <p class="title"><?= $d['title'] ?></p>
-            </div>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $i=>$d) {?>
-            <div class="tab-content <?= $i==0? 'active': '' ?> <?= $i==1? 'swiper-block': '' ?>" data-tab="content_<?= $i ?>">
-              <?php 
-                if($i === 0){include('data/block01.php');} 
-                else if($i === 1){include('data/block02.php');}
-                else if($i === 2) {include('data/block03.php');}
-              ?> 
-            </div>
-          <?php }?>
+      <div data-maintab="web-design" class="main-tab-content active">
+        <?php
+          $categories = [
+            ['title' => 'Web Design'],
+            ['title' => 'Unlimited Minisite'], 
+            ['title' => 'Enterprise WordPress'],
+          ];
+        ?>
+        <div class="sub-tab-container"  data-section="2">
+          <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
+            <?php foreach($categories as $i=>$d){?>
+              <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <p class="title"><?= $d['title'] ?></p>
+              </div>
+            <?php }?>
+          </div>
+          <div class="tab-contents">
+            <?php foreach($categories as $i=>$d) {?>
+              <div class="tab-content <?= $i==0? 'active': '' ?> <?= $i==1? 'swiper-block': '' ?>" data-tab="content_<?= $i ?>">
+                <?php 
+                  if($i === 0){include('data/block01.php');} 
+                  else if($i === 1){include('data/block02.php');}
+                  else if($i === 2) {include('data/block03.php');}
+                ?> 
+              </div>
+            <?php }?>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="full-service" class="main-tab-content">
-      <?php
-        $categories = [
-          ['title' => 'Digital Marketing'],
-          ['title' => 'Virtual World'],
-        ];
-      ?>
-      <div class="sub-tab-container">
-        <div class="tabs tabs-02">
-          <?php foreach($categories as $i=>$d){?>
-            <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <p class="title"><?= $d['title'] ?></p>
-            </div>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $i=>$d) {?>
-            <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?php 
-                if($i === 0){include('data/block04.php');} 
-                else if($i === 1){include('data/block05.php');}
-              ?> 
-            </div>
-          <?php }?>
+      <div data-maintab="full-service" class="main-tab-content">
+        <?php
+          $categories = [
+            ['title' => 'Digital Marketing'],
+            ['title' => 'Virtual Exhibition / Virtual Live Event'],
+          ];
+        ?>
+        <div class="sub-tab-container">
+          <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
+            <?php foreach($categories as $i=>$d){?>
+              <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <p class="title"><?= $d['title'] ?></p>
+              </div>
+            <?php }?>
+          </div>
+          <div class="tab-contents">
+            <?php foreach($categories as $i=>$d) {?>
+              <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <?php 
+                  if($i === 0){include('data/block04.php');} 
+                  else if($i === 1){include('data/block05.php');}
+                ?> 
+              </div>
+            <?php }?>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="web-mobile-app" class="main-tab-content">
-      <?php
-        $categories = [
-          ['title' => 'Web & Mobile Application Development'],
-        ];
-      ?>
-      <div class="sub-tab-container">
-        <div class="tabs tabs-02">
-          <?php foreach($categories as $i=>$d){?>
-            <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <p class="title"><?= $d['title'] ?></p>
-            </div>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $i=>$d) {?>
-            <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?php if($i === 0){ include('data/block06.php'); } ?> 
-            </div>
-          <?php }?>
+      <div data-maintab="web-mobile-app" class="main-tab-content">
+        <?php
+          $categories = [
+            ['title' => 'Web & Mobile Application Development'],
+          ];
+        ?>
+        <div class="sub-tab-container">
+          <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
+            <?php foreach($categories as $i=>$d){?>
+              <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <p class="title"><?= $d['title'] ?></p>
+              </div>
+            <?php }?>
+          </div>
+          <div class="tab-contents">
+            <?php foreach($categories as $i=>$d) {?>
+              <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <?php if($i === 0){ include('data/block06.php'); } ?> 
+              </div>
+            <?php }?>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="net-work" class="main-tab-content">
-      <?php
-        $categories = [
-          ['title' => 'Network & Security'],
-          ['title' => 'DevSecOps'],
-        ];
-      ?>
-      <div class="sub-tab-container">
-        <div class="tabs tabs-02">
-          <?php foreach($categories as $i=>$d){?>
-            <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <p class="title"><?= $d['title'] ?></p>
-            </div>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $i=>$d) {?>
-            <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?php 
-                if($i === 0){include('data/block07.php');} 
-                if($i === 1){include('data/block08.php');} 
-              ?> 
-            </div>
-          <?php }?>
+      <div data-maintab="net-work" class="main-tab-content">
+        <?php
+          $categories = [
+            ['title' => 'Network & Security'],
+            ['title' => 'DevSecOps & Microservices'],
+          ];
+        ?>
+        <div class="sub-tab-container">
+          <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
+            <?php foreach($categories as $i=>$d){?>
+              <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <p class="title"><?= $d['title'] ?></p>
+              </div>
+            <?php }?>
+          </div>
+          <div class="tab-contents">
+            <?php foreach($categories as $i=>$d) {?>
+              <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <?php 
+                  if($i === 0){include('data/block07.php');} 
+                  if($i === 1){include('data/block08.php');} 
+                ?> 
+              </div>
+            <?php }?>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div id="ai-solution" class="main-tab-content">
-      <?php
-        $categories = [
-          ['title' => 'AI ChatGPT'],
-          ['title' => 'OCR For Laws & Document'],
-          ['title' => 'ChatGPT E-Office'],
-        ]
-      ?>
-      <div class="sub-tab-container">
-        <div class="tabs tabs-02">
-          <?php foreach($categories as $i=>$d){?>
-            <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <p class="title"><?= $d['title'] ?></p>
-            </div>
-          <?php }?>
-        </div>
-        <div class="tab-contents">
-          <?php foreach($categories as $i=>$d) {?>
-            <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
-              <?php 
-                if($i === 0){include('data/block09.php');} 
-                if($i === 1){include('data/block10.php');} 
-                if($i === 2){include('data/block11.php');} 
-              ?> 
-            </div>
-          <?php }?>
+      <div data-maintab="ai-solution" class="main-tab-content">
+        <?php
+          $categories = [
+            ['title' => 'AI ChatGPT'],
+            ['title' => 'OCR For Laws & Document'],
+            ['title' => 'ChatGPT E-Office'],
+          ]
+        ?>
+        <div class="sub-tab-container">
+          <div class="tabs tabs-02" data-aos="fade-up" data-aos-delay="300">
+            <?php foreach($categories as $i=>$d){?>
+              <div class="tab <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <p class="title"><?= $d['title'] ?></p>
+              </div>
+            <?php }?>
+          </div>
+          <div class="tab-contents">
+            <?php foreach($categories as $i=>$d) {?>
+              <div class="tab-content <?= $i==0? 'active': '' ?>" data-tab="content_<?= $i ?>">
+                <?php 
+                  if($i === 0){include('data/block09.php');} 
+                  if($i === 1){include('data/block10.php');} 
+                  if($i === 2){include('data/block11.php');} 
+                ?> 
+              </div>
+            <?php }?>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 
-  <section data-section="13" class="section-03 section-padding bg-05 pb-0">
+  <section data-section="3" class="section-03 section-padding bg-05 pb-0">
     <div class="pattern style-01">
       <div class="wrapper" value=".5">
         <img src="public/img/content/pattern-18.png" alt="Hero">
       </div>
     </div>
-    <div class="container">
-      <h3 class="text-center color-01 fw-600" data-aos="fade-up" data-aos-delay="0">
-        Our Clients
-      </h3>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/content/pattern-20.png" alt="Hero">
+      </div>
+    </div>
+    <div class="pattern style-05">
+      <div class="wrapper" value=".5">
+        <img src="public/img/content/pattern-21.png" alt="Hero">
+      </div>
+    </div>
+    <div class="container" style="z-index:3;">
+      <h2 class="lg text-center fw-800" data-aos="fade-up" data-aos-delay="0">
+        OUR CLIENTS
+      </h2>
       <p class="text-center md-no-br" data-aos="fade-up" data-aos-delay="150">
-        ประสบการณ์มากกว่า 24 ปี ผลงานกับลูกค้าทั้งภาครัฐและเอกชนขนาดใหญ่กว่า 300 ราย มากกว่า 500 โครงการ
+        ประสบการณ์มากกว่า 25 ปี ผลงานกับลูกค้าทั้งภาครัฐและเอกชนขนาดใหญ่กว่า 300 ราย มากกว่า 500 โครงการ
       </p>
       <div class="grids jc-center" data-aos="fade-up" data-aos-delay="300">
         <div class="grid xl-20 lg-25 md-1-3 xs-50 pt-4">
@@ -459,58 +464,55 @@
     </div>
 
     <?php include_once('data/clients-home.php'); ?>
-    <div class="clients pos-relative" style="z-index:2;">
-      <?php foreach($clients as $d){?>
-        <div class="client">
-          <div class="ss-card ss-card-26">
-            <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
-            <div class="wrapper" data-aos="fade-up" data-aos-delay="150">
-              <div class="image-container" <?= empty($d['style'])?'':$d['style'] ?>>
-                <img src="<?= $d['icon'] ?>" alt="Client" />
+    <div class="container" data-aos="fade-up" data-aos-delay="300">
+      <div class="isotope-toolbar" style="position:relative;">
+        <div class="isotope-wrapper">
+          <div class="isotope-toolbar-btn isotope-tab active" data-type="government" name="isotope-filter">
+            <div class="wrapper">
+              <div class="icon">
+                <img class="mt-nagative icon-inactive" src="public/img/icon/tab-client-inactive.png">
+                <img class="mt-nagative icon-active" src="public/img/icon/tab-client-active.png">
               </div>
-              <div class="text-container mt-4">
-                <p class="xxs title lh-sm">
-                  <?= $d['title']?>
-                </p>
-              </div>
+              <span class="p title fw-400">รายชื่อลูกค้าภาครัฐ</span>
             </div>
-            <div class="line-7"></div><div class="line-8"></div>
+          </div>
+          <div class="isotope-toolbar-btn isotope-tab" data-type="corporation" name="isotope-filter">
+            <div class="wrapper">
+              <div class="icon">
+                <img class="mt-nagative icon-inactive" src="public/img/icon/tab-client-02-inactive.png">
+                <img class="mt-nagative icon-active" src="public/img/icon/tab-client-02-active.png">
+              </div>
+              <span class="p title fw-400">รายชื่อลูกค้าภาคเอกชน</span>
+            </div>
           </div>
         </div>
-      <?php }?>
+      </div>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="450">
+      <div class="clients isotope-box pos-relative" style="z-index:2;">
+        <?php foreach($clients as $d){?>
+          <div class="client isotope-item" data-type="<?= $d['type'] ?>">
+            <div class="ss-card ss-card-26">
+              <div class="hover-container" style="background:<?= $d['bgColor'] ?>;"></div>
+              <div class="wrapper">
+                <div class="image-container">
+                  <img src="<?= $d['icon'] ?>" alt="Client" />
+                </div>
+                <div class="text-container mt-4">
+                  <p class="xxs title lh-sm">
+                    <?= $d['title']?>
+                  </p>
+                </div>
+              </div>
+              <div class="line-7"></div><div class="line-8"></div>
+            </div>
+          </div>
+        <?php }?>
+      </div>
     </div>
   </section>
 
   <?php include_once('include/footer.php'); ?>
   <?php include_once('include/script.php'); ?>
-
-  <script>
-    document.addEventListener("mousemove", parallax);
-    function parallax(event) {
-      this.querySelectorAll(".pattern .wrapper").forEach((shift) => {
-        const position = shift.getAttribute("value");
-        const x = (window.innerWidth - event.pageX * position) / 90;
-        const y = (window.innerHeight - event.pageY * position) / 90;
-        shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-      });
-    }
-  </script>
-
-  <script>
-    function openPage(pageName) {
-      var i, mainTabContent, tabLink;
-      mainTabContent = document.getElementsByClassName("main-tab-content");
-      tabLink = document.getElementsByClassName("tab-link");
-      for (i = 0; i < mainTabContent.length; i++) {
-        mainTabContent[i].classList.remove('active');
-        mainTabContent[i].style.display = "none";
-      }
-      document.getElementById(pageName).style.display = "block";
-      setTimeout(function() {
-        document.getElementById(pageName).classList.add('active');
-      }, 400);
-    }
-    document.getElementById("default-open").click();
-  </script>
 </body>
 </html>

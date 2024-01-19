@@ -1,12 +1,7 @@
-<section  class="section-01 section-padding">
+<section  class="section-01 section-padding pt-0">
   <div class="img-bg" style="background-image:url('public/img/bg/96.jpg');"></div>
-  <!-- <div class="pattern style-32">
-    <div class="wrapper" value=".5" >
-      <img src="public/img/content/pattern-18.png" alt="Hero">
-    </div>
-  </div> -->
   <div class="container">
-    <div class="title-intro">
+    <div class="title-intro" data-aos="fade-up" data-aos-delay="0">
       <img class="img" src="public/img/icon/wp-logo.png" alt="LOGO">
       <div class="text-wrapper color-01">
         <p class="h3 color-black fw-700 lh-sm">
@@ -20,15 +15,15 @@
         </p>
       </div>
     </div>
-    <p class="text-center md-no-br fw-300 mt-3">
+    <p class="text-center md-no-br fw-300 mt-3" data-aos="fade-up" data-aos-delay="150">
       นอกจากการพัฒนาเว็บไซต์ โดยใช้ Tech และ Tools ใหม่ๆ แล้ว เรายังมีอีกหนึ่งบริการคือ พัฒนาเว็บไซต์ด้วย Word Press <br>
       ซึ่งเหมาะสำหรับกลุ่มลูกค้าที่ต้องการเว็บไซต์ เพื่อใช้ในการประชาสัมพันธ์ ข้อมูล ข่าวสารต่างๆ และเว็บไซต์ ไม่มีระบบใดๆ ที่ซับซ้อน <br>
       เพื่อช่วยให้เวลาในการพัฒนาไวมากยิ่งขึ้น และประหยัดงบประมาณในการพัฒนา 
     </p>
-    <p class="h6 text-center color-black fw-600 mt-6 ">
+    <p class="h6 text-center color-black fw-600 mt-6" data-aos="fade-up" data-aos-delay="300">
       ข้อดีของ <span class="color-01">Word press</span>
     </p>
-    <div class="ss-box xl ">
+    <div class="ss-box xl" data-aos="fade-up" data-aos-delay="450">
       <div class="grids jc-center">
         <div class="grid lg-25">
           <div class="ss-card ss-card-10 mt-2">
@@ -76,7 +71,7 @@
         </div>
       </div>
     </div>
-    <div class="btns pt-6 mt-2 jc-center animate-01" style="--delay:.9s;">
+    <div class="btns pt-6 mt-2 jc-center animate-01" style="--delay:.9s;" data-aos="fade-up" data-aos-delay="600">
       <?php
         $btnBubble = [
           'href' => 'web-gov-standard.php',

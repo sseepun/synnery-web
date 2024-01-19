@@ -20,7 +20,7 @@
   ]
 ?>
 
-<section data-section="2" class="section-01 section-padding">
+<section data-section="2" class="section-01 section-padding pt-0 pb-5">
   <div class="pattern style-47">
     <div class="wrapper" value=".5">
       <img src="public/img/patterns/07.png" alt="Hero">
@@ -32,13 +32,7 @@
     </div>
   </div>
   <div class="container">
-    <div class="text-center color-01 pos-relative" style="z-index:2;">
-      <p class="h3 lh-2xs fw-700">Full Services</p>
-      <h1 class="color-black mt-1 lh-2xs fw-700">
-        DIGITAL MARKETING
-      </h1>
-    </div>
-    <div class="grids pt-6 pos-relative" style="z-index:2;">
+    <div class="grids pos-relative" style="z-index:2;" data-aos="fade-up" data-aos-delay="0">
       <?php foreach($contents as $d){?>
         <div class="grid xl-25 lg-25 md-50 sm-50 xs-100">
           <a class="ss-card ss-card-05">
@@ -60,46 +54,48 @@
         </div>
       <?php }?>
     </div>
-    <div class="social-blocks">
-      <?php for($i=0; $i<5; $i++){?>
-        <div class="social-block">
-          <div class="ss-card ss-card-36">
-            <div class="icon">
-              <img class="inactive" src="public/img/icon/social-0<?= ($i%5+1) ?>.png" alt="Icon Inactive" />
-              <img class="active" src="public/img/icon/active-social-0<?= ($i%5+1) ?>.png" alt="Icon Active" />
-            </div>
+    <div class="social-blocks" data-aos="fade-up" data-aos-delay="150">
+      <div class="social-block">
+        <div class="ss-card ss-card-36">
+          <div class="icon">
+            <img class="inactive" src="public/img/icon/social-01.png" alt="Icon Inactive" />
+            <img class="active" src="public/img/icon/active-social-01.png" alt="Icon Active" />
           </div>
         </div>
-      <?php }?>
-    </div>
-  </div>
-</section>
-
-<section class="section-01 section-padding">   
-  <div class="container">
-    <div class="text-center color-white pos-relative" style="z-index:2;">
-      <h5 class="color-black fw-300 lh-xs">
-        วาง <span class="h3 color-01 fw-600 lh-xs">Action Plan</span> และ 
-        <span class="h3 color-01 fw-600 lh-xs">งบประมาณ</span>
-      </h5>  
-      <h5 class="color-black fw-300 lh-xs">
-        รวมถึง <span class="h3 color-01 fw-600 lh-xs">Financial Plan</span> และ 
-        <span class="h3 color-01 fw-600 lh-xs">Scenario Case</span> ต่างๆ
-      </h5>
-    </div>
-    <div class="grids jc-center pt-3 pos-relative" style="z-index:2;">
-      <div class="grid xl-80 sm-100">
-        <img class="img" src="public/img/content/01.png" alt="Image" />
+      </div>
+      <div class="social-block">
+        <div class="ss-card ss-card-36">
+          <div class="icon">
+            <img class="inactive" src="public/img/icon/social-02.png" alt="Icon Inactive" />
+            <img class="active" src="public/img/icon/active-social-02.png" alt="Icon Active" />
+          </div>
+        </div>
+      </div>
+      <div class="social-block">
+        <div class="ss-card ss-card-36">
+          <div class="icon tw">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="social-block">
+        <div class="ss-card ss-card-36">
+          <div class="icon">
+            <img class="inactive" src="public/img/icon/social-04.png" alt="Icon Inactive" />
+            <img class="active" src="public/img/icon/active-social-04.png" alt="Icon Active" />
+          </div>
+        </div>
+      </div>
+      <div class="social-block">
+        <div class="ss-card ss-card-36">
+          <div class="icon">
+            <img class="inactive" src="public/img/icon/social-05.png" alt="Icon Inactive" />
+            <img class="active" src="public/img/icon/active-social-05.png" alt="Icon Active" />
+          </div>
+        </div>
       </div>
     </div>
-    <div class="btns pt-6 mt-2 jc-center animate-01" style="--delay:.9s;">
-      <?php
-        $btnBubble = [
-          'href' => 'web-gov-standard.php',
-          'title' => 'Explore More',
-        ];
-        include('component/btn-bubble.php');
-      ?>
-    </div>
-  </div> 
+  </div>
 </section>
