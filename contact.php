@@ -187,9 +187,10 @@
               เขตบางกะปิ กทม. 10240
             </p>
             <p class="lg fw-600" data-aos="fade-up" data-aos-delay="450">
-              +662-318-4939, +668-6340-6895
+              <a href="tel:+6623184939">+662-318-4939</a>, 
+              <a href="tel:+66863406895">+668-6340-6895</a>
             </p>
-            <a class="p lg color-01 border-bottom-2 bcolor-01 fw-600" href="#" data-aos="fade-up" data-aos-delay="950">
+            <a class="p lg color-01 border-bottom-2 bcolor-01 fw-600" href="mailto:sales@synerry.com" data-aos="fade-up" data-aos-delay="950">
               sales@synerry.com
             </a>
           </div>

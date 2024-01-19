@@ -60,10 +60,6 @@
   .page-loader .loader-progress{left:20%; right:20%;}
 }
 .page-loader.fade-out .loader-progress{left:0; right:0; opacity:0;}
-
-
-
-
 @keyframes textLoading{
   0%{transform: translateY(5rem); opacity:0;}
   100%{transform:translateY(0); opacity:1}

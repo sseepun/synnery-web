@@ -188,7 +188,7 @@
           'iconInactive' => 'public/img/icon/service-09.png',
           'iconActive' => 'public/img/icon/service-active-09.png'
         ],
-      ];
+      ]
     ?>
     <div class="tab-wrapper" data-aos="fade-up" data-aos-delay="150">
       <?php foreach($mainTabs as $j=>$d){?>
@@ -246,7 +246,7 @@
                 <div class="ss-card ss-card-37">
                   <a class="ss-img square" href="<?= $d['link'] ?>">
                     <div class="img-bg" style="background-image:url('<?= $d['bg'] ?>');"></div>
-                    <div class="hover-container <?= $d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
+                      <div class="hover-container <?= $d['classer'] ?>" style="background:<?= $d['bgColor'] ?>;">
                       <div class="wrapper">
                         <div class="icon">
                           <img src="<?= $d['icon'] ?>" alt="Client" />

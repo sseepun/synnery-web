@@ -1,0 +1,8 @@
+#cm.cloud {
+    max-width: 50em;
+    overflow: hidden;
+    padding: 1.3em 2em;
+    text-align: center;
+    width: unset;
+    height: auto;
+}

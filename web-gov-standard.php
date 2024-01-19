@@ -655,7 +655,7 @@
                     </div>
                   </div>
                   <div class="btns animate-03" style="--delay:.75s;">
-                    <a class="btn btn-action btn-color-03 btn-fade-shine" href="https://www.thaidevelopmentexpo.com/" target="_blank">
+                    <a class="btn btn-action btn-color-03 btn-fade-shine" href="https://3dwalkthrough.jigsawgroups.work/?gssd_token=20f7e8979957ee322b914f099f9c21fb" target="_blank">
                       <div class="icon-container color-01">
                         <span class="p color-white fw-300">เว็บไซต์หลัก</span>
                         <em class="ml-2 fa-solid fa-play"></em>
@@ -730,7 +730,7 @@
                         สำนักงานคณะกรรมการกำกับและส่งเสริม<br>การประกอบธุรกิจประกันภัย (คปภ.)
                       </p>
                       <div class="btns">
-                        <a class="btn btn-action btn-color-03 btn-fade-shine" href="https://oic-web-uat.jigsawgroups.work/th" target="_blank">
+                        <a class="btn btn-action btn-color-03 btn-fade-shine" href="https://www.oic.or.th/" target="_blank">
                           <div class="icon-container color-01">
                             <span class="p color-white fw-300">เว็บไซต์สำนักงาน</span>
                             <em class="ml-2 fa-solid fa-play"></em>

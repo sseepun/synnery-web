@@ -32,3 +32,4 @@
 
 <script src="public/js/lazy-load.js"></script>
 <script src="public/lib/simplebar/simplebar.min.js"></script>
+<script src="public/js/loading.js"></script>
