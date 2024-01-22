@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -168,6 +168,26 @@
   </section>
 
   <section data-section="6" class="section-padding section-16">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/43.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-02">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/44.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-03">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/24.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-04">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/45.png" alt="Pattern">
+      </div>
+    </div>
     <div class="container">
       <h4 class="fw-700 color-p text-center" data-aos="fade-up" data-aos-delay="0">
         SHOWCASE
@@ -233,7 +253,7 @@
                         'delay' => '300',
                         'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
                       ],[
-                        'delay' => '300',
+                        'delay' => '450',
                         'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
                       ],
                     ]
@@ -252,11 +272,11 @@
                   <?php 
                     $liveStream02 = [
                       [
-                        'delay' => '450',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/gssd/15.jpg',
                       ], [
-                        'delay' => '600',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/gssd/15.jpg',
                       ], 
                     ]
                   ?>
@@ -293,7 +313,7 @@
                         'imgBg' => 'public/img/showcase/artist/01.jpg',
                       ],[
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/16.jpg',
                       ],[
                         'delay' => '600',
                         'imgBg' => 'public/img/showcase/artist/02.jpg',
@@ -314,11 +334,11 @@
                   <?php 
                     $artist02 = [
                       [
-                        'delay' => '450',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/gssd/17.jpg',
                       ], [
-                        'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/gssd/18.jpg',
                       ], 
                     ]
                   ?>
@@ -392,10 +412,10 @@
                         'imgBg' => 'public/img/showcase/gssd/07.jpg',
                       ],[
                         'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/08.jpg',
                       ],[
                         'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/09.jpg',
                       ],
                     ]
                   ?>
@@ -413,20 +433,20 @@
                   <?php 
                     $virtualWorld02 = [
                       [
-                        'delay' => '450',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/gssd/10.jpg',
                       ], [
-                        'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/gssd/11.jpg',
                       ],[
                         'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/12.jpg',
                       ],[
-                        'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '750',
+                        'imgBg' => 'public/img/showcase/gssd/13.jpg',
                       ],[
-                        'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '900',
+                        'imgBg' => 'public/img/showcase/gssd/14.jpg',
                       ], 
                     ]
                   ?>
@@ -461,19 +481,19 @@
                     $socialMedia01 = [
                       [
                         'delay' => '300',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/19.jpg',
                       ],[
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/20.jpg',
                       ],[
                         'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/21.jpg',
                       ],[
-                        'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '750',
+                        'imgBg' => 'public/img/showcase/gssd/22.jpg',
                       ],[
-                        'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '900',
+                        'imgBg' => 'public/img/showcase/gssd/23.jpg',
                       ]
                     ]
                   ?>
@@ -491,17 +511,17 @@
                   <?php 
                     $socialMedia02 = [
                       [
-                        'delay' => '450',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/gssd/24.jpg',
                       ], [
-                        'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/gssd/25.jpg',
                       ],[
                         'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/26.jpg',
                       ],[
-                        'delay' => '600',
-                        'imgBg' => 'public/img/showcase/artist/01.jpg',
+                        'delay' => '750',
+                        'imgBg' => 'public/img/showcase/gssd/27.jpg',
                       ]
                     ]
                   ?>
@@ -533,17 +553,17 @@
               <div class="grid lg-50 md-50 sm-100">
                 <div class="grids">
                   <?php 
-                    $socialMedia01 = [
+                    $onlineMarketing01 = [
                       [
                         'delay' => '300',
                         'imgBg' => 'public/img/showcase/online-marketing/01.jpg',
                       ],[
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/online-marketing/01.jpg',
+                        'imgBg' => 'public/img/showcase/gssd/28.jpg',
                       ],
                     ]
                   ?>
-                  <?php foreach($socialMedia01 as $d) {?>
+                  <?php foreach($onlineMarketing01 as $d) {?>
                     <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="<?= $d['delay'] ?>">
                       <div class="ss-card ss-card-44">
                         <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
@@ -555,10 +575,10 @@
               <div class="grid lg-50 md-50 sm-100">
                 <div class="grids">
                   <?php 
-                    $socialMedia02 = [
+                    $onlineMarketing02 = [
                       [
-                        'delay' => '450',
-                        'imgBg' => 'public/img/showcase/online-marketing/01.jpg',
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/gssd/29.jpg',
                       ]
                     ]
                   ?>
@@ -571,7 +591,7 @@
                       </p>
                     </div>
                   </div>
-                  <?php foreach($socialMedia02 as $d) {?>
+                  <?php foreach($onlineMarketing02 as $d) {?>
                     <div class="grid lg-100 md-100 sm-100" data-aos="fade-down" data-aos-delay="<?= $d['delay'] ?>">
                       <div class="ss-card ss-card-44">
                         <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
@@ -587,7 +607,7 @@
               ทำ KPI ได้มากกว่าข้อกำหนด 160%
             </h6>
             <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="300">
-              <img class="img" src="public/img/showcase/artist/01.jpg" alt="Image" />
+              <img class="img" src="public/img/showcase/gssd/30.jpg" alt="Image" />
             </div>        
           </div>
         </div>
@@ -597,6 +617,21 @@
 
   <!-- PR BKK -->
   <section data-section="6" class="section-padding section-16">
+    <div class="pattern style-05">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/46.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-06">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/24.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-07">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/45.png" alt="Pattern">
+      </div>
+    </div>
     <div class="container">
       <div class="box-content mt-2">
         <div class="pos-relative">
@@ -638,17 +673,23 @@
               <div class="grid lg-50 md-50 sm-100">
                 <div class="grids">
                   <?php 
-                    $liveStream01 = [
+                    $onlineMarketing03 = [
                       [
                         'delay' => '300',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/pr-bkk/02.jpg',
                       ],[
-                        'delay' => '300',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'delay' => '450',
+                        'imgBg' => 'public/img/showcase/pr-bkk/03.jpg',
+                      ],[
+                        'delay' => '650',
+                        'imgBg' => 'public/img/showcase/pr-bkk/04.jpg',
+                      ],[
+                        'delay' => '750',
+                        'imgBg' => 'public/img/showcase/pr-bkk/05.jpg',
                       ],
                     ]
                   ?>
-                  <?php foreach($liveStream01 as $d) {?>
+                  <?php foreach($onlineMarketing03 as $d) {?>
                     <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="<?= $d['delay'] ?>">
                       <div class="ss-card ss-card-44">
                         <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
@@ -660,13 +701,13 @@
               <div class="grid lg-50 md-50 sm-100">
                 <div class="grids">
                   <?php 
-                    $liveStream02 = [
+                    $onlineMarketing04 = [
                       [
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/pr-bkk/06.jpg',
                       ], [
                         'delay' => '600',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/pr-bkk/07.jpg',
                       ], 
                     ]
                   ?>
@@ -678,7 +719,7 @@
                       </p>
                     </div>
                   </div>
-                  <?php foreach($liveStream02 as $d) {?>
+                  <?php foreach($onlineMarketing04 as $d) {?>
                     <div class="grid lg-100 md-100 sm-100" data-aos="fade-down" data-aos-delay="<?= $d['delay'] ?>">
                       <div class="ss-card ss-card-44">
                         <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
@@ -697,17 +738,17 @@
               <div class="grid lg-50 md-50 sm-100">
                 <div class="grids">
                   <?php 
-                    $socialMedia01 = [
+                    $socialMedia03 = [
                       [
                         'delay' => '300',
-                        'imgBg' => 'public/img/showcase/online-marketing/01.jpg',
+                        'imgBg' => 'public/img/showcase/pr-bkk/08.jpg',
                       ],[
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/online-marketing/01.jpg',
+                        'imgBg' => 'public/img/showcase/pr-bkk/09.jpg',
                       ],
                     ]
                   ?>
-                  <?php foreach($socialMedia01 as $d) {?>
+                  <?php foreach($socialMedia03 as $d) {?>
                     <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="<?= $d['delay'] ?>">
                       <div class="ss-card ss-card-44">
                         <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
@@ -719,10 +760,10 @@
               <div class="grid lg-50 md-50 sm-100">
                 <div class="grids">
                   <?php 
-                    $socialMedia02 = [
+                    $socialMedia04 = [
                       [
-                        'delay' => '450',
-                        'imgBg' => 'public/img/showcase/online-marketing/01.jpg',
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/pr-bkk/10.jpg',
                       ]
                     ]
                   ?>
@@ -735,7 +776,7 @@
                       </p>
                     </div>
                   </div>
-                  <?php foreach($socialMedia02 as $d) {?>
+                  <?php foreach($socialMedia04 as $d) {?>
                     <div class="grid lg-100 md-100 sm-100" data-aos="fade-down" data-aos-delay="<?= $d['delay'] ?>">
                       <div class="ss-card ss-card-44">
                         <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
@@ -748,13 +789,19 @@
           </div>
           <div class="section-inner">
             <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="150">
-              ทำ KPI ได้มากกว่าข้อกำหนด 160%
+              ทำ KPI ได้มากกว่าข้อกำหนด 112%
             </h6>
+            <div class="ss-box lg" data-aos="fade-up" data-aos-delay="300">
+              <p class="fw-400 text-center ss-text-02">
+                โดยปกติทางหน่วยงานจะมีการตั้ง Target ไว้ให้ ซึ่งทุกครั้งทางบริษัทจะสามารถทำงานได้มากกว่า 
+                เป้าหมายที่ทางหน่วยงานกำหนด รวมถึงงานในครั้งนี้ที่สามารถทะลุเป้าหมายไปได้ถึง 112% 
+                และส่งมอบงานก่อนกำหนด 1 เดือน
+              </p>     
+            </div>
             <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="300">
-              <img class="img" src="public/img/showcase/artist/01.jpg" alt="Image" />
+              <img class="img" src="public/img/showcase/pr-bkk/11.jpg" alt="Image" />
             </div>        
           </div>
-          
         </div>
       </div>
     </div>
@@ -762,6 +809,21 @@
 
   <!-- SAT APP -->
   <section data-section="6" class="section-padding section-16">
+    <div class="pattern style-08">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/46.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-09">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/24.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-10">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/45.png" alt="Pattern">
+      </div>
+    </div>
     <div class="container">
       <div class="box-content mt-2">
         <div class="pos-relative">
@@ -772,7 +834,7 @@
             Web & Mobile Application
           </p>
           <div class="ss-box mt-2" data-aos="fade-up" data-aos-delay="300">
-            <p class="xxs text-center">
+            <p class="sm text-center ss-text-02">
               บริษัทได้มีการออกแบบ และพัฒนา Web& Mobile application ภายใต้ Big 
               Idea "START YOUR SPORT JOURNEY" พร้อมกับประชาสัมพันธ์ผู้ดาวน์โหลดแอพลิเคชัน 
               10,000 User Download เก็บสถานที่ออกกำลังกายในประเทศไทย 700 locations
@@ -781,20 +843,52 @@
           <div class="grids col-sm-reverse">
             <div class="grid lg-50 md-50 sm-100">
               <div class="grids">
-                <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="300">
-                  <div class="ss-card ss-card-44">
-                    <img class="img" src="public/img/showcase/sat-app/01.jpg" alt="Image" />
-                  </div>
+                <?php 
+                  $mobile01 = [
+                    [
+                      'delay' => '300',
+                      'imgBg' => 'public/img/showcase/sat-app/01.jpg',
+                    ],[
+                      'delay' => '450',
+                      'imgBg' => 'public/img/showcase/sat-app/03.jpg',
+                    ],[
+                      'delay' => '600',
+                      'imgBg' => 'public/img/showcase/sat-app/04.jpg',
+                    ],
+                  ]
+                ?>
+                <?php foreach($mobile01 as $d) {?>
+                  <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="<?= $d['delay'] ?>">
+                    <div class="ss-card ss-card-44">
+                      <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
+                    </div>
                 </div>
+                <?php } ?>
               </div>
             </div>
             <div class="grid lg-50 md-50 sm-100">
               <div class="grids">
-                <div class="grid lg-100 md-100 sm-100 sm-hidden" data-aos="fade-down" data-aos-delay="450">
-                  <div class="ss-card ss-card-44">
-                    <img class="img" src="public/img/showcase/sat-app/01.jpg" alt="Image" />
+                <?php 
+                  $mobile02 = [
+                    [
+                      'delay' => '300',
+                      'imgBg' => 'public/img/showcase/sat-app/02.jpg',
+                    ],[
+                      'delay' => '450',
+                      'imgBg' => 'public/img/showcase/sat-app/05.jpg',
+                    ],[
+                      'delay' => '600',
+                      'imgBg' => 'public/img/showcase/sat-app/06.jpg',
+                    ]
+                  ]
+                ?>
+                <?php foreach($mobile02 as $d) {?>
+                  <div class="grid lg-100 md-100 sm-100" data-aos="fade-down" data-aos-delay="<?= $d['delay'] ?>">
+                    <div class="ss-card ss-card-44">
+                      <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
+                    </div>
                   </div>
-                </div>
+                <?php } ?>
               </div>
             </div>
           </div>
@@ -809,10 +903,10 @@
                     $socialMedia01 = [
                       [
                         'delay' => '300',
-                        'imgBg' => 'public/img/showcase/online-marketing/01.jpg',
+                        'imgBg' => 'public/img/showcase/sat-app/07.jpg',
                       ],[
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/online-marketing/01.jpg',
+                        'imgBg' => 'public/img/showcase/sat-app/08.jpg',
                       ],
                     ]
                   ?>
@@ -830,17 +924,20 @@
                   <?php 
                     $socialMedia02 = [
                       [
+                        'delay' => '300',
+                        'imgBg' => 'public/img/showcase/sat-app/09.jpg',
+                      ], [
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/online-marketing/01.jpg',
+                        'imgBg' => 'public/img/showcase/sat-app/10.jpg',
                       ]
                     ]
                   ?>
                   <div class="grid lg-100 md-100 sm-100 mt-sm-unset" data-aos="fade-up" data-aos-delay="300">
                     <div class="ss-text">
                       <p class="fw-400 mt-5 mt-sm-unset">
-                        บริษัทมีการจัดกิจกรรม เพื่อสร้างการมีส่วนร่วมพร้อมประกาศผล
-                        ในวันงานไม่ว่าจะเป็นกิจกรรมประกวดคลิปวิดีโอ ประกวดคำขวัญ 
-                        และประกวดถ่ายภาพ
+                        บริษัทมีการบริหารจัดการ Social Media โดยเน้นไปที่ Facebook ของทางหน่วยงาน เพื่อประชาสัมพันธ์สร้าง
+                        การรับรู้ให้มีผู้ดาวน์โหลดแอพลิเคชัน 10,000 User
+                        Download
                       </p>
                     </div>
                   </div>
@@ -920,8 +1017,8 @@
         <div class="grid lg-2-3 md-50"></div>          
       </div>
       <div class="grids ss-mt" data-aos="fade-up" data-aos-delay="300">
-        <div class="grid lg-2-3 md-50 mt-0"></div>   
-        <div class="grid lg-1-3 md-50 sm-100 mt-0">
+        <div class="grid xl-2-3 lg-50 md-50 mt-0"></div>   
+        <div class="grid xl-1-3 lg-50 sm-100 mt-0">
           <p class="sm fw-400">
             Influencer / KOL จะมีผู้ติดตามหลาย Size แบรนด์ / 
             หน่วยงาน สามารถเลือกได้ตามความเหมาะสม   
@@ -1153,9 +1250,9 @@
             Facebook Live
           </p>
           <div class="ss-box lg mt-3" data-aos="fade-up" data-aos-delay="300">
-            <p class="text-center sm fw-300">
-            เปิดตัวเว็บไซต์ Virtual World ในรูปแบบ Live Streaming มีบุคลากรด้านเทคนิคและด้านที่เกี่ยวข้อง 
-            เพื่อดูแลระบบ Live Streaming ระบบการเข้าชม เข้าร่วม และถ่ายทอดกิจกรรมต่าง ๆ ผ่านทาง Facebook , Website
+            <p class="text-center ss-text-02 sm fw-300">
+              เปิดตัวเว็บไซต์ Virtual World ในรูปแบบ Live Streaming มีบุคลากรด้านเทคนิคและด้านที่เกี่ยวข้อง 
+              เพื่อดูแลระบบ Live Streaming ระบบการเข้าชม เข้าร่วม และถ่ายทอดกิจกรรมต่าง ๆ ผ่านทาง Facebook , Website
             </p>            
           </div>
           <div class="section-inner mt-3">
@@ -1174,13 +1271,13 @@
                     $marketing01 = [
                       [
                         'delay' => '300',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/creative-activities/01.jpg',
                       ],[
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/creative-activities/02.jpg',
                       ],[
                         'delay' => '600',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/creative-activities/03.jpg',
                       ],
                     ]
                   ?>
@@ -1199,10 +1296,10 @@
                     $marketing02 = [
                       [
                         'delay' => '300',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/creative-activities/04.jpg',
                       ], [
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/creative-activities/05.jpg',
                       ], 
                     ]
                   ?>
@@ -1290,7 +1387,7 @@
               Infographic
             </h6>
             <div class="ss-box md mt-2" data-aos="fade-up" data-aos-delay="300">
-              <p class="text-center sm fw-400">
+              <p class="text-center ss-text-02 sm fw-400">
                 บริษัทรับดูแลบริหารจัดการ Infographic สื่อสารข้อมูลให้เข้าใจง่าย ด้วยทีมงานมืออาชีพ
                 ช่วยคุณบรรลุเป้าหมายทางธุรกิจ เป็นรูปแบบการสื่อสารข้อมูลในรูปแบบที่เข้าใจง่ายและน่าสนใจ 
                 โดยใช้ภาพประกอบและกราฟิกต่างๆ เพื่อนำเสนอข้อมูลเชิงตัวเลขหรือข้อมูลเชิงลึกต่างๆ ได้อย่างมีประสิทธิภาพ
@@ -1351,13 +1448,13 @@
                     $marketing01 = [
                       [
                         'delay' => '300',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/digital-graphic/08.jpg',
                       ],[
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/digital-graphic/09.jpg',
                       ],[
                         'delay' => '600',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/digital-graphic/10.jpg',
                       ],
                     ]
                   ?>
@@ -1376,13 +1473,13 @@
                     $marketing02 = [
                       [
                         'delay' => '300',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/digital-graphic/11.jpg',
                       ],[
                         'delay' => '450',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/digital-graphic/12.jpg',
                       ],[
                         'delay' => '600',
-                        'imgBg' => 'public/img/showcase/live-steaming/01.jpg',
+                        'imgBg' => 'public/img/showcase/digital-graphic/13.jpg',
                       ], 
                     ]
                   ?>
@@ -1402,7 +1499,7 @@
               Video
             </h6>
             <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="300">
-              <img class="img" src="public/img/showcase/facebook-live/01.jpg" alt="Image" />
+              <img class="img" src="public/img/showcase/digital-graphic/14.jpg" alt="Image" />
             </div>        
           </div>
         </div>

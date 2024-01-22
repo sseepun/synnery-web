@@ -1,7 +1,7 @@
 <div class="topnav-dropdown-footer">
   <div class="container">
     <div class="grids">
-      <div class="grid lg-60 mt-0">
+      <div class="grid xl-60 lg-70 mt-0">
         <div class="contacts">
           <div class="contact-item">
             <div class="contact-inner">
@@ -22,7 +22,7 @@
               </div>
             </div>
             <div class="text">
-              <p class="title">eMail</p>      
+              <p class="title">Email</p>      
               <a href="mailto:sales@synerry.com" class="desc">sales@synerry.com</a>
             </div>
           </div>
@@ -39,7 +39,7 @@
           </div>
         </div>            
       </div>      
-      <div class="grid lg-40 mt-0">
+      <div class="grid xl-40 lg-30 mt-0">
         <div class="socials">
           <div class="social-wrapper">
             <div class="social-inner">

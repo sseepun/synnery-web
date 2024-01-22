@@ -565,7 +565,7 @@ nav.topnav-style-02 .menu-container.from-left .menu:hover > *:first-child::befor
 nav.topnav-style-02 .menu-container.from-left .menu.active > *:first-child::before{
   left:unset; right:-.3125rem; width:calc(100% + .625rem);
 }
-nav.topnav-style-02 .menu > *:first-child .chev{font-size:.6875rem; margin:0 0 .1875rem .375rem;}
+nav.topnav-style-02 .menu > *:first-child .chev{font-size:.6875rem; margin:0 0 .0125rem .375rem;}
 nav.topnav-style-02 .btns{position:relative; margin-left:.5rem;}
 nav.topnav-style-02 .btn-bubble__container .button{
   min-width:8.25rem; padding:.5625rem 1rem .5rem 1rem; font-size:.875rem;
@@ -575,21 +575,26 @@ nav.topnav-style-02 .btns::before{
 
 nav.topnav-style-02 + .topnav-style-02-spacer{display:block; width:100%; height:5.625rem;}
 
-@media screen and (min-width:1199.98px){
+@media screen and (min-width:991.98px){
   nav.topnav-style-02 .show-tablet{display:none!important;}
 }
 @media screen and (max-width:1199.98px){
   nav.topnav-style-02 .menu::before{left:.625rem;}
   nav.topnav-style-02 .menu:hover::before{opacity:1; left:.0625rem;}
   nav.topnav-style-02 .menu > *:first-child{padding:0 1rem;}
-  nav.topnav-style-02 .hide-tablet{display:none!important;}
+ 
   nav.topnav-style-02 + .topnav-style-02-spacer{height:3.75rem;}
+
+  nav.topnav-style-02 .top-panel::before{left:-2rem;}
+  nav.topnav-style-02 .logo-wrapper::before{right:-2.875rem; width:25vw;}
+  nav.topnav-style-02 .logo > img {height:1.75rem;}
 }
 @media screen and (max-width:991.98px){
   nav.topnav-style-02 .logo-wrapper::before{
     right:-3rem; width:500px; clip-path:polygon(0 0, calc(100% - 4rem) 0, 100% 100%, 0 100%);
   }
   nav.topnav-style-02 .logo > img{height:2.25rem;}
+   nav.topnav-style-02 .hide-tablet{display:none!important;}
 }
 @media screen and (min-width:992px){
   nav.topnav-style-02.sticky{transform:translateY(-1.875rem);}
@@ -639,8 +644,6 @@ nav.topnav-style-02 .topnav-dropdown.active{
   -webkit-animation: slideBg 1.1s forwards;
   animation: slideBg 1.1s forwards; 
 }
-
-
 nav.topnav-style-02 .topnav-dropdown > .scroll-wrapper{
   position:relative; width:100%; height:100%; max-height:100%; overflow:hidden;
 }
@@ -916,7 +919,6 @@ nav.topnav-style-02 .topnav-dropdown .dropdown-wrapper.fade-in{
   display:block; position:absolute; opacity:0; transform:translateY(1.5rem);
   pointer-events:none;
 }
-/* nav.topnav-style-02 .topnav-dropdown .dropdown-wrapper.active{opacity:1;} */
 nav.topnav-style-02 .block-right .card-submenu{
   position:relative; display:block; background:#f2f2f2; padding:.875rem; 
   box-shadow: 5px 9px #d9d9d9; transition:all .25s;
@@ -994,7 +996,7 @@ nav.topnav-style-02 .dropdown-filter{
 nav.topnav-style-02 .topnav-dropdown.active + .dropdown-filter{opacity:1; pointer-events:auto;}
 
 @media screen and (max-width:1199.98px){
-  nav.topnav-style-02 .topnav-dropdown,
+  /* nav.topnav-style-02 .topnav-dropdown, */
   nav.topnav-style-02 .topnav-dropdown.active + .dropdown-filter{display:none;}
 }
 @media screen and (max-width:991.98px){

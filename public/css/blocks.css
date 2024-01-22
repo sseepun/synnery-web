@@ -1671,6 +1671,7 @@
 
 
 /* Section 16 */
+.section-16{position:relative; overflow:hidden;}
 .section-16 .box-content{position:relative; padding:2.5rem; z-index:1;}
 .section-16.style-02{background:#ecf2f3;}
 .section-16 .box-content::before{
@@ -1682,13 +1683,36 @@
 .section-16 .section-inner{margin-top:3rem;}
 .section-16 .ss-text{width:100%; max-width:25rem;}
 .section-16 .sm-show{display:none;}
+.section-16 > .pattern.style-01{position:absolute; top:0; left:auto; right:0; z-index:1;}
+.section-16 > .pattern.style-01 > .wrapper img{display:block; width:14rem; height:auto;}
+.section-16 > .pattern.style-02{position:absolute; top:-5rem; left:auto; right:0rem; z-index:1;}
+.section-16 > .pattern.style-02 > .wrapper img{display:block; width:30rem; height:auto;}
+.section-16 > .pattern.style-03{position:absolute; top:auto; left:-1rem; bottom:6rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-03 > .wrapper img{display:block; width:4.5rem; height:auto;}
+.section-16 > .pattern.style-04{position:absolute; top:auto; left:2.5rem; bottom:0rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-04 > .wrapper img{display:block; width:10rem; height:auto;}
+.section-16 > .pattern.style-05{position:absolute; top:2rem; left:auto; bottom:auto; right:8rem; z-index:1;}
+.section-16 > .pattern.style-05 > .wrapper img{display:block; width:17rem; height:auto;}
+.section-16 > .pattern.style-06{position:absolute; top:auto; left:-1rem; bottom:6rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-06 > .wrapper img{display:block; width:4.5rem; height:auto;}
+.section-16 > .pattern.style-07{position:absolute; top:auto; left:2.5rem; bottom:0rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-07 > .wrapper img{display:block; width:10rem; height:auto;}
+.section-16 > .pattern.style-08{position:absolute; top:2rem; left:auto; bottom:auto; right:8rem; z-index:1;}
+.section-16 > .pattern.style-08 > .wrapper img{display:block; width:17rem; height:auto;}
+.section-16 > .pattern.style-09{position:absolute; top:auto; left:-1rem; bottom:6rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-09 > .wrapper img{display:block; width:4.5rem; height:auto;}
+.section-16 > .pattern.style-10{position:absolute; top:auto; left:2.5rem; bottom:0rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-10 > .wrapper img{display:block; width:10rem; height:auto;}
 @media screen and (max-width:1199.98px){
   .section-16 .box-content::before{max-width:45rem;}
   .section-16 .ss-text{width:100%; max-width:20rem;}
+  .section-16 .ss-text-02{width:100%; max-width:32rem; margin:0 auto;}
 }
 @media screen and (max-width:991.98px){
   .section-16 .box-content::before{max-width:35rem;}
   .section-16 .ss-text{width:100%; max-width:15rem;}
+  .section-16 > .pattern{display:none;}
+ 
 }
 @media screen and (max-width:767.98px){
   .section-16 .box-content::before{max-width:25rem;}
@@ -1698,6 +1722,7 @@
   .section-16 .mt-sm-unset{margin-top:unset!important;}
   .section-16 .sm-show{display:block!important;}
   .section-16 .sm-hidden{display:none!important;}
+  .section-16 .ss-text-02{max-width:23rem;}
 }
 
 
@@ -1966,12 +1991,11 @@
   .section-24 .clients > .client{width:calc(100% / 6);}
 }
 @media screen and (max-width:991.98px){
-  .section-24 .clients > .client{width:calc(100% / 5);}
+  .section-24 .clients > .client{width:calc(100% / 4);}
   .section-24 > .pattern{display:none;}
 }
 @media screen and (max-width:767.98px){
   .section-24 .clients{margin:2.5rem -.03125rem 0 -.03125rem;}
-  .section-24 .clients > .client{width:calc(100% / 4);}
 }
 @media screen and (max-width:575.98px){
   .section-24 .clients > .client{width:calc(100% / 3);}
@@ -2148,6 +2172,9 @@
 .section-29 .contents .content-center > .text-container{
   position:absolute; bottom:0; left:2.75rem; width:calc(100% + 15rem);
 }
+@media screen and (max-width:991.98px){
+  .section-29 .pattern{display:none;}
+}
 @media screen and (max-width:767.98px){
   .section-29 .contents .content-center{height:27.5rem;}
   .section-29 .contents .content-center > .text-container{width:calc(100% + 10rem); left:-1rem;}
@@ -2167,7 +2194,7 @@
 
 
 /* Section 30 */
-.section-30{position:relative;} 
+.section-30{position:relative; overflow:hidden;} 
 .section-30 .container{z-index:3;}
 .section-30 > .pattern.style-01{position:absolute; top:-4rem; left:-16rem; right:auto; z-index:0;}
 .section-30 > .pattern.style-01 > .wrapper img{display:block; width:35rem; height:auto;}

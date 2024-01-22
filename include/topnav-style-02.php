@@ -546,7 +546,7 @@
                   <em class="fa-regular fa-envelope"></em>
                 </div>
                 <div class="text">
-                  <p class="title">eMail</p>      
+                  <p class="title">Email</p>      
                   <a href="mailto:sales@synerry.com" class="desc">sales@synerry.com</a>
                 </div>
               </div>
