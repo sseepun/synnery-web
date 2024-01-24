@@ -289,14 +289,16 @@ $(function () {
     var topnavStyle02 = $('nav.topnav-style-02'),
         topnavMenuContainer02 = topnavStyle02.find('.menu-container'),
         topnavMenu02 = topnavStyle02.find('.menu-container > .menu'),
+        topnavMenuNotsub02 = topnavStyle02.find('.menu-container > .menu:not(.menu.sub-menu)'),
+        topnavSubMenu02 = topnavStyle02.find('.menu-container > .menu.sub-menu'),
         topnavDropdown02 = topnavStyle02.find('.topnav-dropdown'),
-        topnavDropdownWrapper02 = topnavDropdown02.find('.dropdown-wrapper'),
-        topnavDropdownSub02 = topnavDropdownWrapper02.find('.submenu-block'),
-        topnavFilter02 = topnavStyle02.find('.dropdown-filter');
+        topnavDropdownDivs02 = topnavDropdown02.find('.dropdown-wrapper'),
+        topnavDropdownServices = topnavDropdown02.find('.dropdown-wrapper.services .submenu-blocks'),
+        topnavDropdownServicesSub = topnavDropdown02.find('.dropdown-wrapper.services .submenu-block'),
+        topnavDropdownCompany = topnavStyle02.find('.menu.company'),
+        topnavDropdownContainer = topnavStyle02.find('.dropdown-container'),
+        topnavDropdownNotsub = topnavStyle02.find('.menu.not-sub');
     if(topnavStyle02.length){
-        let dropdownEnter = false;
-        let dropdownTimeout;
-
         topnavMenu02.mouseenter(function(e){
             let self = $(this);
             if(!self.hasClass('active')){
@@ -312,58 +314,92 @@ $(function () {
             }
             topnavMenu02.removeClass('menu-active');
             self.addClass('menu-active');
-
-            topnavDropdown02.removeClass('active');
-            if(self.hasClass('sub-menu')){
-                let dropdownId = self.data('dropdown');
-                topnavDropdownWrapper02.removeClass('active');
-                let temp = topnavDropdownWrapper02.filter(`[data-dropdownlist="${dropdownId}"]`);
-                if(temp.length){
-                    if(dropdownTimeout) clearTimeout(dropdownTimeout);
-                    topnavDropdown02.addClass('active');
-                    topnavDropdown02.find('.scroll-wrapper').css('height', `${temp.height()}px`);
-                    temp.addClass('active');
-                }
-            }
-        });
-        topnavMenu02.mouseleave(function(e){
-            if(dropdownTimeout) clearTimeout(dropdownTimeout);
-            dropdownTimeout = setTimeout(function(){
-                if(!dropdownEnter){
-                    topnavMenu02.removeClass('menu-active');
-                    topnavDropdown02.removeClass('active');
-                }
-            }, 100);
+            topnavDropdownContainer.removeClass('active');
         });
    
-        topnavDropdown02.mouseenter(function(e){
-            dropdownEnter = true;
-        });
-        topnavDropdown02.mouseleave(function(e){
-            dropdownEnter = false;
-        });
-        topnavDropdownSub02.mouseenter(function(e){
-            let self = $(this);
-            let parent = self.parent();
-            if(parent.length){
-                let lastIndex = topnavDropdownSub02.filter('.menu-active').index();
-                let nowIndex = self.index();
-                if(nowIndex > lastIndex){
-                    parent.removeClass('from-left');
-                    parent.addClass('from-right');
-                }else{
-                    parent.removeClass('from-right');
-                    parent.addClass('from-left');
+        topnavMenu02.find('> *:first-child').mouseenter(function (e) {
+            let parent = $(this).parent(),
+                dIndex = parent.data('dropdown');
+            if (dIndex) {
+                e.preventDefault();
+                if (parent.hasClass('active-dropdown')) {
+                    topnavMenu02.removeClass('active-dropdown');
+                    topnavDropdown02.removeClass('active');
+                    scopeDiv.removeClass('topnav-dropdown-opened');
+                } else {
+                    topnavMenu02.removeClass('active-dropdown');
+                    topnavDropdown02.addClass('active');
+                    scopeDiv.addClass('topnav-dropdown-opened');
+
+                    let prevActive = topnavDropdownDivs02.filter('.active'),
+                        nextActive = topnavDropdownDivs02.filter('[data-dropdownlist="' + dIndex + '"]');
+                    if (nextActive.length && !nextActive.hasClass('active')) {
+                        if (prevActive.length) {
+                            setTimeout(function () {
+                            topnavDropdownDivs02.removeClass('active');
+                                prevActive.removeClass('active');
+                                nextActive.addClass('active');
+                            },600);
+                        } else {
+                            nextActive.addClass('active');
+                        }
+                    }
                 }
-                topnavDropdownSub02.removeClass('menu-active');
-                self.addClass('menu-active');
             }
         });
-
-        topnavFilter02.mouseenter(function(e){
-            dropdownEnter = false;
-            topnavMenu02.removeClass('menu-active');
+        topnavMenuNotsub02.mouseenter(function(){
+            if (topnavDropdown02.hasClass('active')) {
+                topnavSubMenu02.removeClass('active-dropdown');
+                topnavDropdown02.removeClass('active');
+                topnavDropdownContainer.removeClass('active');
+            }
+        });
+        topnavSubMenu02.mouseenter(function(){
+            if (topnavDropdown02.hasClass('active')) {
+                topnavDropdown02.removeClass('active');
+                topnavDropdownContainer.removeClass('active');
+                setTimeout(function(){
+                    topnavDropdown02.addClass('active')
+                }, 600);
+            }
+        });
+    
+        topnavDropdownNotsub.mouseenter(function (e){
+            scopeDiv.addClass('topnav-dropdown-opened');
+            topnavDropdownContainer.removeClass('active');
+        });
+        topnavDropdownNotsub.mouseleave(function (e){
+            scopeDiv.removeClass('topnav-dropdown-opened');
+        });
+        topnavDropdownCompany.mouseenter(function (e){
+            scopeDiv.addClass('topnav-dropdown-opened');
+            topnavDropdownContainer.addClass('active');
+            topnavDropdown02.addClass('active');
+            setTimeout(function(){
+                topnavDropdownDivs02.removeClass('active');
+            }, 600);
+        });
+        topnavDropdownCompany.mouseleave(function (e){
+            scopeDiv.removeClass('topnav-dropdown-opened');
+            topnavDropdownContainer.removeClass('active');
             topnavDropdown02.removeClass('active');
+        });
+        topnavDropdownServicesSub.mouseenter(function(e){
+            let self = $(this);
+            
+            if(!self.hasClass('active')){
+                let lastIndex = topnavDropdownServicesSub.filter('.menu-active').index();
+                let nowIndex = self.index();
+                if(nowIndex > lastIndex){
+                    topnavDropdownServices.removeClass('from-left');
+                    topnavDropdownServices.addClass('from-right');
+                }else{
+                    topnavDropdownServices.removeClass('from-right');
+                    topnavDropdownServices.addClass('from-left');
+                }
+                topnavDropdownServicesSub.removeClass('menu-active');
+                self.addClass('menu-active');
+            }
         });
         
         let _sidenav = $('nav.sidenav'),
@@ -376,6 +412,14 @@ $(function () {
             var self = $(this);
             self.toggleClass('active');
             self.prev().slideToggle();
+        });
+
+        $('.dropdown-filter').mouseenter(function (e) {
+            e.preventDefault();
+            topnavDropdown02.removeClass('active');
+            topnavSubMenu02.removeClass('active-dropdown');
+            scopeDiv.removeClass('topnav-dropdown-opened');
+            topnavDropdownContainer.removeClass('active');
         });
     }
 

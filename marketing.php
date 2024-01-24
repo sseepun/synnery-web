@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -1449,21 +1449,29 @@
                       [
                         'delay' => '300',
                         'imgBg' => 'public/img/showcase/digital-graphic/08.jpg',
+                        'href' => 'https://www.youtube.com/watch?v=wOl1jLpVNbU'
                       ],[
                         'delay' => '450',
                         'imgBg' => 'public/img/showcase/digital-graphic/09.jpg',
+                        'href' => 'https://www.youtube.com/watch?v=wOl1jLpVNbU'
                       ],[
                         'delay' => '600',
                         'imgBg' => 'public/img/showcase/digital-graphic/10.jpg',
+                        'href' => 'https://www.youtube.com/watch?v=wOl1jLpVNbU'
                       ],
                     ]
                   ?>
                   <?php foreach($marketing01 as $d) {?>
                     <div class="grid lg-100 md-100 sm-100" data-aos="fade-up" data-aos-delay="<?= $d['delay'] ?>">
-                      <div class="ss-card ss-card-44">
+                      <a href="<?= $d['href'] ?>" class="ss-card ss-card-44" data-fancybox>
                         <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
-                      </div>
-                  </div>
+                        <div class="btn-play">
+                          <div class="wrapper">
+                            <em class="fas fa-play"></em>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
                   <?php } ?>
                 </div>
               </div>
@@ -1474,20 +1482,28 @@
                       [
                         'delay' => '300',
                         'imgBg' => 'public/img/showcase/digital-graphic/11.jpg',
+                        'href' => 'https://www.youtube.com/watch?v=wOl1jLpVNbU'
                       ],[
                         'delay' => '450',
                         'imgBg' => 'public/img/showcase/digital-graphic/12.jpg',
+                        'href' => 'https://www.youtube.com/watch?v=wOl1jLpVNbU'
                       ],[
                         'delay' => '600',
                         'imgBg' => 'public/img/showcase/digital-graphic/13.jpg',
+                        'href' => 'https://www.youtube.com/watch?v=wOl1jLpVNbU'
                       ], 
                     ]
                   ?>
                   <?php foreach($marketing02 as $d) {?>
                     <div class="grid lg-100 md-100 sm-100" data-aos="fade-down" data-aos-delay="<?= $d['delay'] ?>">
-                      <div class="ss-card ss-card-44">
+                      <a href="<?= $d['href'] ?>" class="ss-card ss-card-44" data-fancybox>
                         <img class="img" src="<?= $d['imgBg'] ?>" alt="Image" />
-                      </div>
+                        <div class="btn-play">
+                          <div class="wrapper">
+                            <em class="fas fa-play"></em>
+                          </div>
+                        </div>
+                      </a>
                     </div>
                   <?php } ?>
                 </div>
@@ -1498,11 +1514,81 @@
             <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="150">
               Video
             </h6>
-            <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://www.youtube.com/watch?v=wOl1jLpVNbU" class="ss-card ss-card-44 mt-3" data-fancybox data-aos="fade-up" data-aos-delay="300">
               <img class="img" src="public/img/showcase/digital-graphic/14.jpg" alt="Image" />
-            </div>        
+              <div class="btn-play">
+                <div class="wrapper">
+                  <em class="fas fa-play"></em>
+                </div>
+              </div>
+            </a>        
           </div>
         </div>
+      </div>
+    </div>                
+  </section>
+
+  <section class="section-padding section-16">
+    <div class="pattern style-01">
+      <div class="wrapper" value="5">
+        <img src="public/img/patterns/26.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="container">
+      <h4 class="fw-700 color-p text-center" data-aos="fade-up" data-aos-delay="0">
+        MARKETING TOOL & REPORT
+      </h4> 
+      <div class="box-content mt-5">
+        <div class="pos-relative">
+          <div class="section-inner">
+            <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="150">
+              Google Analytic
+            </h6>
+            <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="300">
+              <img class="img" src="public/img/showcase/marketing-report/01.jpg" alt="Image" />
+            </div>        
+          </div>      
+          <div class="section-inner">
+            <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="450">
+              Similar
+            </h6>
+            <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="600">
+              <img class="img" src="public/img/showcase/marketing-report/01.jpg" alt="Image" />
+            </div>        
+          </div>  
+          <div class="section-inner">
+            <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="750">
+              Agency Analytic
+            </h6>
+            <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="900">
+              <img class="img" src="public/img/showcase/marketing-report/01.jpg" alt="Image" />
+            </div>        
+          </div> 
+          <div class="section-inner">
+            <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="750">
+              Social Listening
+            </h6>
+            <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="900">
+              <img class="img" src="public/img/showcase/marketing-report/01.jpg" alt="Image" />
+            </div>        
+          </div>
+          <div class="section-inner">
+            <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="750">
+              Semrush
+            </h6>
+            <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="900">
+              <img class="img" src="public/img/showcase/marketing-report/01.jpg" alt="Image" />
+            </div>        
+          </div>
+          <div class="section-inner">
+            <h6 class="text-center fw-400" data-aos="fade-up" data-aos-delay="750">
+              Ahref
+            </h6>
+            <div class="ss-card ss-card-44 mt-3" data-aos="fade-up" data-aos-delay="900">
+              <img class="img" src="public/img/showcase/marketing-report/01.jpg" alt="Image" />
+            </div>        
+          </div>
+        </div>            
       </div>
     </div>                
   </section>

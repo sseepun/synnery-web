@@ -39,74 +39,84 @@
               $menu = [
                 [
                   'title' => 'Home',
-                  'href' => 'index.php'
-                ],[
+                  'href' => 'index.php',
+                  'static' => true,
+                ], [
                   'title' => 'Services',
-                  'href' => 'javascript:void(0)'
-                ],[
+                  'href' => 'javascript:void(0)',
+                  'subMenu' => true,
+                ], [
                   'title' => 'Products',
-                  'href' => 'javascript:void(0)'
-                ],[
+                  'href' => 'javascript:void(0)',
+                  'subMenu' => true,
+                ], [
                   'title' => 'Success stories',
-                  'href' => 'javascript:void(0)'
-                ],[
+                  'href' => 'javascript:void(0)',
+                  'subMenu' => true,
+                ], [
                   'title' => 'Company',
-                  'href' => 'javascript:void(0)'
-                ],[
+                  'href' => 'javascript:void(0)',
+                  'dropdownMenu' => true,
+                ], [
                   'title' => 'Client',
-                  'href' => '#'
-                ]
+                  'href' => '#',
+                  'static' => true,
+                ],
               ]
             ?>
-
             <?php foreach($menu as $i=>$d) {?>
-              <div class="menu <?= $i == 1 || $i == 2 || $i == 3? 'sub-menu': ''?> <?=  $i == 4 ? 'company': ''?> <?=  $i == 0 || $i == 5 ? 'not-sub': ''?>
-                <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
-                <?php if($i == 1 || $i == 2 || $i == 3){ ?>
-                  data-dropdown="<?php echo $i ?>"
-                 <?php }?>
-                >
+              <div 
+                class="menu 
+                  <?= isset($d['subMenu']) && $d['subMenu']? 'sub-menu': ''?> 
+                  <?= isset($d['dropdownMenu']) && $d['dropdownMenu']? 'has-dropdown': ''?> 
+                  <?= isset($d['static']) && $d['static']? 'not-sub': ''?>
+                  <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
+                <?php if(isset($d['subMenu']) && $d['subMenu']){?>data-dropdown="<?php echo $i ?>"<?php }?>
+              >
                 <a href="<?= $d['href'] ?>">
                   <?= $d['title'] ?> 
-                  <?php if($i == 1 || $i == 2 || $i == 3 || $i == 4){ ?>
+                  <?php if((isset($d['subMenu']) && $d['subMenu']) || (isset($d['dropdownMenu']) && $d['dropdownMenu'])){?>
                     <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
-                  <?php } ?>
+                  <?php }?>
                 </a>
-                <?php if($i == 4){ ?>
-                  <?php include('data/topnav-style-02/menu/company/company.php'); ?>
-                  <div class="dropdown-container">
-                    <?php foreach($companyMenu as $d) {?>
-                      <a href="#" class="dropdown-menu">
-                        <div class="wrapper">
-                          <div class="icon">
-                           <?= $d['icon'] ?>
+                <?php if(isset($d['dropdownMenu']) && $d['dropdownMenu']){?>
+                  <?php if($d['title'] == 'Company'){?>
+                    <?php include('data/topnav-style-02/menu/company/company.php'); ?>
+                    <div class="dropdown-container" data-dropdownlist="4">
+                      <?php foreach($companyMenu as $d) {?>
+                        <a href="#" class="dropdown-menu">
+                          <div class="wrapper">
+                            <div class="icon">
+                            <?= $d['icon'] ?>
+                            </div>
+                            <div class="text">
+                              <p class="title"><?= $d['title'] ?></p>
+                            </div>
                           </div>
-                          <div class="text">
-                            <p class="title"><?= $d['title'] ?></p>
-                          </div>
-                        </div>
-                      </a>
-                    <?php } ?>
-                  </div>
-                <?php } ?>
+                        </a>
+                      <?php } ?>
+                    </div>
+                  <?php }?>
+                <?php }?>
               </div>
-            <?php } ?>
-             <div class="btns" style="z-index:95;">
-              <div class="btn-bubble__container">
-                <a href="contact.php" class="button btn-bubble toggle-contact" data-contact="1">
-                  Contact Us
-                </a>
-                <span class="btn-bubble__effect-container">
-                  <span class="circle top-left"></span>
-                  <span class="circle top-left"></span>
-                  <span class="circle top-left"></span>
-                  <span class="button effect-button"></span>
-                  <span class="circle bottom-right"></span>
-                  <span class="circle bottom-right"></span>
-                  <span class="circle bottom-right"></span>
-                </span>
-              </div>
-             </div>
+            <?php }?>
+
+            <div class="btns" style="z-index:95;">
+            <div class="btn-bubble__container">
+              <a href="contact.php" class="button btn-bubble toggle-contact" data-contact="1">
+                Contact Us
+              </a>
+              <span class="btn-bubble__effect-container">
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="circle top-left"></span>
+                <span class="button effect-button"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+                <span class="circle bottom-right"></span>
+              </span>
+            </div>
+            </div>
           </div>
           
           <div class="option-menu d-none">
@@ -127,7 +137,8 @@
     
     <div class="topnav-dropdown">
       <div class="scroll-wrapper">
-        <div>
+
+          <!-- Services -->
           <div class="dropdown-wrapper services" data-dropdownlist="1">
             <div class="container">
               <?php include('data/topnav-style-02/menu/services/full-digital.php'); ?>
@@ -266,7 +277,7 @@
             <?php include('include/topnav-dropdown-footer.php'); ?>
           </div>
 
-          <!-- Success stories -->
+          <!-- Success Stories -->
           <div class="dropdown-wrapper success-stories" data-dropdownlist="3">
             <div class="container">
               <div class="submenu-blocks menu-container">
@@ -335,9 +346,9 @@
             <!-- Dropdown Footer -->
             <?php include('include/topnav-dropdown-footer.php'); ?>
           </div>
-        </div>
+
       </div>
-      </div>
+    </div>
     <div class="dropdown-filter"></div>
   </div>
 </nav>
