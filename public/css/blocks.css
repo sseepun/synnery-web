@@ -1703,6 +1703,32 @@
 .section-16 > .pattern.style-09 > .wrapper img{display:block; width:4.5rem; height:auto;}
 .section-16 > .pattern.style-10{position:absolute; top:auto; left:2.5rem; bottom:0rem; right:auto; z-index:1;}
 .section-16 > .pattern.style-10 > .wrapper img{display:block; width:10rem; height:auto;}
+.section-16 > .pattern.style-11{position:absolute; top:4.5rem; left:-.5rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-11 > .wrapper img{display:block; width:16rem; height:auto;}
+.section-16 > .pattern.style-12{position:absolute; top:5rem; bottom:auto; transform:translateX(-50%); left:50%; right:auto; z-index:1;}
+.section-16 > .pattern.style-12 > .wrapper img{display:block; width:8rem; height:auto;}
+.section-16 > .pattern.style-13{position:absolute; top:-14rem; bottom:auto; left:auto; right:0; z-index:1;}
+.section-16 > .pattern.style-13 > .wrapper img{display:block; width:12rem; height:auto;}
+.section-16 > .pattern.style-14{position:absolute; top:20rem; bottom:auto; left:auto; right:5rem; z-index:1;}
+.section-16 > .pattern.style-14 > .wrapper img{display:block; width:1.5rem; height:auto;}
+.section-16 > .pattern.style-15{position:absolute; top:60rem; left:-1rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-15 > .wrapper img{display:block; width:4rem; height:auto;}
+.section-16 > .pattern.style-16{position:absolute; bottom:40rem; left:3rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-16 > .wrapper img{display:block; width:1.5rem; height:auto;}
+.section-16 > .pattern.style-17{position:absolute; bottom:14rem; left:8rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-17 > .wrapper img{display:block; width:10rem; height:auto;}
+.section-16 > .pattern.style-18{position:absolute; bottom:-20rem; left:auto; right:0rem; z-index:1;}
+.section-16 > .pattern.style-18 > .wrapper img{display:block; width:20rem; height:auto;}
+.section-16 > .pattern.style-19{position:absolute; top:3.75rem; bottom:auto; left:0; right:auto; z-index:1;}
+.section-16 > .pattern.style-19 > .wrapper img{display:block; width:25rem; height:auto;}
+.section-16 > .pattern.style-20{position:absolute; top:-7.5rem; bottom:auto; left:0; right:auto; z-index:1;}
+.section-16 > .pattern.style-20 > .wrapper img{display:block; width:7rem; height:auto;}
+.section-16 > .pattern.style-21{position:absolute; top:auto; bottom:-10rem; left:auto; right:0; z-index:1;}
+.section-16 > .pattern.style-21 > .wrapper img{display:block; width:25rem; height:auto;}
+.section-16 > .pattern.style-22{position:absolute; top:-18rem; bottom:auto; left:-2.5rem; right:auto; z-index:1;}
+.section-16 > .pattern.style-22 > .wrapper img{display:block; width:25rem; height:auto;}
+.section-16 > .pattern.style-23{position:absolute; top:auto; bottom:-13rem; left:auto; right:0; z-index:1;}
+.section-16 > .pattern.style-23 > .wrapper img{display:block; width:25rem; height:auto;}
 @media screen and (max-width:1199.98px){
   .section-16 .box-content::before{max-width:45rem;}
   .section-16 .ss-text{width:100%; max-width:20rem;}
@@ -2105,21 +2131,25 @@
 
 
 /* Section 28 */
-.section-28{background:#f5f5f5;}
+.section-28{position:relative; background:#f5f5f5;}
+.section-28 .container{z-index:3;}
 .section-28 .hexagon-container{
-  position:relative; scale:1.15; z-index:2; height:100%; max-height:100%;
+  position:relative; scale:1.15; z-index:3; height:100%; max-height:100%;
 }
 .section-28 .ss-box{padding-top:2rem;}
 .section-28 .hexagon-wrapper{width:100%;}
 .section-28 .hexagon{
-  width:11rem; position:absolute; z-index:2;
+  width:11rem; position:absolute; z-index:3;
   -webkit-clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
   clip-path:polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 }
 .section-28 .hexagon:nth-child(1){top:-1rem; right:0;}
 .section-28 .hexagon:nth-child(2){top:4.125rem; right:8.75rem;}
+.section-28 > .pattern.style-01{position:absolute; top:-4rem; left:-3rem; right:auto; z-index:1;}
+.section-28 > .pattern.style-01 > .wrapper img{display:block; width:20rem; height:auto;}
 @media screen and (max-width:991.98px){
   .section-28 .hexagon-container{position:absolute; right:0;}
+  .section-28 .pattern{display:none;}
 }
 @media screen and (max-width:767.98px){
   .section-28 .hexagon-container{right:-5rem; top:-4.5rem;}

@@ -5,12 +5,12 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1" class="tg-rev-slider">
-    <div id="rev_slider_1" class="rev_slider fullwidthabanner" data-version="5.4.1">
+  <section data-section="1" class="tg-rev-slider" style="z-index:2;">
+    <div id="rev_slider_1" class="rev_slider fullwidthabanner"  data-version="5.4.1">
       <ul>
         <?php for($i=0; $i<18; $i++){?>
           <li class="tp-revslider-slidesli" data-transition="random-premium" data-masterspeed="1000" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut">
@@ -130,6 +130,11 @@
   <?php }?>
 
   <section class="section-padding section-28">
+    <div class="pattern style-01">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/54.png" alt="Pattern">
+      </div>
+    </div>
     <div class="container">
       <h3 class="text-center color-p fw-700" data-aos="fade-up" data-aos-delay="150">
         FULL SERVICES DIGITAL MARKETING
@@ -1234,6 +1239,16 @@
   </section>
 
   <section data-section="6" class="section-padding section-16">
+    <div class="pattern style-22">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/60.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-23">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/56.png" alt="Pattern">
+      </div>
+    </div>
     <div class="container">
       <h4 class="fw-700 color-p text-center" data-aos="fade-up" data-aos-delay="0">
         CREATIVE ACTIVITIES
@@ -1320,6 +1335,21 @@
   </section>
 
   <section class="section-padding section-16 style-02">
+    <div class="pattern style-19">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/57.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-20">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/58.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-21">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/59.png" alt="Pattern">
+      </div>
+    </div>
     <div class="container">
       <h4 class="fw-700 color-p text-center" data-aos="fade-up" data-aos-delay="0">
         DIGITAL & GRAPHIC DESIGN
@@ -1529,9 +1559,44 @@
   </section>
 
   <section class="section-padding section-16">
-    <div class="pattern style-01">
-      <div class="wrapper" value="5">
-        <img src="public/img/patterns/26.png" alt="Pattern">
+    <div class="pattern style-11">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/47.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-12">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/48.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-13">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/50.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-14">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/51.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-15">
+      <div class="wrapper" value="-.5"">
+        <img src="public/img/patterns/52.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-16">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/51.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-17">
+      <div class="wrapper" value="-.5">
+        <img src="public/img/patterns/50.png" alt="Pattern">
+      </div>
+    </div>
+    <div class="pattern style-18">
+      <div class="wrapper" value=".5">
+        <img src="public/img/patterns/53.png" alt="Pattern">
       </div>
     </div>
     <div class="container">

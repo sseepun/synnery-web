@@ -319,6 +319,12 @@ $(function () {
                 topnavDropdown02.addClass('not-full-width');
             }
 
+            if(self.hasClass('not-sub')){
+                topnavDropdown02.css('display', 'none');
+            }else{
+                topnavDropdown02.css('display', 'block');
+            }
+
             topnavMenu02.removeClass('menu-active');
             self.addClass('menu-active');
             topnavDropdown02.removeClass('active');
