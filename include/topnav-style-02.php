@@ -40,64 +40,50 @@
                 [
                   'title' => 'Home',
                   'href' => 'index.php',
+                  'classer' => 'home',
                   'static' => true,
                 ], [
                   'title' => 'Services',
                   'href' => 'javascript:void(0)',
+                  'classer' => '',
                   'subMenu' => true,
                 ], [
                   'title' => 'Products',
                   'href' => 'javascript:void(0)',
+                  'classer' => '',
                   'subMenu' => true,
                 ], [
                   'title' => 'Success stories',
                   'href' => 'javascript:void(0)',
+                  'classer' => '',
                   'subMenu' => true,
                 ], [
                   'title' => 'Company',
                   'href' => 'javascript:void(0)',
-                  'dropdownMenu' => true,
+                  'classer' => 'company',
+                  'subMenu' => true,
                 ], [
                   'title' => 'Client',
                   'href' => '#',
+                  'classer' => '',
                   'static' => true,
                 ],
               ]
             ?>
             <?php foreach($menu as $i=>$d) {?>
               <div 
-                class="menu 
-                  <?= isset($d['subMenu']) && $d['subMenu']? 'sub-menu': ''?> 
-                  <?= isset($d['dropdownMenu']) && $d['dropdownMenu']? 'has-dropdown': ''?> 
+                class="menu <?= $d['classer'] ?>
+                  <?= isset($d['subMenu']) && $d['subMenu']? 'sub-menu': ''?>  
                   <?= isset($d['static']) && $d['static']? 'not-sub': ''?>
                   <?php if(isset($topnavActive) && $topnavActive==$i+1) echo 'active'; ?>" 
-                <?php if(isset($d['subMenu']) && $d['subMenu']){?>data-dropdown="<?php echo $i ?>"<?php }?>
+                  <?php if(isset($d['subMenu']) && $d['subMenu']){?>data-dropdown="<?php echo $i ?>"<?php }?>
               >
                 <a href="<?= $d['href'] ?>">
                   <?= $d['title'] ?> 
-                  <?php if((isset($d['subMenu']) && $d['subMenu']) || (isset($d['dropdownMenu']) && $d['dropdownMenu'])){?>
+                  <?php if((isset($d['subMenu']) && $d['subMenu'])){?>
                     <div class="chev"><em class="fa-solid fa-chevron-down"></em></div>
                   <?php }?>
                 </a>
-                <?php if(isset($d['dropdownMenu']) && $d['dropdownMenu']){?>
-                  <?php if($d['title'] == 'Company'){?>
-                    <?php include('data/topnav-style-02/menu/company/company.php'); ?>
-                    <div class="dropdown-container" data-dropdownlist="4">
-                      <?php foreach($companyMenu as $d) {?>
-                        <a href="#" class="dropdown-menu">
-                          <div class="wrapper">
-                            <div class="icon">
-                            <?= $d['icon'] ?>
-                            </div>
-                            <div class="text">
-                              <p class="title"><?= $d['title'] ?></p>
-                            </div>
-                          </div>
-                        </a>
-                      <?php } ?>
-                    </div>
-                  <?php }?>
-                <?php }?>
               </div>
             <?php }?>
 
@@ -137,7 +123,7 @@
     
     <div class="topnav-dropdown">
       <div class="scroll-wrapper">
-
+                        
           <!-- Services -->
           <div class="dropdown-wrapper services" data-dropdownlist="1">
             <div class="container">
@@ -347,8 +333,24 @@
             <?php include('include/topnav-dropdown-footer.php'); ?>
           </div>
 
+          <!-- Company -->
+          <div class="dropdown-wrapper company" data-dropdownlist="4">
+            <?php include('data/topnav-style-02/menu/company/company.php'); ?>    
+              <?php foreach($companyMenu as $d) {?>
+                <a href="#" class="dropdown-menu">
+                  <div class="wrapper">
+                    <div class="icon">
+                    <?= $d['icon'] ?>
+                    </div>
+                    <div class="text">
+                      <p class="title"><?= $d['title'] ?></p>
+                    </div>
+                  </div>
+                </a>
+              <?php } ?>
+          </div>
+        </div>
       </div>
-    </div>
     <div class="dropdown-filter"></div>
   </div>
 </nav>

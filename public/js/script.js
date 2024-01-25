@@ -289,6 +289,7 @@ $(function () {
     var topnavStyle02 = $('nav.topnav-style-02'),
         topnavMenuContainer02 = topnavStyle02.find('.menu-container'),
         topnavMenu02 = topnavStyle02.find('.menu-container > .menu'),
+        topnavMenuCompany = topnavStyle02.find('.menu-container > .menu.company'),
         topnavDropdown02 = topnavStyle02.find('.topnav-dropdown'),
         topnavDropdownWrapper02 = topnavDropdown02.find('.dropdown-wrapper'),
         topnavDropdownSub02 = topnavDropdownWrapper02.find('.submenu-block'),
@@ -296,10 +297,10 @@ $(function () {
     if(topnavStyle02.length){
         let dropdownEnter = false;
         let dropdownTimeout;
-
+       
         topnavMenu02.mouseenter(function(e){
             let self = $(this);
-            if(!self.hasClass('active')){
+            if(!self.hasClass('.menu-active')){
                 let lastIndex = topnavMenu02.filter('.menu-active').index();
                 let nowIndex = self.index();
                 if(nowIndex > lastIndex){
@@ -310,10 +311,19 @@ $(function () {
                     topnavMenuContainer02.addClass('from-left');
                 }
             }
+
+            if(!self.hasClass('company') && self.hasClass('sub-menu')){
+                topnavDropdown02.removeClass('not-full-width');
+                topnavDropdown02.css('left', '0px');
+            }else{
+                topnavDropdown02.addClass('not-full-width');
+            }
+
             topnavMenu02.removeClass('menu-active');
             self.addClass('menu-active');
-
             topnavDropdown02.removeClass('active');
+            topnavDropdown02.removeClass('slide-back');
+
             if(self.hasClass('sub-menu')){
                 let dropdownId = self.data('dropdown');
                 topnavDropdownWrapper02.removeClass('active');
@@ -325,6 +335,7 @@ $(function () {
                     temp.addClass('active');
                 }
             }
+    
         });
         topnavMenu02.mouseleave(function(e){
             if(dropdownTimeout) clearTimeout(dropdownTimeout);
@@ -339,9 +350,11 @@ $(function () {
         topnavDropdown02.mouseenter(function(e){
             dropdownEnter = true;
         });
+        
         topnavDropdown02.mouseleave(function(e){
             dropdownEnter = false;
         });
+
         topnavDropdownSub02.mouseenter(function(e){
             let self = $(this);
             let parent = self.parent();
@@ -359,11 +372,26 @@ $(function () {
                 self.addClass('menu-active');
             }
         });
+       
+        topnavMenuCompany.mouseenter(function(e){
+            let dropdownPosition = topnavMenuCompany.offset().left;
+            topnavDropdown02.addClass('not-full-width');
+            topnavDropdown02.css('left', `${dropdownPosition}px`);
+            console.log(dropdownPosition);
+        });
+
+        topnavStyle02.find('.top-panel').mouseenter(function(e){
+            dropdownEnter = false;
+            topnavMenu02.removeClass('menu-active');
+            topnavDropdown02.removeClass('active');
+            topnavDropdown02.addClass('slide-back'); 
+        });
 
         topnavFilter02.mouseenter(function(e){
             dropdownEnter = false;
             topnavMenu02.removeClass('menu-active');
             topnavDropdown02.removeClass('active');
+            topnavDropdown02.addClass('slide-back');
         });
         
         let _sidenav = $('nav.sidenav'),
