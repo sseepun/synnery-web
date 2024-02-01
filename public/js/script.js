@@ -1449,6 +1449,25 @@ $(function () {
     }
 
 
+      // Section 40
+      var section40 = $('.section-40');
+      if (section40.length) {
+          section40.find('.section-content.swiper').each(function () {
+              var self = $(this);
+              new Swiper(self.find('.swiper-container-01'), {
+                  loop: true,
+                  speed: 900,
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                  navigation: {
+                      nextEl: self.find('.arrow-prev'),
+                      prevEl: self.find('.arrow-next'),
+                  },
+              });
+          });
+      }
+
+
     // Button to Div
     $('.btn-to-div').click(function (e) {
         e.preventDefault();
