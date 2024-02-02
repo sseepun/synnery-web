@@ -55,26 +55,37 @@
     </div>
   </section> 
 
-  <section class="section-padding section-40">
-    <div class="grids">
-      <div class="grid lg-20 md-20">
-        <div class="tab-container">
-          <p class="text-center">Tab Container</p>
+  <section class="section-40">
+    <div class="grids no-gap">
+      <div class="grid lg-20 md-20 sm-100">
+        <div class="tab-container sticky">
+          <a href="#fullServices">Full Services</a>
+          <a href="#bigIdea">Big Idea</a>
+          <a href="#design">Design</a>
+          <a href="#content">Content</a>
+          <a href="#webMobile">Web/Mobile</a>
+          <a href="#influencer">Influencer</a>
+          <a href="#socialNetwork">Social Network</a>
+          <a href="#marTech">MarTech (AI)</a>
+          <a href="#outOfhome">Out of Home</a>
+          <a href="#tvRadio">TV/Radio</a>
+          <a href="#prMarketing">PR Marketing</a>
         </div>
       </div>
-      <div class="grid lg-80 md-80">
-        <div class="section-content">
+      <div class="grid lg-80 md-80 sm-100">
+        <div id="fullServices" class="section-content">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
               <p>FULL SERVICES Online to Offline Integrated Solution</p>
             </div>  
-            <div class="body size-01">
-              <div class="img-bg" style="background-image:url('public/img/bg/103.jpg');"></div>
+            <div class="body">
+              <img class="img" src="public/img/bg/103.jpg" alt="Background Image" />
             </div>
           </div>
         </div>  
-        <div class="section-content swiper">
+          <!-- Big Idea -->
+        <div id="bigIdea" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -84,10 +95,19 @@
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="img-bg" style="background-image:url('public/img/bg/104.jpg');"></div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="img-bg" style="background-image:url('public/img/bg/105.jpg');"></div>
+                    <div class="ss-img no-hover">
+                      <div class="img-bg" style="background-image:url('public/img/bg/104.jpg');"></div>
+                    </div>
+                    <div class="text-container">
+                      <p class="title">Branding/Creative/Strategy/Campaign</p>
+                      <p class="desc">
+                        เพราะการทำ "Branding" คือ "การสร้างภาพจำ" 
+                        ดังนั้นทุกอย่างที่ทำต้อง แตกต่าง อย่างโดดเด่น และโดนใจ กลุ่มเป้าหมาย อย่างต่อเนื่อง 
+                        เราจึงต้องคิด วางแผน วางคอนเซ็ปต์ วางกลยุทธ์ ทุกช่องทางการสื่อสาร การเลือกใชิสื่อ 
+                        การคิดกิจกรรมเชิงรุก เชิงรับ การสร้างการจดจำ และการทำให้กลุ่มเป้าหมายมีส่วนร่วม 
+                        ด้วย กลยุทธ์ และแคมเปญ การตลาดที่โดดเด่น โดนใจ กลุ่มเป้าหมาย
+                      </p>  
+                    </div>
                   </div>
                 </div>
               </div>
@@ -104,7 +124,8 @@
             </div>
           </div>
         </div>  
-        <div class="section-content swiper">
+        <!-- Design -->
+        <div id="design" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -114,10 +135,18 @@
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <div class="img-bg" style="background-image:url('public/img/bg/105.jpg');"></div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="img-bg" style="background-image:url('public/img/bg/104.jpg');"></div>
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="title">Poster/Banner/Info Graphics/Leaflet, Brochure</p>
+                        <p class="desc">
+                          เรามีทีมงาน Graphics Designer ระดับตัว Top หลายคนให้คุณเลือก ไม่ว่าจะแนวสวยงาม 
+                          แนว Creative แนวล้ำๆ หรือแนวสนุกสนาน ตามความต้องการบน Corporate Identity (CI) ที่กำหนดไว้ 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/105.jpg');"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -133,7 +162,484 @@
               </div>
             </div>
           </div>
-        </div>    
+        </div>   
+        <!-- Content -->
+        <div id="content" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>Content</p>
+            </div>  
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="title">Poster/Banner/Info Graphics/Leaflet, Brochure</p>
+                        <p class="desc">
+                          เรามีทีมงาน Graphics Designer ระดับตัว Top หลายคนให้คุณเลือก ไม่ว่าจะแนวสวยงาม 
+                          แนว Creative แนวล้ำๆ หรือแนวสนุกสนาน ตามความต้องการบน Corporate Identity (CI) ที่กำหนดไว้ 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/106.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!-- Web & Mobile -->
+        <div id="webMobile" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>Web/Mobile</p>
+            </div>  
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="desc">
+                          ออกแบบและพัฒนาเว็บไซต์ เว็บแอปพลิเคชัน โมบายแอปพลิเคชั่น 
+                          ขนาดใหญ่สำหรับหน่วยงานหรือองค์กรขนาดใหญ่ที่ต้องการสร้างภาพลักษณ์ 
+                          ผ่านเว็บไซต์หรือต้องการพัฒนาระบบ  เว็บแอปพลิเคชัน โมบายแอปพลิเคชั่น 
+                          ที่แตกต่าง อย่างโดดเด่นกว่าคู่แข่ง 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/109.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!-- Influencer -->
+        <div id="influencer" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>Influencer</p>
+            </div>  
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="desc">
+                          เรามีเครื่องมือในการติดตาม ตรวจสอบควานิยม Influencer ระดับโลก ที่จะทำให้สามารถเลือก 
+                          Influencer, Actor, Celebrity, MC และอื่นๆ ได้ตรงจุด และตอบโจทย์ กิจกรรมด้านการตลาด 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/110.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!-- Social Network -->
+        <div id="socialNetwork" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>Social Network</p>
+            </div>  
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="desc">
+                          เรามีทีมงานที่มีประสบการณ์และความเชี่ยวชาญในการดูแล และบริหารจัดการ สื่อออนไลน์แบบทุกช่องทาง ไม่ว่าจะเป็น Facebook, X 
+                          (Twitter), YouTube, Line, IG, Instagram, TikTok และอื่นๆ  ตามโจทย์ ตาม KPI หรือเป้าหมายต่างๆ ของโครงการ 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/111.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!-- MarTech (AI) -->      
+        <div id="marTech" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>MarTech (AI)</p>
+            </div>  
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="ss-img no-hover">
+                      <div class="img-bg" style="background-image:url('public/img/bg/112.jpg');"></div>
+                    </div>
+                    <div class="text-container">
+                      <p class="title">Social listening</p>
+                      <p class="desc">
+                        เครื่องมือในการ Scan ข้อมูลจากทุกสื่อออนไลน์ตาม Keyword พร้อม Data Analytic ต่างๆ 
+                        ที่จะทำให้เรารู้ว่าโลกออนไลน์พูดถึง Brand เราว่ายังไง
+                      </p>  
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+         <!-- Out of Home -->
+         <div id="outOfhome" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>Out Of Home</p>
+            </div>  
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="desc">
+                          เมื่อเราคิด Concept วาง Content และกลยุทธ์แล้ว กรณีที่สินค้าหรือบริการนั้นๆ 
+                          เหมาะที่จะทำการโฆษณาประชาสัมพันธ์ผ่านสือ Out Of Home (OOH) เราสามารถวางแผน 
+                          ปรับแต่ง เลือกประเภทสื่อ ช่องทาง ตำแหน่ง จำนวนกลุ่มเป้าหมายที่อยากให้เห็น (Eyeball) 
+                          จาก Billboard/LED/BTS/MRT/Bus/Airport/7-Eleven และอื่นๆ ได้ตามงบประมาณ 
+                          และโจทย์ หรือ KPI ที่ตั้งไว้
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/113.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+         <!-- TV/Radio -->
+         <div id="tvRadio" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>TV/Radio</p>
+            </div>  
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="desc">
+                          เราสามารถสร้างสรรค Media Content ทั้งของทีวีหรือวิทยุ ในรูปแบบต่างๆ 
+                          พร้อมทั้งติดต่อ เลือกรายการ เลือกช่วงเวลา ดำเนินการในการนำไปโฆษณาตามสื่อทีวีชั้นน้ำต่างๆ 
+                          เช่น Work point  หรือสื่อวิทยุต่างๆ ตามงบประมาณ และ KPI ที่กำหนด
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/114.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+         <!-- PR Marketing -->
+         <div id="prMarketing" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>PR Marketing</p>
+            </div>  
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="desc">
+                          เราสร้าง Content เขียนข่าว และนำไปโฆษราประชาสัมพันธ์ 
+                          ยังชื่อชั้นนำต่างๆ ทั้งออนไลน์ และออฟไลน์
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/115.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!-- Online to Offline Integrated Activity -->
+        <div id="prMarketing" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>Online to Offline Integrated Activity</p>
+            </div>  
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="desc">
+                          กรณีที่ลูกค้าต้องการสร้างการรับรู้ และการมีส่วนร่วม เพื่อสร้างการจดจำ 
+                          หรือการตอกย้ำ เรามีทีมงานที่จะคอยคิด Marketing Campaign และกิจกรรมต่าๆง 
+                          ทั้ง Online / Offline ดูแลทุกอย่างเช่น รางวัล การนำเทคโนโลยีมาช่วยเสริมเช่น 
+                          AR,VR, QR หรือ Interactive Midea ต่างๆ
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/116.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!-- Showcase - PR BKK -->
+        <div id="prBkk" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>Showcase</p>
+            </div> 
+            <div class="sub-header">
+                <p>PR BKK</p>
+            </div> 
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container bg-white">
+                        <p class="title">Landing Page</p>
+                        <p class="desc">
+                          เว็บไซต์เป็นอีกช่องทางหนึ่งในการประชาสัมพันธ์ข้อมูลต่างๆ
+                          ไปยังกลุ่มเป้าหมาย ซึ่งทางบริษัทได้มีการใช้ช่องทางนี้เช่นกัน 
+                          เพื่อให้ประชาชนกดไปยังเมนูอื่นๆเพื่อเสพข้อมูลเพิ่มเติมจากที่ตั้งใจไว้ 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/117.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- Showcase - GSSD -->
+        <div id="gssd" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>Showcase</p>
+            </div>  
+            <div class="sub-header">
+              <p>GSSD</p>
+            </div>
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container bg-white">
+                        <p class="title">Design Website</p>
+                        <p class="desc">
+                          กระทรวงการต่างประเทศจะเป็นเจ้าภาพจัดงาน Global South-South Development Expo 2022 
+                          (GSSD Expo 2022) กรมความร่วมมือระหว่างประเทศ กระทรวงการต่างประเทศ เป็นหน่วยงานหลักในการดําเนินจัดงาน 
+                          โดยที่ทางบริษัทได้จัดทําและออกแบบเว็บไซต์นิทรรศการออนไลน์ของไทย เพื่อเป็นแหล่งข้อมูลสำหีับใช้ประชาสัมพันธ์
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/118.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <!-- Showcase - SAT APP -->
+        <div id="satApp" class="section-content swiper">
+          <div class="wrapper">
+            <div class="header">
+              <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
+              <p>Showcase</p>
+            </div> 
+            <div class="sub-header">
+              <p>SAT APP</p>
+            </div> 
+            <div class="body">
+              <div class="swiper-container-01">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <!-- <div class="text-container bg-white">
+                        <p class="title">Web & Mobile Application</p>
+                        <p class="desc">
+                          บริษัทได้มีการออกแบบ และพัฒนา Web& Mobile application ภายใต้ Big Idea "START YOUR SPORT JOURNEY" พร้อมกับประชาสัมพันธ์ผู้ดาวน์โหลดแอพลิเคชัน 10,000 User Download เก็บสถานที่ออกกำลังกายในประเทศไทย 700 locations
+                        </p>  
+                      </div> -->
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/119.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="arrows">
+                <div class="wrapper">
+                  <div class="arrow arrow-prev">
+                    <em class="fa-solid fa-chevron-left"></em>
+                  </div>
+                  <div class="arrow arrow-next">
+                    <em class="fa-solid fa-chevron-right"></em>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
     </div>          
   </section>

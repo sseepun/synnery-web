@@ -2568,11 +2568,22 @@
 
 
 /* Section 40 */
-.section-40 .tab-container{background:yellow;}
-.section-40 .section-content .header{position:relative; padding:.625rem;}
+.section-40 .tab-container{
+  top:0; padding:1.5rem;
+}
+.section-40 .tab-container > *{display:block;}
+.section-40 .section-content .header{position:relative; padding:.75rem 1rem;}
 .section-40 .section-content .header > *{
   position:relative; font-family:'Poppins', sans-serif;
   font-weight:600; color:#ffffff;
+}
+.section-40 .section-content .sub-header{
+  padding:.75rem 1rem;
+  background:linear-gradient(90deg, rgba(225,225,225,1) 70%, rgba(255,255,255,1) 100%, rgba(225,225,225,1) 100%, rgba(0,0,0,1) 100%, rgba(28,8,21,1) 100%, rgba(31,27,9,1) 100%, rgba(255,223,0,1) 100%, rgba(0,0,0,1) 100%);
+}
+.section-40 .section-content .sub-header > *{
+  position:relative; font-family:'Poppins', sans-serif;
+  font-weight:600; 
 }
 .section-40 .section-content .header > .img-bg{
   position:absolute; top:0; right:0; bottom:0; left:0; background-position:center; 
@@ -2580,15 +2591,26 @@
 }
 .section-40 .section-content .body{position:relative; overflow:hidden;}
 .section-40 .section-content .body.size-01{height:40rem;}
-.section-40 .section-content .body .img-bg{
-  position:absolute; top:0; right:0; bottom:0; left:0; background-position:center;
-   background-repeat:no-repeat; background-size:cover;
+.section-40 .section-content .body .swiper-slide{position:relative;}
+.section-40 .section-content .body .swiper-slide .wrapper{
+  display:flex; flex-direction:column;
 }
-.section-40 .section-content .body .swiper-slide{position:relative; height:35rem;}
-.section-40 .section-content .body .swiper-slide .img-bg{
-  position:absolute; top:0; right:0; bottom:0; left:0;
-  background-position:center; background-repeat:no-repeat; background-size:cover;
+.section-40 .section-content .body .swiper-slide .img-bg{background-position:top!important;}
+.section-40 .section-content .body .swiper-slide .img-bg.center{background-position:center!important;}
+.section-40 .section-content .body .text-container{
+  position:absolute; top:0; right:0;  width:100%;
+  z-index:2; max-width:26rem; padding:1.5rem 2rem 2rem 2rem;
+  -webkit-clip-path:polygon(polygon(0 0, 100% 0%, 100% 100%, 12% 100%, 0 80%));
+  clip-path:polygon(0 0, 100% 0%, 100% 100%, 12% 100%, 0 80%);
+  background: linear-gradient(90deg, rgba(225,225,225,1) 70%, rgba(255,255,255,1) 100%, rgba(225,225,225,1) 100%, rgba(0,0,0,1) 100%, rgba(28,8,21,1) 100%, rgba(31,27,9,1) 100%, rgba(255,223,0,1) 100%, rgba(0,0,0,1) 100%);
 }
+.section-40 .section-content .body .text-container.not-polygon{
+  max-width:100%; clip-path:polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 100%);
+  -webkit-clip-path:polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 100%);
+  padding:1rem .75rem 1rem .75rem; position:relative;
+}
+.section-40 .section-content .body .text-container .title{font-size:.9375rem; font-weight:500;}
+.section-40 .section-content .body .text-container .desc{font-size:.875rem;}
 .section-40 .section-content .arrows{
   position:absolute; top:0; right:0; bottom:0; left:0; 
   pointer-events:none; z-index:2;
@@ -2598,7 +2620,33 @@
 }
 .section-40 .section-content .arrows .wrapper .arrow{
   color:#ffffff; pointer-events:auto; background:#000000; padding:.75rem;
+  transition:background .25s; cursor:pointer;
 }
+.section-40 .section-content .arrows .wrapper .arrow:hover{background:#ec2c23;}
+@media screen and (max-width:767.98px){
+  .section-40 .tab-container{position:relative!important;}
+  .section-40 .section-content .body .text-container{
+    position:relative; top:unset; right:unset; max-width:100%;
+    clip-path:polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 100%);
+    -webkit-clip-path:polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0 100%);
+  }
+  .section-40 .section-content .body .text-container{padding:1.5rem 1.5rem 1.5rem 1.5rem;}
+  .section-40 .section-content .body .swiper-slide .wrapper{flex-direction:column-reverse;}
+  .section-40 .section-content .arrows .wrapper{align-items:start;}
+  .section-40 .section-content .arrows{top:30%;}
+}
+@media screen and (max-width:490.98px){
+  .section-40 .section-content .arrows{top:25%;}
+}
+@media screen and (max-width:390.98px){
+  .section-40 .section-content .arrows{top:21%;}
+  .section-40 .section-content .arrows .wrapper .arrow{padding:.5rem;}
+  .section-40 .section-content .arrows .wrapper .arrow em{font-size:.75rem;}
+}
+@media screen and (max-width:375.98px){
+  .section-40 .section-content .arrows{top:23%;}
+}
+
 
 /* Main Tab Container */
 .main-tabs-container .tab-wrapper{

@@ -1458,7 +1458,7 @@ $(function () {
                   loop: true,
                   speed: 900,
                   slidesPerView: 1,
-                  spaceBetween: 0,
+                  spaceBetween: 1,
                   navigation: {
                       nextEl: self.find('.arrow-prev'),
                       prevEl: self.find('.arrow-next'),
@@ -1466,6 +1466,22 @@ $(function () {
               });
           });
       }
+
+
+    // Sticky Element
+    $(document).ready(function() {
+        var stickyTop = $('.sticky').offset().top;
+      
+        $(window).scroll(function() {
+          var windowTop = $(window).scrollTop();
+      
+          if (stickyTop < windowTop) {
+            $('.sticky').css('position', 'fixed');
+          } else {
+            $('.sticky').css('position', 'relative');
+          }
+        });
+    });
 
 
     // Button to Div
