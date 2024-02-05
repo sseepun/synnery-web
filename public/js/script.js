@@ -1450,7 +1450,10 @@ $(function () {
 
 
       // Section 40
-      var section40 = $('.section-40');
+      var section40 = $('.section-40'),
+          tabLinks  = $('.section-40 .tab-container .tab-link'),
+          headerMenu = $('.section-40 .tab-container .header-menu'),
+          subLinks  = $('.section-40 .tab-container .sub-link');
       if (section40.length) {
           section40.find('.section-content.swiper').each(function () {
               var self = $(this);
@@ -1465,20 +1468,40 @@ $(function () {
                   },
               });
           });
+
+          tabLinks.click(function(e){
+            let self = $(this);
+            if(!self.hasClass('active')){
+                tabLinks.removeClass('active');
+                self.addClass('active');
+            }
+            headerMenu.removeClass('header-active');
+        });
+
+        subLinks.click(function(e){
+            headerMenu.addClass('header-active');
+        });
+
+        headerMenu.click(function(e){
+            headerMenu.find('+ .sub-link').addClass('active');
+        });
       }
 
 
     // Sticky Element
     $(document).ready(function() {
         var stickyTop = $('.sticky').offset().top;
+        var sticky = $('.sticky');
       
         $(window).scroll(function() {
           var windowTop = $(window).scrollTop();
       
           if (stickyTop < windowTop) {
             $('.sticky').css('position', 'fixed');
+            sticky.addClass('sticky');
           } else {
             $('.sticky').css('position', 'relative');
+            sticky.removeClass('sticky');
           }
         });
     });

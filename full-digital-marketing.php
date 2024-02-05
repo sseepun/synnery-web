@@ -55,24 +55,115 @@
     </div>
   </section> 
 
+  <?php
+    $tabLinks = [
+      [
+        'title' => 'Full Services ',
+        'href' => '#fullServices',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'Big Idea',
+        'href' => '#bigIdea',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'Design',
+        'href' => '#design',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'Content',
+        'href' => '#content',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'Web/Mobile',
+        'href' => '#webMobile',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'Influencer',
+        'href' => '#influencer',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'Social Network',
+        'href' => '#socialNetwork',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'MarTech (AI)',
+        'href' => '#marTech',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'Out of Home',
+        'href' => '#outOfhome',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'TV/Radio',
+        'href' => '#tvRadio',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'PR Marketing',
+        'href' => '#prMarketing',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'Online to Offline',
+        'href' => '#onlineOffine',
+        'headerMenu' => false,
+        'subLink' => false,
+      ],[
+        'title' => 'Showcase',
+        'href' => '#prBkk',
+        'headerMenu' => true,
+        'subLink' => false,
+      ],[
+        'title' => 'PR BKK',
+        'href' => '#prBkk',
+        'headerMenu' => false,
+        'subLink' => true,
+      ],[
+        'title' => 'GSSD',
+        'href' => '#gssd',
+        'headerMenu' => false,
+        'subLink' => true,
+      ],[
+        'title' => 'SAT APP',
+        'href' => '#satApp',
+        'headerMenu' => false,
+        'subLink' => true,
+      ]
+    ]
+?>
+
   <section class="section-40">
     <div class="grids no-gap">
-      <div class="grid lg-20 md-20 sm-100">
+      <div class="grid lg-20 md-30 sm-100">
         <div class="tab-container sticky">
-          <a href="#fullServices">Full Services</a>
-          <a href="#bigIdea">Big Idea</a>
-          <a href="#design">Design</a>
-          <a href="#content">Content</a>
-          <a href="#webMobile">Web/Mobile</a>
-          <a href="#influencer">Influencer</a>
-          <a href="#socialNetwork">Social Network</a>
-          <a href="#marTech">MarTech (AI)</a>
-          <a href="#outOfhome">Out of Home</a>
-          <a href="#tvRadio">TV/Radio</a>
-          <a href="#prMarketing">PR Marketing</a>
+          <?php foreach($tabLinks as $i=>$d) {?>
+            <div class="tab-link <?= $i == 0 ? 'active': ''?>
+              <?= isset($d['subLink']) && $d['subLink']? 'sub-link': ''?>  
+              <?= isset($d['headerMenu']) && $d['headerMenu']? 'header-menu': ''?>  
+             ">
+              <div class="wrapper">
+                <div class="dot-line">
+                  <div class="dot"></div>
+                  <div class="line"></div>
+                </div>
+                <div class="text">
+                  <a class="title" href="<?= $d['href'] ?>"><?= $d['title'] ?></a>
+                </div>
+              </div>
+            </div>
+          <?php } ?>
         </div>
       </div>
-      <div class="grid lg-80 md-80 sm-100">
+      <div class="grid lg-80 md-70 sm-100">
         <div id="fullServices" class="section-content">
           <div class="wrapper">
             <div class="header">
@@ -474,7 +565,7 @@
           </div>
         </div>  
         <!-- Online to Offline Integrated Activity -->
-        <div id="prMarketing" class="section-content swiper">
+        <div id="onlineOffine" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
