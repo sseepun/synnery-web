@@ -5,8 +5,8 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading">
-  <?php //include_once('component/page-loader.php'); ?>
-  <?php $topnavActive=1; //include_once('include/topnav-style-02.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
+  <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
   <section data-section="1" class="tg-rev-slider" style="z-index:2;">
@@ -139,31 +139,32 @@
         'subLink' => true,
       ]
     ]
-?>
+  ?>
 
   <section class="section-40">
     <div class="grids no-gap">
-      <div class="grid lg-20 md-30 sm-100">
+      <div class="grid xl-20 lg-20 md-30 sm-100 mt-0">
         <div class="tab-container sticky">
-          <?php foreach($tabLinks as $i=>$d) {?>
-            <div class="tab-link <?= $i == 0 ? 'active': ''?>
-              <?= isset($d['subLink']) && $d['subLink']? 'sub-link': ''?>  
-              <?= isset($d['headerMenu']) && $d['headerMenu']? 'header-menu': ''?>  
-             ">
-              <div class="wrapper">
-                <div class="dot-line">
-                  <div class="dot"></div>
-                  <div class="line"></div>
+          <div class="tab-wrapper">
+            <?php foreach($tabLinks as $i=>$d) {?>
+                <div class="tab-link <?= $i == 0 ? 'active': ''?> 
+                  <?= isset($d['subLink']) && $d['subLink']? 'sub-link': ''?>  
+                  <?= isset($d['headerMenu']) && $d['headerMenu']? 'header-menu': ''?>" data-anchor="<?= $d['href'] ?>">
+                  <div class="wrapper">
+                    <div class="dot-line">
+                      <div class="dot"></div>
+                      <div class="line"></div>
+                    </div>
+                    <div class="text">
+                      <a class="title" href="<?= $d['href'] ?>"><?= $d['title'] ?></a>
+                    </div>
+                  </div>
                 </div>
-                <div class="text">
-                  <a class="title" href="<?= $d['href'] ?>"><?= $d['title'] ?></a>
-                </div>
-              </div>
-            </div>
-          <?php } ?>
+            <?php } ?>
+          </div>
         </div>
       </div>
-      <div class="grid lg-80 md-70 sm-100">
+      <div class="grid xl-80 lg-80 md-70 sm-100 mt-0">
         <div id="fullServices" class="section-content">
           <div class="wrapper">
             <div class="header">
@@ -172,10 +173,18 @@
             </div>  
             <div class="body">
               <img class="img" src="public/img/bg/103.jpg" alt="Background Image" />
+              <div class="text-container">
+                <p class="title">FULL SERVICES Online to Offline Integrated Solution</p>
+                <p class="desc">
+                  บริการด้านการออกแบบสื่อดิจิทัลแบบครบวงจร ตอบโจทย์
+                  ทุกความต้องการ ตั้งแต่การวิเคราะห์กลุ่มเป้าหมาย วางแผนกลยุทธ กำหนดสื่อช่องทางการสื่อสาร 
+                  ออกแบบสื่อมีเดียที่สื่อสารง่ายและโดดเด่น รวมถึงการนำเข้ารายงานมาวิเคราะห์เพื่อประสิทธิภาพและให้ได้ตามเป้าหมายที่ตั้งไว้
+                </p>  
+              </div>
             </div>
           </div>
         </div>  
-          <!-- Big Idea -->
+        <!-- Big Idea -->
         <div id="bigIdea" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
@@ -197,6 +206,19 @@
                         เราจึงต้องคิด วางแผน วางคอนเซ็ปต์ วางกลยุทธ์ ทุกช่องทางการสื่อสาร การเลือกใชิสื่อ 
                         การคิดกิจกรรมเชิงรุก เชิงรับ การสร้างการจดจำ และการทำให้กลุ่มเป้าหมายมีส่วนร่วม 
                         ด้วย กลยุทธ์ และแคมเปญ การตลาดที่โดดเด่น โดนใจ กลุ่มเป้าหมาย
+                      </p>  
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="ss-img no-hover">
+                      <div class="img-bg" style="background-image:url('public/img/bg/122.jpg');"></div>
+                    </div>
+                    <div class="text-container">
+                      <p class="title">PDCA/KPI/BEP/ROI</p>
+                      <p class="desc">
+                        ทุกสิ่งทุกอย่างไม่ได้ทำ เพราะต้องทำ แต่เราจำต้องทำการ PDCA (Plan-Do-Check-Action) 
+                        เพื่อทำการวิเคราะห์ ปรับแต่งแผน ว่าตรงกับ KPI ที่วางไว้ไหม เราทำได้กี่เปอร์เซ็นต์ของเป้าหมาย 
+                        หรือระยะเวลาที่กำหนดไว้ การวิเคระห์จุดตุ้มทุนของโครงการหรือคองแคมเปญ เพื่อให้ ROI นั้นคุ้มค่าจากการลงทุนต่างๆ
                       </p>  
                     </div>
                   </div>
@@ -236,6 +258,34 @@
                       </div>
                       <div class="ss-img no-hover horizontal-09">
                         <div class="img-bg" style="background-image:url('public/img/bg/105.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="title">Poster/Banner/Info Graphics/Leaflet, Brochure</p>
+                        <p class="desc">
+                          เรามีทีมงาน Graphics Designer ระดับตัว Top หลายคนให้คุณเลือก ไม่ว่าจะแนวสวยงาม 
+                          แนว Creative แนวล้ำๆ หรือแนวสนุกสนาน ตามความต้องการบน Corporate Identity (CI) ที่กำหนดไว้ 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/120.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="title">Poster/Banner/Info Graphics/Leaflet, Brochure</p>
+                        <p class="desc">
+                          เรามีทีมงาน Graphics Designer ระดับตัว Top หลายคนให้คุณเลือก ไม่ว่าจะแนวสวยงาม 
+                          แนว Creative แนวล้ำๆ หรือแนวสนุกสนาน ตามความต้องการบน Corporate Identity (CI) ที่กำหนดไว้ 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/121.jpg');"></div>
                       </div>
                     </div>
                   </div>
@@ -306,6 +356,20 @@
                   <div class="swiper-slide">
                     <div class="wrapper">
                       <div class="text-container not-polygon">
+                        <p class="title">Poster/Banner/Info Graphics/Leaflet, Brochure</p>
+                        <p class="desc">
+                          เรามีทีมงาน Graphics Designer ระดับตัว Top หลายคนให้คุณเลือก ไม่ว่าจะแนวสวยงาม 
+                          แนว Creative แนวล้ำๆ หรือแนวสนุกสนาน ตามความต้องการบน Corporate Identity (CI) ที่กำหนดไว้ 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/123.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
                         <p class="desc">
                           ออกแบบและพัฒนาเว็บไซต์ เว็บแอปพลิเคชัน โมบายแอปพลิเคชั่น 
                           ขนาดใหญ่สำหรับหน่วยงานหรือองค์กรขนาดใหญ่ที่ต้องการสร้างภาพลักษณ์ 
@@ -353,6 +417,19 @@
                       </div>
                       <div class="ss-img no-hover horizontal-09">
                         <div class="img-bg" style="background-image:url('public/img/bg/110.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="desc">
+                          เรามีเครื่องมือในการติดตาม ตรวจสอบควานิยม Influencer ระดับโลก ที่จะทำให้สามารถเลือก 
+                          Influencer, Actor, Celebrity, MC และอื่นๆ ได้ตรงจุด และตอบโจทย์ กิจกรรมด้านการตลาด 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/124.jpg');"></div>
                       </div>
                     </div>
                   </div>

@@ -1455,36 +1455,85 @@ $(function () {
           headerMenu = $('.section-40 .tab-container .header-menu'),
           subLinks  = $('.section-40 .tab-container .sub-link');
       if (section40.length) {
-          section40.find('.section-content.swiper').each(function () {
-              var self = $(this);
-              new Swiper(self.find('.swiper-container-01'), {
-                  loop: true,
-                  speed: 900,
-                  slidesPerView: 1,
-                  spaceBetween: 1,
-                  navigation: {
-                      nextEl: self.find('.arrow-prev'),
-                      prevEl: self.find('.arrow-next'),
-                  },
-              });
-          });
+            section40.find('.section-content.swiper').each(function () {
+                var self = $(this);
+                new Swiper(self.find('.swiper-container-01'), {
+                    loop: true,
+                    speed: 900,
+                    slidesPerView: 1,
+                    spaceBetween: 1,
+                    navigation: {
+                        nextEl: self.find('.arrow-prev'),
+                        prevEl: self.find('.arrow-next'),
+                    },
+                });
+            });
 
-          tabLinks.click(function(e){
-            let self = $(this);
-            if(!self.hasClass('active')){
-                tabLinks.removeClass('active');
-                self.addClass('active');
+            tabLinks.click(function(e){
+               
+                let self = $(this);
+                if(!self.hasClass('active')){
+                    tabLinks.removeClass('active');
+                    self.addClass('active');
+                }
+                headerMenu.removeClass('header-active');
+
+                let anchor = $(this).data('anchor');
+                if (anchor) {
+                let anchorTarget = $(anchor);
+                if (anchorTarget) {
+
+                    let offset = anchorTarget.offset();
+                    var $window = $(window);
+
+                    var breakpoint = 992;
+                    var last = $window.width() < breakpoint;
+
+                    var breakpoint02 = 768;
+                    var last02 = $window.width() < breakpoint02;
+                
+                    var wWwidth = $window.width();
+                    var isLarger = wWwidth > breakpoint;
+
+
+                    if(last !== isLarger) {
+                        if(isLarger) {
+                            $('html, body').stop().animate({
+                                scrollTop: offset.top - bodySize * 5.6
+                            }, 700, 'easeInOutCubic');
+                        } else {
+                            $('html, body').stop().animate({
+                                scrollTop: offset.top - bodySize * 3.6
+                            }, 700, 'easeInOutCubic');
+                        }
+                        last = isLarger;
+                    }
+
+                    if(last02 !== isLarger) {
+                        if(isLarger) {
+                            $('html, body').stop().animate({
+                                scrollTop: offset.top - bodySize * 5.6
+                            }, 700, 'easeInOutCubic');
+                        } else {
+                            console.log('buy');
+                            $('html, body').stop().animate({
+                                scrollTop: offset.top - bodySize * 7.7
+                            }, 700, 'easeInOutCubic');
+                        }
+                        last02 = isLarger;
+                    }
+                }
             }
-            headerMenu.removeClass('header-active');
-        });
+            
+            });
 
-        subLinks.click(function(e){
-            headerMenu.addClass('header-active');
-        });
+            subLinks.click(function(e){
+                headerMenu.addClass('header-active');
+            });
 
-        headerMenu.click(function(e){
-            headerMenu.find('+ .sub-link').addClass('active');
-        });
+            headerMenu.click(function(e){
+                headerMenu.find('+ .sub-link').addClass('active');
+            });
       }
 
 
@@ -1492,7 +1541,7 @@ $(function () {
     $(document).ready(function() {
         var stickyTop = $('.sticky').offset().top;
         var sticky = $('.sticky');
-      
+
         $(window).scroll(function() {
           var windowTop = $(window).scrollTop();
       
@@ -1504,6 +1553,8 @@ $(function () {
             sticky.removeClass('sticky');
           }
         });
+
+    
     });
 
 
