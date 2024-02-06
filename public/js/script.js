@@ -1515,7 +1515,6 @@ $(function () {
                                 scrollTop: offset.top - bodySize * 5.6
                             }, 700, 'easeInOutCubic');
                         } else {
-                            console.log('buy');
                             $('html, body').stop().animate({
                                 scrollTop: offset.top - bodySize * 7.7
                             }, 700, 'easeInOutCubic');
@@ -1524,7 +1523,6 @@ $(function () {
                     }
                 }
             }
-            
             });
 
             subLinks.click(function(e){

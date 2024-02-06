@@ -55,95 +55,10 @@
     </div>
   </section> 
 
-  <?php
-    $tabLinks = [
-      [
-        'title' => 'Full Services ',
-        'href' => '#fullServices',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'Big Idea',
-        'href' => '#bigIdea',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'Design',
-        'href' => '#design',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'Content',
-        'href' => '#content',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'Web/Mobile',
-        'href' => '#webMobile',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'Influencer',
-        'href' => '#influencer',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'Social Network',
-        'href' => '#socialNetwork',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'MarTech (AI)',
-        'href' => '#marTech',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'Out of Home',
-        'href' => '#outOfhome',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'TV/Radio',
-        'href' => '#tvRadio',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'PR Marketing',
-        'href' => '#prMarketing',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'Online to Offline',
-        'href' => '#onlineOffine',
-        'headerMenu' => false,
-        'subLink' => false,
-      ],[
-        'title' => 'Showcase',
-        'href' => '#prBkk',
-        'headerMenu' => true,
-        'subLink' => false,
-      ],[
-        'title' => 'PR BKK',
-        'href' => '#prBkk',
-        'headerMenu' => false,
-        'subLink' => true,
-      ],[
-        'title' => 'GSSD',
-        'href' => '#gssd',
-        'headerMenu' => false,
-        'subLink' => true,
-      ],[
-        'title' => 'SAT APP',
-        'href' => '#satApp',
-        'headerMenu' => false,
-        'subLink' => true,
-      ]
-    ]
-  ?>
-
   <section class="section-40">
     <div class="grids no-gap">
-      <div class="grid xl-20 lg-20 md-30 sm-100 mt-0">
+      <div class="grid xl-20 lg-20 md-25 sm-100 mt-0">
+        <?php include('data/full-digital-marketing/tab-links.php'); ?>
         <div class="tab-container sticky">
           <div class="tab-wrapper">
             <?php foreach($tabLinks as $i=>$d) {?>
@@ -164,7 +79,8 @@
           </div>
         </div>
       </div>
-      <div class="grid xl-80 lg-80 md-70 sm-100 mt-0">
+      <div class="grid xl-80 lg-80 md-75 sm-100 mt-0">
+        <!-- Full Services -->
         <div id="fullServices" class="section-content">
           <div class="wrapper">
             <div class="header">
@@ -174,7 +90,6 @@
             <div class="body">
               <img class="img" src="public/img/bg/103.jpg" alt="Background Image" />
               <div class="text-container">
-                <p class="title">FULL SERVICES Online to Offline Integrated Solution</p>
                 <p class="desc">
                   บริการด้านการออกแบบสื่อดิจิทัลแบบครบวงจร ตอบโจทย์
                   ทุกความต้องการ ตั้งแต่การวิเคราะห์กลุ่มเป้าหมาย วางแผนกลยุทธ กำหนดสื่อช่องทางการสื่อสาร 
@@ -192,36 +107,20 @@
               <p>Big Idea</p>
             </div>  
             <div class="body">
+              <?php include_once('data/full-digital-marketing/big-idea.php'); ?>
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="ss-img no-hover">
-                      <div class="img-bg" style="background-image:url('public/img/bg/104.jpg');"></div>
+                  <?php foreach($bigIdea as $d) {?>
+                    <div class="swiper-slide">
+                      <div class="ss-img no-hover">
+                        <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
+                      </div>
+                      <div class="text-container">
+                        <p class="title"><?= $d['title'] ?></p>
+                        <p class="desc"><?= $d['desc'] ?></p>  
+                      </div>
                     </div>
-                    <div class="text-container">
-                      <p class="title">Branding/Creative/Strategy/Campaign</p>
-                      <p class="desc">
-                        เพราะการทำ "Branding" คือ "การสร้างภาพจำ" 
-                        ดังนั้นทุกอย่างที่ทำต้อง แตกต่าง อย่างโดดเด่น และโดนใจ กลุ่มเป้าหมาย อย่างต่อเนื่อง 
-                        เราจึงต้องคิด วางแผน วางคอนเซ็ปต์ วางกลยุทธ์ ทุกช่องทางการสื่อสาร การเลือกใชิสื่อ 
-                        การคิดกิจกรรมเชิงรุก เชิงรับ การสร้างการจดจำ และการทำให้กลุ่มเป้าหมายมีส่วนร่วม 
-                        ด้วย กลยุทธ์ และแคมเปญ การตลาดที่โดดเด่น โดนใจ กลุ่มเป้าหมาย
-                      </p>  
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="ss-img no-hover">
-                      <div class="img-bg" style="background-image:url('public/img/bg/122.jpg');"></div>
-                    </div>
-                    <div class="text-container">
-                      <p class="title">PDCA/KPI/BEP/ROI</p>
-                      <p class="desc">
-                        ทุกสิ่งทุกอย่างไม่ได้ทำ เพราะต้องทำ แต่เราจำต้องทำการ PDCA (Plan-Do-Check-Action) 
-                        เพื่อทำการวิเคราะห์ ปรับแต่งแผน ว่าตรงกับ KPI ที่วางไว้ไหม เราทำได้กี่เปอร์เซ็นต์ของเป้าหมาย 
-                        หรือระยะเวลาที่กำหนดไว้ การวิเคระห์จุดตุ้มทุนของโครงการหรือคองแคมเปญ เพื่อให้ ROI นั้นคุ้มค่าจากการลงทุนต่างๆ
-                      </p>  
-                    </div>
-                  </div>
+                  <?php } ?>
                 </div>
               </div>
               <div class="arrows">
@@ -312,22 +211,22 @@
               <p>Content</p>
             </div>  
             <div class="body">
+              <?php include_once('data/full-digital-marketing/content.php') ?>
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="wrapper">
-                      <div class="text-container not-polygon">
-                        <p class="title">Poster/Banner/Info Graphics/Leaflet, Brochure</p>
-                        <p class="desc">
-                          เรามีทีมงาน Graphics Designer ระดับตัว Top หลายคนให้คุณเลือก ไม่ว่าจะแนวสวยงาม 
-                          แนว Creative แนวล้ำๆ หรือแนวสนุกสนาน ตามความต้องการบน Corporate Identity (CI) ที่กำหนดไว้ 
-                        </p>  
-                      </div>
-                      <div class="ss-img no-hover horizontal-09">
-                        <div class="img-bg" style="background-image:url('public/img/bg/106.jpg');"></div>
+                  <?php foreach($content as $d) {?>
+                    <div class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="text-container not-polygon">
+                          <p class="title"><?= $d['title'] ?></p>
+                          <p class="desc"><?= $d['desc'] ?></p>  
+                        </div>
+                        <div class="ss-img no-hover horizontal-09">
+                          <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  <?php } ?>
                 </div>
               </div>
               <div class="arrows">
@@ -433,6 +332,19 @@
                       </div>
                     </div>
                   </div>
+                  <div class="swiper-slide">
+                    <div class="wrapper">
+                      <div class="text-container not-polygon">
+                        <p class="desc">
+                          เรามีเครื่องมือในการติดตาม ตรวจสอบควานิยม Influencer ระดับโลก ที่จะทำให้สามารถเลือก 
+                          Influencer, Actor, Celebrity, MC และอื่นๆ ได้ตรงจุด และตอบโจทย์ กิจกรรมด้านการตลาด 
+                        </p>  
+                      </div>
+                      <div class="ss-img no-hover horizontal-09">
+                        <div class="img-bg" style="background-image:url('public/img/bg/125.jpg');"></div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="arrows">
@@ -456,21 +368,21 @@
               <p>Social Network</p>
             </div>  
             <div class="body">
+              <?php include_once('data/full-digital-marketing/social-network.php') ?>
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="wrapper">
-                      <div class="text-container not-polygon">
-                        <p class="desc">
-                          เรามีทีมงานที่มีประสบการณ์และความเชี่ยวชาญในการดูแล และบริหารจัดการ สื่อออนไลน์แบบทุกช่องทาง ไม่ว่าจะเป็น Facebook, X 
-                          (Twitter), YouTube, Line, IG, Instagram, TikTok และอื่นๆ  ตามโจทย์ ตาม KPI หรือเป้าหมายต่างๆ ของโครงการ 
-                        </p>  
-                      </div>
-                      <div class="ss-img no-hover horizontal-09">
-                        <div class="img-bg" style="background-image:url('public/img/bg/111.jpg');"></div>
+                  <?php foreach($socialNetwork as $d) {?>
+                    <div class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="text-container not-polygon">
+                          <p class="desc"><?= $d['desc'] ?></p>  
+                        </div>
+                        <div class="ss-img no-hover horizontal-09">
+                          <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  <?php } ?>
                 </div>
               </div>
               <div class="arrows">
@@ -494,20 +406,20 @@
               <p>MarTech (AI)</p>
             </div>  
             <div class="body">
+              <?php include_once('data/full-digital-marketing/mar-tech.php') ?>
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="ss-img no-hover">
-                      <div class="img-bg" style="background-image:url('public/img/bg/112.jpg');"></div>
-                    </div>
-                    <div class="text-container">
-                      <p class="title">Social listening</p>
-                      <p class="desc">
-                        เครื่องมือในการ Scan ข้อมูลจากทุกสื่อออนไลน์ตาม Keyword พร้อม Data Analytic ต่างๆ 
-                        ที่จะทำให้เรารู้ว่าโลกออนไลน์พูดถึง Brand เราว่ายังไง
-                      </p>  
-                    </div>
+                  <?php foreach($marTech as $d) {?>
+                    <div class="swiper-slide">
+                      <div class="ss-img no-hover">
+                        <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
+                      </div>
+                      <div class="text-container">
+                        <p class="title"><?= $d['title'] ?></p>
+                        <p class="desc"><?= $d['desc'] ?></p>  
+                      </div>
                   </div>
+                  <?php } ?>
                 </div>
               </div>
               <div class="arrows">
@@ -531,24 +443,21 @@
               <p>Out Of Home</p>
             </div>  
             <div class="body">
+              <?php include_once('data/full-digital-marketing/out-of-home.php') ?>
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="wrapper">
-                      <div class="text-container not-polygon">
-                        <p class="desc">
-                          เมื่อเราคิด Concept วาง Content และกลยุทธ์แล้ว กรณีที่สินค้าหรือบริการนั้นๆ 
-                          เหมาะที่จะทำการโฆษณาประชาสัมพันธ์ผ่านสือ Out Of Home (OOH) เราสามารถวางแผน 
-                          ปรับแต่ง เลือกประเภทสื่อ ช่องทาง ตำแหน่ง จำนวนกลุ่มเป้าหมายที่อยากให้เห็น (Eyeball) 
-                          จาก Billboard/LED/BTS/MRT/Bus/Airport/7-Eleven และอื่นๆ ได้ตามงบประมาณ 
-                          และโจทย์ หรือ KPI ที่ตั้งไว้
-                        </p>  
-                      </div>
-                      <div class="ss-img no-hover horizontal-09">
-                        <div class="img-bg" style="background-image:url('public/img/bg/113.jpg');"></div>
+                  <?php foreach($outOfHome as $d) {?>
+                    <div class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="text-container not-polygon">
+                          <p class="desc"><?= $d['desc'] ?></p>  
+                        </div>
+                        <div class="ss-img no-hover horizontal-09">
+                          <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  <?php } ?>
                 </div>
               </div>
               <div class="arrows">
@@ -572,22 +481,21 @@
               <p>TV/Radio</p>
             </div>  
             <div class="body">
+              <?php include_once('data/full-digital-marketing/tv-radio.php') ?>
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="wrapper">
-                      <div class="text-container not-polygon">
-                        <p class="desc">
-                          เราสามารถสร้างสรรค Media Content ทั้งของทีวีหรือวิทยุ ในรูปแบบต่างๆ 
-                          พร้อมทั้งติดต่อ เลือกรายการ เลือกช่วงเวลา ดำเนินการในการนำไปโฆษณาตามสื่อทีวีชั้นน้ำต่างๆ 
-                          เช่น Work point  หรือสื่อวิทยุต่างๆ ตามงบประมาณ และ KPI ที่กำหนด
-                        </p>  
-                      </div>
-                      <div class="ss-img no-hover horizontal-09">
-                        <div class="img-bg" style="background-image:url('public/img/bg/114.jpg');"></div>
+                  <?php foreach($tvRadio as $d) {?>
+                    <div class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="text-container not-polygon">
+                          <p class="desc"><?= $d['desc'] ?></p>  
+                        </div>
+                        <div class="ss-img no-hover horizontal-09">
+                          <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  <?php } ?>
                 </div>
               </div>
               <div class="arrows">
@@ -692,23 +600,22 @@
                 <p>PR BKK</p>
             </div> 
             <div class="body">
+              <?php include_once('data/full-digital-marketing/pr-bkk.php') ?>
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="wrapper">
-                      <div class="text-container bg-white">
-                        <p class="title">Landing Page</p>
-                        <p class="desc">
-                          เว็บไซต์เป็นอีกช่องทางหนึ่งในการประชาสัมพันธ์ข้อมูลต่างๆ
-                          ไปยังกลุ่มเป้าหมาย ซึ่งทางบริษัทได้มีการใช้ช่องทางนี้เช่นกัน 
-                          เพื่อให้ประชาชนกดไปยังเมนูอื่นๆเพื่อเสพข้อมูลเพิ่มเติมจากที่ตั้งใจไว้ 
-                        </p>  
-                      </div>
-                      <div class="ss-img no-hover horizontal-09">
-                        <div class="img-bg" style="background-image:url('public/img/bg/117.jpg');"></div>
+                  <?php foreach($prBKK as $d) {?>
+                    <div class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="text-container bg-white">
+                          <p class="title"><?= $d['title'] ?></p>
+                          <p class="desc"><?= $d['desc'] ?></p>  
+                        </div>
+                        <div class="ss-img no-hover horizontal-09">
+                          <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  <?php } ?>
                 </div>
               </div>
               <div class="arrows">
@@ -735,23 +642,23 @@
               <p>GSSD</p>
             </div>
             <div class="body">
+              <?php include_once('data/full-digital-marketing/gssd.php') ?>
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="wrapper">
-                      <div class="text-container bg-white">
-                        <p class="title">Design Website</p>
-                        <p class="desc">
-                          กระทรวงการต่างประเทศจะเป็นเจ้าภาพจัดงาน Global South-South Development Expo 2022 
-                          (GSSD Expo 2022) กรมความร่วมมือระหว่างประเทศ กระทรวงการต่างประเทศ เป็นหน่วยงานหลักในการดําเนินจัดงาน 
-                          โดยที่ทางบริษัทได้จัดทําและออกแบบเว็บไซต์นิทรรศการออนไลน์ของไทย เพื่อเป็นแหล่งข้อมูลสำหีับใช้ประชาสัมพันธ์
-                        </p>  
-                      </div>
-                      <div class="ss-img no-hover horizontal-09">
-                        <div class="img-bg" style="background-image:url('public/img/bg/118.jpg');"></div>
+                  <?php foreach($gssd as $d) { ?>
+                    <div class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="text-container bg-white">
+                          <p class="title"><?= $d['title'] ?></p>
+                          <p class="desc"><?= $d['desc'] ?></p>  
+                        </div>
+                        <div class="ss-img no-hover horizontal-09">
+                          <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  <?php } ?>
+                  
                 </div>
               </div>
               <div class="arrows">
@@ -778,21 +685,22 @@
               <p>SAT APP</p>
             </div> 
             <div class="body">
+              <?php include_once('data/full-digital-marketing/sat-app.php') ?>
               <div class="swiper-container-01">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="wrapper">
-                      <!-- <div class="text-container bg-white">
-                        <p class="title">Web & Mobile Application</p>
-                        <p class="desc">
-                          บริษัทได้มีการออกแบบ และพัฒนา Web& Mobile application ภายใต้ Big Idea "START YOUR SPORT JOURNEY" พร้อมกับประชาสัมพันธ์ผู้ดาวน์โหลดแอพลิเคชัน 10,000 User Download เก็บสถานที่ออกกำลังกายในประเทศไทย 700 locations
-                        </p>  
-                      </div> -->
-                      <div class="ss-img no-hover horizontal-09">
-                        <div class="img-bg" style="background-image:url('public/img/bg/119.jpg');"></div>
+                  <?php foreach($satApp as $d) {?>
+                    <div class="swiper-slide">
+                      <div class="wrapper">
+                        <div class="text-container bg-white">
+                          <p class="title"><?= $d['title'] ?></p>
+                          <p class="desc"><?= $d['desc'] ?></p>  
+                        </div>
+                        <div class="ss-img no-hover horizontal-09">
+                          <div class="img-bg" style="background-image:url('<?= $d['imgBg'] ?>');"></div>
+                        </div>
                       </div>
-                    </div>
                   </div>
+                  <?php } ?>
                 </div>
               </div>
               <div class="arrows">
