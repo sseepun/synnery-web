@@ -4,12 +4,12 @@
   <?php include_once('include/header.php'); ?>
   <?php include_once('include/style.php'); ?>
 </head>
-<body class="loading">
+<body class="loading" style="overflow:unset!important;">
   <?php include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
-  <section data-section="1" class="tg-rev-slider" style="z-index:2;">
+  <section data-section="1" class="tg-rev-slider ovf-hidden" style="z-index:2;">
     <div id="rev_slider_1" class="rev_slider fullwidthabanner"  data-version="5.4.1">
       <ul>
         <?php for($i=0; $i<18; $i++){?>
@@ -59,7 +59,7 @@
     <div class="grids no-gap">
       <div class="grid xl-20 lg-20 md-25 sm-100 mt-0">
         <?php include('data/full-digital-marketing/tab-links.php'); ?>
-        <div class="tab-container sticky">
+        <div class="tab-container">
           <div class="tab-wrapper">
             <?php foreach($tabLinks as $i=>$d) {?>
                 <div class="tab-link <?= $i == 0 ? 'active': ''?> 
@@ -79,7 +79,7 @@
           </div>
         </div>
       </div>
-      <div class="grid xl-80 lg-80 md-75 sm-100 mt-0">
+      <div class="grid xl-80 lg-80 md-75 sm-100 mt-0 ovf-hidden">
         <!-- Full Services -->
         <div id="fullServices" class="section-content">
           <div class="wrapper">

@@ -2568,9 +2568,10 @@
 
 
 /* Section 40 */
+.section-40{overflow:unset;}
 .section-40 .tab-container{
- position:relative; top:0; transition:top .5s; padding:1.5rem 1.5rem 1.5rem 1.5rem; 
- overflow-y:auto; max-height:100%; 
+  position:sticky; top:5.5rem; max-height:calc(100vh - 5.5rem);
+  padding:1.5rem 1.5rem 1.5rem 1.5rem; overflow-x:hidden; overflow-y:auto; 
 }
 .section-40 .tab-container::before{
   position:absolute; content:''; top:0; bottom:0; left:0; width:4.5rem; display:none; pointer-events:none;
@@ -2586,7 +2587,6 @@
 .section-40 .tab-container::-webkit-scrollbar-track{background:#dddddd;}
 .section-40 .tab-container::-webkit-scrollbar-thumb{background:#d9d9d9; border-radius:.25rem;}
 .section-40 .tab-container::-webkit-scrollbar-thumb:hover{background:#999999;}
-.section-40 .tab-container.sticky{max-width:20%; top:6.50375rem; bottom:.5rem;}
 .section-40 .tab-container .tab-link{margin-bottom:1rem;}
 .section-40 .tab-container .sub-link{padding-left:1rem;}
 .section-40 .tab-container .tab-link .title{
@@ -2675,22 +2675,25 @@
   transition:background .25s; cursor:pointer;
 }
 .section-40 .section-content .arrows .wrapper .arrow:hover{background:#ec2c23;}
+@media screen and (max-width:1299.98px){
+  .section-40 .tab-container{top:5.625rem; max-height:calc(100vh - 5.625rem);}
+}
 @media screen and (max-width:1199.98px){
   .section-40 .tab-container{padding:1.5rem 1rem 1.5rem 1rem}
 }
 @media screen and (max-width:991.98px){
-  .section-40 .tab-container.sticky{max-width:25%; top:4.50375rem}
+  .section-40 .tab-container{top:3.75rem; max-height:calc(100vh - 3.75rem);}
   .section-40 .tab-container .tab-link .title{font-size:.9375rem;}
 }
 @media screen and (max-width:767.98px){
-  .section-40 .tab-container{overflow:hidden; padding:1rem 0 1rem 0; z-index:5; background:#ffffff;}
+  .section-40 .tab-container{
+    padding:1rem 0; z-index:5; background:#ffffff;
+  }
   .section-40 .tab-container .tab-wrapper{overflow-x:auto; padding:0 1.5rem;}
   .section-40 .tab-container .tab-wrapper::-webkit-scrollbar{display:none;}
   .section-40 .tab-container .tab-link .title{min-width:6rem; font-size:.875rem;}
-  .section-40 .tab-container.sticky{max-width:100%; top:3.625rem; bottom:unset; }
   .section-40 .tab-container .tab-link .title{
-    text-align:center; padding-left:0; min-width:7.5rem; 
-    padding:0 .5rem;
+    text-align:center; padding-left:0; min-width:7.5rem; padding:0 .5rem;
   }
   .section-40 .tab-container .tab-link{margin-bottom:unset; margin-right:.5rem;}
   .section-40 .tab-container .tab-link.header-menu{display:none;}

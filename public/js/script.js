@@ -1450,39 +1450,38 @@ $(function () {
 
 
       // Section 40
-      var section40 = $('.section-40'),
-          tabLinks  = $('.section-40 .tab-container .tab-link'),
-          headerMenu = $('.section-40 .tab-container .header-menu'),
-          subLinks  = $('.section-40 .tab-container .sub-link');
-      if (section40.length) {
-            section40.find('.section-content.swiper').each(function () {
-                var self = $(this);
-                new Swiper(self.find('.swiper-container-01'), {
-                    loop: true,
-                    speed: 900,
-                    slidesPerView: 1,
-                    spaceBetween: 1,
-                    navigation: {
-                        nextEl: self.find('.arrow-prev'),
-                        prevEl: self.find('.arrow-next'),
-                    },
-                });
+    var section40 = $('.section-40');
+    if(section40.length){
+        let tabLinks  = section40.find('.tab-container .tab-link'),
+            headerMenu = section40.find('.tab-container .header-menu'),
+            subLinks  = section40.find('.tab-container .sub-link');
+
+        section40.find('.section-content.swiper').each(function(){
+            var self = $(this);
+            new Swiper(self.find('.swiper-container-01'), {
+                loop: true,
+                speed: 900,
+                slidesPerView: 1,
+                spaceBetween: 1,
+                navigation: {
+                    nextEl: self.find('.arrow-prev'),
+                    prevEl: self.find('.arrow-next'),
+                },
             });
+        });
 
-            tabLinks.click(function(e){
-               
-                let self = $(this);
-                if(!self.hasClass('active')){
-                    tabLinks.removeClass('active');
-                    self.addClass('active');
-                }
-                headerMenu.removeClass('header-active');
+        tabLinks.click(function(e){
+            let self = $(this);
+            if(!self.hasClass('active')){
+                tabLinks.removeClass('active');
+                self.addClass('active');
+            }
+            headerMenu.removeClass('header-active');
 
-                let anchor = $(this).data('anchor');
-                if (anchor) {
-                let anchorTarget = $(anchor);
-                if (anchorTarget) {
-
+            let anchor = $(this).data('anchor');
+            if(anchor){
+                let anchorTarget = section40.find(anchor);
+                if(anchorTarget){
                     let offset = anchorTarget.offset();
                     var $window = $(window);
 
@@ -1494,7 +1493,6 @@ $(function () {
                 
                     var wWwidth = $window.width();
                     var isLarger = wWwidth > breakpoint;
-
 
                     if(last !== isLarger) {
                         if(isLarger) {
@@ -1523,16 +1521,16 @@ $(function () {
                     }
                 }
             }
-            });
+        });
 
-            subLinks.click(function(e){
-                headerMenu.addClass('header-active');
-            });
+        subLinks.click(function(e){
+            headerMenu.addClass('header-active');
+        });
 
-            headerMenu.click(function(e){
-                headerMenu.find('+ .sub-link').addClass('active');
-            });
-      }
+        headerMenu.click(function(e){
+            headerMenu.find('+ .sub-link').addClass('active');
+        });
+    }
 
 
     // Sticky Element
