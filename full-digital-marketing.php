@@ -70,9 +70,9 @@
                       <div class="dot"></div>
                       <div class="line"></div>
                     </div>
-                    <div class="text">
-                      <a class="title" href="<?= $d['href'] ?>"><?= $d['title'] ?></a>
-                    </div>
+                    <a class="text" href="<?= $d['href'] ?>">
+                      <p class="title" ><?= $d['title'] ?></p>
+                    </a>
                   </div>
                 </div>
             <?php } ?>
@@ -81,7 +81,7 @@
       </div>
       <div class="grid xl-80 lg-80 md-75 sm-100 mt-0 ovf-hidden">
         <!-- Full Services -->
-        <div id="fullServices" class="section-content">
+        <div id="fullServices" class="section-content" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -100,7 +100,7 @@
           </div>
         </div>  
         <!-- Big Idea -->
-        <div id="bigIdea" class="section-content swiper">
+        <div id="bigIdea" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -137,7 +137,7 @@
           </div>
         </div>  
         <!-- Design -->
-        <div id="design" class="section-content swiper">
+        <div id="design" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -204,7 +204,7 @@
           </div>
         </div>   
         <!-- Content -->
-        <div id="content" class="section-content swiper">
+        <div id="content" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -243,7 +243,7 @@
           </div>
         </div>  
         <!-- Web & Mobile -->
-        <div id="webMobile" class="section-content swiper">
+        <div id="webMobile" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -297,7 +297,7 @@
           </div>
         </div>  
         <!-- Influencer -->
-        <div id="influencer" class="section-content swiper">
+        <div id="influencer" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -361,7 +361,7 @@
           </div>
         </div>  
         <!-- Social Network -->
-        <div id="socialNetwork" class="section-content swiper">
+        <div id="socialNetwork" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -399,7 +399,7 @@
           </div>
         </div>  
         <!-- MarTech (AI) -->      
-        <div id="marTech" class="section-content swiper">
+        <div id="marTech" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -436,7 +436,7 @@
           </div>
         </div>  
          <!-- Out of Home -->
-         <div id="outOfhome" class="section-content swiper">
+         <div id="outOfhome" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -474,7 +474,7 @@
           </div>
         </div> 
          <!-- TV/Radio -->
-         <div id="tvRadio" class="section-content swiper">
+         <div id="tvRadio" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -512,7 +512,7 @@
           </div>
         </div>  
          <!-- PR Marketing -->
-         <div id="prMarketing" class="section-content swiper">
+         <div id="prMarketing" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -550,7 +550,7 @@
           </div>
         </div>  
         <!-- Online to Offline Integrated Activity -->
-        <div id="onlineOffine" class="section-content swiper">
+        <div id="onlineOffine" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -590,7 +590,7 @@
           </div>
         </div>  
         <!-- Showcase - PR BKK -->
-        <div id="prBkk" class="section-content swiper">
+        <div id="prBkk" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -632,7 +632,7 @@
           </div>
         </div> 
         <!-- Showcase - GSSD -->
-        <div id="gssd" class="section-content swiper">
+        <div id="gssd" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -675,7 +675,7 @@
           </div>
         </div> 
         <!-- Showcase - SAT APP -->
-        <div id="satApp" class="section-content swiper">
+        <div id="satApp" class="section-content swiper" data-aos="fade-in">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
