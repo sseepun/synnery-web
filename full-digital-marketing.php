@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading" style="overflow:unset!important;">
-  <?php //include_once('component/page-loader.php'); ?>
+  <?php include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
