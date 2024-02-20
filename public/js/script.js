@@ -1450,6 +1450,8 @@ $(function () {
 
     // Section 40
     var section40 = $('.section-40');
+    var sectionContent = $('.section-40 .section-content');
+  
     if(section40.length){
         let tabLinks  = section40.find('.tab-container .tab-link'),
             headerMenu = section40.find('.tab-container .header-menu'),
@@ -1468,15 +1470,12 @@ $(function () {
                 },
             });
         });
-           
 
-        $(window).on("mousewheel touchstart", function() {
-           
+        $(window).on("mousewheel touchstart scroll", function() {
             var offset = 260;
             var position = $(this).scrollTop();
             var tabScroll = $('.section-40 .tab-container a[href^="#"]');
-            var sectionContent = $('.section-40 .section-content');
-      
+           
             tabScroll.each(function(){
                 var anchorId = $(this).attr('href'); 
                 var target = $(anchorId).offset().top - offset;
@@ -1487,11 +1486,20 @@ $(function () {
                     tabIdScroll.addClass('active'); 
                 }
             })
-
-           
-          
-          
         });
+
+        sectionContent.each(function(){
+            let self = $(this);
+            gsap.to(self,{
+                opacity: 0,
+                transition: .25,
+                scrollTrigger: {
+                    trigger: self,
+                    start: "center 10%",
+                    scrub: true,
+                }
+            })
+        })
 
         tabLinks.click(function(e){
             let self = $(this);
@@ -1571,6 +1579,8 @@ $(function () {
             }
         })
     }
+
+    
 
 
     // Sticky Element

@@ -2620,6 +2620,7 @@
   width:2rem; display:flex; flex-direction:column; align-items:center;
   justify-content:center;
 }
+.section-40 .tab-container .sub-link .dot-line{width:1.75rem;}
 .section-40 .tab-container .tab-link .dot{
   width:.75rem; height:.75rem; background:#d9d9d9; border-radius:50%;
   transition:width .25s, height .25s, border .25s, background .25s; border:3px solid transparent;
@@ -2628,6 +2629,7 @@
 .section-40 .tab-container .tab-link.header-active .dot{
   width:1rem; height:1rem; border-color: #ec2c23; background:transparent;
 }
+.section-40 .tab-container .sub-link.active .dot{width:.75rem; height:.75rem;}
 .section-40 .tab-container .tab-link .line{
   width:.125rem; height:0; background:#ec2c23; transition:height .5s, margin .5s;
 }
@@ -2641,6 +2643,7 @@
   position:relative; font-family:'Poppins', sans-serif;
   font-weight:600; color:#ffffff;
 }
+.section-40 .section-content{opacity:1;}
 .section-40 .section-content .sub-header{
   padding:.75rem 1rem;
   background:linear-gradient(90deg, rgba(225,225,225,1) 70%, rgba(255,255,255,1) 100%, rgba(225,225,225,1) 100%, rgba(0,0,0,1) 100%, rgba(28,8,21,1) 100%, rgba(31,27,9,1) 100%, rgba(255,223,0,1) 100%, rgba(0,0,0,1) 100%);

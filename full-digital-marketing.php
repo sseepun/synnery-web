@@ -5,7 +5,7 @@
   <?php include_once('include/style.php'); ?>
 </head>
 <body class="loading" style="overflow:unset!important;">
-  <?php include_once('component/page-loader.php'); ?>
+  <?php //include_once('component/page-loader.php'); ?>
   <?php $topnavActive=1; include_once('include/topnav-style-02.php'); ?>
   <?php include_once('include/accessibility.php'); ?>
 
@@ -54,6 +54,80 @@
       </svg>
     </div>
   </section> 
+
+  <?php if(false){?>
+    <section  data-section="1" class="banner-02">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <?php for($i=0; $i<18; $i++){?>
+            <div class="swiper-slide">
+              <div class="wrapper">
+                <?php if($i === 0){?>
+                  <div class="img-bg" style="background-image:url('public/img/bg/banner-02.jpg');"></div>
+                  <div class="hero">
+                    <div class="animate-02" style="--delay:.45s;">
+                      <img src="public/img/hero/banner-01.png" alt="Hero" />
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="text-container">
+                      <h1 class="lg fw-500 color-white lh-3xs animate-01" style="--delay:.45s;">
+                        Website
+                      </h1>
+                      <h1 class="fw-500 color-white lh-2xs animate-01" style="--delay:.6s;">
+                        <span class="fw-200">for</span> Government
+                      </h1>
+                      <h6 class="color-white animate-01" style="--delay:.75s;">
+                        ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA
+                      </h6>
+                      <div class="btns pt-6 animate-01" style="--delay:.9s;">
+                        <?php
+                          $btnBubble = [
+                            'href' => 'web-gov-standard.php',
+                            'title' => 'Explore More',
+                          ];
+                          include('component/btn-bubble.php');
+                        ?>
+                      </div>
+                    </div>
+                  </div>
+                <?php }?>
+                <?php if($i > 0){?>
+                  <div class="img-bg" style="background-image:url('public/img/bg/banner-0<?= ($i%7+3) ?>.jpg');"></div>
+                <?php }?>
+                <?php if($i > 7){?>
+                  <div class="img-bg" style="background-image:url('public/img/bg/banner-1<?= ($i%10+0) ?>.jpg');"></div>
+                <?php }?>
+              </div>
+            </div>
+          <?php }?>
+        </div>
+        <div class="arrows">
+          <div class="arrow arrow-prev">
+            <img src="public/img/icon/arrow-left.png" alt="Arrow" />
+          </div>
+          <div class="arrow-sep">
+            <img src="public/img/icon/arrow-sep.png" alt="Arrow Sep" />
+          </div>
+          <div class="arrow arrow-next">
+            <img src="public/img/icon/arrow-right.png" alt="Arrow" />
+          </div>
+        </div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#ffffff" />
+        </g>
+        </svg>
+      </div>
+    </section>
+  <?php }?>
 
   <section class="section-40">
     <div class="grids no-gap">
@@ -204,7 +278,7 @@
           </div>
         </div>   
         <!-- Content -->
-        <div id="content" class="section-content swiper" data-aos="fade-in">
+        <div id="content" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -243,7 +317,7 @@
           </div>
         </div>  
         <!-- Web & Mobile -->
-        <div id="webMobile" class="section-content swiper" data-aos="fade-in">
+        <div id="webMobile" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -297,7 +371,7 @@
           </div>
         </div>  
         <!-- Influencer -->
-        <div id="influencer" class="section-content swiper" data-aos="fade-in">
+        <div id="influencer" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -361,7 +435,7 @@
           </div>
         </div>  
         <!-- Social Network -->
-        <div id="socialNetwork" class="section-content swiper" data-aos="fade-in">
+        <div id="socialNetwork" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -399,7 +473,7 @@
           </div>
         </div>  
         <!-- MarTech (AI) -->      
-        <div id="marTech" class="section-content swiper" data-aos="fade-in">
+        <div id="marTech" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -436,7 +510,7 @@
           </div>
         </div>  
          <!-- Out of Home -->
-         <div id="outOfhome" class="section-content swiper" data-aos="fade-in">
+         <div id="outOfhome" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -474,7 +548,7 @@
           </div>
         </div> 
          <!-- TV/Radio -->
-         <div id="tvRadio" class="section-content swiper" data-aos="fade-in">
+         <div id="tvRadio" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -512,7 +586,7 @@
           </div>
         </div>  
          <!-- PR Marketing -->
-         <div id="prMarketing" class="section-content swiper" data-aos="fade-in">
+         <div id="prMarketing" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -550,7 +624,7 @@
           </div>
         </div>  
         <!-- Online to Offline Integrated Activity -->
-        <div id="onlineOffine" class="section-content swiper" data-aos="fade-in">
+        <div id="onlineOffine" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -590,7 +664,7 @@
           </div>
         </div>  
         <!-- Showcase - PR BKK -->
-        <div id="prBkk" class="section-content swiper" data-aos="fade-in">
+        <div id="prBkk" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -632,7 +706,7 @@
           </div>
         </div> 
         <!-- Showcase - GSSD -->
-        <div id="gssd" class="section-content swiper" data-aos="fade-in">
+        <div id="gssd" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -675,7 +749,7 @@
           </div>
         </div> 
         <!-- Showcase - SAT APP -->
-        <div id="satApp" class="section-content swiper" data-aos="fade-in">
+        <div id="satApp" class="section-content swiper">
           <div class="wrapper">
             <div class="header">
               <div class="img-bg" style="background-image:url('public/img/bg/102.jpg');"></div>
@@ -720,82 +794,12 @@
     </div>          
   </section>
 
-  <?php if(false){?>
-    <section  data-section="1" class="banner-02">
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <?php for($i=0; $i<18; $i++){?>
-            <div class="swiper-slide">
-              <div class="wrapper">
-                <?php if($i === 0){?>
-                  <div class="img-bg" style="background-image:url('public/img/bg/banner-02.jpg');"></div>
-                  <div class="hero">
-                    <div class="animate-02" style="--delay:.45s;">
-                      <img src="public/img/hero/banner-01.png" alt="Hero" />
-                    </div>
-                  </div>
-                  <div class="container">
-                    <div class="text-container">
-                      <h1 class="lg fw-500 color-white lh-3xs animate-01" style="--delay:.45s;">
-                        Website
-                      </h1>
-                      <h1 class="fw-500 color-white lh-2xs animate-01" style="--delay:.6s;">
-                        <span class="fw-200">for</span> Government
-                      </h1>
-                      <h6 class="color-white animate-01" style="--delay:.75s;">
-                        ออกแบบและพัฒนาเว็บไซต์ ตามมาตรฐานเว็บไซต์ภาครัฐ และ ITA
-                      </h6>
-                      <div class="btns pt-6 animate-01" style="--delay:.9s;">
-                        <?php
-                          $btnBubble = [
-                            'href' => 'web-gov-standard.php',
-                            'title' => 'Explore More',
-                          ];
-                          include('component/btn-bubble.php');
-                        ?>
-                      </div>
-                    </div>
-                  </div>
-                <?php }?>
-                <?php if($i > 0){?>
-                  <div class="img-bg" style="background-image:url('public/img/bg/banner-0<?= ($i%7+3) ?>.jpg');"></div>
-                <?php }?>
-                <?php if($i > 7){?>
-                  <div class="img-bg" style="background-image:url('public/img/bg/banner-1<?= ($i%10+0) ?>.jpg');"></div>
-                <?php }?>
-              </div>
-            </div>
-          <?php }?>
-        </div>
-        <div class="arrows">
-          <div class="arrow arrow-prev">
-            <img src="public/img/icon/arrow-left.png" alt="Arrow" />
-          </div>
-          <div class="arrow-sep">
-            <img src="public/img/icon/arrow-sep.png" alt="Arrow Sep" />
-          </div>
-          <div class="arrow arrow-next">
-            <img src="public/img/icon/arrow-right.png" alt="Arrow" />
-          </div>
-        </div>
-        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-        <defs>
-          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-        </defs>
-        <g class="parallax">
-          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-          <use xlink:href="#gentle-wave" x="48" y="7" fill="#ffffff" />
-        </g>
-        </svg>
-      </div>
-    </section>
-  <?php }?>
-
-
   <?php $withFooterInfo=true; include_once('include/footer-style-02.php'); ?>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
   <?php include_once('include/script.php'); ?>
+
 </body>
 </html>
